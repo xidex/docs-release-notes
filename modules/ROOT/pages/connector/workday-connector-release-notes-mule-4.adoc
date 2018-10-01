@@ -15,6 +15,26 @@ The Workday connector requires an Enterprise license.
 [IMPORTANT]
 Depending on the connectivity conditions while using Workday connector in Anypoint Studio, there can be a timeout while obtaning Workday metadata. See xref:connectors::workday/workday-studio.adoc#to-increase-timeout-in-studio[To Increase Timeout in Studio].
 
+== Version 10.0.0
+
+*Unreleased*
+
+[%header%autowidth]
+|===
+|Software |Version
+|Mule Runtime |4.0.0
+|Workday API |v28.0, v29.0, v30.0
+|===
+
+=== Features
+
+- This connector now supports multiple versions of the Workday API.
+- *New Object Trigger* - You can now start a flow with the connector every time an object of a specific type is created.
+
+=== Fixed in this Release
+
+None.
+
 == 9.2.0
 
 *March 15, 2018*
