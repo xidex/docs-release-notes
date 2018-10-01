@@ -59,7 +59,7 @@ Note: This connector is not supported for use with Anypoint Design Center.
 
 === Fixed in this Release
 
-* Information was missing when Idocs are reveived in connector. The information is now properly transmitted.
+* Information was missing when Idocs are received in connector. The information is now properly transmitted.
 
 === Known Issues
 
