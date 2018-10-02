@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: workday, connector, release notes
 
-*March 2018*
+*October 2018*
 
 _Select_
 
