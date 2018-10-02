@@ -51,6 +51,23 @@ This release consists of the upgrade of amqp-client RabbitMQ library to 5.3.0.
 
 * Update RabbitMQ client version to 5.x. (AMQP-95)
 
+== 3.7.10
+
+*September 14, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.5 and later
+|Anypoint Studio |3.5 and later
+|===
+
+=== Features
+
+Add RabbitMQ broker blocking handler in the Mule 3 Connector. (AMQP-99)
+
 == 3.7.9
 
 *June 21, 2018*
