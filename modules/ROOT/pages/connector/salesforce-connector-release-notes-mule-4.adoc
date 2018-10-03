@@ -4,9 +4,27 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, salesforce, connector
 
-*September 2018*
+*October 2018*
 
 _Select_
+
+== 9.4.1
+
+*October 8, 2018*
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Added missing metadata types on Metadata operations.
+
+
+*September 2018*
 
 == 9.4.0
 
