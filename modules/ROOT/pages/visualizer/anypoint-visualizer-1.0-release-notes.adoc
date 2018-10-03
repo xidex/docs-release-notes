@@ -5,6 +5,16 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== October 3, 2018
+Version: 1.3.1
+
+=== New Features and Enhancements
+
+* Side Panel
+** Added links to Anypoint Monitoring dashboard and logs page (for premium users only) for selected nodes.
+** Added a warning message to nodes that cannot be customized by user because of lack of permissions.
+
+
 == September 28, 2018
 
 Version: 1.3.0
@@ -24,6 +34,18 @@ Version: 1.3.0
 === Fixed Issues
 
 * Environments with legacy Id value are shown in the environment selector
+
+
+== September 5, 2018
+Version: 1.2.0
+
+=== New Features and Enhancements
+
+* Side Panel
+** Removed "Highlight most depended-on nodes" checkbox.
+* View
+** Updated "Inbound connections" legend appearance.
+** Updated color themes.
 
 
 == August 21, 2018
