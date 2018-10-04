@@ -85,6 +85,7 @@ There are no known limitations or workarounds in this release.
 
 == June 30, 2018
 Version: 1.0.0
+
 === New Features and Enhancements
 
 This is the initial release of Anypoint Visualizer. Anypoint Visualizer provides a graphical representation of the APIs, and Mule applications, and third-party systems within your application network.
