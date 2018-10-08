@@ -16,7 +16,7 @@ _Select_
 [%header%autowidth.spread]
 |===
 |Software | Version
-|Mule Runtime | 4.0.0
+|Mule Runtime | 4.0.0 and later
 |Microsoft Azure Service Bus (Cloud) | -
 |Microsoft Windows Service Bus (on-premises) | -
 |===
@@ -34,4 +34,4 @@ _Select_
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
