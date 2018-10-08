@@ -19,7 +19,7 @@ Depending on the connectivity conditions while using Workday connector in Anypoi
 
 *October 8, 2018*
 
-[%header%autowidth]
+[%header%autowidth.spread]
 |===
 |Software |Version
 |Mule Runtime |4.0.0 and later
@@ -41,7 +41,7 @@ None.
 
 This release provides a bug fix.
 
-[%header%autowidth]
+[%header%autowidth.spread]
 |===
 |Software |Version
 |Mule Runtime |4.0.0 and later
@@ -83,4 +83,4 @@ This version is compatible with Mule 4.0.0.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
