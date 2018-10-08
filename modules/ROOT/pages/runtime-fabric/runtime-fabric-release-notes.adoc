@@ -15,7 +15,7 @@ This release includes the following fixes and enhancements:
 * Fixed: Unable to restart services if Runtime Fabric is offline for more than 12 hours.
 * Fixed: Removed sensitive resource URLs from log output.
 * Fixed: Side-channel test of connection to control plane when running via proxy.
-* Fixed: Time allowed for connecting to control plane increased during installation.
+* Fixed: Increased time allowed for connecting to control plane during installation.
 
 == 1.1.55 - September 19, 2018
 
