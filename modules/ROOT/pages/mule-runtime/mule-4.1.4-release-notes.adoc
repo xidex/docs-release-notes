@@ -104,7 +104,7 @@ Not applicable.
 | EE-6227 | batch:job changes payload even if target is set 
 | EE-6219 | Mule 3 License Incorrectly installed in mule 4 
 | EE-6216 | Cache: Improve non-blocking implementation 
-| AGW-2432 | Payload is lost if used if accessed by a policy after the "execute next" element
+| AGW-2432 | Payload is lost if accessed by a policy after the "execute next" element
 | AGW-2411 | When a policy defines resources, if they are added to artifact json, then the policy is not deploying
 | AGW-2409 | Parallel requests to an API with same x-correlation-id breaks policy engines
 //  
