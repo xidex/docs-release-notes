@@ -1,0 +1,156 @@
+= Anypoint Studio 6.5 with Mule Runtime 3.9.1 Upate site 1 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*September 24, 2018* +
+*Build ID: 201809241636*
+
+<<migration,Skip to Migration Guide>>
+
+== Compatibility
+
+[cols="30a,70a"]
+|===
+| *Mule Runtime*
+| Version: 3.9.1 EE
+
+|*Anypoint Studio*
+|Version: 6.5.1 +
+Build Id: 201809241636
+
+|*APIkit*
+|Versions: 3.9.0 - 3.8.3 - 3.8.2 - 3.8.1 - 3.8.0 - 1.7.3 - 1.6.2 - 1.5.3
+
+|*DataWeave* +
+|Version: 1.2.0
+
+|*MUnit* +
+|Version: 1.6.1 (munit-studio-plugin)
+
+|*SAP Connector*
+|Versions: 3.2.0
+
+|*Eclipse*
+|Versions: 4.7.2
+
+|===
+
+
+== What's New
+
+The 6.5.1 Studio release includes a number of bug fixes, the ability to install new runtimes when creating new projects, and comes with Mule 3.9.1 runtime.
+
+== Hardware Requirements
+
+* MuleSoft recommends a minimum of 4GB RAM on a developer workstation. As applications become complex, consider adding more RAM.
+* 2GHz CPU
+* 10GB free hard drive space
+
+== Software Requirements
+
+[cols="30a,70a"]
+|===
+|Java Environments |
+This version of Anypoint Studio requires Java 8 to run properly. +
+Depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+
+* Mule 3.9.x requires Studio running on Java 8.
+* Mule 3.5.x requires Studio running on Java 7.
+* Other supported runtime versions work fine with both Java 7 or 8.
+
+You can configure Anypoint Studio's default VM by following the task corresponding to your OS:
+
+* xref:6.5@studio::studio-configure-vm-task-wx.adoc[To Configure Studio’s Default VM (Windows)]
+* xref:6.5@studio::studio-configure-vm-task-unx.adoc[To Configure Studio’s Default VM (Unix)]
+* xref:6.5@studio::studio-configure-vm-task-lnx.adoc[To Configure Studio’s Default VM (Linux)]
+
+|Operating Systems |* MacOS 10.10.0 +
+* Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10 +
+* RHEL 7.0 +
+* Ubuntu 15.04 or later
+|Suggested Web Browsers by Platform. +
+_Studio will always use the OS default web browser_ | * Windows: +
+** Microsoft Edge 25.0  +
+** Internet Explorer 11 +
+* Linux +
+** Mozilla Firefox 46.0  +
+* OS X +
+** Safari 9.1
+|===
+
+
+[NOTE]
+--
+If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+--
+
+== Known Issues
+
+[[migration]]
+== Migration Guide
+
+Since this version of Anypoint Studio upgrades its core Eclispe version, it is recommended to download and run the latest installer to install a fresh new full copy. +
+
+[TIP]
+--
+Updating your Anypoint Studio version using the update site does not update the bundled version of the Mule runtime. +
+To get the latest runtime version after updating Studio follow xref:6@studio::download-and-launch-anypoint-studio.adoc#updating-studio[these steps].
+--
+
+When opening a previous workspace with projects that were created with Studio 5.1.0 or older, and which has metadata stored in disk, Studio asks you to perform an update to all the projects so that the Metadata Manager can handle the existing types and show them in your project.
+
+[TIP]
+====
+You can easily import all of the external components that you had installed in your old version of Anypoint Studio through a single action. This includes connectors, runtimes, and any other type of extension added through the Anypoint Exchange or the ​*Help -> Install new software*​ menu, as long as there are no compatibility restrictions.
+
+Do this by selecting *File->Import* and then choose *Install->From existing installation*.
+
+image::studio/import-extensions.png[import]
+
+Then specify the location of your old version of Anypoint Studio in your local drive.
+====
+
+== JIRA Ticket List for Anypoint Studio
+
+=== Bug Fixes
+
+* NPE when loading metadata Devkit Connector.
+* Workspace randomly switches Mule Runtime.
+* Difference in key space trimming between MUnit and Mule Runtime with AES.
+* Anypoint Studio building with wrong environment variables.
+* When using SAP connector the application fails to start.
+* SNS connector schema issue.
+* Widget not disposed error in crash report dialog.
+* ZIP File not being created under Target Folder after running as Mule Application with Maven.
+* Importing a project from pom.xml without Eclipse project files fails.
+* Parsing of big RAML files is causing long waits.
+* Studio Policy project does not set the policyId.
+* Studio text for DB Connector bulk-execute is incorrect and misleading.
+* Studio does not import RAML API subfolders when importing an API from a zip archive.
+* Studio freezes whenever the mouse focus changes or highlights any component/flow..
+* Workspace validations on Running adds delays to deploy apps.
+* Studio does not import RAML API subfolders when importing an API from a zip archive (7.x).
+* receiver-threading-profile throws exception when used in vm:connector.
+* Property yamlFileName in mule-policy.xml deletes in the text edition.
+* Cannot undo changes in DW editor.
+* DataWeave Editor not opening in linux.
+
+=== Tasks
+
+* Send JVM report when studio crashes.
+* Add Warning dialog reporting a crash event (Phase 1).
+* Detect if studio opens after a crash event.
+* Add metric for studio crash events.
+* Cherry-pick fix for avoid closing CH UI when not having authorization.
+* Studio 6 Add user ID track when sending events to Amplitude.
+* Add validation when trying to open Studio with a Java version higher than 8 - Studio 6.
+* Studio 6 - Send to amplitud metrics the organizationId property when deploy to cloudHub.
+* Change Studio 6 version to 6.6.0 in develop-6.x branch.
+
+=== Enhancement Request
+
+== Support
+
+* Access http://forums.mulesoft.com/[MuleSoft’s Forum] to pose questions and get help from Mule’s broad community of users.
+* To access MuleSoft’s expert support team https://www.mulesoft.com/support-and-services/mule-esb-support-license-subscription[subscribe to Mule ESB Enterprise] and log in to MuleSoft’s http://www.mulesoft.com/support-login[Customer Portal].
