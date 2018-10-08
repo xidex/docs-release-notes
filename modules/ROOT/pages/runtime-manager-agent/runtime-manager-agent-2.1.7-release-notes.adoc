@@ -31,10 +31,12 @@ There are no upgrade requirements for this release.
 
 == Compatibility Notes
 
-| Software |                                                      Version                                                     |
-|----------|:----------------------------------------------------------------------------------------------------------------:|
-| JDK      |                                     JDK 1.8.0 (Recommended JDK 1.8.0_151/52)                                     |
-| OS       | MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04 |
+[options="header,footer"]
+|=======================
+|Software|Version      
+|JDK    |JDK 1.8.0 (Recommended JDK 1.8.0_151/52)     
+|OS      |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04     |
+|=======================
 
 
 
