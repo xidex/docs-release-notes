@@ -39,7 +39,7 @@ Build Id: 201809241636
 
 == What's New
 
-This release of Studio 6.5.0 includes bug fixes.
+The 6.5.1 Studio release includes a number of bug fixes, the ability to install new runtimes when creating new projects, and comes with Mule 3.9.1 runtime.
 
 == Hardware Requirements
 
