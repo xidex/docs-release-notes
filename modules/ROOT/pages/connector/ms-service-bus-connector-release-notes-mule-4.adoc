@@ -16,7 +16,7 @@ _Select_
 [%header%autowidth.spread]
 |===
 |Software | Version
-|Mule Runtime | 4.0.0
+|Mule Runtime | 4.0.0 and later
 |Microsoft Azure Service Bus (Cloud) | -
 |Microsoft Windows Service Bus (on-premises) | -
 |===
@@ -29,8 +29,9 @@ _Select_
 
 * Automatic completion of queue and topic names, subscriptions, and rules may not work in Design Center.
 * In Design Center, the Live View feature does not work for most operations. In addition to this, the application log may be flooded with several "Could not serialize object" errors.
+* The connector leaks connections while publishing a message to a topic.
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

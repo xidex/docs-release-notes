@@ -6,6 +6,17 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== October 9, 2018
+
+4.1.3 Runtime Update:
+
+* Batch crashes with ArrayList of HashMap as input [SE-9437]
+* SDK scopes process internal chains as blocking [SE-9315]
+* Cannot open a new cursor on a closed stream using batch processing [SE-9472]
+* DataWeave buffer output FileNotFoundException [SE-9379]
+* Failure to process subflow with async scopes [SE-9395]
+
+
 == October 5, 2018
 
 3.9.1 Runtime update:
