@@ -31,7 +31,7 @@ There are no upgrade requirements for this release.
 
 == Compatibility Notes
 
-[options="header,footer"]
+[%header%autowidth.spread,cols="a,a"]
 |=======================
 |Software|Version      
 |JDK    |JDK 1.8.0 (Recommended JDK 1.8.0_151/52)     
