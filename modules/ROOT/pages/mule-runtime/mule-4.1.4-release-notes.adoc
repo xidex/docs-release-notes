@@ -107,6 +107,24 @@ Not applicable.
 | AGW-2432 | Payload is lost if accessed by a policy after the "execute next" element
 | AGW-2411 | When a policy defines resources, if they are added to artifact json, then the policy is not deploying
 | AGW-2409 | Parallel requests to an API with same x-correlation-id breaks policy engines
+| SE-9391 | DataWeave: Avoid reporting wrong messages on correct CSV.
+| SE-9379 | DataWeave: Avoid removing files that still need to be used.
+| SE-9335 | DataWeave: `java.sql.Timestamp` is losing nanosecond precision in DataWeave.
+| SE-5255 | DataWeave: Add a way to configure `roundMode`.
+| SE-9210 | DataWeave: Improve perfomance of the Java writer.
+| SE-9216 | DataWeave: Avoid autoclosing empty elements when autoclose is turned off.
+| SE-9174 | DataWeave: Add option to turn off zip bomb detection.
+| SE-9254 | DataWeave: Avoid `None.get`.
+| SE-8842 | DataWeave: Splitting the payload should not modify the output of other `#[payload]` expressions.
+| DataWeave a|
+
+* Fixed reader and writer function to close correctly.
+* Replaced `RuntimeException` with a proper exception and message.
+* `UnionTypeCoercer` no longer sets the type to Union but to the type that it was coerced to.
+* Empty `yaml` now returns `null`.
+* Fixed support for `Atomic*` values in the Java reader.
+* Fixed range selector over binary to return binary data.
+* Fixed `parseURI` when URI is not well-formed.
 //  
 // ------------------------------- 
 // - Enhancement Request Issues 
@@ -115,7 +133,12 @@ Not applicable.
 | MULE-15622 | Miscellaneous Performance improvements 
 | MULE-15385 | MetadataCache define eviction policy and API 
 | MULE-15154 | Until successfull should support 0 as a maxRetries value 
-|=== 
+| DataWeave a| 
+
+* Performance improvements.
+* Added `Mule` module to allow calls to `lookup`, `p`, and `causedBy` functions from everywhere.
+* Added `^mediaType` to show the entire `mediaType` text.
+|===  
  
 == Compatibility Testing Notes 
  
