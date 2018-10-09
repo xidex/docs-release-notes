@@ -19,7 +19,7 @@ This release contains no changes to existing functionality.
 
 This release contains the following issue fixes:
 
-* DataWeave fix .
+* For Studio : DataWeaver preview now always set payload, vars and attribute variables .
 
 == Known Limitations and Workarounds
 
@@ -31,4 +31,9 @@ There are no upgrade requirements for this release.
 
 == Compatibility Notes
 
-There are no compatibility notes for this release.
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Software|Version
+|JDK    |JDK 1.8.0 (Recommended JDK 1.8.0_151/52)
+|OS      |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+|===
