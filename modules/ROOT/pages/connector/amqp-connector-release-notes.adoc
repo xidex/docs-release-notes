@@ -5,9 +5,12 @@ endif::[]
 :keywords: amqp, release, notes
 
 *October 2018 - 3.8.2* +
-*October 2018 - 3.7.11*
+*September 2018 - 3.7.11*
 
 _Select_
+
+AMQP Connector has two active versions each supporting different versions of the RabbitMQ library. AMQP Connector
+version 3.8.2 supports RabbitMQ client library 5.3.0 and requires JDK 8 and later. AMQP Connector 3.7.11 supports RabbitMQ client library 4.6.0.
 
 == 3.8.2
 
@@ -22,13 +25,11 @@ _Select_
 |Anypoint Studio |3.5 and later
 |===
 
-*Note:* This version requires Java 8 or greater.
+*Note:* This version requires Java 8 or later.
 
-=== Features
+=== Fixed in this Release
 
-Rabbitmq Client Channel is stored as a flowVar resulting in serialization error. (AMQP-100)
-
-_Select_
+RabbitMQ Client Channel is stored as a flowVar that resulted in a serialization error. (AMQP-100)
 
 == 3.8.1
 
@@ -43,7 +44,7 @@ _Select_
 |Anypoint Studio |3.5 and later
 |===
 
-*Note:* This version requires Java 8 or greater.
+*Note:* This version requires Java 8 or later.
 
 === Features
 
@@ -62,7 +63,7 @@ Add RabbitMQ broker blocking handler in the Mule 3 Connector. (AMQP-99)
 |Anypoint Studio |3.5 and later
 |===
 
-*Note:* This version requires Java 8 or greater.
+*Note:* This version requires Java 8 or lare.
 
 === Features
 
@@ -148,7 +149,7 @@ This release consists of bug fixes.
 
 == 3.7.7
 
-*March 01, 2018*
+*March 1, 2018*
 
 This release consists of bug fixes.
 
