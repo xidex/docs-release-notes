@@ -12,12 +12,12 @@ To keep using CLI with pre-crowd release organization, use xref:runtime-manager:
 
 This release of the Anypoint CLI inclues CLI commands for API Manager 2.x (crowd release)
 
-* Added support for API Manager v2: all changes documented here.
+* Added support for API Manager v2.
 * Removed previous api-mgr commands (API Manage v1).
 * Renamed api-mgr applications * -> api-mgr contract *.
 * Renamed api-mgr tiers * -> api-mgr tier *.
 * Fixed an issue whereby if an API contained null values, it was trowing an error.
-* Added support for graphQL APIs, see "extra cost" report here.
+* Added support for graphQL APIs.
 * Removed support for Node < 8.12.0.
 
 
