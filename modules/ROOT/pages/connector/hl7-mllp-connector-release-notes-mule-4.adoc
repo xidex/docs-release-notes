@@ -13,7 +13,7 @@ xref:connectors::hl7/hl7-mllp-connector.adoc[HL7 MLLP Connector Guide]
 
 == 2.0.2
 
-*October 9, 2018*
+*October 1, 2018*
 
 === Compatibility
 
