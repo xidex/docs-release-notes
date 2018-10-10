@@ -474,6 +474,7 @@
  ** xref:munit/munit-1.1.0-release-notes.adoc[MUnit 1.1.0 Release Notes]
  ** xref:munit/munit-1.0.0-release-notes.adoc[MUnit 1.0.0 Release Notes]
 * xref:runtime-manager-agent/runtime-manager-agent-release-notes.adoc[Runtime Manager Agent Release Notes]
+ ** xref:runtime-manager-agent/runtime-manager-agent-1.11.1-release-notes.adoc[Runtime Manager Agent 1.11.1 Release Notes]
  ** xref:runtime-manager-agent/runtime-manager-agent-1.10.0-release-notes.adoc[Runtime Manager Agent 1.10.0 Release Notes]
  ** xref:runtime-manager-agent/runtime-manager-agent-1.9.5-release-notes.adoc[Runtime Manager Agent 1.9.5 Release Notes]
  ** xref:runtime-manager-agent/runtime-manager-agent-1.9.4-release-notes.adoc[Runtime Manager Agent 1.9.4 Release Notes]
