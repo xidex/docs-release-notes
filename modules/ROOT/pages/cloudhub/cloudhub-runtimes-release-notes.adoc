@@ -10,7 +10,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 4.1.3 Runtime Update:
 
-* Object Store V2 plugin version to fix encoding of keys when deleting causing not found issue [SE-9505]
+* Object Store V2 plugin update fixing the encoding of keys when deleting causing not found issue [SE-9505]
 * Batch crashes with ArrayList of HashMap as input [SE-9437]
 * SDK scopes process internal chains as blocking [SE-9315]
 * Cannot open a new cursor on a closed stream using batch processing [SE-9472]
