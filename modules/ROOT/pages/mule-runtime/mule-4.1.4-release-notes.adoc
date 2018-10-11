@@ -41,7 +41,7 @@ Not applicable.
 |===
 |Issue |Description
 // Fixed Issues 
-| MULE-15753 | Add error messages for template parcing validation 
+| MULE-15753 | Add error messages for template parsing validation 
 | MULE-15737 | Fix possible race condition in processing strategies 
 | MULE-15716 | Leaks through hard references to types, classloaders and schedulers 
 | MULE-15708 | async in sub-flow must use its own processingStrategy instance 
