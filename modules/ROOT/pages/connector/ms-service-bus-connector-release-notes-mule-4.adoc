@@ -29,7 +29,7 @@ _Select_
 
 * Automatic completion of queue and topic names, subscriptions, and rules may not work in Design Center.
 * In Design Center, the Live View feature does not work for most operations. In addition to this, the application log may be flooded with several "Could not serialize object" errors.
-* The connector leaks connections while publishing a message to a topic.
+* The connector leaks connections while publishing a message to a topic (Default caching strategy). As a workaround, configure the connector to use no caching strategy
 
 == See Also
 
