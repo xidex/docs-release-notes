@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: workday, connector, release notes
 
-*April 2017*
+*October 2017*
 
 _Select_
 
@@ -18,11 +18,11 @@ Connector Guide: xref:3.9@mule-runtime::workday-connector.adoc[Workday Connector
 
 === Compatibility
 
-[%header,cols="2*a"]
+[%header%autowidth.spread]
 |===
 |Application/Service |Version
-|Mule Runtime |3.7.0 or later
-|Anypoint Studio |5.4 or later
+|Mule Runtime |3.7.0 and later Mule 3 version
+|Anypoint Studio |5.4 and later Studio 5 and 6 version
 |Workday API |v30.2
 |===
 
