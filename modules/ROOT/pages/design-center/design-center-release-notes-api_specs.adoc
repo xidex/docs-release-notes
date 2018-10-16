@@ -22,6 +22,9 @@ These release notes cover the following versions of these features:
 // SE-8323
 * The API editor could take too long to resolve one or more DataType resources. During that time, the API Summary pane was blank.
 
+// SE-8424
+* When a RAML extension extended a file that used a library that was itself defined in a fragment, and the library included a trait with the `!include` tag, the API editor was unable to locate the trait.
+
 == 2.2.9
 *August 9, 2018*
 
