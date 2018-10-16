@@ -19,8 +19,8 @@ This release contains no changes to existing functionality.
 
 This release contains the following issue fixes:
 
-* Disabling Insights will now remove the YAML configuration section.
-* Upgrade version of several dependency libraries.
+* Disabling Insights removes remove the YAML configuration section.
+* Upgraded the versions of several dependency libraries.
 
 == Known Limitations and Workarounds
 
