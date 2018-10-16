@@ -4,6 +4,35 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, AMQP, connector, release notes
 
+*October 2018*
+
+== 1.1.0
+
+*October 16, 2018*
+
+=== New Features and Enhancements
+
+* SNI Support.
+* Performance improvements. 
+* Use of NIO rabbitmq client API.
+
+=== Fixed Issues
+
+* AMQP module ignores quality of service in listener. (AMQP-102)
+
+== 1.0.1
+
+*October 16, 2018*
+
+=== New Features and Enhancements
+
+* Performance improvements. 
+* Use of NIO rabbitmq client API.
+
+=== Fixed Issues
+
+* AMQP module ignores quality of service in listener. (AMQP-102)
+
 *May 2018*
 
 == 1.0.0
