@@ -5,11 +5,22 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-3-0,2.3.0>>
 * <<2-2-9,2.2.9>>
 * <<2-2-8,2.2.8>>
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.3.0
+*November 1, 2018*
+
+
+
+=== Fixed Issues
+
+// SE-8323
+* The API editor could take too long to resolve one or more DataType resources. During that time, the API Summary pane was blank.
 
 == 2.2.9
 *August 9, 2018*
