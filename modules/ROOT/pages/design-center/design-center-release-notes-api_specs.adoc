@@ -21,9 +21,12 @@ These release notes cover the following versions of these features:
 
 // SE-8323
 * The API editor could take too long to resolve one or more DataType resources. During that time, the API Summary pane was blank.
-
 // SE-8424
 * When a RAML extension extended a file that used a library that was itself defined in a fragment, and the library included a trait with the `!include` tag, the API editor was unable to locate the trait.
+//SE-9276
+* It was possible for projects imported into Anypoint Studio from the API editor in Design Studio to contain RAML errors that were not pointed out by the API editor.
+//SE-9545
+* RAML errors not reported by the API editor could cause problems in the API Summary pane, such as failures to display various pieces of information. 
 
 == 2.2.9
 *August 9, 2018*
