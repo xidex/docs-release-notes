@@ -4,13 +4,35 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: workday, connector, release notes
 
-*April 2017*
+*October 2017*
 
 _Select_
 
 Workday is a Software-as-a-Service (SaaS) solution developed by Workday Inc., comprising a set of management applications, covering several areas like human resources management, staffing, recruiting and performance management.
 
 Connector Guide: xref:3.9@mule-runtime::workday-connector.adoc[Workday Connector]
+
+== 8.3.0
+
+*October 10, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |3.7.0 and later Mule 3 version
+|Anypoint Studio |5.4 and later Studio 5 and 6 version
+|Workday API |v30.2
+|===
+
+[NOTE]
+The Workday connector requires an *Enterprise license*.
+
+=== Features
+
+This version changes the Workday supported API version to 30.2.
+
 
 == 8.2.0
 
