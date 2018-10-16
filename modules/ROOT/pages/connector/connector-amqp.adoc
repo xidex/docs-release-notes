@@ -6,6 +6,8 @@ endif::[]
 
 *October 2018*
 
+_Select_
+
 == 1.1.0
 
 *October 16, 2018*
@@ -14,7 +16,7 @@ endif::[]
 
 * SNI Support.
 * Performance improvements. 
-* Use of NIO rabbitmq client API.
+* Use of NIO RabbitMQ client API.
 
 === Fixed Issues
 
