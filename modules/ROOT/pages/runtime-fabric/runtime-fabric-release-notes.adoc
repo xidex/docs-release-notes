@@ -8,9 +8,7 @@ In addition to these release notes, see the complete xref:1.0@runtime-fabric::in
 
 == 1.1.87 - October 5, 2018
 
-This release includes the following fixes and enhancements:
-
-* Added: Dependency updates.
+This release includes the following fixes:
 
 * Fixed: Unable to restart services if Runtime Fabric is offline for more than 12 hours.
 * Fixed: Removed sensitive resource URLs from log output.
