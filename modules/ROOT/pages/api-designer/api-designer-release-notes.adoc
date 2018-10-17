@@ -50,7 +50,10 @@ endif::[]
 ----
 /channels/{channel-code}/digital-users/{digital-user-id}
 ----
-
+// SE-8999
+* The mocking service returned a 400 error for a PATCH request that met these two conditions:
+** The request had a JSON body of a type that was defined in a library.
+** The library defined the type with an `!include` tag.
 
 == API Designer 0.4.13 Release Notes
 
