@@ -42,6 +42,8 @@ endif::[]
 
 // DESIGNER-2160
 * When a `uses` node referred to a missing file, the error message was not helpful. The error message has been revised.
+// DESIGNER-2873
+* No error message was displayed when a `uses` node specified an invalid path to a library.
 
 
 == API Designer 0.4.13 Release Notes
