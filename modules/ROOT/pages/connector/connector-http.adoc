@@ -22,9 +22,9 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues 
-| MULE-15756 | HTTP Requester removes payload when retrying 
-| MULE-15428 | Avoid unnecessary creation of CaseInsensitive maps during http request 
-| MULE-15419 | HTTP: Reduce request creation overhead 
+| MULE-15756 | The HTTP Requester removes the payload when retrying. 
+| MULE-15428 | Avoid unnecessary creation of `CaseInsensitive` maps during the HTTP request.
+| MULE-15419 | HTTP: Reduce request creation overhead.
 //  
 // ------------------------------- 
 // - Enhancement Request Issues 
