@@ -41,7 +41,7 @@ endif::[]
 
 === Fixed Issues 
  
-* Revert: MULE-15128 - Proxy Config in HTTP Requester should not accept
+* Revert: MULE-15128 - Proxy Config in HTTP Requester should not accept expressions.
 
 == 1.3.0 (Deprecated)
 
