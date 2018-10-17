@@ -35,6 +35,12 @@ Cannot read property 'ast' of null at (1, 0)
 ----
 +
 The message has been improved.
+// SE-9588
+* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, this call `digital-users` is the third-level resource would cause the issue:
++
+----
+/channels/{channel-code}/digital-users/{digital-user-id}
+----
 
 == 2.2.9
 *August 9, 2018*

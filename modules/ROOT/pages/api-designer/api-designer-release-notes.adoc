@@ -44,6 +44,12 @@ endif::[]
 * When a `uses` node referred to a missing file, the error message was not helpful. The error message has been revised.
 // DESIGNER-2873
 * No error message was displayed when a `uses` node specified an invalid path to a library.
+// SE-9588
+* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, this call `digital-users` is the third-level resource would cause the issue:
++
+----
+/channels/{channel-code}/digital-users/{digital-user-id}
+----
 
 
 == API Designer 0.4.13 Release Notes
