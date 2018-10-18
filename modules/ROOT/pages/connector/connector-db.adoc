@@ -3,6 +3,23 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.4.1
+
+*October 16, 2018*
+
+=== Minimum Mule Version
+
+Mule 4.1.0
+
+=== New Features and Enhancements
+
+* Fixed minor issues.
+
+=== Fixed Issues
+
+* Default MySQL Driver causes a memory leak https://www.mulesoft.org/jira/browse/MULE-15748[(MULE-15748)]
+* Can't get stored procedure name from sql query when there are whitespaces before parentheses https://www.mulesoft.org/jira/browse/MULE-15793[(MULE-15793)]
+
 == 1.4.0
 
 *August 7, 2018*
