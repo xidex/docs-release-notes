@@ -26,7 +26,8 @@ Mule 4.1.1
 
 == 1.4.1 
  
-*Oct 16, 2018* 
+*Oct 16, 2018*
+
 === Minimum Mule Version
 
 Mule 4.1.1
