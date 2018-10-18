@@ -57,13 +57,13 @@ You can now prevent connectors that are listed in Anypoint Exchange from being u
 // PROJECTX-4528
 * Cards for scopes, such as the For Each and Choice cards, require at least one card to follow them. If a scope card did not yet have a card following it, an error was counted both on the scope card and on the plus icon next to it.
 // PROJECTX-4888
-* Waiting...
+* The Search endpoint in the extension service was filtering out assets from Anypoint Exchange that did not have mule-plugin files. However, this behavior became incorrect when REST APIs started to be converted to connectors automatically in Exchange. These connectors do not have mule-plugin files.
 // PROJECTX-4902
 * In a Logger card, dragging the Type attribute into the Message field would remove any other attributes that were already in that field.
 // PROJECTX-4903
 * In an HTTP Request card, if you typed the beginning of a URL in the URL field, dragged Custom Expression into the field from the Visual Function Editor on the right, created a custom expression, closed the card, and then reopened the card, the URL field would be empty.
 // PROJECTX-4940
-* Waiting...
+* In some cases, it was possible to click the *Upload* button to select a database driver to upload before the Database card populated a list of available drivers. If you tried to upload a driver that was already available to Design Center, then the error message "An asset already exists with that name and version" would appear and the upload would fail.
 // PROJECTX-4941
 * Several problems that prevented log content from being copied easily have been fixed.
 // PROJECTX-4948
@@ -74,7 +74,20 @@ You can now prevent connectors that are listed in Anypoint Exchange from being u
 * Waiting...
 // PROJECTX-5123
 * Some cards were not sized correctly when they were opened.
-
+// PROJECTX-5132
+* The $ symbol was causing errors in the Visual Function Editor.
+// PROJECTX-5171
+* Dragging a message object from the Visual Function Editor into a field would sometimes add extra spaces to the end of the text input in that field. The spaces could be difficult to remove.
+// PROJECTX-5173
+* Adding an if/then/else statement to a message object that was in a field would prevent text input after the object.
+// PROJECTX-5190
+* Dragging a message object into a field could delete white space that was in the field.
+// PROJECTX-5195
+* Waiting...
+// PROJECTX-5241
+* In some cases, mapping the output of a Transform card to a variable and then clicking the *Run* button could lead to an application being stuck in the *Starting Application* state.
+// PROJECTX-4313
+* In the *Output Payload* pane of a Transform card, if you right-clicked an attribute, selected *Set Expression*, set the value, and then quickly clicked OK, the new value would not take effect. You had to set the value, pause for a few seconds, and then click *OK*.
 
 
 
