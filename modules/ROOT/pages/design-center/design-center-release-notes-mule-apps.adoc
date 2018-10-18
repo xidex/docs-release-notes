@@ -68,8 +68,6 @@ You can now prevent connectors that are listed in Anypoint Exchange from being u
 * Several problems that prevented log content from being copied easily have been fixed.
 // PROJECTX-4948
 * In some cases, it was difficult to delete a message object that had been dragged into a field from the Visual Function Editor.
-// PROJECTX-4959
-* Waiting...
 // PROJECTX-5122
 * The icon on a card would disapper if you downgraded to an earlier version of the asset that the card represented.
 // PROJECTX-5123
