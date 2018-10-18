@@ -36,7 +36,7 @@ Added support for Salesforce V43.
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
 |Anypoint Studio |Only works with Studio 7.1.0 and later
-|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
 === Fixed in this Release
