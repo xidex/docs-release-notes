@@ -22,13 +22,17 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues 
-| MULE-15756 | The HTTP Requester removes the payload when retrying. 
-| MULE-15428 | Avoid unnecessary creation of `CaseInsensitive` maps during the HTTP request.
-| MULE-15419 | HTTP: Reduce request creation overhead.
+| link:https://www.mulesoft.org/jira/browse/MULE-15756[MULE-15756] | HTTP Requester removes the payload when retrying. 
+| link:https://www.mulesoft.org/jira/browse/MULE-15722[MULE-15722] | HTTP Requester is sending `content-type` even if no payload is sent.
+| link:https://www.mulesoft.org/jira/browse/MULE-15428[MULE-15428] | Avoid unnecessary creation of `CaseInsensitive` maps during an HTTP request. 
+| link:https://www.mulesoft.org/jira/browse/MULE-15419[MULE-15419] | HTTP: Reduce request creation overhead.
+| link:https://www.mulesoft.org/jira/browse/MULE-11272[MULE-11272] | Support non-blocking in OAuth HTTP calls. 
+| link:https://www.mulesoft.org/jira/browse/MULE-15165[MULE-15165] | Changes in HTTP-API module break compilation of the HTTP connector. 
 //  
 // ------------------------------- 
 // - Enhancement Request Issues 
 // ------------------------------- 
+| link:https://www.mulesoft.org/jira/browse/MULE-15665[MULE-15665] | HTTP null host when the port is invalid. 
 |=== 
  
 == 1.3.1 
