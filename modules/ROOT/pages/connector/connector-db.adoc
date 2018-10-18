@@ -5,10 +5,12 @@ endif::[]
 
 == 1.4.2 
  
-*Oct 18, 2018* 
- === Minimum Mule Version
+*Oct 18, 2018*
+
+=== Minimum Mule Version
 
 Mule 4.1.1
+
 === New Features and Enhancements 
  
 * No new features were added in this version.  
