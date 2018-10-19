@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-* <<API Designer 0.4.14 Release Notes>>
-
 * <<API Designer 0.4.13 Release Notes>>
 
 * <<API Designer 0.4.12 Release Notes>>
@@ -34,26 +32,6 @@ endif::[]
 * <<API Designer 0.3.0 Release Notes>>
 
 * <<API Designer 0.2.0 Release Notes>>
-
-== API Designer 0.4.14 Release Notes
-*November 1, 2018*
-
-=== Fixed Issues
-
-// DESIGNER-2160
-* When a `uses` node referred to a missing file, the error message was not helpful. The error message has been revised.
-// DESIGNER-2873
-* No error message was displayed when a `uses` node specified an invalid path to a library.
-// SE-9588
-* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, this call `digital-users` is the third-level resource would cause the issue:
-+
-----
-/channels/{channel-code}/digital-users/{digital-user-id}
-----
-// SE-8999
-* The mocking service returned a 400 error for a PATCH request that met these two conditions:
-** The request had a JSON body of a type that was defined in a library.
-** The library defined the type with an `!include` tag.
 
 == API Designer 0.4.13 Release Notes
 
