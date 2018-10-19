@@ -42,6 +42,13 @@ endif::[]
 
 // DESIGNER-2160
 * When a `uses` node referred to a missing file, the error message was not helpful. The error message has been revised.
+// DESIGNER-2460
+The API Designer might take so long to validate a RAML API specification and show the API summary that the browser would time out.
+// DESIGNER-2466
+The API editor did not throw an exception when an incorrect JSON schema was declared.
+// DESIGNER-2727
+A project could be opened without errors in the API editor in Design Center but with errors in API Designer in API Manager.
+// DESIGNER-2750
 // DESIGNER-2873
 * No error message was displayed when a `uses` node specified an invalid path to a library.
 // SE-9588
