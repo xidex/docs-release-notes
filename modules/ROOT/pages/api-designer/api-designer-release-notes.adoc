@@ -36,32 +36,21 @@ endif::[]
 * <<API Designer 0.2.0 Release Notes>>
 
 == API Designer 0.4.14 Release Notes
-*October 24, 2018*
+October 24, 2018
 
-=== Fixed Issues
+The following issues were fixed in this release:
 
 // DESIGNER-2160
 * When a `uses` node referred to a missing file, the error message was not helpful. The error message has been revised.
 // DESIGNER-2460
-The API Designer might take so long to validate a RAML API specification and show the API summary that the browser would time out.
+* The API Designer might take so long to validate a RAML API specification and show the API summary that the browser would time out.
 // DESIGNER-2466
-The API editor did not throw an exception when an incorrect JSON schema was declared.
+* The API editor did not throw an exception when an incorrect JSON schema was declared.
 // DESIGNER-2727
-A project could be opened without errors in the API editor in Design Center but with errors in API Designer in API Manager.
-// DESIGNER-2750
-In some cases, 
+* A project could be opened without errors in the API editor in Design Center but with errors in API Designer in API Manager.
 // DESIGNER-2873
 * No error message was displayed when a `uses` node specified an invalid path to a library.
-// SE-9588
-* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, this call `digital-users` is the third-level resource would cause the issue:
-+
-----
-/channels/{channel-code}/digital-users/{digital-user-id}
-----
-// SE-8999
-* The mocking service returned a 400 error for a PATCH request that met these two conditions:
-** The request had a JSON body of a type that was defined in a library.
-** The library defined the type with an `!include` tag.
+
 
 == API Designer 0.4.13 Release Notes
 
