@@ -1,4 +1,4 @@
-= CloudHub Connector Release Notes
+= CloudHub Connector Release Notes for Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
