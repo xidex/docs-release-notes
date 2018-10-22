@@ -6,6 +6,8 @@ endif::[]
 
 == 2.0.1
 
+*October 2018*
+
 Fixed major issue when writting compressed streams.
 
 === Fixed Issues
