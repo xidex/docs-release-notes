@@ -22,7 +22,7 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15868[MULE-15868] | HTTP Listener double query string and URI params decoding because of URI usage.
+| link:https://www.mulesoft.org/jira/browse/MULE-15868[MULE-15868] | HTTP Listener double query string and URI params were decoding because of URI usage.
 |=== 
 
 == 1.3.2
