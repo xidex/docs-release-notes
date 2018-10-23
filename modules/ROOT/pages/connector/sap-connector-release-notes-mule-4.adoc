@@ -4,13 +4,32 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: java connector, jco, release notes, sap
 
-*July 2018*
+*October 2018*
 
 _Premium_
 
 The Mule Runtime supports SAP integration through our Anypoint Connector for SAP, which is an SAP-certified Java connector that leverages the SAP Java Connector (JCo) libraries.
 
 Note: This connector is not supported for use with Anypoint Design Center.
+
+== Version 4.1.1
+
+*Oct 23th, 2018*
+
+[width="100%", cols=",", options="header"]
+|===
+|Software |Version
+|Mule Runtime|4.0.0
+|Anypoint Studio|7.0
+|Java|8
+|SAP Solution| ECC 6.0 or higher
+|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+* Duplicate Idoc elements were filtered. Now they are properly processed.
+
 
 == 4.1.0
 
