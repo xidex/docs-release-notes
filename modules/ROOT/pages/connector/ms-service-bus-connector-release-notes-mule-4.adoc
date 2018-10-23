@@ -13,10 +13,10 @@ _Select_
 
 === Compatibility
 
-[width="100%", cols=",", options="header"]
+[%header%autowidth.spread]
 |===
 |Software | Version
-|Mule Runtime | 4.0.0
+|Mule Runtime | 4.0.0 and later
 |Microsoft Azure Service Bus (Cloud) | -
 |Microsoft Windows Service Bus (on-premises) | -
 |===
@@ -31,7 +31,7 @@ None.
 
 === Known Issues
 
-* Automatic completion of queue/topic names, subscriptions and rules may not work in Design Center.
+* Automatic completion of queue and topic names, subscriptions and rules may not work in Design Center.
 * In Design Center, the Live View feature will not work for most operations. In addition to this, the application log may be flooded with several "Could not serialize object" errors.
 * The connector leaks connections while publishing a message to a topic using the default caching strategy. As a workaround, configure the connector to disable the caching strategy.
 
