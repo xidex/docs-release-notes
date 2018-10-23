@@ -27,6 +27,26 @@ The Mule 4 Salesforce connector has two active versions.
 
 Added support for Salesforce V43.
 
+== 9.3.5
+
+*October 22, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue where the connector Attachments were not supporting base64 encoded body
+
+* Fixed an issue on create ContentVersion object that was failing because the Content Data field was not serialized properly.
+
+* Fixed an issue for multiple operations(Batch info list, Batch info and Job info) that were going into an infinite loop because they were defaulting to XML content type. Some optional parameters were added so the user can specify the content type for the entity so that it will not fail anymore.
+
 == 9.3.4
 
 *October 8, 2018*
