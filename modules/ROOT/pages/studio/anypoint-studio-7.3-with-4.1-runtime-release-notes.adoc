@@ -45,7 +45,8 @@ To fix this issue you only need to update Studio to the latest 7.2.x version ava
 == What's New
 
 * Dataweave Everywhere. +
-You can now toggle between "literal" and "expression mode" using the new expression button. Expression mode, accepts and auto-suggestions dataweave 2.0.
+You can now toggle between "literal" and "Expression" modes using the new expression button. +
+When clicking the "Expression" mode, you can use auto-suggestions for Dataweave 2.0.
 +
 image::studio/anypoint-studio-7.3-with-4.1-runtime-release-notes-e98c6.png[align=center]
 +
