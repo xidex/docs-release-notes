@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*September 2018*
+*October 2018*
 
 _Premium_
 
@@ -13,7 +13,7 @@ xref:connectors::hl7/hl7-mllp-connector.adoc[HL7 MLLP Connector Guide]
 
 == 2.0.2
 
-*September 27, 2018*
+*October 1, 2018*
 
 === Compatibility
 

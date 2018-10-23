@@ -4,6 +4,34 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, email, connector, release notes, pop3, smtp, imap
 
+== 1.1.1
+
+*October 22, 2018*
+
+=== Fixed Issues
+
+* NoClassDefFoundError of Guava Class https://www.mulesoft.org/jira/browse/MULE-15883[(MULE-15883)]
+
+== 1.1.0
+
+*October 10, 2018*
+
+=== New Features and Enhancements
+
+Added the capability to poll emails from a mailbox for all the unread emails in it, generating a new message for each email that is found.
+
+Added Value Provider support for email folders, to display the possible folder values for the configured service.
+
+=== Fixed Issues
+
+* Email doesn't handle correctly multipart/alternative parts. https://www.mulesoft.org/jira/browse/MULE-14157[(MULE-14157)]
+* Email Connector exports internal classes. https://www.mulesoft.org/jira/browse/MULE-14454[(MULE-14454)]
+* Email connector does not work with Gmail's SSL port. https://www.mulesoft.org/jira/browse/MULE-14673[(MULE-14673)]
+* Email connector "replyToAddresses" is not populated when sending an Email. https://www.mulesoft.org/jira/browse/MULE-14965[(MULE-14965)]
+* Remove unnecessary String.toLowerCase calls (email). https://www.mulesoft.org/jira/browse/MULE-15252[(MULE-15252)]
+* Upgrade javax.mail to javax.mail-api 1.6.2. https://www.mulesoft.org/jira/browse/MULE-15331[(MULE-15331)]
+
+      
 *May 2018*
 
 == 1.0.2

@@ -12,7 +12,7 @@ The upgrade to the November 2017 or "Crowd" release changes the existing Anypoin
 
 == To Complete Upgrade to November Release
 
-Anypoint Platform provides these steps to complete the upgrade to the November 2017 Anypoint Platform software release:
+Anypoint Platform provides these steps to complete the upgrade to the xref:release-notes::platform/anypoint-november-release.adoc[November 2017 Anypoint Platform software release]:
 
 . Group your APIs. (Optional, recommended)
 . Request a time to upgrade using the green banner that lets you access the self-service upgrade portal. Only the organization owner can schedule the upgrade. If you do not see a banner, contact your Customer Success Manager to coordinate steps to upgrade.

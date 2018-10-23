@@ -6,6 +6,22 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== 1.1.100 - October 16, 2018
+
+This release includes the following fixes:
+
+* Fixed: Runtime Fabric reports disconnected status when leader is re-elected in some cases.
+* Fixed: Cluster status is not reported after connection to control plane is re-established.
+
+== 1.1.87 - October 5, 2018
+
+This release includes the following fixes:
+
+* Fixed: Unable to restart services if Runtime Fabric is offline for more than 12 hours.
+* Fixed: Removed sensitive resource URLs from log output.
+* Fixed: Side-channel test of connection to control plane when running via proxy.
+* Fixed: Increased time allowed for connecting to control plane during installation.
+
 == 1.1.55 - September 19, 2018
 
 This release includes the following fixes and enhancements:

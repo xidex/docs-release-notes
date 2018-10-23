@@ -6,6 +6,41 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== October 9, 2018
+
+4.1.3 Runtime Update:
+
+* Object Store V2 plugin update fixing the encoding of keys when deleting causing not found issue [SE-9505]
+* Batch crashes with ArrayList of HashMap as input [SE-9437]
+* SDK scopes process internal chains as blocking [SE-9315]
+* Cannot open a new cursor on a closed stream using batch processing [SE-9472]
+* DataWeave buffer output FileNotFoundException [SE-9379]
+* Failure to process subflow with async scopes [SE-9395]
+
+
+== October 5, 2018
+
+3.9.1 Runtime update:
+
+* Updated Object Store v2 plugin version to fix exception not being thrown as the Mule ObjectStore contract specifies. [SE-9551]
+
+3.9.0 Runtime update:
+
+* Updated Object Store v2 plugin version to fix exception not being thrown as the Mule ObjectStore contract specifies. [SE-9551]
+
+3.8.7 Runtime update:
+
+* Updated Object Store v2 plugin version to fix exception not being thrown as the Mule ObjectStore contract specifies. [SE-9551]
+
+3.8.6 Runtime update:
+
+* Updated Object Store v2 plugin version to fix exception not being thrown as the Mule ObjectStore contract specifies. [SE-9551]
+
+3.8.5 Runtime update:
+
+* Updated Object Store v2 plugin version to fix exception not being thrown as Mule the ObjectStore contract specifies ,[SE-9551]
+
+
 == September 21, 2018
 
 4.1.2 Runtime update:

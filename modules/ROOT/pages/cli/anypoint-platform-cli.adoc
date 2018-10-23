@@ -4,6 +4,23 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: cli, command line interface, command line, release notes, anypoint platform cli
 
+== Version 3.0.0 - October 5, 2018
+
+Anypoint CLI 3.x is not compatible with Anypoint Platform versions pre-Crowd release.
+
+To keep using CLI with pre-crowd release organization, use xref:runtime-manager::anypoint-platform-cli2.adoc[CLI 2.x ]
+
+This release of the Anypoint CLI inclues CLI commands for API Manager 2.x (crowd release)
+
+* Added support for API Manager v2.
+* Removed previous api-mgr commands (API Manage v1).
+* Renamed api-mgr applications * -> api-mgr contract *.
+* Renamed api-mgr tiers * -> api-mgr tier *.
+* Fixed an issue whereby if an API contained null values, it was trowing an error.
+* Added support for graphQL APIs.
+* Removed support for Node < 8.12.0.
+
+
 == Version 2.3.2 - April 3, 2018
 
 This release of the Anypoint CLI fixes the following issue:
