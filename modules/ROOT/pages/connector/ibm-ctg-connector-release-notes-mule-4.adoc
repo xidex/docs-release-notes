@@ -57,4 +57,4 @@ Note: JCA 1.6 is needed as a required library to overcome conflicts with JCA 1.5
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
