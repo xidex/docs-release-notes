@@ -1,0 +1,192 @@
+= Anypoint Studio 7.3 with Mule Runtime 4.1.4 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*October 26, 2018* +
+*Build ID:*
+
+<<migration,Skip to Migration Guide>>
+
+== Compatibility
+
+[cols="30a,70a"]
+|===
+| Product | Version
+| *Mule Runtime*
+| Version: 4.1.4
+
+|*Anypoint Studio*
+|Version: 7.3.0 +
+Build Id:
+
+|*Maven*
+|Version: 3.3.9
+
+|*DataWeave* +
+|Version: 2.1.5
+
+|*MUnit* +
+|Version: 2.1.4 (munit-studio-plugin)
+
+|*Eclipse* +
+|Version: 4.7.2
+
+|===
+
+=== Runtime Compatibility
+
+* Studio 7.3.0 comes bundled with Mule Runtime 4.1.4, however you can use it with earlier Mule Runtime versions as early as 4.1.1.
+
+=== Studio Compatibility
+
+* Projects created or updated with Studio 7.3.x or 7.2.x are not compatible with 7.1.x due to some improvements with the management of the mule-artifcat.json file. The content of the file was reduced and part of the content used to be required by Studio 7.1.x. +
+To fix this issue you only need to update Studio to the latest 7.2.x version available. See xref:studio::update-workspace.adoc[Updating Workspaces] for more information.
+* Workspaces created using Anypoint Studio 6.x or below are not compatible with Anypoint Studio 7 workspaces.
+
+== What's New
+
+* Dataweave Everywhere. +
+You can now toggle between "literal" and "expression mode" using the new expression button. Expression mode, accepts and auto-suggestions dataweave 2.0.
++
+image::anypoint-studio-7.3-with-4.1-runtime-release-notes-e98c6.png[]
++
+Additionally, using the *expression mode*, you can click the *New Map* button next to *Fields* to use the visual mapper to build expressions for individual fields.
++
+image::anypoint-studio-7.3-with-4.1-runtime-release-notes-8ac2f.png[]
+* Debugger Improvements. +
+** Studio features a cleaned up debugger view to help you inspect payload data. Right clicking on an object shows a contextual menu that includes:
+*** *Update Value* - Enables you to modify data on the fly to test flows.
+*** *Go to class* - Opens the selected class.
+*** *Copy expression* - Copies the Dataweave expression used to access the value (e.g.: payload.0.filename).
+*** *Add watch* - Automatically adds a new watch with the expression to access the value to the Watches menu.
+*** *Copy value* - Copies the Dataweave expression representing the structure of the selected object.
++
+image::anypoint-studio-7.3-with-4.1-runtime-release-notes-ddbe5.png[]
++
+** *Focus element*: Right clicking and selecting focus element on an object now takes you to the selected element on the canvas.
++
+image::anypoint-studio-7.3-with-4.1-runtime-release-notes-98301.png[]
+* Embedded Documentation. +
+Studio now offers contextual documentation inside the *Help* tab for all connectors.
++
+image::anypoint-studio-7.3-with-4.1-runtime-release-notes-e13c8.png[]
+* Enhanced Datasense. +
+The Datasense resolution speed has been significantly enhanced in this release.
+
+
+== Hardware Requirements
+
+* For most use cases, Anypoint Studio with the 4.1.3 Runtime does not change hardware or software requirements from the previous Studio 7  versions.
+* MuleSoft recommends a minimum of 4GB of free RAM available on a developer workstation. As applications become complex, consider adding more RAM.
+
+* 4GB of free memory available.
+* 2GHz CPU.
+* 10GB free hard drive space.
+
+== Software Requirements
+
+[cols="30a,70a"]
+|===
+| Software | Version
+|Java Environments
+| * Oracle JDK 1.8.0
+
+This version of Studio is not compatible with Java 9 or Java 10. +
+If you are having issues installing Studio, follow xref:7.2@studio::faq-jdk-requirement.adoc[this guide] to reconfigure your Java installation.
+
+|Operating Systems |* MacOS 10.12.0 +
+* Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10 +
+* RHEL 7.0 +
+* Ubuntu 15.04 or later
+|Suggested Web Browsers by Platform. +
+_Studio will always use the OS default web browser_ | * Windows: +
+** Microsoft Edge 25.0  +
+** Internet Explorer 11 +
+* Linux +
+** Mozilla Firefox 51.0.1  +
+* OS X +
+** Safari 10.1
+| Maven
+| Studio comes with Maven 3.3.9 bundled, but you can externally use the versions: 3.3.3 or your own  3.3.9
+|===
+
+[NOTE]
+--
+If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+--
+
+== Known Issues
+
+* Studio 7 only supports Mule 4.x projects. Due to the structure of projects, export format, xml and scripting language differences, we do not offer backwards compatibility with Mule 3.x runtimes.
+* Some existing features in Studio 6.x are not yet supported in Studio 7: Custom Policies, API Sync, Anypoint Private Cloud.
+* Anypoint Studio uses your configured default browser to display web content such as Exchange and the Runtime Manager UI when deploying an application to Anypoint Platform. If your default internet browser does not display this content correctly, you can configure Anypoint Studio to use a Mozilla/XULRunner runtime environment as the underlying renderer for the Web UI. +
+Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting Issues with Your Default OS Browser] for more details.
+* Copybook import fails with no message.
+* Copybook import file not copied to project.
+* Mule modules needs to provide icons, today many of the modules have the generic icon.
+* Running application "Pom.xml" is not updated when changing dependencies.
+* Debugger: payload shown while debugging is partial but there is no way to view the rest of the payload
+* Mule plugins with snapshot versions should always be regenerated.
+* Datasense/Runtime not working correctly through proxy on connectors using TCP/IP or connectors which don’t yet support it.
+* When importing a project with a runtime that is not installed in Studio there is no notification to the User.
+* Define Metadata - selected schema file does not exist when I have an example JSON set for the metadata type.
+
+== Bug Fixes
+
+* Cannot generate Sample data and Preview if defined metadata has more than 3 levels.
+* Metadata types are cached when deleting and creating a project with the same name.
+* MUnit Test Suite Message Flow view blank after restart (Studio 7.x, including 7.3 BETA).
+* Cannot open any operation editor after closing operation editor window.
+* When creating a VM Publish, the queue name is not found after configure the VM connector.
+* When setting target value field in HTTP Request, metada propagation is not set correctly.
+* Copy Paste keyboard shortcuts doesn't work.
+* SWT exception appears using an incorrect syntax for a Set Payload operator.
+* Logger Message field does not accept autocompletion of variables.
+* Evaluating expressions are missing the mime type on the tree.
+* Debugger doesn't allow modifications of entry maps (keys/values) on a second level nested.
+* Incorrect expression field syntax in a method section inside HTTP request.
+* When creating a variable target in DW, both properties trees are not shown.
+* Error propagate operation throws a IllegalArgumentException when clicking magnifying glass.
+* Error filling input document when a specific Transform Message is selected.
+* When setting metadata to a Choice field, it does not do nothing.
+* When switching to DW view in a expression field, an error is thrown.
+* When adding migrated REST connectors from Exchange, errors are shown and they can't be used.
+* DataWeave - Doing undo twice hangs Studio.
+* When importing a project, custom metadata is not shown.
+* When selecting a flow, delete button is disabled.
+* When opening a mule properties editor for the first time, an error is thrown..
+* [SE] Customer stated that the wording publishment is not a correct English word.
+* Projects which have an American API defined in exchange throw an error.
+* NPE when parsing XML.
+* When setting an expression, it does not allow spaces.
+* Scroll bar appear overlapped expression fields.
+* Missing icons when adding a connector from Exchange.
+* NPE when saving Global Configuration file.
+* Missing icons when creating a new global type.
+* Debugger not working properly with "route"s that have CONTENT parameters.
+* When adding an element into the canvas, the Mule Properties view is not always visible.
+* When deleting last mapping, it does not delete it and an error is thrown.
+* Html tags of element descriptions are not being parsed in the documentation view.
+* When deleting a project which has resolved metadata, it throws errors.
+* _In parameter_ mapping doesn't load dynamic metadata.
+* Unable to locate WSDL file error.
+* API Definition fails when importing it from Design Center.
+* Studio freezes when editing medium size DataWeve file in the transform component.
+* When switching to expression mode, error marker is not shown correctly.
+* When creating data from preview, it does not generate anything.
+* When doing undo in a DW script editor, an error is thrown..
+* When opening a DW editor in a field, lines are not drawn correctly.
+* When dragging and dropping a mp over the source area, an error is thrown.
+* When opening Studio in windows machines, splash is not shown.
+* Fix Element title in the documentation view.
+* Transform Message Component UI is not displaying properly.
+* Useless field when creating a Mule Configuration File.
+* Debugger does not highlight the processor that it's executing.
+* When configuring a File operation, attributes are duplicated in XML and errors are not shown properly.
+
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].
