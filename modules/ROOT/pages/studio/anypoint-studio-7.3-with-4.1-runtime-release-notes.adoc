@@ -6,8 +6,6 @@ endif::[]
 *October 26, 2018* +
 *Build ID:*
 
-<<migration,Skip to Migration Guide>>
-
 == Compatibility
 
 [cols="30a,70a"]
@@ -49,11 +47,11 @@ To fix this issue you only need to update Studio to the latest 7.2.x version ava
 * Dataweave Everywhere. +
 You can now toggle between "literal" and "expression mode" using the new expression button. Expression mode, accepts and auto-suggestions dataweave 2.0.
 +
-image::anypoint-studio-7.3-with-4.1-runtime-release-notes-e98c6.png[]
+image::studio/anypoint-studio-7.3-with-4.1-runtime-release-notes-e98c6.png[align=center]
 +
 Additionally, using the *expression mode*, you can click the *New Map* button next to *Fields* to use the visual mapper to build expressions for individual fields.
 +
-image::anypoint-studio-7.3-with-4.1-runtime-release-notes-8ac2f.png[]
+image::studio/anypoint-studio-7.3-with-4.1-runtime-release-notes-8ac2f.png[align=center]
 * Debugger Improvements. +
 ** Studio features a cleaned up debugger view to help you inspect payload data. Right clicking on an object shows a contextual menu that includes:
 *** *Update Value* - Enables you to modify data on the fly to test flows.
@@ -62,15 +60,15 @@ image::anypoint-studio-7.3-with-4.1-runtime-release-notes-8ac2f.png[]
 *** *Add watch* - Automatically adds a new watch with the expression to access the value to the Watches menu.
 *** *Copy value* - Copies the Dataweave expression representing the structure of the selected object.
 +
-image::anypoint-studio-7.3-with-4.1-runtime-release-notes-ddbe5.png[]
+image::studio/anypoint-studio-7.3-with-4.1-runtime-release-notes-ddbe5.png[align=center]
 +
 ** *Focus element*: Right clicking and selecting focus element on an object now takes you to the selected element on the canvas.
 +
-image::anypoint-studio-7.3-with-4.1-runtime-release-notes-98301.png[]
+image::studio/anypoint-studio-7.3-with-4.1-runtime-release-notes-98301.png[align=center]
 * Embedded Documentation. +
 Studio now offers contextual documentation inside the *Help* tab for all connectors.
 +
-image::anypoint-studio-7.3-with-4.1-runtime-release-notes-e13c8.png[]
+image::studio/anypoint-studio-7.3-with-4.1-runtime-release-notes-e13c8.png[align=center]
 * Enhanced Datasense. +
 The Datasense resolution speed has been significantly enhanced in this release.
 
