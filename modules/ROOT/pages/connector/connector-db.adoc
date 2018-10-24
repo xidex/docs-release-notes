@@ -45,7 +45,6 @@ Mule 4.1.1
 | link:https://www.mulesoft.org/jira/browse/MULE-15748[MULE-15748] | MySql default driver causes a memory leak 
 | link:https://www.mulesoft.org/jira/browse/MULE-15644[MULE-15644] | DB On Table Row should hint available columns for ID and Watermark using Value Providers  
 |=== 
- 
 
 == 1.4.0
 
