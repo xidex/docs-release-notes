@@ -5,7 +5,7 @@ endif::[]
 :keywords: release notes, salesforce, connector
 
 *September 2018* -- v9.4.0 +
-*October 2018* -- v9.3.4 with recent patch
+*October 2018* -- v9.3.5
 
 _Select_
 
@@ -41,11 +41,11 @@ Added support for Salesforce V43.
 
 === Fixed in this Release
 
-* Fixed an issue where the connector Attachments were not supporting base64 encoded body
+* Fixed an issue where the connector Attachments were not supporting base64 encoded body.
 
 * Fixed an issue on create ContentVersion object that was failing because the Content Data field was not serialized properly.
 
-* Fixed an issue for multiple operations(Batch info list, Batch info and Job info) that were going into an infinite loop because they were defaulting to XML content type. Some optional parameters were added so the user can specify the content type for the entity so that it will not fail anymore.
+* Fixed an issue for the Batch info list, Batch info, and Job info operations that were going into an infinite loop because they were defaulting to XML content type. Optional parameters were added so the user can specify the content type for the entity so that it will not fail any more.
 
 == 9.3.4
 
