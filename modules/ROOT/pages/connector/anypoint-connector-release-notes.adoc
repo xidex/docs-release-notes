@@ -22,6 +22,7 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/box-connector-release-notes-mule-4.adoc[Box Connector Release Notes (for Mule 4)]
 * xref:connector/cassandra-connector-release-notes-mule-4.adoc[Cassandra Connector Release Notes (for Mule 4)]
 * xref:mule-runtime/module-compression.adoc[Compression Module Release Notes (for Mule 4)]
+* xref:connector/cloudhub-connector-release-notes-mule-4.adoc[CloudHub Connector Release Notes (for Mule 4)]
 * xref:connector/connector-db.adoc[Database Connector Release Notes (for Mule 4)]
 * xref:connector/edifact-edi-connector-release-notes.adoc[EDIFACT EDI Connector Release Notes (for Mule 4)]
 * xref:connector/connector-email.adoc[Email Connector Release Notes (for Mule 4)]
@@ -144,5 +145,6 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum].
-* https://support.mulesoft.com[Contact MuleSoft Support].
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
+
