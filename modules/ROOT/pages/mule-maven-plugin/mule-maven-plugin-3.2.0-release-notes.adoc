@@ -1,0 +1,40 @@
+= Mule Maven Plugin 3.2.0 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This new release of the plugin includes the support to deploy applications into Runtime Fabric. +
+Also, we have manage to fix a small number of issues that were affecting the product.
+
+== Hardware and Software Requirements
+
+Hardware and Software Requirements
+
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+* Java 8
+* Maven 3.3.3, 3.3.9, 3.5.0
+
+== Compatibility
+
+* Mule 4.x
+* Anypoint Studio 7.x
+
+== Features and Functionality
+
+* MMP-374 - Create client for Runtime Fabric API
+* MMP-375 - Define deployment configuration for Runtime Fabric
+* MMP-377 - Create application deployer for Runtime Fabric
+
+== Fixed Issues
+
+* MMP-101 - Deployment into CloudHub disables custom logging
+* MMP-395 - Packager will export resources and packages out of the box if leaved empty in the mule-artifact.json
+* MMP-412 - Packaging policy from a parent module ends with empty repository
+* MMP-410 - Modify class loader model to include all dependency version for raml artifacts
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].
