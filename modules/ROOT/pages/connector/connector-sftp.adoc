@@ -16,7 +16,7 @@ endif::[]
 
 === Fixed Issues
 
-* Sftp Connector listener may skip a file given a special configuration. (MULE-15852)
+* SFTP Connector listener may skip a file given a special configuration. (MULE-15852)
 
 == 1.2.2
 
