@@ -6,9 +6,78 @@ endif::[]
 
 _Select_
 
-*November 2017*
+*October 2018*
 
 The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 instance.
+
+== 2.2.1 
+
+*October 25, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
+|Microsoft Dynamics 365 | 2.2.1
+|===
+
+=== Fixed in this Release
+
+* Fixed issue regarding Edm.GUID types which were sent as a string and because of a header dynamics wasn't able to parse the request. The header was changed and types are handled differently.
+
+== 2.2.0 
+
+*August 28, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
+|Microsoft Dynamics 365 | 2.2.0
+|===
+
+=== New features:
+
+* Create Modified Object trigger.
+* Create New Object trigger.
+
+== 2.1.2 
+
+*October 25, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
+|Microsoft Dynamics 365 | 2.1.2
+|===
+
+=== Fixed in this Release
+
+* Fixed issue regarding Edm.GUID types which were sent as a string and because of a header dynamics wasn't able to parse the request. The header was changed and types are handled differently.
+
+== 2.1.1 
+
+*August 21, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
+|Microsoft Dynamics 365 | 2.1.1
+|===
+
+=== Fixed in this version:
+
+* Microsoft Dynamics 365 Connector didn't renew the token. This issue was fixed by reimplementing error handling.
 
 == 2.0.0
 
@@ -30,4 +99,4 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
