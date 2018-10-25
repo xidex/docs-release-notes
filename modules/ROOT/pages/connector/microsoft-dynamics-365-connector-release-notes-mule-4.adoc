@@ -19,7 +19,7 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
 |Microsoft Dynamics 365 | 2.2.1
 |===
 
@@ -36,7 +36,7 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
 |Microsoft Dynamics 365 | 2.2.0
 |===
 
@@ -54,7 +54,7 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
 |Microsoft Dynamics 365 | 2.1.2
 |===
 
@@ -71,7 +71,7 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
 |Microsoft Dynamics 365 | 2.1.1
 |===
 
@@ -99,4 +99,4 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
