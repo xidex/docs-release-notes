@@ -16,6 +16,22 @@ endif::[]
 
 == API Mocking Service 1.1.12
 
+// SE-9588
+* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, this call `digital-users` is the third-level resource would cause the issue:
++
+----
+/channels/{channel-code}/digital-users/{digital-user-id}
+----
+// SE-8999
+* The mocking service returned a 400 error for a PATCH request that met these two conditions:
+** The request had a JSON body of a type that was defined in a library.
+** The library defined the type with an `!include` tag.
+// SE-8790
+* In some cases, validation of required content was not working for request bodies. Instead, payloads were accepted from the API Console without any validation.
+// SE-8745
+* In some cases, the Mocking Service accepted requests that did not contain required parameters.
+// SE-8666
+* When OAuth 2.0 was being used for authentication, the Mocking Service required users to provide both an authorization header and an access token. However, these two forms of authorization are mutually exclusive.
 
 
 == API Mocking Service 1.1.11
