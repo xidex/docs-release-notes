@@ -19,6 +19,8 @@ These release notes cover the following versions of these features:
 
 === Fixed Issues
 
+// SE-7433
+* A problem occurred in which an API specification could not be tested with the Mocking Service when OAuth 2.0 was used for security. Clicking *Authorize and Send* after filling in all of the required authentication information merely resulted in the message "Fill in the authorization form first".
 // SE-8323
 * The API editor could take too long to resolve one or more DataType resources. During that time, the API Summary pane was blank.
 // SE-8424
@@ -35,16 +37,7 @@ Cannot read property 'ast' of null at (1, 0)
 ----
 +
 The message has been improved.
-// SE-9588
-* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, this call `digital-users` is the third-level resource would cause the issue:
-+
-----
-/channels/{channel-code}/digital-users/{digital-user-id}
-----
-// SE-8999
-* The mocking service returned a 400 error for a PATCH request that met these two conditions:
-** The request had a JSON body of a type that was defined in a library.
-** The library defined the type with an `!include` tag.
+
 
 == 2.2.9
 *August 9, 2018*

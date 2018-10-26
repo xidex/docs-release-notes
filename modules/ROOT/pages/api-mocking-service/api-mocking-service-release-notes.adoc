@@ -34,6 +34,7 @@ endif::[]
 * When OAuth 2.0 was being used for authentication, the Mocking Service required users to provide both an authorization header and an access token. However, these two forms of authorization are mutually exclusive.
 
 
+
 == API Mocking Service 1.1.11
 
 August 21, 2018
