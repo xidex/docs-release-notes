@@ -1,4 +1,4 @@
-= Anypoint Platform Private Cloud Edition 2.0.0 Release Notes
+= Anypoint Platform Private Cloud Edition 2.0.1 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
