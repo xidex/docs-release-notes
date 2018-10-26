@@ -160,9 +160,9 @@ API Manager API (v2.x) leverages environments and API Autodiscovery.
 
 === Autodiscovery for New API Instances
 
-Auto-discovery changes only apply to the newly created APIs and new API instances.
+Auto-discovery changes apply to new API instances of existing or new APIs.
 
-* Post-upgrade, you have to configure the Autodiscovery element only for new APIs or API instances. Retrieve the necessary values from the API and the UI:
+* To configure the Autodiscovery element for new API instances, retrieve the necessary values from the API and the UI:
 ** `name=”groupId:{{groupId}}:assetId:{{assetId}}”`
 ** `version=”{{version}}:{{instanceId}}”`
 * See xref:2.x@api-manager::api-auto-discovery-new-concept.adoc[About API Autodiscovery]
