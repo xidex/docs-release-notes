@@ -13,6 +13,29 @@ endif::[]
 * <<API Mocking Service 1.1.2>>
 * <<API Mocking Service 1.1.1>>
 
+
+== API Mocking Service 1.1.12
+
+
+
+== API Mocking Service 1.1.11
+
+August 21, 2018
+
+This release fixes the following issue:
+
+* The mocking service did not return messages for the 400 response in with the correct styling.
+
+
+== API Mocking Service 1.1.10
+
+June 30, 2018
+
+This release fixes the following issue:
+
+* TLS 1.0 and 1.1 were still supported.
+
+
 == API Mocking Service 1.1.9
 
 May 19, 2018
