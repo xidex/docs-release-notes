@@ -156,7 +156,8 @@ Yes. If you have problems with the new experience of Anypoint Platform, you can 
 ** `version=”{{version}}:{{instanceId}}”`
 ** Auto-discovery changes only apply to the newly created APIs and its instances The existing APIs remain unaffected even after the upgrade. New auto-discovery changes only apply to the newly created APIs and its instances.
 * API Manager API (v2.x) is available to leverage all new API Manager capabilities.
-* User permissions model has changed to be action-based at the environment level, which is aligned to the rest of the management center. After the upgrade, administrators should set environment-level permissions for all users. Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
+* User permissions model has changed to be action-based at the environment level (See xref:2.x@api-manager::environment-permission-task.adoc[To Grant Permission to Access Environments] +
+NOTE: Permissions are now aligned with the rest of the management center. After the upgrade, administrators should set environment-level permissions for all users. Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
 
 === API Designer
 
@@ -179,7 +180,7 @@ Yes. If you have problems with the new experience of Anypoint Platform, you can 
 * APIs utilizing an autodiscovery element now use API Manager instead.
 * API promotion to environments is a new feature that you can introduce as a step in your CI/CD pipeline.
 * Because the November release upgrade moves all portals and RAMLs, the old API cannot be used to modify, create, or delete them after the upgrade.
-* The pre-upgrade API Manager API can be used with APIs in the Unclassified environment with some restrictions (see below). There are also new environment-aware APIs, which also support the Unclassified environment, that you may start using (see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/api-manager-api/1.0.2/console/summary/[new API Manager API portal] and the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/proxies-xapi/1.0.1/[Proxies xAPI portal]).
+* The pre-upgrade API Manager API can be used with APIs in the Unclassified environment with some restrictions (see below). There are also new environment-aware APIs, which also support the Unclassified environment, that you may start using (see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/api-platform-api/[new API Manager API portal] and the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/proxies-xapi/1.0.1/[Proxies xAPI portal]).
 ** The following resources for managing RAMLs return 400. Use Design Center APIs instead.
 +
 [source,text,linenums]
@@ -205,7 +206,7 @@ organizations/{organizationId}/public/*
 
 The Anypoint Platform APIs section of this doc has links to the API documentation so you can update your pipeline per any of the below criteria:
 
-* CI/CD pipelines need to be reconstructed to accomodate the environments you plan to use for your APIs.
+* CI/CD pipelines need to be reconstructed to accomodate the environments you plan to use for your APIs. See blog post on https://blogs.mulesoft.com/dev/anypoint-platform-dev/how-to-build-continuous-integration-deployment-api-lifecycle/[How to build your CI/CD pipeline for the full API lifecycle]
 * If you call API Manager APIs to apply API management or policies, review the API Manager API and
 refactor your pipeline as needed.
 * If publishing to Exchange, review the new Exchange Maven Facade API and refactor as needed.
