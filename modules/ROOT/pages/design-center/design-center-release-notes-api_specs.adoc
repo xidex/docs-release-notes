@@ -23,14 +23,21 @@ These release notes cover the following versions of these features:
 * A problem occurred in which an API specification could not be tested with the Mocking Service when OAuth 2.0 was used for security. Clicking *Authorize and Send* after filling in all of the required authentication information merely resulted in the message "Fill in the authorization form first".
 // SE-7817
 * The API editor did not detect that an incorrect JSON schema was being referenced.
+// SE-7869
+* The API console pane of the API editor was sometimes not being refreshed as different types were being selected. The same problem could occur as different responses were selected.
+* There were a few formatting problems in the information displayed in the API console pane.
+// SE-8242
+* If a RAML API specification contained a DataType that extended another DataType, the information shown in the API console pane about the extending DataType could sometimes be incorrect.
 // SE-8323
-* The API editor could take too long to resolve one or more DataType resources. During that time, the API Summary pane was blank.
+* The API editor could take too long to resolve one or more DataType resources. During that time, the API console pane was blank.
 // SE-8424
 * When a RAML extension extended a file that used a library that was itself defined in a fragment, and the library included a trait with the `!include` tag, the API editor was unable to locate the trait.
+// SE-8464
+* If a RAML API fragment was defined multiple properties as `<propertyName>: string | nil`, the API console pane did not display any information, or did so only after a long delay, after the API specification that referenced the fragment was opened.
 // SE-9276
 * It was possible for projects imported into Anypoint Studio from the API editor in Design Studio to contain RAML errors that were not pointed out by the API editor.
 // SE-9545
-* RAML errors not reported by the API editor could cause problems in the API Summary pane, such as failures to display various pieces of information.
+* RAML errors not reported by the API editor could cause problems in the API console pane, such as failures to display various pieces of information.
 // SE-9284
 * If a `uses` node specified an invalid path to a library, the API editor displayed this unhelpful message:
 +
