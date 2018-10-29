@@ -20,7 +20,7 @@ endif::[]
 == API Mocking Service 2.0.0
 
 // SE-9588
-* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, this call `digital-users` is the third-level resource would cause the issue:
+* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, a call to this endpoint, in which `digital-users` is a third-level resource, would cause the issue:
 +
 ----
 /channels/{channel-code}/digital-users/{digital-user-id}
