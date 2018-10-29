@@ -32,9 +32,9 @@ endif::[]
 // SE-8790
 * In some cases, validation of required content was not working for request bodies. Instead, payloads were accepted from the API Console without any validation.
 // SE-8745
-* In some cases, the Mocking Service accepted requests that did not contain required parameters.
+* In some cases, the mocking service accepted requests that did not contain required parameters.
 // SE-8666
-* When OAuth 2.0 was being used for authentication, the Mocking Service required users to provide both an authorization header and an access token. However, these two forms of authorization are mutually exclusive.
+* When OAuth 2.0 was being used for authentication, the mocking service required users to provide both an authorization header and an access token. However, these two forms of authorization are mutually exclusive.
 
 
 
@@ -44,7 +44,7 @@ August 21, 2018
 
 This release fixes the following issue:
 
-* The mocking service did not return messages for the 400 response in with the correct styling.
+* The mocking service did not return messages for the 400 response in the correct styling.
 
 
 == API Mocking Service 1.1.10
@@ -53,7 +53,7 @@ June 30, 2018
 
 This release fixes the following issue:
 
-* TLS 1.0 and 1.1 were still supported.
+* TLS 1.0 and 1.1 were still supported. Now, only 1.2 is supported.
 
 
 == API Mocking Service 1.1.9
