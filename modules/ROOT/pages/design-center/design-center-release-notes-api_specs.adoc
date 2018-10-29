@@ -19,7 +19,7 @@ This release contains an enhancement and fixes a number of issues.
 
 === Enhancement
 
-The API editor is now using the AMF parser. This parser checks for full conformance with the RAML specification (either 0.8 or 1.0) that is being used for an API specification. If you reopen in the API editor any RAML API specifications that have already been published, you might find that there are instances of invalid RAML that the previous parser did not flag. For more information about what to do in such cases, see xref:design-center::design-modify-raml-specs-conform.adoc[Modify Published RAML API Specifications to Conform Completely to RAML 0.8 or 1.0]
+The API editor is now using the AMF parser. This parser checks for full conformance with the RAML specification (either 0.8 or 1.0) that is being used for an API specification. If you reopen in the API editor any RAML API specifications that have already been published, you might find that there are instances of invalid RAML that the previous parser did not flag. For more information about what to do in such cases, see xref:design-center::design-modify-raml-specs-conform.adoc[Modify Published RAML API Specifications to Conform Completely to RAML 0.8 or 1.0].
 
 The AMF parser is at version 2.0.0.
 
