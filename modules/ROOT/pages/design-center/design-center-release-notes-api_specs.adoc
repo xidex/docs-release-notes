@@ -34,6 +34,10 @@ These release notes cover the following versions of these features:
 * When a RAML extension extended a file that used a library that was itself defined in a fragment, and the library included a trait with the `!include` tag, the API editor was unable to locate the trait.
 // SE-8464
 * If a RAML API fragment was defined multiple properties as `<propertyName>: string | nil`, the API console pane did not display any information, or did so only after a long delay, after the API specification that referenced the fragment was opened.
+// SE-9121
+* The API editor was requiring the media type to be declared for message bodies, even though the RAML specifications state that `mediaType` is optional for `body` nodes.
+// SE-9269
+* The Mocking Service was not presenting a choice of authentication methods when a basic securityScheme was being referenced from a library RAML fragment.
 // SE-9276
 * It was possible for projects imported into Anypoint Studio from the API editor in Design Studio to contain RAML errors that were not pointed out by the API editor.
 // SE-9545
