@@ -17,7 +17,7 @@ Depending on the connectivity conditions while using Workday connector in Anypoi
 
 == 10.0.0
 
-*October 8, 2018*
+*October 30, 2018*
 
 [%header%autowidth.spread]
 |===
