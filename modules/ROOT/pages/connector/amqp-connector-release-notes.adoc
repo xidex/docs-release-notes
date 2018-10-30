@@ -10,7 +10,7 @@ endif::[]
 _Select_
 
 AMQP Connector has two active versions each supporting different versions of the RabbitMQ library. AMQP Connector
-version 3.8.2 supports RabbitMQ client library 5.3.0 and requires JDK 8 and later. AMQP Connector 3.7.11 supports RabbitMQ client library 4.6.0.
+version 3.8.3 supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Connector 3.7.11 supports RabbitMQ client library 4.6.0.
 
 == 3.8.3
 
@@ -29,7 +29,7 @@ version 3.8.2 supports RabbitMQ client library 5.3.0 and requires JDK 8 and late
 
 === Fixed in this Release
 
-Minor 3.8.x is not adding amqp dependencies in studio. (AMQP-104)
+Minor 3.8.x is not adding AMQP dependencies in Studio. (AMQP-104)
 
 == 3.8.2
 
