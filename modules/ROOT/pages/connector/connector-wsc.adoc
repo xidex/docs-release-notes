@@ -10,12 +10,12 @@ endif::[]
 
 === New Features and Enhancements
 
-This release includes major performance improvements on resolving values for configuration 
+This release includes major performance improvements to resolving values for configuration 
 and DataSense.
 
 === Known Limitations and Workarounds
 
-* RPC WSDLs are not supported
+* RPC WSDLs are not supported.
 
 === Fixed Issues
 
@@ -23,9 +23,9 @@ and DataSense.
 * Improve the WSC value provider performance. (MULE-15885) 
 * WSC should allow timeout configuration for default HTTP config. (MULE-15844) 
 * Make WSC take advantage of the metadata cache. (MULE-15551) 
-* Upgrade commons-lang3 to 3.7 (MULE-15082) 
+* Upgrade commons-lang3 to 3.7. (MULE-15082) 
 * Upgrade Guava to 25.1. (MULE-15079) 
-* WSC cannot load wsdl files inside jar files. (MULE-14996) 
+* WSC cannot load WSDL files inside JAR files. (MULE-14996) 
 
 *March 2018*
 
