@@ -25,7 +25,7 @@ Not applicable.
 |=== 
 |Issue |Description
 // Fixed Issues 
-| EE-6372 | Mule.bat in windows set the WRAPPER_WORKING_DIR incorrectly. This produces an error when trying to install the license using a relative path. As a workaround it is needed to use the absolute path of the license file.  
+| EE-6372 | `Mule.bat` in Windows set the WRAPPER_WORKING_DIR incorrectly. This produces an error when trying to install the license using a relative path. As a workaround, you need to use the absolute path of the license file.  
 |===  
 
 == Upgrade Requirements 
