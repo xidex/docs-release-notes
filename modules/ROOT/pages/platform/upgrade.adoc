@@ -153,9 +153,9 @@ API Manager API (v2.x) leverages environments and API Autodiscovery.
 
 === Environments and Permissions
 
-* All APIs created using pre-upgrade version of API Manager appear in the "Unclassified" Environment after the upgrade
+* All APIs created using the pre-upgrade version of API Manager appear in the "Unclassified" Environment after the upgrade.
 * APIs in the Unclassified environment can be classified into their corresponding environment. Once an API is classified and is then promoted, it results in a *new* API instance.
-* User permissions model is now action-based, and set for users at the environment level, which is aligned to the rest of the management center. Administrators should set environment-level permissions for all users after the upgrade. 
+* The user permissions model is now action-based and set for users at the environment level, which is aligned to the rest of the Management Center. Administrators should set environment-level permissions for all users after the upgrade. 
 * Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
 
 === Autodiscovery for New API Instances
