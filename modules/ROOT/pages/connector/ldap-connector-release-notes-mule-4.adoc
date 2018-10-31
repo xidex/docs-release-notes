@@ -6,9 +6,47 @@ endif::[]
 
 _Select_
 
-*November 2017*
+*October 2018*
 
 The Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network. The LDAP connector allows Mule applications to interact with LDAP servers.
+
+== 3.1.1
+
+*October 26, 2018*
+
+=== Compatibility
+
+The LDAP Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.0.0 and later
+|Java|1.8 or higher
+|===
+
+=== Fixed in this Release
+
+* The connector failed when the `authentication` parameter was not set. This was fixed and now it works as expected.
+
+== 3.1.0
+
+*September 13, 2017*
+
+=== Compatibility
+
+The LDAP Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.0.0 and later
+|Java|1.8 or higher
+|===
+
+=== Features
+
+* The connector now has 2 triggers one for new objects and one for modified objects. Using these 2 triggers one can receive notifications if ldap entries are created or updated since the app was started or since a configured timestamp that can be specified when configuring the trigger.
 
 == 3.0.0
 
