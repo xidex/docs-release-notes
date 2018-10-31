@@ -21,15 +21,12 @@ Mule Runtime 4.1.4 includes the following enhancements, changes, and fixes:
 Not applicable. 
  
 == Known Limitations and Workarounds 
- 
-Not applicable.
-
-//// 
 [%header,cols="15a,85a"] 
-|===
-|Issue |Description
 |=== 
-////
+|Issue |Description
+// Fixed Issues 
+| EE-6372 | `Mule.bat` in Windows set the WRAPPER_WORKING_DIR incorrectly. This produces an error when trying to install the license using a relative path. As a workaround, you need to use the absolute path of the license file.  
+|===  
 
 == Upgrade Requirements 
  

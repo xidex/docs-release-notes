@@ -4,9 +4,15 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, AMQP, connector, release notes
 
-*October 2018*
-
 _Select_
+
+== 1.1.1
+
+*October 29, 2018*
+
+=== Fixed Issues
+
+* Transformer service incorrectly transformed byte array. (AMQP-105)
 
 == 1.1.0
 
@@ -21,6 +27,14 @@ _Select_
 === Fixed Issues
 
 * AMQP module ignores quality of service in listener. (AMQP-102)
+
+== 1.0.2
+
+*October 29, 2018*
+
+=== Fixed Issues
+
+* transformer service incorrectly transforms byte array. (AMQP-105)
 
 == 1.0.1
 

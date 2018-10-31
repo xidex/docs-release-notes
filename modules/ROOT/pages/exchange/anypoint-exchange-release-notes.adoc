@@ -25,7 +25,7 @@ We are pleased to announce the general availability of the latest release of Any
 
 * Managed categories to allow Exchange administrators and Organizations owners to create categories and group Exchange assets.
 * Exchange contributors can now organize assets into different groups to improve asset browsing and discovery.
-* Custom fields allow Exchange administrators and contributors to extend existing asset metadata.
+* Custom fields allow Exchange administrators and contributors to extend existing asset attributes through the API.
 * Ability to reorder pages on asset detail page.
 * Public content including Anypoint Connectors, Templates, and Examples is now available in Exchange EU.
 

@@ -6,6 +6,44 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+
+== October 30, 2018
+
+3.8.5 Runtime Update:
+
+* Payload expression transform error [SE-9452]
+
+
+== October 29, 2018
+
+4.1.4 Runtime Update:
+
+* Cron schedulers were not properly registered [SE-9861]
+
+
+== October 26, 2018
+
+4.1.4 Runtime Update:
+
+* Event instances were kept too long in the buffer [SE-9556]
+
+3.9.1 Runtime Update:
+
+* `NullPointerException` while refreshing access token in OAuth with Client Credentials [SE-9613]
+* Response encoding being replaced in Web Service Consumer [SE-9298]
+* Payload expression transform error [SE-9452]
+
+3.9.0 Runtime Update:
+
+* Response encoding being replaced in Web Service Consumer [SE-9298]
+* Attachment order not being honored in multipart-form-data request [SE-7595]
+
+3.8.5 Runtime Update:
+
+* Attachment order not being honored in multipart-form-data request [SE-7595]
+* Transformation graph incorrectly overridden [SE-7162]
+
+
 == October 9, 2018
 
 4.1.3 Runtime Update:
