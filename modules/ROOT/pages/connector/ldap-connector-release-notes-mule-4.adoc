@@ -18,7 +18,7 @@ The Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral, ind
 
 The LDAP Connector is compatible with:
 
-[%header%autowidth]
+[%header%autowidth.spread]
 |===
 |Application/Service|Version
 |Mule Runtime|4.0.0 and later
@@ -37,7 +37,7 @@ The LDAP Connector is compatible with:
 
 The LDAP Connector is compatible with:
 
-[%header%autowidth]
+[%header%autowidth.spread]
 |===
 |Application/Service|Version
 |Mule Runtime|4.0.0 and later
