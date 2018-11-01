@@ -13,7 +13,6 @@ Version: 1.5.0
 * View
 ** Added new text field to allow searching for nodes (services).
 ** Added dimming functionality for when service is selected. Clicked node and its dependencies will show and other services will be grayed out.
-** Updated location of the colored metrics legend. Loading message and colored legend are now below metric type.
 
 
 == October 3, 2018
