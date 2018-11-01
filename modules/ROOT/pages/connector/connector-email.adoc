@@ -10,7 +10,7 @@ endif::[]
 
 === Fixed Issues
 
-* Email connector doesn't communicate correctly the structure of returned objects (MULE-15921)
+* Email connector does not correctly communicate the structure of returned objects. (MULE-15921)
 
 == 1.1.1
 
