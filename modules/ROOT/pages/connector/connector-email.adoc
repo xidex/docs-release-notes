@@ -4,6 +4,14 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, email, connector, release notes, pop3, smtp, imap
 
+== 1.1.2
+
+*November 1, 2018*
+
+=== Fixed Issues
+
+* Email connector does not correctly communicate the structure of returned objects. (MULE-15921)
+
 == 1.1.1
 
 *October 22, 2018*
