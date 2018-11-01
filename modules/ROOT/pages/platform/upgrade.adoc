@@ -96,6 +96,10 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 There is no downtime during the API grouping or the automated migration. We do, however, advise not to use API Manager during the upgrade process to prevent any data inconsistency. After the upgrade, classification of APIs into environments may cause downtime due to proxy restart.
 
+*Do API policies remain in effect during the upgrade?*
+
+Yes, API policies will remain in effect.
+
 *How do I cancel my upgrade?*
 
 After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email will be sent. For help, e-mail crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
