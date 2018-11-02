@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, connectors, amazon, sqs
 
-*December 2017*
+*November 018*
 
 _Select_
 
@@ -13,7 +13,7 @@ The Amazon SQS cloud connector provides an easy way to interface with the Amazon
 *Connector Guide*: xref:3.9@mule-runtime::amazon-sqs-connector.adoc[Amazon SQS Connector]
 
 [IMPORTANT]
-Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions will remain freely available to the community.
+Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions remain freely available to the community.
 
 == 4.3.0
 
@@ -30,13 +30,16 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 === Features
 
-* The AWS SQS Connector now supports Canada (Central) (ca-central-1) and EU (London) (eu-west-2)
+* The AWS SQS Connector now supports Canada (Central) (ca-central-1) and EU (London) (eu-west-2).
 
 === Fixed in this Release
 
-* _Connector continues retrieving messages when flow is stopped_. In previous versions the connector continued retrieving messages after the mule-app was stopped. In current version, once the mule-app is stopped the connector stops retrieving messages.
-* _Multiple connections established_. Previously, the connector would make a high number of connections, even if the polling was set to a high value. This is now fixed.
-* _Connector stops working after receiving an error 500 from Amazon_. The connector stopped receiving messages when a Status Code 500 was received from Amazon. This was fixed, and the connector will attempt a reconnection in cases like this.
+* Connector continues retrieving messages when flow is stopped. +
+In previous versions, the connector continued retrieving messages after the Mule application stopped. In teh current version, after the Mule application stops, the connector stops retrieving messages.
+* Multiple connections established. +
+Previously, the connector would make a high number of connections, even if the polling was set to a high value. This is now fixed.
+* Connector stops working after receiving an error 500 from Amazon. +
+The connector stopped receiving messages when a status code 500 was received from Amazon. This was fixed, and the connector now attempts a reconnection in cases like this.
 
 == 4.2.1
 
