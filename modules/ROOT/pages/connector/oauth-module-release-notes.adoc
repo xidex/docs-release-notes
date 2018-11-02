@@ -2,155 +2,116 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, oauth, module, release notes
 
 == 1.1.8
 
-*Nov 2, 2018*
+*November 2, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.1*
-
-=== New Features and Enhancements
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-14822[MULE-15809] | MULE-15809: setting refreshTokenWhen=true in oauth:authorization-code-grant-type fails with exception
-|===
+* Setting `refreshTokenWhen=true` in oauth:authorization-code-grant-type fails with an exception. ( https://www.mulesoft.org/jira/browse/MULE-15809[MULE-15809])
+
 
 == 1.1.7
 
-*Nov 2, 2018*
+*November 2, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.1*
-
-=== New Features and Enhancements
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-15809[MULE-15809] | Setting refreshTokenWhen=true in oauth:authorization-code-grant-type fails with exception
-|===
+* Setting `refreshTokenWhen=true` in oauth:authorization-code-grant-type fails with an exception. ( https://www.mulesoft.org/jira/browse/MULE-15809[MULE-15809])
 
 == 1.1.6
 
-*Nov 1, 2018*
+*November 1, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.1*
-
-=== New Features and Enhancements
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-11272[MULE-11272] | Support non-blocking in OAuth http calls
-|===
-
+* Support non-blocking in OAuth HTTP calls. (https://www.mulesoft.org/jira/browse/MULE-11272[MULE-11272])
 
 == 1.1.5/1.1.4
 
-*Aug 14, 2018*
+*August 14, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.0*
-
-=== New Features and Enhancements
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-15539[MULE-15539] | OAuth: Provide option `encodeClientCredentialsInBody` in authCode
-|===
+* OAuth: Provide option `encodeClientCredentialsInBody` in authCode. (https://www.mulesoft.org/jira/browse/MULE-15539[MULE-15539])
 
 == 1.1.3
 
 *May 7, 2018*
 
-=== Min Mule Version
-*Mule 4.1.0*
+=== Minimum Mule Version
 
-=== New Features and Enhancements
+*Mule 4.1.0*
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-14822[MULE-14822] | ConfigurationException: Element 'tokenManagerConfig-MyCon
-|===
-
+* ConfigurationException: Element 'tokenManagerConfig-MyConfigName' is not defined in the Mule Registry. (https://www.mulesoft.org/jira/browse/MULE-14822[MULE-14822])
 
 == 1.1.2
 
 *May 7, 2018*
 
-=== Min Mule Version
-*Mule 4.1.0*
+=== Minimum Mule Version
 
-=== New Features and Enhancements
+*Mule 4.1.0*
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-14822[MULE-14822] | ConfigurationException: Element 'tokenManagerConfig-MyConfigName' is not defined in the Mule Registry
-|===
+* ConfigurationException: Element 'tokenManagerConfig-MyConfigName' is not defined in the Mule Registry. (https://www.mulesoft.org/jira/browse/MULE-14822[MULE-14822])
 
 == 1.1.1
 
-*Jan 23, 2018*
+*January 23, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.0*
-
-=== New Features and Enhancements
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-14544[MULE-14544] | Provide a singleton MultiMap instance
-|===
+* Provide a singleton MultiMap instance. (https://www.mulesoft.org/jira/browse/MULE-14544[MULE-14544])
+
 
 == 1.1.0
 
-*Jan 23, 2018*
+*January 23, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.0*
-
-=== New Features and Enhancements
 
 === Upgrade Requirements
 
-This version will not work with Mule 4.0.0, you will need to move to 4.1.0 or a higher version to use it.
+This version does not work with Mule 4.0.0, you need to move to 4.1.0 or a higher version to use it.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-14446[MULE-14446] | OAuth Module exports internal classes
-| https://www.mulesoft.org/jira/browse/MULE-14379[MULE-14379] | Users should not be able to use an expression when configuring a proxy
-| https://www.mulesoft.org/jira/browse/MULE-14160[MULE-14160] | HTTP Connector does not route OAuth tokens request through proxy
-|===
+* OAuth Module exports internal classes. (https://www.mulesoft.org/jira/browse/MULE-14446[MULE-14446])
+* Users should not be able to use an expression when configuring a proxy. (https://www.mulesoft.org/jira/browse/MULE-14379[MULE-14379])
+* HTTP Connector does not route OAuth tokens request through proxy. (https://www.mulesoft.org/jira/browse/MULE-14160[MULE-14160])
+
 
 == 1.0.0
 
-*Nov 27, 2017*
+*November 27, 2017*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.0.0*
