@@ -31,7 +31,7 @@ This release fixes issues.
 
 * Update reference docs for Subscriber parameters. (MQ-1340)
 * MQ Subscriber: Needs to shutdown gracefully when stopped. (MQ-1338)
-* MQ connector does not removed expired messages from a preserved buffer. (MQ-1333)
+* MQ connector does not remove expired messages from a preserved buffer. (MQ-1333)
 * MQ connector blocks all app I/O threads when invoked concurrently. (MQ-1324)
 * MQ connector prefetch limit is ignored. (MQ-1323)
 * MQ Subscriber picks up messages very slowly from a queue. (MQ-1322)
