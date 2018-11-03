@@ -21,17 +21,17 @@ Reference: https://mulesoft.github.io/mule-ldap-connector/[Mule LDAP Connector]
 
 The LDAP Connector is compatible with:
 
-[%header%autowidth]
+[%header%autowidth.spread]
 |===
 |Application/Serice|Version
 |Mule Runtime|3.5.0 or later
-|Java|1.7 or later
+|Java|1.7 or 1.8
 |===
 
 === Fixed in this Release
 
-* Log levels changed for operations which manipulate with attributes.
-* Value of attribute shown in logs is masked when attribute name is "password".
+* Log levels changed for operations that manipulate with attributes.
+* Value of an attribute shown in the logs is masked when the attribute name is "password".
 
 == 2.2.0
 
