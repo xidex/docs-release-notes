@@ -9,6 +9,7 @@ This document describes any new features and enhancements, known limitations, is
 
 === New Features and Enhancements
 
+* Environment-wide reporting on application performance, including requests, failures, CPU and memory utilization. (Requires a Titanium subscription)
 * Performance Improvements
 ** All static resources are stored on a content delivery network (CDN).
 ** Resources are prefetched on page load.
