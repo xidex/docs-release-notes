@@ -6,6 +6,17 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== Nov 5, 2018
+3.9.0 Runtime Update:
+* Let customer fix invalid cron schedules after start [SE-8632]
+* Internal HTTP client enhacnements
+* Security enhancements
+
+3.9.1 Runtime Update:
+* Let customer fix invalid cron schedules after start [SE-8632]
+* Internal HTTP client enhacnements
+* Security enhancements
+
 == Nov 2, 2018
 4.0.0 Runtime Update:
 
