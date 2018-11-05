@@ -22,6 +22,7 @@ Anypoint Platform supports the following browsers:
 
 This release provides this new feature:
 
+*  API Manager 2.x users will get access to Secrets Manager. 
 *  Configure, secure & deploy HTTPs proxies using certificates (keystore/truststore) stored in Secrets Manager. This feature will be available for Mule 4 APIs deployed to CloudHub & Hybrid deployment targets. 
 
 
