@@ -1,0 +1,32 @@
+= APIkit Mule4-1.1.8 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== What's New
+
+There are no new features in this version. There are just a few enhancements and bug fixes.
+
+== Compatibility
+
+* Mule Runtime 4.1.2 and later
+* Anypoint Studio 7.2.0 and later
+* Java Parser RAML 1.0 v1.0.20
+* Java Parser RAML 0.8 v0.8.22
+* API Console 4.2.0
+
+== Fixed in the Release
+
+* APIKit is not auto-generating Transforms filled with example values when importing into Studio.
+* `mule-apikit-module` 1.1.10 is not in the maven repository.
+
+== Enhancements in this release
+
+* Use Mule Runtime resource loader to load API Specs.
+* Upgrade API Console Version to 4.2.1.
+* Use Mule Runtime resource loader to load API Specs from API Console.
+* Update apikit-metadata to new semantics for referencing resources.
+* Update Resource format for APISync resources.
+* Add tests to Metadata for APISync.
+* Define new scaffolder interface for API Sync.
+* Implement Scaffolder API Sync Interface.
