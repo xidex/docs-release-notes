@@ -18,13 +18,13 @@ endif::[]
 |===
 |Issue |Description
 // Features and ennhanncements 
-| link:https://www.mulesoft.org/jira/browse/MULE-15927[MULE-15927] | Allow HTTP requests to retry on all methods.
-| link:https://www.mulesoft.org/jira/browse/MULE-14667[MULE-14667] | Update reactor to 3.2.0.
-| link:https://www.mulesoft.org/jira/browse/MULE-15725[MULE-15725] | Make "clientCertificate" in HttpRequestAttributes lazy for HTTPS listeners.
-| link:https://www.mulesoft.org/jira/browse/MULE-15711[MULE-15711] | Upgrade sockets connector to 1.1.2.
-| link:https://www.mulesoft.org/jira/browse/MULE-15550[MULE-15550] | Upgrade javax.mail to javax.mail-api 1.6.2.
-| link:https://www.mulesoft.org/jira/browse/MULE-15331[MULE-15331] | Make HTTP host examples consistent with each other.
-| link:https://www.mulesoft.org/jira/browse/MULE-15484[MULE-15484] | Add "maskedRequestPath" to HttpRequestAttributes.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15927[MULE-15927] | Allow HTTP requests to retry on all methods.
+| xref:https://www.mulesoft.org/jira/browse/MULE-14667[MULE-14667] | Update reactor to 3.2.0.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15725[MULE-15725] | Make "clientCertificate" in `HttpRequestAttributes` lazy for HTTPS listeners.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15711[MULE-15711] | Upgrade sockets connector to 1.1.2.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15550[MULE-15550] | Upgrade `javax.mail` to `javax.mail-api` 1.6.2.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15331[MULE-15331] | Make HTTP host examples consistent with each other.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15484[MULE-15484] | Add `maskedRequestPath` to `HttpRequestAttributes`.
 |=== 
   
 === Fixed Issues 
@@ -33,7 +33,7 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15665[MULE-15665] | Http null host when port is invalid
+| xref:https://www.mulesoft.org/jira/browse/MULE-15665[MULE-15665] | HTTP null host when port is invalid.
 |=== 
 
 == 1.3.3
@@ -54,7 +54,7 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15868[MULE-15868] | HTTP Listener double query string and URI params were decoding because of URI usage.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15868[MULE-15868] | HTTP Listener double query string and URI params were decoding because of URI usage.
 |=== 
 
 == 1.3.2
@@ -75,12 +75,12 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15756[MULE-15756] | HTTP Requester removes the payload when retrying. 
-| link:https://www.mulesoft.org/jira/browse/MULE-15722[MULE-15722] | HTTP Requester is sending `content-type` even if no payload is sent.
-| link:https://www.mulesoft.org/jira/browse/MULE-15428[MULE-15428] | Avoid unnecessary creation of `CaseInsensitive` maps during an HTTP request. 
-| link:https://www.mulesoft.org/jira/browse/MULE-15419[MULE-15419] | HTTP: Reduce request creation overhead.
-| link:https://www.mulesoft.org/jira/browse/MULE-11272[MULE-11272] | Support non-blocking in OAuth HTTP calls. 
-| link:https://www.mulesoft.org/jira/browse/MULE-15165[MULE-15165] | Changes in HTTP-API module break compilation of the HTTP connector. 
+| xref:https://www.mulesoft.org/jira/browse/MULE-15756[MULE-15756] | HTTP Requester removes the payload when retrying. 
+| xref:https://www.mulesoft.org/jira/browse/MULE-15722[MULE-15722] | HTTP Requester is sending `content-type` even if no payload is sent.
+| xref:https://www.mulesoft.org/jira/browse/MULE-15428[MULE-15428] | Avoid unnecessary creation of `CaseInsensitive` maps during an HTTP request. 
+| xref:https://www.mulesoft.org/jira/browse/MULE-15419[MULE-15419] | HTTP: Reduce request creation overhead.
+| xref:https://www.mulesoft.org/jira/browse/MULE-11272[MULE-11272] | Support non-blocking in OAuth HTTP calls. 
+| xref:https://www.mulesoft.org/jira/browse/MULE-15165[MULE-15165] | Changes in HTTP-API module break compilation of the HTTP connector. 
 //  
 // ------------------------------- 
 // - Enhancement Request Issues 
