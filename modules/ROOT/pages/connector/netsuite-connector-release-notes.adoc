@@ -12,6 +12,27 @@ _Select_
 
 xref:3.9@mule-runtime::netsuite-connector.adoc[Connector User Guide]
 
+== 7.7.1 
+
+*November 7, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|3.5 and later
+|Java|7
+|API|SuiteTalk 2017.1
+|===
+
+[NOTE]
+The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
+
+=== Fixed in this Release
+
+* Boolean and Date values were incorrectly mapped during processing API request.  
+
 == 7.7.0
 
 *June 8, 2018*
