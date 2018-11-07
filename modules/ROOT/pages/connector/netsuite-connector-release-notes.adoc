@@ -2,13 +2,12 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, netsuite, connector
 
-*June 2018*
+*November 2018*
 
 _Select_
 
-*Note:* The NetSuite version is not the same as the SuiteTalk API version. Your account may be running a different version of NetSuite than the version of the API you are using.
+IMPORTANT: The NetSuite version is not the same as the SuiteTalk API version. Your account may be running a different version of NetSuite than the version of the API you are using.
 
 xref:3.9@mule-runtime::netsuite-connector.adoc[Connector User Guide]
 
@@ -26,12 +25,9 @@ xref:3.9@mule-runtime::netsuite-connector.adoc[Connector User Guide]
 |API|SuiteTalk 2017.1
 |===
 
-[NOTE]
-The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
-
 === Fixed in this Release
 
-* Boolean and Date values were incorrectly mapped during processing API request.  
+* Boolean and date values were incorrectly mapped when processing an API request.  
 
 == 7.7.0
 
@@ -46,9 +42,6 @@ The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your ac
 |Java|7
 |API|SuiteTalk 2017.1
 |===
-
-[NOTE]
-The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
 
 === Features
 
@@ -70,9 +63,6 @@ The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your ac
 |Mule Runtime|3.5 and later
 |API|SuiteTalk 2017.1
 |===
-
-[NOTE]
-The NetSuite version is not the same as the SuiteTalk API version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
 
 === Features
 
