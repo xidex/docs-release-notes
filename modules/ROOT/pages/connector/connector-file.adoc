@@ -16,8 +16,8 @@ endif::[]
 
 === Fixed Issues
 
-* File Directory Listener leaks open files. (MULE-15687)
-* Directory param should have path support. (MULE-14128)
+* File Directory listener leaks open files. (MULE-15687)
+* Directory parameter should have path support. (MULE-14128)
 
 == 1.2.0
 
