@@ -4,7 +4,20 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, File, connector, runtime, release notes
 
-*Aug 2018*
+*Nov 2018*
+
+== 1.2.1
+
+*Nov 8, 2018*
+
+=== Min Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* File Directory listener leaks open files. (MULE-15687)
+* Directory parameter should have path support. (MULE-14128)
 
 == 1.2.0
 
