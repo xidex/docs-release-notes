@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, salesforce, connector
 
 *November 2018*
 
@@ -22,8 +21,8 @@ _Select_
 
 === Fixed in this Release
 
-* Fixed an issue on Create Batch Stream operation where the connector was not able to reconnect after the session became invalid
-* Fixed an issue on the Query operations where the execution was stopping if the query was invalid. Now a proper error is raised.
+* Fixed an issue in the Create Batch Stream operation where the connector was not able to reconnect after the session became invalid.
+* Fixed an issue in the Query operations where the execution was stopping if the query was invalid. Now a proper error is raised.
 
 == 9.4.2
 
