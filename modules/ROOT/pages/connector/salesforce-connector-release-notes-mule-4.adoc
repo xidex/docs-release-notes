@@ -2,11 +2,27 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, salesforce, connector
 
-*October 2018*
+*November 2018*
 
 _Select_
+
+== 9.4.3
+
+*November 9, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue in the Create Batch Stream operation where the connector was not able to reconnect after the session became invalid.
+* Fixed an issue in the Query operations where the execution was stopping if the query was invalid. Now a proper error is raised.
 
 == 9.4.2
 
@@ -19,8 +35,8 @@ _Select_
 |Anypoint Studio |Only works with Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
- 
- === Fixed in this Release
+
+=== Fixed in this Release
 
 * Fixed mapping for DescribeSObject.
 
