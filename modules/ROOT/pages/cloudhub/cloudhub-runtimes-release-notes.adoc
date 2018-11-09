@@ -6,18 +6,34 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== Nov 5, 2018
+== Nov 9, 2018
+
+3.9.1 Runtime Update:
+
+* Deployment issue when using IMAP reconnection strategy [SE-9544]
+
 3.9.0 Runtime Update:
+
+* Response encoding being replaced in Web Service Consumer [SE-9298]
+
+
+== Nov 5, 2018
+
+3.9.0 Runtime Update:
+
 * Let customer fix invalid cron schedules after start [SE-8632]
 * Internal HTTP client enhacnements
 * Security enhancements
 
 3.9.1 Runtime Update:
+
 * Let customer fix invalid cron schedules after start [SE-8632]
 * Internal HTTP client enhacnements
 * Security enhancements
 
+
 == Nov 2, 2018
+
 4.0.0 Runtime Update:
 
 * License update [SE-9564]
@@ -42,6 +58,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 * Expose mule deployment error [SE-8554, SE-9209]
 * Security enhancements
 
+
 == October 30, 2018
 
 3.8.5 Runtime Update:
@@ -54,6 +71,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 4.1.4 Runtime Update:
 
 * Cron schedulers were not properly registered [SE-9861]
+
 
 == October 26, 2018
 
@@ -71,7 +89,6 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 3.9.0 Runtime Update:
 
-* Response encoding being replaced in Web Service Consumer [SE-9298]
 * Attachment order not being honored in multipart-form-data request [SE-7595]
 * Expose mule deployment error [SE-8554, SE-9209]
 
@@ -155,6 +172,10 @@ All 3.8.x, 3.9.x and 4.1.x Runtime Updates:
 
 
 == August 14, 2018
+
+4.1.3 Runtime Update:
+
+* Cache locks CPU lite threads under load, address incomplete fix [SE-8937]
 
 4.1.2 Runtime Update:
 
