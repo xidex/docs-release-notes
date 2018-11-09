@@ -10,13 +10,31 @@ _Select_
 
 The Microsoft Dynamics Customer Relationship Management (CRM) connector lets you access the Microsoft Dynamics CRM SOAP Organization Service. You can add this connector to an Anypoint Studio flow and in Design Center.
 
+== 3.1.1 
+
+*November 9, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|Only works with Studio 7.0.0 and later
+|Dynamics CRM version|2013, 2015, 2016
+|===
+
+=== Fixed in this release
+
+* Failed LoseOpportunity request returned a generic error message. Fixed by enriching the error message with details.
+
 == 3.1.0
 
 *September 26, 2018*
 
 === Compatibility
 
-[%header, cols=","]
+[%header%autowidth.spread]
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 4.0.0 and 4.1.0 and later
