@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, dynamics, crm, connector
 
-*September 2018*
+*November 2018*
 
 _Select_
 
