@@ -13,6 +13,25 @@ The Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral, ind
 Guide: xref:3.9@mule-runtime::ldap-connector.adoc[LDAP Connector] +
 Reference: https://mulesoft.github.io/mule-ldap-connector/[Mule LDAP Connector]
 
+== 2.2.2
+
+*November 9, 2018*
+
+=== Compatibility
+
+The LDAP Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Serice|Version
+|Mule Runtime|3.5.0 and later
+|Java|1.7 and later
+|===
+
+=== Fixed in this Release
+
+* Fixed issue regarding transformation of LDAPEntry to string which was causing java.lang.ArrayIndexOutOfBoundsException.
+ 
 == 2.2.1 
 
 *November 2, 2018*
@@ -24,8 +43,8 @@ The LDAP Connector is compatible with:
 [%header%autowidth.spread]
 |===
 |Application/Serice|Version
-|Mule Runtime|3.5.0 or later
-|Java|1.7 or 1.8
+|Mule Runtime|3.5.0 and later
+|Java|1.7 and later
 |===
 
 === Fixed in this Release
@@ -47,7 +66,7 @@ The LDAP Connector is compatible with:
 |===
 |Application/Serice|Version
 |Mule Runtime|3.5.0 and later
-|Java|1.7 or 1.8
+|Java|1.7 and later
 |===
 
 === Features
