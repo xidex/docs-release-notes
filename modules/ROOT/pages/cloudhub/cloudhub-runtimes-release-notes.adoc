@@ -8,6 +8,11 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 == Nov 9, 2018
 
+4.1.4 Runtime Update:
+
+* DataWeave stream is closed before being consumed in batch aggregator [SE-9836]
+* Batch process not doing "on complete" step when results collection is empty [SE-9899]
+
 3.9.1 Runtime Update:
 
 * Addressed deployment issue when using the IMAP reconnection strategy. [SE-9544]
