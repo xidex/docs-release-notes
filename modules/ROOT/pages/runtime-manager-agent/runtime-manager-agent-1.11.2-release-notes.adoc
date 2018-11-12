@@ -6,7 +6,7 @@ This document describes new features and enhancements, known limitations, issues
 
 == New Features and Enhancements
 
-This release contains no new features or enhancements:
+This release contains no new features or enhancements.
 
 == Changes in This Release
 
@@ -16,7 +16,7 @@ This release contains no changes to existing functionality.
 
 This release contains the following issue fixes:
 
-* Fixed issue when updating scheduler configurations redirected logs to mule_ee.log instead of app logs.
+* Fixed issue where updating scheduler configurations redirected logs to mule_ee.log instead of app logs.
 
 == Known Limitations and Workarounds
 
