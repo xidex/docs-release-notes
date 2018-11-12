@@ -1,0 +1,49 @@
+= IBM MQ Connector Release Notes for Mule 4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, JMS, IBM MQ, connector, release notes
+
+== 1.1.1
+
+*November 7, 2018*
+
+=== New Features and Enhancements
+
+* Fixed issue that prevented to use the connector setting a Client ID, required for
+durable subscriptions.
+
+=== Fixed Issues
+
+* Unable to set the Client ID on an IBM MQ Connection
+
+== 1.1.0
+
+*October 26, 2018*
+
+=== New Features and Enhancements
+
+* Fixed issue that prevented the correct execution when using XA Transactions.
+* Message Listener can be configured to propagate the correlation id when doing a reply.
+
+=== Fixed Issues
+
+* XA Transaction is not working for IBM MQ Connector
+
+== 1.0.0
+
+*June 29, 2018*
+
+=== Features and Enhancements
+
+* Release of IBM MQ Connector, supporting Consumption, Publishing of messages through the JMS API.
+* https://docs.mulesoft.com/connectors/ibm/ibm-mq-connector[IBM MQ Documentation]
+
+=== Mule Version
+
+Mule 4.1.1
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com[Contact MuleSoft Support]
