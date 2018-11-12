@@ -16,7 +16,7 @@ This release contains no changes to existing functionality.
 
 This release contains the following issue fixes:
 
-* When updating a scheduler configuration the logger starts appending in mule_ee.log instead of the application log file.
+* Fixed issue when updating scheduler configurations redirected logs to mule_ee.log instead of app logs.
 
 == Known Limitations and Workarounds
 
@@ -28,4 +28,11 @@ There are no upgrade requirements for this release.
 
 == Compatibility Notes
 
-There are no compatibility notes for this release.
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Software|Version
+|Mule Runtime|3.6.x, 3.7.x, 3.8.x, 3.9.x
+|API Gateway|2.x and above
+|JDK    |JRE 1.7.0 (Recommended JRE 1.7.0_79/80)
+|Runtime Manager|V2.0
+|===
