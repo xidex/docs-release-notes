@@ -27,6 +27,16 @@ These release notes cover the following versions of these features:
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
 
+== 1.6.0
+*November 17, 2018*
+
+This release includes the following enhancements and fixes.
+
+=== Enhancements
+
+* A Transform card will no longer display an error if there is no sample data. Rather, it will display a hint that sample data needs to be present.
+* You can now return to the list of Design Center projects by clicking the name "Design Center" at the top of the canvas. The back arrow that was present in the top-left corner in previous releases has been removed.
+
 == 1.5.5
 *October 20, 2018*
 
