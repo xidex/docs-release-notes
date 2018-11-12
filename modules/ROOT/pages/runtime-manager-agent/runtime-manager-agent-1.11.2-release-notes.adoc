@@ -1,0 +1,31 @@
+= Runtime Manager Agent 1.11.2 Release Notes
+
+_November 12, 2018_
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager Agent, version 1.11.2.
+
+== New Features and Enhancements
+
+This release contains no new features or enhancements:
+
+== Changes in This Release
+
+This release contains no changes to existing functionality.
+
+== Fixed Issues
+
+This release contains the following issue fixes:
+
+* When updating a scheduler configuration the logger starts appending in mule_ee.log instead of the application log file.
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+
+== Compatibility Notes
+
+There are no compatibility notes for this release.
