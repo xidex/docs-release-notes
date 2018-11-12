@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-6-0,1.6.0>>
 * <<1-5-5,1.5.5>>
 * <<1-5-1,1.5.1>>
 * <<1-5-0,1.5.0>>
