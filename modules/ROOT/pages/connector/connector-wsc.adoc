@@ -10,7 +10,7 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed issue when resolving metadata of a WSDL that contains multiple operations with the same name for different ports  (MULE-15988)
+* Fixed issue when resolving metadata of a WSDL that contains multiple operations with the same name for different ports.  (MULE-15988)
 * Fixed issue when parsing embedded Base64 attachments. (MULE-15790)
 
 *October 2018*
