@@ -5,6 +5,19 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== November 13, 2018
+Version: 1.6.0
+
+=== New Features and Enhancements
+
+* Side Panel
+** Added filtering by environments and services (nodes)
+
+=== Fixed Issues
+
+* Dashboard button in side panel links to appropriate monitoring dashboard
+
+
 == November 1, 2018
 Version: 1.5.0
 
