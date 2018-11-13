@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: api gateway, connector, release notes
 
-API Gateway Rutime 2.2.1 includes bug fixes and the following enhancements:
+API Gateway Rutime 2.1.2 includes bug fixes and the following enhancements:
 
 * Two new block definitions on the policies are defined: After and Before exception blocks.
 +
