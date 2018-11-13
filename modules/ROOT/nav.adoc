@@ -35,6 +35,7 @@
   *** xref:connector/hl7-mllp-connector-release-notes-mule-4.adoc[HL7 MLLP Connector Release Notes (for Mule 4)]
   *** xref:connector/connector-http.adoc[HTTP Connector Release Notes (for Mule 4)]
   *** xref:connector/ibm-ctg-connector-release-notes-mule-4.adoc[IBM CTG Connector Release Notes (for Mule 4)]
+  *** xref:connector/connector-ibm-mq.adoc[IBM MQ Connector Release Notes (for Mule 4)]
   *** xref:connector/java-module.adoc[Java Module Release Notes (for Mule 4)]
   *** xref:connector/connector-jms.adoc[JMS Connector Release Notes (for Mule 4)]
   *** xref:connector/json-module-release-notes.adoc[JSON Module Release Notes (for Mule 4)]
