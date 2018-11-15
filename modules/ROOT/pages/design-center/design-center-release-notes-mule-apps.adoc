@@ -39,6 +39,7 @@ This release includes the following enhancements and fixes.
 * You can now return to the list of Design Center projects by clicking the name "Design Center" at the top of the canvas. The back arrow that was present in the top-left corner in previous releases has been removed.
 
 === Fixes
+
 * View in Runtime Manager doesn't work when current Runtime Manager environment is not the design environment.
 * The Set Expression functionality in the Transform card doesn't disable the *OK* button if the text is blank.
 * Mule Runtime fails with out-of-memory error after consecutive redeploys.
