@@ -4,6 +4,34 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, HTTP, connector, release notes
 
+== 1.4.1
+
+*Nov 15, 2018* 
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== New Features and Enhancements 
+ 
+* No new features were added in this version, but some performance enhancements were done. 
+  
+[%header,cols="15a,85a"] 
+|===
+|Issue |Description
+// Enhancements
+| xref:https://www.mulesoft.org/jira/browse/MULE-15924[MULE-15924] | MULE-15924: Miscellaneous performance improvements for proxy scenario (remove reactor usage and improve `maskedRequestPath` calculation).
+|===   
+  
+=== Fixed Issues 
+ 
+[%header,cols="15a,85a"] 
+|===
+|Issue |Description
+// Fixed Issues 
+| xref:https://www.mulesoft.org/jira/browse/MULE-16035[MULE-16035] | HTTP connector does not implement equals/hash on POJOs (causing leak for dynamic authentication and proxy set ups).
+|=== 
+
 == 1.4.0
 
 *Nov 2, 2018* 
