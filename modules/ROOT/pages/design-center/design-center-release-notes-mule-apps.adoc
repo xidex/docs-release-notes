@@ -44,7 +44,7 @@ This release includes the following enhancements and fixes.
 * The Set Expression functionality in the Transform card doesn't disable the *OK* button if the text is blank.
 * Mule Runtime fails with out-of-memory error after consecutive redeploys.
 * Application names with spaces are invalid for deployments.
-* Failed to resolve Datasense in a project.
+* Failed to resolve DataSense in a project.
 * Automapper gives incorrect mappings for DB to Salesforce.
 * Null is displayed when a mapping isn't set.
 * Prevent stacktraces from showing up in the UI.
@@ -56,7 +56,7 @@ This release includes the following enhancements and fixes.
 * Need to support the '$' char in DataWeave expressions in the Visual Function Editor.
 * Cannot edit parts of a DataWeave script.
 * The *Show in Exchange* option opens a "Not Found" page.
-* Scrolling is truncated when cards inside the Choice scope have Datasense information.
+* Scrolling is truncated when cards inside the Choice scope have DataSense information.
 * Dragging a pill from one field to another field duplicates the pill instead of moving it.
 * Text pills get surrounded by parentheses if they are saved from the custom expression editor.
 * Deleting text selected next to a pill deletes the pill.
@@ -867,7 +867,7 @@ This release of Design Center enables you to:
 * Live View does not properly show list of message objects for FTP List operations.
 * Live View - sometimes Consume is not retrieving anything, therefore live view does not show anything
 * Publishing assets to exchange or uploading Drivers. User will need to have exchange permissions. Also a more accurate error is required to be retrieved when not having enough permissions
-* Currently Datasense is not supported for Flow Ref
+* Currently DataSense is not supported for Flow Ref
 * Transform presents some mapping simple types issues
 * Cloning Projects is only available for Mule Applications type projects
 * The validation all operation is not available
