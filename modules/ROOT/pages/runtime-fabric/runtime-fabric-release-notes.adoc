@@ -11,7 +11,7 @@ In addition to these release notes, see the complete xref:1.0@runtime-fabric::in
 This release includes the following fixes:
 
 * Fixed: Runtime Fabric reports worker node count incorrectly in some cases.
-* Added: More detailed information on the root cause if an installation fails
+* Added: More detailed information on the root cause if an installation fails.
 * Fixed: Tokenization health probes occasionally reported unhealthy under high CPU load.
 
 == 1.1.100 - October 16, 2018
