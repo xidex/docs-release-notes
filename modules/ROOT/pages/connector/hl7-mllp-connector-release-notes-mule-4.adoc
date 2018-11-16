@@ -11,6 +11,22 @@ The Mule HL7 MLLP connector provides connectivity and parsing functionality for 
 
 xref:connectors::hl7/hl7-mllp-connector.adoc[HL7 MLLP Connector Guide]
 
+== 2.0.3 
+
+*November 16, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Mule 4 HL7 MLLP Connector does not wait for response after sending the message out. Added new operation sendAndReceive.
+
 == 2.0.2
 
 *October 1, 2018*
