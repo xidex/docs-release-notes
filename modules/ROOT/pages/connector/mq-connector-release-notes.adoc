@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mq, connector, release, notes
 
-*July 2018*
+*November 2018*
 
 _Select_
 
@@ -16,6 +16,25 @@ See Also:
 
 * xref:mq/mq-release-notes.adoc[Anypoint MQ Cloud Release Notes]
 * xref:mq::index.adoc[Anypoint MQ Documentation]
+
+== 1.3.5
+
+*November 1, 2018*
+
+This release fixes a bug.
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime |3.7.4 and later
+|Anypoint Studio |5.4.n and later
+|===
+
+=== Fixed in this Release
+
+* A previous MQ connector version incorrectly logged WARN 'A connection to +https://mq-ap-southeast-2.anypoint.mulesoft.com/ was leaked+`. This is now fixed. (SE-9217)
 
 == 1.3.4
 
@@ -225,4 +244,4 @@ This is the same example with the subscriber tracking statement removed:
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com[Knowledge Base Articles]

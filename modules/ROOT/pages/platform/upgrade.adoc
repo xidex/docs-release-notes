@@ -96,6 +96,10 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 There is no downtime during the API grouping or the automated migration. We do, however, advise not to use API Manager during the upgrade process to prevent any data inconsistency. After the upgrade, classification of APIs into environments may cause downtime due to proxy restart.
 
+*Do API policies remain in effect during the upgrade?*
+
+Yes, API policies will remain in effect.
+
 *How do I cancel my upgrade?*
 
 After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email will be sent. For help, e-mail crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
@@ -149,14 +153,29 @@ Yes. If you have problems with the new experience of Anypoint Platform, you can 
 
 == New and Changed Features
 
-* All APIs created using pre-upgrade version of API Manager appear in the Unclassified Environment after the upgrade
-* APIs in the Unclassified environment can be classified into the corresponding environment following this process.
-** Configure Autodiscovery element for new APIs after the upgrade in the following way (retrieve all values from the API and the UI):
+API Manager API (v2.x) leverages environments and API Autodiscovery.
+
+=== Environments and Permissions
+
+* All APIs created using the pre-upgrade version of API Manager appear in the "Unclassified" Environment after the upgrade.
+* APIs in the Unclassified environment can be classified into their corresponding environment. Once an API is classified and is then promoted, it results in a *new* API instance.
+* The user permissions model is now action-based and set for users at the environment level, which is aligned to the rest of the Management Center. Administrators should set environment-level permissions for all users after the upgrade. 
+* Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
+
+=== Autodiscovery for New API Instances
+
+Auto-discovery changes apply to new API instances of existing or new APIs. Autodiscovery for existing API instances remains unchanged and you can leave the configuration as is.
+
+* To configure the Autodiscovery element for new API instances, retrieve the necessary values from the API and the UI:
 ** `name=”groupId:{{groupId}}:assetId:{{assetId}}”`
 ** `version=”{{version}}:{{instanceId}}”`
+
+* See xref:2.x@api-manager::api-auto-discovery-new-concept.adoc[About API Autodiscovery]
 ** Auto-discovery changes only apply to the newly created APIs and its instances The existing APIs remain unaffected even after the upgrade. New auto-discovery changes only apply to the newly created APIs and its instances.
 * API Manager API (v2.x) is available to leverage all new API Manager capabilities.
-* User permissions model has changed to be action-based at the environment level, which is aligned to the rest of the management center. After the upgrade, administrators should set environment-level permissions for all users. Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
+* User permissions model has changed to be action-based at the environment level. (See xref:2.x@api-manager::environment-permission-task.adoc[To Grant Permission to Access Environments].) +
+NOTE: Permissions are now aligned with the rest of the Management Center. After the upgrade, administrators should set environment-level permissions for all users. Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as the API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
+
 
 === API Designer
 
@@ -176,10 +195,10 @@ Yes. If you have problems with the new experience of Anypoint Platform, you can 
 
 === APIs in API Manager - Post-Upgrade
 
-* APIs utilizing an autodiscovery element now use API Manager instead.
+* APIs utilizing an autodiscovery element now leverage API Manager.
 * API promotion to environments is a new feature that you can introduce as a step in your CI/CD pipeline.
 * Because the November release upgrade moves all portals and RAMLs, the old API cannot be used to modify, create, or delete them after the upgrade.
-* The pre-upgrade API Manager API can be used with APIs in the Unclassified environment with some restrictions (see below). There are also new environment-aware APIs, which also support the Unclassified environment, that you may start using (see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/api-manager-api/1.0.2/console/summary/[new API Manager API portal] and the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/proxies-xapi/1.0.1/[Proxies xAPI portal]).
+* The pre-upgrade API Manager API can be used with APIs in the Unclassified environment with some restrictions (see below). There are also new environment-aware APIs, which also support the Unclassified environment, that you may start using (see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/api-platform-api/[new API Manager API portal] and the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/proxies-xapi/1.0.1/[Proxies xAPI portal]).
 ** The following resources for managing RAMLs return 400. Use Design Center APIs instead.
 +
 [source,text,linenums]
@@ -205,7 +224,7 @@ organizations/{organizationId}/public/*
 
 The Anypoint Platform APIs section of this doc has links to the API documentation so you can update your pipeline per any of the below criteria:
 
-* CI/CD pipelines need to be reconstructed to accomodate the environments you plan to use for your APIs.
+* CI/CD pipelines need to be reconstructed to accomodate the environments you plan to use for your APIs. See the   https://blogs.mulesoft.com/dev/anypoint-platform-dev/how-to-build-continuous-integration-deployment-api-lifecycle/[How to build your CI/CD pipeline for the full API lifecycle] blog post.
 * If you call API Manager APIs to apply API management or policies, review the API Manager API and
 refactor your pipeline as needed.
 * If publishing to Exchange, review the new Exchange Maven Facade API and refactor as needed.
@@ -289,8 +308,7 @@ A continuous integration system:
 == See Also
 
 * xref:2.x@api-manager::index.adoc[API Manager 2.x]
+* xref:2.x@api-manager::api-auto-discovery-new-concept.adoc[About API Autodiscovery]
 * xref:runtime-manager::runtime-manager-agent.adoc[Runtime Manager Agent]
-* xref:1.3@munit::index.adoc[MUnit]
-* xref:3.9@mule-runtime::mule-maven-plugin.adoc[Mule Maven Plugin]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

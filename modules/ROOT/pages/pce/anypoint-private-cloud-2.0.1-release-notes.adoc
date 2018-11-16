@@ -1,0 +1,44 @@
+= Anypoint Platform Private Cloud Edition 2.0.1 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*October 24, 2018*
+
+== New Features and Enhancements
+
+There are no new features or enhancements in this release.
+
+== Software Compatibility
+
+[%header,cols="2*a"]
+|===
+| Compatible with |Version
+| Mule runtime | 3.7.x , 3.8.x, 3.9.x 4.x, 4.1.x
+| API Gateway Runtime | 2.1.x - 2.2.x
+| Runtime Manager Agent | 1.7 - 1.9.x, 2.1.x
+| Infrastructure providers |
+* VMWare
+* Bare Metal
+| Compatible browsers when running the installer |
+* Firefox (latest version)
+* Chrome (latest version)
+* Safari (latest version)
+|===
+
+== Fixed Issues
+
+[%header%autowidth.spread]
+|===
+| Issue
+| Fixed issue with requiring external connections during installation.
+|===
+
+== Known Issues
+
+[%header%autowidth.spread]
+|===
+| Description | Workaround
+| Some parts of the UI make requests to an external CDN | While browsing Anypoint Platform, you may see some failed requests in your browser JavaScript console.
+| Studio 7 management not supported | Users can manually upload their application to PCE from Studio
+|===

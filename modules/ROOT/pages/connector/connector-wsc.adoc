@@ -4,6 +4,38 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, WSC, connector, release notes, Web Service, Consumer, SOAP
 
+*November 2018*
+
+== 1.2.1
+
+=== Fixed Issues
+
+* Fixed issue when resolving metadata of a WSDL that contains multiple operations with the same name for different ports.  (MULE-15988)
+* Fixed issue when parsing embedded Base64 attachments. (MULE-15790)
+
+*October 2018*
+
+== 1.2.0
+
+=== New Features and Enhancements
+
+This release includes major performance improvements to resolving values for configuration 
+and DataSense.
+
+=== Known Limitations and Workarounds
+
+* RPC WSDLs are not supported.
+
+=== Fixed Issues
+
+* WSC headers metadata is being badly generated.(MULE-15922) 
+* Improve the WSC value provider performance. (MULE-15885) 
+* WSC should allow timeout configuration for default HTTP config. (MULE-15844) 
+* Make WSC take advantage of the metadata cache. (MULE-15551) 
+* Upgrade commons-lang3 to 3.7. (MULE-15082) 
+* Upgrade Guava to 25.1. (MULE-15079) 
+* WSC cannot load WSDL files inside JAR files. (MULE-14996) 
+
 *March 2018*
 
 == 1.1.1

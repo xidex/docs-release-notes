@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mq, connector, release, notes
 
-*September 2018*
+*November 2018*
 
 _Select_
 
@@ -12,6 +12,32 @@ _Select_
 
 Anypoint MQ Connector lets you add messaging access to Anypoint MQ queues and exchanges from Anypoint Studio applications.
 
+== 2.0.5
+
+*November 2, 2018*
+
+This release fixes issues.
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime |4.0.0 and later
+|Anypoint Studio |7.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Update reference docs for Subscriber parameters. (MQ-1340)
+* MQ Subscriber: Needs to shutdown gracefully when stopped. (MQ-1338)
+* MQ connector does not remove expired messages from a preserved buffer. (MQ-1333)
+* MQ connector blocks all app I/O threads when invoked concurrently. (MQ-1324)
+* MQ connector prefetch limit is ignored. (MQ-1323)
+* MQ Subscriber picks up messages very slowly from a queue. (MQ-1322)
+* Messages are being read twice by the Anypoint MQ Connector. (MQ-1320)
+* PollingTime is not used by the Subscriber. (MQ-1277)
+* Subscriber prefetch cannot be disabled. (MQ-1276)
 
 == 2.0.4
 

@@ -21,15 +21,12 @@ Mule Runtime 4.1.4 includes the following enhancements, changes, and fixes:
 Not applicable. 
  
 == Known Limitations and Workarounds 
- 
-Not applicable.
-
-//// 
 [%header,cols="15a,85a"] 
-|===
-|Issue |Description
 |=== 
-////
+|Issue |Description
+// Fixed Issues 
+| EE-6372 | `Mule.bat` in Windows set the WRAPPER_WORKING_DIR incorrectly. This produces an error when trying to install the license using a relative path. As a workaround, you need to use the absolute path of the license file.  
+|===  
 
 == Upgrade Requirements 
  
@@ -152,7 +149,7 @@ Mule was tested on the following software:
 [%header,cols="15a,85a"] 
 |===
 |Software |Version
-| JDK | JDK 1.8.0 (Recommended JDK 1.8.0_151/52) 
+| JDK | JDK 1.8.0 (Recommended JDK 1.8.0_171/72) 
 | OS | MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04 
 | Application Servers | Tomcat 7, Tomcat 8, Weblogic 12c, Wildfly 8, Wildfly 9, Websphere 8, Jetty 8, Jetty 9 
 | Databases | Oracle 11g, Oracle 12c, MySQL 5.5+, DB2 10, PostgreSQL 9, Derby 10, Microsoft SQL Server 2014 

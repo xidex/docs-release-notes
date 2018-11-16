@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*October 2018*
+*November 2018*
 
 _Select_
 
@@ -15,14 +15,14 @@ IMPORTANT: Starting with v.4.0.0, the SQS Connector is licensed commercially wit
 
 == 4.3.0
 
-*October 23, 2018*
+*November 2, 2018*
 
 === Compatibility
 
 [%header%autowidth.spread]
 |===
 |Application/Service|Version
-|Mule Runtime|3.8.x and later
+|Mule Runtime|3.8.x and later in Mule 3
 |AWS SDK for Java|1.11.79
 |===
 
@@ -87,11 +87,6 @@ IMPORTANT: Starting with v.4.0.0, the SQS Connector is licensed commercially wit
 * In earlier versions, when the SQS connector is used as an inbound endpoint, the custom exception strategy could not be invoked, and the source stopped polling for messages when an exception occurred. Now SQS as a source does not stop polling messages when an uncaught exception and custom exception strategy can be invoked.
 * Handling of binary attributes in sendMessage operation.
 
-=== Known Issues
-
-* None
-
-
 == 4.1.0
 
 *September 30, 2016*
@@ -133,18 +128,10 @@ IMPORTANT: Starting with v.4.0.0, the SQS Connector is licensed commercially wit
 |AWS SDK for Java|1.10.1
 |===
 
-=== Features
-
-None.
-
 === Fixed in this Release
 
 - Messages are now consumed from the queue when the client receives an exception.
 Previously, when receiving an Exception, the queue stopped consuming messages.
-
-=== Known Issues
-
-None.
 
 == 4.0.1
 
@@ -159,17 +146,9 @@ None.
 |AWS SDK for Java|1.10.1
 |===
 
-=== Features
-
-None.
-
 === Fixed in this Release
 
 - Allows evaluation licenses. Previous versions of the connector didn't let users use evaluation licenses.
-
-=== Known Issues
-
-None.
 
 == 4.0.0
 
@@ -235,7 +214,7 @@ than the generic system wide Amazon SQS action.
 === Features
 
 * Upgraded AWS SDK for Java to 1.9.39
-* Upgraded Anypoint Connector Devkit to 3.6.1.
+* Upgraded Anypoint Connector DevKit to 3.6.1
 * Added the following new operations:
 ** ChangeMessageVisibility
 ** ChangeMessageVisibilityBatch
@@ -245,16 +224,8 @@ than the generic system wide Amazon SQS action.
 ** ListQueues
 ** PurgeQueue
 ** SendMessageBatch
-* Renamed the GetURL operation to Get Queue URL.
-* Added support for proxy settings.
-
-=== Fixed in this Release
-
-None.
-
-=== Known Issues
-
-None.
+* Renamed the GetURL operation to Get Queue URL
+* Added support for proxy settings
 
 == 2.5.5
 
@@ -278,10 +249,6 @@ Amazon S3 connector 2.5.5 is compatible with:
 === Fixed in this Release
 
 * Added support for Mule Runtime v3.6.n and later.
-
-=== Known Issues
-
-None.
 
 == 2.5.4
 

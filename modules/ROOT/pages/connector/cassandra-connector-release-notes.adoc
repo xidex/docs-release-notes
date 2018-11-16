@@ -2,13 +2,18 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: cassandra
 
-*June 2018*
+*October 2018*
 
 _Select_
 
 The Anypoint Cassandra connector provides the capability to connect a Mule app to a Cassandra database or cluster. The MuleSoft support category for the Cassandra connector is xref:3.9@mule-runtime::anypoint-connectors.adoc#connector-categories[Select].
+
+== 2.1.1
+
+*October 2018*
+
+This version was updated to use the latest release of the DataStax Java Driver for Apache Cassandra v3.6.0.
 
 == 2.1.0
 
@@ -56,4 +61,4 @@ The Cassandra connector supports the following capabilities:
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
