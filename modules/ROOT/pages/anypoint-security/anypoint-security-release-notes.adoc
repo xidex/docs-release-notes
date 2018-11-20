@@ -5,8 +5,27 @@ endif::[]
 
 == November 17, 2018
 
-=== New Features
+== New Features
 
 This release includes the following new features:
 
-* Anypoint Security tokenization service. The tokenization service enables you to substitute a sensitive data element with a non-sensitive equivalent to provide data protection. For information about how to implement tokenization, see xref:anypoint-security::tokenization.adoc[Anypoint Tokenization Service]. 
+=== Anypoint Tokenization Service
+
+The Anypoint tokenization service enables you to substitute a sensitive data element with a non-sensitive equivalent to provide data protection. For information about how to implement tokenization, see xref:anypoint-security::tokenization.adoc[Anypoint Tokenization Service].
+
+=== Secrets Manager
+
+Secrets Manager can now be used with Runtime Fabric and API Manager.
+
+=== Security Policies
+
+== Limitations
+
+=== Anypoint Tokenization Service
+
+The Anypoint tokenization service has the following limitations:
+
+* Customers can only do one table create at a time.
+* Each tokenization service must have its own dedicated Secrets Group.
+* RTF 1.1.153 or greater
+* We can only support 100 tuples per request. There JSON protection policy limit will be recommended to be set to 100.
