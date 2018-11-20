@@ -16,7 +16,7 @@ endif::[]
 
 === Fixed Issues
 
-* Mule 4 SFTP connection pooling not working correctly. (MULE-16018)
+* Mule 4 SFTP connection pooling is not working correctly. (MULE-16018)
 
 == 1.2.3
 
