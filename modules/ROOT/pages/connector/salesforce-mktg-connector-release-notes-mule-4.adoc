@@ -2,13 +2,12 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, salesforce, marketing, cloud, connector
 
 *November 2018*
 
 _Select_
 
-The Salesforce Marketing Cloud connector allows you to connect to the Salesforce Marketing Cloud web services using Exact Target API. The connector exposes convenient methods for managing objects and calling services provided by Exact Target API, also known as Salesforce Marketing Cloud.
+The Salesforce Marketing Cloud connector allows you to connect to the Salesforce Marketing Cloud web services using the Exact Target API. The connector exposes convenient methods for managing objects and calling services provided by Exact Target API, also known as Salesforce Marketing Cloud.
 
 == 2.1.0
 
@@ -16,7 +15,7 @@ The Salesforce Marketing Cloud connector allows you to connect to the Salesforce
 
 The Salesforce Marketing Cloud connector is compatible with:
 
-[%header%autowidth]
+[%header%autowidth.spread]
 |===
 |Application/Service |Version
 |Mule Runtime|4.1 and later
@@ -26,13 +25,13 @@ The Salesforce Marketing Cloud connector is compatible with:
 
 === Features
 
-* Support for Salesforce Marketing Cloud API v43 based on Fuel SDK v1.2.2
+* Support for Salesforce Marketing Cloud API v43 based on Fuel SDK v1.2.2.
 
 == 2.0.0
 
 *January 19, 2018*
 
-Release notes for of the Salesforce Marketing Cloud connector.
+Release notes for the Salesforce Marketing Cloud connector.
 
 === Compatibility
 
@@ -83,4 +82,4 @@ When performing operations on an Automation object, the result of the operation 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
