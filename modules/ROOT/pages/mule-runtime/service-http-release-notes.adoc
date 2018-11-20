@@ -19,13 +19,8 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15888[MULE-15888] | Malformed URL returns 500 instead of 400 
-| link:https://www.mulesoft.org/jira/browse/MULE-15871[MULE-15871] | Some HTTP log entries go to the runtime log instead of the app's 
-//  
-// ------------------------------- 
-// - Enhancement Request Issues 
-// ------------------------------- 
-| link:https://www.mulesoft.org/jira/browse/MULE-15764[MULE-15764] | Enhance RequestMatcherRegistry 
+| link:https://www.mulesoft.org/jira/browse/MULE-15888[MULE-15888] | Malformed URL returns 500 instead of 400.
+| link:https://www.mulesoft.org/jira/browse/EE-6397[EE-6397] | HTTP EE Service overrides request address for properties proxy.
 |=== 
 
 == 1.1.4
