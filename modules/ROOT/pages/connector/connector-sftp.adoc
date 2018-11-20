@@ -4,7 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, SFTP, connector, release notes
 
-*October 2018*
+*November 2018*
+
+== 1.2.4
+
+*Nov 20, 2018*
+
+=== Min Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* Mule 4 SFTP connection pooling not working correctly. (MULE-16018)
 
 == 1.2.3
 
