@@ -35,26 +35,26 @@ This release includes the following enhancements and fixes.
 
 === Enhancements
 
-* A Transform card will no longer display an error if there is no sample data. Rather, it will display a hint that sample data needs to be present.
-* You can now return to the list of Design Center projects by clicking the name "Design Center" at the top of the canvas. The back arrow that was present in the top-left corner in previous releases has been removed.
+* A Transform card no longer displays an error if there is no sample data. Transform cards now display a hint that sample data needs to be present.
+* You can return to the list of Design Center projects by clicking the name "Design Center" at the top of the canvas. The back arrow that was present in the top-left corner in previous releases has been removed.
 
 === Fixes
 
-* View in Runtime Manager doesn't work when current Runtime Manager environment is not the design environment.
-* The Set Expression functionality in the Transform card doesn't disable the *OK* button if the text is blank.
-* Mule Runtime fails with out-of-memory error after consecutive redeploys.
+* View in Runtime Manager doesn't work when the current Runtime Manager environment is not the design environment.
+* The Set Expression functionality in a Transform card doesn't disable the *OK* button if the text is blank.
+* Mule Runtime fails with an out-of-memory error after consecutive redeploys.
 * Application names with spaces are invalid for deployments.
-* Failed to resolve DataSense in a project.
+* DataSense failed to resolve in a project.
 * Automapper gives incorrect mappings for DB to Salesforce.
 * Null is displayed when a mapping isn't set.
 * Prevent stacktraces from showing up in the UI.
-* There is no descriptive error for when downloading an application fails.
+* There is no descriptive error when downloading an application fails.
 * REST connect is shown twice in card selector when removed from context.
 * An error message remains open when a project is closed.
 * In a project without a worker, clicking the *Run* button creates multiple workers in Runtime Manager.
-* Choice cards are showing too much space between expressions and display names.
-* Need to support the '$' char in DataWeave expressions in the Visual Function Editor.
-* Cannot edit parts of a DataWeave script.
+* Choice cards show too much space between expressions and display names.
+* The '$' char in DataWeave expressions in the Visual Function Editor aren't supported.
+* Parts of a DataWeave script can't be edited.
 * The *Show in Exchange* option opens a "Not Found" page.
 * Scrolling is truncated when cards inside the Choice scope have DataSense information.
 * Dragging a pill from one field to another field duplicates the pill instead of moving it.
@@ -68,7 +68,7 @@ This release includes the following enhancements and fixes.
 * The Transform card keeps mapping when a Custom Type is being deleted.
 * The Back button does not return to the list of Design Center projects from an open project.
 * Some fields in the Email connector are not visible until the Delete option is selected.
-* An informational message is still visible when a project is closed.
+* An informational message is visible after a project is closed.
 * There is no way to read the type of the output in the Slack connector.
 * Visual Function Editor displays odd behavior when a DataWeave script is pasted as a value.
 * Visual Function Editor does not show an entire configured DataWeave script.
@@ -93,7 +93,7 @@ This release includes the following enhancements and fixes.
 * Deployment to Mule Runtime 4.1.0 fails after several redeployments of a Mule application.
 * The Salesforce Upsert card has missing fields and the options in one or more of its comboboxes disappear.
 * The Connector icons are smaller than usual.
-* After adding and removing a new flow, it is not possible to go back to project list
+* After adding and removing a new flow, it is not possible to go back to project list.
 * The Visual Function Editor suggested a text pill that caused an error.
 * No error descriptions appear when pills are edited and errors introduced into them.
 * Scripts that are longer than the text box for the DataWeave editor overflow the text box when they are pasted into it.
