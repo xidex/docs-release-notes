@@ -14,6 +14,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 * DataWeave stream closed intermitently in batch process [SE-9974]
 * DataWeave flatten() function is not streaming [SE-10077]
 
+
 == Nov 10, 2018
 
 4.1.4 Runtime Update:
