@@ -6,6 +6,14 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== Nov 21, 2018
+
+4.1.4 Runtime Update:
+
+* 'Could not deserialize object' in cache component [SE-9879]
+* DataWeave stream closed intermitently in batch process [SE-9974]
+* DataWeave flatten() function is not streaming [SE-10077]
+
 == Nov 10, 2018
 
 4.1.4 Runtime Update:
