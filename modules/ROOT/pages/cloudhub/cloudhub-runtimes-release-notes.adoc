@@ -47,13 +47,13 @@ These are the release notes for patches which are made to the Mule runtimes on C
 3.9.0 Runtime Update:
 
 * Let customer fix invalid cron schedules after start [SE-8632]
-* Internal HTTP client enhacnements
+* Internal HTTP client enhancements
 * Security enhancements
 
 3.9.1 Runtime Update:
 
 * Let customer fix invalid cron schedules after start [SE-8632]
-* Internal HTTP client enhacnements
+* Internal HTTP client enhancements
 * Security enhancements
 
 
