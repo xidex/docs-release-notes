@@ -11,16 +11,17 @@ Be sure to read this document before you install this release. For reference, sa
 
 http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-3.9.2.zip[Download Mule 3.9.2 EE Distribution]
 
-== Key Enhancements
-
-Key Enhancements
-
-* <TO_COMPLETE>
-
+////
+== New Features and Enhancements
+////
 
 == Changes
 
-* <TO_COMPLETE>
+Regarding API Gateway capabilities:
+
+Of the various bugs fixed, noteworthy is fix AGW-2631. The issue occurred when an API previously tracked was deleted from API Manager and then the runtime was restarted. Now, by default, in that scenario, all policies that were previously applied will continue to be applied, including existing contracts that are locally cached. If you want stricter security, you can control this behavior by specifying the following system property:
+
+`anypoint.platform.policies.on_api_deleted=block_api|keep_policies(default)`
 
 == Fixed Issues
 
@@ -99,6 +100,18 @@ Key Enhancements
 | EE-5938 | Delegate Distributed Object Store Expiration to hazelcast.
 | EE-5518 | World-Readable Java KeyStore and Configuration Files.
 | EE-5959 | Add optional functionality to manage license keys in default env preferences location.
++
+//
+// -------------------------------
+// - AGW
+// -------------------------------
+| AGW-2660 | Mule Runtime does not gracefully shut down when a "Cross-Origin resource sharing" policy is applied.
+| AGW-2631 | Inconsistent behavior occurs after an API is deleted and the runtime is restarted.
+| AGW-2506 | Add a message when a policy is not applied to any flow.
+| AGW-2455 | OAuth2 Provider with cached `api-platform-gw:client-store` for 401.
+| AGW-2122 | When an API is deleted from the Platform, a different behavior occurs depending on poller.
+| AGW-2108 | API Gateway expression language fails when processing a Windows-style file separator.
+| AGW-2011: Unhandled NPE when autodiscovery points at not defined flow.
 +
 //
 // -------------------------------
