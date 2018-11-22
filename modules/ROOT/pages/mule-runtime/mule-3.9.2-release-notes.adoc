@@ -83,6 +83,7 @@ Key Enhancements
 | MULE-10246 | TransformerWeighting violates transitivity requirement for Comparable
 | MULE-15340 | Deprecate static bus instance option
 | MULE-15259 | Provide the option to reset underlying controller of XSLTTransformer
+| MULE-15039 | CXF leaking responseContext in the ClientImpl
 | EE-6051 | Update Tanuki wrapper to 3.5.35 in order to address file encoding issues
 | EE-6351 | Mule Runtime NPE 
 | EE-6330 | When Insight is enabled, consumable payloads are converted to String 
@@ -98,6 +99,7 @@ Key Enhancements
 | EE-5938 | Delegate Distributed Object Store Expiration to hazelcast
 | EE-5518 | World-Readable Java KeyStore and Configuration Files
 | EE-5959 | Add optional functionality to manage license keys in default env preferences location
+
 //
 // ------------------------------- 
 // - Enhancement Request Issues 
@@ -151,7 +153,6 @@ This version of Mule runtime is bundled with the Runtime Manager Agent plugin ve
 [%header,cols="15a,85a"] 
 |===
 |Issue |Description
-| MULE-15039 | CXF leaking responseContext in the ClientImpl
 | MULE-15646 | Upgrade Jetty to 9.4.12
 | MULE-15332 | Upgrade BouncyCastle to 1.60
 | MULE-15176 | Upgrade Guava to 26.0 in 3.x
