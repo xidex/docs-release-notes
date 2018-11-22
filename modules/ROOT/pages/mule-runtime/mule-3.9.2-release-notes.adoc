@@ -111,7 +111,7 @@ Of the various bugs fixed, noteworthy is fix AGW-2631. The issue occurred when a
 | AGW-2455 | OAuth2 Provider with cached `api-platform-gw:client-store` for 401.
 | AGW-2122 | When an API is deleted from the Platform, a different behavior occurs depending on poller.
 | AGW-2108 | API Gateway expression language fails when processing a Windows-style file separator.
-| AGW-2011: Unhandled NPE when autodiscovery points at not defined flow.
+| AGW-2011 | Unhandled NPE when autodiscovery points at  undefined flow.
 +
 //
 // -------------------------------
