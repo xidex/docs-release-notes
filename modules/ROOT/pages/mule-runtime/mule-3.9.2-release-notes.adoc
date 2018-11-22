@@ -100,7 +100,6 @@ Of the various bugs fixed, noteworthy is fix AGW-2631. The issue occurred when a
 | EE-5938 | Delegate Distributed Object Store Expiration to hazelcast.
 | EE-5518 | World-Readable Java KeyStore and Configuration Files.
 | EE-5959 | Add optional functionality to manage license keys in default env preferences location.
-+
 //
 // -------------------------------
 // - AGW
@@ -111,13 +110,11 @@ Of the various bugs fixed, noteworthy is fix AGW-2631. The issue occurred when a
 | AGW-2455 | OAuth2 Provider with cached `api-platform-gw:client-store` for 401.
 | AGW-2122 | When an API is deleted from the Platform, a different behavior occurs depending on poller.
 | AGW-2108 | API Gateway expression language fails when processing a Windows-style file separator.
-| AGW-2011 | Unhandled NPE when autodiscovery points at  undefined flow.
-+
+| AGW-2011 | Unhandled NPE when autodiscovery points at an undefined flow.
 //
 // -------------------------------
 // - Enhancement Request Issues
 // -------------------------------
-+
 | MULE-15927 | Allow HTTP requests to retry on all methods.
 | MULE-15788 | More details when `DefaultExpressionManager.DefaultExpressionManager()` fails
 | MULE-15665 | HTTP null host when port is invalid.
