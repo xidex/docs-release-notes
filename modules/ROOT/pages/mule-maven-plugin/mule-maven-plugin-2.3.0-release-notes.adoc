@@ -5,6 +5,11 @@ endif::[]
 
 This release fixes several issues and major improvements for the deployment to the different environments of the platform.
 
+[WARNING]
+This release breaks backward compatibility on the deployment configuration section.
+It follows the same configuration as the 3.x version of the plugin. +
+Check this xref:4.1@mule-runtime::mmp-deployment-concept[section] to make the proper changes.
+
 == Hardware and Software Requirements
 
 Hardware and Software Requirements
