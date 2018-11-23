@@ -363,6 +363,7 @@
  ** xref:mule-runtime/mule-4.0-release-notes.adoc[Mule Runtime 4.0 Early Access Release Notes]
  ** xref:mule-runtime/mule-4.0-rc-release-notes.adoc[Mule Runtime 4.0 RC Release Notes]
  ** xref:mule-runtime/mule-4.0-beta-release-notes.adoc[Mule Runtime 4.0 Beta Release Notes]
+ ** xref:mule-runtime/mule-3.9.2-release-notes.adoc[Mule Runtime 3.9.2 Release Notes]
  ** xref:mule-runtime/mule-3.9.1-release-notes.adoc[Mule Runtime 3.9.1 Release Notes]
  ** xref:mule-runtime/mule-3.9.0-release-notes.adoc[Mule Runtime 3.9.0 Release Notes]
  ** xref:mule-runtime/mule-3.8.7-release-notes.adoc[Mule Runtime 3.8.7 Release Notes]

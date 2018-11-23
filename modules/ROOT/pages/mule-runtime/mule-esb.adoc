@@ -22,6 +22,7 @@ endif::[]
 
 *Mule 3.9.n:*
 
+* xref:mule-runtime/mule-3.9.2-release-notes.adoc[Mule 3.9.2 Runtime]
 * xref:mule-runtime/mule-3.9.1-release-notes.adoc[Mule 3.9.1 Runtime]
 * xref:mule-runtime/mule-3.9.0-release-notes.adoc[Mule 3.9.0 Runtime]
 
