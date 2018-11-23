@@ -7,6 +7,24 @@ endif::[]
 
 _Select_
 
+== 9.4.4
+
+*November 14, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue on Read Metadata operation where the connector was not able to return picklist values.
+* Fixed the problem of error message mapping in the create bulk v2 operation.
+
+
 == 9.4.3
 
 *November 9, 2018*
