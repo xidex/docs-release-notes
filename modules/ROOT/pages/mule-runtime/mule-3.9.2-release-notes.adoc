@@ -119,6 +119,21 @@ Of the various bugs fixed, noteworthy is fix AGW-2631. The issue occurred when a
 | MULE-15788 | More details when `DefaultExpressionManager.DefaultExpressionManager()` fails
 | MULE-15665 | HTTP null host when port is invalid.
 | EE-6094 | Mule + Websphere: Custom service without `mule-boot-all.jar` in `java/ext` of Websphere.
+//
+// --------------------------------
+// - DataWeave
+// --------------------------------
+| Dataweave a| 
+
+* SE-9908: DataWeave is not allowing keywords/reserved-words to be used on variables name.
+* SE-9742: Fix scaped characters on string literals.
+* SE-9547: Fixes CSV escaping inside quoted values.
+* SE-8733: Fixed `bodyStartLineNumber` in the indexed CSV parser.
+* SE-8698: Avoid index out of bound when calling `camelize` with trailing slash.
+* SE-8353 Close stream when file is GC to avoid `tmp` files leak.
+* SE-8423: Add a new system property `com.mulesoft.weave.closeAfterFunCall` to control whether the DataWeave function should close stream after call.
+* SE-8296 Make indexed and streaming CSV reader work the same.
+* SE-7985: Fix handling of map transform for output.
 |===
 
 == Known Limitations and Workarounds
