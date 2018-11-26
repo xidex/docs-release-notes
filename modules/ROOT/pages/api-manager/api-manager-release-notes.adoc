@@ -16,6 +16,20 @@ Anypoint Platform supports the following browsers:
 * Chrome (latest version)
 * Internet Explorer 11 and newer
 
+== 2.2.7
+
+*November 17, 2018*
+
+This release provides this new feature:
+
+*  Domain support for Mule 4
+
+=== Fixed in This Release
+
+* Bug when users download a HTTPS proxy without TLS context.
+* Changed policy display order, sorting version in descending order.
+
+
 == 2.2.6
 
 *November 3, 2018*
