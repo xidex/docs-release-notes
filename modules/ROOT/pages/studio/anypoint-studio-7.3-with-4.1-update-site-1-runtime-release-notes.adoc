@@ -34,7 +34,7 @@ Build Id: 201811211926
 
 === Runtime Compatibility
 
-* Studio 7.3.0 comes bundled with Mule Runtime 4.1.4, however you can use it with earlier Mule Runtime versions as early as 4.1.1.
+* Studio 7.3.1 comes bundled with Mule Runtime 4.1.4, however you can use it with earlier Mule Runtime versions as early as 4.1.1.
 
 === Studio Compatibility
 
