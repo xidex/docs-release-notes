@@ -11,24 +11,6 @@ AS2 (Applicability Statement 2) is a specification about how to transport data s
 
 The Mule Runtime supports the AS2 protocol through the Anypoint Connector for AS2, which is an AS2-certified Java connector that leverages the AS2 Java Connector libraries.
 
-== 4.0.0
-
-*November 12, 2018*
-
-=== Compatibility
-
-[%header%autowidth.spread]
-|===
-|Software|Version
-|Mule Runtime|4.1.0 and later
-|Java|8
-|===
-
-=== Features
-
-* Send - Allows you to send AS2 messages via HTTP or HTTPS.
-* Receive - Enables a Mule application to receive messages following the AS2 protocol.
-
 == 3.0.0
 
 *August 3, 2018*
