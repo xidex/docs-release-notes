@@ -1,0 +1,151 @@
+= Anypoint Studio 7.3 with Mule Runtime 4.1.4 Update Site 1 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*November 21, 2018* +
+*Build ID: 201811211926*
+
+== Compatibility
+
+[cols="30a,70a"]
+|===
+| Product | Version
+| *Mule Runtime*
+| Version: 4.1.4
+
+|*Anypoint Studio*
+|Version: 7.3.1 +
+Build Id: 201811211926
+
+|*Maven*
+|Version: 3.3.9
+
+|*DataWeave* +
+|Version: 2.1.5
+
+|*MUnit* +
+|Version: 2.1.4 (munit-studio-plugin)
+
+|*Eclipse* +
+|Version: 4.7.2
+
+|===
+
+=== Runtime Compatibility
+
+* Studio 7.3.0 comes bundled with Mule Runtime 4.1.4, however you can use it with earlier Mule Runtime versions as early as 4.1.1.
+
+=== Studio Compatibility
+
+* Projects created or updated with Studio 7.3.x or 7.2.x are not compatible with 7.1.x due to some improvements with the management of the mule-artifact.json file. The content of the file was reduced and part of the content used to be required by Studio 7.1.x. +
+To fix this issue, you only need to update Studio to the latest 7.2.x version available. See xref:studio::update-workspace.adoc[Updating Workspaces] for more information.
+* Workspaces created using Anypoint Studio 6.x or below are not compatible with Anypoint Studio 7 workspaces.
+
+== What's New
+
+The 7.3.1 Studio release includes a number of bug fixes.
+
+
+== Hardware Requirements
+
+* For most use cases, Anypoint Studio with the 4.1.3 Runtime does not change hardware or software requirements from the previous Studio 7  versions.
+* MuleSoft recommends a minimum of 4GB of free RAM available on a developer workstation. As applications become complex, consider adding more RAM.
+
+* 4GB of free memory available.
+* 2GHz CPU.
+* 10GB free hard drive space.
+
+== Software Requirements
+
+[cols="30a,70a"]
+|===
+| Software | Version
+|Java Environments
+| * Oracle JDK 1.8.0
+
+This version of Studio is not compatible with Java 9 or Java 10. +
+If you are having issues installing Studio, follow xref:7.2@studio::faq-jdk-requirement.adoc[this guide] to reconfigure your Java installation.
+
+|Operating Systems |* MacOS 10.12.0 +
+* Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10 +
+* RHEL 7.0 +
+* Ubuntu 15.04 or later
+|Suggested Web Browsers by Platform. +
+_Studio will always use the OS default web browser_ | * Windows: +
+** Microsoft Edge 25.0  +
+** Internet Explorer 11 +
+* Linux +
+** Mozilla Firefox 51.0.1  +
+* OS X +
+** Safari 10.1
+| Maven
+| Studio comes with Maven 3.3.9 bundled, but you can externally use the versions: 3.3.3 or your own  3.3.9
+|===
+
+[NOTE]
+--
+If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+--
+
+== Known Issues
+
+* Studio 7 only supports Mule 4.x projects. Due to the structure of projects, export format, xml and scripting language differences, we do not offer backwards compatibility with Mule 3.x runtimes.
+* Some existing features in Studio 6.x are not yet supported in Studio 7: Custom Policies, API Sync, Anypoint Private Cloud.
+* Anypoint Studio uses your configured default browser to display web content such as Exchange and the Runtime Manager UI when deploying an application to Anypoint Platform. If your default internet browser does not display this content correctly, you can configure Anypoint Studio to use a Mozilla/XULRunner runtime environment as the underlying renderer for the Web UI. +
+Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting Issues with Your Default OS Browser] for more details.
+* Copybook import fails with no message.
+* Copybook import file not copied to project.
+* Mule modules needs to provide icons, today many of the modules have the generic icon.
+* Running application "Pom.xml" is not updated when changing dependencies.
+* Debugger: payload shown while debugging is partial but there is no way to view the rest of the payload
+* Mule plugins with snapshot versions should always be regenerated.
+* Datasense/Runtime not working correctly through proxy on connectors using TCP/IP or connectors which don’t yet support it.
+* When importing a project with a runtime that is not installed in Studio there is no notification to the User.
+* Define Metadata - selected schema file does not exist when I have an example JSON set for the metadata type.
+
+== Bug Fixes
+
+* Debugger: Expression Evaluator view does not support mel prefix.
+* Studio doesn't let configure external libraries in Spring Module.
+* When importing project without the Mule nature, an error is raised.
+* Cannot find a queue name following API Fundamentals tutorial because refresh is mandatory.
+* Messaflow editor is marked as dirty even when nothing changes.
+* studio 7 http request is showing all lower case for the URL preview.
+* Custom Business Event Transaction ID can be skipped if exception strategy triggered.
+* Error Reading Decryption Key Containing Carat (^).
+* Send Email component modifies its configuration by itself.
+* When creating a project with name "/", it throws an error.
+* When a global element is configured in a different xml config a not unique name error is shown.
+* Cannot drop a Raise Error processor inside a flow scope.
+* Mule.tooling is causing Java Model Exception: Java Model Status.
+* When saving a config from the XML view, it is still mark as unsaved.
+* WSDL file does not get imported into project in Windows.
+* `InitialState` in flow cannot be a reference variable.
+* Inconsistent project save state.
+* When using a project with a not-yet-used version of mule-maven-plugin, Datasense fails without indications.
+* gitignore file is populated incorrectly when importing RAML that contains Exchange dependencies.
+* Migrating the Studio workspace clears `mule-artifact.json`.
+* Enable Test Connectivity Button on JMS Connector.
+* Changes done in Configuration XML view are not reflecting in Studio Message Flow View for Object Store Component.
+* Malformed error message when pasting from clipboard.
+* redelivery-policy shows outdated attributes.
+* Attribute 'doc:description' is not allowed to appear in element 'when'.
+* Regression error while using AS400 connector in Studio 7.3.
+* Global environment variable not available when loading dataweave metadata.
+
+
+== Task Completed in This Release
+
+* Add analytics support to the contextual documentation feature.
+* Add GAV information on Add Element Analytics event.
+* Support Custom Business Event component.
+* Create icon for Transaction Component.
+* Integrate icon in Set Transaction Id component.
+* Fix how the change_runtime_version script changes the mule.version.suffix tag.
+* Change Studio version to 7.3.1 in the branch 7.3.x.
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].
