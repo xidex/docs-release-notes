@@ -5,6 +5,18 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== November 27, 2018
+Version: 1.7.0
+
+=== New Features and Enhancements
+
+* Side Panel
+** Added the ability to add tags to services using the UI or properties
+** Moved layer assignment from the *Details* panel to the *Customization* panel
+** Added filtering by tags
+** Added *Include related services* button to the *Services* filter
+
+
 == November 13, 2018
 Version: 1.6.0
 
