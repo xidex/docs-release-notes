@@ -1,0 +1,31 @@
+= AS2 Connector Release Notes
+:keywords: mongo db, release notes, connector
+
+*November 2018*
+
+_Premium_
+
+The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 connector enables trading partners transmit and receive AS2 messages with EDI-X12, EDIFACT, XML or binary payloads.
+
+== 4.0.0
+
+*November 12, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.1.0 and later
+|Java|8
+|===
+
+=== Features
+
+* Send - Allows the user to send AS2 messages via HTTP or HTTPS.
+* Receive - Enables a Mule application to receive messages following the AS2 protocol.
+
+=== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com[Contact MuleSoft Support]
