@@ -21,8 +21,8 @@ _Select_
 
 === Fixed in this Release
 
-* Fixed an issue on Read Metadata operation where the connector was not able to return picklist values.
-* Fixed the problem of error message mapping in the create bulk v2 operation.
+* Fixed an issue in the Read Metadata operation where the connector was unable to return picklist values.
+* Fixed the problem of error message mapping in the Create Bulk v2 operation.
 
 == 9.4.3
 
@@ -410,6 +410,6 @@ Salesforce connector version 9.0.0 is compatible with:
 
 == See Also
 
-* xref:connectors::salesforce/salesforce-connector.adoc[Salesforce Connector]
+* xref:connectors::salesforce/salesforce-connector.adoc[Salesforce Connector Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
