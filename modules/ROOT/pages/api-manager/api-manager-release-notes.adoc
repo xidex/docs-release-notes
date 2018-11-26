@@ -36,8 +36,8 @@ This release provides this new feature:
 
 This release provides this new feature:
 
-*  API Manager 2.x users will get access to Secrets Manager. 
-*  Configure, secure & deploy HTTPs proxies using certificates (keystore/truststore) stored in Secrets Manager. This feature will be available for Mule 4 APIs deployed to CloudHub & Hybrid deployment targets. 
+*  API Manager 2.x users will get access to Secrets Manager.
+*  Configure, secure & deploy HTTPs proxies using certificates (keystore/truststore) stored in Secrets Manager. This feature will be available for Mule 4 APIs deployed to CloudHub & Hybrid deployment targets.
 
 
 == 2.2.5
@@ -136,7 +136,7 @@ This release of API Manager includes new and enhanced features for accounts that
 ** This release of Mule 4 xref:api-manager::policy-scope-size-concept.adoc[changes the packaging, size, and scope] of a policy.
 ** All policies are non-blocking.
 ** All policies except CORS, which is executed first, can be ordered.
-* xref:api-manager::develop-custom-policies-reference.adoc[Custom policy development] has changed.
+* xref:api-manager::custom-policy-getting-started.adoc[Custom policy development] has changed.
 * Header propagation no longer occurs by default and needs to be configured.
 * Resource level policy support, which was restricted to RAML-based APIs, is extended to any HTTP API.
 
