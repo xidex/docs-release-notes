@@ -4,13 +4,31 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: as2, connector, b2b, release notes
 
-*August 2018*
+*November 2018*
 
 _Premium_
 
 The Mule Runtime supports the AS2 protocol through our Anypoint Connector for AS2, which is an AS2-certified Java connector that leverages the AS2 Java Connector libraries.
 
 AS2 (Applicability Statement 2) is a specification about how to transport data securely and reliably over the Internet. Security is achieved by using digital certificates and encryption.
+
+== 4.0.0
+
+*November 12, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.1.0 and later
+|Java|8
+|===
+
+=== Features
+
+* Send - Allows the user to send AS2 messages via HTTP or HTTPS.
+* Receive - Enables a Mule application to receive messages following the AS2 protocol.
 
 == 3.0.0
 
