@@ -17,7 +17,6 @@ endif::[]
 
 * (Asset Manager) When recalculating latest version, check if uncompleted versions are considered. (EXC-2749)
 * (Asset Reviews) Some ratings table columns have incorrect length. (EXC-2776)
-* (Crowd Migration Tool) Client applications pagination fix. (EXC-2744)
 * (Exchange UI) Incorrect asset id placeholder in Exchange Manual Publication. (EXC-2731)
 * (Studio 6 and 7) Logout of Exchange shows "Session Expired". (EXC-2774)
 * Cannot customize Public portal with images that have names longer than 64 characters. (EXCP-753)
