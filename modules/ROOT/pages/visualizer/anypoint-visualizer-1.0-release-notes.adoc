@@ -11,10 +11,10 @@ Version: 1.7.0
 === New Features and Enhancements
 
 * Side Panel
-** Added the ability to add tags to services by the UI or properties
-** Moved layer assignment from Details panel to Customization panel
+** Added the ability to add tags to services using the UI or properties
+** Moved layer assignment from the *Details* panel to the *Customization* panel
 ** Added filtering by tags
-** Added *Include related services* button to Services filter
+** Added *Include related services* button to the *Services* filter
 
 
 == November 13, 2018
