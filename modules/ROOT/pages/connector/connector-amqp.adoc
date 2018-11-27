@@ -2,9 +2,16 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, AMQP, connector, release notes
 
 _Select_
+
+== 1.1.2
+
+*November 27, 2018*
+
+=== Fixed Issues
+
+* AMQP client ShutdownSignalExceptions must be handled in listeners. (AMQP-107)
 
 == 1.1.1
 
@@ -67,4 +74,4 @@ Mule 4.1
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
