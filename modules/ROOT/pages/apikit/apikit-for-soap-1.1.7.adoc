@@ -1,0 +1,26 @@
+= APIkit for SOAP 1.1.7 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This version of APIkit for SOAP includes bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|===
+
+== Fixed in This Release
+
+* SOAP API Kit is discarding the attributes and variables.
+* APIKit for SOAP does not preserves CDATA tags on SOAP.
+* APIKit for SOAP is failing validation when attribute is present.
+
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].
