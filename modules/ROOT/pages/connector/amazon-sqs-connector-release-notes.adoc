@@ -29,7 +29,7 @@ IMPORTANT: Starting with v.4.0.0, the SQS Connector is licensed commercially wit
 === Fixed in this Release
 
 * The connector was intermittently failing to parse the HTTP response and was throwing an exception. This was fixed by updating the AWS library used.
-* There was a thread leak caused by the fact that the AWS client used by the connector was recreated each time a request was submitted to the SQS api. This is now fixed.
+* There was a thread leak caused by the fact that the AWS client used by the connector was recreated each time a request was submitted to the SQS API. This is now fixed.
 
 == 4.3.0
 
