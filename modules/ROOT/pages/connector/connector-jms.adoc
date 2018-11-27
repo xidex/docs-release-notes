@@ -4,7 +4,36 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, JMS, connector, release notes
 
+== 1.3.2
+
+*November 27, 2018*
+
+=== New Features and Enhancements
+
+* Fixed deadlock when using the JMS Listener on too quick flows, this causes listeners
+stop receiving messages.
+
+=== Fixed Issues
+
+* Application hangs after receiving few messages from ActiveMQ in Mule 4.x (https://www.mulesoft.org/jira/browse/MULE-16087[MULE-16087])
+
+== 1.3.1
+
+*Deprecated*
+
+*October 29, 2018*
+
+=== New Features and Enhancements
+
+* Fixed issue that prevent the usage of a TLS Context
+
+=== Fixed Issues
+
+* JMS Connector doesn't initialize the TLS Context if is defined as a child element (https://www.mulesoft.org/jira/browse/MULE-15930[MULE-15930])
+
 == 1.3.0
+
+*Deprecated*
 
 *August 29, 2018*
 
