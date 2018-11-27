@@ -68,5 +68,5 @@ This version of Mule runtime is bundled with the Runtime Manager Agent plugin ve
 |===
 | Issue | Description
 | MULE-14287 | Upgrade Mvel version to 2.1.9-MULE-016
-| | Upgrade Grizzly version 2.3.35 
+| N/A | Upgrade Grizzly version 2.3.35 
 |===
