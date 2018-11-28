@@ -23,6 +23,17 @@ endif::[]
 
 ////
 
+== 6.8.0
+
+*November 15, 2018*
+
+Supported Mule Runtime Versions: 3.6.4, 3.7.3, 3.8.1, 3.8.2
+
+=== New Features and Functionality
+
+* Added option to allow un-serializable objects to be ignored during asynchronous mode deep copying.
+
+
 == 6.7.1
 
 *October 19, 2018*
