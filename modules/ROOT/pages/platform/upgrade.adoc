@@ -158,7 +158,7 @@ API Manager API (v2.x) leverages environments and API Autodiscovery.
 === Environments and Permissions
 
 * All APIs created using the pre-upgrade version of API Manager appear in the "Unclassified" Environment after the upgrade.
-* Exchange: Assign the user at least the Exchange Viewers role to allow the user access to all Exchange assets within the business group in which you have assigned the permission. Portals Viewer role is deprecated.
+* Exchange: Assign a user to at least the Exchange Viewers role to allow the user access to all Exchange assets within the business group in which you have assigned the permission. The Portals Viewer role has been deprecated.
 * APIs in the Unclassified environment can be classified into their corresponding environment. Once an API is classified and is then promoted, it results in a *new* API instance.
 * The user permissions model is now action-based and set for users at the environment level, which is aligned to the rest of the Management Center. Administrators should set environment-level permissions for all users after the upgrade. 
 * Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
