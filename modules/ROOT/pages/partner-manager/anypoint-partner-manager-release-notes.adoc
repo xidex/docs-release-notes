@@ -8,7 +8,7 @@ endif::[]
 
 == 1.26.0
 
-*October 26, 2018*
+*November 3, 2018*
 
 === Browser Support
 
