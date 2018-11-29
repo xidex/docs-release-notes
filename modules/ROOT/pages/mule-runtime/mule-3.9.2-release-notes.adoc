@@ -172,7 +172,7 @@ Mule was tested on the following software:
 
 The unified Mule Runtime 3.9.2 and API Gateway is compatible with APIkit 3.9.2.
 
-This version of Mule Runtime is bundled with the Runtime Manager Agent plugin version 2.11.2.
+This version of Mule Runtime is bundled with the Runtime Manager Agent plugin version 1.11.2.
 
 == Library Changes
 
