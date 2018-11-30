@@ -6,6 +6,12 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== 1.1.168 - November 29, 2018
+
+This release includes the following fixes:
+
+* Fixed: Failing to register Runtime Fabric if proxies are configured.
+
 == 1.1.154 - November 14, 2018
 
 This release includes the following fixes:
