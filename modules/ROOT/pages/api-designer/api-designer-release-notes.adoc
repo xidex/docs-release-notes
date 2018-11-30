@@ -3,37 +3,24 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+////
 * <<API Designer 0.4.14 Release Notes>>
-
 * <<API Designer 0.4.13 Release Notes>>
-
 * <<API Designer 0.4.12 Release Notes>>
-
 * <<API Designer 0.4.11 Release Notes>>
-
 * <<API Designer 0.4.9 Release Notes>>
-
 * <<API Designer 0.4.6 Release Notes>>
-
 * <<API Designer 0.4.5 Release Notes>>
-
 * <<API Designer 0.4.4 Release Notes>>
-
 * <<API Designer 0.4.3 Release Notes>>
-
 * <<API Designer 0.4.2 Release Notes>>
-
 * <<API Designer 0.4.1 Release Notes>>
-
 * <<API Designer 0.4.0 Release Notes>>
-
 * <<API Designer 0.3.2 Release Notes>>
-
 * <<API Designer 0.3.1 Release Notes>>
-
 * <<API Designer 0.3.0 Release Notes>>
-
 * <<API Designer 0.2.0 Release Notes>>
+////
 
 == API Designer 0.4.14 Release Notes
 October 24, 2018

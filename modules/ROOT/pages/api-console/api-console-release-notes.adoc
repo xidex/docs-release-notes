@@ -3,6 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+////
 * <<API Console 3.0.27>>
 * <<API Console 3.0.26>>
 * <<API Console 3.0.25>>
@@ -17,6 +18,7 @@ endif::[]
 * <<API Console 3.0.12>>
 * <<API Console 3.0.11>>
 * <<API Console 3.0.9>>
+////
 
 == API Console 3.0.27
 
