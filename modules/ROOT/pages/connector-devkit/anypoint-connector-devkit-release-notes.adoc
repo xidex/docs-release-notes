@@ -1,4 +1,4 @@
-= Anypoint Connector DevKit Release Notes
+= Connector DevKit Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -17,19 +17,15 @@ The xref:3.8@connector-devkit::index.adoc[Anypoint Connector DevKit] provides th
 
 == Release Notes
 
-* xref:connector-devkit/anypoint-connector-devkit-3.9.x-release-notes.adoc[Anypoint Connector DevKit 3.9.0 and Newer]
-* xref:connector-devkit/anypoint-connector-devkit-3.8.0-release-notes.adoc[Anypoint Connector DevKit 3.8.0 and Newer]
+* xref:connector-devkit/anypoint-connector-devkit-3.9.x-release-notes.adoc[3.9.0 and Newer]
+* xref:connector-devkit/anypoint-connector-devkit-3.8.0-release-notes.adoc[3.8.0 and Newer]
 * xref:connector/connector-migration-guide-mule-3.6-to-3.7.adoc[Connector Migration Guide - Mule 3.6 to 3.7]
 * xref:connector/connector-migration-guide-mule-3.5-to-3.6.adoc[Connector Migration Guide - Mule 3.5 to 3.6]
-* xref:connector-devkit/anypoint-connector-devkit-3.7.2-release-notes.adoc[Anypoint Connector DevKit 3.7.2]
-* xref:connector-devkit/anypoint-connector-devkit-3.7.1-release-notes.adoc[Anypoint Connector DevKit 3.7.1]
-* xref:connector-devkit/anypoint-connector-devkit-3.7.0-release-notes.adoc[Anypoint Connector DevKit 3.7.0]
-* xref:connector-devkit/anypoint-connector-devkit-3.6.1.1-release-notes.adoc[Anypoint Connector DevKit 3.6.1.1]
-* xref:connector-devkit/anypoint-connector-devkit-3.6.1-release-notes.adoc[Anypoint Connector DevKit 3.6.1]
-* xref:connector-devkit/anypoint-connector-devkit-3.6.0-release-notes.adoc[Anypoint Connector DevKit 3.6.0]
-* xref:connector-devkit/anypoint-connector-devkit-3.5.0-release-notes.adoc[Anypoint Connector DevKit 3.5.0]
-* xref:connector-devkit/anypoint-connector-devkit-3.5.2-release-notes.adoc[Anypoint Connector DevKit 3.5.2]
-
-== See Also
-
-xref:3.8@connector-devkit::index.adoc[Anypoint Connector DevKit]
+* xref:connector-devkit/anypoint-connector-devkit-3.7.2-release-notes.adoc[3.7.2]
+* xref:connector-devkit/anypoint-connector-devkit-3.7.1-release-notes.adoc[3.7.1]
+* xref:connector-devkit/anypoint-connector-devkit-3.7.0-release-notes.adoc[3.7.0]
+* xref:connector-devkit/anypoint-connector-devkit-3.6.1.1-release-notes.adoc[3.6.1.1]
+* xref:connector-devkit/anypoint-connector-devkit-3.6.1-release-notes.adoc[3.6.1]
+* xref:connector-devkit/anypoint-connector-devkit-3.6.0-release-notes.adoc[3.6.0]
+* xref:connector-devkit/anypoint-connector-devkit-3.5.0-release-notes.adoc[3.5.0]
+* xref:connector-devkit/anypoint-connector-devkit-3.5.2-release-notes.adoc[3.5.2]

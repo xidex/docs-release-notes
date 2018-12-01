@@ -4,6 +4,15 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, mmc mule management console
 
+
+* xref:mule-mmc/mule-management-console-3.8.4.adoc[3.8.4]
+* xref:mule-mmc/mule-management-console-3.8.3.adoc[3.8.3]
+* xref:mule-mmc/mule-management-console-3.8.2.adoc[3.8.2]
+* xref:mule-mmc/mule-management-console-3.8.1.adoc[3.8.1]
+* xref:mule-mmc/mule-management-console-3.8.0.adoc[3.8.0]
+* xref:mule-mmc/mule-management-console-3.7.3.adoc[3.7.3]
+
+
 See the release notes from the navigation to find the latest bug fixes and security fixes for the Mule Management Console.
 
 Hybrid and cloud users should check out our latest monitoring and management tool xref:runtime-manager::cloudhub.adoc[Runtime Manager] for the most recent Mule application deployment tooling.

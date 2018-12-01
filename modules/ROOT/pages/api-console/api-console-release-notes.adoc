@@ -20,7 +20,7 @@ endif::[]
 * <<API Console 3.0.9>>
 ////
 
-== API Console 3.0.27
+== 3.0.27
 
 April 21, 2018
 
@@ -39,7 +39,7 @@ This release includes the following enhancement and resolves a number of issues:
 
 
 
-== API Console 3.0.26
+==  3.0.26
 
 February 24, 2018
 
@@ -59,7 +59,7 @@ This release includes the following enhancements and resolves a number of issues
 * A problem with the example defined for the query parameter.
 
 
-== API Console 3.0.25
+==  3.0.25
 
 January 13, 2018
 
@@ -75,7 +75,7 @@ supported in Try It”.
 * Fixed an issue related to using inline !include in query param rendering.
 
 
-== API Console 3.0.21
+==  3.0.21
 
 November 4, 2017
 
@@ -89,7 +89,7 @@ Bump JS RAML Parser to https://github.com/raml-org/raml-js-parser-2/releases/tag
 
 Display descriptions in sub-level resources.
 
-== API Console 3.0.20
+==  3.0.20
 
 August 26, 2017
 
@@ -108,7 +108,7 @@ This release focuses on a few RAML 1.0-related improvements and bug fixes.
 Bumped RAML Parser to version to https://github.com/raml-org/raml-js-parser-2/releases/tag/1.1.29[1.1.29]
 
 
-== API Console 3.0.19
+==  3.0.19
 
 July 15, 2017
 
@@ -125,7 +125,7 @@ This release focuses on a few RAML 1.0-related improvements and bug fixes.
 * Added support for the file type to the Try It view.
 
 
-== API Console 3.0.18
+==  3.0.18
 
 June 17, 2017
 
@@ -141,7 +141,7 @@ This release focuses on a few RAML 1.0 related improvements and bug fixes.
 * Bumped the RAML Parser to version https://github.com/raml-org/raml-js-parser-2/releases/tag/1.1.24[1.1.24]
 * Added showing the request URL in the Try It view even before you send out the request.
 
-== API Console 3.0.17
+==  3.0.17
 
 June 3, 2017
 
@@ -170,13 +170,13 @@ This release focuses on a few RAML 1.0 related improvements and bug fixes.
 // removed from this release--bug (kris may 29, 2017) Added the capability to upload a file when you define the payload type as a `file`. You need to explicitly define `type: file` for API Console to render the uploaded element.
 
 
-== API Console 3.0.16
+==  3.0.16
 
 April 8, 2017
 
 This release focuses on minor bug fixes.
 
-== Resolved Issues
+=== Resolved Issues
 
 * Fixed an issue preventing API documentation from being displayed at the Portal due to incorrect url resolution after library expansion.
 * Fixed an issue preventing error feedback from being displayed (white page or greyed page was displayed instead, depending on implementation).
@@ -189,7 +189,7 @@ This release focuses on minor bug fixes.
 * Added an improvement for rendering the root description of an API on the top of the page.
 
 
-== API Console 3.0.14
+==  3.0.14
 
 March 11, 2017
 
@@ -199,7 +199,7 @@ This release includes a JS parser update.
 
 Bumped JS parser version to https://github.com/raml-org/raml-js-parser-2/releases/tag/1.1.14[1.1.14].
 
-== API Console 3.0.13
+==  3.0.13
 
 February 3, 2017
 
@@ -209,7 +209,7 @@ This release includes a JS parser update.
 
 Bumped JS parser version to 1.1.13.
 
-== API Console 3.0.12
+==  3.0.12
 
 January 14, 2017
 
@@ -219,7 +219,7 @@ This release includes a JS parser update.
 
 Bumped JS parser version to 1.1.12.
 
-== API Console 3.0.11
+==  3.0.11
 
 December 3, 2016
 
@@ -236,7 +236,7 @@ This release includes several fixes for rendering information as well as fixes f
 * Bumped JS parser version to 1.1.8.
 * Several other smaller improvements.
 
-== API Console 3.0.9
+==  3.0.9
 
 November 19, 2016
 

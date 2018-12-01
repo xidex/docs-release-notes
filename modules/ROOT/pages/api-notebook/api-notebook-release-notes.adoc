@@ -3,13 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-== API Notebook 1.2.1
+==   1.2.1
 
 July 15, 2017
 
 This release focuses on usability and fixes bugs in examples.
 
-== Resolved Issues
+=== Resolved Issues
 
 * Fixed an issue that prevented API Notebook example text from expanding properly.
 * Fixed a problem with API Notebook examples running correctly.
@@ -18,7 +18,7 @@ This release focuses on usability and fixes bugs in examples.
 * Fixed an issue that displayed the next parameter in the sample window when a body having more than one object was added.
 
 
-== API Notebook 1.2.0
+==   1.2.0
 
 June 17, 2017
 

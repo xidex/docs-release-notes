@@ -1,4 +1,4 @@
-= Anypoint Access Management Release Notes
+= Access Management Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -247,7 +247,7 @@ None.
 
 No migration required.
 
-== June 25, 2016 Release
+== June 25, 2016
 *_Version 0.13.0_*
 
 The Access Management V0.13.0, is a minor release that fixes a few bugs improving the platform's performance.
@@ -272,7 +272,7 @@ None.
 
 No migration required.
 
-== May 14, 2016 Release
+== May 14, 2016
 *_Version 0.12.0_*
 
 The Access Management V0.12.0, is a minor release that makes the Audit Logs UI a GA functionality. Using this UI users can query and filter Audit logs.
