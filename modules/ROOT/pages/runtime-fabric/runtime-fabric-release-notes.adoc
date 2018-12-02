@@ -6,6 +6,12 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== 1.1.168 - November 30, 2018
+
+This release includes the following fix:
+
+* Fixed: Runtime Fabric unable to register to control plane if HTTP proxy is configured.
+
 == 1.1.154 - November 14, 2018
 
 This release includes the following fixes:
