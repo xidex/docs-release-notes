@@ -27,39 +27,39 @@ Mule was tested on the following software:
 
 The unified Mule Runtime 3.8.5 Service Pack 1 and API Gateway is compatible with APIkit 3.8.5.
 
-This version of Mule runtime is bundled with the Runtime Manager Agent plugin version 1.7.1.
+This version of Mule Runtime is bundled with the Runtime Manager Agent plugin version 1.7.1.
 
 == Fixed Issues
 
 [%header,cols="15a,85a"]
 |===
 |Issue |Description
-| MULE-7081 | SFTP sizeCheckWaitTime should be applied per poll cycle instead of per file
-| MULE-13737 | SftpClient are not released in permission failure scenarios
-| MULE-13577 | Statements not closed on when searching metadata
-| MULE-13469 | WSDL parsing fails with nested included/imported XSDs
-| MULE-13490 | In WSC resolution of URIs containing a long concatenation of relative paths fails
-| MULE-13585 | XSD's imported in WSDL referenced as bare file results in warning while creating request body
-| MULE-8207 | Fix ConcurrentModificationException in FileMessageReceiver
-| MULE-13833 | Change default sslType to use the JVM's one
-| MULE-13761 | Add serial version UID in SimpleDataType to allow migration in case of changes from older version	
-| MULE-13941 | Dynamic flow reference from a For-Each causes 'ConcurrentModificationException'
-| MULE-13978 | SFTP logging does not mask credentials when special regex chars in password
-| MULE-13326 | Http non-blocking error handler nor cleaning thread local
-| MULE-14035 | Automatic retry on remote Closed exception does not respect RFC 7320
-| MULE-14123 | In FTP Transport, checking if a resource is a file degrades performance
-| MULE-13898 | DISCARD_OLDEST as rejection policy must discard messages when max buffer size is 0
-| MULE-14133 | Change DISCARD and DISCARD_OLDEST behavior so that the http connector does not timeout
-| MULE-14194 | HTTP connector fails to close streaming content connection from HEAD request
-| MULE-13048 | MuleEvent does not mask credentials when the they are embedded in MessageSourceURI
-| MULE-14304 | SFTP Connector not masking Passwords in Exceptions and Logs with bad host/port
-| MULE-14282 | When an accExpr is not compiled yet DataType propagation generates a NPE
-| MULE-13970 | MEL expression not working for null optional property
-| MULE-14287 | MEL caching strategy is inconsistent when the variable accesor is set
-| AGW-1556 | Avoid unnecessary wrapping of inbound endpoints with GatewayMessageSource
-| RP-105 | Incorrect processing of query parameters by the RAML java parse.
-| DataWeave | dw-buffer-input*.tmp file is getting created in tmp directory
-| DataWeave | Memory leak while using DW() function
+| MULE-7081 | SFTP `sizeCheckWaitTime` should be applied per poll cycle instead of per file.
+| MULE-13737 | `SftpClient` is not released in permissions failure scenarios.
+| MULE-13577 | Statements not closed when searching metadata.
+| MULE-13469 | WSDL parsing fails with nested included/imported XSDs.
+| MULE-13490 | In WSC, resolution of URIs containing a long concatenation of relative paths fails.
+| MULE-13585 | XSDs imported in WSDL referenced as bare file results in a warning while creating request body.
+| MULE-8207 | Fix `ConcurrentModificationException` in `FileMessageReceiver`.
+| MULE-13833 | Change default `sslType` to use the JVM's.
+| MULE-13761 | Add serial version UID in `SimpleDataType` to allow migration in case of changes from older version.	
+| MULE-13941 | Dynamic flow reference from a For Each component causes `ConcurrentModificationException`.
+| MULE-13978 | SFTP logging does not mask credentials when special regex chars are in password.
+| MULE-13326 | HTTP non-blocking error handler not cleaning thread local.
+| MULE-14035 | Automatic retry on remote Closed exception does not respect RFC 7320.
+| MULE-14123 | In FTP transport, checking if a resource is a file degrades performance.
+| MULE-13898 | DISCARD_OLDEST as rejection policy must discard messages when max buffer size is 0.
+| MULE-14133 | Change DISCARD and DISCARD_OLDEST behavior so that the HTTP connector does not time out.
+| MULE-14194 | HTTP connector fails to close streaming content connection from HEAD request.
+| MULE-13048 | `MuleEvent` does not mask credentials when the they are embedded in `MessageSourceURI`.
+| MULE-14304 | SFTP Connector not masking passwords in exceptions and logs with bad host/port.
+| MULE-14282 | When an `accExpr` is not compiled yet, DataType propagation generates a NPE.
+| MULE-13970 | MEL expression not working for null optional property.
+| MULE-14287 | MEL caching strategy is inconsistent when the variable accessor is set.
+| AGW-1556 | Avoid unnecessary wrapping of inbound endpoints with `GatewayMessageSource`.
+| RP-105 | Incorrect processing of query parameters by the RAML Java parse.
+| DataWeave | `dw-buffer-input*.tmp` file is getting created in `tmp` directory.
+| DataWeave | Memory leak while using DW() function.
 |===
 
 == Library Changes
@@ -67,6 +67,6 @@ This version of Mule runtime is bundled with the Runtime Manager Agent plugin ve
 [%header,cols="15a,85a"]
 |===
 | Issue | Description
-| MULE-14287 | Upgrade Mvel version to 2.1.9-MULE-016
-| N/A | Upgrade Grizzly version 2.3.35 
+| MULE-14287 | Upgrade Mvel version to 2.1.9-MULE-016.
+| N/A | Upgrade Grizzly version 2.3.35.
 |===
