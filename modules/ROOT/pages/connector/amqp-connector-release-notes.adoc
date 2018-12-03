@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: amqp, release, notes
 
 *December 2018 - 3.8.4* +
 *December 2018 - 3.7.12*
