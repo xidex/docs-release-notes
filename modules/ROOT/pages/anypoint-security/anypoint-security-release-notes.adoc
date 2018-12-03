@@ -13,19 +13,66 @@ This release includes the following new features:
 
 The Anypoint tokenization service enables you to substitute a sensitive data element with a non-sensitive equivalent to provide data protection. For information about how to implement tokenization, see xref:anypoint-security::tokenization.adoc[Anypoint Tokenization Service].
 
-=== Secrets Manager
-
-Secrets Manager can now be used with Runtime Fabric and API Manager.
-
-=== Security Policies
-
-== Limitations
-
-=== Anypoint Tokenization Service
+== Known Limitations and Workarounds
 
 The Anypoint tokenization service has the following limitations:
 
-* Customers can only do one table create at a time.
-* Each tokenization service must have its own dedicated Secrets Group.
-* RTF 1.1.153 or greater
-* We can only support 100 tuples per request. There JSON protection policy limit will be recommended to be set to 100.
+* Only one table create at a time is supported.
+* Each tokenization service must have its own dedicated Secret Group.
+* Only Runtime Fabric 1.1.153 or later is supported.
+* 100 tuples per request maximum is supported. This is set in the JSON protection policy limit.
+
+=== Race Condition Occurs
+
+(MSG-6319) There is an issue when more than one tokenization service CREATE is initiated at the same time. A race condition can occur where the deployment request gets lost and the tokenization service CREATE fails.
+
+*Workaround*
+
+If the table fails to apply:
+. In the Tokenization Service list page, click Edit
+. Click Redeploy. +
+The VDP table will not rebuild the second time. It will do the apply only which should take only 2-3 minutes.
+
+=== Tokenization Service Create is Stuck in Applying State
+
+(MSG-6285) When deploying a Tokenization Service create request, it is possible for the tokenization service create to get stuck in the applying state. If the service is stuck in the applying state for > 10 minutes, this problem is occurring.
+
+*Workaround*
+
+. In the Tokenization Service list page, click Edit
+. Click Redeploy. +
+The VDP table will not rebuild the second time. It will do the apply only which should take only 2-3 minutes.
+
+=== Editing Session Terminates Prematurely
+
+(MSG-6317) If the same user is editing the Secret Group used for tokenization at the same time a tokenization service CREATE is initiated, the editing session prematurely terminates. Edits in that session, as well as the VDP table key in the Secret Group will be saved.
+[NOTE]
+If a user different from the one initiating the tokenization service is editing the Secret Group, the tokenization service CREATE will not be started, and the user will be informed that the Secret Group is out for edit.
+
+*Workaround*
+
+There are two different workarounds.
+
+Workaround 1: Check all browser tabs before starting the tokenization service CREATE to make sure a single user doesn't edit the same Secret Group that is also being used for tokenization.
+
+Workaround 2:
+
+Use a dedicated Secret Group for use only by the tokenization service.
+
+=== Status Displayed as "None"
+
+(MSG-6315) The tokenization service CREATE does not navigate back to the Tokenization Service list page after sending out a "Successful Deploy Request" message.
+
+When the user clicks *Deploy* to create a new tokenization service, they will see a green box in the lower right corner saying "Request Successful" which is displayed for 10 seconds. The status at the top of the page, however, continues to display "None".  Depending on how many formats are included in the request, the tokenization service can take from 5 minutes, up to 60 minutes to build and be applied. There will be no change in status on this page during this time.
+
+*Workaround*
+
+Click the back link to go back to the Tokenization Service list page. The status of the current deployment is displayed in gray text following the Tokenization Service name in the list.
+
+== Failure Messages not Included in the INFO Log Level
+
+(MSG-6328) Failures messages for tokenization requests do not come out at the `INFO` log level. There is a bug in the tokenization service that prevents failed tokenization request related information (not the sensitive data itself) from being logged as expected.
+
+*Workaround*
+
+While it is possible to raise the log level to `TRACE` to get all information about a request to come out, it is not recommended, as it impacts performance if there are significant numbers of transactions; and log filters are not practical. Additionally, this is not recommended in a production environment since it causes plain text in tokenization requests to be logged.
