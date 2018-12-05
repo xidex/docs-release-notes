@@ -5,7 +5,7 @@ endif::[]
 
 This document describes any new features and enhancements, known limitations, issues, and fixes in Anypoint Monitoring.
 
-== December 8 Release
+== Version 2.1
 
 === New Features
 
