@@ -6,6 +6,40 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== Dec 5, 2018
+
+4.1.4 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Expose mule deployment error [SE-8554, SE-9209]
+* Security enhancements
+
+4.1.3 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Expose mule deployment error [SE-8554, SE-9209]
+* Security enhancements
+
+4.1.2 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+4.1.1 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+4.1.0 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
 == November 26, 2018
 
 4.1.4 Runtime Update:
