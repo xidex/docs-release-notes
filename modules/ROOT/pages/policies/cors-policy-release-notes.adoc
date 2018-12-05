@@ -6,51 +6,50 @@ endif::[]
 
 == 1.1.1
 
-*Dec 05, 2018* 
+*Dec 05, 2018*
 
 === Minimum Mule Version
 
 *Mule 4.1.1*
 
-=== New Features and Enhancements 
- 
+=== New Features and Enhancements
+
 * No new features were added in this version.
-  
-=== Fixed Issues 
- 
-[%header,cols="15a,85a"] 
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
 |===
 |Issue |Description
-// Fixed Issues 
+// Fixed Issues
 | link:https://www.mulesoft.org/jira/browse/AGW-2695[AGW-2695] | CORS Policy throws 500 Server Error when content-type is not specified.
-|=== 
+|===
 
 == 1.1.0
 
-*--* 
+*--*
 
 === Minimum Mule Version
 
 *--*
 
-=== New Features and Enhancements 
+=== New Features and Enhancements
 
-[%header,cols="15a,85a"] 
+[%header,cols="15a,85a"]
 |===
 |Issue |Description
-// Features and ennhanncements 
-|=== 
-  
-=== Fixed Issues 
- 
-[%header,cols="15a,85a"] 
+// Features and ennhanncements
+|===
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
 |===
 |Issue |Description
-// Fixed Issues 
-|=== 
+// Fixed Issues
+|===
 
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* xref:cors-policy.adoc[CORS Policy for Mule 4]

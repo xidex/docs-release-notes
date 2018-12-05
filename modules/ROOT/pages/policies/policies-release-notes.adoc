@@ -1,17 +1,15 @@
-= Policies Release Notes
+= API Manager Policies Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, policies
 
-A policy extends the functionality of an API and enforces certain capabilities such as security. A policy can control access and traffic without modification to the API implementation. Custom policies can provide other capabilities, such as encrypting and logging.
+Release notes for API Manager Policies include information about changes, improvements, and resolved issues in each released policy version.
 
-[[mule_4]]
-== Policies Release Notes for Mule 4
+== Release Notes for Mule 4 Policies
 
-* xref:policies/cors-policy-release-notes.adoc[CORS]
+* xref:policies/cors-policy-release-notes.adoc[Cross-Origin Resource Sharing (CORS) Policy]
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
+* xref:api-manager::policies-mule4.adoc[Policies in Mule 4]
