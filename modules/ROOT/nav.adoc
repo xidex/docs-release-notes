@@ -275,6 +275,8 @@
 * xref:api-manager/api-manager-release-notes.adoc[API Manager Release Notes]
 * xref:api-mocking-service/api-mocking-service-release-notes.adoc[API Mocking Service Release Notes]
 * xref:api-notebook/api-notebook-release-notes.adoc[API Notebook Release Notes]
+* xref:policies/policies-release-notes.adoc[API Manager Policies Release Notes]
+  ** xref:policies/cors-policy-release-notes.adoc[Cross-Origin Resource Sharing (CORS) Policy] 
 * xref:apikit/apikit-release-notes.adoc[APIkit Release Notes]
  ** xref:apikit/apikit-for-odata-1.0.7.adoc[APIkit for OData 1.0.7 Release Notes]
  ** xref:apikit/apikit-for-odata-1.0.6.adoc[APIkit for OData 1.0.6 Release Notes]
