@@ -52,4 +52,4 @@ endif::[]
 
 == See Also
 
-* xref:cors-policy.adoc[CORS Policy for Mule 4]
+* xref:api-manager::cors-policy.adoc[CORS Policy for Mule 4]
