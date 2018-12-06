@@ -7,6 +7,32 @@ endif::[]
 
 _Select_
 
+== 4.1.0 
+
+*November 16, 2018*
+
+=== Compatibility
+
+The Zuora connector is compatible with:
+
+[%header%autowidth]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|Only works with Studio 7.0.0 and later
+|Zuora|v75
+|===
+
+=== Features
+
+This version of the connector supports Zuora AQuA API. The newly added operations are:
+* Added *Get Last Job Completed* operation; returns the details of the last completed job link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/E_Get_Latest_Job_Completed .
+* Added *Delete a Running Job* operation; deletes the current job, only if the job is not complete. If the job is complete, an error is thrown link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/F_Delete_Executing_Job .
+* Added *Export Deleted Data* operation; submits a request to export deleted records link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/a_Export_Deleted_Data .
+* Added *Post Query with API Version* operation; submits an aggregate query with a specified API version link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/b_Post_Query_with_API_Version .
+* Added *Post Query with Notification* operation; submits an aggregate query with a request for the user to be notified once the job is complete link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/c_Post_Query_with_Notification .
+* Added *Post Query with Retrieval Time* operation; can submit an aggregate query to retrieve those records that were either newly created or modified after a specified time link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/e_Post_Query_with_Retrieval_Time .
+
 == 4.0.0
 
 *February 27, 2018*
