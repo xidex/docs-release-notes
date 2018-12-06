@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-7-0,1.7.0>>
 * <<1-6-0,1.6.0>>
 * <<1-5-5,1.5.5>>
 * <<1-5-1,1.5.1>>
@@ -27,6 +28,25 @@ These release notes cover the following versions of these features:
 * <<1-0-2,1.0.2>>
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
+
+== 1.7.0
+*December 15, 2018*
+
+This release includes the following new features, enhancements, and fixes.
+
+=== New Features
+
+
+=== Enhancements
+
+
+=== Fixes
+
+// PROJECTX-4045
+* Suggestions in expression editors in the Choice and Try cards were partially obscured.
+// PROJECTX-4314
+* In the Transform card, you can set an expression for an element in an output payload by double-clicking the element. In the dialog that opens, a value is required. It was possible in the previous release to click *OK* to exit the dialog even if there was no value specified.
+
 
 == 1.6.0
 *November 17, 2018*
