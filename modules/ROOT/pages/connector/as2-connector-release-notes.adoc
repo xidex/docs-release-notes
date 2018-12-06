@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
-
 _Premium_
 
 AS2 (Applicability Statement 2) is a specification about how to transport data securely and reliably over the internet. Security is achieved by using digital certificates and encryption.
@@ -22,7 +20,7 @@ Compatible Mule versions have been changed from 3.5.x and later to 3.7 and later
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.7.0
+|Mule Runtime |3.7.0 and later (within Mule 3)
 |Java |7 with JCE (Java Cryptography Extension)
 |===
 
