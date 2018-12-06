@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*February 2018*
-
 _Select_
 
 == 4.1.0 
@@ -25,13 +23,16 @@ The Zuora connector is compatible with:
 
 === Features
 
-This version of the connector supports Zuora AQuA API. The newly added operations are:
-* Added *Get Last Job Completed* operation; returns the details of the last completed job link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/E_Get_Latest_Job_Completed .
-* Added *Delete a Running Job* operation; deletes the current job, only if the job is not complete. If the job is complete, an error is thrown link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/F_Delete_Executing_Job .
-* Added *Export Deleted Data* operation; submits a request to export deleted records link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/a_Export_Deleted_Data .
-* Added *Post Query with API Version* operation; submits an aggregate query with a specified API version link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/b_Post_Query_with_API_Version .
-* Added *Post Query with Notification* operation; submits an aggregate query with a request for the user to be notified once the job is complete link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/c_Post_Query_with_Notification .
-* Added *Post Query with Retrieval Time* operation; can submit an aggregate query to retrieve those records that were either newly created or modified after a specified time link:https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/e_Post_Query_with_Retrieval_Time .
+This version of the connector supports the Zuora AQuA API. 
+
+The newly added operations are:
+
+* https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/E_Get_Latest_Job_Completed[Get Last Job Completed] - Returns the details of the last completed job.
+* https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/F_Delete_Executing_Job[Delete a Running Job] - Deletes the current job, only if the job is not complete. If the job is complete, an error is thrown.
+* https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/a_Export_Deleted_Data[Export Deleted Data] - Submits a request to export deleted records.
+* https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/b_Post_Query_with_API_Version[Post Query with API Version] - Submits an aggregate query with a specified API version.
+* https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/c_Post_Query_with_Notification[Post Query with Notification] - Submits an aggregate query with a request for the user to be notified once the job is complete.
+* https://knowledgecenter.zuora.com/DC_Developers/T_Aggregate_Query_API/B_Submit_Query/e_Post_Query_with_Retrieval_Time[Post Query with Retrieval Time] - Submits an aggregate query to retrieve those records that were either newly created or modified after a specified time.
 
 == 4.0.0
 
@@ -55,4 +56,4 @@ This version of the connector is based on the Zuora REST API offering the entire
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
