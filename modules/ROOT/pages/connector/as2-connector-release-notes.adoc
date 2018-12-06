@@ -13,7 +13,7 @@ The Mule Runtime supports the AS2 protocol through the Anypoint Connector for AS
 
 == 3.0.1
 
-*August 3, 2018*
+*November 9, 2018*
 
 Compatible Mule versions have been changed from 3.5.x and later to 3.7 and later.
 
