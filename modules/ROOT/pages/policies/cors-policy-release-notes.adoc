@@ -10,7 +10,7 @@ endif::[]
 
 === Minimum Mule Version
 
-*Mule 4.1.1*
+*Mule 4.1.0*
 
 === New Features and Enhancements
 
@@ -27,11 +27,11 @@ endif::[]
 
 == 1.1.0
 
-*--*
+*Jan 25, 2018*
 
 === Minimum Mule Version
 
-*--*
+*4.0.0*
 
 === New Features and Enhancements
 
@@ -47,7 +47,19 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/AGW-1763[AGW-1763] | Fixing missing groupId for proxy samples dependency
+| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814] | Implement usage of HTTP Policy transform extension
+| link:https://www.mulesoft.org/jira/browse/AGW-1932[AGW-1932] | Transformations of HTTP attributes should be based on a specified output type
 |===
+
+== 1.0.0
+
+*Nov 14, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
 
 
 == See Also
