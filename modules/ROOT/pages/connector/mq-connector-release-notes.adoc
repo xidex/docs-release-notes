@@ -1,16 +1,13 @@
-= Anypoint MQ Connector Release Notes
+= Anypoint MQ Connector Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mq, connector, release, notes
-
-*November 2018*
 
 _Select_
 
-To support Exchange 2.0 properly, the feature ID of Anypoint MQ Connector has changed. Before you download  https://www.mulesoft.com/exchange/org.mule.tooling.messaging/mule-module-anypoint-mq-ee-studio/[v1.2.0 and later from Exchange 2.0],  uninstall the existing version of this connector in Studio.
+To support Exchange 2.0 properly, the feature ID of Anypoint MQ Connector has changed. Before you download  https://www.mulesoft.com/exchange/org.mule.tooling.messaging/mule-module-anypoint-mq-ee-studio/[v1.2.0 and later from Exchange 2.0], uninstall the existing version of this connector in Studio.
 
-This release of the Anypoint MQ Connector lets you add messaging access to Anypoint MQ queues and exchanges from Anypoint Studio applications.
+This release of the Anypoint MQ Connector lets you add messaging access to Anypoint MQ queues and exchanges from Anypoint Studio applications. For Mule 4, see xref:connector/anypoint-mq-connector-release-notes-mule-4.adoc[Anypoint MQ Connector Release Notes - Mule 4].
 
 See Also:
 
