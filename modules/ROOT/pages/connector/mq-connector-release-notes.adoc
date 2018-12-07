@@ -1,8 +1,7 @@
-= Anypoint MQ Connector Release Notes
+= Anypoint MQ Connector Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mq, connector, release, notes
 
 *November 2018*
 
@@ -15,6 +14,7 @@ This release of the Anypoint MQ Connector lets you add messaging access to Anypo
 See Also:
 
 * xref:mq/mq-release-notes.adoc[Anypoint MQ Cloud Release Notes]
+* xref:connector/anypoint-mq-connector-release-notes-mule-4.adoc[Anypoint MQ Connector Release Notes - Mule 4]
 * xref:mq::index.adoc[Anypoint MQ Documentation]
 
 == 1.3.5
