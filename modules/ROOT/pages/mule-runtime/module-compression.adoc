@@ -16,7 +16,7 @@ endif::[]
 [%header,cols="15a,85a"]
 |===
 |Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-16138[MULE-16138] | Compression module doesn't return repeatable streams
+| https://www.mulesoft.org/jira/browse/MULE-16138[MULE-16138] | Compression module doesn't return repeatable streams.
 |===
 
 == 2.0.1
