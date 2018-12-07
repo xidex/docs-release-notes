@@ -1,8 +1,7 @@
-= Anypoint MQ Connector Release Notes
+= Anypoint MQ Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mq, connector, release, notes
 
 *November 2018*
 
