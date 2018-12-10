@@ -40,6 +40,9 @@ Mule Runtime 4.1.5 includes the following enhancements, changes, and fixes:
 |===
 |Issue |Description
 // Fixed Issues 
+| MULE-16186 | ToolingApplicationDescriptorFactory is not setting the class loader model descriptor to the builder 
+| MULE-16165 | FlowListener#onComplete() should await for root completion 
+| MULE-16130 | transaction-manager not being lazy initialized 
 | MULE-16110 | Use the UUID api instead of the library directly in test 
 | MULE-16109 | Tooling Applications should delete the applicationDataFolder when disposed 
 | MULE-16040 | Backpressure is not triggered by saturated CPU_INTENSIVE threadPool 
@@ -80,6 +83,8 @@ Mule Runtime 4.1.5 includes the following enhancements, changes, and fixes:
 | MULE-15471 | Test infrastructure assumes only one service per artifact 
 | MULE-10246 | TransformerWeighting violates transitivity requirement for Comparable
 | MULE-15924 | Miscellaneous performance improvements for proxy scenario
+| EE-6455 | race condition on batch jobs with consumable variables 
+| EE-6435 | bti:transaction-manager not being lazy initialized 
 | EE-6421 | On step commit cursor providers are incorrectly closed 
 | EE-6395 | Batch process deadlock on nested batch jobs 
 | EE-6372 | Mule.bat in windows set the WRAPPER_WORKING_DIR incorrectly 
