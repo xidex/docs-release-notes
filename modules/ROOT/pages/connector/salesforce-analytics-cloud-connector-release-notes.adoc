@@ -47,7 +47,7 @@ The Salesforce Analytics Cloud connector is compatible with:
 
 === Fixed in this Release
 
-Fixed an issue that occurred when using Salesforce Analytics Connector along the Salesforce Connector. The two connectors were using different versions of the same library which made them unable to be used in the same Mule application.
+* Fixed an issue that occurred when using Salesforce Analytics Connector along the Salesforce Connector. The two connectors were using different versions of the same library which made them unable to be used in the same Mule application.
 
 == 2.2.0
 
