@@ -5,6 +5,29 @@ endif::[]
 
 This document describes any new features and enhancements, known limitations, issues, and fixes in Anypoint Monitoring.
 
+== Version 2.1
+
+=== New Features
+
+* *Log Points* - (Requires Titanium subscription) You can generate logs for a running API without writing any code or redeploying your application. You can select specific parameters within the API for which to generate logs, for example, the request header `host` parameter. For more information about log points, see xref:monitoring::log-points.adoc[Anypoint Monitoring Log Points]
+* *Connector-level Flow Analysis* - (Requires Titanium subscription) You can now monitor the performance for connectors. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors]
+//* *API Analytics* - API Analytics is now available in Anypoint Monitoring. See xref:/monitoring
+
+
+=== Known Issues
+
+The Anypoint Monitoring log points feature is only supported on Mule runtime engine version 3.8.5-AM or later. For APIs not running on Mule runtime engine 3.8.5-AM or later, the log points feature does not appear for the API.
+
+Since you can't select the runtime version when you deploy an API from API Manager, you need to navigate to Runtime Manager, select the runtime version (3.8.5-AM or later), then redeploy the API.
+
+[NOTE]
+Mule runtime engine versions appended with `-AM` are listed in Runtime Manager, in the *Runtime Version* menu under *Show old patch releases*. 
+
+=== Fixed Issues
+
+* General bug fixes.
+
+
 == Version 1.05
 
 === New Features and Enhancements
