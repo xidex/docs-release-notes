@@ -10,7 +10,7 @@ This document describes any new features and enhancements, known limitations, is
 === New Features
 
 * *Log Points* - (Requires Titanium subscription) You can generate logs for a running API without writing any code or redeploying your application. You can select specific parameters within the API for which to generate logs, for example, the request header host parameter. For more information about log points, see xref:/monitoring/log-points.adoc[Anypoint Monitoring Log Points]
-* *Flow Pinpoint Map* - (Requires Titanium subscription) You can now monitor the performance for connectors. For more information about monitoring connectors, see xref:/monitoring/monitor-connectors.adoc[Monitor Connectors]
+* *Connector-level Flow Analysis* - (Requires Titanium subscription) You can now monitor the performance for connectors. For more information about monitoring connectors, see xref:/monitoring/monitor-connectors.adoc[Monitor Connectors]
 //* *API Analytics* - API Analytics is now available in Anypoint Monitoring. See xref:/monitoring/
 
 
