@@ -14,8 +14,11 @@ link:http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-
  
 Mule Runtime 4.1.5 includes the following enhancements, changes, and fixes: 
  
-* <TO_COMPLETE> 
- 
+* <TO_COMPLETE>
+
+* Regarding API Gateway capabilities:
+
+This patch version improves outage management when only Contract Service is down and also add small performance improvements, by not resolving unused Spring schemas from Internet. 
  
 == Changes 
  
@@ -91,6 +94,11 @@ Mule Runtime 4.1.5 includes the following enhancements, changes, and fixes:
 | EE-6371 | Streams eagearly closed in batch:aggregator 
 | EE-6329 | Bug in DataWeave access of XML payloads 
 | EE-6318 | SynchronizedCollectionsSerializer doesn't synchronize iteration 
+| AGW-2715 | Restarting runtime with contracts is deleting them till next polling cycle
+| AGW-2592 | When sending analytics events, client IP in some cases is sent as hostname instead of valid IP address.
+| AGW-2591 | Unused spring schemas are being resolved from Internet
+| AGW-2571 | Requester in a sub-flow is not processing operation policies
+| AGW-2457 | Cannot deserialize with a null classloader
 //  
 // ------------------------------- 
 // - Enhancement Request Issues 
