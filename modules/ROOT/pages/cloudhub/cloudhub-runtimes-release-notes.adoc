@@ -15,13 +15,13 @@ These are the release notes for patches which are made to the Mule runtimes on C
 3.9.1 Runtime Update:
 
 * MEL expression failure with concurrent requests [SE-10166]
-* OAuth provider does not honour expired token TTL [SE-8650]
+* OAuth provider does not honor expired token TTL [SE-8650]
 * LIST command is not issued after reconnection in FTP transport [SE-9323]
 * APIKit validation error doesn't display the field name [SE-8727]
 
 3.9.0 Runtime Update:
 
-* OAuth provider does not honour expired token TTL [SE-8650]
+* OAuth provider does not honor expired token TTL [SE-8650]
 * LIST command is not issued after reconnection in FTP transport [SE-9323]
 
 
