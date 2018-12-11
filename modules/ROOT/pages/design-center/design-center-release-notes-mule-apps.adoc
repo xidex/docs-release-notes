@@ -46,6 +46,8 @@ This release includes the following new features, enhancements, and fixes.
 * Suggestions in expression editors in the Choice and Try cards were partially obscured.
 // PROJECTX-4314
 * In the Transform card, you can set an expression for an element in an output payload by double-clicking the element. In the dialog that opens, a value is required. It was possible in the previous release to click *OK* to exit the dialog even if there was no value specified.
+// PROJECTX-4698
+* It was possible to create custom data types for unsupported MIME types.
 
 
 == 1.6.0
