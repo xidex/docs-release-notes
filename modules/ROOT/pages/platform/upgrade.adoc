@@ -41,6 +41,7 @@ You will be able to see the *original API names* in API Manager after the upgrad
 Notes:
 
 * If you do not perform the grouping step, you may find extraneous API projects and a degraded platform experience for consumers.
+* If you have two identical version names in an API group e.g. two versions named "v1" in an API group, you will be able to distinguish them post-upgrade by the Exchange asset ID. The Exchange asset versions will share the major number (1.x.x) but differ in the patch number (1.0.0 and 1.0.1). The highest will be the one that has the checkbox of master version checked.
 * After you add one or more APIs to an API group (New API Name in the API Grouping screen), you cannot ungroup the APIs. However you can change the group for each API individually to a different API group, by changing an API name or API version name.
 
 == To Group your APIs
