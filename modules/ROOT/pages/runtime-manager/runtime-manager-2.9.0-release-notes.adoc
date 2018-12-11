@@ -22,6 +22,7 @@ This release contains no feature changes.
 == Fixed Issues
 
 * The issue where properties supplied through the UI were not propagated during restart of the application is fixed.
+* Unable to pull application properties from Sandbox: `Target <<ServerID>> does not exist in your organization` is fixed.
 
 == Known Limitations and Workarounds
 
