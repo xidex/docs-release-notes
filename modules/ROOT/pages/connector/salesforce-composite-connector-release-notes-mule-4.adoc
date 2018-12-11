@@ -31,6 +31,26 @@ The Salesforce Composite Connector is compatible with:
 * Added CRUD Collections operations.
 * Added Execute Composite Request operation.
 
+== 2.0.1
+
+*October 22, 2018*
+
+=== Compatibility
+
+The Salesforce Composite Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|Only works with Studio 7.0.0 and later
+|Microsoft Dynamics 365 for Operations API
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue in the connection provider where the field for security token was not allowing blank values even if that field is not required by Salesforce.
+
 == 2.0.0
 
 *March 13, 2018*
