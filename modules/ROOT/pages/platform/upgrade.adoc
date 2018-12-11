@@ -59,7 +59,7 @@ We recommend completing the grouping of your APIs before scheduling your upgrade
 . Specify a New API Name. This can be any string of ASCII characters.
 . Specify a New API Version Name. This can be any string of ASCII characters.
 +
-Note: If you have two or more identical version names in one API group for example, two versions named "v1" in an API group, you can distinguish them post-upgrade by the Exchange asset ID. The Exchange asset versions shares the major number (1.x.x) but differ in the patch number (1.0.0 and 1.0.1). The latest is the one that has the "Select RAML" checkbox checked in the grouping step, otherwise a version's creation date determines the numbering.
+Note: If you have two or more identical version names in one API group for example, two versions named "v1" in an API group, you can distinguish them after the upgrade by the Exchange asset ID. The Exchange asset versions share the major number (1.x.x) but differ in the patch number (1.0.0 and 1.0.1). The latest is the one that has the "Select RAML" checkbox checked in the grouping step, otherwise a version's creation date determines the numbering.
 +
 NOTE: Avoid storing the environment name in the API Name or Version Name if possible. After the upgrade, classify your APIs to the appropriate environment from the new API Manager.
 
