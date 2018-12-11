@@ -3,48 +3,68 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-== 1.4.2 
- 
+== 1.4.3
+
+*December 11, 2018*
+
+=== Minimum Mule Version
+
+Mule 4.1.1
+
+=== New Features and Enhancements
+
+* No new features were added in this version.
+
+=== Fixed Issues 
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| link:https://www.mulesoft.org/jira/browse/MULE-16072[MULE-16072] | DB connector not releasing connections
+|===
+
+== 1.4.2
+
 *October 18, 2018*
 
 === Minimum Mule Version
 
 Mule 4.1.1
 
-=== New Features and Enhancements 
- 
-* No new features were added in this version.  
- 
-=== Fixed Issues 
- 
-[%header,cols="15a,85a"] 
+=== New Features and Enhancements
+
+* No new features were added in this version.
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
 |===
 |Issue |Description
 | link:https://www.mulesoft.org/jira/browse/MULE-15869[MULE-15869] | Queries get cached without any TTL or limit, which causes memory to grow.
-|=== 
+|===
 
-== 1.4.1 
- 
+== 1.4.1
+
 *October 16, 2018*
 
 === Minimum Mule Version
 
 Mule 4.1.1
 
-=== New Features and Enhancements 
- 
-* No new features were added in this version. 
- 
-=== Fixed Issues 
- 
-[%header,cols="15a,85a"] 
+=== New Features and Enhancements
+
+* No new features were added in this version.
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
 |===
 |Issue |Description
-// Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15793[MULE-15793] | Can't get stored procedure name from sql query when there are whitespaces before parentheses 
-| link:https://www.mulesoft.org/jira/browse/MULE-15748[MULE-15748] | MySql default driver causes a memory leak 
-| link:https://www.mulesoft.org/jira/browse/MULE-15644[MULE-15644] | DB On Table Row should hint available columns for ID and Watermark using Value Providers  
-|=== 
+// Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/MULE-15793[MULE-15793] | Can't get stored procedure name from sql query when there are whitespaces before parentheses
+| link:https://www.mulesoft.org/jira/browse/MULE-15748[MULE-15748] | MySql default driver causes a memory leak
+| link:https://www.mulesoft.org/jira/browse/MULE-15644[MULE-15644] | DB On Table Row should hint available columns for ID and Watermark using Value Providers
+|===
 
 == 1.4.0
 
