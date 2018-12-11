@@ -36,6 +36,12 @@ This release includes the following new features, enhancements, and fixes.
 
 === New Features
 
+* In the Transform card, you can view recommendations for how to map the data elements in an input payload to the data elements in an output payload. If a recommendation suits your needs, you can click *Apply* to save the mapping and use it in the card.
+* You can drag and drop payload elements, attributes, and variables into plain text fields, mixing them together with text or using them alone, to specify dynamic, rather than static, values. The values are substituted when your Mule application is running and a flow is triggered.
+* You can create DataWeave expressions in plain text fields, mixing expressions with text or using them alone, to create dynamic values when flows are triggered at runtime. A new editor provides aids for creating expressions.
+* You can change an existing Mule application to use a newer version of Mule Runtime. You might want to do this if the newer version includes updates or new features that you want your application to take advantage of.
+* 
+
 
 === Enhancements
 
