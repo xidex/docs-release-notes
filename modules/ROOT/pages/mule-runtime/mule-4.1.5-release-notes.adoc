@@ -1,0 +1,148 @@
+// Product_Name Version number/date Release Notes
+= Mule Runtime 4.1.5 Release Notes
+:keywords: mule, 4.1.5, runtime, release notes
+
+*Dec 17, 2018*
+
+// // <All sections are required. If there is nothing to say, then the body text in the section should read, “Not applicable.”
+link:http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-4.1.5.zip[Download Mule 4.1.5 EE Distribution]
+// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.>
+////
+== New Features and Enhancements
+
+* <TO_COMPLETE>
+////
+
+Mule Runtime 4.1.5 includes the following enhancements, changes, and fixes:
+
+* Regarding API Gateway capabilities:
+
+This patch version improves outage management when only Contract Service is down and also add small performance improvements, by not resolving unused Spring schemas from Internet.
+
+////
+== Changes
+
+* <TO_COMPLETE>
+
+
+== Known Limitations and Workarounds
+
+* <TO_COMPLETE>
+
+== Upgrade Requirements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// <TO COMPLETE>
+|===
+////
+
+== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| MULE-16186 | ToolingApplicationDescriptorFactory is not setting the class loader model descriptor to the builder
+| MULE-16165 | FlowListener#onComplete() should await for root completion
+| MULE-16130 | transaction-manager not being lazy initialized
+| MULE-16110 | Use the UUID api instead of the library directly in test
+| MULE-16109 | Tooling Applications should delete the applicationDataFolder when disposed
+| MULE-16040 | Backpressure is not triggered by saturated CPU_INTENSIVE threadPool
+| MULE-16037 | JreExplorer no properly determines JRE libs in Java 11
+| MULE-16034 | Http `uriParams` are represented as MultiMap instead of HashMap
+| MULE-16033 | ArtifactCopyNativeLibraryFinder fails when copyNativeLibrary is executed if the artifactTempFolder contains a space
+| MULE-16025 | App directory is deleted in undeployment
+| MULE-15981 | MEL fails to evaluate eventless expressions
+| MULE-15944 | Remove log message when classloader doesn't find AWS class
+| MULE-15942 | 500 returned for scheduler busy in policy
+| MULE-15940 | Interception: Processing a chain in 'before' causes null parameters
+| MULE-15933 | File connector fails to recreate the input stream to a file when reconnection occurs in following components
+| MULE-15908 | Persistent ObjectStore doesn't regenerate the partition descriptor file after a clear
+| MULE-15886 | Mule 4.x Shell Script doens't pass environment variables to /sbin/runuser call
+| MULE-15864 | Terminated Event instances are kept in memory
+| MULE-15854 | Error mappings should be auto created when lazy context is used
+| MULE-15848 | MetadataComponent is OUTPUT_ATTRIBUTES when failing in OutputTypeResolver
+| MULE-15846 | ArtifactClassLoaderRunner - Keep latest version of services only when more than one version for a service is discovered by transitive dependencies
+| MULE-15835 | Invalid XML generated for artifact declaration
+| MULE-15829 | Redeployment fails when using secure configuration properties module on Windows
+| MULE-15822 | Resource is not found when declaring extension in domain project
+| MULE-15804 | Can't neither un-deploy nor redeploy app that depends on a custom lib on Windows
+| MULE-15791 | Wrong location is resolved for redelivery-policy when nested to http listener
+| MULE-15777 | Relative log config file path should be resolved consistently regardless of the OS
+| MULE-15775 | When using a logger to log a value, its result is evaluated again
+| MULE-15755 | Temporal buffer files contain ${} pattern
+| MULE-15735 | Error resolving value provider from studio when there is a dependency with provided scope
+| MULE-15731 | Policy can not contain duplicated plugin with greater version than the app's one
+| MULE-15728 | Resource is not found when declaring extension in domain project.
+| MULE-15705 | Configuration#defaultResponseTimeout not being initialized with lazyInit
+| MULE-15694 | Variables and Payload values set inside UntilSuccessful are not propagated outside of it in case of retry exhausted
+| MULE-15689 | Cannot deserialize with a null classloader
+| MULE-15655 | MVELExpressionLanguage breaks if a value of any binding context typed value is null
+| MULE-15629 | All XML elements on Mule configuration files should support annotations
+| MULE-15616 | Failed to get method by reflection in DefaultResourceReleaser
+| MULE-15582 | Error logs when starting and stopping mule
+| MULE-15496 | Default Trust Manager Algorithm is equal to the Default Keystore Algorithm
+| MULE-15471 | Test infrastructure assumes only one service per artifact
+| MULE-10246 | TransformerWeighting violates transitivity requirement for Comparable
+| MULE-15924 | Miscellaneous performance improvements for proxy scenario
+| EE-6455 | race condition on batch jobs with consumable variables
+| EE-6435 | bti:transaction-manager not being lazy initialized
+| EE-6421 | On step commit cursor providers are incorrectly closed
+| EE-6395 | Batch process deadlock on nested batch jobs
+| EE-6372 | Mule.bat in windows set the WRAPPER_WORKING_DIR incorrectly
+| EE-6371 | Streams eagearly closed in batch:aggregator
+| EE-6329 | Bug in DataWeave access of XML payloads
+| EE-6318 | SynchronizedCollectionsSerializer doesn't synchronize iteration
+| AGW-2715 | Restarting runtime with contracts is deleting them till next polling cycle
+| AGW-2592 | When sending analytics events, client IP in some cases is sent as hostname instead of valid IP address.
+| AGW-2591 | Unused spring schemas are being resolved from Internet
+| AGW-2571 | Requester in a sub-flow is not processing operation policies
+| AGW-2457 | Cannot deserialize with a null classloader
+//
+// -----
+// -DataWeave
+// -----
+| DataWeave a|
+
+* Avoid duplicating namespace when using default namespace
+* Fixes issue with using write function with different charset than the host machine
+* Fix multivalue selector over array was not correctly inferred
+* Fix groupBy signature on objects
+* Improve how memory on string representation as data source on read function
+* Fix order of parameter where inverted for hmac function. Fix the signature to keep compatibility
+* NullPointerException reading Excel file
+* Make flatten stream friendly
+* Allow java module loader to invoke empty constructors
+* Exception while trying to write value as XML
+* AST nodes should retain info about being bracket or dot selectors
+* Fix importing mapping scripts should add implicit inputs
+//
+// -------------------------------
+// - Enhancement Request Issues
+// -------------------------------
+| MULE-16038 | Allow `MavenTestUtils` to pass system properties to a maven build
+| MULE-15764 | Enhance RequestMatcherRegistry
+| MULE-15760 | Allow SDK sources to implement Initialisable and Disposable
+| MULE-15741 | Cache results of frequently calculated values
+| MULE-15701 | Add a timestamp to the flowstacks containing its creation date
+| MULE-15575 | ArtifactDeclaration has no type information for simple parameter values
+|===
+
+== Compatibility Testing Notes
+
+Mule was tested on the following software:
+
+[%header,cols="15a,85a"]
+|===
+|Software |Version
+| JDK | JDK 1.8.0 (Recommended JDK 1.8.0_151/52)
+| OS | MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+| Application Servers | Tomcat 7, Tomcat 8, Weblogic 12c, Wildfly 8, Wildfly 9, Websphere 8, Jetty 8, Jetty 9
+| Databases | Oracle 11g, Oracle 12c, MySQL 5.5+, DB2 10, PostgreSQL 9, Derby 10, Microsoft SQL Server 2014
+|===
+
+The unified Mule Runtime 4.1.5 and API Gateway is compatible with APIkit 1.1.8.
+
+This version of Mule runtime is bundled with the Runtime Manager Agent plugin version 2.1.9.
