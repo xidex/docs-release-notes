@@ -19,7 +19,7 @@ _Select_
 
 === Fixed in this Release
 
-* Fixed an issue on the Replay Streaming Channel where the source stopped working and receiving messages after 48 hours.Fixed by handling DISCONNECTED state of SalesforceBayeuxClient.
+* Fixed an issue on the Replay Streaming Channel where the source stopped working and receiving messages after 48 hours. Fixed by handling the DISCONNECTED state of SalesforceBayeuxClient.
 
 == 9.4.7
 
