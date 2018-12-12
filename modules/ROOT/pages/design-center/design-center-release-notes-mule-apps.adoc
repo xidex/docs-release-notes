@@ -40,11 +40,12 @@ This release includes the following new features, enhancements, and fixes.
 * You can drag and drop payload elements, attributes, and variables into plain text fields, mixing them together with text or using them alone, to specify dynamic, rather than static, values. The values are substituted when your Mule application is running and a flow is triggered.
 * You can create DataWeave expressions in plain text fields, mixing expressions with text or using them alone, to create dynamic values when flows are triggered at runtime. A new editor provides aids for creating expressions.
 * You can change an existing Mule application to use a newer version of Mule Runtime. You might want to do this if the newer version includes updates or new features that you want your application to take advantage of.
-* 
+* You can import a Mule application that was exported from Design Center or Anypoint Studio.
 
 
 === Enhancements
 
+Mule Runtime 4.1.4 is now supported. All new Mule-application projects use 4.1.4 by default.
 
 === Fixes
 
