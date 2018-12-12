@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*October 2018*
-
 _Select_
 
 The Anypoint Connector for Salesforce Composite provides a way to integrate with Salesforce Composite API. The connector exposes convenient methods for preparing sub-requests, execute them in one batch and parse the results. It provides DataSense on both preparation of sub-requests and parsing response of their execution.
