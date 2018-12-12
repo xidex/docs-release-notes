@@ -1,21 +1,21 @@
-= Anypoint Security Release Notes
+= Web Application Firewall Policy Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 == December 10, 2018
 
-== New Feature
+== New Feature: Web Application Firewall Policy
 
-You can now configure Web Application Firewall policies for Runtime Fabric inbound traffic to provide protection at the Web application level. For more information, see xref:anypoint-security::waf-policy.adoc[Web Application Firewall Security Policy]. 
+You can now configure web application firewall policies for Runtime Fabric inbound traffic to provide protection at the Web application level. For more information, see xref:anypoint-security::waf-policy.adoc[Web Application Firewall Security Policy].
 
-== Known Limitations, issues, and Workarounds
+== Known Limitations, Issues, and Workarounds
 
 === Max Response Msg Body is Capped
 
-(MSG-6502) The maximum response message body is capped at 512 KB. The limit is needed to make sure that excessive resources are not consumed when scanning response bodies. By default, the *Disable body scanner* option is left unchecked, which means the response message body will be scanned for rules violations.
+(MSG-6502) The maximum response message body is 512 KB. The limit is needed to make sure that excessive resources are not consumed when scanning response bodies. By default, the *Disable body scanner* option is left unchecked, which means the response message body will be scanned for rules violations.
 
-If response message body scanning is not disabled, traffic with response bodies larger than 512 KB will be rejected.
+If response message body scanning is not disabled, traffic with response bodies larger than 512 KB are rejected.
 
 *Workaround*
 
@@ -25,7 +25,7 @@ Disable response message body scanning by checking the *Disable body scanner* op
 
 (MSG-6486) The WAF summary message includes 53 rules that are not supported at this time.
 
-The WAF summary message, which appears in the RTF Input Traffic logs lists Rule IDs for OWASP CRS that are not supported by Anypoint Security for various reasons. The correct list of rule IDs is shown in the Edge API Policies RAML file `dataTypes/policies/WafRules/Rulesets.json`.
+The WAF summary message, which appears in the RTF Input Traffic logs, lists Rule IDs for OWASP CRS that are not supported by Anypoint Security for various reasons. The correct list of rule IDs is shown in the Edge API Policies RAML file `dataTypes/policies/WafRules/Rulesets.json`.
 
  The following Rule IDs listed in the WAF summary message are not supported:
 
@@ -57,7 +57,7 @@ The WAF summary message, which appears in the RTF Input Traffic logs lists Rule 
 
  *Workaround*
 
- If response bodies do not have a supported MIME type for response body checking, it will be necessary to write additional application business logic to make appropriate checks before sending responses.
+ If response bodies do not have a supported MIME type for response body checking, you must write additional application business logic to make appropriate checks before sending responses.
 
  == Fixed Issues
 
