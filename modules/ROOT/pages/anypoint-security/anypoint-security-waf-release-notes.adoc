@@ -5,11 +5,9 @@ endif::[]
 
 == December 10, 2018
 
-== New Features
+== New Feature
 
-This release includes the following new features:
-
-=== Web Application Firewall Policy
+You can now configure Web Application Firewall policies for Runtime Fabric inbound traffic to provide protection at the Web application level. For more information, see xref:anypoint-security::waf-policy.adoc[Web Application Firewall Security Policy]. 
 
 == Known Limitations, issues, and Workarounds
 
@@ -48,7 +46,7 @@ The WAF summary message, which appears in the RTF Input Traffic logs lists Rule 
 
  (MSG-6430) In the current release, a limited non-configurable list of mime types are supported for response body checking.
 
- The supported mime types are:
+ The supported MIME types are:
 
  * text/plain
  * text/html
@@ -65,9 +63,9 @@ The WAF summary message, which appears in the RTF Input Traffic logs lists Rule 
 
  === Excessive Logging Slows Performance
 
- The issue where excessive logging slows performance for bad `x-forwarded-for header` has been fixed.
+ (MSG-5637) The issue where excessive logging was slowing performance for bad `x-forwarded-for header` has been fixed.
 
- The Edge was logging a message for each invalid IP address encountered in a source IP header such as `x-forwarded-for`. This header is client changeable. If an attacker provided an invalid value, this log message generated at the rate of one log message for each message, which degraded Edge performance at a rate equal to how fast it could log messages. 
+ The Edge was logging a message for each invalid IP address encountered in a source IP header such as `x-forwarded-for`. This header is client changeable. If an attacker provided an invalid value, this log message generated at the rate of one log message for each message, which degraded Edge performance at a rate equal to how fast it could log messages.
 
  *Fix*
 
