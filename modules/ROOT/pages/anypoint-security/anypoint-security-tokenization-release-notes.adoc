@@ -25,8 +25,10 @@ The tokenization service has the following limitations:
 *Workaround*
 
 If the table fails to apply:
+
 . In the Tokenization Service list page, click *Edit*.
-. Click *Redeploy*. +
+. Click *Redeploy*.
++
 The VDP table is not rebuilt the second time--it only applies, and should take only 2-3 minutes.
 
 === Tokenization Service Create is Stuck in Applying State
@@ -58,7 +60,7 @@ Use a dedicated Secret Group for use only by the tokenization service.
 
 === Status Displayed as "None"
 
-(MSG-6315) The tokenization service CREATE does not navigate back to the Tokenization Service list page after sending out a "Successful Deploy Request" message.
+(MSG-6315) The tokenization service `CREATE` does not navigate back to the Tokenization Service list page after sending out a "Successful Deploy Request" message.
 
 When the user clicks *Deploy* they see a green box in the lower right corner saying "Request Successful" for 10 seconds. The status on this page continues to display "None".  Depending on how many formats are included in the request, the tokenization service can take from 5 minutes, up to 60 minutes to build and be applied. There will be no change in status on this page during this time.
 

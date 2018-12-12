@@ -27,46 +27,47 @@ Disable response message body scanning by checking the *Disable body scanner* op
 
 The WAF summary message, which appears in the RTF Input Traffic logs, lists Rule IDs for OWASP CRS that are not supported by Anypoint Security for various reasons. The correct list of rule IDs is shown in the Edge API Policies RAML file `dataTypes/policies/WafRules/Rulesets.json`.
 
- The following Rule IDs listed in the WAF summary message are not supported:
+The following Rule IDs listed in the WAF summary message are not supported:
 
- ----
- 913101, 913102, 920200, 920201, 920230, 920300, 920271, 920320, 920121,
- 920272, 920202, 920273, 920274, 920460, 921151, 921180, 931130, 933151,
- 933131, 933161, 933111, 941101, 941150, 941320, 941330, 941340, 942110,
- 942120, 942130, 942150, 942180, 942200, 942210, 942260, 942300, 942310,
- 942330, 942340, 942370, 942380, 942390, 942400, 942410, 942430, 942440,
- 942450, 942251, 942420, 942431, 942460, 942421, 942432, 950100
- ----
+[source, text, linenums]
+----
+913101, 913102, 920200, 920201, 920230, 920300, 920271, 920320, 920121,
+920272, 920202, 920273, 920274, 920460, 921151, 921180, 931130, 933151,
+933131, 933161, 933111, 941101, 941150, 941320, 941330, 941340, 942110,
+942120, 942130, 942150, 942180, 942200, 942210, 942260, 942300, 942310,
+942330, 942340, 942370, 942380, 942390, 942400, 942410, 942430, 942440,
+942450, 942251, 942420, 942431, 942460, 942421, 942432, 950100
+----
 
- *Workaround*
+*Workaround*
 
- Disregard these rule IDs in the WAF summary message report. They are always reported with zero counts. These rule IDs are not executed so there is no reason to disable them when disabling rule IDs for false positives.
+Disregard these rule IDs in the WAF summary message report. They are always reported with zero counts. These rule IDs are not executed so there is no reason to disable them when disabling rule IDs for false positives.
 
- === MIME Type Support for Response Body Checking are Limited
+=== MIME Type Support for Response Body Checking are Limited
 
- (MSG-6430) In the current release, a limited non-configurable list of mime types are supported for response body checking.
+(MSG-6430) In the current release, a limited non-configurable list of mime types are supported for response body checking.
 
- The supported MIME types are:
+The supported MIME types are:
 
- * text/plain
- * text/html
- * text/xml
- * application/json
+* text/plain
+* text/html
+* text/xml
+* application/json
 
- If the content type of the response message does not match a supported MIME type, it is not scanned.
+If the content type of the response message does not match a supported MIME type, it is not scanned.
 
- *Workaround*
+*Workaround*
 
- If response bodies do not have a supported MIME type for response body checking, you must write additional application business logic to make appropriate checks before sending responses.
+If response bodies do not have a supported MIME type for response body checking, you must write additional application business logic to make appropriate checks before sending responses.
 
- == Fixed Issues
+== Fixed Issues
 
- === Excessive Logging Slows Performance
+=== Excessive Logging Slows Performance
 
- (MSG-5637) The issue where excessive logging was slowing performance for bad `x-forwarded-for header` has been fixed.
+(MSG-5637) The issue where excessive logging was slowing performance for bad `x-forwarded-for header` has been fixed.
 
- The Edge was logging a message for each invalid IP address encountered in a source IP header such as `x-forwarded-for`. This header is client changeable. If an attacker provided an invalid value, this log message generated at the rate of one log message for each message, which degraded Edge performance at a rate equal to how fast it could log messages.
+The Edge was logging a message for each invalid IP address encountered in a source IP header such as `x-forwarded-for`. This header is client changeable. If an attacker provided an invalid value, this log message generated at the rate of one log message for each message, which degraded Edge performance at a rate equal to how fast it could log messages.
 
- *Fix*
+*Fix*
 
- The message was changed from ERROR level to DEBUG level so performance is not degraded for Edges that are using the recommended or default production log level setting of ERROR.
+The message was changed from ERROR level to DEBUG level so performance is not degraded for Edges that are using the recommended or default production log level setting of ERROR.
