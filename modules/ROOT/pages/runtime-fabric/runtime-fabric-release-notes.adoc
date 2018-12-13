@@ -8,11 +8,9 @@ In addition to these release notes, see the complete xref:1.0@runtime-fabric::in
 
 == 1.1.178 - December 12, 2018
 
-This release includes the following fix:
+This release includes the following fixes:
 
-* Fixed: kubernetes version upgraded to v1.9.12
-* Fixed: Removed telegraf depedency from gravitational package.
-* Fixed: Fixed init script failure in RTF installion in single node using proxy.
+* Fixed: Removed a hardcoded dependency with a component used to collect metrics for the Ops Center. Note: newer builds of the Runtime Fabric installation package will require this update.
 
 == 1.1.168 - November 30, 2018
 
