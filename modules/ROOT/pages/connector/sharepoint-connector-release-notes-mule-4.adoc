@@ -30,6 +30,23 @@ The SharePoint connector is compatible with:
 *  When doing a Select Item Query the connector threw NullPointerException.
 The problem was solved by parsing the query provided by client.
 
+== Version 3.1.0 
+
+*May 10, 2018*
+
+The Sharepoint connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio|Only works with Studio 7.1.0 and later
+|===
+
+=== Features:
+
+* Implemented triggers for created, deleted and updated objects. The triggers are New Objects Trigger, Deleted Objects Trigger, Modified Objects Trigger.
+
 == 3.0.0
 
 *January 19, 2018*
