@@ -6,6 +6,12 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== 1.1.178 - December 12, 2018
+
+This release includes the following fixes:
+
+* Fixed: Removed a hardcoded dependency with a component used to collect metrics for the Ops Center. Note: newer builds of the Runtime Fabric installation package will require this update.
+
 == 1.1.168 - November 30, 2018
 
 This release includes the following fix:
