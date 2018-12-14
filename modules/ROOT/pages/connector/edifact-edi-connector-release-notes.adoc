@@ -3,15 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*April 2018*
-
 _Premium_
 
 == 2.0.1
 
 === Fixed Issues
 
-* Correct escape handling for release character (typically '?')
+* Correct escape handling for release character (typically `?`)
 
 === Compatibility
 
@@ -51,4 +49,4 @@ Anypoint Studio may require more memory than allowed by the default settings to 
 
 * xref:connectors::edifact/edifact-edi-connector.adoc[EDIFACT EDI Connector Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
