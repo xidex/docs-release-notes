@@ -1,0 +1,43 @@
+= Runtime Manager Agent 2.1.9 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+_December 7, 2018_
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager Agent, version 2.1.9.
+
+== New Features and Enhancements
+
+This release contains the following new features or enhancements:
+
+* Added support for flushing disk-buffered Mule events in batches of a configurable size.
+
+== Changes in This Release
+
+This release contains no changes to existing functionality.
+
+== Fixed Issues
+
+This release contains the following issue fixes:
+
+* Issue that caused buffered events to be discarded when using disk buffer in the scenario that buffered events exceeded in-memory limit size.
+* Upgraded the versions of several dependency libraries.
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+
+== Compatibility Notes
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Software|Version
+|JDK      |JDK 1.8.0 (Recommended JDK 1.8.0_151/52)
+|OS       |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+|Mule 4.x | This agent version is compatible only with Mule 4.x versions.
+|===

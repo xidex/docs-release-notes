@@ -3,9 +3,90 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
-
 _Select_
+
+== 9.4.8
+
+*December 12, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue on the Replay Streaming Channel where the source stopped working and receiving messages after 48 hours. Fixed by handling the DISCONNECTED state of SalesforceBayeuxClient.
+
+== 9.4.7
+
+*December 7, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue on the Create operation that was not returning the DuplicateResults when there was a duplicate record in the Salesforce instance.
+Now if the "includeRecordDetails" header is specified, the operation returns the details about the duplicate entities.
+
+== 9.4.6
+
+*November 28, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue on Query operation where the connector was not able to reconnect after the session became invalid
+* The Query operation was not handling properly the exceptions thrown by the Salesforce API.
+
+== 9.4.5
+
+*November 14, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed security issues regarding libraries. 
+
+== 9.4.4
+
+*November 14, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue in the Read Metadata operation where the connector was unable to return picklist values.
+* Fixed the problem of error message mapping in the Create Bulk v2 operation.
 
 == 9.4.3
 
@@ -15,7 +96,7 @@ _Select_
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -32,7 +113,7 @@ _Select_
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -48,7 +129,7 @@ _Select_
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -65,7 +146,7 @@ _Select_
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -81,16 +162,14 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
 === Fixed in this Release
 
 * Fixed an issue where the connector Attachments were not supporting base64 encoded body.
-
 * Fixed an issue on create ContentVersion object that was failing because the Content Data field was not serialized properly.
-
 * Fixed an issue for the Batch info list, Batch info, and Job info operations that were going into an infinite loop because they were defaulting to XML content type. Optional parameters were added so the user can specify the content type for the entity so that it will not fail any more.
 
 == 9.3.4
@@ -101,7 +180,7 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -112,11 +191,12 @@ Added support for Salesforce V43.
 == 9.3.3
 
 *September 19, 2018*
+
 [%header%autowidth.spread]
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -134,7 +214,7 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -170,7 +250,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -187,7 +267,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -231,7 +311,7 @@ The problem was solved by adding 4 new operations for create, update, upsert, an
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -275,7 +355,7 @@ In this version Salesforce Connector works correctly in EU.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -307,7 +387,7 @@ Salesforce connector version 9.2.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -327,7 +407,7 @@ Salesforce connector version 9.1.1 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |Studio 7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -357,7 +437,7 @@ Salesforce connector version 9.1.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0
-|Anypoint Studio |Only works with Studio 7.0.0 and later
+|Anypoint Studio |Studio 7.0.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -387,12 +467,12 @@ Salesforce connector version 9.0.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.0.0 and later
-|Anypoint Studio |Only works with Studio 7.0.0 and later
+|Anypoint Studio |Studio 7.0.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0
 |===
 
 == See Also
 
-* xref:connectors::salesforce/salesforce-connector.adoc[Salesforce Connector]
+* xref:connectors::salesforce/salesforce-connector.adoc[Salesforce Connector Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

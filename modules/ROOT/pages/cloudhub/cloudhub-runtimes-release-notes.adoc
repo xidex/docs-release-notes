@@ -6,18 +6,158 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== Nov 10, 2018
+== December 13, 2018
+
+3.9.2 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+3.9.1 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+3.9.0 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+== December 12, 2018
 
 4.1.4 Runtime Update:
 
-* Invalid Session ID on SFDC connector reconnnection attempt [SE-9471]
+* Diagnostic logs download [SE-10249]
 
 4.1.3 Runtime Update:
 
-* Invalid Session ID on SFDC connector reconnnection attempt [SE-9471]
+* Diagnostic logs download [SE-10249]
+
+4.1.2 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+4.1.1 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+4.1.0 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+== December 10, 2018
+
+3.9.2 Runtime Update:
+
+* MEL expression failure with concurrent requests [SE-10166]
+
+3.9.1 Runtime Update:
+
+* MEL expression failure with concurrent requests [SE-10166]
+* OAuth provider does not honor expired token TTL [SE-8650]
+* LIST command is not issued after reconnection in FTP transport [SE-9323]
+* APIKit validation error doesn't display the field name [SE-8727]
+
+3.9.0 Runtime Update:
+
+* OAuth provider does not honor expired token TTL [SE-8650]
+* LIST command is not issued after reconnection in FTP transport [SE-9323]
 
 
-== Nov 9, 2018
+== December 7, 2018
+
+4.1.4 Runtime Update:
+
+* Invalid XML generated for artifact declaration [MULE-15835]
+
+4.1.3 Runtime Update:
+
+* Invalid XML generated for artifact declaration [MULE-15835]
+
+
+== December 6, 2018
+
+3.9.2 Runtime Update:
+
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+3.9.1 Runtime Update:
+
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+3.9.0 Runtime Update:
+
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+
+== December 5, 2018
+
+4.1.4 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Expose mule deployment error [SE-8554, SE-9209]
+* Security enhancements
+
+4.1.3 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Expose mule deployment error [SE-8554, SE-9209]
+* Security enhancements
+
+4.1.2 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+4.1.1 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+4.1.0 Runtime Update:
+
+* Batch persistent queue initialization [SE-9688]
+* Wrapper working directory [SE-10173]
+* Security enhancements
+
+
+== November 26, 2018
+
+4.1.4 Runtime Update:
+
+* Amazon SQS connector shutdown exception. [SE-9149]
+* Backpressure is not triggered by a saturated CPU_INTENSIVE thread pool. [SE-10078]
+
+4.1.3 Runtime Update:
+
+* Amazon SQS connector shutdown exception. [SE-9149]
+
+
+== November 22, 2018
+
+4.1.4 Runtime Update:
+
+* 'Could not deserialize object' in cache component. [SE-9879]
+* DataWeave stream closed intermittently in a batch process. [SE-9974]
+* DataWeave `flatten()` function is not streaming. [SE-10077]
+
+
+== November 10, 2018
+
+4.1.4 Runtime Update:
+
+* Invalid Session ID on SFDC connector reconnnection attempt. [SE-9471]
+
+4.1.3 Runtime Update:
+
+* Invalid Session ID on SFDC connector reconnnection attempt. [SE-9471]
+
+
+== November 9, 2018
 
 4.1.4 Runtime Update:
 
@@ -33,22 +173,22 @@ These are the release notes for patches which are made to the Mule runtimes on C
 * Response encoding is replaced in Web Service Consumer. [SE-9298]
 
 
-== Nov 5, 2018
+== November 5, 2018
 
 3.9.0 Runtime Update:
 
 * Let customer fix invalid cron schedules after start [SE-8632]
-* Internal HTTP client enhacnements
+* Internal HTTP client enhancements
 * Security enhancements
 
 3.9.1 Runtime Update:
 
 * Let customer fix invalid cron schedules after start [SE-8632]
-* Internal HTTP client enhacnements
+* Internal HTTP client enhancements
 * Security enhancements
 
 
-== Nov 2, 2018
+== November 2, 2018
 
 4.0.0 Runtime Update:
 

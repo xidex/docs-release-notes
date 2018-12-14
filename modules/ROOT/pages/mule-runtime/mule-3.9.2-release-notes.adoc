@@ -1,0 +1,187 @@
+// Product_Name Version number/date Release Notes
+= Mule Runtime 3.9.2 Release Notes
+:keywords: mule, 3.9.2, runtime, release notes
+
+*Nov 23, 2018*
+
+// <All sections are required. If there is nothing to say, then the body text in the section should read, “Not applicable.”
+This document describes new features and enhancements, known limitations, issues, and fixes in Mule Runtime 3.9.2.
+
+Be sure to read this document before you install this release. For reference, save these release notes to your hard drive or print a copy.
+
+http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-3.9.2.zip[Download Mule 3.9.2 EE Distribution]
+
+////
+== New Features and Enhancements
+////
+
+== Changes
+
+Regarding API Gateway capabilities:
+
+Of the various bugs fixed, noteworthy is fix AGW-2631. The issue occurred when an API previously tracked was deleted from API Manager and then the runtime was restarted. Now, by default, in that scenario, all policies that were previously applied will continue to be applied, including existing contracts that are locally cached. If you want stricter security, you can control this behavior by specifying the following system property:
+
+`anypoint.platform.policies.on_api_deleted=block_api|keep_policies(default)`
+
+== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| MULE-15968 | FTP List command not issued after reconnection by FTP transport, resulting in stale connection.
+| MULE-15963 | JMS connection is not closed upon a failure during post creation.
+| MULE-15888 | Malformed URL returns 500 instead of 400.
+| MULE-15865 | JMS connector deadlocks with ActiveMQ broker reconnection, and forever retry policy.
+| MULE-15807 | OAuth ClientCredentials: Race condition when two requests try to refresh the token at the same time.
+| MULE-15789 | `DataSourceConfig` needs to ask `isExpression`.
+| MULE-15769 | IMAP reconnection policy is not working.
+| MULE-15759 | JSON and JAXB transformers must be eagerly initialized.
+| MULE-15745 | Spring Expression Language cannot escape "#{".
+| MULE-15744 | JMS connection is not closed on error while connecting.
+| MULE-15722 | HTTP requester is sending content-type even if no payload is sent.
+| MULE-15710 | Attachment is not included in the Mule message when it is not a Multipart.
+| MULE-15703 | Update grizzly due to closed stream in NTLM dancing and guarantee closing of streams.
+| MULE-15698 | `EnvelopeInterceptor.before` not called with non-blocking `ProcessingStrategy`.
+| MULE-15659 | Cannot configure the shutdown timeout for a `WorkManager` listener in a domain.
+| MULE-15624 | `dbCreateStruct` function should be able to resolve BLOB and CLOB.
+| MULE-15582 | Error logs when starting and stopping Mule.
+| MULE-15528 | MEL does not reset collection type on parsing nested collections.
+| MULE-15496 | Default Trust Manager algorithm is equal to the Default Keystore algorithm.
+| MULE-15493 | OAuth2 Request configuration always fetches token at startup.
+| MULE-15491 | Dynamic DB datasource factory does not dispose cached datasources.
+| MULE-15487 | Upgrade Jackson to 2.9.7 in 3.x.
+| MULE-15456 | CXF does not reset the thread owner in case of non-blocking without `replyToHandler`.
+| MULE-15454 | Recurring log warning: `ListenerSubscriptionPair` has already been registered.
+| MULE-15433 | JMS Connection Factory should not be cached when it isretrieved through JNDI.
+| MULE-15344 | HTTP request uses the existing DataType when the content or type are empty.
+| MULE-15343 | When SFTP transport is configured with append mode for duplicate handling strategy, `tempDirOutbound` is not supported.
+| MULE-15341 | `validation:is-time` accepts invalid dates.
+| MULE-15326 | Grizzly AHC race condition occurs when using New Relic.
+| MULE-15264 | Message attachments have no order.
+| MULE-15246 | Cannot replace a Catch All listener with another.
+| MULE-15175 | NPE when executing `NullSafe` expression in MVEL
+| MULE-15156 | Non-blocking flow containing a Scatter Gather router performs infinite loop on the error handler.
+| MULE-15152 | Simultaneous reading and writing causes NPE in Grizzly.
+| MULE-15145 | Error creating Bean of Type  `org.mule.module.spring.security.AuthorizationFilter` after migrating code from 3.8.5 to 3.8.6.
+| MULE-15138 | JMX notifications must be sent using a string as a message source.
+| MULE-15137 | WSDLUtils is not taking into account already-resolved dependencies.
+| MULE-15064 | WSConsumer not adding a Content-Disposition Header when MTOM is enabled.
+| MULE-15062 | Infinite timeout conflicts with socket timeout.
+| MULE-15021 | TLS restrictions are not enforced on implicit connections.
+| MULE-15004 | Using `serverTimeout` has no effect.
+| MULE-14969 | `PartitionInMemoryObjectStore` is leaking `ExpiryInfo` objects.
+| MULE-14949 | SSL issue log message has the wrong debug data.
+| MULE-14946 | Async scope is not allowed in the same flow after the Transactional scope.
+| MULE-14944 | HTTP listener parse errors expose request data without escaping it.
+| MULE-14940 | `EndpointTransactionalInterceptingMessageProcessor` has not been creating the transactional execution template for JMS since 3.8.0.
+| MULE-14929 | HTTP with one configuration and two listeners fails to find the correct resolution path.
+| MULE-14923 | Artemix Full Qualified Queue Name is truncated due to the use of the `::` separator.
+| MULE-14901 | 50% performance degradation with empty `MessageProcessorNotificationListener`.
+| MULE-14887 | HTTP listener does not stream `OutputHandlers`.
+| MULE-14878 | Mule 3 and 4 HTTP connectors' correlation IDs should interoperate.
+| MULE-14503 | `JsonLayout` in logging needs Jackson core and databind libraries to be in `lib/boot`.
+| MULE-10246 | `TransformerWeighting` violates a transitivity requirement for `Comparable`.
+| MULE-15340 | Deprecate the static bus instance option.
+| MULE-15259 | Provide the option to reset the underlying controller of `XSLTTransformer`.
+| MULE-15039 | CXF leaks `responseContext` in the `ClientImpl`.
+| EE-6051 | Update Tanuki wrapper to 3.5.35 to address file encoding issues.
+| EE-6351 | Mule Runtime NPE.
+| EE-6330 | When Insight is enabled, consumable payloads are converted to String.
+| EE-6318 | `SynchronizedCollectionsSerializer` does not synchronize iteration.
+| EE-6299 | Serialization error when trying to serialize Guava immutable collections with Kryo.
+| EE-6291 | Under heavy load, a `NullPointerException` makes some requests fail.
+| EE-6203 | Transaction is incorrectly updated in BTM journal if there is a failover during recovery.
+| EE-6202 | Tracking `eventNotification` has to send the original because of consumable stream.
+| EE-6156 | Kryo cannot serialize charsets.
+| EE-6130 | Kryo serializers cannot handle CAS types.
+| EE-6111 | Exception is raised when trying to invalidate an `InMemory` cache.
+| EE-6099 | `TransactedPollingJmsMessageReceiver` is not working for JMS spec 1.1.
+| EE-5938 | Delegate Distributed Object Store Expiration to hazelcast.
+| EE-5518 | World-Readable Java KeyStore and Configuration Files.
+| EE-5959 | Add optional functionality to manage license keys in default env preferences location.
+//
+// -------------------------------
+// - AGW
+// -------------------------------
+| AGW-2660 | Mule Runtime does not gracefully shut down when a "Cross-Origin resource sharing" policy is applied.
+| AGW-2631 | Inconsistent behavior occurs after an API is deleted and the runtime is restarted.
+| AGW-2506 | Add a message when a policy is not applied to any flow.
+| AGW-2455 | OAuth2 Provider with cached `api-platform-gw:client-store` for 401.
+| AGW-2122 | When an API is deleted from the Platform, a different behavior occurs depending on poller.
+| AGW-2108 | API Gateway expression language fails when processing a Windows-style file separator.
+| AGW-2011 | Unhandled NPE when autodiscovery points at an undefined flow.
+//
+// -------------------------------
+// - Enhancement Request Issues
+// -------------------------------
+| MULE-15927 | Allow HTTP requests to retry on all methods.
+| MULE-15788 | More details when `DefaultExpressionManager.DefaultExpressionManager()` fails
+| MULE-15665 | HTTP null host when port is invalid.
+| EE-6094 | Mule + Websphere: Custom service without `mule-boot-all.jar` in `java/ext` of Websphere.
+//
+// --------------------------------
+// - DataWeave
+// --------------------------------
+| Dataweave a| 
+
+* SE-9908: DataWeave is not allowing keywords/reserved-words to be used on variables name.
+* SE-9742: Fix scaped characters on string literals.
+* SE-9547: Fixes CSV escaping inside quoted values.
+* SE-8733: Fixed `bodyStartLineNumber` in the indexed CSV parser.
+* SE-8698: Avoid index out of bound when calling `camelize` with trailing slash.
+* SE-8353 Close stream when file is GC to avoid `tmp` files leak.
+* SE-8423: Add a new system property `com.mulesoft.weave.closeAfterFunCall` to control whether the DataWeave function should close stream after call.
+* SE-8296 Make indexed and streaming CSV reader work the same.
+* SE-7985: Fix handling of map transform for output.
+|===
+
+== Known Limitations and Workarounds
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| MULE-15603 | Values of `AsyncInterceptingMessageProcessor maxThreadsActive` and `minThreadsActive` are not accurate.
+| EE-6181 | Use deadlock safe strategy for transaction logging.
+|===
+
+
+== Upgrade Requirements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| MULE-8817 | `spring-messaging` was upgraded from 4.1.9 to 4.3.17.
+| MMULE-15004 | The HTTP listener's socket server timeout default was changed from 0 to 60 seconds, while respecting the `connectionIdleTimeout` settings.
+| MULE-15264 | Message attachments now respect the order of their introduction, meaning that their addition order will match the order in which they are sent to external services, and the order in which they are received from external services will match the order in which they are stored.
+| MULE-15344 | HTTP will now follow RFC-2616 to determine the mime type when no Content-Type header is sent but data is available (using `application/octet-stream`). When no data is available it will now use `*/*`.
+|===
+
+== Software Compatibility Testing
+
+Mule was tested on the following software:
+
+[%header,cols="15a,85a"]
+|===
+|Software |Version
+| JDK | JDK 1.8.0 (Recommended JDK 1.8.0_191/192)
+| OS | MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+| Application Servers | Tomcat 7, Tomcat 8, Weblogic 12c, Wildfly 8, Wildfly 9, Websphere 8, Jetty 8, Jetty 9
+| Databases | Oracle 11g, Oracle 12c, MySQL 5.5+, DB2 10, PostgreSQL 9, Derby 10, Microsoft SQL Server 2014
+|===
+
+The unified Mule Runtime 3.9.2 and API Gateway is compatible with APIkit 3.9.2.
+
+This version of Mule Runtime is bundled with the Runtime Manager Agent plugin version 1.11.2.
+
+== Library Changes
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| MULE-15646 | Upgrade Jetty to 9.4.12.
+| MULE-15332 | Upgrade BouncyCastle to 1.60.
+| MULE-15176 | Upgrade Guava to 26.0 in 3.x.
+| MULE-15033 | Upgrade Hazelcast to 3.10.4.
+| MULE-14926 | Upgrade Groovy to 2.4.15.
+|===

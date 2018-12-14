@@ -1,14 +1,13 @@
-= Anypoint MQ Connector Release Notes
+= Anypoint MQ Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mq, connector, release, notes
 
 *November 2018*
 
 _Select_
 
-*Note:* Anypoint MQ version 2.x only works with Mule 4 and Studio 7. For the Mule 3 Anypoint MQ Connector Release Notes, see xref:connector/mq-connector-release-notes[Anypoint MQ Connector Release Notes].
+*Note:* Anypoint MQ version 2.x only works with Mule 4 and Studio 7. For the Mule 3 Anypoint MQ Connector Release Notes, see xref:connector/mq-connector-release-notes[Anypoint MQ Connector Release Notes - Mule 3].
 
 Anypoint MQ Connector lets you add messaging access to Anypoint MQ queues and exchanges from Anypoint Studio applications.
 
@@ -74,7 +73,24 @@ To disable Prefetch:
 +
 If there are no messages in the queue, each poll that a subscriber makes waits for the duration of exactly half of the *Polling time* specified in the General tab. Polling time has a maximum value of 20000 milliseconds.
 
-*Note:* Versions 2.0.1 - 2.0.3 were internal releases only without changes to the user interface or product usage.
+*Note:* Versions 2.0.2 - 2.0.3 were internal releases only without changes to the user interface or product usage.
+
+== 2.0.1
+
+*July 4, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime |4.0.0 and later
+|Anypoint Studio |7.0.0 and later
+|===
+
+=== Fixed in This Release
+
+* Internal fix only - no change to the user interface or product usage.
 
 == 2.0.0
 

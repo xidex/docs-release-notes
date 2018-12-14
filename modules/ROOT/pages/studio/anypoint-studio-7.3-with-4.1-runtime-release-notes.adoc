@@ -38,8 +38,8 @@ Build Id: 201810261725
 
 === Studio Compatibility
 
-* Projects created or updated with Studio 7.3.x or 7.2.x are not compatible with 7.1.x due to some improvements with the management of the mule-artifcat.json file. The content of the file was reduced and part of the content used to be required by Studio 7.1.x. +
-To fix this issue you only need to update Studio to the latest 7.2.x version available. See xref:studio::update-workspace.adoc[Updating Workspaces] for more information.
+* Projects created or updated with Studio 7.3.x or 7.2.x are not compatible with 7.1.x due to some improvements with the management of the mule-artifact.json file. The content of the file was reduced and part of the content used to be required by Studio 7.1.x. +
+To fix this issue, you only need to update Studio to the latest 7.2.x version available. See xref:studio::update-workspace.adoc[Updating Workspaces] for more information.
 * Workspaces created using Anypoint Studio 6.x or below are not compatible with Anypoint Studio 7 workspaces.
 
 == What's New
@@ -138,8 +138,8 @@ Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting
 * MUnit Test Suite Message Flow view blank after restart (Studio 7.x, including 7.3 BETA).
 * Cannot open any operation editor after closing operation editor window.
 * When creating a VM Publish, the queue name is not found after configure the VM connector.
-* When setting target value field in HTTP Request, metada propagation is not set correctly.
-* Copy Paste keyboard shortcuts doesn't work.
+* When setting target value field in HTTP Request, metadata propagation is not set correctly.
+* Copy Paste keyboard shortcut doesn't work.
 * SWT exception appears using an incorrect syntax for a Set Payload operator.
 * Logger Message field does not accept autocompletion of variables.
 * Evaluating expressions are missing the mime type on the tree.
@@ -148,13 +148,13 @@ Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting
 * When creating a variable target in DW, both properties trees are not shown.
 * Error propagate operation throws a IllegalArgumentException when clicking magnifying glass.
 * Error filling input document when a specific Transform Message is selected.
-* When setting metadata to a Choice field, it does not do nothing.
+* When setting metadata to a Choice field, it does not do anything.
 * When switching to DW view in a expression field, an error is thrown.
 * When adding migrated REST connectors from Exchange, errors are shown and they can't be used.
 * DataWeave - Doing undo twice hangs Studio.
 * When importing a project, custom metadata is not shown.
 * When selecting a flow, delete button is disabled.
-* When opening a mule properties editor for the first time, an error is thrown..
+* When opening a mule properties editor for the first time, an error is thrown.
 * [SE] Customer stated that the wording publishment is not a correct English word.
 * Projects which have an American API defined in exchange throw an error.
 * NPE when parsing XML.
@@ -171,13 +171,13 @@ Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting
 * _In parameter_ mapping doesn't load dynamic metadata.
 * Unable to locate WSDL file error.
 * API Definition fails when importing it from Design Center.
-* Studio freezes when editing medium size DataWeve file in the transform component.
+* Studio freezes when editing medium size DataWeave file in the transform component.
 * When switching to expression mode, error marker is not shown correctly.
 * When creating data from preview, it does not generate anything.
-* When doing undo in a DW script editor, an error is thrown..
+* When doing undo in a DW script editor, an error is thrown.
 * When opening a DW editor in a field, lines are not drawn correctly.
 * When dragging and dropping a mp over the source area, an error is thrown.
-* When opening Studio in windows machines, splash is not shown.
+* When opening Studio in Windows machines, splash is not shown.
 * Fix Element title in the documentation view.
 * Transform Message Component UI is not displaying properly.
 * Useless field when creating a Mule Configuration File.

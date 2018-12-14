@@ -3,6 +3,11 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+[WARNING]
+This release breaks backward compatibility on the deployment configuration section.
+It follows the same configuration as the 3.x version of the plugin. +
+Check this xref:mule-runtime::mmp-deployment-concept.adoc[section] to make the proper changes.
+
 This new release of the plugin includes the support to deploy applications into Runtime Fabric. +
 Also, we have manage to fix a small number of issues that were affecting the product.
 
