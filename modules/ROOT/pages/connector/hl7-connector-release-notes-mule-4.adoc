@@ -7,6 +7,27 @@ endif::[]
 
 _Premium_
 
+== 4.0.2
+
+=== Fixed Issues
+
+* Corrected datasense metadata (removed "Heading" level shown in datasense but not actually used in data)
+* Added support for all standard escape sequences, except those which change character encoding (will not be supported)
+* Fixed writing a String value to a timestamp field (by default expects XMLGregorianCalendar, but correctly formatted String also supported)
+* Corrected handling of MSH-18 character encoding field, allowing either a simple String or a list of Strings, depending on schema version
+
+=== Compatibility
+
+HL7 EDI Connector v4.0.2 is compatible with the following:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|HL7 |v2.1, v2.2, v2.3.1, v2.3, v2.4, v2.5, v2.5.1, v2.6, 2.7, 2.7.1, 2.8, 2.8.1
+|===
+
 == 4.0.1
 
 *August 30, 2018*
