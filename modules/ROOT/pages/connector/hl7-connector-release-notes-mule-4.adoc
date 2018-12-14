@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*December 2018*
-
 _Premium_
 
 == 4.0.2
@@ -13,10 +11,10 @@ _Premium_
 
 === Fixed Issues
 
-* Corrected datasense metadata (removed "Heading" level shown in datasense but not actually used in data)
-* Added support for all standard escape sequences, except those which change character encoding (will not be supported)
-* Fixed writing a String value to a timestamp field (by default expects XMLGregorianCalendar, but correctly formatted String also supported)
-* Corrected handling of MSH-18 character encoding field, allowing either a simple String or a list of Strings, depending on schema version
+* Corrected DataSense metadata. Removed the "Heading" level shown in DataSense that was not actually used in data.
+* Added support for all standard escape sequences. However escape sequences that change character encoding are not supported.
+* Fixed writing a String value to a timestamp field. By default this expects XMLGregorianCalendar, but a correctly formatted String is also supported.
+* Corrected handling of MSH-18 character encoding field, allowing either a simple String or a list of Strings, depending on the schema version.
 
 === Compatibility
 
@@ -73,4 +71,4 @@ This release adapts HL7 for use with Mule 4 and Studio 7.
 
 * xref:connectors::hl7/hl7-connector.adoc[HL7 EDI Connector Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
