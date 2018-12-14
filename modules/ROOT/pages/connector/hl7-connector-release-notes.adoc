@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*December 2018*
-
 _Premium_
 
 == 3.1.1
@@ -13,10 +11,10 @@ _Premium_
 
 === Fixed Issues
 
-* Added support for all standard escape sequences, except those which change character encoding (will not be supported)
-* Fixed writing a String value to a timestamp field (by default expects XMLGregorianCalendar, but correctly formatted String also supported)
-* Corrected handling of MSH-18 character encoding field, allowing either a simple String or a list of Strings, depending on schema version
-* Fixed validateHL7Version configuration option
+* Added support for all standard escape sequences. However, escape sequences that change character encoding are not supported.
+* Fixed writing a String value to a timestamp field. By default this expects XMLGregorianCalendar, but a correctly formatted String is also supported.
+* Corrected handling of MSH-18 character encoding field, allowing either a simple String or a list of Strings, depending on schema version.
+* Fixed validateHL7Version configuration option.
 
 === Compatability
 
@@ -99,4 +97,4 @@ There are no bug fixes in this release.
 * xref:3.1@healthcare-toolkit::index.adoc[Healthcare Toolkit]
 * xref:connector/hl7-mllp-connector-release-notes.adoc[HL7 MLLP Release Notes]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
