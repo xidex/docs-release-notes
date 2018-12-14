@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-7-0,1.7.0>>
 * <<1-6-0,1.6.0>>
 * <<1-5-5,1.5.5>>
 * <<1-5-1,1.5.1>>
@@ -27,6 +28,34 @@ These release notes cover the following versions of these features:
 * <<1-0-2,1.0.2>>
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
+
+== 1.7.0
+*December 15, 2018*
+
+This release includes the following new features, enhancements, and fixes.
+
+=== New Features
+
+// * In the Transform card, you can view recommendations for how to map the data elements in an input payload to the data elements in an output payload. If a recommendation suits your needs, you can click *Apply* to save the mapping and use it in the card.
+* You can drag and drop payload elements, attributes, and variables into plain text fields, mixing them together with text or using them alone, to specify dynamic, rather than static, values. The values are substituted when your Mule application is running and a flow is triggered.
+* You can create DataWeave expressions in plain text fields, mixing expressions with text or using them alone, to create dynamic values when flows are triggered at runtime. A new editor provides aids for creating expressions.
+* You can change an existing Mule application to use a newer version of Mule Runtime. You might want to do this if the newer version includes updates or new features that you want your application to take advantage of.
+// * You can import a Mule application that was exported from Design Center or Anypoint Studio.
+
+
+=== Enhancements
+
+Mule Runtime 4.1.4 is now supported. All new Mule-application projects use 4.1.4 by default.
+
+=== Fixes
+
+// PROJECTX-4045
+* Suggestions in expression editors in the Choice and Try cards were partially obscured.
+// PROJECTX-4314
+* In the Transform card, you can set an expression for an element in an output payload by double-clicking the element. In the dialog that opens, a value is required. It was possible in the previous release to click *OK* to exit the dialog even if there was no value specified.
+// PROJECTX-4698
+* It was possible to create custom data types for unsupported MIME types.
+
 
 == 1.6.0
 *November 17, 2018*
