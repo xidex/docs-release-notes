@@ -7,6 +7,24 @@ endif::[]
 
 _Premium_
 
+== 2.0.1
+
+=== Fixed Issues
+
+* Correct escape handling for release character (typically '?')
+
+=== Compatibility
+
+EDIFACT EDI Connector v2.0.1 is compatible with the following:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|EDIFACT |D.93A, D.95B, D.96A, D.97A, D.98B, D.99A, D.99B, D.00A, D.01B, D.02A, D.03A
+|===
+
 == 2.0.0
 
 *April 10, 2018*
@@ -17,7 +35,7 @@ This release adapts EDIFACT for use with Mule 4 and Studio 7.
 
 EDIFACT EDI Connector v2.0.0 is compatible with the following:
 
-[%header,cols="30a,70a"]
+[%header%autowidth.spread]
 |===
 |Application/Service |Version
 |Mule Runtime |4.1.0 and later
