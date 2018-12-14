@@ -3,11 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*August 2018*
+*December 2018*
 
 _Premium_
 
 == 4.0.2
+
+*December 14, 2018*
 
 === Fixed Issues
 
