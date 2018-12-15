@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
-
 _Select_
 
 *Note:* Anypoint MQ version 2.x only works with Mule 4 and Studio 7. For the Mule 3 Anypoint MQ Connector Release Notes, see xref:connector/mq-connector-release-notes[Anypoint MQ Connector Release Notes - Mule 3].
