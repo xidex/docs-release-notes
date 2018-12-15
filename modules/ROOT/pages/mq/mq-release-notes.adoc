@@ -13,12 +13,47 @@ Locations where MQ is available:
 * North America: Northern Virginia (us-east-1) and Oregon (us-west-2), Central Canada (ca-central-1).
 * EU: Ireland (eu-west-1), London (eu-west-2).
 * APAC: Singapore (ap-southeast-1), Sydney (ap-southeast-2).
+* FIFO: Ireland (eu-west-1), Northern Virginia (us-east-1), Oregon (us-west-2), Sydney (ap-southeast-2).
 
 See Also:
 
 * xref:connector/mq-connector-release-notes.adoc[Mule 3 Anypoint MQ Connector Release Notes]
 * xref:connector/anypoint-mq-connector-release-notes-mule-4.adoc[Mule 4 Anypoint MQ Connector Release Notes]
 * xref:mq::index.adoc[Anypoint MQ Documentation]
+
+== 2.0.5
+
+*December 14, 2018*
+
+=== Features
+
+* FIFO support in Sydney. (https://www.mulesoft.org/jira/browse/MQ-1358)
+* Added message time-to-live information to message headers.
++
+Message JSON example:
++
+[source,json,linenums]
+----
+[ {
+  "properties" : {
+    "contentType" : "text/plain; charset=UTF-8"
+  },
+  "headers" : {
+    "messageId" : "ad9010c1-cf08-4d57-8195-60d1e4cbd371",
+    "lockId" : "abcs1234123",
+    "ttl" : "120000",
+    "created" : "Fri, 14 Dec 2018 20:23:50 GMT",
+    "deliveryCount" : "1"
+  },
+  "body" : "message body here"
+} ]
+----
+
+=== Fixed in this Release
+
+* UI message payload view does not respect newlines or whitespace properly. (https://www.mulesoft.org/jira/browse/MQ-1364)
+* Fix to Dead Letter Queue assignment. (https://www.mulesoft.org/jira/browse/MQ-1379)
+* Error 500 when creating queue in invalid region. (https://www.mulesoft.org/jira/browse/MQ-1384)
 
 == 2.0.4
 
@@ -269,4 +304,4 @@ This release includes the following capabilities:
 
 * xref:mq::index.adoc[Anypoint MQ]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
