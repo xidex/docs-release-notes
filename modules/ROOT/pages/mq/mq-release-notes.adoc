@@ -2,9 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mq, release, notes
-
-*October 2018*
 
 Anypoint MQ provides cloud and enterprise messaging services in MuleSoft. Anypoint MQ lets you perform advanced asynchronous messaging scenarios between your applications and is fully integrated with Anypoint Platform, offering role-based access control, client application management, and connectors.
 
@@ -13,7 +10,7 @@ Locations where MQ is available:
 * North America: Northern Virginia (us-east-1) and Oregon (us-west-2), Central Canada (ca-central-1).
 * EU: Ireland (eu-west-1), London (eu-west-2).
 * APAC: Singapore (ap-southeast-1), Sydney (ap-southeast-2).
-* FIFO: Ireland (eu-west-1), Northern Virginia (us-east-1), Oregon (us-west-2), Sydney (ap-southeast-2).
+* FIFO: Ireland (eu-west-1), Sydney (ap-southeast-2), Northern Virginia (us-east-1), Oregon (us-west-2).
 
 See Also:
 
@@ -27,7 +24,7 @@ See Also:
 
 === Features
 
-* FIFO support in Sydney. (https://www.mulesoft.org/jira/browse/MQ-1358)
+* FIFO support in Sydney. (MQ-1358)
 * Added message time-to-live information to message headers.
 +
 Message JSON example:
