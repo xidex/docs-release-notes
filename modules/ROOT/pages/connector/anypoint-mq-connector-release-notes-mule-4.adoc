@@ -3,13 +3,37 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
-
 _Select_
 
 *Note:* Anypoint MQ version 2.x only works with Mule 4 and Studio 7. For the Mule 3 Anypoint MQ Connector Release Notes, see xref:connector/mq-connector-release-notes[Anypoint MQ Connector Release Notes - Mule 3].
 
 Anypoint MQ Connector lets you add messaging access to Anypoint MQ queues and exchanges from Anypoint Studio applications.
+
+== 2.1.0
+
+*December 14, 2018*
+
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime |4.0.0 and later
+|Anypoint Studio |7.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Duplicated ACK when using IMMEDIATE mode. (MQ-1381)
+* Avoid overlapping polls on fixed frequency subscriber. (MQ-1360)
+* Use long polling with maximum timeout in the fixed frequency subscriber. (MQ-1359)
+* Add version information in User-Agent header. (MQ-1339)
+
+=== Features added in this Release
+
+* Add circuit breaker capabilities to the MQ Subscriber. (MQ-1343)
+
 
 == 2.0.5
 
