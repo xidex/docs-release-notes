@@ -5,6 +5,17 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== December 15, 2018
+Version 2.0.0
+
+== New Features and Enhancements
+
+* Added support for applications running in standalone Mule runtime engines. +
+[NOTE]
+This capability is being released incrementally.
+* Added the ability to select multiple nodes on the Visualizer canvas so you can apply layers and tags to all selected nodes at once.
+
+
 == November 27, 2018
 Version: 1.7.0
 
