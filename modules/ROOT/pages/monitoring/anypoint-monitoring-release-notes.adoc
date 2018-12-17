@@ -10,8 +10,8 @@ This document describes any new features and enhancements, known limitations, is
 === New Features
 December 15, 2018
 
-* *API Analytics* - API Analytics is now available in Anypoint Monitoring. See xref:monitoring::api-analytics-dashboard.adoc[Builtin API Analytics Dashboard]
-* *Anypoint Custom Metrics Connector* - (Requires a Titanium subscription) The Anypoint Custom Metrics connector enables sending metric values with dimensions to Anypoint Monitoring, where they can be visualized in real time using Custom Dashboards.
+* *API Analytics* - API Analytics is now available in Anypoint Monitoring. See xref:monitoring::api-analytics-dashboard.adoc[Builtin API Analytics Dashboard].
+* *Anypoint Custom Metrics Connector* - (Requires a Titanium subscription) The Anypoint Custom Metrics connector enables sending metric values with dimensions to Anypoint Monitoring, where they can be visualized in real time using Custom Dashboards. See xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector].
 
 === New Features
 December 8, 2018
