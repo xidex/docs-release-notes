@@ -3,11 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*October 2018*
-
 _Select_
 
-== Version 2.0.2 
+== 2.0.2 
 
 *December 5, 2018*
 
@@ -27,8 +25,8 @@ _Select_
 
 === Known Issues
 
-* Automatic completion of queue/topic names, subscriptions and rules may not work in Design Center.
-* In Design Center, the Live View feature will not work for most operations. In addition to this, the application log may be flooded with several "Could not serialize object" errors.
+* Automatic completion of queue or topic names, subscriptions, and rules may not work in Design Center.
+* In Design Center, the Live View feature does not work for most operations. In addition to this, the application log may be flooded with several "Could not serialize object" errors.
 
 == 2.0.1
 
