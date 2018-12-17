@@ -7,6 +7,29 @@ endif::[]
 
 _Select_
 
+== Version 2.0.2 
+
+*December 5, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|Microsoft Azure Service Bus (Cloud) | -
+|Microsoft Windows Service Bus (on-premises) | -
+|===
+
+=== Fixed in this Release
+
+* Previously, the connector leaked connections while publishing a message to a topic using the default caching strategy. The connector uses one or two JMS connections based on the configuration.
+
+=== Known Issues
+
+* Automatic completion of queue/topic names, subscriptions and rules may not work in Design Center.
+* In Design Center, the Live View feature will not work for most operations. In addition to this, the application log may be flooded with several "Could not serialize object" errors.
+
 == 2.0.1
 
 *October 23, 2018*
