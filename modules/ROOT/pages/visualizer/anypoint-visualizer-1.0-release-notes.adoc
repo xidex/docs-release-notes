@@ -19,8 +19,6 @@ This capability is being released incrementally.
 
 * Standalone Mule runtime engines do not support HTTP calls using IP addresses instead of DNS names.
 * When an application deployed to a standalone Mule runtime engine calls a CloudHub application, an extra edge is displayed. This issue is fixed in the `-AM` runtime only.
-* For hybrid applications, layer and tag names set using runtime properties can contain only alphanumeric characters. Unsupported characters are replaced with `_`  `.
-
 
 == November 27, 2018
 Version: 1.7.0
