@@ -6,6 +6,19 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== December 18, 2018
+
+4.1.5 Runtime Update:
+
+* `ProcessingStrategy` internal `bufferSize` is always 256 for `flow-ref` [SE-10226]
+* `IdempotentRedeliveryPolicy` blocks `CPU_LITE` thread [SE-10306]
+
+4.1.4 Runtime Update:
+
+* `ProcessingStrategy` internal `bufferSize` is always 256 for `flow-ref` [SE-10226]
+* `IdempotentRedeliveryPolicy` blocks `CPU_LITE` thread [SE-10306]
+
+
 == December 13, 2018
 
 3.9.2 Runtime Update:
@@ -19,6 +32,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 3.9.0 Runtime Update:
 
 * Diagnostic logs download [SE-10249]
+
 
 == December 12, 2018
 
@@ -41,6 +55,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 4.1.0 Runtime Update:
 
 * Diagnostic logs download [SE-10249]
+
 
 == December 10, 2018
 
