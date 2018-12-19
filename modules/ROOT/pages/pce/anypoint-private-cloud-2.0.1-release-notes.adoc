@@ -20,6 +20,7 @@ There are no new features or enhancements in this release.
 | Infrastructure providers |
 * VMWare
 * Bare Metal
+* AWS
 | Compatible browsers when running the installer |
 * Firefox (latest version)
 * Chrome (latest version)
