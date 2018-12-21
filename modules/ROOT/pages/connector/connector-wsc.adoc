@@ -8,6 +8,8 @@ endif::[]
 
 == 1.2.2
 
+*Dec 20, 2018*
+
 === Fixed Issues
 
 * Fixed issue when parsing a WSDL that imports another WSDL.  (MULE-16231)
@@ -17,6 +19,8 @@ endif::[]
 
 == 1.2.1
 
+*Nov 12, 2018*
+
 === Fixed Issues
 
 * Fixed issue when resolving metadata of a WSDL that contains multiple operations with the same name for different ports.  (MULE-15988)
@@ -25,6 +29,8 @@ endif::[]
 *October 2018*
 
 == 1.2.0
+
+*Oct 29, 2018*
 
 === New Features and Enhancements
 
