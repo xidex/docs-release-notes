@@ -16,6 +16,14 @@ Anypoint Platform supports the following browsers:
 * Chrome (latest version)
 * Internet Explorer 11 and newer
 
+== 2.2.8
+
+*December 21, 2018*
+
+This release provides this new feature:
+
+*  JWT policy for Mule 4 APIs
+
 == 2.2.7
 
 *November 17, 2018*
