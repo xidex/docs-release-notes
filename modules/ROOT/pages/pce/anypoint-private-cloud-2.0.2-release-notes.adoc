@@ -32,7 +32,7 @@ There are no new features or enhancements in this release.
 [%header%autowidth.spread]
 |===
 | Issue
-|  Kubernetes security patch for CVE-2018-1002105
+| Kubernetes security patch for CVE-2018-1002105
 | Avoid Cassandra replicas to start in the same node
 | Exchange migrations are run with higher privileges and then permissions are downgraded.
 | Password autocomplete disabled on login page
