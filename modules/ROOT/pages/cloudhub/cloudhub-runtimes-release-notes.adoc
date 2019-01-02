@@ -6,6 +6,29 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== January 2, 2019
+
+4.1.5 Runtime Update:
+
+* Source error callback is not called when an error is caught in error handler [SE-10212]
+
+4.1.4 Runtime Update:
+
+* Source error callback is not called when an error is caught in error handler [SE-10212]
+
+3.9.2 Runtime Update:
+
+* WMQ transport with synchronous processing strategy is not reconnecting [SE-10362]
+
+3.9.1 Runtime Update:
+
+* WMQ transport with synchronous processing strategy is not reconnecting [SE-10362]
+
+3.9.0 Runtime Update:
+
+* WMQ transport with synchronous processing strategy is not reconnecting [SE-10362]
+
+
 == December 18, 2018
 
 4.1.5 Runtime Update:
