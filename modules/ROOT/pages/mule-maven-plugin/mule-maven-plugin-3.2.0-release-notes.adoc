@@ -3,8 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This new release of the plugin includes the support to deploy applications into Runtime Fabric. +
-Also, we have manage to fix a small number of issues that were affecting the product.
+This new release of the plugin includes the support to deploy applications to Runtime Fabric. +
+Also, we fix a small number of issues that were affecting the product.
 
 == Hardware and Software Requirements
 
@@ -30,9 +30,9 @@ Hardware and Software Requirements
 == Fixed Issues
 
 * MMP-101 - Deployment into CloudHub disables custom logging
-* MMP-395 - Packager will export resources and packages out of the box if leaved empty in the mule-artifact.json
+* MMP-395 - Packager will export resources and packages out of the box if left empty in the mule-artifact.json
 * MMP-412 - Packaging policy from a parent module ends with empty repository
-* MMP-410 - Modify class loader model to include all dependency version for raml artifacts
+* MMP-410 - Modify class loader model to include all dependency version for RAML artifacts
 
 == Support
 
