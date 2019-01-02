@@ -2,11 +2,69 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, HTTP, connector, release notes
+
+== 1.4.2
+
+*December 21, 2018* 
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== New Features and Enhancements 
+ 
+* No new features were added in this version, but performance enhancements were done. 
+* Miscellaneous performance improvements for proxy scenario (avoid lambda usage in policy code). (https://www.mulesoft.org/jira/browse/MULE-16101[MULE-16101])
+  
+=== Fixed Issues 
+ 
+* HTTP path related attributes are not decoded (regression caused by MULE-15868). (https://www.mulesoft.org/jira/browse/MULE-16240[MULE-16240])
+* Upgrade Sockets version in HTTP (due to vulnerabilities related library upgrades there). (https://www.mulesoft.org/jira/browse/MULE-15079[MULE-15079])
+
+
+== 1.4.1
+
+*November 15, 2018* 
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== New Features and Enhancements 
+ 
+* No new features were added in this version, but some performance enhancements were done. 
+* Miscellaneous performance improvements for proxy scenario (remove reactor usage and improve `maskedRequestPath` calculation). (https://www.mulesoft.org/jira/browse/MULE-15924[MULE-15924])  
+  
+=== Fixed Issues 
+ 
+* HTTP connector does not implement equals/hash on POJOs (causing leak for dynamic authentication and proxy set ups). (https://www.mulesoft.org/jira/browse/MULE-16035[MULE-16035])
+
+== 1.4.0
+
+*November 2, 2018* 
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== New Features and Enhancements 
+
+* Allow HTTP requests to retry on all methods. (https://www.mulesoft.org/jira/browse/MULE-15927[MULE-15927])
+* Update reactor to 3.2.0. (https://www.mulesoft.org/jira/browse/MULE-14667[MULE-14667])
+* Make "clientCertificate" in `HttpRequestAttributes` lazy for HTTPS listeners. (https://www.mulesoft.org/jira/browse/MULE-15725[MULE-15725])
+* Upgrade sockets connector to 1.1.2. (https://www.mulesoft.org/jira/browse/MULE-15711[MULE-15711])
+* Upgrade `javax.mail` to `javax.mail-api` 1.6.2. (https://www.mulesoft.org/jira/browse/MULE-15550[MULE-15550])
+* Make HTTP host examples consistent with each other. (https://www.mulesoft.org/jira/browse/MULE-15331[MULE-15331])
+* Add `maskedRequestPath` to `HttpRequestAttributes`. (https://www.mulesoft.org/jira/browse/MULE-15484[MULE-15484])
+
+  
+=== Fixed Issues 
+ 
+* HTTP null host when port is invalid. (https://www.mulesoft.org/jira/browse/MULE-15665[MULE-15665])
 
 == 1.3.3
 
-*Oct 22, 2018* 
+*October 22, 2018* 
 
 === Minimum Mule Version
 
@@ -18,16 +76,11 @@ endif::[]
   
 === Fixed Issues 
  
-[%header,cols="15a,85a"] 
-|===
-|Issue |Description
-// Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15868[MULE-15868] | HTTP Listener double query string and URI params were decoding because of URI usage.
-|=== 
+* HTTP Listener double query string and URI params were decoding because of URI usage. (https://www.mulesoft.org/jira/browse/MULE-15868[MULE-15868])
 
 == 1.3.2
 
-*Sept 27, 2018* 
+*September 27, 2018* 
 
 === Minimum Mule Version
 
@@ -39,26 +92,17 @@ endif::[]
   
 === Fixed Issues 
  
-[%header,cols="15a,85a"] 
-|===
-|Issue |Description
-// Fixed Issues 
-| link:https://www.mulesoft.org/jira/browse/MULE-15756[MULE-15756] | HTTP Requester removes the payload when retrying. 
-| link:https://www.mulesoft.org/jira/browse/MULE-15722[MULE-15722] | HTTP Requester is sending `content-type` even if no payload is sent.
-| link:https://www.mulesoft.org/jira/browse/MULE-15428[MULE-15428] | Avoid unnecessary creation of `CaseInsensitive` maps during an HTTP request. 
-| link:https://www.mulesoft.org/jira/browse/MULE-15419[MULE-15419] | HTTP: Reduce request creation overhead.
-| link:https://www.mulesoft.org/jira/browse/MULE-11272[MULE-11272] | Support non-blocking in OAuth HTTP calls. 
-| link:https://www.mulesoft.org/jira/browse/MULE-15165[MULE-15165] | Changes in HTTP-API module break compilation of the HTTP connector. 
-//  
-// ------------------------------- 
-// - Enhancement Request Issues 
-// ------------------------------- 
-| link:https://www.mulesoft.org/jira/browse/MULE-15665[MULE-15665] | HTTP null host when the port is invalid. 
-|=== 
+* HTTP Requester removes the payload when retrying. (https://www.mulesoft.org/jira/browse/MULE-15756[MULE-15756])
+* HTTP Requester is sending `content-type` even if no payload is sent. (https://www.mulesoft.org/jira/browse/MULE-15722[MULE-15722])
+* Avoid unnecessary creation of `CaseInsensitive` maps during an HTTP request. (https://www.mulesoft.org/jira/browse/MULE-15428[MULE-15428])
+* HTTP: Reduce request creation overhead. (https://www.mulesoft.org/jira/browse/MULE-15419[MULE-15419])
+* Support non-blocking in OAuth HTTP calls. (https://www.mulesoft.org/jira/browse/MULE-11272[MULE-11272])
+* Changes in HTTP-API module break compilation of the HTTP connector. (https://www.mulesoft.org/jira/browse/MULE-15165[MULE-15165])
+* HTTP null host when the port is invalid. (https://www.mulesoft.org/jira/browse/MULE-15665[MULE-15665])
  
 == 1.3.1 
 
-*Jul 20, 2018*
+*July 20, 2018*
 
 === Minimum Mule Version
 
@@ -162,7 +206,7 @@ HTTP Listener parse errors expose request data without escaping it. (MULE-14944)
 
 == 1.2.0
 
-*Mar 15, 2018*
+*March 15, 2018*
 
 === Minimum Mule Version
 
@@ -189,7 +233,7 @@ Mule 4.1.1
 
 == 1.1.0
 
-*Jan 19, 2018*
+*January 19, 2018*
 
 === Minimum Mule Version
 
@@ -218,4 +262,4 @@ Mule 4.1
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

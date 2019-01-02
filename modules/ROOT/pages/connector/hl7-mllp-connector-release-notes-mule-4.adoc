@@ -3,13 +3,31 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*October 2018*
+*November 2018*
 
 _Premium_
 
 The Mule HL7 MLLP connector provides connectivity and parsing functionality for MLLP messages.
 
 xref:connectors::hl7/hl7-mllp-connector.adoc[HL7 MLLP Connector Guide]
+
+== 2.0.3 
+
+*November 16, 2018*
+
+This update fixes an response issue, and adds the new *sendAndReceive* operation.
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Mule 4 HL7 MLLP Connector does not wait for a response after sending a message out. Added new operation sendAndReceive.
 
 == 2.0.2
 
@@ -64,4 +82,4 @@ ACK like messages weren't flowing back to sender.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

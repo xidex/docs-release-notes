@@ -1,90 +1,92 @@
-// Product_Name Version number/date Release Notes 
-= Mule Runtime 4.1.4 Release Notes 
-:keywords: mule, 4.1.4, runtime, release notes 
- 
-*Oct 8, 2018* 
- 
-// // <All sections are required. If there is nothing to say, then the body text in the section should read, “Not applicable.” 
-link:http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-4.1.4.zip[Download Mule 4.1.4 EE Distribution] 
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation  and do not use images, which make reusing the release note content more difficult.> 
+// Product_Name Version number/date Release Notes
+= Mule Runtime 4.1.4 Release Notes
+:keywords: mule, 4.1.4, runtime, release notes
+
+*Oct 8, 2018*
+
+// // <All sections are required. If there is nothing to say, then the body text in the section should read, “Not applicable.”
+link:http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-4.1.4.zip[Download Mule 4.1.4 EE Distribution]
+// <This section lists all the major new features available with this latest version. Do not provide links to documentation  and do not use images, which make reusing the release note content more difficult.>
 
 
-== New Features and Enhancements 
+== New Features and Enhancements
 
-Mule Runtime 4.1.4 includes the following enhancements, changes, and fixes: 
- 
+Mule Runtime 4.1.4 includes the following enhancements, changes, and fixes:
+
 * This release is mainly focused in fixing bugs and stability issues.
- 
- 
-== Changes 
- 
-Not applicable. 
- 
-== Known Limitations and Workarounds 
- 
+
+
+== Changes
+
 Not applicable.
 
-//// 
-[%header,cols="15a,85a"] 
+== Known Limitations and Workarounds
+[%header,cols="15a,85a"]
 |===
 |Issue |Description
-|=== 
-////
+// Fixed Issues
+| EE-6372 | `Mule.bat` in Windows set the WRAPPER_WORKING_DIR incorrectly. This produces an error when trying to install the license using a relative path. As a workaround, you need to use the absolute path of the license file.
+|===
 
-== Upgrade Requirements 
- 
-Not applicable. 
- 
-== Fixed Issues 
- 
-[%header,cols="15a,85a"] 
+== Upgrade Requirements from 4.1.3 to 4.1.4
+
+[%header,cols="15a,85a"]
 |===
 |Issue |Description
-// Fixed Issues 
-| MULE-15753 | Add error messages for template parsing validation 
-| MULE-15737 | Fix possible race condition in processing strategies 
-| MULE-15716 | Leaks through hard references to types, classloaders and schedulers 
-| MULE-15708 | async in sub-flow must use its own processingStrategy instance 
-| MULE-15699 | NullPointerException when running batch with lazy initialization 
-| MULE-15678 | Cannot convert InputStream to String in after block of policy source 
-| MULE-15670 | Debugger marks as failure an operation before execute it 
-| MULE-15664 | Parallel requests to an API with same x-correlation-id breaks policy engines 
-| MULE-15660 | SDK Scopes process internal chain blocking 
-| MULE-15653 | ExtensionComponent not being initialized when resolving Metadata on Lazy mode and component is inside a sub-flow 
-| MULE-15642 | Application failing during init is not logging the error cause 
-| MULE-15637 | Custom log file in Mule 4 
-| MULE-15630 | Wrong models for repeatable-file-store-stream and repeatable-file-store-iterable 
-| MULE-15628 | Not possible to implement a log4j RewritePolicy due to missing exported packages from log4j on Mule Runtime 
-| MULE-15627 | MetadataCache ID Generator should consider Metadata Category when available 
-| MULE-15608 | SDK doesn't register enums from Subtypes 
-| MULE-15602 | Error casting to java.io.InputStream on Soap Output Payload toString() method 
-| MULE-15601 | If you are not using compatibility mode MEL expression is a valid DW object 
-| MULE-15587 | Empty foreach log should be in DEBUG 
-| MULE-15583 | MavenTestUtils swallows exceptions when running Maven 
-| MULE-15579 | When returning or receiving Object or InputStream the MetadataType should be Any 
-| MULE-15578 | Extensions are unable to contribute with an ObjectStoreManager to the Object Store Connector 
-| MULE-15573 | ServiceConfigurationError: org.mule.runtime.deployment.model.api.artifact.ArtifactConfigurationProcessor: Error reading configuration file 
-| MULE-15559 | `lookup` function locks its calling thread 
-| MULE-15557 | until-sucessful not working properly 
-| MULE-15553 | Cannot create a log4j rewrite policy with Mule Runtime 4 
-| MULE-15545 | Mule Runtime log does not show DataWeave syntax error 
-| MULE-15528 | Mel does not reset collection type on parsing nested collections 
-| MULE-15519 | When a source start fails and the stop also fails, the start exception is lost 
-| MULE-15515 | Services class loader model repeats URL for the service itself 
-| MULE-15510 | Unable to use Global Properties on Lazy Contexts 
-| MULE-15505 | Spring component scan does not work 
-| MULE-15500 | PollingSources don't release connections when item is rejected 
-| MULE-15494 | Polling Sources doesn't work on cluster deployments 
-| MULE-15483 | ClassCastException when resolving Metadata 
-| MULE-15454 | Recurring log warning: ListenerSubscriptionPair has already been registered 
-| MULE-15441 | Failure to lazy initialize file:list operation with reference to global matcher 
-| MULE-15421 | Domain project cannot submit HTTP Request with only the URL 
-| MULE-15418 | SDK Perf: Avoid field lookup when field is already available 
-| MULE-15403 | Forbidden flows' names must tell me which one is triggering the exception 
-| MULE-15321 | TransactionalQueueManager is not initialized and throws a NPE when recovering TXs 
-| MULE-15312 | NPE when yaml doesn't have space between the key declaration and the value 
-| MULE-15215 | Classloading error when having xerces as mule app dependency 
-| MULE-15097 | Non-understandable exception is thrown when deploying an app with a invalid YAML properties file 
+| MULE-14148 | HTTP wire logging now depends on the server/client names to allow more fine grained logging. For example, given an HTTP listener config named `A` and an HTTP request config named `B`, `HttpMessageLogger.A` will show only the listener data while `HttpMessageLogger.http.requester.B` will only show the requester data.
+This means log lines will also feature the server/client naming convention.
+|===
+
+== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| MULE-15753 | Add error messages for template parsing validation
+| MULE-15737 | Fix possible race condition in processing strategies
+| MULE-15716 | Leaks through hard references to types, classloaders and schedulers
+| MULE-15708 | async in sub-flow must use its own processingStrategy instance
+| MULE-15699 | NullPointerException when running batch with lazy initialization
+| MULE-15678 | Cannot convert InputStream to String in after block of policy source
+| MULE-15670 | Debugger marks as failure an operation before execute it
+| MULE-15664 | Parallel requests to an API with same x-correlation-id breaks policy engines
+| MULE-15660 | SDK Scopes process internal chain blocking
+| MULE-15653 | ExtensionComponent not being initialized when resolving Metadata on Lazy mode and component is inside a sub-flow
+| MULE-15642 | Application failing during init is not logging the error cause
+| MULE-15637 | Custom log file in Mule 4
+| MULE-15630 | Wrong models for repeatable-file-store-stream and repeatable-file-store-iterable
+| MULE-15628 | Not possible to implement a log4j RewritePolicy due to missing exported packages from log4j on Mule Runtime
+| MULE-15627 | MetadataCache ID Generator should consider Metadata Category when available
+| MULE-15608 | SDK doesn't register enums from Subtypes
+| MULE-15602 | Error casting to java.io.InputStream on Soap Output Payload toString() method
+| MULE-15601 | If you are not using compatibility mode MEL expression is a valid DW object
+| MULE-15587 | Empty foreach log should be in DEBUG
+| MULE-15583 | MavenTestUtils swallows exceptions when running Maven
+| MULE-15579 | When returning or receiving Object or InputStream the MetadataType should be Any
+| MULE-15578 | Extensions are unable to contribute with an ObjectStoreManager to the Object Store Connector
+| MULE-15573 | ServiceConfigurationError: org.mule.runtime.deployment.model.api.artifact.ArtifactConfigurationProcessor: Error reading configuration file
+| MULE-15559 | `lookup` function locks its calling thread
+| MULE-15557 | until-sucessful not working properly
+| MULE-15553 | Cannot create a log4j rewrite policy with Mule Runtime 4
+| MULE-15545 | Mule Runtime log does not show DataWeave syntax error
+| MULE-15528 | Mel does not reset collection type on parsing nested collections
+| MULE-15519 | When a source start fails and the stop also fails, the start exception is lost
+| MULE-15515 | Services class loader model repeats URL for the service itself
+| MULE-15510 | Unable to use Global Properties on Lazy Contexts
+| MULE-15505 | Spring component scan does not work
+| MULE-15500 | PollingSources don't release connections when item is rejected
+| MULE-15494 | Polling Sources doesn't work on cluster deployments
+| MULE-15483 | ClassCastException when resolving Metadata
+| MULE-15454 | Recurring log warning: ListenerSubscriptionPair has already been registered
+| MULE-15441 | Failure to lazy initialize file:list operation with reference to global matcher
+| MULE-15421 | Domain project cannot submit HTTP Request with only the URL
+| MULE-15418 | SDK Perf: Avoid field lookup when field is already available
+| MULE-15403 | Forbidden flows' names must tell me which one is triggering the exception
+| MULE-15321 | TransactionalQueueManager is not initialized and throws a NPE when recovering TXs
+| MULE-15312 | NPE when yaml doesn't have space between the key declaration and the value
+| MULE-15215 | Classloading error when having xerces as mule app dependency
+| MULE-15097 | Non-understandable exception is thrown when deploying an app with a invalid YAML properties file
 | MULE-15007 | ArtifactClassLoaderRunner - Not considering proxies and mirrors defined on settings.xml
 | MULE-15781 | Include "wsdl" as an API type
 | MULE-15774 | Running the runtime with a property that contains a caret (^) symbol doens't work in windows
@@ -100,17 +102,17 @@ Not applicable.
 | MULE-15033 | Upgrade Hazelcast to 3.10.4
 | MULE-14926 | Upgrade Groovy to 2.4.15
 | MULE-14244 | Upgrade Spring to 4.3.19 and Spring Security to 4.2.8
-| EE-6307 | Repeatable streams are closed in streaming batch:aggregator 
-| EE-6299 | Serialization error when trying to serialize Guava immutable collections with Kryo 
-| EE-6298 | Batch throws NPE if placed in a subflow 
-| EE-6294 | Wrong length serialized by Kryo for TypedValues of InputStream 
-| EE-6292 | Kryo serialization fails when deserializing old objects 
-| EE-6272 | DB errors in a batch step breaks the stream in DW 
-| EE-6265 | Cannot convert InputStream to String in after block of policy source 
-| EE-6229 | Batch fails to stop if not properly started 
-| EE-6227 | batch:job changes payload even if target is set 
-| EE-6219 | Mule 3 License Incorrectly installed in mule 4 
-| EE-6216 | Cache: Improve non-blocking implementation 
+| EE-6307 | Repeatable streams are closed in streaming batch:aggregator
+| EE-6299 | Serialization error when trying to serialize Guava immutable collections with Kryo
+| EE-6298 | Batch throws NPE if placed in a subflow
+| EE-6294 | Wrong length serialized by Kryo for TypedValues of InputStream
+| EE-6292 | Kryo serialization fails when deserializing old objects
+| EE-6272 | DB errors in a batch step breaks the stream in DW
+| EE-6265 | Cannot convert InputStream to String in after block of policy source
+| EE-6229 | Batch fails to stop if not properly started
+| EE-6227 | batch:job changes payload even if target is set
+| EE-6219 | Mule 3 License Incorrectly installed in mule 4
+| EE-6216 | Cache: Improve non-blocking implementation
 | AGW-2432 | Payload is lost if accessed by a policy after the "execute next" element
 | AGW-2411 | When a policy defines resources, if they are added to artifact json, then the policy is not deploying
 | AGW-2409 | Parallel requests to an API with same x-correlation-id breaks policy engines
@@ -135,30 +137,29 @@ Not applicable.
 * Fixed support for `Atomic*` values in the Java reader.
 * Fixed range selector over binary to return binary data.
 * Fixed `parseURI` when URI is not well-formed.
-//  
-// ------------------------------- 
-// - Enhancement Request Issues 
-// ------------------------------- 
-| MULE-15635 | Configuration properties Extension model should have YAML extension included 
-| MULE-15622 | Miscellaneous Performance improvements 
-| MULE-15385 | MetadataCache define eviction policy and API 
-| MULE-15154 | Until successfull should support 0 as a maxRetries value 
-|===  
- 
-== Compatibility Testing Notes 
- 
-Mule was tested on the following software: 
- 
-[%header,cols="15a,85a"] 
+//
+// -------------------------------
+// - Enhancement Request Issues
+// -------------------------------
+| MULE-15635 | Configuration properties Extension model should have YAML extension included
+| MULE-15622 | Miscellaneous Performance improvements
+| MULE-15385 | MetadataCache define eviction policy and API
+| MULE-15154 | Until successfull should support 0 as a maxRetries value
+|===
+
+== Compatibility Testing Notes
+
+Mule was tested on the following software:
+
+[%header,cols="15a,85a"]
 |===
 |Software |Version
-| JDK | JDK 1.8.0 (Recommended JDK 1.8.0_151/52) 
-| OS | MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04 
-| Application Servers | Tomcat 7, Tomcat 8, Weblogic 12c, Wildfly 8, Wildfly 9, Websphere 8, Jetty 8, Jetty 9 
-| Databases | Oracle 11g, Oracle 12c, MySQL 5.5+, DB2 10, PostgreSQL 9, Derby 10, Microsoft SQL Server 2014 
-|=== 
- 
-The unified Mule Runtime 4.1.4 and API Gateway is compatible with APIkit 1.1.8. 
- 
-This version of Mule runtime is bundled with the Runtime Manager Agent plugin version 2.1.7. 
- 
+| JDK | JDK 1.8.0 (Recommended JDK 1.8.0_171/72)
+| OS | MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+| Application Servers | Tomcat 7, Tomcat 8, Weblogic 12c, Wildfly 8, Wildfly 9, Websphere 8, Jetty 8, Jetty 9
+| Databases | Oracle 11g, Oracle 12c, MySQL 5.5+, DB2 10, PostgreSQL 9, Derby 10, Microsoft SQL Server 2014
+|===
+
+The unified Mule Runtime 4.1.4 and API Gateway is compatible with APIkit 1.1.8.
+
+This version of Mule runtime is bundled with the Runtime Manager Agent plugin version 2.1.7.

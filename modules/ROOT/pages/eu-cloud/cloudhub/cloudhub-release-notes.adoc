@@ -1,0 +1,15 @@
+= CloudHub Release Notes - EU Cloud
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: release notes, cloudhub, cloud hub
+
+In addition to these release notes, see the complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
+
+== 1.72.3 - December 6, 2018
+
+This release includes the following changes and improvements:
+
+* A series of reliability and resiliency enhancements
+* Bug fixes and performance improvements
+

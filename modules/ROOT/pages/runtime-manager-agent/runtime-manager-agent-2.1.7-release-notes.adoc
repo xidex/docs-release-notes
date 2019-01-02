@@ -9,7 +9,7 @@ This document describes new features and enhancements, known limitations, issues
 
 == New Features and Enhancements
 
-This release contains no new features or enhancements:
+This release contains no new features or enhancements.
 
 == Changes in This Release
 

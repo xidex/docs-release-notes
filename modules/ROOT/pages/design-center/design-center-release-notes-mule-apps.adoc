@@ -5,6 +5,8 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-7-0,1.7.0>>
+* <<1-6-0,1.6.0>>
 * <<1-5-5,1.5.5>>
 * <<1-5-1,1.5.1>>
 * <<1-5-0,1.5.0>>
@@ -26,6 +28,105 @@ These release notes cover the following versions of these features:
 * <<1-0-2,1.0.2>>
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
+
+== 1.7.0
+*December 15, 2018*
+
+This release includes the following new features, enhancements, and fixes.
+
+=== New Features
+
+// * In the Transform card, you can view recommendations for how to map the data elements in an input payload to the data elements in an output payload. If a recommendation suits your needs, you can click *Apply* to save the mapping and use it in the card.
+* You can drag and drop payload elements, attributes, and variables into plain text fields, mixing them together with text or using them alone, to specify dynamic, rather than static, values. The values are substituted when your Mule application is running and a flow is triggered.
+* You can create DataWeave expressions in plain text fields, mixing expressions with text or using them alone, to create dynamic values when flows are triggered at runtime. A new editor provides aids for creating expressions.
+* You can change an existing Mule application to use a newer version of Mule Runtime. You might want to do this if the newer version includes updates or new features that you want your application to take advantage of.
+// * You can import a Mule application that was exported from Design Center or Anypoint Studio.
+
+
+=== Enhancements
+
+Mule Runtime 4.1.4 is now supported. All new Mule-application projects use 4.1.4 by default.
+
+=== Fixes
+
+// PROJECTX-4045
+* Suggestions in expression editors in the Choice and Try cards were partially obscured.
+// PROJECTX-4314
+* In the Transform card, you can set an expression for an element in an output payload by double-clicking the element. In the dialog that opens, a value is required. It was possible in the previous release to click *OK* to exit the dialog even if there was no value specified.
+// PROJECTX-4698
+* It was possible to create custom data types for unsupported MIME types.
+
+
+== 1.6.0
+*November 17, 2018*
+
+This release includes the following enhancements and fixes.
+
+=== Enhancements
+
+* A Transform card no longer displays an error if there is no sample data. Transform cards now display a hint that sample data needs to be present.
+* You can return to the list of Design Center projects by clicking the name "Design Center" at the top of the canvas. The back arrow that was present in the top-left corner in previous releases has been removed.
+
+=== Fixes
+
+* View in Runtime Manager doesn't work when the current Runtime Manager environment is not the design environment.
+* The Set Expression functionality in a Transform card doesn't disable the *OK* button if the text is blank.
+* Mule Runtime fails with an out-of-memory error after consecutive redeploys.
+* Application names with spaces are invalid for deployments.
+* DataSense failed to resolve in a project.
+* Automapper gives incorrect mappings for DB to Salesforce.
+* Null is displayed when a mapping isn't set.
+* Prevent stacktraces from showing up in the UI.
+* There is no descriptive error when downloading an application fails.
+* REST connect is shown twice in card selector when removed from context.
+* An error message remains open when a project is closed.
+* In a project without a worker, clicking the *Run* button creates multiple workers in Runtime Manager.
+* Choice cards show too much space between expressions and display names.
+* The '$' char in DataWeave expressions in the Visual Function Editor aren't supported.
+* Parts of a DataWeave script can't be edited.
+* The *Show in Exchange* option opens a "Not Found" page.
+* Scrolling is truncated when cards inside the Choice scope have DataSense information.
+* Dragging a pill from one field to another field duplicates the pill instead of moving it.
+* Text pills get surrounded by parentheses if they are saved from the custom expression editor.
+* Deleting text selected next to a pill deletes the pill.
+* Disable DEBUG Method/Stacktrace in environments.
+* The Automapping banner disappears in 720p resolution.
+* Posting a file without the file input results in a 500 error.
+* A message is only partially displayed.
+* "Flow" should not start with capital F in an error message.
+* The Transform card keeps mapping when a Custom Type is being deleted.
+* The Back button does not return to the list of Design Center projects from an open project.
+* Some fields in the Email connector are not visible until the Delete option is selected.
+* An informational message is visible after a project is closed.
+* There is no way to read the type of the output in the Slack connector.
+* Visual Function Editor displays odd behavior when a DataWeave script is pasted as a value.
+* Visual Function Editor does not show an entire configured DataWeave script.
+* A Mule application hangs in *Starting Application* state when mapping a value to a variable with DataWeave.
+* Uploading a library results in a Bad Gateway error.
+* The deployment services fail when a deployment's status is checked.
+* In an old project that uses Runtime 4.1.0, there is no vertical scrollbar in the list of triggers.
+* Configurations created from the sidebar can't be used in cards.
+* The generic database configuration errors aren't computed correctly.
+* The endpoint `anypoint.mulesoft.com/designcenter/api/v1/info` does not include a Scheduler service.
+* Null-pointer error occurs on resolve element metadata.
+* Unknown routes don't redirect properly.
+* The endpoint `/usage` does not work.
+* Cannot deploy an application to Cloudhub.
+* Fixed the splash screen in Internet Explorer 11.
+* Fixed the jumpy undo/redo buttons in Microsoft Edge.
+* Fixed the drag and drop in Microsoft browsers (Edge, Internet Explorer 11).
+* The separators in Visual Function Editor were badly placed.
+* The styling of the card selector is broken in Internet Explorer.
+* The Try and Foreach cards don't compute the next card error correctly.
+* The *Create* button is broken on Windows in Firefox, Edge, and Internet Explorer.
+* Deployment to Mule Runtime 4.1.0 fails after several redeployments of a Mule application.
+* The Salesforce Upsert card has missing fields and the options in one or more of its comboboxes disappear.
+* The Connector icons are smaller than usual.
+* After adding and removing a new flow, it is not possible to go back to project list.
+* The Visual Function Editor suggested a text pill that caused an error.
+* No error descriptions appear when pills are edited and errors introduced into them.
+* Scripts that are longer than the text box for the DataWeave editor overflow the text box when they are pasted into it.
+
 
 == 1.5.5
 *October 20, 2018*
@@ -460,8 +561,8 @@ This release of Design Center includes the following improvements and resolved i
 * An API design is fixed to provide progress feedback after clicking on an Export action.
 * Incorrect font color of resource methods is fixed.
 * The name of a deprecated fragment is now shown in strikethrough text when you add it as a dependency.
-* IE 11.0.9 is now supported for API visual design.
-* API Console now supports IE 11.0.9
+* Internet Explorer 11.0.9 is now supported for API visual design.
+* API Console now supports Internet Explorer 11.0.9
 * In visual design, properties are preserved when switching between Object and Array.
 * Fixed an issue with using data types with names starting with the same string.
 * Fixed an issue related to creating an empty response.
@@ -532,7 +633,7 @@ This release of Design Center includes new flow design features at the runtime l
 * Improves the http path and url field.
 * Makes Test Connectivity button unavailable for Email or Web Service Consumer.
 * Supports pagination of the project list.
-* Improves code editing view and IE browser stability.
+* Improves code editing view and Internet Explorer browser stability.
 * Adds a new visual editor for APIs that supports describing HTTP characteristics of an API including:
 ** Resources
 ** Methods
@@ -789,13 +890,13 @@ This release of Design Center enables you to:
 
 
 ==== Known Issues (Flow designer)
-* Currently the flow designer is not supported on IE Browser
+* Currently the flow designer is not supported on Internet Explorer Browser
 * Exporting to Studio, some DataWeave expressions on fields aren't exported. Specifically those that reference nested elements using selectors.
 * Metadata: While creating the application, no metadata is resolved until the worker is finally created. Once the application is running, the metadata will be refreshed for existing cards in the flow.
 * Live View does not properly show list of message objects for FTP List operations.
 * Live View - sometimes Consume is not retrieving anything, therefore live view does not show anything
 * Publishing assets to exchange or uploading Drivers. User will need to have exchange permissions. Also a more accurate error is required to be retrieved when not having enough permissions
-* Currently Datasense is not supported for Flow Ref
+* Currently DataSense is not supported for Flow Ref
 * Transform presents some mapping simple types issues
 * Cloning Projects is only available for Mule Applications type projects
 * The validation all operation is not available

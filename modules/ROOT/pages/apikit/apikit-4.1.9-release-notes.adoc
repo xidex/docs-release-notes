@@ -1,0 +1,29 @@
+= APIkit Mule4-1.1.9 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== What's New
+
+There are no new features in this version. There are just a few enhancements and bug fixes.
+
+== Compatibility
+
+* Mule Runtime 4.1.2 and later
+* Anypoint Studio 7.2.0 and later
+* Java Parser RAML 1.0 v1.0.20
+* Java Parser RAML 0.8 v0.8.22
+* API Console 4.2.0
+
+== Fixed in the Release
+
+* APIkit negatively impacting performance.
+* Scaffolder generates files as resource::G:A:V:file.xml and should be file.xml
+* Issue when scaffolding two apis in one mule app.
+* `mule-apikit-module` 1.1.10 is not in the maven repository.
+
+== Enhancements in this release
+
+* Update scaffolder to support new semantics for referencing resources.
+* Remediate vulnerabilities detected by NexusIQ.
+* Release APIKit with APISync as Beta.

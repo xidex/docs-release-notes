@@ -17,6 +17,8 @@ endif::[]
 
 ** xref:data-gateway/anypoint-data-gateway-release-notes.adoc[Anypoint Data Gateway Release Notes]
 
+** xref:anypoint-security/anypoint-security-release-notes.adoc[Anypoint Security Release Notes]
+
 ** xref:connector/anypoint-enterprise-security-release-notes.adoc[Anypoint Enterprise Security Release Notes]
 
 ** xref:exchange/exchange-release-notes.adoc[Anypoint Exchange Related Release Notes]

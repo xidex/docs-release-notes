@@ -1,0 +1,34 @@
+= Mule Maven Plugin 3.2.3 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Mule Maven Plugin 3.2.3 is mainly focused in fixing bugs.
+
+== Hardware and Software Requirements
+
+Hardware and Software Requirements
+
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+* Java 8
+* Maven 3.3.3, 3.3.9, 3.5.0
+
+== Compatibility
+
+* Mule 4.x
+* Anypoint Studio 7.x
+
+== Fixed Issues
+
+* MMP-439 - Can't find Business Group in runtime fabric deployment
+* MMP-438 - Add a property to disable semver restriction at project level
+* MMP-437 - mule-maven-plugin has older sl4j version that contains known vulnerability
+* MMP-434 - Do not generate repository in target when packaging in light weight mode
+* MMP-435 - If app deployed to RF failed to start, deployment verification hangs
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].

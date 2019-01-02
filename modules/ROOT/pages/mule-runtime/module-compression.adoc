@@ -4,6 +4,21 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, compression, module, release notes
 
+== 2.0.2
+
+*December 2018*
+
+* Improvements to reduce memory footprint
+* Improved support for repeatable streaming
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| https://www.mulesoft.org/jira/browse/MULE-16138[MULE-16138] | Compression module doesn't return repeatable streams.
+|===
+
 == 2.0.1
 
 *October 2018*

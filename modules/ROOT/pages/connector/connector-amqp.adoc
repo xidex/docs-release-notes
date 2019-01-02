@@ -2,11 +2,24 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, AMQP, connector, release notes
-
-*October 2018*
 
 _Select_
+
+== 1.1.2
+
+*November 27, 2018*
+
+=== Fixed Issues
+
+* AMQP client ShutdownSignalExceptions must be handled in listeners. (AMQP-107)
+
+== 1.1.1
+
+*October 29, 2018*
+
+=== Fixed Issues
+
+* Transformer service incorrectly transformed byte array. (AMQP-105)
 
 == 1.1.0
 
@@ -21,6 +34,14 @@ _Select_
 === Fixed Issues
 
 * AMQP module ignores quality of service in listener. (AMQP-102)
+
+== 1.0.2
+
+*October 29, 2018*
+
+=== Fixed Issues
+
+* transformer service incorrectly transforms byte array. (AMQP-105)
 
 == 1.0.1
 
@@ -53,4 +74,4 @@ Mule 4.1
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

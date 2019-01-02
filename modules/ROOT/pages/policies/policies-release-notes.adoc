@@ -1,0 +1,15 @@
+= API Manager Policies Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: release notes, policies
+
+Release notes for API Manager Policies include information about changes, improvements, and resolved issues in each released policy version.
+
+== Release Notes for Mule 4 Policies
+
+* xref:policies/cors-policy-release-notes.adoc[Cross-Origin Resource Sharing (CORS) Policy]
+
+== See Also
+
+* xref:api-manager::policies-mule4.adoc[Policies in Mule 4]

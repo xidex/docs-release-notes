@@ -1,0 +1,118 @@
+= Anypoint Studio 6.5 with Mule Runtime 3.9.1 Update site 2 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*November 21* +
+*Build ID: 201811201830*
+
+== Compatibility
+
+[cols="30a,70a"]
+|===
+| *Mule Runtime*
+| Version: 3.9.1 EE
+
+|*Anypoint Studio*
+|Version: 6.5.2 +
+Build Id: 201811201830
+
+|*APIkit*
+|Versions: 3.9.0 - 3.8.3 - 3.8.2 - 3.8.1 - 3.8.0 - 1.7.3 - 1.6.2 - 1.5.3
+
+|*DataWeave* +
+|Version: 1.2.0
+
+|*MUnit* +
+|Version: 1.6.1 (munit-studio-plugin)
+
+|*SAP Connector*
+|Versions: 3.2.0
+
+|*Eclipse*
+|Versions: 4.7.2
+
+|===
+
+
+== What's New
+
+The 6.5.2 Studio release includes a number of bug fixes, the ability to install new runtimes when creating new projects and comes with Mule 3.9.1 runtime
+
+== Hardware Requirements
+
+* MuleSoft recommends a minimum of 4GB RAM on a developer workstation. As applications become complex, consider adding more RAM.
+* 2GHz CPU
+* 10GB free hard drive space
+
+== Software Requirements
+
+[cols="30a,70a"]
+|===
+|Java Environments |
+This version of Anypoint Studio requires Java 8 to run properly. +
+Depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+
+* Mule 3.9.x requires Studio running on Java 8.
+* Mule 3.5.x requires Studio running on Java 7.
+* Other supported runtime versions work fine with both Java 7 or 8.
+
+You can configure Anypoint Studio's default VM by following the task corresponding to your OS:
+
+* xref:6.5@studio::studio-configure-vm-task-wx.adoc[To Configure Studio’s Default VM (Windows)]
+* xref:6.5@studio::studio-configure-vm-task-unx.adoc[To Configure Studio’s Default VM (Unix)]
+* xref:6.5@studio::studio-configure-vm-task-lnx.adoc[To Configure Studio’s Default VM (Linux)]
+
+|Operating Systems |* MacOS 10.10.0 +
+* Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10 +
+* RHEL 7.0 +
+* Ubuntu 15.04 or later
+|Suggested Web Browsers by Platform. +
+_Studio will always use the OS default web browser_ | * Windows: +
+** Microsoft Edge 25.0  +
+** Internet Explorer 11 +
+* Linux +
+** Mozilla Firefox 46.0  +
+* OS X +
+** Safari 9.1
+|===
+
+
+[NOTE]
+--
+If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+--
+
+== Bug Fixes
+
+* Slow generation of code with huge XSDs on drag and drop.
+* Loading RAML via RestApiLocation is very, very slow.
+* RAML includes hardly usable.
+* When opening Studio in windows machines, splash is not shown.
+* Importing API from Design Centre does not generate flow scaffolding.
+* Autodiscovery apiName and apiVersion not properly retrieved from property file.
+* API Gateway version not being updated in pom.
+* Studio 6.5.0 dialog does nothing when clicking to deploy to exchange.
+* Anypoint Studio 6.5.0 failing with error:  `java.lang.NoSuchMethodError: org.apache.commons.io.FileUtils.getTempDirectory()Ljava/io/File;`.
+* Studio has stack overflow error when clicking on Transform Message.
+* Fails while focus on a component that is disposing.
+* Gitignore file is populated incorrectly when importing RAML that contains Exchange dependencies.
+* Importing Domain project leads to error in Studio 6 as it assumes to be normal project.
+* Studio adds the repository-master URL in the pom file. this creates auth issues.
+* Cannot import mule maven projects as POM.
+* OAuth provider module shows error message for the "Create client" operation in Studio.
+* `externalRedirectionUrl` Parameter doesn't appear on HTTP OAuth2 Configuration.
+* Unable to reference Secure Properties when testing connection in Windows environment.
+
+
+
+== Completed Tasks
+
+* Reimplement DW syntatic predicates for better performance.
+
+=== Enhancement Request
+
+== Support
+
+* Access http://forums.mulesoft.com/[MuleSoft’s Forum] to pose questions and get help from Mule’s broad community of users.
+* To access MuleSoft’s expert support team https://www.mulesoft.com/support-and-services/mule-esb-support-license-subscription[subscribe to Mule ESB Enterprise] and log in to MuleSoft’s http://www.mulesoft.com/support-login[Customer Portal].
