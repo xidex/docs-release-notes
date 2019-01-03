@@ -5,15 +5,15 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
-* <<2-3-0,2.3.0>>
+* <<2-4-0,2.4.0>>
 * <<2-2-9,2.2.9>>
 * <<2-2-8,2.2.8>>
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
 
-== 2.3.0
-*November 1, 2018*
+== 2.4.0
+*January 12, 2019*
 
 This release contains an enhancement and fixes a number of issues.
 
@@ -25,6 +25,8 @@ The AMF parser is at version 2.0.0.
 
 === Fixed Issues
 
+// DESIGNER-3208
+* Changing the version number of an API specification that you were publishing to Exchange would change the value of all instances of the "version" keyword in the specification. Only the value for the root instance should have been changed.
 // SE-7433
 * A problem occurred in which an API specification could not be tested with the mocking service when OAuth 2.0 was used for security. Clicking *Authorize and Send* after filling in all of the required authentication information merely resulted in the message "Fill in the authorization form first".
 // SE-7817
