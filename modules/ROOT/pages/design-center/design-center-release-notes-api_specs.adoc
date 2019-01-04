@@ -77,9 +77,11 @@ The message has been improved.
 // SE-10144
 * In the API console of the API editor, query parameters did not appear after you clicked the *Try It* button.
 // SE-10150
-* Changing the version number of an API specification that you were publishing to Exchange would change the value of all instances of the "version" keyword in the specification. Only the value for the root instance should have been changed.
+* In the API editor, changing the version number of an API specification that you were publishing to Exchange would change the value of all instances of the "version" keyword in the specification. Only the value for the root instance should have been changed.
 // SE-10246
 // I asked a question in the ticket.
+// SE-10257
+* Using double angle brackets (double chevrons) enclose a parameter name in resource type and trait definitions was not supported in the API editor.
 
 
 == 2.2.9
