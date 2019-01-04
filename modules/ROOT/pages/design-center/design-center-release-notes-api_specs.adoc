@@ -25,6 +25,9 @@ The AMF parser is at version 2.0.0.
 
 === Fixed Issues
 
+// SE-
+
+
 // DESIGNER-3208
 * Changing the version number of an API specification that you were publishing to Exchange would change the value of all instances of the "version" keyword in the specification. Only the value for the root instance should have been changed.
 // SE-7433
@@ -34,6 +37,8 @@ The AMF parser is at version 2.0.0.
 // SE-7869
 * The API console pane of the API editor was sometimes not being refreshed as different types were being selected. The same problem could occur as different responses were selected.
 * There were a few formatting problems in the information displayed in the API console pane.
+// SE-7898
+* Swedish characters were not supported in the Crowd release (November 2017).
 // SE-8242
 * If a RAML API specification contained a DataType that extended another DataType, the information shown in the API console pane about the extending DataType could sometimes be incorrect.
 // SE-8323
