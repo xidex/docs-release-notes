@@ -75,7 +75,8 @@ The message has been improved.
 * For very large API specifications, validation and the appearance of the API Console in the API editor could require much more time than usual.
 // SE-10137
 * If an endpoint were simply `/`, the API editor would throw a parsing error.
-
+// SE-10144
+* In the API console of the API editor, query parameters did not appear after you clicked the *Try It* button.
 
 
 == 2.2.9
