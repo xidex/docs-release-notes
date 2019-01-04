@@ -82,6 +82,8 @@ The message has been improved.
 // I asked a question in the ticket.
 // SE-10257
 * Using double angle brackets (double chevrons) enclose a parameter name in resource type and trait definitions was not supported in the API editor.
+// SE-10277
+* Some valid regular expressions in the RAML "pattern" element were unsupported in the API editor.
 
 
 == 2.2.9
