@@ -4,6 +4,16 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, FTP, connector, release notes
 
+*January 2019*
+
+== 1.2.3
+
+*Jan 4, 2019*
+
+=== Fixed Issues
+
+* FTP connector slowness against remote server (MULE-16291)
+
 == 1.2.2
 
 *July 12, 2018*
@@ -11,8 +21,6 @@ endif::[]
 === Fixed Issues
 
 * FtpFileAttributes throw NPE when FTPFile date is null (MULE-15301)
-
-*June 2018*
 
 == 1.2.1
 
