@@ -79,7 +79,15 @@ The message has been improved.
 // SE-10150
 * In the API editor, changing the version number of an API specification that you were publishing to Exchange would change the value of all instances of the "version" keyword in the specification. Only the value for the root instance should have been changed.
 // SE-10246
-// I asked a question in the ticket.
+* When a custom datatype was declared as Int64, the range declared for the datatype was not validated. For example, the mistake in this definition -- declaring a maximum value that is too high for Int64 values -- was not caught:
++
+----
+my_int64:
+  type: integer
+  format: int64
+  minimum: 1000000000000000000
+  maximum: 9999999999999999999
+----
 // SE-10257
 * Using double angle brackets (double chevrons) enclose a parameter name in resource type and trait definitions was not supported in the API editor.
 // SE-10277
