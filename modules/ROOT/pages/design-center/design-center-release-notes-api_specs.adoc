@@ -57,6 +57,8 @@ The AMF parser is at version 2.0.0.
 * The mocking service was not presenting a choice of authentication methods when a basic `securityScheme` was being referenced from a library RAML fragment.
 // SE-9276
 * It was possible for projects imported into Anypoint Studio from the API editor in Design Studio to contain RAML errors that were not pointed out by the API editor.
+// SE-9493
+// I've asked a question in the ticket.
 // SE-9545
 * RAML errors not reported by the API editor could cause problems in the API console pane, such as failures to display various pieces of information.
 // SE-9284
