@@ -12,7 +12,7 @@ endif::[]
 
 === Fixed Issues
 
-* FTP connector slowness against remote server (MULE-16291)
+* Fixed bug that made the connector get stuck while reading files from remote server, degrading performance (MULE-16291)
 
 == 1.2.2
 
