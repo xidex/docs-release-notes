@@ -71,6 +71,9 @@ Cannot read property 'ast' of null at (1, 0)
 The message has been improved.
 // SE-9994
 * The API editor was allowing a blank line as the first line in RAML files.
+// SE-10064
+* For very large API specifications, validation and the appearance of the API Console could require much more time than usual.
+
 
 == 2.2.9
 *August 9, 2018*
