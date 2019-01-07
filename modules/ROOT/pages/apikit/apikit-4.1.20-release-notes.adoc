@@ -1,0 +1,30 @@
+= APIkit Mule4-1.2.0 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This release notes briefly describe the new features released in APIkit 1.2.0.
+
+== What's New
+
+* APIkit is now using AMF as the default framework to parse APIs and to validate all incoming requests.  +
+AMF provides a way to achieve a unified behavior both at design time (Designer Center) and during runtime as well as OAS support. If needed, there is a way to use the previous RAML parser by specifying it in the apikit `config` tag.
+* API Console was upgraded to version 5, which also uses AMF to read the API. This console is displayed when AMF is used. +
+When specifying RAML parser in the config, the old console is displayed.
+* Query String validation support.
+
+
+== Compatibility
+
+* Mule Runtime 4.1.2 and later
+* Anypoint Studio 7.2.0 and later
+* Java Parser RAML 1.0 v1.0.29
+* Java Parser RAML 0.8 v0.8.29
+* API Console 4.2.1
+* API Console 5
+
+== Limitations
+
+
+* When using RAML parser to parse APIs and validate requests against them, the API Console used is the 4.2.1 version.
+* Validations on query string over either scalar or arrays types are not performed.
