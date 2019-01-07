@@ -38,7 +38,7 @@ This release includes one new feature.
 
 === New Feature
 
-* You can import a Mule-application project that was exported from Design Center.
+* You can import a Mule-application project that was exported from Design Center. This feature is useful when you want to continue developing a Mule application in an environment in Anypoint Platform that is different from the environment in which the application was created.
 
 == 1.7.1
 *January 2, 2019*
