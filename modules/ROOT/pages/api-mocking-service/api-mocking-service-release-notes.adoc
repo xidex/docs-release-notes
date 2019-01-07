@@ -21,24 +21,20 @@ endif::[]
 
 *January 10, 2019*
 
-// SE-9588
-* The mocking service returned a 404 error instead of the correct response if a third-level resource used a hyphen in its name. For example, a call to this endpoint, in which `digital-users` is a third-level resource, would cause the issue:
-+
-----
-/channels/{channel-code}/digital-users/{digital-user-id}
-----
-// SE-8999
-* The mocking service returned a 400 error for a PATCH request that met these two conditions:
-** The request had a JSON body of a type that was defined in a library.
-** The library defined the type with an `!include` tag.
-// SE-8790
-* In some cases, validation of required content was not working for request bodies. Instead, payloads were accepted from the API Console without any validation.
-// SE-8745
-* In some cases, the mocking service accepted requests that did not contain required parameters.
-// SE-8666
-* When OAuth 2.0 was being used for authentication, the mocking service required users to provide both an authorization header and an access token. However, these two forms of authorization are mutually exclusive.
+The following issues were resolved in this release:
 
-
+[SE-8276] - Issues with Design Center
+[SE-8614] - Request header 'Accept' failing when application/xml is present before application/json
+[SE-8666] - Mocking service for OAuth 2.0 requires users to provide both authorization header and access token
+[SE-8745] - Mocking service required parameters are allowed to be left out
+[SE-8790] - Mocking Server Validation on Message Body
+[SE-8999] - RAML in Design Center: Unexpected token A in JSON at position 1
+[SE-9588] - Mock Service returns 404 for paths with hyphens in 3rd level resource name
+[SE-9830] - Mock service api always return 400
+[SE-9990] - JSON Schema defined inline in Design Center RAML gives error, OK on Studio
+[SE-10045] - Incorrect Datetime-only format error when trying on mocking service from design center
+[SE-10194] - RAML issue with optional enum type headers
+[SE-10222] - additionalProperties=false in RAML are ignored by Design Center and exchange Mocking services.
 
 
 == API Mocking Service 1.1.11
