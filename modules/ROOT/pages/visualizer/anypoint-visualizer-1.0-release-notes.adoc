@@ -5,6 +5,22 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== January 8, 2019
+Version 2.0.1 
+
+== New Features and Enhancements
+
+* Side Panel
+** Changed *Include related services* box to a toggle named *Show dependents and dependencies*, which allows you to view dependencies of the nodes and services with the selected tags.
+** Updated the placement of the *Select all/Select none* button for filtering. 
+* View - Updated icon on node to indicate if application is deployed in CloudHub or on-premises. 
+
+== Fixed Issues
+
+* Hostname is no longer truncated in the details panel.
+* Fixed *Select all/select none* button functionality to work as expected with search bar within environments and services filtering.
+
+
 == December 15, 2018
 Version 2.0.0
 
