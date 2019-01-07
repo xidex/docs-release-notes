@@ -1,9 +1,9 @@
-= Anypoint Platform Private Cloud Edition 2.0.1 Release Notes
+= Anypoint Platform Private Cloud Edition 2.0.2 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*October 24, 2018*
+*December 28, 2018*
 
 == New Features and Enhancements
 
@@ -32,7 +32,11 @@ There are no new features or enhancements in this release.
 [%header%autowidth.spread]
 |===
 | Issue
-| Fixed issue with requiring external connections during installation.
+| Kubernetes security patch for CVE-2018-1002105
+| Avoid Cassandra replicas to start in the same node
+| Exchange migrations are run with higher privileges and then permissions are downgraded.
+| Password autocomplete disabled on login page
+| Config API healtchecks fix to ignore old pods
 |===
 
 == Known Issues

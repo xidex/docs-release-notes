@@ -6,7 +6,111 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== Dec 6, 2018
+== January 2, 2019
+
+4.1.5 Runtime Update:
+
+* Source error callback is not called when an error is caught in error handler [SE-10212]
+
+4.1.4 Runtime Update:
+
+* Source error callback is not called when an error is caught in error handler [SE-10212]
+
+3.9.2 Runtime Update:
+
+* WMQ transport with synchronous processing strategy is not reconnecting [SE-10362]
+
+3.9.1 Runtime Update:
+
+* WMQ transport with synchronous processing strategy is not reconnecting [SE-10362]
+
+3.9.0 Runtime Update:
+
+* WMQ transport with synchronous processing strategy is not reconnecting [SE-10362]
+
+
+== December 18, 2018
+
+4.1.5 Runtime Update:
+
+* `ProcessingStrategy` internal `bufferSize` is always 256 for `flow-ref` [SE-10226]
+* `IdempotentRedeliveryPolicy` blocks `CPU_LITE` thread [SE-10306]
+
+4.1.4 Runtime Update:
+
+* `ProcessingStrategy` internal `bufferSize` is always 256 for `flow-ref` [SE-10226]
+* `IdempotentRedeliveryPolicy` blocks `CPU_LITE` thread [SE-10306]
+
+
+== December 13, 2018
+
+3.9.2 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+3.9.1 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+3.9.0 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+
+== December 12, 2018
+
+4.1.4 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+4.1.3 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+4.1.2 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+4.1.1 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+4.1.0 Runtime Update:
+
+* Diagnostic logs download [SE-10249]
+
+
+== December 10, 2018
+
+3.9.2 Runtime Update:
+
+* MEL expression failure with concurrent requests [SE-10166]
+
+3.9.1 Runtime Update:
+
+* MEL expression failure with concurrent requests [SE-10166]
+* OAuth provider does not honor expired token TTL [SE-8650]
+* LIST command is not issued after reconnection in FTP transport [SE-9323]
+* APIKit validation error doesn't display the field name [SE-8727]
+
+3.9.0 Runtime Update:
+
+* OAuth provider does not honor expired token TTL [SE-8650]
+* LIST command is not issued after reconnection in FTP transport [SE-9323]
+
+
+== December 7, 2018
+
+4.1.4 Runtime Update:
+
+* Invalid XML generated for artifact declaration [MULE-15835]
+
+4.1.3 Runtime Update:
+
+* Invalid XML generated for artifact declaration [MULE-15835]
+
+
+== December 6, 2018
 
 3.9.2 Runtime Update:
 
@@ -23,7 +127,8 @@ These are the release notes for patches which are made to the Mule runtimes on C
 * Wrapper working directory [SE-10173]
 * Security enhancements
 
-== Dec 5, 2018
+
+== December 5, 2018
 
 4.1.4 Runtime Update:
 
@@ -56,6 +161,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 * Batch persistent queue initialization [SE-9688]
 * Wrapper working directory [SE-10173]
 * Security enhancements
+
 
 == November 26, 2018
 
