@@ -10,6 +10,26 @@ _Premium_
 
 xref:connectors::oauth/oauth2-provider-documentation-reference.adoc[OAuth2 Provider Documentation Reference]
 
+== 1.0.1
+
+*January 8, 2019*
+
+=== Fixed on this release
+
+* ClientCredential grant inconsistent error codes. This broke compatibility so use system property: `mule.oauth.provider.oldErrors=true` if wanting to get previous error codes.
+* `clientSecurityProvider` is no longer mandatory
+* Static login page is now being exported
+
+
+=== Compatibility
+The OAuth2 Provider Module is compatible with:
+
+|===
+|Application/Service|Version
+
+|Mule Runtime|4.1.1 and higher.
+|===
+
 == 1.0.0
 
 *June 15, 2018*
