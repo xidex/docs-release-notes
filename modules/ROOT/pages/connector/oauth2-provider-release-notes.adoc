@@ -2,9 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: oauth, provider, module, release notes
-
-*June 2018*
 
 _Premium_
 
@@ -14,14 +11,15 @@ xref:connectors::oauth/oauth2-provider-documentation-reference.adoc[OAuth2 Provi
 
 *January 8, 2019*
 
-=== Fixed on this release
+=== Fixed in this Release
 
-* ClientCredential grant inconsistent error codes. This broke compatibility so use system property: `mule.oauth.provider.oldErrors=true` if wanting to get previous error codes (link:https://www.mulesoft.org/jira/browse/EE-6521[EE-6521])
-* `clientSecurityProvider` is no longer mandatory (link:https://www.mulesoft.org/jira/browse/EE-6488[EE-6488])
-* Static login page is now being exported (link:https://www.mulesoft.org/jira/browse/EE-6519[EE-6519])
+* ClientCredential grants inconsistent error codes. This broke compatibility, so use system property: `mule.oauth.provider.oldErrors=true` if wanting to get the previous error codes. (link:https://www.mulesoft.org/jira/browse/EE-6521[EE-6521])
+* `clientSecurityProvider` is no longer mandatory. (link:https://www.mulesoft.org/jira/browse/EE-6488[EE-6488])
+* Static login page is now being exported. (link:https://www.mulesoft.org/jira/browse/EE-6519[EE-6519])
 
 
 === Compatibility
+
 The OAuth2 Provider Module is compatible with:
 
 |===
@@ -35,6 +33,7 @@ The OAuth2 Provider Module is compatible with:
 *June 15, 2018*
 
 === Compatibility
+
 The OAuth2 Provider Module is compatible with:
 
 |===
