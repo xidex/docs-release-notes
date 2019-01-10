@@ -3,6 +3,71 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.1 
+ 
+*January 10, 2019* 
+ 
+// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
+
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+=== Fixed Issues 
+ 
+* HTTP service client cannot do gzip response decompression. (https://www.mulesoft.org/jira/browse/MULE-16274[MULE-16274])
+* URL exposed when URI can't be created because it's malformed. (https://www.mulesoft.org/jira/browse/MULE-16206[MULE-16206])
+
+== 1.1.7 
+ 
+*January 10, 2019* 
+ 
+// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
+
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+=== Fixed Issues 
+ 
+* HTTP service client cannot do gzip response decompression. (https://www.mulesoft.org/jira/browse/MULE-16274[MULE-16274])
+
+== 1.1.6 
+ 
+*December 18, 2018* 
+ 
+// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
+
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+=== Fixed Issues 
+ 
+* Fix vulnerability in AHC fork. (https://www.mulesoft.org/jira/browse/MULE-16154[MULE-16154])
+* URL exposed when URI can't be created because it's malformed. (https://www.mulesoft.org/jira/browse/MULE-16206[MULE-16206])
+
+== 1.2.0 
+ 
+*December 6, 2018* 
+ 
+// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
+
+=== New Features and Enhancements 
+
+* Parameterize HTTP server's path tree structure. (https://www.mulesoft.org/jira/browse/MULE-15632[MULE-15632])
+* Enhance RequestMatcherRegistry.  (https://www.mulesoft.org/jira/browse/MULE-15764[MULE-15764])
+* Introduce support for WebSockets. (https://www.mulesoft.org/jira/browse/MULE-15850[MULE-15850])
+ 
+=== Fixed Issues 
+ 
+* Fix vulnerability in AHC fork. (https://www.mulesoft.org/jira/browse/MULE-16154[MULE-16154])
+* Miscellaneous performance improvements. (https://www.mulesoft.org/jira/browse/MULE-16101[MULE-16101])
+* Miscellaneous performance improvements for proxy scenario. (https://www.mulesoft.org/jira/browse/MULE-15924[MULE-15924])
+* Malformed URL returns 500 instead of 400. (https://www.mulesoft.org/jira/browse/MULE-15888[MULE-15888])
+* Some HTTP log entries go to the runtime log instead of the app's. (https://www.mulesoft.org/jira/browse/MULE-15871[MULE-15871])
+* Update grizzly version to MULE-005. (https://www.mulesoft.org/jira/browse/MULE-15853[MULE-15853])
+
 == 1.1.5 
  
 *November 20, 2018* 
