@@ -99,7 +99,7 @@ This release contains an enhancement.
 
 === Enhancement
 
-If your organization contains more than one business group, you can now select the group ID to associate an API specification with when you publish that specification to Anypoint Exchange.
+If your organization contains more than one group ID, you can now select the group ID to associate an API specification with when you publish that specification to Anypoint Exchange.
 
 == 2.2.8
 
