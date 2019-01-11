@@ -62,7 +62,7 @@ The following issues were fixed in this release:
 
 == API Designer 0.4.13 Release Notes
 
-August 23, 2018
+*August 23, 2018*
 
 === Enhancement
 
@@ -86,7 +86,7 @@ protocols: [ HTTPS ]
 
 == API Designer 0.4.12 Release Notes
 
-June 28, 2018
+*June 28, 2018*
 
 === Fixed Issues
 
@@ -95,7 +95,7 @@ June 28, 2018
 
 == API Designer 0.4.11 Release Notes
 
-May 19, 2018
+*May 19, 2018*
 
 * API Console is now at https://github.com/mulesoft/api-console/releases/tag/v3.0.28[v3.0.28].
 * The OAS RAML converter is now at version 1.1.32.
@@ -111,7 +111,7 @@ May 19, 2018
 
 == API Designer 0.4.9 Release Notes
 
-February 24, 2018
+*February 24, 2018*
 
 This release introduces an enhancement and bug fix.
 
@@ -125,7 +125,7 @@ When including a data type, the invalid error in IE _Object doesn’t support pr
 
 == API Designer 0.4.6 Release Notes
 
-November 4, 2017
+*November 4, 2017*
 
 This release introduces improvements and bug fixes.
 
@@ -139,7 +139,7 @@ Fixed the issue allowing only the name `body` for the root RAML element type Now
 
 == API Designer 0.4.5 Release Notes
 
-August 26, 2017
+*August 26, 2017*
 
 This release focuses on minor bug fixes.
 
@@ -150,7 +150,7 @@ This release focuses on minor bug fixes.
 
 == API Designer 0.4.4 Release Notes
 
-July 15, 2017
+*July 15, 2017*
 
 This release focuses on minor bug fixes.
 
@@ -165,7 +165,7 @@ Fixed an issue related to a parsing empty RAML files using Internet Explorer 11.
 
 == API Designer 0.4.3 Release Notes
 
-June 17, 2017
+*June 17, 2017*
 
 This release focuses on minor bug fixes.
 
@@ -182,7 +182,7 @@ This release focuses on minor bug fixes.
 
 == API Designer 0.4.2 Release Notes
 
-June 3, 2017
+*June 3, 2017*
 
 This release focuses on bug fixes and closing gaps in RAML 1.0 support.
 
@@ -209,7 +209,7 @@ Improved the efficiency and conversion of RAML 0.8 schemas to OAS 2.0 definition
 
 == API Designer 0.4.1 Release Notes
 
-April 8, 2017
+*April 8, 2017*
 
 This release focuses on minor bug fixes.
 
@@ -226,7 +226,7 @@ This release focuses on minor bug fixes.
 
 == API Designer 0.4.0 Release Notes
 
-March 11, 2017
+*March 11, 2017*
 
 This release includes a change, minor bug fixes, and performance improvements. Performance improvements include the introduction of the background worker in the validation process.
 
@@ -255,7 +255,7 @@ Above the editor, near the file name, there is now a validation indicator.
 
 == API Designer 0.3.2 Release Notes
 
-February 3, 2017
+*February 3, 2017*
 
 This release focuses on minor bug fixes.
 
@@ -275,7 +275,7 @@ This release focuses on minor bug fixes.
 
 == API Designer 0.3.1 Release Notes
 
-January 14, 2017
+*January 14, 2017*
 
 This release focuses on minor bug fixes.
 
@@ -293,7 +293,7 @@ This release focuses on minor bug fixes.
 
 == API Designer 0.3.0 Release Notes
 
-December 3, 2016
+*December 3, 2016*
 
 This release includes a new, xref:1.x@api-manager::designing-your-api.adoc#saving-importing-and-exporting-files[improved menu] to simplify creating RAML documents, as well as a beta version for xref:1.x@api-manager::designing-your-api.adoc#importing-an-oas-2-0-specification[importing OAS 2.0 documents].
 
@@ -314,7 +314,7 @@ Import OAS 2.0 (beta).
 
 == API Designer 0.2.0 Release Notes
 
-November 19, 2016
+*November 19, 2016*
 
 This release incorporates full support for RAML 1.0 and fixes bugs.
 
