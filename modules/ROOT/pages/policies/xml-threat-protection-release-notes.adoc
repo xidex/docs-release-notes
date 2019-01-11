@@ -18,17 +18,9 @@ endif::[]
 |===
 |Issue |Description
 // Features and ennhanncements
-| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Adding violationCategory in the YAML configuration for Feedback Loop
+| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
 |===
 
-=== Fixed Issues
-
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-2126[AGW-2126] | Remove redundant logs after logging added to HTTP Client
-|===
 
 == 1.1.0
 
@@ -53,7 +45,7 @@ endif::[]
 |===
 |Issue |Description
 // Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | SoapFault extension: When payload is empty or invalid, policy is exploding uglily
+| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
 |===
 
 == 1.0.0
