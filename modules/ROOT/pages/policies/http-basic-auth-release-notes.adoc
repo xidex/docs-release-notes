@@ -1,0 +1,69 @@
+= HTTP Basic Authentication Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, http-basic-auth, policy, release notes
+
+== 1.1.1
+
+*Jun 29, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
+|===
+
+
+== 1.1.0
+
+*Jan 26, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Features and ennhanncements
+| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814]| Reduce error-handling verbosity in templates
+|===
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
+| link:https://www.mulesoft.org/jira/browse/AGW-1847[AGW-1847] | Basic auth policies are not working after mule's changes
+| link:https://www.mulesoft.org/jira/browse/AGW-1763[AGW-1763] | Fixing missing groupId for proxy samples dependency
+| link:https://www.mulesoft.org/jira/browse/AGW-1734[AGW-1734] | When using HTTP Basic Auth policy, and authorization header is malformed, 500 status code is thrown instead of 401.
+|===
+
+
+
+
+== 1.0.0
+
+*Nov 17, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+
+
+== See Also
+
+* xref:api-manager::basic-authentication-simple-concept.adoc[HTTP Basic Authentication Policy for Mule 4]
