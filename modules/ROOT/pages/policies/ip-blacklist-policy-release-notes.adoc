@@ -1,0 +1,63 @@
+= IP Blacklist Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, ip-blacklist, policy, release notes
+
+== 1.1.1
+
+*Jun 05, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Features and Enhancements
+| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
+|===
+
+== 1.1.0
+
+*Jan 25, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Features and ennhanncements
+| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814] | Implement usage of HTTP Policy transform extension
+| link:https://www.mulesoft.org/jira/browse/AGW-1832[AGW-1832] | Adding default expression for IP Addresses in the YAML instead of in the template
+|===
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML while using a WSDL proxy
+|===
+
+== 1.0.0
+
+*Nov 14, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+
+
+== See Also
+
+* xref:api-manager::ip-blacklist.adoc[IP Blacklist Policy]
