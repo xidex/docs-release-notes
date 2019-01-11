@@ -1,0 +1,45 @@
+= APIkit 3.9.2 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*November 20, 2018*
+
+This release supports the latest Mule 3 Runtime release and corresponding Studio version.
+
+There are no new features in this version. There are just a few enhancements and bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9.1 and later 3.9 versions
+|Anypoint Studio |6.4.0 and later Studio 6 versions
+|Java Parser RAML |1.0 v1.0.20
+|Java Parser RAML |0.8 v0.8.23
+|API Console |3.0.27
+|===
+
+== Big Fixes
+
+Add RAML QueryString validation.
+API error when receiving "Accept" Request-header - '*'.
+APIKit RAML Validation is failing to invalidate a body with only blank node.
+APIKit router won't work if http listener has BaseUriParameter.
+Body doesn't get validated if the body is empty.
+APIKit Router handling a NULL parameter returns NPE and an HTTP response of 500.
+Mule-APIkit with baseUriParameter truncates resource path thus errors out as 'resource not found'.
+APIKit validations don't display the field.
+Null payload coming from an HTTP endpoint cannot be passed through `api-kit-router`.
+APIkit not using example from RAML.
+APIkit negatively impacting performance.
+
+== Tasks
+
+Fixed vulnerability detected with jackson-databind.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].
+* https://support.mulesoft.com[Contact MuleSoft Support].

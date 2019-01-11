@@ -4,8 +4,25 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, email, connector, release notes, pop3, smtp, imap
 
-*October 10, 2018*
+== 1.1.2
+
+*November 1, 2018*
+
+=== Fixed Issues
+
+* Email connector does not correctly communicate the structure of returned objects. (MULE-15921)
+
+== 1.1.1
+
+*October 22, 2018*
+
+=== Fixed Issues
+
+* NoClassDefFoundError of Guava Class https://www.mulesoft.org/jira/browse/MULE-15883[(MULE-15883)]
+
 == 1.1.0
+
+*October 10, 2018*
 
 === New Features and Enhancements
 

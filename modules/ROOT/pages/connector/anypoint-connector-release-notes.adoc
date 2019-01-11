@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, connectors
 
 Anypoint Connectors facilitate easy integration of your Mule applications with third-party APIs and standard integration protocols. Use them within your application's flows to send and receive data via a protocol or specific API.
 
@@ -18,9 +17,11 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/amazon-sqs-connector-release-notes-mule-4.adoc[Amazon SQS Connector Release Notes (for Mule 4)]
 * xref:connector/connector-amqp.adoc[AMQP Connector Release Notes (for Mule 4)]
 * xref:connector/anypoint-mq-connector-release-notes-mule-4.adoc[Anypoint MQ Connector Release Notes (for Mule 4)]
+* xref:connector/as2-connector-release-notes-mule-4.adoc[AS2 Connector Release Notes (for Mule 4)]
 * xref:connector/bmc-remedy-connector-release-notes-mule-4.adoc[BMC Remedy Connector Release Notes (for Mule 4)]
 * xref:connector/box-connector-release-notes-mule-4.adoc[Box Connector Release Notes (for Mule 4)]
 * xref:connector/cassandra-connector-release-notes-mule-4.adoc[Cassandra Connector Release Notes (for Mule 4)]
+* xref:connector/cloudhub-connector-release-notes-mule-4.adoc[CloudHub Connector Release Notes (for Mule 4)]
 * xref:mule-runtime/module-compression.adoc[Compression Module Release Notes (for Mule 4)]
 * xref:connector/connector-db.adoc[Database Connector Release Notes (for Mule 4)]
 * xref:connector/edifact-edi-connector-release-notes.adoc[EDIFACT EDI Connector Release Notes (for Mule 4)]
@@ -33,6 +34,7 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/hl7-mllp-connector-release-notes-mule-4.adoc[HL7 MLLP Connector Release Notes (for Mule 4)]
 * xref:connector/connector-http.adoc[HTTP Connector Release Notes (for Mule 4)]
 * xref:connector/ibm-ctg-connector-release-notes-mule-4.adoc[IBM CTG Connector Release Notes (for Mule 4)]
+* xref:connector/connector-ibm-mq.adoc[IBM MQ Connector Release Notes (for Mule 4)]
 * xref:connector/java-module.adoc[Java Module Release Notes (for Mule 4)]
 * xref:connector/connector-jms.adoc[JMS Connector Release Notes (for Mule 4)]
 * xref:connector/json-module-release-notes.adoc[JSON Module Release Notes (for Mule 4)]
@@ -53,8 +55,10 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/neo4j-connector-release-notes-mule-4.adoc[Neo4J Connector Release Notes (for Mule 4)]
 * xref:connector/netsuite-connector-release-notes-mule-4.adoc[NetSuite Connector Release Notes (for Mule 4)]
 * xref:connector/netsuite-openair-connector-release-notes-mule-4.adoc[NetSuite OpenAir Connector Release Notes (for Mule 4)]
+* xref:connector/oauth-module-release-notes.adoc[OAuth Module Release Notes (for Mule 4)]
+* xref:connector/oauth2-provider-release-notes.adoc[OAuth2 Provider Module Release Notes (for Mule 4)]
 * xref:connector/object-store-connector-release-notes-mule-4.adoc[Object Store Connector Release Notes (for Mule 4)]
-* xref:connector/oracle-ebs-connector-release-notes-mule-4.adoc[Oracle EBS Connector Release Notes (for Mule 4)]
+* xref:connector/oracle-ebs-connector-release-notes-mule-4.adoc[Oracle EBS 12.1 Connector Release Notes (for Mule 4)]
 * xref:connector/oracle-ebs-122-connector-release-notes-mule-4.adoc[Oracle EBS 12.2 Connector Release Notes (for Mule 4)]
 * xref:connector/peoplesoft-connector-release-notes-mule-4.adoc[PeopleSoft Connector Release Notes (for Mule 4)]
 * xref:connector/redis-connector-release-notes-mule-4.adoc[Redis Connector Release Notes (for Mule 4)]
@@ -62,21 +66,23 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/salesforce-connector-release-notes-mule-4.adoc[Salesforce Connector Release Notes (for Mule 4)]
 * xref:connector/salesforce-analytics-connector-release-notes-mule-4.adoc[Salesforce Analytics Connector Release Notes (for Mule 4)]
 * xref:connector/salesforce-composite-connector-release-notes-mule-4.adoc[Salesforce Composite Connector Release Notes (for Mule 4)]
-* xref:connector/salesforce-mktg-connector-release-notes-mule-4.adoc[Salesforce Marketing Connector Release Notes (for Mule 4)]
+* xref:connector/salesforce-mktg-connector-release-notes-mule-4.adoc[Salesforce Marketing Cloud Connector Release Notes (for Mule 4)]
 * xref:connector/sap-connector-release-notes-mule-4.adoc[SAP Connector Release Notes (for Mule 4)]
 * xref:connector/sap-concur-connector-release-notes-mule-4.adoc[SAP Concur Connector Release Notes (for Mule 4)]
 * xref:connector/sap-successfactors-connector-release-notes-mule-4.adoc[SAP SuccessFactors Connector Release Notes (for Mule 4)]
+* xref:mule-runtime/module-scripting.adoc[Scripting Module Release Notes (for Mule 4)]
 * xref:mule-runtime/secure-properties.adoc[Secure Configuration Properties Extension Release Notes for Mule 4]
 * xref:connector/servicenow-connector-release-notes-mule-4.adoc[ServiceNow Connector Release Notes (for Mule 4)]
 * xref:connector/connector-sftp.adoc[SFTP Connector Release Notes (for Mule 4)]
 * xref:connector/sharepoint-connector-release-notes-mule-4.adoc[SharePoint Connector Release Notes (for Mule 4)]
 * xref:connector/siebel-connector-release-notes-mule-4.adoc[Siebel Connector Release Notes (for Mule 4)]
+* xref:connector/connector-sockets.adoc[Sockets Connector Release Notes (for Mule 4)]
 * xref:connector/tradacoms-edi-connector-release-notes-mule-4.adoc[TRADACOMS EDI Connector Release Notes (for Mule 4)]
 * xref:connector/twilio-connector-release-notes-mule-4.adoc[Twilio Connector Release Notes (for Mule 4)]
-* xref:connector/workday-connector-release-notes-mule-4.adoc[Workday Connector Release Notes (for Mule 4)]
 * xref:mule-runtime/module-validation.adoc[Validation Module Release Notes (for Mule 4)]
 * xref:connector/connector-vm.adoc[VM Connector Release Notes (for Mule 4)]
 * xref:connector/connector-wsc.adoc[Web Service Consumer Connector Release Notes (for Mule 4)]
+* xref:connector/workday-connector-release-notes-mule-4.adoc[Workday Connector Release Notes (for Mule 4)]
 * xref:connector/x12-edi-connector-release-notes-mule-4.adoc[X12 EDI Connector Release Notes (for Mule 4)]
 * xref:mule-runtime/module-xml.adoc[XML Module Release Notes (for Mule 4)]
 * xref:connector/zuora-connector-release-notes-mule-4.adoc[Zuora Connector Release Notes (for Mule 4)]
@@ -129,8 +135,9 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/redis-connector-release-notes.adoc[Redis Connector Release Notes]
 * xref:connector/remedy-connector-release-notes.adoc[Remedy Connector Release Notes]
 * xref:connector/rosettanet-connector-release-notes.adoc[RosettaNet Connector Release Notes]
-* xref:connector/salesforce-connector-release-notes.adoc[Salesforce Connector Release Notes]
 * xref:connector/salesforce-analytics-cloud-connector-release-notes.adoc[Salesforce Analytics Cloud Connector Release Notes]
+* xref:connector/salesforce-composite-connector-release-notes.adoc[Salesforce Composite Connector Release Notes]
+* xref:connector/salesforce-connector-release-notes.adoc[Salesforce Connector Release Notes]
 * xref:connector/sap-connector-release-notes.adoc[SAP Connector Release Notes]
 * xref:connector/servicenow-connector-release-notes.adoc[ServiceNow Connector Release Notes]
 * xref:connector/siebel-connector-release-notes.adoc[Siebel Connector Release Notes]
@@ -144,5 +151,6 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum].
-* https://support.mulesoft.com[Contact MuleSoft Support].
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
+

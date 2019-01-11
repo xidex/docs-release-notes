@@ -2,9 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, connectors, amazon, sqs
 
-*December 2017*
+*November 2018*
 
 _Select_
 
@@ -12,8 +11,48 @@ The Amazon SQS cloud connector provides an easy way to interface with the Amazon
 
 *Connector Guide*: xref:3.9@mule-runtime::amazon-sqs-connector.adoc[Amazon SQS Connector]
 
-[IMPORTANT]
-Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions will remain freely available to the community.
+IMPORTANT: Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions remain freely available to the community.
+
+== 4.3.1
+
+*November 27, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|3.6.x and later
+|AWS SDK for Java|1.11.453
+|===
+
+=== Fixed in this Release
+
+* The connector was intermittently failing to parse the HTTP response and was throwing an exception. This was fixed by updating the AWS library used.
+* There was a thread leak caused by the fact that the AWS client used by the connector was recreated each time a request was submitted to the SQS API. This is now fixed.
+
+== 4.3.0
+
+*November 2, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|3.8.x and later in Mule 3
+|AWS SDK for Java|1.11.79
+|===
+
+=== Features
+
+* The AWS SQS Connector now supports Canada (Central) (ca-central-1) and EU (London) (eu-west-2)
+
+=== Fixed in this Release
+
+* Connector continued retrieving messages when flow was stopped - In previous versions the connector continued retrieving messages after the Mule application was stopped. In the current version, after the Mule application is stopped, the connector stops retrieving messages.
+* Multiple connections established - Previously, the connector would make a high number of connections, even if the polling was set to a high value. This is now fixed.
+* Connector stopped working after receiving a 500 error from Amazon - The connector stopped receiving messages when a Status Code 500 was received from Amazon. This was fixed, and the connector attempts a reconnection in cases like this.
 
 == 4.2.1
 
@@ -30,14 +69,14 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 === Features
 
-* References Devkit 3.9.4
+* References DevKit 3.9.4
 
 === Fixed in this Release
 
-* messageId and md5OfMessageAttributes swapped. - In previous versions the messageId was mapped to the md5OfMessageAttributes attribute and vice versa. In version 4.2.1, these attributes are correctly mapped.
-* SendMessageBatchREquestEntry SQS DataType only from Java code. - In past versions, the only way to use SendMessageBatchREquestEntry SQS DataType was by using Java Code. In version 4.2.1, it is also possible by DataWeave.
-* TestConnection fails when queue name contains dot (".") character. - In past versions when the name contained a dot character, TestConnection failed when using the queue name. In version 4.2.1, the TestConnection works correctly.
-* Application hangs after stopping and restarting sequence. - In the previous version when stopping the application and then restarting it, the application hung with an org.mule.api.lifecycle.LifecycleException. In version 4.2.1, the stop and restart sequence works correctly.
+* messageId and md5OfMessageAttributes swapped - In previous versions the messageId was mapped to the md5OfMessageAttributes attribute and vice versa. In version 4.2.1, these attributes are correctly mapped.
+* SendMessageBatchREquestEntry SQS DataType only from Java code - In past versions, the only way to use SendMessageBatchREquestEntry SQS DataType was by using Java Code. In version 4.2.1, it is also possible by DataWeave.
+* TestConnection fails when queue name contains dot (".") character - In past versions when the name contained a dot character, TestConnection failed when using the queue name. In version 4.2.1, the TestConnection works correctly.
+* Application hangs after stopping and restarting sequence - In the previous version when stopping the application and then restarting it, the application hung with an org.mule.api.lifecycle.LifecycleException. In version 4.2.1, the stop and restart sequence works correctly.
 
 === Known Issues
 
@@ -63,13 +102,8 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 === Fixed in this Release
 
-* In earlier versions, when the SQS connector is used as an inbound endpoint then the custom exception strategy can not be invoked and source stops polling messages when exception occurs. Now SQS as a source does not stop polling messages when uncaught exception and custom exception strategy can be invoked.
+* In earlier versions, when the SQS connector is used as an inbound endpoint, the custom exception strategy could not be invoked, and the source stopped polling for messages when an exception occurred. Now SQS as a source does not stop polling messages when an uncaught exception and custom exception strategy can be invoked.
 * Handling of binary attributes in sendMessage operation.
-
-=== Known Issues
-
-* None
-
 
 == 4.1.0
 
@@ -97,7 +131,7 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 === Known Issues
 
-* When the SQS connector is used as an inbound endpoint then the custom exception strategy is not invoked.
+* When the SQS connector is used as an inbound endpoint, the custom exception strategy is not invoked.
 
 == 4.0.2
 
@@ -112,17 +146,10 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 |AWS SDK for Java|1.10.1
 |===
 
-=== Features
-
-None.
-
 === Fixed in this Release
 
 - Messages are now consumed from the queue when the client receives an exception.
 Previously, when receiving an Exception, the queue stopped consuming messages.
-
-=== Known Issues
-None.
 
 == 4.0.1
 
@@ -137,21 +164,13 @@ None.
 |AWS SDK for Java|1.10.1
 |===
 
-=== Features
-None.
-
 === Fixed in this Release
 
 - Allows evaluation licenses. Previous versions of the connector didn't let users use evaluation licenses.
 
-
-=== Known Issues
-
-None.
-
 == 4.0.0
 
-*Dec 15, 2015*
+*December 15, 2015*
 
 === Compatibility
 
@@ -164,20 +183,11 @@ None.
 
 === Features
 
-* Upgraded Devkit to v3.7.2
-
-=== Fixed in this Release
-
-None.
-
-=== Known Issues
-
-None.
-
+* Upgraded DevKit to v3.7.2
 
 == 3.2.0
 
-*Oct 21, 2015*
+*October 21, 2015*
 
 === Compatibility
 
@@ -190,21 +200,16 @@ None.
 
 === Features
 
-* Upgraded Devkit to v3.7.1
+* Upgraded DevKit to v3.7.1
 * Upgraded AWS SDK to v1.10.1
 
 === Fixed in this Release
 
 * The Send Message processor parameters has been wrapped in a Message Object to fix the XML generation issues by studio.
 
-=== Known Issues
-
-None.
-
-
 == 3.1.1
 
-* Upgraded to Devkit v3.7.0
+* Upgraded to DevKit v3.7.0
 * The Test Connection feature in the Global Configuration settings has been modified to test queue level action rather
 than the generic system wide Amazon SQS action.
 * The prefix “Proxy” for all the parameters in Proxy Settings has been removed.
@@ -227,7 +232,7 @@ than the generic system wide Amazon SQS action.
 === Features
 
 * Upgraded AWS SDK for Java to 1.9.39
-* Upgraded Anypoint Connector Devkit to 3.6.1.
+* Upgraded Anypoint Connector DevKit to 3.6.1
 * Added the following new operations:
 ** ChangeMessageVisibility
 ** ChangeMessageVisibilityBatch
@@ -237,16 +242,8 @@ than the generic system wide Amazon SQS action.
 ** ListQueues
 ** PurgeQueue
 ** SendMessageBatch
-* Renamed the GetURL operation to Get Queue URL.
-* Added support for proxy settings.
-
-=== Fixed in this Release
-
-None.
-
-=== Known Issues
-
-None.
+* Renamed the GetURL operation to Get Queue URL
+* Added support for proxy settings
 
 == 2.5.5
 
@@ -270,10 +267,6 @@ Amazon S3 connector 2.5.5 is compatible with:
 === Fixed in this Release
 
 * Added support for Mule Runtime v3.6.n and later.
-
-=== Known Issues
-
-None.
 
 == 2.5.4
 
@@ -312,4 +305,4 @@ None.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

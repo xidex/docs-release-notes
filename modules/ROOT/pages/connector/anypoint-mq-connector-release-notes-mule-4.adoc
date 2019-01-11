@@ -1,17 +1,66 @@
-= Anypoint MQ Connector Release Notes
+= Anypoint MQ Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mq, connector, release, notes
-
-*September 2018*
 
 _Select_
 
-*Note:* Anypoint MQ version 2.x only works with Mule 4 and Studio 7. For the Mule 3 Anypoint MQ Connector Release Notes, see xref:connector/mq-connector-release-notes[Anypoint MQ Connector Release Notes].
+*Note:* Anypoint MQ version 2.x only works with Mule 4 and Studio 7. For the Mule 3 Anypoint MQ Connector Release Notes, see xref:connector/mq-connector-release-notes[Anypoint MQ Connector Release Notes - Mule 3].
 
 Anypoint MQ Connector lets you add messaging access to Anypoint MQ queues and exchanges from Anypoint Studio applications.
 
+== 2.1.0
+
+*December 14, 2018*
+
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime |4.0.0 and later
+|Anypoint Studio |7.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Duplicated ACK when using IMMEDIATE mode. (MQ-1381)
+* Avoid overlapping polls on fixed frequency subscriber. (MQ-1360)
+* Use long polling with maximum timeout in the fixed frequency subscriber. (MQ-1359)
+* Add version information in User-Agent header. (MQ-1339)
+
+=== Features added in this Release
+
+* Add circuit breaker capabilities to the MQ Subscriber. (MQ-1343)
+
+
+== 2.0.5
+
+*November 2, 2018*
+
+This release fixes issues.
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime |4.0.0 and later
+|Anypoint Studio |7.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Update reference docs for Subscriber parameters. (MQ-1340)
+* MQ Subscriber: Needs to shutdown gracefully when stopped. (MQ-1338)
+* MQ connector does not remove expired messages from a preserved buffer. (MQ-1333)
+* MQ connector blocks all app I/O threads when invoked concurrently. (MQ-1324)
+* MQ connector prefetch limit is ignored. (MQ-1323)
+* MQ Subscriber picks up messages very slowly from a queue. (MQ-1322)
+* Messages are being read twice by the Anypoint MQ Connector. (MQ-1320)
+* PollingTime is not used by the Subscriber. (MQ-1277)
+* Subscriber prefetch cannot be disabled. (MQ-1276)
 
 == 2.0.4
 
@@ -48,7 +97,24 @@ To disable Prefetch:
 +
 If there are no messages in the queue, each poll that a subscriber makes waits for the duration of exactly half of the *Polling time* specified in the General tab. Polling time has a maximum value of 20000 milliseconds.
 
-*Note:* Versions 2.0.1 - 2.0.3 were internal releases only without changes to the user interface or product usage.
+*Note:* Versions 2.0.2 - 2.0.3 were internal releases only without changes to the user interface or product usage.
+
+== 2.0.1
+
+*July 4, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime |4.0.0 and later
+|Anypoint Studio |7.0.0 and later
+|===
+
+=== Fixed in This Release
+
+* Internal fix only - no change to the user interface or product usage.
 
 == 2.0.0
 

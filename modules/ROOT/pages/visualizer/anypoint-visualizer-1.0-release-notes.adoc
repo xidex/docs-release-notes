@@ -5,6 +5,72 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== January 8, 2019
+Version 2.0.1 
+
+== New Features and Enhancements
+
+* Side Panel
+** Changed *Include related services* box to a toggle named *Show dependents and dependencies*, which allows you to view dependencies of the nodes and services with the selected tags.
+** Updated the placement of the *Select all/Select none* button for filtering. 
+* View - Updated icon on node to indicate if application is deployed in CloudHub or on-premises. 
+
+== Fixed Issues
+
+* Hostname is no longer truncated in the details panel.
+* Fixed *Select all/select none* button functionality to work as expected with search bar within environments and services filtering.
+
+
+== December 15, 2018
+Version 2.0.0
+
+== New Features and Enhancements
+
+* Added support for applications running in standalone Mule runtime engines. +
+[NOTE]
+This capability is being released incrementally.
+* Added the ability to select multiple nodes on the Visualizer canvas so you can apply layers and tags to all selected nodes at once.
+
+== Known Issues
+
+* Standalone Mule runtime engines do not support HTTP calls using IP addresses instead of DNS names.
+* When an application deployed to a standalone Mule runtime engine calls a CloudHub application, an extra edge is displayed. This issue is fixed in the `-AM` runtime only.
+
+== November 27, 2018
+Version: 1.7.0
+
+=== New Features and Enhancements
+
+* Side Panel
+** Added the ability to add tags to services using the UI or properties
+** Moved layer assignment from the *Details* panel to the *Customization* panel
+** Added filtering by tags
+** Added *Include related services* button to the *Services* filter
+
+
+== November 13, 2018
+Version: 1.6.0
+
+=== New Features and Enhancements
+
+* Side Panel
+** Added filtering by environments and services (nodes)
+
+=== Fixed Issues
+
+* Dashboard button in side panel links to appropriate monitoring dashboard
+
+
+== November 1, 2018
+Version: 1.5.0
+
+=== New Features and Enhancements
+
+* View
+** Added new text field to allow searching for nodes (services).
+** Added dimming functionality for when service is selected. Clicked node and its dependencies will show and other services will be grayed out.
+
+
 == October 3, 2018
 Version: 1.3.1
 

@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+* <<API Designer 0.4.14 Release Notes>>
+
 * <<API Designer 0.4.13 Release Notes>>
 
 * <<API Designer 0.4.12 Release Notes>>
@@ -32,6 +34,31 @@ endif::[]
 * <<API Designer 0.3.0 Release Notes>>
 
 * <<API Designer 0.2.0 Release Notes>>
+
+== API Designer 0.4.14 Release Notes
+October 24, 2018
+
+This release contains one enhancement and fixes a number of issues.
+
+=== Enhancement
+
+The JS parser is now at version 1.1.48.
+
+=== Fixed Issues
+
+The following issues were fixed in this release:
+
+// DESIGNER-2160
+* When a `uses` node referred to a missing file, the error message was not helpful. The error message has been revised.
+// DESIGNER-2460
+* The API Designer might take so long to validate a RAML API specification and show the API summary that the browser would time out.
+// DESIGNER-2466
+* The API editor did not throw an exception when an incorrect JSON schema was declared.
+// DESIGNER-2727
+* A project could be opened without errors in the API editor in Design Center but with errors in API Designer in API Manager.
+// DESIGNER-2873
+* No error message was displayed when a `uses` node specified an invalid path to a library.
+
 
 == API Designer 0.4.13 Release Notes
 
