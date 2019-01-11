@@ -1,0 +1,34 @@
+= Json Web Token (JWT) Validation Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, cors, policy, release notes
+
+== 1.0.1
+
+*Jan 10, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/AGW-2809[AGW-2809] | Improve the RAML and OAS snippets.
+|===
+
+== 1.0.0
+
+*Dec 21, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+== See Also
+
+* xref:api-manager::policy-mule4-jwt-validation.adoc[JWT Validation Policy for Mule 4]
