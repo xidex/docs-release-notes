@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-7-2,1.7.2>>
 * <<1-7-1,1.7.1>>
 * <<1-7-0,1.7.0>>
 * <<1-6-0,1.6.0>>
@@ -29,6 +30,15 @@ These release notes cover the following versions of these features:
 * <<1-0-2,1.0.2>>
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
+
+== 1.7.2
+*January 10, 2019*
+
+This release includes one new feature.
+
+=== New Feature
+
+* You can import a Mule-application project that was exported from Design Center. This feature is useful when you want to continue developing a Mule application in an environment in Anypoint Platform that is different from the environment in which the application was created.
 
 == 1.7.1
 *January 2, 2019*
@@ -55,7 +65,7 @@ This release includes the following new features, enhancements, and fixes.
 * You can drag and drop payload elements, attributes, and variables into plain text fields, mixing them together with text or using them alone, to specify dynamic, rather than static, values. The values are substituted when your Mule application is running and a flow is triggered.
 * You can create DataWeave expressions in plain text fields, mixing expressions with text or using them alone, to create dynamic values when flows are triggered at runtime. A new editor provides aids for creating expressions.
 * You can change an existing Mule application to use a newer version of Mule Runtime. You might want to do this if the newer version includes updates or new features that you want your application to take advantage of.
-// * You can import a Mule application that was exported from Design Center or Anypoint Studio.
+
 
 
 === Enhancements
