@@ -2,7 +2,14 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, FTP, connector, release notes
+
+== 1.2.3
+
+*January 4, 2019*
+
+=== Fixed Issues
+
+* Fixed bug that made the connector get stuck while reading files from remote server, degrading performance. (MULE-16291)
 
 == 1.2.2
 
@@ -10,9 +17,7 @@ endif::[]
 
 === Fixed Issues
 
-* FtpFileAttributes throw NPE when FTPFile date is null (MULE-15301)
-
-*June 2018*
+* FtpFileAttributes throw NPE when FTPFile date is null. (MULE-15301)
 
 == 1.2.1
 
@@ -20,8 +25,8 @@ endif::[]
 
 === Fixed Issues
 
-* FTP:ILLEGAL_PATH is thrown during ftp write (MULE-15104)
-* FTP:Write deletes the directories and files when no filename is provided (MULE-15172)
+* FTP:ILLEGAL_PATH is thrown during ftp write. (MULE-15104)
+* FTP:Write deletes the directories and files when no filename is provided. (MULE-15172)
 
 == 1.2.0
 
@@ -33,7 +38,7 @@ endif::[]
 
 == 1.1.1
 
-*Feb 2, 2018*
+*February 2, 2018*
 
 === Fixed Issues
 
@@ -41,7 +46,7 @@ endif::[]
 
 == 1.1.0
 
-*Jan 19, 2018*
+*January 19, 2018*
 
 === New Features and Enhancements
 
@@ -49,7 +54,3 @@ This release includes the following enhancements, changes, and fixes:
 
 * Added a message source that automatically polls for new files, while handling clustering, idempotency, post actions and watermark automatically.
 
-== See Also
-
-* https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
