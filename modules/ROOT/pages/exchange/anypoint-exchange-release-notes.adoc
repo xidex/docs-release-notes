@@ -7,12 +7,16 @@ endif::[]
 
 === New Features
 
-* Conversion from RAML to OAS 2.0 and vice-versa in the publication process
-* Ability to download a REST API Spec in either RAML or OAS 2.0 with identification of the "Generated" Spec
-* Direct upload of RAML and RAML fragments
-* New API console experience 
-* Consistent API spec publication UI between Exchange and API Manager
-* Contextual view of RAML versions of API specs and fragments in API designer from Exchange
+* Conversion from RAML to OAS 2.0 and from OAS 2.0 to RAML in the publication process.
+* Ability to download a REST API specification in either RAML or OAS 2.0 with identification of the "Generated" specification.
+* Direct upload of RAML and RAML fragments.
+* New API console experience.
+* Consistent API specification publication UI between Exchange and API Manager.
+* Contextual view of RAML versions of API specifications and fragments in API designer from Exchange.
+
+=== Version Note
+
+The Exchange versions have changed to using date versioning.
 
 == 2.7
 
