@@ -16,7 +16,7 @@ endif::[]
 
 === Version Note
 
-The Exchange versions have changed to using date versioning.
+The Exchange versions have changed from version numbers to date versioning by year and month.
 
 == 2.7
 
