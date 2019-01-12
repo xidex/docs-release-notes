@@ -14,8 +14,6 @@ endif::[]
 * Consistent API spec publication UI between Exchange and API Manager
 * Contextual view of RAML versions of API specs and fragments in API designer from Exchange
 
-=== Fixed in this Release
-
 == 2.7
 
 *October 2018*
