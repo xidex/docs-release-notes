@@ -11,7 +11,7 @@ endif::[]
 * Ability to download a REST API specification in either RAML or OAS 2.0 with identification of the "Generated" specification.
 * Direct upload of RAML and RAML fragments.
 * New API console experience.
-* Consistent API specification publication UI between Exchange and API Manager.
+* Consistent API specification publication user interface between Exchange and API Manager.
 * Contextual view of RAML versions of API specifications and fragments in API designer from Exchange.
 
 === Version Note
