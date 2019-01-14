@@ -58,7 +58,7 @@ on the JMS Listener Response.
 
 === Fixed Issues
 
-* JMS Publish consume operation throws a JmsIllegalBodyException when returning a ManagedCursorStreamProvider as payload. (https://www.mulesoft.org/jira/browse/MULE-14852[MULE-14852])
+* JMS Publish Consume operation throws JmsIllegalBodyException when returning ManagedCursorStreamProvider in the payload. (https://www.mulesoft.org/jira/browse/MULE-14852[MULE-14852])
 * Support JMS Non-Blocking API. (https://www.mulesoft.org/jira/browse/MULE-14875[MULE-14875])
 * JMS throws ClassCastException when receiving a message. (https://www.mulesoft.org/jira/browse/MULE-15431[MULE-15431])
 * Add support for SSL in the JMS Connector. (https://www.mulesoft.org/jira/browse/MULE-12341[MULE-12341])
