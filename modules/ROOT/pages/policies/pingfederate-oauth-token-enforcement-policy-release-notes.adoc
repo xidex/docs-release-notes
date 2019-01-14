@@ -1,4 +1,4 @@
-= PingFederate access token enforcement
+= PingFederate Access Token Enforcement Policy
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

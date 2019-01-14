@@ -8,12 +8,25 @@ Release notes for API Manager Policies include information about changes, improv
 
 == Release Notes for Mule 4 Policies
 
-* xref:policies/cors-policy-release-notes.adoc[Cross-Origin Resource Sharing (CORS) Policy]
-
-* xref:policies/spike-control-release-notes.adoc[Spike Control Policy]
-
-* xref:policies/rate-limit-policy-release-notes.adoc[Rate Limit Policy]
-
+** xref:policies/cors-policy-release-notes.adoc[Cross-Origin Resource Sharing (CORS) Policy]
+** xref:policies/client-id-enforcement-release-notes.adoc[Client ID Enforcement Policy]
+** xref:policies/header-injection-release-notes.adoc[Header Injection Policy]
+** xref:policies/header-removal-release-notes.adoc[Header Removal Policy]
+** xref:policies/http-basic-auth-release-notes.adoc[HTTP Basic Authentication Policy]
+** xref:policies/http-caching-release-notes.adoc[HTTP Caching Policy]
+** xref:policies/ip-blacklist-policy-release-notes.adoc[IP Blacklist Policy]
+** xref:policies/ip-whitelist-policy-release-notes.adoc[IP Whitelist Policy]
+** xref:policies/json-threat-protection-release-notes.adoc[JSON Threat Protection Policy]
+** xref:policies/jwt-validation-release-notes.adoc[Json Web Token (JWT) Validation Policy]
+** xref:policies/ldap-policy-release-notes.adoc[Basic Authentication: LDAP Policy]
+** xref:policies/mule-oauth-token-enforcement-policy-release-notes.adoc[OAuth 2.0 Access Token Enforcement Poliy using Mule OAuth Provider]
+** xref:policies/openam-oauth-token-enforcement-policy-release-notes.adoc[OpenAM Access Token Enforcement Policy]
+** xref:policies/openid-connect-oauth-token-enforcement-policy-release-notes.adoc[OpenID Connect Access Token Enforcement Policy]
+** xref:policies/pingfederate-oauth-token-enforcement-policy-release-notes.adoc[PingFederate Access Token Enforcement Policy]
+** xref:policies/rate-limit-policy-release-notes.adoc[Rate Limiting Policy]
+** xref:policies/rate-limit-sla-release-notes.adoc[Rate Limiting SLA Policy]
+** xref:policies/spike-control-release-notes.adoc[Spike Control Policy]
+** xref:policies/xml-threat-protection-release-notes.adoc[XML Threat Protection Policy]
 
 == See Also
 
