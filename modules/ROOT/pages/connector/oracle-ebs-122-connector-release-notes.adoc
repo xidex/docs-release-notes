@@ -18,7 +18,7 @@ xref:3.9@mule-runtime::oracle-ebs-122-connector.adoc[Oracle E-Business Suite 12.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.7
+|Mule Runtime |3.7 and later Mule 3 versions
 |Oracle EBS |12.2.x
 |Java | 7
 |===
@@ -45,7 +45,7 @@ None.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.7 and later
+|Mule Runtime |3.7 and later Mule 3 versions
 |Oracle EBS |12.2.x
 |Java | 7
 |===
