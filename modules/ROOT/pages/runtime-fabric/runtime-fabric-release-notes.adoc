@@ -6,6 +6,13 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== 1.1.233 - January 11, 2018
+
+This release includes the following enhancement:
+
+* Added: Proactive renewal of certificate used to connect to control plane.
+* Added: Changes to share Runtime Fabric with business groups and specify resource limits with environments.
+
 == 1.1.178 - December 12, 2018
 
 This release includes the following fixes:

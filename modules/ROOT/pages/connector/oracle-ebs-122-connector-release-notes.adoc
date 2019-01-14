@@ -2,15 +2,41 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, oracle, ebs, e-business suite, connector
-
-*December 2016*
 
 _Premium_
 
-The Anypoint Connector for *Oracle E-Business Suite (EBS) 12.2* provides real-time connectivity to query and update Oracle EBS using *REST web services*. The connector has been *developed for the Oracle EBS v12.2.x*. For more information about Oracle EBS, visit http://www.oracle.com/us/products/applications/ebusiness/overview/index.html[Oracle's official site].
+The Anypoint Connector for Oracle E-Business Suite (EBS) 12.2 provides real-time connectivity to query and update Oracle EBS using REST web services. The connector has been developed for the Oracle EBS v12.2.x. For more information about Oracle EBS, visit https://www.oracle.com/applications/ebusiness/[Oracle's E-Business Suite site].
 
-xref:3.9@mule-runtime::oracle-ebs-122-connector.adoc[Oracle E-Business Suite 12.2 Connector User Guide]
+xref:3.9@mule-runtime::oracle-ebs-122-connector.adoc[Oracle E-Business Suite 12.2 Connector User Guide for Mule 3]
+
+For Mule 4, see xref:connector/oracle-ebs-122-connector-release-notes-mule-4[Oracle E-Business Suite 12.2 Connector Release Notes for Mule 4]
+
+== 1.0.1
+
+*December 28, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.7 and later Mule 3 versions
+|Oracle EBS |12.2.x
+|Java | 7
+|===
+
+=== Features
+
+None.
+
+=== Fixed in this Release
+
+* *WADL Alias* - Users needed to define the alias of deployed WADLs as their internal names in lowercase. This new version fixes that and this is no longer required.
+* *Dynamic metadata* - We detected differences in the responses of the Rest Service Locator web service, and the structure of the WADL and XSD files, depending on the patch version of EBS 12.2. This caused problems while fetching and processing dynamic metadata. Our metadata routines were revised and should now work perfectly with all 12.2.x installations.
+
+=== Known Issues
+
+None.
 
 == 1.0.0
 
@@ -21,7 +47,7 @@ xref:3.9@mule-runtime::oracle-ebs-122-connector.adoc[Oracle E-Business Suite 12.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.7 and later
+|Mule Runtime |3.7 and later Mule 3 versions
 |Oracle EBS |12.2.x
 |Java | 7
 |===
@@ -34,4 +60,4 @@ xref:3.9@mule-runtime::oracle-ebs-122-connector.adoc[Oracle E-Business Suite 12.
 
 * For more information about Oracle EBS, visit http://www.oracle.com/us/products/applications/ebusiness/overview/index.html[Oracle's official site]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

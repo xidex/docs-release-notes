@@ -9,7 +9,11 @@ Release notes for API Manager Policies include information about changes, improv
 == Release Notes for Mule 4 Policies
 
 * xref:policies/cors-policy-release-notes.adoc[Cross-Origin Resource Sharing (CORS) Policy]
+
 * xref:policies/spike-control-release-notes.adoc[Spike Control Policy]
+
+* xref:policies/rate-limit-policy-release-notes.adoc[Rate Limit Policy]
+
 
 == See Also
 
