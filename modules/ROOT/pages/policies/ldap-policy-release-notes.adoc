@@ -1,0 +1,65 @@
+= Basic Authentication: LDAP Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, ldap, policy, release notes
+
+== 1.1.1
+
+*Jun 25, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Features and ennhanncements
+| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
+|===
+
+== 1.1.0
+
+*Jan 25, 2018*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+=== New Features and Enhancements
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Features and ennhanncements
+| link:https://www.mulesoft.org/jira/browse/AGW-1768[AGW-1768] | Added subtree search scope
+| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814] | Implement usage of HTTP Policy transform extension
+|===
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
+| link:https://www.mulesoft.org/jira/browse/AGW-1766[AGW-1766] | Improved error message when using invalid server scheme
+| link:https://www.mulesoft.org/jira/browse/AGW-1734[AGW-1734] | Fixed 500 status code being returned when Authorization header is malformed
+|===
+
+== 1.0.0
+
+*Nov 17, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+
+
+== See Also
+
+* xref:api-manager::basic-authentication-ldap-concept.adoc[LDAP Policy for Mule 4]
