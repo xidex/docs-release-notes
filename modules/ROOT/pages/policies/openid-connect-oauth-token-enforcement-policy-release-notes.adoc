@@ -1,4 +1,4 @@
-= OpenID Connect access token enforcement
+= OpenID Connect Access Token Enforcement Policy
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
