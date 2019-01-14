@@ -3,6 +3,15 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.1.2
+
+*January 14, 2019*
+
+=== New Features and Enhancements
+
+* Fixed connection leaks. These leaks could happened when a Publish action failed internally
+or when doing an automatic ReplyTo when using the "On New Message" source.
+
 == 1.1.1
 
 *November 7, 2018*
