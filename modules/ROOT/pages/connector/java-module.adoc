@@ -4,6 +4,26 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, Java, module, release notes
 
+== 1.2.1
+
+*January 14, 2019*
+
+=== New Features and Enhancements
+
+* Fixed an issue when invoking a method from a class that implements an interface
+ with generics. This would produce a warning that there were multiple methods found
+ that match the provided method.
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+
+| https://www.mulesoft.org/jira/browse/MULE-16316[MULE-16316] |  JavaModule: no longer throws WARN messages with Generic interface implementation.
+
+|===
+
 == 1.2.0
 
 *September 6, 2018*
