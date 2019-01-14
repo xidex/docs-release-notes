@@ -1,0 +1,17 @@
+= Header Removal Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, header, removal, policy, release notes
+
+== 1.0.0
+
+*Mar 23, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+== See Also
+
+* xref:api-manager::header-inject-remove-task.adoc[Header Injection And Removal Policies for Mule 4]

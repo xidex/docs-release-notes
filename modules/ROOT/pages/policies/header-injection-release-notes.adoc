@@ -1,0 +1,35 @@
+= Header Injection Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, header, injection, policy, release notes
+
+== 1.0.1
+
+*Oct 4, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| link:https://www.mulesoft.org/jira/browse/AGW-2503[AGW-2503] | Fix policy parameters arriving with extra escaping.
+| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
+|===
+
+== 1.0.0
+
+*Mar 23, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+== See Also
+
+* xref:api-manager::header-inject-remove-task.adoc[Header Injection And Removal Policies for Mule 4]
