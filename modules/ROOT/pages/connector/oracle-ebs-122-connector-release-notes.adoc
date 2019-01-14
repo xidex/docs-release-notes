@@ -12,6 +12,32 @@ The Anypoint Connector for *Oracle E-Business Suite (EBS) 12.2* provides real-ti
 
 xref:3.9@mule-runtime::oracle-ebs-122-connector.adoc[Oracle E-Business Suite 12.2 Connector User Guide]
 
+== 1.0.1 - December 28, 2018
+
+=== Compatibility
+
+[width="100%", cols=",", options="header"]
+|===
+|Software |Version
+|Mule Runtime |3.7
+|Oracle EBS |12.2.x
+|Java | 7
+|===
+
+=== Features
+
+None.
+
+=== Fixed in this Release
+
+* *WADL Alias* - Users needed to define the alias of deployed WADLs as their internal names in lowercase. This new version fixes that and this is no longer required.
+* *Dynamic metadata* - We detected differences in the responses of the *Rest Service Locator* web service, and the structure of the WADL and XSD files, depending on the patch version of EBS 12.2. This caused problems while fetching and processing dynamic metadata. Our metadata routines were revised and should now work perfectly with all 12.2.x installations.
+
+=== Known Issues
+
+None.
+
+
 == 1.0.0
 
 *December 22, 2016*
