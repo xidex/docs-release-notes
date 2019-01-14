@@ -3,13 +3,22 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.1.2
+
+*January 14, 2019*
+
+=== New Features and Enhancements
+
+* Fixed connection leaks. These leaks could happen when a Publish action failed internally
+or when doing an automatic ReplyTo when using the "On New Message" source.
+
 == 1.1.1
 
 *November 7, 2018*
 
 === New Features and Enhancements
 
-* Fixed issue that prevented to use the connector setting a Client ID, required for
+* Fixed issue that prevented the connector from setting a Client ID, required for
 durable subscriptions.
 
 === Fixed Issues
@@ -22,8 +31,8 @@ durable subscriptions.
 
 === New Features and Enhancements
 
-* Fixed issue that prevented the correct execution when using XA Transactions.
-* Message Listener can be configured to propagate the correlation id when doing a reply.
+* Fixed issue that prevented correct execution when using XA Transactions.
+* Message Listener can be configured to propagate the correlation ID when doing a reply.
 
 === Fixed Issues
 
@@ -35,7 +44,7 @@ durable subscriptions.
 
 === Features and Enhancements
 
-* Release of IBM MQ Connector, supporting Consumption, Publishing of messages through the JMS API.
+* Release of IBM MQ Connector, which supports consuming and publishing messages through the JMS API.
 * https://docs.mulesoft.com/connectors/ibm/ibm-mq-connector[IBM MQ Documentation]
 
 === Mule Version
