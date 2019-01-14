@@ -27,7 +27,7 @@ endif::[]
 
 == 1.1.0
 
-*Jan 25, 2018*
+*Jun 25, 2018*
 
 === Minimum Mule Version
 
