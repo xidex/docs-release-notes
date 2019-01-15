@@ -4,4 +4,5 @@ Anypoint Security provides a layered approach to secure your application network
 These capabilities are optimized for security providing you with a dedicated endpoint to detect attacks and validate traffic without taxing your implementations.
 
 * xref:anypoint-security/anypoint-security-tokenization-release-notes.adoc[Tokenization Service]
-* xref:anypoint-security/anypoint-security-waf-release-notes.adoc[Web Application Firewall Policy]
+* xref:anypoint-security/anypoint-security-waf-release-notes.adoc[Edge Security Policies]
+* xref:anypoint-security/secrets-manager-release-notes.adoc[Secrets Manager]
