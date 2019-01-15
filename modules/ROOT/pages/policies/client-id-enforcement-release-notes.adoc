@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, ip-blacklist, policy, release notes
+:keywords: mule, client-id, client-id-enforcement, policy, release notes
 
 == 1.1.3
 
