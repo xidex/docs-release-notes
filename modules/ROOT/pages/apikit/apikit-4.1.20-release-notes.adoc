@@ -9,6 +9,7 @@ This release notes briefly describe the new features released in APIkit 1.2.0.
 
 * APIkit is now using AMF as the default framework to parse APIs and to validate all incoming requests.  +
 AMF provides a way to achieve a unified behavior both at design time (Designer Center) and during runtime as well as OAS support. If needed, there is a way to use the previous RAML parser by specifying it in the apikit `config` tag.
+* API Sync support.
 * API Console was upgraded to version 5, which also uses AMF to read the API. This console is displayed when AMF is used. +
 When specifying RAML parser in the config, the old console is displayed.
 * Query String validation support.
