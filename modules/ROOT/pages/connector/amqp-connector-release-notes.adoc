@@ -3,13 +3,30 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*December 2018 - 3.8.4* +
-*December 2018 - 3.7.12*
-
 _Select_
 
 AMQP Connector has two active versions each supporting different versions of the RabbitMQ library. AMQP Connector
-version 3.8.4 supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Connector 3.7.12 supports RabbitMQ client library 4.6.0.
+version 3.8.x supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Connector 3.7.x supports RabbitMQ client library 4.6.0.
+
+== 3.8.5
+
+*January 16, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
+|===
+
+*Note:* This version requires Java 8 or later.
+
+=== Fixed in this Release
+
+AMQP connector overwrites threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
 
 == 3.8.4
 
@@ -29,7 +46,7 @@ version 3.8.4 supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Co
 
 === Features
 
-An attribute to define if the amqp subreceivers should be started asynchronously must be added. (AMQP-81)
+An attribute to define if the AMQP subreceivers should be started asynchronously must be added. (AMQP-81)
 
 == 3.8.3
 
@@ -115,6 +132,24 @@ This release consists of the upgrade of amqp-client RabbitMQ library to 5.3.0.
 
 * Update RabbitMQ client version to 5.x. (AMQP-95)
 
+== 3.7.13
+
+*January 16, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.5 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |4.6.0
+|===
+
+=== Fixed in this Release
+
+AMQP connector overwrites threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
+
 == 3.7.12
 
 *December 3, 2018*
@@ -131,7 +166,7 @@ This release consists of the upgrade of amqp-client RabbitMQ library to 5.3.0.
 
 === Features
 
-An attribute to define if the amqp subreceivers should be started asynchronously must be added. (AMQP-81)
+An attribute to define if the AMQP subreceivers should be started asynchronously must be added. (AMQP-81)
 
 == 3.7.11
 
