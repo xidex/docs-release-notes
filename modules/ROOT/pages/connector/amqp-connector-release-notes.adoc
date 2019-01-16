@@ -3,13 +3,10 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*December 2018 - 3.8.4* +
-*December 2018 - 3.7.12*
-
 _Select_
 
 AMQP Connector has two active versions each supporting different versions of the RabbitMQ library. AMQP Connector
-version 3.8.4 supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Connector 3.7.12 supports RabbitMQ client library 4.6.0.
+version 3.8.x supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Connector 3.7.x supports RabbitMQ client library 4.6.0.
 
 == 3.8.5
 
@@ -29,7 +26,7 @@ version 3.8.4 supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Co
 
 === Fixed in this Release
 
-AMQP connector is overwritting threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
+AMQP connector overwrites threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
 
 == 3.8.4
 
@@ -49,7 +46,7 @@ AMQP connector is overwritting threadpool.amqpReceiver from other instances of t
 
 === Features
 
-An attribute to define if the amqp subreceivers should be started asynchronously must be added. (AMQP-81)
+An attribute to define if the AMQP subreceivers should be started asynchronously must be added. (AMQP-81)
 
 == 3.8.3
 
@@ -151,7 +148,7 @@ This release consists of the upgrade of amqp-client RabbitMQ library to 5.3.0.
 
 === Fixed in this Release
 
-AMQP connector is overwritting threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
+AMQP connector overwrites threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
 
 == 3.7.12
 
@@ -169,7 +166,7 @@ AMQP connector is overwritting threadpool.amqpReceiver from other instances of t
 
 === Features
 
-An attribute to define if the amqp subreceivers should be started asynchronously must be added. (AMQP-81)
+An attribute to define if the AMQP subreceivers should be started asynchronously must be added. (AMQP-81)
 
 == 3.7.11
 
