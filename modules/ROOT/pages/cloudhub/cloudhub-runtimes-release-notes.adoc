@@ -6,6 +6,18 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== January 17, 2019
+
+4.1.5 Runtime Update:
+
+* `maxConcurrency=1` not working in Scheduler [SE-10273]
+* Invalid extension model generated for Enum type [MULE-16172]
+
+4.1.4 Runtime Update:
+
+* `maxConcurrency=1` not working in Scheduler [SE-10273]
+* Invalid extension model generated for Enum type [MULE-16172]
+
 == January 2, 2019
 
 4.1.5 Runtime Update:
