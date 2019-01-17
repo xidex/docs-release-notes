@@ -4,6 +4,22 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: cli, command line interface, command line, release notes, anypoint platform cli
 
+== Version 3.0.3 - December 27, 2018
+
+This release of the Anypoint CLI fixes the following issue:
+
+* `api-mgr api manage` command when using `--referencesUserDomain true` on Hybrid does not checks the *Reference User Domain* checkmark when viewing the API in the API Manager UI.
+
+
+== Version 3.0.2 - December 12, 2018
+
+This release of Anypoint CLI focuses on bug fixes.
+
+== Version 3.0.1 - November 20, 2018
+
+This release of Anypoint CLI focuses on bug fixes.
+
+
 == Version 3.0.0 - October 5, 2018
 
 Anypoint CLI 3.x is not compatible with Anypoint Platform versions pre-Crowd release.
