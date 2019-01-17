@@ -24,7 +24,7 @@ This release contains the following known issues and workarounds.
 
 Workaround: The user can call the API and set the deployment to `STOPPED` state using the following endpoint:
 
-\https://anypoint.mulesoft.com/tokenization/api/v1/organizations/{orgId}/environments/{envId}/service/{serviceId}?desiredStatus=STOPPED\
+\https://anypoint.mulesoft.com/tokenization/api/v1/organizations/{orgId}/environments/{envId}/service/{serviceId}?desiredStatus=STOPPED
 
 After this call the deployment either sets the state to `FAILED` or `STOPPED` and all the action buttons are enabled in the tokenization UI.
 
