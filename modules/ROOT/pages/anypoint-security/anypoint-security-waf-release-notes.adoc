@@ -27,7 +27,7 @@ Disable response message body scanning by checking the *Disable body scanner* op
 
 The WAF summary message, which appears in the RTF Input Traffic logs, lists Rule IDs for OWASP CRS that are not supported by Anypoint Security for various reasons. The correct list of rule IDs is shown in the Edge API Policies RAML file `dataTypes/policies/WafRules/Rulesets.json`.
 
-At startup, an error is thrown for each one of the unsupported rules, however, these are not really errors. 
+At startup, an error is thrown for each unsupported rules, however, these are not really errors. 
 
 The following Rule IDs listed in the WAF summary message are not supported:
 
