@@ -2,93 +2,73 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, XML, mmodule, release notes
-
-*January 2019*
 
 == 1.1.3
 
 *January 17, 2018*
 
-=== Min Mule Version
-*Mule 4.1.1*
+=== Minimum Mule Version
+
+Mule 4.1.1
 
 === New Features and Enhancements
 
-N/A
+None.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-16317[MULE-16317] | Fixed an issue that prevented the 'validate-schema' operation to work concurrenctly.
-|===
+* Fixed an issue that prevented the 'validate-schema' operation from working concurrenctly. (https://www.mulesoft.org/jira/browse/MULE-16317[MULE-16317])
 
 == 1.1.2
 
 *August 9, 2018*
 
-=== Min Mule Version
-*Mule 4.1.0*
+=== Minimum Mule Version
+
+Mule 4.1.0
 
 === New Features and Enhancements
 
-N/A
+None.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-15526[MULE-15526] | `validate-schema` is not working with an XSD referencing other schema.
-|===
-
-*July 2018*
+* `validate-schema` is not working with an XSD referencing other schema. (https://www.mulesoft.org/jira/browse/MULE-15526[MULE-15526])
 
 == 1.1.1
 
 *July 2, 2018*
 
-=== Min Mule Version
-*Mule 4.1.0*
+=== Minimum Mule Version
+
+Mule 4.1.0
 
 === New Features and Enhancements
 
-N/A
+None.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-15259[MULE-15259] | Reset underlying controller of XSLTTransformer after each transformation.
-|===
-
-*March 2018*
+* Reset underlying controller of XSLTTransformer after each transformation. (https://www.mulesoft.org/jira/browse/MULE-15259[MULE-15259])
 
 == 1.1.0
 
 *March 1, 2018*
 
-=== Fixed Issues
+=== Minimum Mule Version
 
-==== Min Mule Version
-*Mule 4.1.0*
+Mule 4.1.0
 
 === New Features and Enhancements
 
-N/A
+None.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| https://www.mulesoft.org/jira/browse/MULE-14651[MULE-14651] | Cannot set media type in XSLT transformer.
-|===
+* Cannot set media type in XSLT transformer. (https://www.mulesoft.org/jira/browse/MULE-14651[MULE-14651])
+
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
