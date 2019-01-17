@@ -99,3 +99,8 @@ endif::[]
 * xref:deprecated/legacy-mule-migration-notes.adoc[Legacy Mule Migration Notes]
 * xref:deprecated/legacy-mule-release-notes.adoc[Legacy Mule Release Notes]
 * xref:deprecated/legacy-mule-ide-release-notes.adoc[Legacy Mule IDE Release Notes]
+
+*Services*
+
+* xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes]
+* xref:mule-runtime/service-soap-release-notes.adoc[Mule SOAP Service Release Notes]
