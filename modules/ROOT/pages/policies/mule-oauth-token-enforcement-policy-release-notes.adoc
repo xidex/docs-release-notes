@@ -26,7 +26,7 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed scope validation error causing the OAuth 2.0 External Provider policy to return a "403- The required scopes are not authorized error".
+* Fixed scope validation error causing the OAuth 2.0 External Provider policy to return a "403 - The required scopes are not authorized error" response.
 * Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
 
 == 1.1.1
