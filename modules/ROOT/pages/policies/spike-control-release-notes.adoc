@@ -14,23 +14,11 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and ennhanncements
-
-| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
-|===
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1982[AGW-1982] | Spike Control Rejected from scheduler on high traffic bursts.
-|===
-
+* Fixed error causing Rate Limit being rejected from the scheduler on high traffic bursts.
 
 == 1.1.0
 
@@ -39,8 +27,6 @@ endif::[]
 === Minimum Mule Version
 
 *4.1.0*
-
-
 
 == See Also
 

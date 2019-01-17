@@ -14,12 +14,7 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and Enhancements
-| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
-|===
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
 
 == 1.1.0
 
@@ -31,22 +26,12 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and ennhanncements
-| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814] | Implement usage of HTTP Policy transform extension
-| link:https://www.mulesoft.org/jira/browse/AGW-1832[AGW-1832] | Adding default expression for IP Addresses in the YAML instead of in the template
-|===
+* Reduced error-handling verbosity in templates.
+* Added default expression for IP Addresses in the YAML file instead of in the template.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML while using a WSDL proxy
-|===
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
 
 == 1.0.0
 

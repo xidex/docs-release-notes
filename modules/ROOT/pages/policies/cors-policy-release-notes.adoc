@@ -18,12 +18,7 @@ endif::[]
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-2695[AGW-2695] | CORS Policy throws 500 Server Error when content-type is not specified.
-|===
+* CORS Policy does not throw 500 Server Error anymore if content-type is not specified in the request.
 
 == 1.1.0
 
@@ -35,22 +30,16 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and ennhanncements
-| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814] | Implement usage of HTTP Policy transform extension
-| link:https://www.mulesoft.org/jira/browse/AGW-1932[AGW-1932] | Transformations of HTTP attributes should be based on a specified output type
-|===
+
+* Reduced error-handling verbosity in templates.
+* Transformations of HTTP attributes are now based on a specified output type.
+
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1763[AGW-1763] | Fixing missing groupId for proxy samples dependency
-|===
+
+* Fixed missing groupId for proxy samples dependency
+
 
 == 1.0.0
 

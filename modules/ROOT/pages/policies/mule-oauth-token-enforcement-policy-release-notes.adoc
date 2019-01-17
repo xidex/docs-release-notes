@@ -14,12 +14,7 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and ennhanncements
-| link:https://www.mulesoft.org/jira/browse/AGW-2809[AGW-2809] | Improve RAML and OAS Snippets.
-|===
+* Improved the RAML and OAS snippets.
 
 == 1.1.2
 
@@ -31,13 +26,8 @@ endif::[]
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-2456[AGW-2456] | OAuth2.0 External Provider policy is giving 403: Scope validation is not working.
-| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
-|===
+* Fixed scope validation error causing the OAuth 2.0 External Provider policy to return a "403- The required scopes are not authorized error".
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
 
 == 1.1.1
 
@@ -45,12 +35,7 @@ endif::[]
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-2245[AGW-2245] | When a Security Manager is defined in the same app with tracked endpoint, federated policies and client ID based ones, cannot be applied.
-|===
+* Fixed error preventing federated and client ID based policies to apply when a Security Manager is defined in the same app with a tracked endpoint.
 
 === Minimum Mule Version
 
@@ -62,12 +47,7 @@ endif::[]
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1859[AGW-1859] | Federation policies are losing query params and uri params of the requester.
-|===
+* Fixed issue causing federated policies to lose query and URI parameters of the requester.
 
 === Minimum Mule Version
 

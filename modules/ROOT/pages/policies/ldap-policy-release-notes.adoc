@@ -14,12 +14,7 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and ennhanncements
-| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
-|===
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
 
 == 1.1.0
 
@@ -31,24 +26,14 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and ennhanncements
-| link:https://www.mulesoft.org/jira/browse/AGW-1768[AGW-1768] | Added subtree search scope
-| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814] | Implement usage of HTTP Policy transform extension
-|===
+* Added subtree search scope.
+* Reduced error-handling verbosity in templates.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
-| link:https://www.mulesoft.org/jira/browse/AGW-1766[AGW-1766] | Improved error message when using invalid server scheme
-| link:https://www.mulesoft.org/jira/browse/AGW-1734[AGW-1734] | Fixed 500 status code being returned when Authorization header is malformed
-|===
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+* Improved error message when using invalid server scheme.
+* Fixed 500 status code being returned instead of 401 when Authorization header is malformed.
 
 == 1.0.0
 

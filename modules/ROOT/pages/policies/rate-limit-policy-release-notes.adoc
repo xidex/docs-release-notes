@@ -14,16 +14,10 @@ endif::[]
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-2358[AGW-2358] | Fix WSDL error response.
-| link:https://www.mulesoft.org/jira/browse/AGW-2484[AGW-2484] | Object store error when hitting the API concurrently.
-| link:https://www.mulesoft.org/jira/browse/AGW-2474[AGW-2474] | Optimize throttling connector performance.
-| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
-|===
-
+* Fixed WSDL error response.
+* Fixed Object store error when hitting the API concurrently.
+* Optimized throttling connector performance.
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
 
 == 1.2.1
 
@@ -35,21 +29,11 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// New features and enhancements
-| link:https://www.mulesoft.org/jira/browse/AGW-2240[AGW-2240] | Add violationCategory in the YAML configuration for Feedback Loop
-|===
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-2150[AGW-2150] | Fix NPE thrown in extensions that set Authentication when an authentication object with null properties exists.
-|===
+* Fixed `NullPointerException` thrown in extensions that set Authentication when an authentication object with null properties exists.
 
 == 1.2.0
 
@@ -61,22 +45,12 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// New features and enhancements
-| link:https://www.mulesoft.org/jira/browse/AGW-1969[AGW-1969] | Parameterized throttling algorithm for Mule 4.
-| link:https://www.mulesoft.org/jira/browse/EE-5807[EE-5807] | Migrate pluggable Hazelcast to 4.x.
-|===
+* Parameterized throttling algorithm for Mule 4.
+* Migrated pluggable Hazelcast to 4.x.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1982[AGW-1982] | Rate Limit Rejected from scheduler on high traffic bursts.
-|===
+* Fixed error causing Rate Limit being rejected from the scheduler on high traffic bursts.
 
 == 1.1.0
 
@@ -88,22 +62,13 @@ endif::[]
 
 === New Features and Enhancements
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Features and ennhanncements
-| link:https://www.mulesoft.org/jira/browse/AGW-1810[AGW-1810] | Change WWW-Authenticate header value from 'mule-real' to 'Client-ID-Enforcement'
-| link:https://www.mulesoft.org/jira/browse/AGW-1814[AGW-1814] | Implement usage of HTTP Policy transform extension
-|===
+* Changed `WWW-Authenticate` header value from `mule-real` to `Client-ID-Enforcement`.
+* Reduced error-handling verbosity in templates.
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-// Fixed Issues
-| link:https://www.mulesoft.org/jira/browse/AGW-1927[AGW-1927] | Fix error when payload is empty or an invalid XML and using a WSDL proxy
-|===
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+
 
 == 1.0.0
 
@@ -112,8 +77,6 @@ endif::[]
 === Minimum Mule Version
 
 *4.0.0*
-
-
 
 == See Also
 
