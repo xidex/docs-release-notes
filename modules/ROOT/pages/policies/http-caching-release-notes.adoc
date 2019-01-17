@@ -1,0 +1,17 @@
+= HTTP Caching Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, http, caching, QoS, policy, release notes
+
+== 1.0.0
+
+*Jul 03, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+== See Also
+
+* xref:api-manager::http-caching-policy.adoc[Http Caching Policy for Mule 4]

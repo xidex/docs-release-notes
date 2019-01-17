@@ -1,0 +1,64 @@
+= Rate Limiting SLA Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, rate-limit, policy, release notes
+
+== 1.1.2
+
+*Jan 10, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Improved the RAML and OAS snippets.
+
+== 1.1.1
+
+*Jun 25, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Migrated pluggable Hazelcast to 4.x.
+
+=== Fixed Issues
+
+* Fixed error causing Rate Limit being rejected from the scheduler on high traffic bursts.
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+* Fixed `NullPointerException` thrown in extensions that set Authentication when an authentication object with null properties exists.
+
+== 1.1.0
+
+*Jan 25, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+* Changed `WWW-Authenticate` header value from `mule-real` to `Client-ID-Enforcement`.
+* Reduced error-handling verbosity in templates.
+
+=== Fixed Issues
+
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+
+== 1.0.0
+
+*Nov 14, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+== See Also
+
+* xref:api-manager::rate-limiting-and-throttling.adoc[Rate Limit for Mule 4]
