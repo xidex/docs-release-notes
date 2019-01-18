@@ -13,6 +13,12 @@ endif::[]
 
 Previously, the limit for the response body was 512 KB, and messages exceeding that limit were rejected. You no longer have to disable this option to ensure messages larger than the limit aren't rejected.
 
+== Fixed Issues
+
+* MSG-6319: This issue can no longer occur, as the Anypoint Platform restricts builds to one simultaneous build per organization in the latest release.
+* MSG-6317: The issue where if the same user is editing the Secrets Group used for tokenization at the same time a Tokenization service `CREATE` is initiated, the editing session prematurely terminates is fixed.  
+* MSG-6315: This issue is fixed in this release. After the "Build and Deploy" button is clicked, the user is returned to the "Tokenization Services" status page which displays information on the operation.
+* MSG-6328: The issue where failure messages for tokenization requests did not come out at the `INFO` log level is fixed. Failure message for tokenization requests now come out at the `INFO` log level.
 
 == Known Issues and Workarounds
 
@@ -44,8 +50,6 @@ Workaround:
 
 * You can avoid this issue from happening in the first place if the initial deployment of the Tokenization service is done with a replica count of two or more. Additionally, make sure there is a minimum of one pod in a running state. 
 * You can resolve this issue by adding more memory or CPU to the Runtime Fabric cluster. 
-
-
 
 
 == November 17, 2018
@@ -80,7 +84,7 @@ The VDP table is not rebuilt the second time--it only applies, and should take o
 
 Workaround:
 
-. In the Tokenization Service list page, click *Edit*.
+. In the *Tokenization Service* list page, click *Edit*.
 . Click *Redeploy*. +
 The VDP table is not rebuilt the second time--it only applies, and should take only 2-3 minutes.
 
@@ -107,7 +111,7 @@ Workaround: Click the back link to go back to the Tokenization Service list page
 
 == Failure Messages not Included in the INFO Log Level
 
-(MSG-6328) Failures messages for tokenization requests do not come out at the `INFO` log level. There is a bug in the Tokenization service that prevents the related information for a failed tokenization request from being logged as expected. The sensitive data itself is logged.
+(MSG-6328) Failure messages for tokenization requests do not come out at the `INFO` log level. There is a bug in the Tokenization service that prevents the related information for a failed tokenization request from being logged as expected. The sensitive data itself is logged.
 
 Workaround: While it is possible to raise the log level to `TRACE` to get all information about a request to be logged, it is not recommended, as it slows performance if there are significant numbers of transactions; and log filters are not practical. 
 
