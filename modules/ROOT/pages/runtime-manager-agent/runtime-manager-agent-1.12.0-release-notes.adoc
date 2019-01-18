@@ -1,0 +1,43 @@
+= Runtime Manager Agent 1.12.0 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+_January 28, 2018_
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager Agent, version 1.12.0.
+
+== New Features and Enhancements
+
+This release contains no new features or enhancements.
+
+== Changes in This Release
+
+* Changed to connect to the new Runtime Manager Publicly certified endpoints for Mule Manager and Auth Proxy
+* Now the Mule Agent API returns bad request (400) instead of internal server error (500) when enabling a service with null log configuration
+
+== Fixed Issues
+
+This release contains no issue fixes.
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+* Upgrade procedure will result in the use of 2 new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, please ensure there is no networking constraint accessing the following FQDNs on port 443:
+    * ws://runtime-manager.anypoint.mulesoft.com, ws://runtime-manager.eu1.anypoint.mulesoft.com
+    * https://data-authenticator.anypoint.mulesoft.com, https://data-authenticator.eu1.anypoint.mulesoft.com
+
+== Compatibility Notes
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Software|Version
+|Mule Runtime|3.6.x, 3.7.x, 3.8.x, 3.9.x
+|API Gateway|2.x and above
+|JDK    |JRE 1.7.0 (Recommended JRE 1.7.0_79/80)
+|OS       |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+|Runtime Manager|V2.10.0+
+|===
