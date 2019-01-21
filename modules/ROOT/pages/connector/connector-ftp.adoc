@@ -3,6 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.4
+
+*January 21, 2019*
+
+=== Fixed Issues
+
+* Fixed bug that made the list operation take too long when the listed directory contained a large number of files. (MULE-16346)
+
 == 1.2.3
 
 *January 4, 2019*
