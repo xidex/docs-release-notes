@@ -7,6 +7,25 @@ _Premium_
 
 xref:connectors::oauth/oauth2-provider-documentation-reference.adoc[OAuth2 Provider Documentation Reference]
 
+== 1.0.2
+
+*January 21, 2019*
+
+=== Fixed in this Release
+
+* HTTP request parameters are validated twice (link:https://www.mulesoft.org/jira/browse/EE-6529[EE-6529])
+* Missing default login page files (link:https://www.mulesoft.org/jira/browse/EE-6528[EE-6528])
+
+=== Compatibility
+
+The OAuth2 Provider Module is compatible with:
+
+|===
+|Application/Service|Version
+
+|Mule Runtime|4.1.1 and higher.
+|===
+
 == 1.0.1
 
 *January 8, 2019*
