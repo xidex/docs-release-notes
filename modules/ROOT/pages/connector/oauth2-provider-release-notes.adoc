@@ -13,7 +13,7 @@ xref:connectors::oauth/oauth2-provider-documentation-reference.adoc[OAuth2 Provi
 
 === Fixed in this Release
 
-* Http request parameters being validated twice (link:https://www.mulesoft.org/jira/browse/EE-6529[EE-6529])
+* HTTP request parameters are validated twice (link:https://www.mulesoft.org/jira/browse/EE-6529[EE-6529])
 * Missing default login page files (link:https://www.mulesoft.org/jira/browse/EE-6528[EE-6528])
 
 === Compatibility
