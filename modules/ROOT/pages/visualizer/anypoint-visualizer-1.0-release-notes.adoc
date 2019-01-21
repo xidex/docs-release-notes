@@ -5,6 +5,16 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== January 22, 2019
+Version 2.0.2
+
+== New Features and Enhancements
+
+* View
+** Edges shown between services are now active. This means that they appear only if there has been traffic in the past seven days. Non-active edges do not appear on the canvas. 
+** When a service connects to a service in an organization in which a user does not have the “CloudHub Viewer” permission, the service is displayed as an HTTP node. 
+
+
 == January 8, 2019
 Version 2.0.1 
 
