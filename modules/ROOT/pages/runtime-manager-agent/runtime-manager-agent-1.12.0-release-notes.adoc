@@ -13,7 +13,7 @@ This release contains no new features or enhancements.
 
 == Changes in This Release
 
-* Changed to connect to the new Runtime Manager Publicly certified endpoints for Mule Manager and Auth Proxy
+* This agent uses a new Publicly Certified certificate and connects to 2 new endpoints in Anypoint Runtime Manager
 * Now the Mule Agent API returns bad request (400) instead of internal server error (500) when enabling a service with null log configuration
 
 == Fixed Issues
@@ -26,9 +26,13 @@ There are no known limitations or workarounds in this release.
 
 == Upgrade Requirements
 
-* Upgrade procedure will result in the use of 2 new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, please ensure there is no networking constraint accessing the following FQDNs on port 443:
-    * ws://runtime-manager.anypoint.mulesoft.com, ws://runtime-manager.eu1.anypoint.mulesoft.com
-    * https://data-authenticator.anypoint.mulesoft.com, https://data-authenticator.eu1.anypoint.mulesoft.com
+The agent upgrade procedure will result in the use of 2 new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, please ensure there is no networking constraint for accessing the following FQDNs on port 443:
+=== For runtimes connecting to Anypoint Runtime Manager in the US:
+    * ws://runtime-manager.anypoint.mulesoft.com
+    * https://data-authenticator.anypoint.mulesoft.com
+=== For runtimes connecting to Anypoint Runtime Manager in the EU:
+    * ws://runtime-manager.eu1.anypoint.mulesoft.com
+    * https://data-authenticator.eu1.anypoint.mulesoft.com
 
 == Compatibility Notes
 
