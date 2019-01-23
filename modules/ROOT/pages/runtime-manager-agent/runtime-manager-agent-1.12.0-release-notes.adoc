@@ -29,12 +29,12 @@ There are no known limitations or workarounds in this release.
 The agent upgrade procedure will result in the use of 2 new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, please ensure there is no networking constraint for accessing the following FQDNs on port 443:
 
 For runtimes connecting to Anypoint Runtime Manager in the US:
-    * ws://runtime-manager.anypoint.mulesoft.com
-    * https://data-authenticator.anypoint.mulesoft.com
+* ws://runtime-manager.anypoint.mulesoft.com
+* https://data-authenticator.anypoint.mulesoft.com
 
 For runtimes connecting to Anypoint Runtime Manager in the EU:
-    * ws://runtime-manager.eu1.anypoint.mulesoft.com
-    * https://data-authenticator.eu1.anypoint.mulesoft.com
+* ws://runtime-manager.eu1.anypoint.mulesoft.com
+* https://data-authenticator.eu1.anypoint.mulesoft.com
 
 == Compatibility Notes
 
