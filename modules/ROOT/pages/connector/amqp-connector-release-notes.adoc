@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 AMQP Connector has two active versions each supporting different versions of the RabbitMQ library. AMQP Connector
 version 3.8.x supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Connector 3.7.x supports RabbitMQ client library 4.6.0.
@@ -26,7 +26,7 @@ version 3.8.x supports RabbitMQ client library 5.3.0 and requires JDK 8. AMQP Co
 
 === Fixed in this Release
 
-Add cluster supportability for connector. (AMQP-119)
+Add cluster supportability for this connector. (AMQP-119)
 
 == 3.8.5
 
