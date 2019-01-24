@@ -7,9 +7,9 @@ January 22, 2019
 
 == Compatibility
 
-* Mule 3.8.1+
-* APIkit 3.8.2+
-* Anypoint Studio 6.2.3+
+* Mule 4.1.x+
+* APIkit M4-1.2.x+
+* Anypoint Studio 7.3.x+
 
 == Fixed in this Release
 
