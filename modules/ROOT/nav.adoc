@@ -300,6 +300,7 @@
   ** xref:policies/spike-control-release-notes.adoc[Spike Control Policy]
   ** xref:policies/xml-threat-protection-release-notes.adoc[XML Threat Protection Policy]
 * xref:apikit/apikit-release-notes.adoc[APIkit Release Notes]
+ ** xref:apikit/apikit-for-odata-2.0.1.adoc[APIkit for OData 2.0.1 Release Notes]
  ** xref:apikit/apikit-for-odata-1.0.7.adoc[APIkit for OData 1.0.7 Release Notes]
  ** xref:apikit/apikit-for-odata-1.0.6.adoc[APIkit for OData 1.0.6 Release Notes]
  ** xref:apikit/apikit-for-soap-1.1.8.adoc[APIkit for SOAP 1.1.8 Release Notes]
