@@ -16,9 +16,13 @@ These release notes cover the following versions of these features:
 == 2.4.1
 *January 25, 2019*
 
-This release includes an enhancement and fixes a number of issues.
+This release includes enhancements and fixes a number of issues.
 
-=== Enhancement
+=== Enhancements
+
+* The API editor now includes a button that is labeled *Strict Validation*.
+** Click the button to enable strict validation of RAML API specifications according to the new parser that was included in Design Center as of January 10, 2019.
+** Unclick the button to return to the less strict validation of RAML API specifications.
 
 
 === Fixed Issues
