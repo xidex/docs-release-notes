@@ -33,6 +33,7 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/hl7-connector-release-notes-mule-4.adoc[HL7 EDI Connector Release Notes (for Mule 4)]
 * xref:connector/hl7-mllp-connector-release-notes-mule-4.adoc[HL7 MLLP Connector Release Notes (for Mule 4)]
 * xref:connector/connector-http.adoc[HTTP Connector Release Notes (for Mule 4)]
+* xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes (for Mule 4)]
 * xref:connector/ibm-ctg-connector-release-notes-mule-4.adoc[IBM CTG Connector Release Notes (for Mule 4)]
 * xref:connector/connector-ibm-mq.adoc[IBM MQ Connector Release Notes (for Mule 4)]
 * xref:connector/java-module.adoc[Java Module Release Notes (for Mule 4)]
