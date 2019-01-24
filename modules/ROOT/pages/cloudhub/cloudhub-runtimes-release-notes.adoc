@@ -6,6 +6,19 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== January 24, 2019
+
+4.1.5 Runtime Update:
+
+* DataWeave `distinct` operation runs out of memory with a large collection [SE-10548]
+* High CPU usage on DataWeave transformation causes the worker to stop processing [SE-10638]
+
+4.1.4 Runtime Update:
+
+* DataWeave `distinct` operation runs out of memory with a large collection [SE-10548]
+* High CPU usage on DataWeave transformation causes the worker to stop processing [SE-10638]
+
+
 == January 2, 2019
 
 4.1.5 Runtime Update:
