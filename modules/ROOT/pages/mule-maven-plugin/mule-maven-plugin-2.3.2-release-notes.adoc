@@ -8,7 +8,7 @@ This release breaks backward compatibility on the deployment configuration secti
 It follows the same configuration as the 3.x version of the plugin. +
 Check this xref:mule-runtime::mmp-deployment-concept.adoc[section] to make the proper changes.
 
-This new release was focused into fixing bugs.
+This new release was focused on fixing bugs.
 
 == Hardware and Software Requirements
 
@@ -27,14 +27,14 @@ Hardware and Software Requirements
 
 == Features and Functionality
 
-* MMP-456 - Add skipVerification property to platform deployers
+* MMP-456 - Add `skipVerification` property to platform deployers
 
 == Fixed Issues
 
 * MMP-393 - Null Pointer Exception when deploying to CloudHub business group
 * MMP-435 - If app deployed to RF failed to start, deployment verification hangs
 * MMP-439 - Can't find Business Group in runtime fabric deployment
-* MMP-451 - Check correct status when redeploying app
+* MMP-451 - Check correct status when redeploying the app
 
 == Support
 
