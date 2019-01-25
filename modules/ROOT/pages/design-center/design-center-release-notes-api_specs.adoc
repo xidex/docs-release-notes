@@ -24,7 +24,7 @@ This release includes enhancements and fixes a number of issues.
 +
 To turn this validation off, toggle the switch that is labeled *Show Strict Errors* in the top-right corner of the editor. The default is On.
 + Even if you toggle this validation off, the grace period in which you must resolve the messages is still in effect. The grace period lasts at least until January 10, 2020.
-* The documentation describes additional RAML problems that generate violation and warning messages.
+* The documentation describes additional RAML problems that generate violation and warning messages since the 2.4.0 release.
 
 
 === Fixed Issues
