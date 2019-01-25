@@ -13,12 +13,12 @@ This release contains no new features or enhancements.
 
 == Changes in This Release
 
-* This agent uses a new Publicly Certified certificate and connects to 2 new endpoints in Anypoint Runtime Manager
-* Now the Mule Agent API returns bad request (400) instead of internal server error (500) when enabling a service with null log configuration
+* This version of Runtime Manager Agent uses a new Publicly Certified certificate and connects to two new endpoints in Anypoint Runtime Manager.
+* Now, when enabling a service that has a null log configuration, the Mule Agent API returns a bad request (400) instead of an internal server error (500).
 
 == Fixed Issues
 
-This release contains no issue fixes.
+This release contains no fixed issues.
 
 == Known Limitations and Workarounds
 
@@ -26,7 +26,7 @@ There are no known limitations or workarounds in this release.
 
 == Upgrade Requirements
 
-The agent upgrade procedure will result in the use of 2 new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, please ensure there is no networking constraint for accessing the following FQDNs on port 443:
+The agent upgrade procedure results in the use of two new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, ensure there is no networking constraint for accessing the following FQDNs on port 443:
 
 For runtimes connecting to Anypoint Runtime Manager in the US:
 
