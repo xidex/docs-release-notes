@@ -31,8 +31,6 @@ To turn this validation off, toggle the switch that is labeled *Show Strict Erro
 
 // SE-10558
 * When a RAML specification uses an `example` facet was being used, rather than an `examples` facet, the API editor displays a message. In the previous release, the message was not clear.
-// SE-10595
-* For a particular API project, the validation step never finished.
 // SE-10631
 * Design Center was not using the latest version of the API Console. Therefore, the JSON type for request bodies was not appearing in the right-hand pane of the API editor.
 // SE-10639
