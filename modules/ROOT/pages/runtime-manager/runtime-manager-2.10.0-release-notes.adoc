@@ -9,17 +9,17 @@ This document describes new features and enhancements, known limitations, issues
 
 == New Features and Enhancements
 
-* New Publicly signed Certificates with 2 year expiration and SHA256 signature algorithm for Root CA, Mule Manager and Auth Proxy public endpoints
+* New publicly signed certificates with two year expirations and an SHA256 signature algorithm for Root CA, Mule Manager, and Auth Proxy public endpoints
 
 == Changes in This Release
 
-* Server Down and Up Alerts will now trigger after a 5 seconds grace period to avoid Alert fatigue upon quick disconnections
-* Runtime Manager API v1 limit increased from 50 items to 250 items max
-* Faster, New React-based Runtime Manager Servers UI with more consistency across the entire platform
+* Server Down and Up Alerts now trigger after a five second grace period to avoid Alert fatigue upon quick disconnections
+* Runtime Manager API v1 maximum limit increased from 50 items to 250 items
+* Faster, new react-based Runtime Manager servers UI with more consistency across the entire platform
 
 == Fixed Issues
 
-* [SE-10157] Runtime Manager Alerts template included incorrect applications deep-link
+* [SE-10157] The issue where the Runtime Manager Alerts template included incorrect applications deep-link is fixed.
 
 == Known Limitations and Workarounds
 

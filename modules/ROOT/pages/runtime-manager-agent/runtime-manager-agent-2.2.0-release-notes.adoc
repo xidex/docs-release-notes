@@ -15,14 +15,14 @@ This release contains the following new features or enhancements:
 
 == Changes in This Release
 
-* Changed to connect to the new Runtime Manager Publicly certified endpoints for Mule Manager and Auth Proxy
-* Now the Mule Agent API returns bad request (400) instead of internal server error (500) when enabling a service with null log configuration
+* This version of Runtime Manager Agent is changed to enable connection to the new Runtime Manager Publicly Certified endpoints for Mule Manager and Auth Proxy.
+* Now, when enabling a service that has a null log configuration, the Mule Agent API returns a bad request (400) instead of an internal server error (500).
 
 == Fixed Issues
 
-This release contains the following issue fixes:
+This release contains the following fixed issue:
 
-* Issue that caused a NPE when processing ExceptionNotification from implicit error handler
+* The issue that caused an NPE when processing `ExceptionNotification` from the implicit error handler is fixed. 
 
 == Known Limitations and Workarounds
 
@@ -30,7 +30,7 @@ There are no known limitations or workarounds in this release.
 
 == Upgrade Requirements
 
-The agent upgrade procedure will result in the use of 2 new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, please ensure there is no networking constraint for accessing the following FQDNs on port 443:
+The agent upgrade procedure results in the use of two new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, ensure there is no networking constraint for accessing the following FQDNs on port 443:
 
 For runtimes connecting to Anypoint Runtime Manager in the US:
 
