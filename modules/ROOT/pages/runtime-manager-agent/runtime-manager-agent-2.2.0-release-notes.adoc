@@ -30,7 +30,7 @@ There are no known limitations or workarounds in this release.
 
 == Upgrade Requirements
 
-The agent upgrade procedure results in the use of two new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, ensure there is no networking constraint for accessing the following FQDNs on port 443:
+The agent upgrade procedure results in the use of two new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, ensure there are no networking constraints for accessing the FQDNs on port 443.
 
 For runtimes connecting to Anypoint Runtime Manager in the US:
 

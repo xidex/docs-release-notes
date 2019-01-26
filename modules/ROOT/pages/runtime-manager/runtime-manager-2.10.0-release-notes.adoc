@@ -9,13 +9,13 @@ This document describes new features and enhancements, known limitations, issues
 
 == New Features and Enhancements
 
-* New publicly signed certificates with two year expirations and an SHA256 signature algorithm for Root CA, Mule Manager, and Auth Proxy public endpoints
+* New publicly signed certificates with two year expirations and an SHA256 signature algorithm for Root CA, Mule Manager, and Auth Proxy public endpoints.
 
 == Changes in This Release
 
-* Server Down and Up Alerts now trigger after a five second grace period to avoid Alert fatigue upon quick disconnections
-* Runtime Manager API v1 maximum limit increased from 50 items to 250 items
-* Faster, new react-based Runtime Manager servers UI with more consistency across the entire platform
+* Server Down and Up Alerts now trigger after a five second grace period to avoid Alert fatigue upon quick disconnections.
+* Runtime Manager API v1 maximum limit increased from 50 items to 250 items.
+* Faster, new react-based Runtime Manager servers UI with more consistency across the entire platform.
 
 == Fixed Issues
 
@@ -23,7 +23,7 @@ This document describes new features and enhancements, known limitations, issues
 
 == Known Limitations and Workarounds
 
-Use of new publicly signed certificates requires Agents version 2.2.0+ for Mule 4.x and 1.12.0+ for Mule 3.x
+Use of new publicly signed certificates requires Agents version 2.2.0+ for Mule 4.x and 1.12.0+ for Mule 3.x.
 
 == Upgrade Requirements
 
