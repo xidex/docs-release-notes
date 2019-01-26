@@ -1,0 +1,34 @@
+= Anypoint Runtime Manager Version 2.10.0 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+_Jan 26, 2019_
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager version 2.10.0.
+
+== New Features and Enhancements
+
+* New publicly signed certificates with two year expirations and an SHA256 signature algorithm for Root CA, Mule Manager, and Auth Proxy public endpoints.
+
+== Changes in This Release
+
+* Server Down and Up Alerts now trigger after a five second grace period to avoid Alert fatigue upon quick disconnections.
+* Runtime Manager API v1 maximum limit increased from 50 items to 250 items.
+* Faster, new react-based Runtime Manager servers UI with more consistency across the entire platform.
+
+== Fixed Issues
+
+* [SE-10157] The issue where the Runtime Manager Alerts template included incorrect applications deep-link is fixed.
+
+== Known Limitations and Workarounds
+
+Use of new publicly signed certificates requires Agents version 2.2.0+ for Mule 4.x and 1.12.0+ for Mule 3.x.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+
+== Compatibility Notes
+
+There are no compatibility notes in this release.
