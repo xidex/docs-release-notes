@@ -2,15 +2,31 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: microsoft, dynamics, 365, crm, release notes
 
-*September 2018*
-
-_Select_
+Support Category: Select
 
 *Guide:* xref:3.9@mule-runtime::microsoft-dynamics-365-connector.adoc[Microsoft Dynamics 365  Connector]
 
 MuleSoft provides OAuth 2.0 Connection and Username-Password access to the Microsoft Dynamics 365 server.
+
+== 1.0.10 
+
+*January 9, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 3.7.x, 3.8.x, and 3.9.x
+|Microsoft Dynamics 365 | 1.0.10
+|===
+
+=== Fixed in this Release
+
+* Enhanced exception handling in case of bad credentials.
+* The plus sign (*+*) was not correctly encoded when executing a query, which caused the operation to not return the results.
+* Mule Runtime Enterprise Edition 3.6 is no longer supported.
 
 == 1.0.6
 
