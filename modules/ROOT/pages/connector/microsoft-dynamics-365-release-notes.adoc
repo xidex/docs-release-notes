@@ -12,6 +12,25 @@ _Select_
 
 MuleSoft provides OAuth 2.0 Connection and Username-Password access to the Microsoft Dynamics 365 server.
 
+== 1.0.10 
+
+*Jan 09, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 3.7.0 and later
+|Microsoft Dynamics 365 | 1.0.10
+|===
+
+=== Fixed in this Release
+
+* Enhanced exception handling in case of bad credentials.
+* '+' sign was not correctly encoded when executing a query so the operation was not returning the results.
+* Mule Runtime Enterprise Edition 3.6 is no longer supported.
+
 == 1.0.6
 
 === Compatibility
