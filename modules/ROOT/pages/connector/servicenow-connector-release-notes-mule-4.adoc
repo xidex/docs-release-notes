@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 == 6.2.2 
 
@@ -13,7 +13,7 @@ _Select_
 |===
 |Application/Service |Version
 |Mule Runtime |4.1.0 and later
-|ServiceNow |Eureka, Fuji, Geneva, Helsinki, Jakarta and Istanbul
+|ServiceNow |Eureka, Fuji, Geneva, Helsinki, Jakarta, and Istanbul
 |===
 
 === Fixed in this Release
