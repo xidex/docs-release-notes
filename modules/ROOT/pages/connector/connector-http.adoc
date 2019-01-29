@@ -20,7 +20,7 @@ endif::[]
   
 === Fixed Issues 
  
-* Remove sun.misc usages which are not available with Java 11 (https://www.mulesoft.org/jira/browse/MULE-15917[MULE-15917])
+* Remove `sun.misc` package usages which are not available with Java 11 (https://www.mulesoft.org/jira/browse/MULE-15917[MULE-15917])
 * Encoding should be preserved by maskedRequestPath so it can be properly used in proxies. (https://www.mulesoft.org/jira/browse/MULE-16359[MULE-16359])
 
 == 1.4.2
