@@ -3,7 +3,22 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
+
+== 6.2.2 
+
+*January 15, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.1.0 and later
+|ServiceNow |Eureka, Fuji, Geneva, Helsinki, Jakarta, and Istanbul
+|===
+
+=== Fixed in this Release
+
+* Fixed error in mapping on response of the connection.
 
 == 6.2.1 
 
