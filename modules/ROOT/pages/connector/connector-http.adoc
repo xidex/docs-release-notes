@@ -13,14 +13,14 @@ endif::[]
 
 === New Features and Enhancements 
  
-* Introduce `rawRequestUri` and `rawRequestPath` attributes when a request is received by an HTTP listener (encoded as received unlike `requestUri` and `requestPath` which are decoded). (https://www.mulesoft.org/jira/browse/MULE-16246[MULE-16246])
-*  Remove overhead in event/message creation handling in policy scenarios. (https://www.mulesoft.org/jira/browse/MULE-16320[MULE-16320])
-* Introduce logger for resolved dynamic HTTP requests: `org.mule.extension.http.internal.request.HttpRequestOperations` in `DEBUG` mode will log the final URI being used. (https://www.mulesoft.org/jira/browse/MULE-16295[MULE-16295])
-* Add icon for the HTTP connector. (https://www.mulesoft.org/jira/browse/MULE-16378[MULE-16378])
+* New `rawRequestUri` and `rawRequestPath` attributes when a request is received by an HTTP listener (encoded as received unlike `requestUri` and `requestPath` which are decoded). (https://www.mulesoft.org/jira/browse/MULE-16246[MULE-16246])
+*  Improved performance for event and message creation handling in policy scenarios. (https://www.mulesoft.org/jira/browse/MULE-16320[MULE-16320])
+* New `org.mule.extension.http.internal.request.HttpRequestOperations` logger for resolved dynamic HTTP requests in DEBUG mode, which logs the final URI being used. (https://www.mulesoft.org/jira/browse/MULE-16295[MULE-16295])
+* New icon for the HTTP connector. (https://www.mulesoft.org/jira/browse/MULE-16378[MULE-16378])
   
 === Fixed Issues 
  
-* Remove `sun.misc` package usages which are not available with Java 11 (https://www.mulesoft.org/jira/browse/MULE-15917[MULE-15917])
+* Removed `sun.misc` package usages that are not available with Java 11 (https://www.mulesoft.org/jira/browse/MULE-15917[MULE-15917])
 * Encoding should be preserved by maskedRequestPath so it can be properly used in proxies. (https://www.mulesoft.org/jira/browse/MULE-16359[MULE-16359])
 
 == 1.4.2
