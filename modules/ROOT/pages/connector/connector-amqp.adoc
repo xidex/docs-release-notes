@@ -3,7 +3,16 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
+
+== 1.3.1
+
+*January 29, 2019*
+
+=== Fixed issues
+
+* Disabling RabbitMQ NIO functionality. (AMQP-127)
+* Problem connecting to fallbackAddresses - always the last address was attempted. (AMQP-126)
 
 == 1.3.0
 
