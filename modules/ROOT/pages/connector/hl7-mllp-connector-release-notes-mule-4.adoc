@@ -3,9 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
-
-_Premium_
+Support Category: Premium
 
 The Mule HL7 MLLP connector provides connectivity and parsing functionality for MLLP messages.
 
