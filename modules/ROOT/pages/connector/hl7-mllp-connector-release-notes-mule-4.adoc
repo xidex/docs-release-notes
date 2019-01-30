@@ -11,6 +11,27 @@ The Mule HL7 MLLP connector provides connectivity and parsing functionality for 
 
 xref:connectors::hl7/hl7-mllp-connector.adoc[HL7 MLLP Connector Guide]
 
+== 2.0.4 
+
+*January 11, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0.0 and later
+|===
+
+=== Features
+
+* The start-of-block character is now configurable.
+
+=== Fixed in this Release
+
+* The end-of-block character was incorrectly marked as required. It is now optional.
+* Under certain scenarios, all messages received after the first one would fail, with the error message `Message does not start with 'MSH'`. This was fixed.
+
 == 2.0.3 
 
 *November 16, 2018*
