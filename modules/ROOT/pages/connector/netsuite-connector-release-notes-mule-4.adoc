@@ -2,11 +2,32 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, netsuite, oracle, connector
-
-*August 2018*
 
 The Anypoint Connector for NetSuite synchronizes data and automates business processes between NetSuite and third-party applications, either on-premises or in the cloud.
+
+== 8.2.1
+
+*January 15, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|SuiteTalk API | 2017.2
+|===
+
+[NOTE]
+The NetSuite version is _not_ the same as the SuiteTalk API version. Your account may run on a version of NetSuite different than the version of the the API you are using.
+
+=== Features
+
+* Headers Preferences - Added a new parameter in the configuration to explicitly disable sending the `runServerSuiteScript` tag in Preferences header.
+
+=== Fixed in this Release
+
+* Name is null error - When performing an upsert record with a null Name, a NullPointerException would occur. Fixed by properly handling null names.
 
 == 8.2.0
 
@@ -22,7 +43,7 @@ The Anypoint Connector for NetSuite synchronizes data and automates business pro
 |===
 
 [NOTE]
-The NetSuite version *is not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
+The NetSuite version is _not_ the same as the SuiteTalk API version. Your account may run on a version of NetSuite different than the version of the the API you are using.
 
 === Features
 
@@ -50,7 +71,7 @@ None.
 |===
 
 [NOTE]
-The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
+The NetSuite version is _not_ the same as the SuiteTalk API version. Your account may run on a version of NetSuite different than the version of the the API you are using.The NetSuite version is _not_ the same as the SuiteTalk API version. Your account may run on a version of NetSuite different than the version of the the API you are using.
 
 === Fixed in this Release
 
@@ -74,7 +95,7 @@ None.
 |===
 
 [NOTE]
-The NetSuite version is not the same as the SuiteTalk API version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
+The NetSuite version is _not_ the same as the SuiteTalk API version. Your account may run on a version of NetSuite different than the version of the the API you are using.
 
 === Features
 
@@ -93,7 +114,7 @@ The NetSuite version is not the same as the SuiteTalk API version. Your account 
 |SuiteTalk API | 2017.1
 |===
 
-The NetSuite version is not the same as the SuiteTalk API version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
+The NetSuite version is _not_ the same as the SuiteTalk API version. Your account may run on a version of NetSuite different than the version of the the API you are using.
 
 === Features
 
@@ -103,4 +124,4 @@ The NetSuite version is not the same as the SuiteTalk API version. Your account 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

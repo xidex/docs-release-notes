@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-1,2.4.1>>
 * <<2-4-0,2.4.0>>
 * <<2-2-9,2.2.9>>
 * <<2-2-8,2.2.8>>
@@ -12,10 +13,34 @@ These release notes cover the following versions of these features:
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
 
+== 2.4.1
+*January 25, 2019*
+
+This release includes enhancements and fixes a number of issues.
+
+=== Enhancements
+
+* *For projects created before January 10, 2019:* You can turn on or off the stricter validation that began with the 2.4.0 release on January 10, 2019. You might want to do so to work with in an API-specification project that was created before this date, but don't yet have plans for resolving the messages that this validation displays.
++
+To turn this validation off, toggle the switch that is labeled *Show Strict Errors* in the top-right corner of the editor. The default is On.
++ Even if you toggle this validation off, the grace period in which you must resolve the messages is still in effect. The grace period lasts at least until January 10, 2020.
+* The documentation describes additional RAML problems that generate violation and warning messages since the 2.4.0 release.
+
+
+=== Fixed Issues
+
+// SE-10558
+* When a RAML specification uses an `example` facet was being used, rather than an `examples` facet, the API editor displays a message. In the previous release, the message was not clear.
+// SE-10631
+* Design Center was not using the latest version of the API Console. Therefore, the JSON type for request bodies was not appearing in the right-hand pane of the API editor.
+// SE-10639
+* In Firefox, the body of POST and PUT requests was not appearing when the mocking service was being used, preventing requests from being sent correctly.
+
+
 == 2.4.0
 *January 10, 2019*
 
-This release contains an enhancement and fixes a number of issues.
+This release includes several enhancements and fixes a number of issues.
 
 === Enhancement
 
