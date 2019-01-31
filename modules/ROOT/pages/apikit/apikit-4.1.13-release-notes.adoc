@@ -1,0 +1,27 @@
+= APIkit Mule4-1.1.13 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== What's New
+
+There are no new features in this version. There are bug fixes and enhancements.
+
+== Compatibility
+
+* Mule Runtime 4.1.2 and later
+* Anypoint Studio 7.2.0 and later
+* Java Parser RAML 1.0 v1.0.20
+* Java Parser RAML 0.8 v0.8.22
+* API Console 4.2.0
+
+== Fixed in the Release
+
+* Fixed internal tests that were not running on M4-1.1.x.
+* Fixed error that prevented validation for "Method not allowed" when using the api in 1.1.x.
+* Fixed issue where APIKIT was not resolving `%20` parameters in URI params.
+
+
+== Enhancements
+
+* Exported `disableValidations` to the apikit 1.1.x API for Mule 4
