@@ -4,6 +4,28 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, scripting, groovy, module, release notes
 
+== 1.1.4
+
+*January 31, 2019*
+
+=== Min Mule Version
+
+*Mule 4.1.1*
+
+=== New Features and Enhancements
+
+N/A
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| https://www.mulesoft.org/jira/browse/MULE-15640[MULE-15640] | Scripting Module propagates the input payload MimeType as the output payload MimeType
+| https://www.mulesoft.org/jira/browse/MULE-14951[MULE-14951] | Improve Static Metadata
+| https://www.mulesoft.org/jira/browse/MULE-14926[MULE-14926] | Upgrade Groovy to 2.4.15
+|===
+
 == 1.1.3
 
 *July 12, 2018*
