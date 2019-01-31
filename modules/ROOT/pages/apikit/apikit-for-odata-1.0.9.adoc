@@ -1,0 +1,22 @@
+= APIkit for OData 1.0.9 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This release includes bug fixes.
+
+== Compatibility
+
+* Mule 3.8.1+
+* APIkit 3.8.2+
+* Anypoint Studio 6.2.3+
+
+== Fixed in this Release
+
+* Fixed issue where Odata query options `inlinecount`, `top`, and `filter` were not supported.
+
+
+== Links to Legacy OData Documentation
+
+* xref:studio/odata-extension-release-notes-101.adoc[OData Extension Studio Plugin 1.0.1 Release Notes]
+* xref:studio/odata-extension-studio-plugin-release-notes.adoc[OData Extension Studio Plugin 1.0.0 Release Notes]
