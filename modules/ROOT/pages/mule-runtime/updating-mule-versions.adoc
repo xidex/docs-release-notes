@@ -1,4 +1,4 @@
-= Upgrading Mule Runtime Versions
+= Upgrading Mule Runtime Versions (3.x to 3.n)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
