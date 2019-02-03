@@ -1,12 +1,9 @@
-= Microsoft Dynamics CRM Connector Release Notes
+= Microsoft Dynamics CRM Connector Release Notes for Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, dynamics, crm, connector
 
-*November 2018*
-
-_Select_
+Support Category: Select
 
 The Microsoft Dynamics Customer Relationship Management (CRM) connector lets you access the Microsoft Dynamics CRM SOAP Organization Service. You can add this connector to an Anypoint Studio flow and in Design Center.
 
@@ -20,17 +17,17 @@ The Microsoft Dynamics Customer Relationship Management (CRM) connector lets you
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 4.0.0 and later
-|Anypoint Studio|Only works with Studio 7.0.0 and later
+|Anypoint Studio|7.0.0 and later
 |Dynamics CRM version|2013, 2015, 2016
 |===
 
 === Fixed in this release
 
-* LoseOpportunity request was not supported. Fixed by adding specific handling of the request.
+* LoseOpportunity request was not supported. Fixed by adding specific handling for the request.
 
 === Known Issues
 
-* Execute operation might cause issues for different types of actions based on the structure of the request being sent to the CRM api. This will be fixed in followup versions.
+* Execute operation may cause issues for different types of actions based on the structure of the request being sent to the CRM API. 
 
 == 3.1.1 
 
@@ -42,7 +39,7 @@ The Microsoft Dynamics Customer Relationship Management (CRM) connector lets you
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 4.0.0 and later
-|Anypoint Studio|Only works with Studio 7.0.0 and later
+|Anypoint Studio|7.0.0 and later
 |Dynamics CRM version|2013, 2015, 2016
 |===
 
@@ -60,7 +57,7 @@ The Microsoft Dynamics Customer Relationship Management (CRM) connector lets you
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 4.0.0 and 4.1.0 and later
-|Anypoint Studio|Only works with Studio 7.0.0 and newer
+|Anypoint Studio|7.0.0 and later
 |Dynamics CRM version|2013, 2015, 2016
 |===
 
@@ -91,7 +88,7 @@ None.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.0.0 and 4.1.0 and later
-|Anypoint Studio |Only works with Studio 7.0.0 and later
+|Anypoint Studio |7.0.0 and later
 |Dynamics CRM version |2013, 2015, 2016
 |===
 
@@ -102,4 +99,4 @@ Same as 2.9.1 (last release)
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
