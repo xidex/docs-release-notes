@@ -5,6 +5,13 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== February 5, 2019
+Version 2.0.3
+
+== New Enhancement
+
+An *Export PNG* button in the side panel allows users to export their network topology as it is currently displayed on the canvas.
+
 == January 23, 2019
 Version 2.0.2
 
