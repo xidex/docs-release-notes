@@ -5,6 +5,24 @@ endif::[]
 
 _Select_
 
+== 9.5.0
+
+*February 1, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+* The clearNullFields config parameter was not used properly and  it`s functionality would have never worked. Fixed the way clearNullFields is handled and now it`s working as intended.
+* Fixed Salesforce Connector not reconnecting in case session expired for Bulk Operations. Fixed by changing the exception thrown in this case.
+* Retrieve record failure bulk v 2 not failing because of column delimiter. Fixed by adding handling for column delimiter for the retrieve record failure bulk v2.
+* Invalid Session Id and Reconnection Strategy works only after multiple invalid requests when the Mule Connector performs a concurrent query. Fixed by implementing a new CachedBasicConnectionProvider with keep-alive functionality. The BasicConnectionProvider was deprecated because a PoolingConnectionProvider does not have sense in the context of Salesforce's way of handling multiple logins, which will return the same sessionId.Username Password connection provider was also improved by handling invalid connections currently in the pool, so before executing an operation, the connector will ensure the operation uses a valid connection.
+
 == 9.4.8
 
 *December 12, 2018*
