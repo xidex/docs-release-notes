@@ -8,19 +8,21 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 == February 2, 2019
 
-4.1.3 Runtime Update:
+4.1.5 Runtime Update:
 
-* Gatekeeper policy causes memory leak on policy engine (SE-10641)
+* Gatekeeper policy causes memory leak on policy engine [SE-10641]
 
 4.1.4 Runtime Update:
 
-* Gatekeeper policy causes memory leak on policy engine (SE-10641)
+* Gatekeeper policy causes memory leak on policy engine [SE-10641]
+
 
 == February 1, 2019
 
 3.9.2 Runtime Update:
 
 * Include Anypoint Monitoring Agent Extension
+
 
 == January 25, 2019
 
