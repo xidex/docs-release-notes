@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 == 9.5.0
 
@@ -13,15 +13,18 @@ _Select_
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
 === Fixed in this Release
-* The clearNullFields config parameter was not used properly and  it`s functionality would have never worked. Fixed the way clearNullFields is handled and now it`s working as intended.
+
+* The clearNullFields config parameter was not used properly and its functionality would have never worked. Fixed the way clearNullFields is handled and now it`s working as intended.
 * Fixed Salesforce Connector not reconnecting in case session expired for Bulk Operations. Fixed by changing the exception thrown in this case.
-* Retrieve record failure bulk v 2 not failing because of column delimiter. Fixed by adding handling for column delimiter for the retrieve record failure bulk v2.
-* Invalid Session Id and Reconnection Strategy works only after multiple invalid requests when the Mule Connector performs a concurrent query. Fixed by implementing a new CachedBasicConnectionProvider with keep-alive functionality. The BasicConnectionProvider was deprecated because a PoolingConnectionProvider does not have sense in the context of Salesforce's way of handling multiple logins, which will return the same sessionId.Username Password connection provider was also improved by handling invalid connections currently in the pool, so before executing an operation, the connector will ensure the operation uses a valid connection.
+* Retrieve record failure bulk v2 not failing because of column delimiter. Fixed by adding handling for column delimiter for the retrieve record failure bulk v2.
+* Invalid Session ID and Reconnection Strategy works only after multiple invalid requests when the Mule connector performs a concurrent query. Fixed by implementing a new CachedBasicConnectionProvider with keep-alive functionality. 
+* The BasicConnectionProvider was deprecated because a PoolingConnectionProvider does not have sense in the context of Salesforce's way of handling multiple logins, which returns the same sessionId.
+* Username Password connection provider was improved by handling invalid connections currently in the pool, so before executing an operation, the connector ensures that the operation uses a valid connection.
 
 == 9.4.8
 
@@ -31,7 +34,7 @@ _Select_
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -47,7 +50,7 @@ _Select_
 |===
 |Application/Service|Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -64,7 +67,7 @@ Now if the "includeRecordDetails" header is specified, the operation returns the
 |===
 |Application/Service|Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -81,7 +84,7 @@ Now if the "includeRecordDetails" header is specified, the operation returns the
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -97,7 +100,7 @@ Now if the "includeRecordDetails" header is specified, the operation returns the
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -114,7 +117,7 @@ Now if the "includeRecordDetails" header is specified, the operation returns the
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -147,7 +150,7 @@ Now if the "includeRecordDetails" header is specified, the operation returns the
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -164,7 +167,7 @@ Now if the "includeRecordDetails" header is specified, the operation returns the
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -180,7 +183,7 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -198,7 +201,7 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -214,7 +217,7 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -232,7 +235,7 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -268,7 +271,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -285,7 +288,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -329,7 +332,7 @@ The problem was solved by adding 4 new operations for create, update, upsert, an
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -345,7 +348,7 @@ The problem was solved by adding 4 new operations for create, update, upsert, an
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -373,7 +376,7 @@ In this version Salesforce Connector works correctly in EU.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -405,7 +408,7 @@ Salesforce connector version 9.2.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -425,7 +428,7 @@ Salesforce connector version 9.1.1 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -455,7 +458,7 @@ Salesforce connector version 9.1.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0
-|Anypoint Studio |Studio 7.0.0 and later
+|Anypoint Studio |7.0.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -485,7 +488,7 @@ Salesforce connector version 9.0.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.0.0 and later
-|Anypoint Studio |Studio 7.0.0 and later
+|Anypoint Studio |7.0.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0
 |===
 
