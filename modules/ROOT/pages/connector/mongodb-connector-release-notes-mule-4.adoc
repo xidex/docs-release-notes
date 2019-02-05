@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mongo db, release notes, connector
 
-*September 2018*
-
-_Select_
+Support Category: Select
 
 Mule supports MongoDB integration by using the MongoDB Java Driver.
 
