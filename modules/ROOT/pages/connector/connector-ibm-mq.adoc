@@ -3,6 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.0
+
+*February 5, 2019*
+
+=== New Features and Enhancements
+
+* Out of the box support for TLS/SSL configurations.
+
 == 1.1.2
 
 *January 14, 2019*
