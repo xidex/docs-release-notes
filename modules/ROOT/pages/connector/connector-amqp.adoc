@@ -5,6 +5,14 @@ endif::[]
 
 Support Category: Select
 
+== 1.3.3
+
+*February 5, 2019*
+
+=== Fixed issues
+
+* Always enforce reconnection to be performed: guarantee reconnection when consumers are cancelled. (AMQP-132)
+
 == 1.3.2
 
 *January 30, 2019*
