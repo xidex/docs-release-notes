@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mongo db, release notes, connector
 
-*September 2018*
-
-_Select_
+Support Category: Select
 
 Mule supports MongoDB integration by using the MongoDB Java Driver.
 
@@ -20,7 +17,7 @@ Mule supports MongoDB integration by using the MongoDB Java Driver.
 |===
 |Software|Version
 |Mule Runtime|4.0.0 and later
-|MongoDB| 3.0 to 3.2
+|MongoDB|3.8
 |===
 
 === New Features
@@ -32,6 +29,15 @@ These triggers allow you to execute a flow each time a new Object is created, or
 
 *September 4, 2018*
 
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.0.0 and later
+|MongoDB|3.8
+|===
+
 === New Features
 
 * Added the new operation 'Execute Generic Command' to run any MongoDB command using the connector.
@@ -41,6 +47,15 @@ This command is supplied as a parameter in the form of a MongoDB document.
 == 5.1.1
 
 *June 28, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.0.0 and later
+|MongoDB|3.6
+|===
 
 === Fixed in This Version
 
@@ -58,7 +73,14 @@ Now it is working.
 
 *June 28, 2018*
 
-This is a minor release that includes one new feature.
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.0.0 and later
+|MongoDB|3.6
+|===
 
 === New Features
 
@@ -72,7 +94,7 @@ This is a minor release that includes one new feature.
 |===
 |Software|Version
 |Mule Runtime|4.0.0 and later
-|MongoDB| 3.0 to 3.2
+|MongoDB|3.0 to 3.2
 |===
 
 === Features
