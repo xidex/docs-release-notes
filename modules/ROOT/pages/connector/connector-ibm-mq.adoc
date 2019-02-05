@@ -9,7 +9,7 @@ endif::[]
 
 === New Features and Enhancements
 
-* Out of the box support for TLS/SSL Configurations.
+* Out of the box support for TLS/SSL configurations.
 
 == 1.1.2
 
