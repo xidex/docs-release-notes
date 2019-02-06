@@ -11,6 +11,11 @@ These are the release notes for patches which are made to the Mule runtimes on C
 4.1.5 Runtime Update:
 
 * `ThreadLocal` configuration causes performance degradation [SE-10742]
+* Salesforce Marketing connector throws token expired exception [SE-10343]
+
+4.1.4 Runtime Update:
+
+* Salesforce Marketing connector throws token expired exception [SE-10343]
 
 
 == February 2, 2019
