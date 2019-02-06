@@ -6,6 +6,18 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== February 7, 2019
+
+4.1.5 Runtime Update:
+
+* `ThreadLocal` configuration causes performance degradation [SE-10742]
+* Salesforce Marketing connector throws token expired exception [SE-10343]
+
+4.1.4 Runtime Update:
+
+* Salesforce Marketing connector throws token expired exception [SE-10343]
+
+
 == February 2, 2019
 
 4.1.5 Runtime Update:
