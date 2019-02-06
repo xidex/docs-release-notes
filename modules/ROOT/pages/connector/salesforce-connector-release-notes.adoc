@@ -7,6 +7,27 @@ _Select_
 
 Starting with v.6.0.2, the Salesforce Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions are freely available to the community.
 
+== 8.7.1 
+
+*February 6, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 3.5.2 and later
+|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Fixed in this Release
+
+* Using Replay streaming channel causes frequent disconnects and reconnects.
+* The app using Replay streaming channel records 401 and 403 error codes after some time and stops receiving messages.
+* The connector now generates the base URL from the endpoint configured by the client so that no problems arise when using a URL redirection service.
+* There was an issue when performing a queryAll operation that instead of queryAll http request the connector was sending a query http request. Fixed by properly handling queryAll use cases.
+
 == 8.7.0 
 
 *November 19, 2018*
