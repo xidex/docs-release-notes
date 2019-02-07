@@ -19,3 +19,5 @@ This release focused on bug fixes.
 == Bug Fixes
 
 * Fixed issue for RAML Parser implementations returning invalid references when building an API from URI.
+* Fixed failing scaffolding process for APIs downloaded from Exchange when that API contained a folder, and inside such folder, any of the files contained an include referencing an exchange module without a `/` at the start.
+
