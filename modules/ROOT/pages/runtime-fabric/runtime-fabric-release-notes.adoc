@@ -6,7 +6,7 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
-== 1.1.373 - February 6, 2019
+== 1.2.0 - February 7, 2019
 
 This release includes the following fixes and enhancements:
 
