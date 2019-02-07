@@ -59,7 +59,6 @@ Not applicable.
 | MULE-15848 | MetadataComponent is OUTPUT_ATTRIBUTES when failing in OutputTypeResolver
 | MULE-15846 | ArtifactClassLoaderRunner - Keep latest version of services only when more than one version for a service is discovered by transitive dependencies
 | MULE-15835 | Invalid XML generated for artifact declaration
-| MULE-15829 | Redeployment fails when using secure configuration properties module on Windows
 | MULE-15822 | Resource is not found when declaring extension in domain project
 | MULE-15804 | Can't neither un-deploy nor redeploy app that depends on a custom lib on Windows
 | MULE-15791 | Wrong location is resolved for redelivery-policy when nested to http listener
