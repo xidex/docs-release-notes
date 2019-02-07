@@ -2,11 +2,28 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: osv2, release notes, object store v2, object, store, v2
 
-*July 2018*
+Support Category: Select
 
 The Anypoint Object Store v2 release allows applications and users to share data and share states across batch processes, Mule components, and multiple distributed applications.
+
+== 2.4.7
+
+*February 7, 2019*
+
+This release provides bug fixes.
+
+=== Compatibility
+
+* OSv2 works with Mule 3.8.5 and later, and all 4.x versions.
+
+See: xref:object-store::osv2-faq.adoc#where-is-object-store-v2-available[Where is Object Store v2 available?]
+
+=== Fixed in this Release
+
+* Fixed a bug where an incorrect API response was returned when checking if an object store partition exists.
+* Fixed a bug when sending batched messages to FIFO queues could allow more than 10 at a time to be retrieved.
+* Fixed a race condition bug when trying to bind a message queue to an exchange that was recently deleted.
 
 == 2.4.6
 
@@ -100,4 +117,5 @@ Anypoint Object Store v2 works with these browser versions:
 == See Also
 
 * xref:object-store::index.adoc[Object Store v2]
-* xref:object-store/objectstore-release-notes.adoc[Object Store Connector Release Notes]
+* xref:connector/objectstore-connector-release-notes.adoc[Mule 3 Object Store Connector Release Notes]
+* xref:connector/object-store-connector-release-notes-mule-4.adoc[Mule 4 Object Store Connector Release Notes]
