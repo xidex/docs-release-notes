@@ -1,12 +1,45 @@
-= Object Store Connector Release Notes
+= Object Store Connector Release Notes for Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, object, store, object store
 
-*July 2017*
+Support Category: Select
 
-*Guide:* xref:connectors::object-store/object-store-connector.adoc[Object Store Connector]
+*Guide:* xref:connectors::object-store/object-store-connector.adoc[Mule 4 Object Store Connector]
+
+== 1.1.3
+
+*January 31, 2019*
+
+=== Fixed in this Release
+
+* Object Store operations should execute in the IO pool. (https://www.mulesoft.org/jira/browse/MULE-16409[MULE-16409])
+
+== 1.1.2
+
+*October 22, 2018*
+
+=== Fixed in this Release
+
+* Message in exceptions references "null" as the ObjectStore name. (https://www.mulesoft.org/jira/browse/MULE-15285[MULE-15285])
+* Top level ObjectStore throws NPE if used before application Start. (https://www.mulesoft.org/jira/browse/MULE-15210[MULE-15210])
+* MUnit test fails with duplicated ObjectStore when running multiple suites. (https://www.mulesoft.org/jira/browse/MULE-15779[MULE-15779])
+
+== 1.1.1
+
+*May 17, 2018*
+
+=== Fixed in this Release
+
+* Add name identifier to ObjectStoreManager injection to support CloudHub deployments. (https://www.mulesoft.org/jira/browse/MULE-14987[MULE-14987])
+
+== 1.1.0
+
+*January 27, 2018*
+
+=== Fixed in this Release
+
+* ObjectStore connector does not work properly with MUnit tests when referencing a global.  (https://www.mulesoft.org/jira/browse/MULE-14335[MULE-14335])
 
 == 0.8.1
 
@@ -33,4 +66,4 @@ The Object Store Connector is new for use in Design Center > Mule Application.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
