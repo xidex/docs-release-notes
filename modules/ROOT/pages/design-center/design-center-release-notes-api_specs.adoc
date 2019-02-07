@@ -35,7 +35,11 @@ type: number
 multipleOf: 0.01
 example: 19.99
 ----
-// SE-
+// SE-10702
+* The editor displayed the following error message after parsing a RAML project that included an XSD schema: `The schema document '<filename>.xsd' cannot include itself`
+// SE-10779
+* MIME types are now validated as strings, not as regular expressions.
+
 
 == 2.4.1
 *January 25, 2019*
