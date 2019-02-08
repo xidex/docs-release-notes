@@ -3,11 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
+Support Category: Select
 
-_Select_
-
-The Salesforce Marketing Cloud connector allows you to connect to the Salesforce Marketing Cloud web services using the Exact Target API. The connector exposes convenient methods for managing objects and calling services provided by Exact Target API, also known as Salesforce Marketing Cloud.
+The Salesforce Marketing Cloud connector lets you connect to the Salesforce Marketing Cloud web services using the Exact Target API. The connector exposes convenient methods for managing objects and calling services provided by Exact Target API, also known as Salesforce Marketing Cloud.
 
 == 2.1.1
 
