@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-2,2.4.2>>
 * <<2-4-1,2.4.1>>
 * <<2-4-0,2.4.0>>
 * <<2-2-9,2.2.9>>
@@ -12,6 +13,34 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.4.2
+*February 9, 2019*
+
+This release fixes a number of issues.
+
+=== Fixed Issues
+// SE-10631
+* When the Mocking Service was on, the right pane of the editor was not displaying examples of JSON types for request bodies.
+// SE-10632
+* The editor did not show errors when the facet `properties` was declared twice for a type.
+// SE-10659
+* The editor displayed the error message `Expecting !!str and !!int provided` when numbers were used as keys in type definitions and in named examples.
+// SE-10701
+* For type declarations such as the one in this example, the editor displayed an error message that said the example value should be a multiple of the value of the `multipleOf` key:
+----
+#%RAML 1.0 DataType
+displayName: exampleType
+type: number
+multipleOf: 0.01
+example: 19.99
+----
+// SE-10702
+* The editor displayed the following error message after parsing a RAML project that included an XSD schema: `The schema document '<filename>.xsd' cannot include itself`
+// SE-10779
+* MIME types are now validated as strings, not as regular expressions.
+// SE-10863
+* Auto-completion after elements such as `uses` and `!include` was not working, and suggestions for content to place after such elements were not being offered.
 
 == 2.4.1
 *January 25, 2019*
