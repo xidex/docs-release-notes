@@ -39,7 +39,8 @@ example: 19.99
 * The editor displayed the following error message after parsing a RAML project that included an XSD schema: `The schema document '<filename>.xsd' cannot include itself`
 // SE-10779
 * MIME types are now validated as strings, not as regular expressions.
-
+// SE-10863
+* Auto-completion after elements such as `uses` and `!include` was not working, and suggestions for content to place after such elements were not being offered.
 
 == 2.4.1
 *January 25, 2019*
