@@ -22,8 +22,6 @@ See: xref:object-store::osv2-faq.adoc#where-is-object-store-v2-available[Where i
 === Fixed in this Release
 
 * Fixed a bug where an incorrect API response was returned when checking if an object store partition exists.
-* Fixed a bug when sending batched messages to FIFO queues could allow more than 10 at a time to be retrieved.
-* Fixed a race condition bug when trying to bind a message queue to an exchange that was recently deleted.
 
 == 2.4.6
 
