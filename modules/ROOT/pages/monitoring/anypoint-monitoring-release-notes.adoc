@@ -7,6 +7,19 @@ This document describes any new features and enhancements, known limitations, is
 
 == 2.1
 
+=== February 7, 2019
+
+The Anypoint Monitoring log points feature now supports the following API types and versions:
+
+* Basic endpoint APIs (CloudHub and hybrid)
+ ** CloudHub
+ ** Hybrid
+* Endpoint with Proxy APIs
+  ** CloudHub proxy
+  ** Hybrid proxy
+* Mule 3 versions 3.8.5 and later
+* Mule 4 versions 4.1.1 and later
+
 === January 12, 2019
 This release contains the following new features:
 
