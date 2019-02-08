@@ -2,7 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, email, connector, release notes, pop3, smtp, imap
+
+Support Category: Select
 
 == 1.1.3
 
@@ -10,8 +11,8 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed a bug that prevented the usage of email attachments if dispatched by the IMAP source. (MULE-16388)
-* Email Connector now requests socket factory directly. (MULE-16190)
+* Fixed a bug that prevented the usage of email attachments if dispatched by an IMAP source. (https://www.mulesoft.org/jira/browse/MULE-16388[MULE-16388])
+* Email connector now requests a socket factory directly. (https://www.mulesoft.org/jira/browse/MULE-16190[MULE-16190])
 
 == 1.1.2
 
@@ -19,7 +20,7 @@ endif::[]
 
 === Fixed Issues
 
-* Email connector does not correctly communicate the structure of returned objects. (MULE-15921)
+* Email connector does not correctly communicate the structure of returned objects. (https://www.mulesoft.org/jira/browse/MULE-15921[MULE-15921])
 
 == 1.1.1
 
@@ -27,7 +28,7 @@ endif::[]
 
 === Fixed Issues
 
-* NoClassDefFoundError of Guava Class https://www.mulesoft.org/jira/browse/MULE-15883[(MULE-15883)]
+* NoClassDefFoundError of Guava Class. (https://www.mulesoft.org/jira/browse/MULE-15883[MULE-15883])
 
 == 1.1.0
 
@@ -41,13 +42,12 @@ Added Value Provider support for email folders, to display the possible folder v
 
 === Fixed Issues
 
-* Email doesn't handle correctly multipart/alternative parts. https://www.mulesoft.org/jira/browse/MULE-14157[(MULE-14157)]
-* Email Connector exports internal classes. https://www.mulesoft.org/jira/browse/MULE-14454[(MULE-14454)]
-* Email connector does not work with Gmail's SSL port. https://www.mulesoft.org/jira/browse/MULE-14673[(MULE-14673)]
-* Email connector "replyToAddresses" is not populated when sending an Email. https://www.mulesoft.org/jira/browse/MULE-14965[(MULE-14965)]
-* Remove unnecessary String.toLowerCase calls (email). https://www.mulesoft.org/jira/browse/MULE-15252[(MULE-15252)]
-* Upgrade javax.mail to javax.mail-api 1.6.2. https://www.mulesoft.org/jira/browse/MULE-15331[(MULE-15331)]
-
+* Email doesn't handle correctly multipart/alternative parts. (https://www.mulesoft.org/jira/browse/MULE-14157[MULE-14157])
+* Email Connector exports internal classes. (https://www.mulesoft.org/jira/browse/MULE-14454[MULE-14454])
+* Email connector does not work with the Gmail SSL port. (https://www.mulesoft.org/jira/browse/MULE-14673[MULE-14673])
+* Email connector "replyToAddresses" is not populated when sending an Email. (https://www.mulesoft.org/jira/browse/MULE-14965[(MULE-14965])
+* Remove unnecessary String.toLowerCase calls (email). (https://www.mulesoft.org/jira/browse/MULE-15252[MULE-15252])
+* Upgrade javax.mail to javax.mail-api 1.6.2. (https://www.mulesoft.org/jira/browse/MULE-15331[MULE-15331])
       
 *May 2018*
 
@@ -57,22 +57,22 @@ Added Value Provider support for email folders, to display the possible folder v
 
 === Fixed Issues
 
-* Email connector "replyToAddresses" is not populated when sending an Email. (MULE-14965)
-* Email connector does not work with Gmail SSL port. (MULE-14673)
-* IMAP List operation not retrieving attachments. (MULE-14762)
+* Email connector "replyToAddresses" is not populated when sending an Email. (https://www.mulesoft.org/jira/browse/MULE-14965[MULE-14965])
+* Email connector does not work with Gmail SSL port. (https://www.mulesoft.org/jira/browse/MULE-14673[MULE-14673])
+* IMAP List operation not retrieving attachments. (https://www.mulesoft.org/jira/browse/MULE-14762[MULE-14762])
 
 == 1.0.1
 
-*Mar 15, 2018*
+*March 15, 2018*
 
 === Fixed Issues
 
-* Email connector doesn't work with IMAP gmail OOTB. (MULE-14606)
-* Email Connector doesn't communicate correctly if their output types fields can be null. (MULE-14701)
+* Email connector doesn't work with IMAP Gmail OOTB. (https://www.mulesoft.org/jira/browse/MULE-14606[MULE-14606])
+* Email Connector doesn't communicate correctly if their output types fields can be null. (https://www.mulesoft.org/jira/browse/MULE-14701[MULE-14701])
 
 == 1.0.0
 
-*Jan 19, 2018*
+*January 19, 2018*
 
 === New Features and Enhancements
 
@@ -90,9 +90,9 @@ Mule 4.1
 
 === Fixed Issues
 
-* Email connector pop3 does not delete all emails with deleteAfterRetrieve. (MULE-13101)
+* Email connector pop3 does not delete all emails with deleteAfterRetrieve. (https://www.mulesoft.org/jira/browse/MULE-13101[MULE-13101])
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
