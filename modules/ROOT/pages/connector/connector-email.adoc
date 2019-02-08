@@ -10,7 +10,7 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed a bug that prevented the usage of email attachmets if dispatched by the IMAP source. (MULE-16388)
+* Fixed a bug that prevented the usage of email attachments if dispatched by the IMAP source. (MULE-16388)
 * Email Connector now requests socket factory directly. (MULE-16190)
 
 == 1.1.2
