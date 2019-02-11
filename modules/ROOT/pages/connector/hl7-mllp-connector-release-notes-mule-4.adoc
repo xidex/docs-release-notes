@@ -23,11 +23,11 @@ xref:connectors::hl7/hl7-mllp-connector.adoc[HL7 MLLP Connector Guide]
 
 === Features
 
-* Source configuration allows specifying a connection count, limiting the number of simultaneous connections to the supplied value. If not configured, the default behavior is to allow any number of simultaneous connections.
+* Source configuration allows specifying a connection count, and limiting the number of simultaneous connections to the supplied value. If not configured, the default behavior is to allow any number of simultaneous connections.
 
 === Fixed in this Release
 
-* Closing a connection to the source would cause an empty message to be sent through the flow, generally resulting in an exception.
+* Closing a connection to the source caused an empty message to be sent through the flow, generally resulting in an exception.
 
 == 2.0.4 
 
