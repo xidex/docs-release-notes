@@ -11,7 +11,7 @@ Support Category: Select
 
 === Fixed issues
 
-* Enforce reconnection when AlreadyClosed Exception and reason not identified for fallback address. (AMQP-133)
+* Enforce reconnection when an AlreadyClosed exception occurs and when the reason is not identified for a fallback address. (AMQP-133)
 
 == 1.3.3
 
