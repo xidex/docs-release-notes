@@ -78,6 +78,9 @@ This release includes several enhancements and fixes a number of issues.
 The AMF parser is at version 2.0.0.
 * The Design Center now provides native support for OAS 2.0. To learn more, xref:design-center::design-create-publish-api-specs.adoc[see the documentation].
 * The names of projects for API specifications and API fragments can now be as long as 64 characters.
+* The option to download a project in YAML is now replaced with the following options on specifications:
+** *Download as*: downloads a RAML specification as an OAS specification, or an OAS specification as a RAML specification.
+** *Convert*: Converts a RAML specification to an OAS specification, or an OAS specification to a RAML specification.
 
 === Fixed Issues
 
