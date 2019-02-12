@@ -1,0 +1,23 @@
+= APIkit Mule4-1.2.4 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== What's New
+
+This release focused on bug fixes.
+
+== Compatibility
+
+* Mule Runtime 4.1.2 and later
+* Anypoint Studio 7.2.0 and later
+* Java Parser RAML 1.0 v1.0.29
+* Java Parser RAML 0.8 v0.8.29
+* API Console 4.2.1
+* API Console 5
+
+== Bug Fixes
+
+* Fixed issue for RAML Parser implementations returning invalid references when building an API from URI.
+* Fixed failing scaffolding process for APIs downloaded from Exchange when that API contained a folder, and inside such folder, any of the files contained an include referencing an exchange module without a `/` at the start.
+
