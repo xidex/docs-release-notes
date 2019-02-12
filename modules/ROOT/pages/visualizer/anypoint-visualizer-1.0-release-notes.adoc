@@ -5,7 +5,7 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
-== February 5, 2019
+== February 11, 2019
 Version 2.0.3
 
 == New Features and Enhancements
