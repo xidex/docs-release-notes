@@ -8,8 +8,6 @@ These are the release notes for patches which are made to the Mule runtimes on R
 
 == Feburary 11, 2019
 
-This release adds support for the following Mule runtimes:
-
 === 4.1.4 Runtime Update:
 
 This release includes the following fixes:
