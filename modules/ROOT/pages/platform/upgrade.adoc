@@ -1,8 +1,8 @@
 = Anypoint Platform Upgrade to Latest Software Guide
 ifndef::env-site,env-github[]
 include::_attributes.adoc[] 
-:imagesdir: ../assets/images/ 
 endif::[]
+:imagesdir: ../assets/images/ 
 
 [IMPORTANT]
 ====
