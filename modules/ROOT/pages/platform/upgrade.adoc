@@ -46,7 +46,7 @@ Notes:
 
 == To Group your APIs
 
-image::group_apis_part_crowd_ugprade.png[]
+image::group-apis-part-crowd-ugprade.png[]
 
 *Note:* Read the previous <<To Complete Upgrade to November Release>> and <<Why Group your APIs?>> for vital roll back and business group information.
 
@@ -69,7 +69,7 @@ NOTE: Avoid storing the environment name in the API Name or Version Name if poss
 
 == To Request Your Platform Upgrade
 
-image::schedule_upgrade_button_crowd_self_service_portal.png[]
+image::schedule-upgrade-button-crowd-self-service-portal.png[]
 
 The upgrade is triggered automatically at the time you schedule in the self-service portal. Access this portal from the green banner in the Anypoint Platform login. The estimated upgrade time is 15 minutes to upgrade 50 *API versions*.
 
