@@ -5,6 +5,28 @@ endif::[]
 
 Support Category: Select
 
+== 9.5.1
+
+*February 14, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+* Invalid Session Id and Reconnection Strategy works only after multiple invalid requests when the Mule Connector performs a concurrent query. Fixed by implementing a new CachedOauthUserPassConnectionProvider with keep-alive functionality.
+* GetSessionId was not returning the correct id after the session was invalidated, because it was not throwing the correct exception. This was fixed by adding a call to the API, that returns a ConnectionException if the session id is invalid
+* The operation "Create Content Version" was failing if the payload was of binary data type. This was fixed by checking the data type before casting to String, so no exception is thrown
+* Apex method call recognizes output field as date if the return string has similar format as Date. Methods in apex come with a return type parameter which is now included in the condition which converts string to date type.
+* Invoke apex rest not reconnecting in case the session expired. Fixed by properly handling exceptions thrown by the apex api.
+* Fixed problem that occurred when attempting to create a new Content Version that had data as a Base64 format picture, it is not required to decode the Base64 string since the decoding is handled by the connector.
+  This also impacts SE-9518, this fix is deprecated, the users that have VersionData that is not Base64 must ensure that they convert it to Base64, example: VersionData:toBase64(payload)
+  In short VersionData for the Version Content expects a Base64 format.
+
 == 9.5.0
 
 *February 1, 2019*
