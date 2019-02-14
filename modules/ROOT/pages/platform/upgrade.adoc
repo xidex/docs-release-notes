@@ -101,15 +101,15 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 *What is the API grouping step about?* 
 
-A group of API versions that are written in the same API specification standard (e.g. WSDL, RAML) and that will share one portal page in the new Exchange. You can select the portal and associated RAML to migrate as the master portal for the API using the UI for the grouping screens. The spec for any version will be accessible for download for your API consumers.
+Group your APIs so they are organized on one or multiple API portals. Group API versions of the same API and that share the same specification standard (e.g. WSDL, RAML). That group will share one portal page in the new Exchange. If you have multiple versions in the API, click the checkbox in the grouping popup to select the portal and associated RAML to be the master portal for the API. In the new Exchange, the spec for any version will be accessible for download for your API consumers.
 
 *Is there any downtime?*
 
 There is no downtime during the API grouping or the automated migration. We do, however, advise not to use API Manager during the upgrade process to prevent any data inconsistency. After the upgrade, classification of APIs into environments may cause downtime due to proxy restart.
 
-*Do API policies remain in effect during the upgrade?*
+*Do API policies, client IDs and secrets remain in effect during the upgrade?*
 
-Yes, API policies remain in effect during the upgrade.
+Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-prem or cloud.
 
 *How do I cancel my upgrade?*
 
