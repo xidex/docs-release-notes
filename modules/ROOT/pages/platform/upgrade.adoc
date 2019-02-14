@@ -11,7 +11,7 @@ The upgrade to the November 2017 or "Crowd" release changes the existing Anypoin
 *Note:* After the upgrade and before classifying your APIs into environments, test your APIs, Notebooks, and Portals. After APIs are classified, your organization cannot roll back if you encounter upgrade related issues. Portal URLs are updated, so update these links accordingly.
 ====
 
-== To Complete Upgrade to November Release
+== Complete an Upgrade to the November Release
 
 Anypoint Platform provides these steps to complete the upgrade to the xref:release-notes::platform/anypoint-november-release.adoc[November 2017 Anypoint Platform software release]:
 
@@ -44,7 +44,7 @@ Notes:
 * If you do not perform the grouping step, you may find extraneous API projects and a degraded platform experience for consumers.
 * After you add one or more APIs to an API group (New API Name in the API Grouping screen), you cannot ungroup the APIs. However you can change the group for each API individually to a different API group, by changing an API name or API version name.
 
-== To Group your APIs
+== Group Your APIs
 
 image::group-apis-part-crowd-ugprade.png[]
 
@@ -67,7 +67,7 @@ Note: If you have two or more identical version names in one API group for examp
 NOTE: Avoid storing the environment name in the API Name or Version Name if possible. After the upgrade, classify your APIs to the appropriate environment from the new API Manager.
 
 
-== To Request Your Platform Upgrade
+== Request a Platform Upgrade
 
 image::schedule-upgrade-button-crowd-self-service-portal.png[]
 
@@ -77,11 +77,11 @@ During this stage, API design projects and API portals are moved into their appr
 
 After this process completes, the user who scheduled the upgrade receives an email confirming a successful upgrade. In case MuleSoft encounters issues, MuleSoft automatically rolls back an upgraded account to its previous experience. You can contact MuleSoft Customer Support with any questions on resolving these errors.
 
-== Post-Upgrade: To Classify APIs into Environments
+== Post-Upgrade: Classify APIs into Environments
 
 After the upgrade, all APIs are listed in an environment called the Unclassified environment. From here, you can classify APIs into your appropriate environments. 
 
-For the environments you classify APIs into, there is a new access control which is explained here: xref:2.x@api-manager::environment-permission-task.adoc[To Grant Permission to Access Environments]. Existing API Manager roles/permissions continue to work in the Unclassified environment, and the APIs section in Access Management is applicable to unclassified APIs. 
+For the environments you classify APIs into, there is a new access control which is explained here: xref:2.x@api-manager::environment-permission-task.adoc[Grant Permission to Access Environments]. Existing API Manager roles/permissions continue to work in the Unclassified environment, and the APIs section in Access Management is applicable to unclassified APIs. 
 
 Even though API Manager supports tracking APIs by both organization and environment credentials, MuleSoft recommends using environment credentials as the permissions associated to them are more restrictive. But, you need to restart Mule Runtime after changing credentials, which can cause downtime.
 
@@ -101,7 +101,7 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 *What is the API grouping step about?* 
 
-Group your APIs so they are organized on one or multiple API portals. Group API versions of the same API and that share the same specification standard (e.g. WSDL, RAML). That group will share one portal page in the new Exchange. If you have multiple versions in the API, click the checkbox in the grouping popup to select the portal and associated RAML to be the master portal for the API. In the new Exchange, the spec for any version will be accessible for download for your API consumers.
+Group your APIs so they are organized on one or multiple API portals. Group API versions of the same API and that share the same specification standard (for example WSDL, RAML). Each group shares a single portal page in https://www.mulesoft.com/exchange/[Exchange]. If you have multiple versions in the API, click the checkbox in the grouping popup to select the portal and associated RAML to be the master portal for the API. In Exchange, the specification for any version on your API can be downloaded for your API consumers.
 
 *Is there any downtime?*
 
@@ -113,11 +113,11 @@ Yes, API policies remain in effect during the upgrade. You should not have to ch
 
 *How do I cancel my upgrade?*
 
-After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email will be sent. For help, e-mail crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
+After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email is sent. For help, email crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
 
 *How can I test the upgrade before scheduling the upgrade for my Anypoint org?*
 
-Our general recommendation is to create a trial account. This will be created as an upgraded account. Therefore, request your Customer Success Manager to convert the account to pre-upgrade with self-service upgrade scheduling for the trial account. Create dummy APIs for your testing purposes. Schedule an upgrade for the trial account using the instructions you will see on login after the trial account is converted to "pre-Crowd".
+Our general recommendation is to create a trial account. This will be created as an upgraded account. Therefore, request your Customer Success Manager to convert the account to pre-upgrade with self-service upgrade scheduling for the trial account. Create dummy APIs for your testing purposes. Schedule an upgrade for the trial account using the instructions you will see when logging in after the trial account is converted to "pre-Crowd".
 
 *Who should I contact for questions during the process?*
 
@@ -125,7 +125,7 @@ Open a case in the https://support.mulesoft.com[support portal].
 
 *After the upgrade, how does API usability change?*
 
-After the upgrade is complete, APIs stored in API Manager before the upgrade will have been moved as follows:
+After the upgrade is complete, APIs stored in API Manager before the upgrade are moved as follows:
 
 [%header,cols="35a,25a,40a"]
 |===
@@ -288,7 +288,7 @@ image::platform/upgrade-cicd-architecture.png[CI/CD architecture diagram]
 
 When working with large teams and multiple applications, the manual process for testing and deployment is challenging and teams should consider using a Continuous Integration and Deployment server like Jenkins.
 
-=== About Continuous Integration
+=== Continuous Integration
 
 The need for continuous integration (CI) for a project is very important. By using Maven as your build tool, you can create a build that gets triggered on every project change, and run all its unit and functional tests automatically.
 
@@ -308,7 +308,7 @@ A continuous integration system:
 * Displays the results of each build.
 * Deploys passing builds to production.
 
-=== To Prepare Applications for a CI/CD Server
+=== Prepare Applications for a CI/CD Server
 
 . Use a source code repository, such as GitHub or BitBucket.
 . Add the following configurations to each Maven pom.xml of each application:
