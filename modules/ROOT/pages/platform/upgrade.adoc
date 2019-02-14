@@ -46,6 +46,8 @@ Notes:
 
 == To Group your APIs
 
+image::Group APIs Part Crowd Ugprade.png[]
+
 *Note:* Read the previous <<To Complete Upgrade to November Release>> and <<Why Group your APIs?>> for vital roll back and business group information.
 
 We recommend completing the grouping of your APIs before scheduling your upgrade to remove the name of the environment (dev, stg, etc.), and clean up API names or versions. After the upgrade, you can promote or "classify" an API version into an environment.
