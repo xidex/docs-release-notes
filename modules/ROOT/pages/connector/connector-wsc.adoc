@@ -2,20 +2,48 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, WSC, connector, release notes, Web Service, Consumer, SOAP
 
-*December 2018*
+== 1.3.0
+
+*February 11, 2019*
+
+=== New Features and Enhancements
+
+* Able to configure encryption algorithms. (MULE-16099, MULE-16099)
+* Able to configure signature algorithm. (MULE-16100, MULE-11299)
+* Able to configure which parts of the request should be signed or encrypted. (MULE-16094)
+* New web service consumer connector icon. (MULE-16376)
+
+=== Fixed Issues
+
+* Expose HTTP status code. (MULE-16333)
+* Fixed issue that caused NPE when a SOAP attachment didn't include a MIME type. (MULE-16441)
+* Fixed issue that cause the execution of MUnit test to hang if a HTTP:CONNECTIVITY error is thrown. (MULE-16221)
+
+== 1.2.4
+
+*January 29, 2019*
+
+=== Fixed Issues
+
+* Update net.sf.Saxon to 9.9.1-1. (MULE-16393)
+
+== 1.2.3
+
+*January 25, 2019*
+
+=== Fixed Issues
+
+* Fixed issue that caused XML Schema choice Element not being handled. (MULE-16235)
 
 == 1.2.2
 
-*Dec 20, 2018*
+*December 20, 2018*
 
 === Fixed Issues
 
 * Fixed issue when parsing a WSDL that imports another WSDL.  (MULE-16231)
 * Fixed issue that caused NPE when configuring invalid headers to the consume operation. (MULE-16177)
-
-*November 2018*
 
 == 1.2.1
 
@@ -26,11 +54,9 @@ endif::[]
 * Fixed issue when resolving metadata of a WSDL that contains multiple operations with the same name for different ports.  (MULE-15988)
 * Fixed issue when parsing embedded Base64 attachments. (MULE-15790)
 
-*October 2018*
-
 == 1.2.0
 
-*Oct 29, 2018*
+*October 29, 2018*
 
 === New Features and Enhancements
 
@@ -43,7 +69,7 @@ and DataSense.
 
 === Fixed Issues
 
-* WSC headers metadata is being badly generated.(MULE-15922)
+* WSC headers metadata is being badly generated. (MULE-15922)
 * Improve the WSC value provider performance. (MULE-15885)
 * WSC should allow timeout configuration for default HTTP config. (MULE-15844)
 * Make WSC take advantage of the metadata cache. (MULE-15551)
@@ -51,11 +77,9 @@ and DataSense.
 * Upgrade Guava to 25.1. (MULE-15079)
 * WSC cannot load WSDL files inside JAR files. (MULE-14996)
 
-*March 2018*
-
 == 1.1.1
 
-*Mar 26, 2018*
+*March 26, 2018*
 
 === Known Limitations and Workarounds
 
@@ -67,7 +91,7 @@ and DataSense.
 
 == 1.1.0
 
-*Jan 19, 2018*
+*January 19, 2018*
 
 === New Features and Enhancements
 
@@ -89,10 +113,10 @@ Mule 4.1
 === Fixed Issues
 
 * WSC Connector exports internal classes. (MULE-14445)
-* Upgrade to CXF 3.2.1. ((MULE-14060)
+* Upgrade to CXF 3.2.1. (MULE-14060)
 * Correct event is not used when running with custom HTTP transport config. (MULE-14388)
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
