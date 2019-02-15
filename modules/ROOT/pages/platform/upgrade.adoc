@@ -48,7 +48,7 @@ Notes:
 
 image::group-apis-part-crowd-ugprade.png[]
 
-*Note:* Read the previous <<To Complete Upgrade to November Release>> and <<Why Group your APIs?>> for vital roll back and business group information.
+*Note:* Read the previous <<Complete an Upgrade to the November Release>> and <<Why Group your APIs?>> for vital roll back and business group information.
 
 We recommend completing the grouping of your APIs before scheduling your upgrade to remove the name of the environment (dev, stg, etc.), and clean up API names or versions. After the upgrade, you can promote or "classify" an API version into an environment.
 
@@ -65,7 +65,6 @@ We recommend completing the grouping of your APIs before scheduling your upgrade
 Note: If you have two or more identical version names in one API group for example, two versions named "v1" in an API group, you can distinguish them after the upgrade by the Exchange asset ID. The Exchange asset versions share the major number (1.x.x) but differ in the patch number (1.0.0 and 1.0.1). The latest is the one that has the "Select RAML" checkbox checked in the grouping step, otherwise a version's creation date determines the numbering.
 +
 NOTE: Avoid storing the environment name in the API Name or Version Name if possible. After the upgrade, classify your APIs to the appropriate environment from the new API Manager.
-
 
 == Request a Platform Upgrade
 
@@ -107,9 +106,9 @@ Group your APIs so they are organized on one or multiple API portals. Group API 
 
 There is no downtime during the API grouping or the automated migration. We do, however, advise not to use API Manager during the upgrade process to prevent any data inconsistency. After the upgrade, classification of APIs into environments may cause downtime due to proxy restart.
 
-*Do API policies, client IDs and secrets remain in effect during the upgrade?*
+*Do API policies, client IDs, and secrets remain in effect during the upgrade?*
 
-Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-prem or cloud.
+Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-premies or in the cloud. After the upgrade, it's not required to change those properties, existing ones will continue to work. Regardless of the deployment target, you need to provide a clientID and clientSecret.
 
 *How do I cancel my upgrade?*
 
@@ -122,6 +121,10 @@ Our general recommendation is to create a trial account. This will be created as
 *Who should I contact for questions during the process?*
 
 Open a case in the https://support.mulesoft.com[support portal].
+
+*Do I need to start using environment credentials for my APIs?*
+
+It's optional to switch to environment clientID and clientSecret instead of org level credentials.
 
 *After the upgrade, how does API usability change?*
 
