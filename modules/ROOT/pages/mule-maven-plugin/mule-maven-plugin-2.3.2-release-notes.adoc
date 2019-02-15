@@ -6,7 +6,7 @@ endif::[]
 [WARNING]
 This release breaks backward compatibility on the deployment configuration section.
 It follows the same configuration as the 3.x version of the plugin. +
-Check this xref:mule-runtime::mmp-deployment-concept.adoc[section] to make the proper changes.
+Check this xref:3.9@mule-runtime::mule-maven-plugin.adoc[section] to make the proper changes.
 
 This new release was focused on fixing bugs.
 
