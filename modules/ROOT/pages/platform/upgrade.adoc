@@ -109,7 +109,7 @@ There is no downtime during the API grouping or the automated migration. We do, 
 
 *Do API policies, client IDs and secrets remain in effect during the upgrade?*
 
-Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-prem or cloud.
+Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-prem or cloud. After the upgrade it's not required to change those properties, existing ones will continue to work. Regardless of the deployment target, you need to provide clientID and clientSecret.
 
 *How do I cancel my upgrade?*
 
@@ -122,6 +122,10 @@ Our general recommendation is to create a trial account. This will be created as
 *Who should I contact for questions during the process?*
 
 Open a case in the https://support.mulesoft.com[support portal].
+
+*Do I need to start using environment credentials for my APIs?*
+
+It's optional to switch to environment clientID and clientSecret instead of org level credentials.
 
 *After the upgrade, how does API usability change?*
 
