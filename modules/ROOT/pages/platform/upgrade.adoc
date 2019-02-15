@@ -66,7 +66,6 @@ Note: If you have two or more identical version names in one API group for examp
 +
 NOTE: Avoid storing the environment name in the API Name or Version Name if possible. After the upgrade, classify your APIs to the appropriate environment from the new API Manager.
 
-
 == Request a Platform Upgrade
 
 image::schedule-upgrade-button-crowd-self-service-portal.png[]
@@ -107,9 +106,9 @@ Group your APIs so they are organized on one or multiple API portals. Group API 
 
 There is no downtime during the API grouping or the automated migration. We do, however, advise not to use API Manager during the upgrade process to prevent any data inconsistency. After the upgrade, classification of APIs into environments may cause downtime due to proxy restart.
 
-*Do API policies, client IDs and secrets remain in effect during the upgrade?*
+*Do API policies, client IDs, and secrets remain in effect during the upgrade?*
 
-Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-prem or cloud. After the upgrade it's not required to change those properties, existing ones will continue to work. Regardless of the deployment target, you need to provide clientID and clientSecret.
+Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-premies or in the cloud. After the upgrade, it's not required to change those properties, existing ones will continue to work. Regardless of the deployment target, you need to provide a clientID and clientSecret.
 
 *How do I cancel my upgrade?*
 
