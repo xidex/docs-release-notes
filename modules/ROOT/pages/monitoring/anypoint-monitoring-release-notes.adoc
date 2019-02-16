@@ -9,8 +9,8 @@ This document describes any new features and enhancements, known limitations, is
 
 === February 16, 2018
 
-* You can now monitor Web Services connectors in the *Connectors* tab.
-* Custom metrics can now be visualized in real time using the built-in *Custom metrics* dashboard.    
+* You can now monitor Web Services connectors in the *Connectors* tab. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors].
+* Custom metrics can now be visualized in real time using the built-in *Custom metrics* dashboard. For more information, see xref:monitoring::anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].  
 
 === February 7, 2019
 
