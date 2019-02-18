@@ -1,0 +1,30 @@
+mule-maven-plugin-3.2.6-release-notes.adoc= Mule Maven Plugin 3.2.6 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Mule Maven Plugin 3.2.6 is mainly focused in fixing bugs when packaging the application.
+
+== Hardware and Software Requirements
+
+Hardware and Software Requirements
+
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+* Java 8
+* Maven 3.3.3, 3.3.9, 3.5.0
+
+== Compatibility
+
+* Mule 4.x
+* Anypoint Studio 7.x
+
+== Fixed Issues
+
+* MMP-441 - When using (transitive) dependencies not available in project repositories packaging fails
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].
