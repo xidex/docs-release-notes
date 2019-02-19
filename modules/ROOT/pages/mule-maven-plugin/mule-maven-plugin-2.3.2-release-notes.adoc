@@ -1,0 +1,42 @@
+= Mule Maven Plugin 2.3.2 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+[WARNING]
+This release breaks backward compatibility on the deployment configuration section.
+It follows the same configuration as the 3.x version of the plugin. +
+Check this xref:3.9@mule-runtime::mule-maven-plugin.adoc[section] to make the proper changes.
+
+This new release was focused on fixing bugs.
+
+== Hardware and Software Requirements
+
+Hardware and Software Requirements
+
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+* Java 8,7
+* Maven 3.3.3, 3.3.9, 3.5.0
+
+== Compatibility
+
+* Mule 3.x
+* Anypoint Studio 6.x
+
+== Features and Functionality
+
+* MMP-456 - Add `skipVerification` property to platform deployers
+
+== Fixed Issues
+
+* MMP-393 - Null Pointer Exception when deploying to CloudHub business group
+* MMP-435 - If app deployed to RF failed to start, deployment verification hangs
+* MMP-439 - Can't find Business Group in runtime fabric deployment
+* MMP-451 - Check correct status when redeploying the app
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].

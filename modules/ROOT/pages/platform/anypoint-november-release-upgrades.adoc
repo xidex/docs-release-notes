@@ -1,18 +1,11 @@
-= Auto-Upgrade Notice for Anypoint Platform (November Release)
+= Upgrade Notice for Anypoint Platform (November Release)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The November release includes many improvements across API Designer, API Portal, and API Manager.
+The November (Crowd) release includes many improvements across API Designer, API Portal, and API Manager.
 
-MuleSoft is _automatically_ upgrading customers with twenty (20) or fewer APIs and customers in Crowd (July release) unless your platform administrator opts out (<<opt_out>>). The automatic upgrades occur on a rolling schedule. A self-service upgrade process is available for other customers.
-
-*Note:* After the upgrade and before classifying your APIs, thoroughly test your APIs, Notebooks, and Portals. After APIs are classified, your organization cannot be rolled back in the event you encounter upgrade related issues.
-
-The upgrade schedule depends on the number of APIs in your organization:
-
-* April 30th - May 1st: Customers with twenty (20) or fewer APIs and customers in Crowd (July release) will be automatically upgraded.
-* All other customers will be offered self-service experience to migrate.
+Organization administrators must schedule the upgrade through the green banner seen when log in. If you are already upgraded, you will not see this banner.
 
 == What’s in the Release?
 
@@ -97,9 +90,9 @@ organizations/{organizationId}/public/*
 
 == Learn More Here
 
-* link:/api-manager/manage-exchange-api-task[Manage an API from Exchange]
-* link:/api-manager/environment-permission-task[Grant Permission to Access Environments]
-* link:/api-manager/classify-api-task[Classify an API]
+* xref:api-manager::manage-exchange-api-task.adoc[Manage an API from Exchange]
+* xref:api-manager::environment-permission-task.adoc[Grant Permission to Access Environments]
+* xref:api-manager::classify-api-task.adoc[Classify an API]
 
 [[opt_out]]
 == Want to Opt Out?

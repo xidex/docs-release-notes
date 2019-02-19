@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*August 24, 2017*
+*August 24, 2018*
 
 == New Features and Enhancements
 
@@ -40,6 +40,7 @@ Before upgrading, you must backup your system as described in xref:2.0@private-c
 | Infrastructure providers |
 * VMWare
 * Bare Metal
+* AWS
 | Compatible browsers when running the installer |
 * Firefox (latest version)
 * Chrome (latest version)

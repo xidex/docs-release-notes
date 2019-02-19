@@ -1,0 +1,30 @@
+= APIkit for SOAP 1.1.4 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This version of APIkit for SOAP includes bug fixes.
+
+For Anypoint Studio, this version is distributed as Anypoint APIkit SOAP Extension 1.2.2.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|===
+
+== Fixed in This Release
+
+* Error message improved when selecting an invalid WSDL file.
+* XSD and WSDL files are not being imported when creating a Mule project using WSDL.
+* Blank spaces in XSD folder names are created with %20 instead of blank spaces.
+* SoapKit Tooling fail in Studio 7.2.0.
+* Avoid Connection Server Error when SOAP Version is wrong.
+* SOAPKit tooling error in Studio Console when scaffolding a WSDL file.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].

@@ -1,0 +1,33 @@
+= Spike Control Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, spike control, policy, release notes
+
+== 1.1.1
+
+*Mar 16, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
+
+=== Fixed Issues
+
+* Fixed error causing Rate Limit being rejected from the scheduler on high traffic bursts.
+
+== 1.1.0
+
+*Jan 25, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+== See Also
+
+* xref:api-manager::spike-control-reference.adoc[Spike Control]

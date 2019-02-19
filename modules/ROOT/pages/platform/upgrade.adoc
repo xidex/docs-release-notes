@@ -1,7 +1,8 @@
 = Anypoint Platform Upgrade to Latest Software Guide
 ifndef::env-site,env-github[]
-include::_attributes.adoc[]
+include::_attributes.adoc[] 
 endif::[]
+:imagesdir: ../assets/images/ 
 
 [IMPORTANT]
 ====
@@ -10,9 +11,9 @@ The upgrade to the November 2017 or "Crowd" release changes the existing Anypoin
 *Note:* After the upgrade and before classifying your APIs into environments, test your APIs, Notebooks, and Portals. After APIs are classified, your organization cannot roll back if you encounter upgrade related issues. Portal URLs are updated, so update these links accordingly.
 ====
 
-== To Complete Upgrade to November Release
+== Complete an Upgrade to the November Release
 
-Anypoint Platform provides these steps to complete the upgrade to the November 2017 Anypoint Platform software release:
+Anypoint Platform provides these steps to complete the upgrade to the xref:release-notes::platform/anypoint-november-release.adoc[November 2017 Anypoint Platform software release]:
 
 . Group your APIs. (Optional, recommended)
 . Request a time to upgrade using the green banner that lets you access the self-service upgrade portal. Only the organization owner can schedule the upgrade. If you do not see a banner, contact your Customer Success Manager to coordinate steps to upgrade.
@@ -22,47 +23,52 @@ NOTE: Before the classification step, test your APIs, Notebooks, and Portals. Af
 
 == Why Group your APIs?
 
-Group APIs by name and version only to simplify the new platform experience for your API developers and consumers. 
+Create a group of API versions in API Manager before the upgrade to provide access for your API developers and consumers to the master portal of your API, and for ease of use of environments to which you can deploy your APIs.
 
-Prior to the release, you may have stored the name of the environment in the name of the API. The new version of the platform supports moving APIs between environments, so you won't need the name of the environment in the API name or version.
+The new version of the platform supports moving APIs between environments, so you won't need the name of the environment in the API name or version. Prior to the release, you may have stored the name of the environment in the name of the API. 
 
-For example, you may have had "Staging" or "Prod" in the name to indicate use in those environments:
+For example, you may have had "Staging" or "Prod" in the API name or version to indicate use in those environments:
 
-_Orders API - v1 - Dev +
+_Orders API - v1 - Dev_ +
 _Orders API - v2 - Staging_ +
 _Orders API - v1 Prod - v1_
 
-By removing any reference to environments like "Dev" or "Stg" or "Prod" before the upgrade, you avoid having to change the API or version names as you promote the API instances through environments using API Manager in the post-upgrade platform experience.
+By removing any reference to environments like "Dev" or "Stg" or "Prod" before the upgrade, you avoid having to change the API or version names as you promote the API instances through environments after upgrading.
 
 *Note:* If you use Business Groups instead of environments to group your APIs, API grouping is not needed or recommended.
 
-After the upgrade, you will be able to see the *original API names* so you know which to deploy to each of your environments through API Manager. API autodiscovery and API Manager platform APIs have changed, so be sure to review them below before creating new APIs. APIs created before upgrade continue to work with the old autodiscovery.
+You will be able to see the *original API names* in API Manager after the upgrade. Therefore, you will be able to easily account for any new names you created. API autodiscovery and API Manager platform APIs have changed, so be sure to review them below before creating new APIs. APIs created before upgrade continue to work with the old autodiscovery XML references.
 
 Notes:
 
-* If you do not perform the grouping step, you may find duplicate projects or a degraded platform experience.
-* After you add one or more APIs to an API group (New API Name in the API Grouping screen), you can't ungroup the APIs. However you can change the group for each API individually to a different it to a different API group, by changing an API name or API version name.
+* If you do not perform the grouping step, you may find extraneous API projects and a degraded platform experience for consumers.
+* After you add one or more APIs to an API group (New API Name in the API Grouping screen), you cannot ungroup the APIs. However you can change the group for each API individually to a different API group, by changing an API name or API version name.
 
-== To Group your APIs
+== Group Your APIs
 
-*Note:* Read the previous <<To Complete Upgrade to November Release>> and <<Why Group your APIs?>> for vital roll back and business group information.
+image::group-apis-part-crowd-ugprade.png[]
+
+*Note:* Read the previous <<Complete an Upgrade to the November Release>> and <<Why Group your APIs?>> for vital roll back and business group information.
 
 We recommend completing the grouping of your APIs before scheduling your upgrade to remove the name of the environment (dev, stg, etc.), and clean up API names or versions. After the upgrade, you can promote or "classify" an API version into an environment.
 
 . Log into Anypoint Platform and go to API Manager.
 . To the right of each API in API Manager you should see a message that reads Prepare To Group.
-. Click Prepare To Group to add an API to a new or existing group. In the popup, API Manager lists the Current API Name and Current API Version.
-. Click Edit to change the New API Name, New API Version, or to include or exclude your API portal.
+. Click Prepare To Group. In the popup, API Manager lists the Current API Name and Current API Version. Add an API to a new group by choosing an API name to use for all versions, or use an existing API name to add it to an existing group of API versions. The idea is that you select one portal to represent the API (i.e. a canonical version). However, consumers may download the specifications of any version in the group from the portal in the new Exchange.
+. Click Edit to change the New API Name, New API Version, or to include the API portal to represent the API in Exchange.
 +
-*Important*: Only one API portal can be migrated for a group of APIs.
+*Important*: Only one API portal can be migrated per group of APIs.
 +
 . Specify a New API Name. This can be any string of ASCII characters.
 . Specify a New API Version Name. This can be any string of ASCII characters.
 +
-NOTE: Do not store the environment name in the API Name or Version Name. After the upgrade, you can assign your APIs that reference the original names to the environments.
+Note: If you have two or more identical version names in one API group for example, two versions named "v1" in an API group, you can distinguish them after the upgrade by the Exchange asset ID. The Exchange asset versions share the major number (1.x.x) but differ in the patch number (1.0.0 and 1.0.1). The latest is the one that has the "Select RAML" checkbox checked in the grouping step, otherwise a version's creation date determines the numbering.
++
+NOTE: Avoid storing the environment name in the API Name or Version Name if possible. After the upgrade, classify your APIs to the appropriate environment from the new API Manager.
 
+== Request a Platform Upgrade
 
-== To Request Your Platform Upgrade
+image::schedule-upgrade-button-crowd-self-service-portal.png[]
 
 The upgrade is triggered automatically at the time you schedule in the self-service portal. Access this portal from the green banner in the Anypoint Platform login. The estimated upgrade time is 15 minutes to upgrade 50 *API versions*.
 
@@ -70,11 +76,11 @@ During this stage, API design projects and API portals are moved into their appr
 
 After this process completes, the user who scheduled the upgrade receives an email confirming a successful upgrade. In case MuleSoft encounters issues, MuleSoft automatically rolls back an upgraded account to its previous experience. You can contact MuleSoft Customer Support with any questions on resolving these errors.
 
-== Post-Upgrade: To Classify APIs into Environments
+== Post-Upgrade: Classify APIs into Environments
 
 After the upgrade, all APIs are listed in an environment called the Unclassified environment. From here, you can classify APIs into your appropriate environments. 
 
-For the environments you classify APIs into, there is a new access control which is explained here: xref:2.x@api-manager::environment-permission-task.adoc[To Grant Permission to Access Environments]. Existing API Manager roles/permissions continue to work in the Unclassified environment, and the APIs section in Access Management is applicable to unclassified APIs. 
+For the environments you classify APIs into, there is a new access control which is explained here: xref:2.x@api-manager::environment-permission-task.adoc[Grant Permission to Access Environments]. Existing API Manager roles/permissions continue to work in the Unclassified environment, and the APIs section in Access Management is applicable to unclassified APIs. 
 
 Even though API Manager supports tracking APIs by both organization and environment credentials, MuleSoft recommends using environment credentials as the permissions associated to them are more restrictive. But, you need to restart Mule Runtime after changing credentials, which can cause downtime.
 
@@ -92,25 +98,37 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 == FAQ on Upgrades
 
+*What is the API grouping step about?* 
+
+Group your APIs so they are organized on one or multiple API portals. Group API versions of the same API and that share the same specification standard (for example WSDL, RAML). Each group shares a single portal page in https://www.mulesoft.com/exchange/[Exchange]. If you have multiple versions in the API, click the checkbox in the grouping popup to select the portal and associated RAML to be the master portal for the API. In Exchange, the specification for any version on your API can be downloaded for your API consumers.
+
 *Is there any downtime?*
 
 There is no downtime during the API grouping or the automated migration. We do, however, advise not to use API Manager during the upgrade process to prevent any data inconsistency. After the upgrade, classification of APIs into environments may cause downtime due to proxy restart.
 
+*Do API policies, client IDs, and secrets remain in effect during the upgrade?*
+
+Yes, API policies remain in effect during the upgrade. You should not have to change these settings whether on-premies or in the cloud. After the upgrade, it's not required to change those properties, existing ones will continue to work. Regardless of the deployment target, you need to provide a clientID and clientSecret.
+
 *How do I cancel my upgrade?*
 
-After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email will be sent. For help, e-mail crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
+After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email is sent. For help, email crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
 
 *How can I test the upgrade before scheduling the upgrade for my Anypoint org?*
 
-Our general recommendation is to create a trial account. This will be created as an upgraded account. Therefore, request your Customer Success Manager to convert the account to pre-upgrade with self-service upgrade scheduling for the trial account. Create dummy APIs for your testing purposes. Schedule an upgrade for the trial account using the instructions you will see on login after the trial account is converted to "pre-Crowd".
+Our general recommendation is to create a trial account. This will be created as an upgraded account. Therefore, request your Customer Success Manager to convert the account to pre-upgrade with self-service upgrade scheduling for the trial account. Create dummy APIs for your testing purposes. Schedule an upgrade for the trial account using the instructions you will see when logging in after the trial account is converted to "pre-Crowd".
 
 *Who should I contact for questions during the process?*
 
 Open a case in the https://support.mulesoft.com[support portal].
 
+*Do I need to start using environment credentials for my APIs?*
+
+It's optional to switch to environment clientID and clientSecret instead of org level credentials.
+
 *After the upgrade, how does API usability change?*
 
-After the upgrade is complete, APIs stored in API Manager before the upgrade will have been moved as follows:
+After the upgrade is complete, APIs stored in API Manager before the upgrade are moved as follows:
 
 [%header,cols="35a,25a,40a"]
 |===
@@ -129,7 +147,7 @@ API Proxies
 |APIs stored in the API Manager move to the Unclassified Environment. API providers need to classify each API to the appropriate environment.
 |===
 
-*Can I bulk classify APIs into a specific environment?*
+*Can I bulk classify APIs into a specific environment after the upgrade?*
 
 No.
 
@@ -149,14 +167,30 @@ Yes. If you have problems with the new experience of Anypoint Platform, you can 
 
 == New and Changed Features
 
-* All APIs created using pre-upgrade version of API Manager appear in the Unclassified Environment after the upgrade
-* APIs in the Unclassified environment can be classified into the corresponding environment following this process.
-** Configure Autodiscovery element for new APIs after the upgrade in the following way (retrieve all values from the API and the UI):
+API Manager API (v2.x) leverages environments and API Autodiscovery.
+
+=== Environments and Permissions
+
+* All APIs created using the pre-upgrade version of API Manager appear in the "Unclassified" Environment after the upgrade.
+* Exchange: Assign a user to at least the Exchange Viewers role to allow the user access to all Exchange assets within the business group in which you have assigned the permission. The Portals Viewer role has been deprecated.
+* APIs in the Unclassified environment can be classified into their corresponding environment. Once an API is classified and is then promoted, it results in a *new* API instance.
+* The user permissions model is now action-based and set for users at the environment level, which is aligned to the rest of the Management Center. Administrators should set environment-level permissions for all users after the upgrade. 
+* Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
+
+=== Autodiscovery for New API Instances
+
+Auto-discovery changes apply to new API instances of existing or new APIs. Autodiscovery for existing API instances remains unchanged and you can leave the configuration as is.
+
+* To configure the Autodiscovery element for new API instances, retrieve the necessary values from the API and the UI:
 ** `name=”groupId:{{groupId}}:assetId:{{assetId}}”`
 ** `version=”{{version}}:{{instanceId}}”`
+
+* See xref:2.x@api-manager::api-auto-discovery-new-concept.adoc[About API Autodiscovery]
 ** Auto-discovery changes only apply to the newly created APIs and its instances The existing APIs remain unaffected even after the upgrade. New auto-discovery changes only apply to the newly created APIs and its instances.
 * API Manager API (v2.x) is available to leverage all new API Manager capabilities.
-* User permissions model has changed to be action-based at the environment level, which is aligned to the rest of the management center. After the upgrade, administrators should set environment-level permissions for all users. Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
+* User permissions model has changed to be action-based at the environment level. (See xref:2.x@api-manager::environment-permission-task.adoc[To Grant Permission to Access Environments].) +
+NOTE: Permissions are now aligned with the rest of the Management Center. After the upgrade, administrators should set environment-level permissions for all users. Default environment-level admin roles are available. The permission model in the Unclassified environment works in the same way as the API Manager permission model worked before the upgrade. Assigned permissions for APIs in the Unclassified environment also remain untouched during the upgrade process.
+
 
 === API Designer
 
@@ -176,10 +210,10 @@ Yes. If you have problems with the new experience of Anypoint Platform, you can 
 
 === APIs in API Manager - Post-Upgrade
 
-* APIs utilizing an autodiscovery element now use API Manager instead.
+* APIs utilizing an autodiscovery element now leverage API Manager.
 * API promotion to environments is a new feature that you can introduce as a step in your CI/CD pipeline.
 * Because the November release upgrade moves all portals and RAMLs, the old API cannot be used to modify, create, or delete them after the upgrade.
-* The pre-upgrade API Manager API can be used with APIs in the Unclassified environment with some restrictions (see below). There are also new environment-aware APIs, which also support the Unclassified environment, that you may start using (see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/api-manager-api/1.0.2/console/summary/[new API Manager API portal] and the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/proxies-xapi/1.0.1/[Proxies xAPI portal]).
+* The pre-upgrade API Manager API can be used with APIs in the Unclassified environment with some restrictions (see below). There are also new environment-aware APIs, which also support the Unclassified environment, that you may start using (see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/api-platform-api/[new API Manager API portal] and the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/proxies-xapi/1.0.1/[Proxies xAPI portal]).
 ** The following resources for managing RAMLs return 400. Use Design Center APIs instead.
 +
 [source,text,linenums]
@@ -205,7 +239,7 @@ organizations/{organizationId}/public/*
 
 The Anypoint Platform APIs section of this doc has links to the API documentation so you can update your pipeline per any of the below criteria:
 
-* CI/CD pipelines need to be reconstructed to accomodate the environments you plan to use for your APIs.
+* CI/CD pipelines need to be reconstructed to accomodate the environments you plan to use for your APIs. See the   https://blogs.mulesoft.com/dev/anypoint-platform-dev/how-to-build-continuous-integration-deployment-api-lifecycle/[How to build your CI/CD pipeline for the full API lifecycle] blog post.
 * If you call API Manager APIs to apply API management or policies, review the API Manager API and
 refactor your pipeline as needed.
 * If publishing to Exchange, review the new Exchange Maven Facade API and refactor as needed.
@@ -257,7 +291,7 @@ image::platform/upgrade-cicd-architecture.png[CI/CD architecture diagram]
 
 When working with large teams and multiple applications, the manual process for testing and deployment is challenging and teams should consider using a Continuous Integration and Deployment server like Jenkins.
 
-=== About Continuous Integration
+=== Continuous Integration
 
 The need for continuous integration (CI) for a project is very important. By using Maven as your build tool, you can create a build that gets triggered on every project change, and run all its unit and functional tests automatically.
 
@@ -277,7 +311,7 @@ A continuous integration system:
 * Displays the results of each build.
 * Deploys passing builds to production.
 
-=== To Prepare Applications for a CI/CD Server
+=== Prepare Applications for a CI/CD Server
 
 . Use a source code repository, such as GitHub or BitBucket.
 . Add the following configurations to each Maven pom.xml of each application:
@@ -289,8 +323,7 @@ A continuous integration system:
 == See Also
 
 * xref:2.x@api-manager::index.adoc[API Manager 2.x]
+* xref:2.x@api-manager::api-auto-discovery-new-concept.adoc[About API Autodiscovery]
 * xref:runtime-manager::runtime-manager-agent.adoc[Runtime Manager Agent]
-* xref:1.3@munit::index.adoc[MUnit]
-* xref:3.9@mule-runtime::mule-maven-plugin.adoc[Mule Maven Plugin]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

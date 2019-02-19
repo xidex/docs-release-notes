@@ -7,7 +7,7 @@ endif::[]
 
 _Select_
 
-The Microsoft Dynamics NAV Connector enables Mule applications to interact with the Microsoft Dynamics NAV Web Services versions 2013 R2, 2015, 2016.
+The Microsoft Dynamics NAV Connector enables Mule applications to interact with the Microsoft Dynamics NAV Web Services versions 2013 R2, 2015, 2016, 2017.
 
 == 2.0.0
 

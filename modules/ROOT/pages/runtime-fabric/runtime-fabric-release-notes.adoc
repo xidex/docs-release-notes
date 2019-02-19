@@ -6,7 +6,68 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
-== 1.1.54 - September 19, 2018
+== 1.2.0 - February 7, 2019
+
+This release includes the following fixes and enhancements:
+
+* Added: Support for RHEL/CentOS v7.6.
+* Added: HTTPS-based connectivity to Anypoint control plane. (Replaces TCP-based connectivity).
+* Added: JVM memory heap monitoring in Ops Center 'Applications' dashboard.
+* Added: Java version upgraded to 8u191.
+* Fixed: User-specified HTTP proxy configuration is retained across updates.
+* Fixed: Application shows as Recovering instead of Updating after unexpected restart in Application Manager.
+
+== 1.1.244 - January 16, 2019
+
+This release includes the following fixes:
+
+* Fixed: Changing settings for Inbound Traffic failed in some cases.
+
+
+== 1.1.233 - January 11, 2019
+
+This release includes the following enhancement:
+
+* Added: Proactive renewal of certificate used to connect to control plane.
+* Added: Changes to share Runtime Fabric with business groups and specify resource limits with environments.
+
+== 1.1.178 - December 12, 2018
+
+This release includes the following fixes:
+
+* Fixed: Removed a hardcoded dependency with a component used to collect metrics for the Ops Center. Note: newer builds of the Runtime Fabric installation package will require this update.
+
+== 1.1.168 - November 30, 2018
+
+This release includes the following fix:
+
+* Fixed: Runtime Fabric unable to register to control plane if HTTP proxy is configured.
+
+== 1.1.154 - November 14, 2018
+
+This release includes the following fixes:
+
+* Fixed: Runtime Fabric reports worker node count incorrectly in some cases.
+* Added: More detailed information on the root cause if an installation fails.
+* Fixed: Tokenization health probes occasionally reported unhealthy under high CPU load.
+
+== 1.1.100 - October 16, 2018
+
+This release includes the following fixes:
+
+* Fixed: Runtime Fabric reports disconnected status when leader is re-elected in some cases.
+* Fixed: Cluster status is not reported after connection to control plane is re-established.
+
+== 1.1.87 - October 5, 2018
+
+This release includes the following fixes:
+
+* Fixed: Unable to restart services if Runtime Fabric is offline for more than 12 hours.
+* Fixed: Removed sensitive resource URLs from log output.
+* Fixed: Side-channel test of connection to control plane when running via proxy.
+* Fixed: Increased time allowed for connecting to control plane during installation.
+
+== 1.1.55 - September 19, 2018
 
 This release includes the following fixes and enhancements:
 

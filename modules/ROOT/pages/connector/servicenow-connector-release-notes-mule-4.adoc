@@ -2,11 +2,38 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: servicenow, connector, release notes
 
-*March 2018*
+Support Category: Select
 
-_Select_
+== 6.2.2 
+
+*January 15, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.1.0 and later
+|ServiceNow |Eureka, Fuji, Geneva, Helsinki, Jakarta, and Istanbul
+|===
+
+=== Fixed in this Release
+
+* Fixed error in mapping on response of the connection.
+
+== 6.2.1 
+
+*November 9, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.1.0 and later
+|ServiceNow |Eureka, Fuji, Geneva, Helsinki, Jakarta, and Istanbul
+|===
+
+=== Fixed in this Release
+
+* Fixed thread leakage.
 
 == 6.2.0
 
@@ -69,4 +96,4 @@ The ServiceNow connector 6.0.0 is compatible with:
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

@@ -2,20 +2,197 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, salesforce, connector
 
-*September 2018*
+Support Category: Select
 
-_Select_
+== 9.5.1
 
-== 9.4.0
+*February 14, 2019*
 
-*September 24, 2018*
 [%header%autowidth.spread]
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Invalid Session ID and Reconnection Strategy works only after multiple invalid requests when this connector performs a concurrent query. Fixed by implementing a new CachedOauthUserPassConnectionProvider with keep-alive functionality.
+* GetSessionId was not returning the correct ID after the session was invalidated, because it was not throwing the correct exception. This was fixed by adding a call to the API, that returns a ConnectionException if the session ID is invalid
+* The operation "Create Content Version" was failing if the payload was of binary data type. This was fixed by checking the data type before casting to String, so no exception is thrown
+* Apex method call recognized an output field as a date if the return string has a similar format as Date. Methods in Apex come with a return type parameter which is now included in the condition which converts a string to a date type.
+* Invoking Apex REST was not reconnecting when a session expired. Fixed by properly handling exceptions thrown by the Apex API.
+* Fixed problem that occurred when attempting to create a new Content Version that had data as a Base64 format picture, it is not required to decode the Base64 string since the decoding is handled by the connector. 
++
+This also impacts SE-9518, this fix is deprecated. Users that have VersionData that is not Base64 must ensure that they convert it to Base64, for example: `VersionData:toBase64(payload)`
++
+In short, VersionData for the Version Content expects a Base64 format.
+
+== 9.5.0
+
+*February 1, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* The clearNullFields config parameter was not used properly and its functionality would have never worked. Fixed the way clearNullFields is handled and now it`s working as intended.
+* Fixed Salesforce Connector not reconnecting when a Bulk operation session expired. Fixed by changing the exception thrown in this case.
+* Retrieve record failure Bulk v2 not failing because of column delimiter. Fixed by adding handling for a column delimiter for the retrieve record failure Bulk v2.
+* Invalid Session ID and Reconnection Strategy works only after multiple invalid requests when the Mule connector performs a concurrent query. Fixed by implementing a new CachedBasicConnectionProvider with keep-alive functionality. 
+* The BasicConnectionProvider was deprecated because a PoolingConnectionProvider does not have sense in the context of Salesforce's way of handling multiple logins, which returns the same sessionId.
+* Username Password connection provider was improved by handling invalid connections currently in the pool, so before executing an operation, the connector ensures that the operation uses a valid connection.
+
+== 9.4.8
+
+*December 12, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue on the Replay Streaming Channel where the source stopped working and receiving messages after 48 hours. Fixed by handling the DISCONNECTED state of SalesforceBayeuxClient.
+
+== 9.4.7
+
+*December 7, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue on the Create operation that was not returning the DuplicateResults when there was a duplicate record in the Salesforce instance.
+Now if the "includeRecordDetails" header is specified, the operation returns the details about the duplicate entities.
+
+== 9.4.6
+
+*November 28, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue on Query operation where the connector was not able to reconnect after the session became invalid
+* The Query operation was not handling properly the exceptions thrown by the Salesforce API.
+
+== 9.4.5
+
+*November 14, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed security issues regarding libraries. 
+
+== 9.4.4
+
+*November 14, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue in the Read Metadata operation where the connector was unable to return picklist values.
+* Fixed the problem of error message mapping in the Create Bulk v2 operation.
+
+== 9.4.3
+
+*November 9, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue in the Create Batch Stream operation where the connector was not able to reconnect after the session became invalid.
+* Fixed an issue in the Query operations where the execution was stopping if the query was invalid. Now a proper error is raised.
+
+== 9.4.2
+
+*October 29, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Fixed mapping for DescribeSObject.
+
+== 9.4.1
+
+*October 8, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Added missing metadata types on Metadata operations.
+
+
+== 9.4.0
+
+*September 24, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
 |===
 
@@ -23,14 +200,49 @@ _Select_
 
 Added support for Salesforce V43.
 
-== 9.3.3
+== 9.3.5
 
-*September 19, 2018*
+*October 22, 2018*
+
 [%header%autowidth.spread]
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
+|===
+
+=== Fixed in this Release
+
+* Fixed an issue where the connector Attachments were not supporting base64 encoded body.
+* Fixed an issue on create ContentVersion object that was failing because the Content Data field was not serialized properly.
+* Fixed an issue for the Batch info list, Batch info, and Job info operations that were going into an infinite loop because they were defaulting to XML content type. Optional parameters were added so the user can specify the content type for the entity so that it will not fail any more.
+
+== 9.3.4
+
+*October 8, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
+|===
+
+=== Fixed in this Release
+
+* Added missing metadata types on Metadata operations.
+
+== 9.3.3
+
+*September 19, 2018*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -48,7 +260,7 @@ Added support for Salesforce V43.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -84,7 +296,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -101,7 +313,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0
 |===
 
@@ -145,7 +357,7 @@ The problem was solved by adding 4 new operations for create, update, upsert, an
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -161,7 +373,7 @@ The problem was solved by adding 4 new operations for create, update, upsert, an
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.1 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -189,7 +401,7 @@ In this version Salesforce Connector works correctly in EU.
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -221,7 +433,7 @@ Salesforce connector version 9.2.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -241,7 +453,7 @@ Salesforce connector version 9.1.1 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Anypoint Studio |7.1.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -271,7 +483,7 @@ Salesforce connector version 9.1.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.1.0
-|Anypoint Studio |Only works with Studio 7.0.0 and later
+|Anypoint Studio |7.0.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -301,12 +513,12 @@ Salesforce connector version 9.0.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 4.0.0 and later
-|Anypoint Studio |Only works with Studio 7.0.0 and later
+|Anypoint Studio |7.0.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0
 |===
 
 == See Also
 
-* xref:connectors::salesforce/salesforce-connector.adoc[Salesforce Connector]
+* xref:connectors::salesforce/salesforce-connector.adoc[Salesforce Connector Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

@@ -1,0 +1,28 @@
+= APIkit for SOAP 1.1.9 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This version of APIkit for SOAP includes bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|===
+
+== Issues Fixed in this Release
+
+
+* Fixed issue where APIKit was not propagating the variables and attributes set in the flow preventing to set a dynamic HTTP status code. +
+The status code is now reachable using the variable `protocolHeader`.
+* Fixed issue where the SOAP Router was not validating headers.
+
+
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].

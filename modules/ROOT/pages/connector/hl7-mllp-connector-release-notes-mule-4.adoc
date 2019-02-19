@@ -3,13 +3,86 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*September 2018*
-
-_Premium_
+Support Category: Premium
 
 The Mule HL7 MLLP connector provides connectivity and parsing functionality for MLLP messages.
 
 xref:connectors::hl7/hl7-mllp-connector.adoc[HL7 MLLP Connector Guide]
+
+== 2.1.0
+
+*February 11, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0.0 and later
+|===
+
+=== Features
+
+* Source configuration allows specifying a connection count, and limiting the number of simultaneous connections to the supplied value. If not configured, the default behavior is to allow any number of simultaneous connections.
+
+=== Fixed in this Release
+
+* Closing a connection to the source caused an empty message to be sent through the flow, generally resulting in an exception.
+
+== 2.0.4 
+
+*January 11, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0.0 and later
+|===
+
+=== Features
+
+* The start-of-block character is now configurable.
+
+=== Fixed in this Release
+
+* The end-of-block character was incorrectly marked as required. It is now optional.
+* Under certain scenarios, all messages received after the first one would fail, with the error message `Message does not start with 'MSH'`. This was fixed.
+
+== 2.0.3 
+
+*November 16, 2018*
+
+This update fixes an response issue, and adds the new *sendAndReceive* operation.
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Mule 4 HL7 MLLP Connector does not wait for a response after sending a message out. Added new operation sendAndReceive.
+
+== 2.0.2
+
+*October 1, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0.0 and later
+|===
+
+=== Fixed in this Release
+
+Depending on the way messages were sent to the connector, it would stop receiving requests after the first one. This was fixed.
 
 == 2.0.1
 
@@ -48,4 +121,4 @@ ACK like messages weren't flowing back to sender.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

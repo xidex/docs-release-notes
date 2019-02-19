@@ -1,0 +1,119 @@
+= Tokenization Service Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== January 12, 2019
+
+== Enhancements
+
+=== Response Msg Body Scanning Response Body Size Increased to 1 MB
+
+(MSG-6616) The maximum value for the *Response Msg Body Scanning* is 1 MB, and messages exceeding that limit are no longer rejected--they are simply not scanned.
+
+Previously, the limit for the response body was 512 KB, and messages exceeding that limit were rejected. You no longer have to disable this option to ensure messages larger than the limit aren't rejected.
+
+== Fixed Issues
+
+* MSG-6319: This issue can no longer occur, as the Anypoint Platform restricts builds to one simultaneous build per organization in the latest release.
+* MSG-6317: The issue where if the same user is editing the Secrets Group used for tokenization at the same time a Tokenization service `CREATE` is initiated, the editing session prematurely terminates is fixed.  
+* MSG-6315: This issue is fixed in this release. After the "Build and Deploy" button is clicked, the user is returned to the "Tokenization Services" status page which displays information on the operation.
+* MSG-6328: The issue where failure messages for tokenization requests did not come out at the `INFO` log level is fixed. Failure message for tokenization requests now come out at the `INFO` log level.
+
+== Known Issues and Workarounds
+
+This release contains the following known issues and workarounds.
+
+=== Tokenizer Stuck in APPLYING State
+
+(MSG-6733) In certain scenarios, the deployer is unable to move a deployment from the `APPLYING` state to the `FAILED` state for long periods of time, which causes the tokenization user interface to block all the action buttons. The user can't change or delete the service.
+
+Workaround: The user can call the API and set the deployment to `STOPPED` state using the following endpoint:
+
+\https://anypoint.mulesoft.com/tokenization/api/v1/organizations/{orgId}/environments/{envId}/service/{serviceId}?desiredStatus=STOPPED
+
+After this call the deployment either sets the state to `FAILED` or `STOPPED` and all the action buttons are enabled in the tokenization UI.
+
+=== Authorization Token Expires During Tokenization Service Table Building
+
+(MSG 6587) The Tokenization API uses the user's access token to perform `CREATE`, `UPDATE` and `REKEY` of the Tokenization service. These operations can sometimes take a very long time (especially when formats such as `email` and `printableASCII` are used). This may cause the user's access token to expire before the operation completes, resulting in a state of `FAILED`, `UPDATE_FAILED` or `REKEY_FAILED` when using the API, or `BUILD_FAILED` when using the UI. If the user logs out, the token becomes invalid.  
+
+Workaround: Re-login to the user interface, or get a new access token on the API, and try the operation again.
+
+=== Tokenization Service Enters into a FAILED state
+
+(MSG 6496) When updating an existing Tokenization service, if there is no space left in the Kubernetes cluster, the Tokenization service enters the `FAILED` state.
+
+If the Kubernetes cluster in Runtime Fabric is running low on memory or CPU, upgrading a Tokenization service (with no HA) fails. It also takes down the existing service and fails to bring it back to a running state.
+ 
+Workaround:
+
+* You can avoid this issue from happening in the first place if the initial deployment of the Tokenization service is done with a replica count of two or more. Additionally, make sure there is a minimum of one pod in a running state. 
+* You can resolve this issue by adding more memory or CPU to the Runtime Fabric cluster. 
+
+
+== November 17, 2018
+
+== New Feature: Tokenization Service
+
+The Tokenization service enables you to substitute a sensitive data element with a non-sensitive equivalent to provide data protection. For information about how to implement tokenization, see xref:anypoint-security::tokenization.adoc[Tokenization Service].
+
+== Known Limitations, Issues, and Workarounds
+
+The Tokenization service has the following limitations:
+
+* You can create only one table at a time.
+* Each Tokenization service must have its own dedicated Secrets Group.
+* Only Runtime Fabric 1.1.153 or later is supported.
+* 100 tuples per request maximum is supported. Set the maximum value in the JSON protection policy limit.
+
+=== Race Condition Occurs
+
+(MSG-6319) There is an issue when more than one Tokenization service `CREATE` is initiated at the same time. A race condition can occur where the deployment request is lost and the Tokenization service `CREATE` fails.
+
+Workaround: If the table fails to apply:
+
+. In the Tokenization Service list page, click *Edit*.
+. Click *Redeploy*.
++
+The VDP table is not rebuilt the second time--it only applies, and should take only 2-3 minutes.
+
+=== Tokenization Service Create is Stuck in Applying State
+
+(MSG-6285) When deploying a Tokenization Service CREATE request, it is possible for the Tokenization service `CREATE` to get stuck in the applying state. If the service is stuck in the applying state for > 10 minutes, this problem occurs.
+
+Workaround:
+
+. In the *Tokenization Service* list page, click *Edit*.
+. Click *Redeploy*. +
+The VDP table is not rebuilt the second time--it only applies, and should take only 2-3 minutes.
+
+=== Editing Session Terminates Prematurely
+
+(MSG-6317) If the same user is editing the Secrets Group used for tokenization at the same time a Tokenization service `CREATE` is initiated, the editing session prematurely terminates. Edits in that session, as well as the VDP table key in the Secrets Group will be saved.
+
+[NOTE]
+If a user different from the one initiating the Tokenization service is editing the Secrets Group, the Tokenization service `CREATE` will not be started, and the user is informed that the Secrets Group is out for edit.
+
+There are two different workarounds.
+
+Workaround 1: Check all browser tabs before starting the Tokenization service `CREATE` to make sure a single user doesn't edit the same Secrets Group that is also being used for tokenization.
+
+Workaround 2: Use a dedicated Secrets Group for use only by the Tokenization service.
+
+=== Status Displayed as None
+
+(MSG-6315) The Tokenization service `CREATE` does not navigate back to the Tokenization service list page after sending out a `Successful Deploy Request` message.
+
+When the user clicks *Deploy* they see a green box in the lower right corner saying *Request Successful* for 10 seconds. The status on this page continues to display *None*.  Depending on how many formats are included in the request, the Tokenization service can take from to 60 minutes to build and be applied. The status on this page doesn't change during this time. 
+
+Workaround: Click the back link to go back to the Tokenization Service list page. The status of the current deployment is displayed in gray text following the Tokenization Service name in the list.
+
+== Failure Messages not Included in the INFO Log Level
+
+(MSG-6328) Failure messages for tokenization requests do not come out at the `INFO` log level. There is a bug in the Tokenization service that prevents the related information for a failed tokenization request from being logged as expected. The sensitive data itself is logged.
+
+Workaround: While it is possible to raise the log level to `TRACE` to get all information about a request to be logged, it is not recommended, as it slows performance if there are significant numbers of transactions; and log filters are not practical. 
+
+[IMPORTANT]
+Don't raise the log level to `TRACE` in a production environment, as plain text in tokenization requests are logged at the `TRACE` level.

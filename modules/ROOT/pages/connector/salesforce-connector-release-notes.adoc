@@ -1,14 +1,79 @@
-= Salesforce Connector Release Notes
+= Salesforce Connector Release Notes for Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, salesforce, connector
 
-*March 2018*
-
-_Select_
+Support Category: Select
 
 Starting with v.6.0.2, the Salesforce Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions are freely available to the community.
+
+== 8.7.1 
+
+*February 6, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 3.5.2 and later
+|Anypoint Studio|5.4.0 and later
+|Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Fixed in this Release
+
+* Using the Replay streaming channel causes frequent disconnects and reconnects.
+* The application using Replay streaming channel records 401 and 403 error codes after some time and stops receiving messages.
+* The connector now generates the base URL from the endpoint configured by the client so that no problems arise when using a URL redirection service.
+* There was an issue performing a queryAll operation that instead of using the queryAll HTTP request, the connector was sending a query HTTP request. Fixed by properly handling queryAll use cases.
+
+== 8.7.0 
+
+*November 19, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 3.5.2 and later
+|Anypoint Studio|5.4.0 and later
+|Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Features
+
+* Added support for Salesforce v43.0 API version.
+
+=== Fixed in this Release
+
+* Fixed parsing of the SOQL for comma separated values and added support for date functions in `where` clauses.
+* Fixed nonpaginated query containing: `count()`
++
+The `count()` method was not supported in query operations. Now this can be used in the Non Paginated Query operation and it  returns the count for the specified entity.
++
+* `query` operation ignores the fetch size.
++
+In the previous implementation, the fetch size parameter was not taken into account and the Salesforce connector pagination was handled automatically by Salesforce auto-paging. The current paging implementation performs successive queries to obtain the pagination mechanism using LIMIT and OFFSET statements. However, this approach contains a limitation caused by Salesforce OFFSET statement being limited to 2000, so the connector is able to bring up to 2000 + FETCH_SIZE records.
++
+* `getJobInfo` operation fails if the `contentType` of the created job is not XML.
++
+The newly added parameter `contentType` can be set according to the contentType of the job. The default is XML.
++
+* Unable to reconnect to https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/intro_stream.htm[Salesforce Streaming API]
++
+With the `OAuth 2.0 Username-Password` configuration, the connector is not able to re-establish a Streaming API connection
+when authorization expired (401::Authentication invalid) or streaming session has been deleted on the server
+(403::Unknown Client Error). For more details see https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/streaming_handling_errors.htm[Handling Streaming Errors].
++
+* Salesforce connector is not parsing MEL expressions for the OAuth 2.0 Username Password configuration.
++
+Mule expression language (MEL) in configuration parameters was only working for the Basic Authentication and not for the others.
+This was fixed by moving configurable parameters to the `connect` method, which allows them to support MEL expressions.
+Expression support was added to the OAuth Username Password, OAuth JWT Bearer and OAuth SAML Bearer connection providers.
++
+* Fixed an issue regarding the GlobalValueSetTranslation metadata object not being properly mapped to the Salesforce structure.
 
 == 8.6.0
 
@@ -22,7 +87,7 @@ Salesforce connector version 8.6.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -35,28 +100,28 @@ User can set the internal buffer size for the message consumer. Default value is
 
 * Customer received no error or exception on 403::Organization total events daily limit exceeded.
 +
-In previous versions when 'error=403::Organization total events daily limit exceeded' occurred,
+In previous versions when `error=403::Organization total events daily limit exceeded` occurred,
 the connector would throw an exception to let the customer know about this issue.
 The connector now fires an event when the reconnection count is greater than
 10, but in case this never occurs, a custom notification is fired. The notification
-ID for this error is always 100888 and it also contains the appropriate message.
+ID for this error is always 100888 and it contains the appropriate message.
 +
-* Salesforce connector invoked REST apex and ignored null values.
+* Salesforce connector invoked the REST Apex and ignored null values.
 +
-When Salesforce connector invoke-apex-rest-method sends JSON to Salesforce, it ignores all null fields.
+When the Salesforce connector invoke-apex-rest-method sends a JSON to Salesforce, it ignores all null fields.
 We need those null fields so we can update fields in Salesforce to null, otherwise Salesforce won't update those fields.
 +
 * Salesforce Streaming flow when set to processingStrategy as Synchronous does not catch exception strategy.
 +
-Using Salesforce connector with operation "Replay Streaming Channel" as message listener and explicitly
-specifying the flow processing strategy as "synchronous" does not forward the exception thrown to the
-exception strategy defined. Whereas if no processingStrategy is defined in the flow then the exception
+Using Salesforce connector with operation `Replay Streaming Channel` as the message listener and explicitly
+specifying the flow processing strategy as `synchronous` does not forward the exception thrown to the
+exception strategy defined. Whereas if no `processingStrategy` is defined in the flow, then the exception
 is handled by the exception strategy.
 +
 * Salesforce topic disconnected when proxy with CONNECT.
 +
-Using previous versions to subscribe to a Salesforce Topic will fail with exception when the connection goes throw a proxy.
-The bug is documented here: https://bugs.eclipse.org/bugs/show_bug.cgi?id=475546. Fixed by upgrading to jetty-9.2.24.
+Using previous versions to subscribe to a Salesforce Topic fails with an exception when the connection sets a proxy.
+The bug is documented here: `+https://bugs.eclipse.org/bugs/show_bug.cgi?id=475546+`. Fixed by upgrading to jetty-9.2.24.
 +
 * CVE Security Vunerabilities in jackson-databind-2.4.3.
 +
@@ -77,7 +142,7 @@ Salesforce connector version 8.5.0 is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime |Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio |Only works with Studio 5.4.0 and later
+|Anypoint Studio |5.4.0 and later
 |Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
 |===
 
@@ -97,7 +162,7 @@ Salesforce connector version 8.4.1 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0, v39.0, v40.0
 |===
 
@@ -118,7 +183,7 @@ This version of the Salesforce connector provides support for Salesforce v40.0 a
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0, v39.0, v40.0
 |===
 
@@ -145,7 +210,7 @@ Salesforce connector version 8.3.1 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0, v39.0
 |===
 
@@ -165,13 +230,13 @@ Salesforce connector version 8.3.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0, v39.0
 |===
 
 === Features
 
-* Added support for salesforce API v39.0
+* Added support for Salesforce API v39.0
 * Added support for the "WITH HIGHLIGHT" operator in the Query All operation
 
 === Fixed in this Release
@@ -190,7 +255,7 @@ Salesforce connector version 8.2.1 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0
 |===
 
@@ -228,7 +293,7 @@ Salesforce connector version 8.2.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0
 |===
 
@@ -255,7 +320,7 @@ Salesforce connector version 8.1.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0, v38.0
 |===
 
@@ -293,7 +358,7 @@ Salesforce connector version 8.0.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v37.0
 |===
 
@@ -331,7 +396,7 @@ Salesforce connector version 7.2.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v32.0 to v37.0
 |===
 
@@ -361,7 +426,7 @@ Salesforce connector version 7.1.2 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v32.0 to v36.0
 |===
 
@@ -381,7 +446,7 @@ Salesforce connector version 7.1.1 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v32.0 to v36.0
 |===
 
@@ -401,7 +466,7 @@ Salesforce connector version 7.1.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v32.0 to v36.0
 |===
 
@@ -434,7 +499,7 @@ Salesforce connector version 7.0.1 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v32.0 to v34.0
 |===
 
@@ -462,7 +527,7 @@ Salesforce connector version 7.0.0 is compatible with:
 |===
 |Application/Service|Version
 |Mule Runtime|Mule Enterprise Edition 3.5.2 and later
-|Anypoint Studio|Only works with Studio 5.4.0 and later
+|Anypoint Studio|5.4.0 and later
 |Salesforce|v32.0 to v34.0
 |===
 
@@ -837,14 +902,14 @@ Features:
 
 == 5.1.3
 
-* Upgraded to DevKit 3.3.2
-* Added paging capabilities with paginated-query method
-* Added support for Object Search queries using SOSL
-* Fixed SessionTimedOutException INVALID_SESSION_ID when doing
-* Fixed several concurrent requests with a timed out session
-* Fixed get-deleted and get-updated operations
-* Fixed blocking account when trying to disconnect if credentials are wrong
-* Updated documentation and fixed documentation issues
+* Upgraded to DevKit 3.3.2.
+* Added paging capabilities with paginated-query method.
+* Added support for Object Search queries using SOSL.
+* Fixed SessionTimedOutException INVALID_SESSION_ID when doing.
+* Fixed several concurrent requests with a timed out session.
+* Fixed get-deleted and get-updated operations.
+* Fixed blocking account when trying to disconnect if credentials are wrong.
+* Updated documentation and fixed documentation issues.
 
 == 5.1.2
 
@@ -859,4 +924,4 @@ Features:
 * xref:3.9@mule-runtime::salesforce-connector.adoc[Salesforce Connector]
 * http://mulesoft.github.io/mule-salesforce-connector/[Salesforce Technical Reference]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

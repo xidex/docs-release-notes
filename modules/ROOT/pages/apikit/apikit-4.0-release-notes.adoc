@@ -1,11 +1,11 @@
-= APIkit Mule4-1.0.0 Release Notes
+= APIkit 4.0.0 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 *November 19, 2017*
 
-These release notes briefly describe changes, known issues, and limitations in APIkit Mule4-1.0.0.
+These release notes briefly describe changes, known issues, and limitations in APIkit 4.0.0.
 
 == What’s New
 

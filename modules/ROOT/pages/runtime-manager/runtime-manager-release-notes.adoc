@@ -8,6 +8,26 @@ endif::[]
 
 The releases listed in this page refer to changes made to Runtime Manager in hybrid deployment scenarios, which enables you to deploy Mule applications on user-hosted servers, but continue to manage and monitor them through MuleSoft's cloud based platform.
 
+== Version 2.10.1 - Feb 16, 2019
+
+See xref:runtime-manager/runtime-manager-2.10.1-release-notes.adoc[Runtime Manager v2.10.1 Release Notes]
+
+== Version 2.10.0 - Jan 26, 2019
+
+See xref:runtime-manager/runtime-manager-2.10.0-release-notes.adoc[Runtime Manager v2.10.0 Release Notes]
+
+== Version 2.9.2 - Jan 12, 2019
+
+See xref:runtime-manager/runtime-manager-2.9.2-release-notes.adoc[Runtime Manager v2.9.2 Release Notes]
+
+== Version 2.9.1 - Dec 15, 2018
+
+Internal release only. No customer-facing changes.
+
+== Version 2.9.0 - Dec 8, 2018
+
+See xref:runtime-manager/runtime-manager-2.9.0-release-notes.adoc[Runtime Manager v2.9.0 Release Notes]
+
 == Version 2.8.4 - May 19, 2018
 
 See xref:runtime-manager/runtime-manager-2.8.4-release-notes.adoc[Runtime Manager v2.8.2 Release Notes]
@@ -123,7 +143,7 @@ See the full xref:runtime-manager/runtime-manager-1.5.0-release-notes.adoc[Anypo
 This release includes the following new features:
 
 * xref:runtime-manager::alerts-on-runtime-manager.adoc[Alerts] for applications and servers on-premises
-* Support for link:/runtime-manager/installing-and-configuring-mule-agent#ports-ips-and-hostnames-to-whitelist[static IP addresses]
+* Support for xref:runtime-manager::installing-and-configuring-runtime-manager-agent.adoc#ports-ips-and-hostnames-to-whitelist[static IP addresses]
 
 See the full xref:runtime-manager/runtime-manager-1.4.1-release-notes.adoc[Anypoint Runtime Manager 1.4.1 Release Notes].
 

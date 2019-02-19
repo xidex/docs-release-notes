@@ -51,6 +51,7 @@ Before upgrading, you must backup your system as described in xref:1.7@private-c
 | Infrastructure providers |
 * VMWare
 * Bare Metal
+* AWS
 | Compatible browsers when running the installer |
 * Firefox (latest version)
 * Chrome (latest version)

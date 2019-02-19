@@ -3,9 +3,30 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*August 2018*
-
 _Premium_
+
+== 4.0.2
+
+*December 14, 2018*
+
+=== Fixed Issues
+
+* Corrected DataSense metadata. Removed the "Heading" level shown in DataSense that was not actually used in data.
+* Added support for all standard escape sequences. However escape sequences that change character encoding are not supported.
+* Fixed writing a String value to a timestamp field. By default this expects XMLGregorianCalendar, but a correctly formatted String is also supported.
+* Corrected handling of MSH-18 character encoding field, allowing either a simple String or a list of Strings, depending on the schema version.
+
+=== Compatibility
+
+HL7 EDI Connector v4.0.2 is compatible with the following:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|HL7 |v2.1, v2.2, v2.3.1, v2.3, v2.4, v2.5, v2.5.1, v2.6, 2.7, 2.7.1, 2.8, 2.8.1
+|===
 
 == 4.0.1
 
@@ -50,4 +71,4 @@ This release adapts HL7 for use with Mule 4 and Studio 7.
 
 * xref:connectors::hl7/hl7-connector.adoc[HL7 EDI Connector Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

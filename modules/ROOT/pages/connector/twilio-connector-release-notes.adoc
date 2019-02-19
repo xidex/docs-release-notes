@@ -8,7 +8,7 @@ endif::[]
 
 _Select_
 
-Twilio is an API cloud provider for voice and SMS communications for customers who want to use phone services as marketing leverage. The Mule Twilio Connector allows users to interact with the Twilio API within the Mule Runtime.
+Twilio is an API cloud provider for voice and SMS communications for customers who want to use phone services as marketing leverage. The Mule Twilio Connector allows users to interact with the Twilio SMS API within the Mule Runtime.
 
 xref:3.9@mule-runtime::twilio-connector.adoc[Twilio Connector]
 
@@ -16,7 +16,7 @@ xref:3.9@mule-runtime::twilio-connector.adoc[Twilio Connector]
 
 *March 28, 2017*
 
-MuleSoft now maintains this connector under the https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors[_Select_]support policy.
+MuleSoft now maintains this connector under the https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors[_Select_] support policy.
 
 === Compatibility
 

@@ -1,0 +1,65 @@
+= OpenID Connect Access Token Enforcement Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, openid, openid connect, oauth 2.0, policy, release notes
+
+== 1.1.3
+
+*Jan 11, 2019*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+=== New Features and Enhancements
+
+* Improved the RAML and OAS snippets.
+
+== 1.1.2
+
+*Oct 9, 2018*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+=== Fixed Issues
+
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+
+== 1.1.1
+
+*Jun 27, 2018*
+
+=== Fixed Issues
+
+* Fixed error preventing federated and client ID based policies to apply when a Security Manager is defined in the same app with a tracked endpoint.
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+== 1.1.0
+
+*Jan 25, 2018*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+=== Fixed Issues
+
+* Fixed issue causing federated policies to lose query and URI parameters of the requester.
+
+== 1.0.0
+
+*Nov 14, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+== See Also
+
+* xref:api-manager::policy-openid-connect.adoc[OpenID Connect OAuth 2.0 Token Enforcement Policy for Mule 4]

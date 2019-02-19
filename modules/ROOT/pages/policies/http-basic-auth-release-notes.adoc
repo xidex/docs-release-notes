@@ -1,0 +1,48 @@
+= HTTP Basic Authentication Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, http-basic-auth, policy, release notes
+
+== 1.1.1
+
+*Jun 29, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
+
+== 1.1.0
+
+*Jan 26, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+* Reduced error-handling verbosity in templates.
+
+=== Fixed Issues
+
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+* Basic auth policies now work after mule is redeployed.
+* Fixed missing groupId for proxy samples dependency.
+* Fixed 500 status code being returned instead of 401 when Authorization header is malformed.
+
+== 1.0.0
+
+*Nov 17, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+== See Also
+
+* xref:api-manager::basic-authentication-simple-concept.adoc[HTTP Basic Authentication Policy for Mule 4]

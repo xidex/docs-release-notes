@@ -2,16 +2,35 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, connector, sap, successfactors
 
-*December 2017*
+*November 2018*
 
 _Select_
 
 *Connector Guide:* xref:3.9@mule-runtime::successfactors-connector.adoc[SuccessFactors Connector]
 
-The Anypoint Connector for SuccessFactors provides full support to query, create, update and delete entities using the SFAPI API exposed by SuccessFactors. For more information about the product, visit https://help.sap.com/cloud4hr[SuccessFactors HCM Suite site].
+The Anypoint Connector for SuccessFactors provides full support to query, create, update and delete entities using the SFAPI API exposed by SuccessFactors. For more information about the product, see https://help.sap.com/cloud4hr[SuccessFactors HCM Suite site].
 
+== 2.2.1 
+
+*November 16, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.7 and later in Mule 3
+|SuccessFactors API | SFAPI (SOAP API)
+|===
+
+=== Fixed in this Release
+
+* NPE after a long time* - The connector would throw NullPointerException after the app is deployed for a long time. This no longer happens.
+
+=== Known Issues
+
+* Due to API limitations, fetching metadata for all entities is a slow process. To reduce the wait time, make sure that the "Fetch all entities" checkbox is unchecked, and complete the "Entity List" with an abridged list of entity names. If you need a list of all available entities in your organization to do this, you can obtain it via the "List entities" operation.
 
 == 2.2.0
 
@@ -22,7 +41,7 @@ The Anypoint Connector for SuccessFactors provides full support to query, create
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.7 and later
+|Mule Runtime |3.7 and later in Mule 3
 |SuccessFactors API | SFAPI (SOAP API)
 |===
 
@@ -98,4 +117,4 @@ Due to API limitations, fetching metadata for all entities is a slow process. To
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
