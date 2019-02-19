@@ -21,8 +21,8 @@ If you update the Runtime Manager agent, you must execute the Anypoint Monitorin
 
 You can download the Anypoint Monitoring installer from the following URLs:
 
-* https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip
-* (Europe) https://s3.eu-central-1.amazonaws.com/cdn-anypoint-prod-eu/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip
+* https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip[Anypoint Monitoring Installer 2.0.5.0]
+* For Anypoint accounts in Europe: https://s3.eu-central-1.amazonaws.com/cdn-anypoint-prod-eu/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip[Anypoint Monitoring Installer 2.0.5.0]
 
 == February 11, 2019
 
