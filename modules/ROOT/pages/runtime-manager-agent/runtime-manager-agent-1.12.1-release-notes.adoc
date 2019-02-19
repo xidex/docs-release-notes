@@ -9,20 +9,19 @@ This document describes new features and enhancements, known limitations, issues
 
 == New Features and Enhancements
 
-This release contains the following new features or enhancements:
-
-* For Cloudhub: The agent now returns the root cause error when an application failures to deploy.
+This release contains no new features or enhancements.
 
 == Changes in This Release
 
-* The application properties will only be save into the application descriptor instead of the Mule Agent's descriptor.
+* The API will now return the Root Cause when an application fails to deploy. 
+* Application Properties will only be stored in the Application yml descriptor, no longer in the mule-agent.yml .
+* For APCE environments, trusted certificates will always be used from JKS file instead of JVM.
 
 == Fixed Issues
 
 This release contains the following fixed issues:
 
-* Fix install/upgrade errors in the PCE environment.
-* Solves application failures when using a property named 'host'.
+* Support for 'host' property in Cloudhub properties cause application fails to deploy.
 
 == Known Limitations and Workarounds
 
