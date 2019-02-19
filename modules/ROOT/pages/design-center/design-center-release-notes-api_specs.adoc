@@ -80,7 +80,17 @@ The AMF parser is at version 2.0.0.
 * The names of projects for API specifications and API fragments can now be as long as 64 characters.
 * The option to download a project in YAML is now replaced with the following options, which you can access by clicking the three dots next to the name of a specification in the left pane:
 ** *Download as*: Downloads a RAML specification as an OAS specification, or an OAS specification as a RAML specification.
++
+[WARNING]
+====
+The downloaded file is not guaranteed to be a correct specification.
+====
 ** *Convert*: Converts a RAML specification to an OAS specification, or an OAS specification to a RAML specification.
++
+[WARNING]
+====
+The converted file is not guaranteed to be a correct specification.
+====
 
 === Fixed Issues
 
