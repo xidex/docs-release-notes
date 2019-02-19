@@ -32,7 +32,7 @@ Not applicable.
 Not applicable.
 
 == Fixed Issues
-
+ 
 [%header,cols="15a,85a"]
 |===
 |Issue |Description
