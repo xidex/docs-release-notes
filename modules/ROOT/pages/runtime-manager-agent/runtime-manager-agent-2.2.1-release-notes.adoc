@@ -22,8 +22,8 @@ This release contains the following new features or enhancements:
 This release contains the following fixed issues:
 
 * The issue that caused the lost of application properties when redeploying an application is fixed.
-* The Mule Runtime logs associated with 'TransactionNotification' are not writed  into the application logs anymore.
-* Fix install/upghrade errors in the PCE environment.
+* The Mule Runtime logs associated with 'TransactionNotification' are not writed into the application logs anymore.
+* Fix install/upgrade errors in the PCE environment.
 * Solves application failures when using a property named 'host'.
 
 = Known Limitations and Workarounds
