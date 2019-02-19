@@ -3,9 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
-
-_Premium_
+Support Category: Premium
 
 AS2 (Applicability Statement 2) is a specification about how to transport data securely and reliably over the internet. Security is achieved by using digital certificates and encryption.
 
@@ -26,7 +24,7 @@ The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 co
 
 === Features
 
-* Added Receiver Host configuration, which must be set to "0.0.0.0" for operation on CloudHub
+* Added Receiver Host configuration, which must be set to "0.0.0.0" for operating on CloudHub.
 
 === Fixed in this Release
 
