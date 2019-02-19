@@ -21,7 +21,7 @@ This release contains the following new features or enhancements:
 
 This release contains the following fixed issues:
 
-* Fix install/upghrade errors in the PCE environment.
+* Fix install/upgrade errors in the PCE environment.
 * Solves application failures when using a property named 'host'.
 
 == Known Limitations and Workarounds
