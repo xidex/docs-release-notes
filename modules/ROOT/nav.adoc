@@ -173,6 +173,7 @@
  ** xref:connector/rest-connect-release-notes.adoc[REST Connect Release Notes]
  ** xref:exchange/exchange-on-prem-release-notes.adoc[Anypoint Exchange Private Cloud Edition Release Notes]
 * xref:monitoring/anypoint-monitoring-release-notes.adoc[Anypoint Monitoring Release Notes]
+ ** xref:monitoring/anypoint-monitoring-installer-release-notes.adoc[Anypoint Monitoring Installer Release Notes]
 * xref:visualizer/anypoint-visualizer-1.0-release-notes.adoc[Anypoint Visualizer Release Notes]
 * xref:mq/anypoint-mq-release-notes.adoc[Anypoint MQ Release Notes]
  ** xref:mq/mq-release-notes.adoc[Anypoint MQ Cloud Release Notes]
