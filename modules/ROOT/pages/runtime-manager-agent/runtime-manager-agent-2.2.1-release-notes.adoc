@@ -13,17 +13,17 @@ This release contains no new features or enhancements.
 
 == Changes in this Release
 
-* The API will now return the Root Cause when an application fails to deploy. 
-* Application Properties will only be stored in the Application yml descriptor, no longer in the mule-agent.yml .
-* For APCE environments, trusted certificates will always be used from JKS file instead of JVM.
+* The API now returns the root cause when an application fails to deploy.
+* Application properties are now stored in the application `yml` descriptor instead of in the `mule-agent.yml`.
+* For APCE environments, trusted certificates are always used from the JKS file instead of the JVM.
 
 == Fixed Issues
 
 This release contains the following fixed issues:
 
-* Application fails at Restart from side panel due to property not found.
-* TransactionNotification related errors are filled in the application log when tracking is enabled in 4.1.x, instead of the mule_ee.log .
-* Support for 'host' property in Cloudhub properties cause application fails to deploy.
+* Application fails at restart from side panel due to property not found.
+* When tracking was enabled in Mule 4.1.x, `TransactionNotification` related errors were written to the application's log instead of the `mule_ee.log`.
+* Support for `host` property in Cloudhub properties cause applicatios to fail to deploy.
 
 = Known Limitations and Workarounds
 
