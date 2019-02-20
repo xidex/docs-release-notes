@@ -14,7 +14,7 @@ This release contains no new features or enhancements.
 == Changes in This Release
 
 * The API now returns the root cause when an application fails to deploy. 
-* Application properties are now stored in the application `yml` descriptor instead of in the `mule-agent.yml`.
+* Application properties are now stored in the application's `yml` descriptor instead of in the `mule-agent.yml`.
 * For APCE environments, trusted certificates are always used from the JKS file instead of the JVM.
 
 == Fixed Issues
