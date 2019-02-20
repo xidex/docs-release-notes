@@ -21,7 +21,7 @@ This release contains no new features or enhancements.
 
 This release contains the following fixed issues:
 
-* Support for `host` property in Cloudhub properties cause application fails to deploy.
+* Support for the `host` property in CloudHub properties caused applications to fail to deploy.
 
 == Known Limitations and Workarounds
 
