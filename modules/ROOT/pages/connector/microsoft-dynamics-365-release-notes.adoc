@@ -24,7 +24,7 @@ MuleSoft provides OAuth 2.0 Connection and Username-Password access to the Micro
 
 === Features
 
-* The connector now supports API version 9.x, and potentially future ones, by making the version number configurable.
+* This connector now supports API version 9.x and later, by making the version number configurable.
 
 == 1.0.10 
 
