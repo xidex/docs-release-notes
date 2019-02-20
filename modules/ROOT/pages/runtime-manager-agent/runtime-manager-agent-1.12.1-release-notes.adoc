@@ -13,15 +13,15 @@ This release contains no new features or enhancements.
 
 == Changes in This Release
 
-* The API will now return the Root Cause when an application fails to deploy. 
-* Application Properties will only be stored in the Application yml descriptor, no longer in the mule-agent.yml .
-* For APCE environments, trusted certificates will always be used from JKS file instead of JVM.
+* The API now returns the root cause when an application fails to deploy. 
+* Application properties are now stored in the application `yml` descriptor instead of in the `mule-agent.yml`.
+* For APCE environments, trusted certificates are always used from the JKS file instead of the JVM.
 
 == Fixed Issues
 
 This release contains the following fixed issues:
 
-* Support for 'host' property in Cloudhub properties cause application fails to deploy.
+* Support for `host` property in Cloudhub properties cause application fails to deploy.
 
 == Known Limitations and Workarounds
 
