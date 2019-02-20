@@ -23,7 +23,7 @@ This release contains the following fixed issues:
 
 * Application fails at restart from side panel due to property not found.
 * When tracking was enabled in Mule 4.1.x, `TransactionNotification` related errors were written to the application's log instead of the `mule_ee.log`.
-* Support for `host` property in Cloudhub properties cause applicatios to fail to deploy.
+* Support for the `host` property in CloudHub properties caused applications to fail to deploy. 
 
 = Known Limitations and Workarounds
 
