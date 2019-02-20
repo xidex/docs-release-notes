@@ -10,6 +10,7 @@ The xref:runtime-manager::runtime-manager-agent.adoc[The Runtime Manager Agent] 
 
 *Mule Agent Plugin 2.x:*
 
+* xref:runtime-manager-agent-2.2.1-release-notes.adoc[Runtime Manager Agent 2.2.1 Release Notes]
 * xref:runtime-manager-agent/runtime-manager-agent-2.2.0-release-notes.adoc[Runtime Manager Agent 2.2.0 Release Notes]
 * xref:runtime-manager-agent/runtime-manager-agent-2.1.9-release-notes.adoc[Runtime Manager Agent 2.1.9 Release Notes]
 * xref:runtime-manager-agent/runtime-manager-agent-2.1.8-release-notes.adoc[Runtime Manager Agent 2.1.8 Release Notes]
@@ -18,6 +19,7 @@ The xref:runtime-manager::runtime-manager-agent.adoc[The Runtime Manager Agent] 
 
 *Mule Agent Plugin 1.x:*
 
+* xref:runtime-manager-agent/runtime-manager-agent-1.12.1-release-notes.adoc[Runtime Manager Agent 1.12.1 Release Notes]
 * xref:runtime-manager-agent/runtime-manager-agent-1.12.0-release-notes.adoc[Runtime Manager Agent 1.12.0 Release Notes]
 * xref:runtime-manager-agent/runtime-manager-agent-1.11.3-release-notes.adoc[Runtime Manager Agent 1.11.3 Release Notes]
 * xref:runtime-manager-agent/runtime-manager-agent-1.11.2-release-notes.adoc[Runtime Manager Agent 1.11.2 Release Notes]
