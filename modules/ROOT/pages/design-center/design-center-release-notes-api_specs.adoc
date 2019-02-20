@@ -18,13 +18,9 @@ These release notes cover the following versions of these features:
 == 2.4.3
 *February 23, 2019*
 
-This release fixes four issues.
+This release fixes two issues.
 
 === Fixed Issues
-// SE-10773
-* For an API specification written in RAML, the mocking service returned content that was in YAML, although the returned content should have been in XML.
-// SE-10865
-* The mocking service returned a misleading error message when `baseURI` was invalid.
 // SE-10793
 * The behavior of the *Import API Example* dialog was faulty, making a selection difficult. You can open this dialog when you first create an API-specification project by clicking the word "example" in the sentence "Start project from an existing example," which appears in the left pane of the editor
 // SE-10890
