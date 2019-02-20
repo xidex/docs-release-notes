@@ -4,7 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, cloudhub, cloud hub
 
-These are the release notes for patches which are made to the Anypoint Monitoring hybrid installer and agent . In addition to these release notes, see the xref:monitoring/anypoint-monitoring-release-notes.adoc[Anypoint Monitoring Release Notes] and the complete xref:monitoring::index.adoc[Anypoint Monitoring] documentation.
+These are the release notes for patches which are made to the Anypoint Monitoring hybrid installer and agent . In addition to these release notes, see:
+
+* xref:monitoring/anypoint-monitoring-release-notes.adoc[Anypoint Monitoring Release Notes] 
+* xref:monitoring::am-installing#update-the-monitoring-agent.adoc[Update the Monitoring Agent]
+* xref:monitoring::index.adoc[Anypoint Monitoring]
 
 [NOTE]
 If you update the Runtime Manager agent, you must execute the Anypoint Monitoring agent uninstall script and then re-install the Anypoint Monitoring agent. 
@@ -19,10 +23,7 @@ If you update the Runtime Manager agent, you must execute the Anypoint Monitorin
 ** 1.12.x
 ** 2.2.x
 
-You can download the Anypoint Monitoring installer from the following URLs:
-
-* https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip[Anypoint Monitoring Installer 2.0.5.0]
-* For Anypoint accounts in Europe: https://s3.eu-central-1.amazonaws.com/cdn-anypoint-prod-eu/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip[Anypoint Monitoring Installer 2.0.5.0]
+You can download the Anypoint Monitoring installer from https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip[Anypoint Monitoring Installer 2.0.5.0]
 
 == February 11, 2019
 
