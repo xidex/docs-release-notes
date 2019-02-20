@@ -1,0 +1,24 @@
+= APIkit for SOAP 1.1.10 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This version of APIkit for SOAP includes bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|===
+
+== Issues Fixed in this Release
+
+* Fixed performance issue where SOAP APIkit Router executed a blocking operation when executing `cpuLight` and `cpuIntensive` types of threads.
+
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].
