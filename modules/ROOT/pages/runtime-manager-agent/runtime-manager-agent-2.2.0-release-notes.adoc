@@ -30,17 +30,42 @@ There are no known limitations or workarounds in this release.
 
 == Upgrade Requirements
 
-The agent upgrade procedure results in the use of two new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, ensure there are no networking constraints for accessing the FQDNs on port 443.
+When you upgrade the agent, two new endpoints are created for communicating with Anypoint Runtime Manager. Before upgrading, ensure there are no networking constraints for accessing the FQDNs on port 443.
 
-For runtimes connecting to Anypoint Runtime Manager in the US:
+. In the `mule-agent.yml` file, configure the following URLs in the appropriate section. 
++
+[cols="1,2"]
+|===
+|United States |EU
+a| 
 
-* ws://runtime-manager.anypoint.mulesoft.com
-* https://data-authenticator.anypoint.mulesoft.com
+* `ws://runtime-manager.anypoint.mulesoft.com` 
+* `+https://data-authenticator.anypoint.mulesoft.com+` a|
 
-For runtimes connecting to Anypoint Runtime Manager in the EU:
-
-* ws://runtime-manager.eu1.anypoint.mulesoft.com
-* https://data-authenticator.eu1.anypoint.mulesoft.com
+* `ws://runtime-manager.eu1.anypoint.mulesoft.com`
+* `+https://data-authenticator.eu1.anypoint.mulesoft.com+`
+|=== 
++
+For example: 
++
+For the `ws` protocol, change the `websocket.transport` URI to `ws://runtime-manager.anypoint.mulesoft.com` like in the following example:
++
+---
+ websocket.transport:
+    enabled: true
+    consoleUri: ws://runtime-manager.anypoint.mulesoft.com
+---
++
+For the https protocol, change 
+`+https://arm-auth-proxy.prod.cloudhub.io+` to 
+`+https://data-authenticator.anypoint.mulesoft.com+` like in the following example: 
++
+---- 
+authenticationProxy:
+    endpoint: https://data-authenticator.anypoint.mulesoft.com
+----
++
+. Restart the Mule runtime engine. 
 
 == Compatibility Notes
 
