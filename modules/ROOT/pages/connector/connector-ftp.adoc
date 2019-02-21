@@ -7,6 +7,10 @@ endif::[]
 
 *January 21, 2019*
 
+=== Minimum Mule Version
+
+*4.1.1*
+
 === Fixed Issues
 
 * Fixed bug that made the list operation take too long when the listed directory contained a large number of files. (MULE-16346)
@@ -14,6 +18,10 @@ endif::[]
 == 1.2.3
 
 *January 4, 2019*
+
+=== Minimum Mule Version
+
+*4.1.1*
 
 === Fixed Issues
 
@@ -23,6 +31,10 @@ endif::[]
 
 *July 12, 2018*
 
+=== Minimum Mule Version
+
+*4.1.0*
+
 === Fixed Issues
 
 * FtpFileAttributes throw NPE when FTPFile date is null. (MULE-15301)
@@ -30,6 +42,10 @@ endif::[]
 == 1.2.1
 
 *June 15, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
 
 === Fixed Issues
 
@@ -40,6 +56,10 @@ endif::[]
 
 *April 24, 2018*
 
+=== Minimum Mule Version
+
+*4.1.0*
+
 === Fixed Issues
 
 * FTP Connector should better inform on connection errors. (MULE-14993)
@@ -47,6 +67,10 @@ endif::[]
 == 1.1.1
 
 *February 2, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
 
 === Fixed Issues
 
@@ -56,9 +80,18 @@ endif::[]
 
 *January 19, 2018*
 
+=== Minimum Mule Version
+
+*4.1.0*
+
 === New Features and Enhancements
 
 This release includes the following enhancements, changes, and fixes:
 
 * Added a message source that automatically polls for new files, while handling clustering, idempotency, post actions and watermark automatically.
 
+== See Also
+
+* https://www.mulesoft.com/exchange/org.mule.connectors/mule-ftp-connector/[Anypoint Exchange FTP Connector]
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
