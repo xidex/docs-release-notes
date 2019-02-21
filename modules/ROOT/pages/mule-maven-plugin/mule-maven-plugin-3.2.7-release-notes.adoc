@@ -1,0 +1,31 @@
+= Mule Maven Plugin 3.2.7 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Mule Maven Plugin 3.2.7 is mainly focused on fixing bugs.
+
+== Hardware and Software Requirements
+
+Hardware and Software Requirements
+
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+* Java 8
+* Maven 3.3.3, 3.3.9, 3.5.0
+
+== Compatibility
+
+* Mule 4.x
+* Anypoint Studio 7.x
+
+== Fixed Issues
+
+* Fixed an issue that prevented redeploying to the proper target when two clusters have the same app name on them.
+* Fixed an issue that caused deployment to a business group to fail. 
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].
