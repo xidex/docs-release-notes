@@ -5,6 +5,24 @@ endif::[]
 
 Support Category: Select
 
+== 9.5.2
+
+*February 22, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43
+|===
+
+=== Fixed in this Release
+
+* Metadata for Apex classes didn't work if an instance had more than 200 records. Fixed by using the search service to query the instance for Apex classes instead of a simple query.
+* Null values were set as blank by DataWeave when obtained from the Salesforce Connector. Fixed by changing the returning JSONObject.NULL fields to null.
+* Improved the API call that validates the connection to improve connector performance.
+
 == 9.5.1
 
 *February 14, 2019*
