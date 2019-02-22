@@ -12,6 +12,21 @@ The Amazon SQS cloud connector provides an easy way to interface with the Amazon
 
 Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions remain freely available to the community.
 
+== 5.1.2
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0 and later
+|AWS SDK for Java|1.11.79
+|===
+
+=== Fixed in this Release
+
+* In earlier versions, when Amazon SQS threw an error, SQS listener stopped working. Now the reconnect process for the listener is triggered in such case.
+
 == 5.1.1
 
 *May 2, 2018*
