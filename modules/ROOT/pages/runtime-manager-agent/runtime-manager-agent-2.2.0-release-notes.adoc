@@ -15,7 +15,7 @@ This release contains the following new features or enhancements:
 
 == Changes in This Release
 
-* This version of Runtime Manager Agent is changed to enable connection to the new Runtime Manager Publicly Certified endpoints for Mule Manager and Auth Proxy.
+* This version of Runtime Manager Agent enables connection to the new Runtime Manager Publicly Certified endpoints for Mule Manager and Auth Proxy.
 * Now, when enabling a service that has a null log configuration, the Mule Agent API returns a bad request (400) instead of an internal server error (500).
 
 == Fixed Issues
