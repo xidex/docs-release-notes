@@ -7,6 +7,22 @@ This document describes any new features and enhancements, known limitations, is
 
 == 2.1
 
+=== February 22, 2018
+
+The following new charts are available in the built-in dashboards:
+
+* Inbound
+ ** Maximum Response Time
+* Infrastructure
+ ** System Memory
+ ** Application Process CPU Load
+ ** Application Process CPU Minutes
+ ** Operating System Swap Space
+* JVM
+ ** Committed Virtual Memory
+
+For more information about built-in dashboards, see xref:monitoring::app-dashboards.adoc[Built-in Application Dashboards] 
+
 === February 16, 2018
 
 * You can now monitor Web Services connectors in the *Connectors* tab. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors].
