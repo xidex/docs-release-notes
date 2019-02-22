@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, connectors, amazon, sqs
 
-*May 2018*
-
-_Select_
+Support Category: Select
 
 The Amazon SQS cloud connector provides an easy way to interface with the Amazon SQS API, allowing users to manage SQS queueing services without having to deal with the API directly.
 
@@ -25,7 +22,7 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 === Fixed in this Release
 
-* In earlier versions, when Amazon SQS threw an error, SQS listener stopped working. Now the reconnect process for the listener is triggered in such case.
+* In earlier versions, when Amazon SQS threw an error, the SQS listener stopped working. Now the reconnect process for the listener is triggered in this case.
 
 == 5.1.1
 
@@ -85,4 +82,4 @@ AWS connectors shared a common library for the supported region endpoints that c
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
