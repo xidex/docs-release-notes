@@ -15,7 +15,7 @@ This release contains the following new features or enhancements:
 
 == Changes in This Release
 
-* This version of Runtime Manager Agent is changed to enable connection to the new Runtime Manager Publicly Certified endpoints for Mule Manager and Auth Proxy.
+* This version of Runtime Manager Agent enables connection to the new Runtime Manager Publicly Certified endpoints for Mule Manager and Auth Proxy.
 * Now, when enabling a service that has a null log configuration, the Mule Agent API returns a bad request (400) instead of an internal server error (500).
 
 == Fixed Issues
@@ -30,17 +30,44 @@ There are no known limitations or workarounds in this release.
 
 == Upgrade Requirements
 
-The agent upgrade procedure results in the use of two new endpoints for communicating with Anypoint Runtime Manager. Before doing any upgrade, ensure there are no networking constraints for accessing the FQDNs on port 443.
+When you upgrade the agent two new endpoints for communicating with Anypoint Runtime Manager are created. 
 
-For runtimes connecting to Anypoint Runtime Manager in the US:
+[NOTE]
+Before performing the upgrade, ensure there are no networking constraints for accessing the FQDNs on port 443.
 
-* ws://runtime-manager.anypoint.mulesoft.com
-* https://data-authenticator.anypoint.mulesoft.com
+. In the `mule-agent.yml` file, configure the following URLs in the appropriate section.
++
+[cols="1,1", options="header"]
+|===
+|United States |EU
+a|
+`ws://runtime-manager.anypoint.mulesoft.com`
 
-For runtimes connecting to Anypoint Runtime Manager in the EU:
+`+https://data-authenticator.anypoint.mulesoft.com+`
+a|
+`ws://runtime-manager.eu1.anypoint.mulesoft.com`
 
-* ws://runtime-manager.eu1.anypoint.mulesoft.com
-* https://data-authenticator.eu1.anypoint.mulesoft.com
+`+https://data-authenticator.eu1.anypoint.mulesoft.com+`
+|===
++
+For the `ws` protocol, change the `websocket.transport` URI to `ws://runtime-manager.anypoint.mulesoft.com` like in the following example:
++
+----
+ websocket.transport:
+    enabled: true
+    consoleUri: ws://runtime-manager.anypoint.mulesoft.com
+----
++
+For the HTTPS protocol, change
+`+https://arm-auth-proxy.prod.cloudhub.io+` to
+`+https://data-authenticator.anypoint.mulesoft.com+` like in the following example:
++
+----
+authenticationProxy:
+    endpoint: https://data-authenticator.anypoint.mulesoft.com
+----
++
+. Restart the Mule runtime engine.
 
 == Compatibility Notes
 
