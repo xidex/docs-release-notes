@@ -8,6 +8,10 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 == February 15, 2019
 
+3.9.1 Runtime Update:
+
+* Include Anypoint Monitoring Agent Extension
+
 3.9.0 Runtime Update:
 
 * Include Anypoint Monitoring Agent Extension
