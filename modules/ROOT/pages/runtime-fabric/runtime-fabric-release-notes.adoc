@@ -10,9 +10,9 @@ In addition to these release notes, see the complete xref:1.0@runtime-fabric::in
 
 This release includes the following fixes and enhancements:
 
-* Fixed: When application deployment failed due to a missing Mule license, the error message was unclear.
-* Fixed: JVM memory heap monitoring dashboard was not visible in Ops Center UI in some cases.
-* Fixed: Agent readiness probe did not report error when control plane connectivity failed in some cases.
+* Fixed: Improved error message when application deployments failed due to a missing Mule license.
+* Fixed: JVM heap memory dashboard was not visible in Ops Center UI in some cases.
+* Fixed: Agent readiness probe did not report error when control plane connectivity was lost in some cases.
 
 == 1.2.0 - February 7, 2019
 
