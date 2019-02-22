@@ -6,6 +6,14 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== 1.2.36 - February 22, 2019
+
+This release includes the following fixes and enhancements:
+
+* Fixed: Improved error message when application deployments failed due to a missing Mule license.
+* Fixed: JVM heap memory dashboard was not visible in Ops Center UI in some cases.
+* Fixed: Agent readiness probe did not report error when control plane connectivity was lost in some cases.
+
 == 1.2.0 - February 7, 2019
 
 This release includes the following fixes and enhancements:
@@ -14,7 +22,7 @@ This release includes the following fixes and enhancements:
 * Added: HTTPS-based connectivity to Anypoint control plane. (Replaces TCP-based connectivity).
 * Added: JVM memory heap monitoring in Ops Center 'Applications' dashboard.
 * Added: Java version upgraded to 8u191.
-* Fixed: User-specified HTTP proxy configuration is retained across updates.
+* Fixed: User-specified HTTP proxy configuration was lost across updates.
 * Fixed: Application shows as Recovering instead of Updating after unexpected restart in Application Manager.
 
 == 1.1.244 - January 16, 2019
