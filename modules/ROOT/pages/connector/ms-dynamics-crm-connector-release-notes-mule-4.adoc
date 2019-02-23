@@ -23,7 +23,7 @@ The Microsoft Dynamics Customer Relationship Management (CRM) connector lets you
 
 === Fixed in this release
 
-* Flacky error when trying to load policy in online authentication. Fixed by forcing reconnect when the error is thrown.
+* Intermittent error when trying to load a policy for an online authentication. Fixed by forcing a reconnect when the error is thrown.
 
 == 3.1.2 
 
