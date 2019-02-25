@@ -1,0 +1,157 @@
+= Anypoint Studio 6.6 with Mule Runtime 3.9.2 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*February 20, 2019* +
+*Build ID: 201902212149*
+
+<<migration,Skip to Migration Guide>>
+
+== Compatibility
+
+[cols="30a,70a"]
+|===
+| *Mule Runtime*
+| Version: 3.9.2 EE
+
+|*Anypoint Studio*
+|Version: 6.6 +
+Build Id: 201902212149
+
+|*APIkit*
+|Versions: 3.9.1
+
+|*DataWeave* +
+|Version: 1.2.0
+
+|*MUnit* +
+|Version: 1.6.1 (munit-studio-plugin)
+
+|*SAP Connector*
+|Versions: 3.2.1
+
+|*Eclipse*
+|Versions: 4.7.2
+
+|===
+
+
+The 6.6.0 Studio release includes a number of bug fixes and comes with Mule 3.9.2 runtime.
+
+== What's New
+
+* New Global Mule Configuration Elements UI to open a `mule:domain` xml file, displaying *Global Elements* and *Configuration XML* tabs. +
+This editor is now the default when opening `mule:domain` xml files.
+* When you start projects in Studio, you can scaffold API specifications from Exchange.
+
+== Hardware Requirements
+
+* MuleSoft recommends a minimum of 4GB RAM on a developer workstation. As applications become complex, consider adding more RAM.
+* 2GHz CPU
+* 10GB free hard drive space
+
+== Software Requirements
+
+[cols="30a,70a"]
+|===
+|Java Environments |
+This version of Anypoint Studio requires Java 8 to run properly. +
+Depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+
+* Mule 3.9.x requires Studio running on Java 8.
+* Mule 3.5.x requires Studio running on Java 7.
+* Other supported runtime versions work fine with both Java 7 or 8.
+
+You can configure Anypoint Studio's default VM by following the task corresponding to your OS:
+
+* xref:6.5@studio::studio-configure-vm-task-wx.adoc[To Configure Studio’s Default VM (Windows)]
+* xref:6.5@studio::studio-configure-vm-task-unx.adoc[To Configure Studio’s Default VM (Unix)]
+* xref:6.5@studio::studio-configure-vm-task-lnx.adoc[To Configure Studio’s Default VM (Linux)]
+
+|Operating Systems |* MacOS 10.10.0 +
+* Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10 +
+* RHEL 7.0 +
+* Ubuntu 15.04 or later
+|Suggested Web Browsers by Platform. +
+_Studio will always use the OS default web browser_ | * Windows: +
+** Microsoft Edge 25.0  +
+** Internet Explorer 11 +
+* Linux +
+** Mozilla Firefox 46.0  +
+* OS X +
+** Safari 9.1
+|===
+
+
+[NOTE]
+--
+If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+--
+
+[TIP]
+--
+Updating your Anypoint Studio version using the update site does not update the bundled version of the Mule runtime. +
+To get the latest runtime version after updating Studio follow xref:6.5@studio::download-and-launch-anypoint-studio.adoc#updating-studio[these steps].
+--
+
+== Known Issues
+
+When opening a previous workspace with projects that were created with Studio 5.1.0 or older, and which has metadata stored in disk, Studio asks you to perform an update to all the projects so that the Metadata Manager can handle the existing types and show them in your project.
+
+[TIP]
+====
+You can easily import all of the external components that you had installed in your old version of Anypoint Studio through a single action. This includes connectors, runtimes, and any other type of extension added through the Anypoint Exchange or the ​*Help -> Install new software*​ menu, as long as there are no compatibility restrictions.
+
+Do this by selecting *File->Import* and then choose *Install->From existing installation*.
+
+image::studio/import-extensions.png[import]
+
+Then specify the location of your old version of Anypoint Studio in your local drive.
+====
+
+== Bug Fixes
+
+* Studio Debugger now works with Scatter Gather.
+* Fixed issue that prevented APIKit to import all the files when having `$ref` references in a project.
+* Fixed issue that prevented the transformer from showing when it references an external `dwl` file that is located outside the Mule project.
+* Importing API from Design Center now generates flow scaffolding.
+* Fixed `NullPointerException` error thrown when opening the Custom Type dialog from an Exchange example.
+* Fixed issue that caused DataWeave Preview to break on functions stored in external resource files.
+* Fixed issue that caused Studio to crash in Windows when exceeding the max of GDI objects.
+* Fixed `javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing - WSDL Document -` error when loading WSDL from Exchange to Studio.
+* Fixed TLS error given in HTTP Connector config when HTTPS config is not selected.
+* Fixed issue that prevented moving a Poll Scope from one flow to another without creating nesting.
+* Fixed Studio validations so now MUnit launches immediately when debugging MUnit suites.
+// * Flat-File Mapping: Manually built FFD and Optional Fields with generated FFD.
+* Fixed issue on parsing and getting query metadata.
+* Fixed issue that caused Studio 6.5.1 (as downloaded from Support Centre) starts with no update sites loaded.
+* Fixed issue that caused `xml-apis` dependency to be ignored.
+* Fixed issue that caused Studio to throw XML validation errors for well formed XML files.
+* Fixed issue that created an unrequired repository in `src/main/api` when importing an API from Design Center.
+* Fixed issue that caused the validating XSD file for xlink to fail when using Studio 6.5.1 in Windows 10 + Server 2016.
+* Fixed issue that caused Studio DataWeave to parse environmental variables in regex as errors.
+* Fixed issue that caused metadata to be lost when adding anything to a Catch Exception Strategy.
+* Mimetype autocomplete now works in every possible XML tag.
+* Fixed issue where the timestamp added to mule-*.properties file caused Git merge conflicts.
+* Fixed issue that prevented metadata from being correctly populated in salesforce's `query-all` with nested query.
+* Fixed issue that prevented users from seeing their enterprises when importing a private API from Exchange.
+* Fixed issue that prevented private APIs from changing when changing modal for import.
+* Fixed scaffolding errors when I importing severals APIs.
+* Metadata tree now updates when creating a new metadata type.
+
+== Finished Tasks
+
+* Increased SAP version to 3.2.1.
+* Added functionality to import APIs from Exchange.
+* Fixed Windows Tests.
+
+== Enhancement Request
+
+* Added global configuration's UI elements in domain projects.
+* Column labels not saved in CSV Metadata Types with no header row.
+
+== Support
+
+* Access http://forums.mulesoft.com/[MuleSoft’s Forum] to pose questions and get help from Mule’s broad community of users.
+* To access MuleSoft’s expert support team https://www.mulesoft.com/support-and-services/mule-esb-support-license-subscription[subscribe to Mule ESB Enterprise] and log in to MuleSoft’s http://www.mulesoft.com/support-login[Customer Portal].
