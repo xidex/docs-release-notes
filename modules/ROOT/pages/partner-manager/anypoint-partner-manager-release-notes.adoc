@@ -6,6 +6,38 @@ endif::[]
 
 *xref:partner-manager::anypoint-partner-manager.adoc[Anypoint Partner Manager User Documentation]*
 
+== 1.26.1
+
+*February 16, 2019* 
+
+=== Browser Support
+
+Anypoint Partner Manager, as a component of https://anypoint.mulesoft.com[Anypoint Platform], supports the following browsers:
+
+* Firefox (latest version)
+* Chrome (latest version)
+
+=== Compatibility
+
+Compatible with:
+
+* X12 Module 1.2.1
+* EDIFACT Module 1.2.1
+* Partner Manager Connector 3.0.x
+* FTPS Connector 1.0.8
+* AS2 Connector 2.0.1
+
+=== Fixed in this Release
+
+* Updated APIs to allow passing a header to protect against potential XSS attacks. 
+Use of this header is optional; it is only needed if you are building a custom UI for the Partner Manager APIs and want the returned data to be html encoded.
+
+* Fixed error in which Partner Manager Connector returns a “JSON property value too long” error when posting large error messages to the Tracker API.  The fix is to extend the maximum length of the field and truncate the message when it exceeds the maximum length.
+
+=== New Features
+
+* Added support for environment name resolution in audit logs.
+
 == 1.26.0
 
 *November 3, 2018*
