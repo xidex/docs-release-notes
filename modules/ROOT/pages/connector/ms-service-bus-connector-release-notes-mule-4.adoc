@@ -5,6 +5,29 @@ endif::[]
 
 _Select_
 
+== 2.0.3 
+
+*February 22, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|Microsoft Azure Service Bus (Cloud) | -
+|Microsoft Windows Service Bus (on-premises) | -
+|===
+
+=== Fixed in this Release
+
+* A number of issues regarding connection leaks were fixed.
+* The connector would stop receiving messages when the flow threw an error. This was fixed.
+
+=== Known Issues
+
+* Automatic completion of queue/topic names, subscriptions and rules may not work in Design Center.
+
 == 2.0.2 
 
 *December 5, 2018*
