@@ -2,7 +2,54 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, exchange
+
+== January 2019
+
+=== New Features
+
+* Conversion from RAML to OAS 2.0 and from OAS 2.0 to RAML in the publication process.
+* Ability to download a REST API specification in either RAML or OAS 2.0 with identification of the "Generated" specification.
+* Direct upload of RAML and RAML fragments.
+* New API console experience.
+* Consistent API specification publication user interface between Exchange and API Manager.
+* Contextual view of RAML versions of API specifications and fragments in API designer from Exchange.
+
+=== Version Note
+
+The Exchange versions have changed from version numbers to date versioning by year and month.
+
+== 2.7
+
+*October 2018*
+
+=== New Features
+
+* Exchange provides master organization scope search and browse for all assets in a master organization, irrespective of which business groups users belong to. Users are no longer limited to finding assets within their own business group.
+* Vanity domain for public portals - Customers can now set their own domain name for their developer portal. This enables a more personalized and consistent branding experience, where you can use your own domain names. This also improves your search engine optimization(SEO) when your customers and users are searching for APIs that are specific to your domain. See xref:exchange::portal-vanity-domain.adoc[Public Portal Vanity Domain].
+* Limits on Custom asset files - Prevents users from uploading malicious file contents as Custom types. See xref:exchange::to-create-an-asset.adoc#create-a-custom-asset[Create a Custom Asset].
+
+=== Fixed in this Release
+
+* (Asset Manager) When recalculating latest version, check if uncompleted versions are considered. (EXC-2749)
+* (Asset Reviews) Some ratings table columns have incorrect length. (EXC-2776)
+* (Exchange UI) Incorrect asset id placeholder in Exchange Manual Publication. (EXC-2731)
+* (Studio 6 and 7) Logout of Exchange shows "Session Expired". (EXC-2774)
+* Cannot customize Public portal with images that have names longer than 64 characters. (EXCP-753)
+* Customer bearer token is shared with Marketo API while navigating to Exchange. (EXCP-768)
+* Empty reply from server uploading large VDP file. (EXC-2748)
+* Enable Spec download in public portals for unauthorized users. (EXCP-745)
+* Exchange 1 vulnerability. (EXCP-758)
+* Exchange asset tile list not rendering well in IE. (EXCP-748)
+* Exchange repository is not referenced in API POM files. (EXC-2723)
+* Hide save search for public portals. (EXCP-744)
+* Mocking service URL is incorrect when baseUri in RAML points to a mocking service instance. (EXCP-774)
+* New REST API with invalid RAML shows `The uploaded file does not have a valid RAML format`. (EXC-2759)
+* Resolution of SE-9079. (EXCP-757)
+* Unrestricted upload of dangerous file types in `Creating an asset`. (EXC-2729)
+
+=== Version Note
+
+The Exchange versions have changed from the 2.2.x to 2.x versions.
 
 == 2.2.2
 
@@ -25,7 +72,7 @@ We are pleased to announce the general availability of the latest release of Any
 
 * Managed categories to allow Exchange administrators and Organizations owners to create categories and group Exchange assets.
 * Exchange contributors can now organize assets into different groups to improve asset browsing and discovery.
-* Custom fields allow Exchange administrators and contributors to extend existing asset metadata.
+* Custom fields allow Exchange administrators and contributors to extend existing asset attributes through the API.
 * Ability to reorder pages on asset detail page.
 * Public content including Anypoint Connectors, Templates, and Examples is now available in Exchange EU.
 

@@ -1,0 +1,46 @@
+= IP Whitelist Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, ip-whitelist, policy, release notes
+
+== 1.1.1
+
+*Jun 05, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
+
+== 1.1.0
+
+*Jan 25, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+* Reduced error-handling verbosity in templates.
+* Added default expression for IP Addresses in the YAML file instead of in the template.
+
+=== Fixed Issues
+
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+
+== 1.0.0
+
+*Nov 14, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+== See Also
+
+* xref:api-manager::ip-whitelist.adoc[IP Whilelist Policy]

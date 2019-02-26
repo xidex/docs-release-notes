@@ -1,0 +1,55 @@
+= AS2 Connector Release Notes for Mule 4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Support Category: Premium
+
+AS2 (Applicability Statement 2) is a specification about how to transport data securely and reliably over the internet. Security is achieved by using digital certificates and encryption.
+
+The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 connector enables trading partners transmit and receive AS2 messages with EDI-X12, EDIFACT, XML, or binary payloads.
+
+== 4.0.1
+
+*February 20, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.1.0 and later
+|Java| 8
+|===
+
+=== Features
+
+* Added Receiver Host configuration, which must be set to "0.0.0.0" for operating on CloudHub.
+
+=== Fixed in this Release
+
+* The connector would not accept incoming messages when run on CloudHub.
+* Using signing throws ClassCastException.
+
+== 4.0.0
+
+*November 12, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.1.0 and later
+|Java|8
+|===
+
+=== Features
+
+* Send - Allows you to send AS2 messages via HTTP or HTTPS.
+* Receive - Enables a Mule application to receive messages following the AS2 protocol.
+
+=== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

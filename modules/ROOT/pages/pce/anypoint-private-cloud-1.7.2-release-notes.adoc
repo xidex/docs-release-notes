@@ -1,0 +1,41 @@
+= Anypoint Platform Private Cloud Edition Version 1.7.2 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*January 2019*
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Product Name Version Number.
+
+Be sure to read this document before you install this release. For reference, save these release notes to your hard drive or print a copy.
+
+
+== Changes in this release
+
+The following change was added to this release:
+
+- Kubernetes security patch for CVE-2018-1002105.
+
+== Installing
+
+See xref:1.7@private-cloud::install-workflow.adoc[Workflow: Install Anypoint Private Cloud] for information on how to install Anypoint Platform Private Cloud Edition.
+
+== Upgrading from 1.6.x or 1.7.0
+
+See xref:1.7@private-cloud::upgrade.adoc[To Migrate to Anypoint Platform Private Cloud Edition, Version 1.7.x] for information on how to upgrade to the current version.
+
+Before upgrading, you must backup your system as described in xref:1.7@private-cloud::backup-and-disaster-recovery.adoc[To Backup and Restore Your System].
+
+== Fixed Issues
+
+No fixes are included in this release.
+
+== Known Issues
+
+This release contains the following known issues:
+
+[%header%autowidth.spread]
+|===
+|Issue |Description |Workaround
+| When saving Ping Federate config, client credentials are always auto-generated | First time PF config for client management is saved a token validator client is always created regardless it is passed in the form. | If you need a specific client, save the values again with desired credentials, remove the auto-created client in PF side.
+|===

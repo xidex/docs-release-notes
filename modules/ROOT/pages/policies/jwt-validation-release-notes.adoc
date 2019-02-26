@@ -1,0 +1,45 @@
+= Json Web Token (JWT) Validation Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, cors, policy, release notes
+
+== 1.0.2
+
+*Jan 29, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Improved performance by using CPU intensive scheduler instead of CPU Light.
+
+=== Fixed Issues
+
+* Fixed error causing out of memory when using a custom claim with DataWeave.
+
+== 1.0.1
+
+*Jan 10, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Improved the RAML and OAS snippets.
+
+== 1.0.0
+
+*Dec 21, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+== See Also
+
+* xref:api-manager::policy-mule4-jwt-validation.adoc[JWT Validation Policy for Mule 4]

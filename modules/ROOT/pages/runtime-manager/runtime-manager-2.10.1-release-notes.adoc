@@ -1,0 +1,32 @@
+= Anypoint Runtime Manager Version 2.10.1 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+_Feb 16, 2019_
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager version 2.10.1.
+
+== New Features and Enhancements
+
+This release contains no new features.
+
+== Changes in This Release
+
+This release contains no feature changes.
+
+== Fixed Issues
+
+* [SE-9163] ARM REST Services returns "No application with the provided GAV could be retrieved from Exchange" when deploying app from Exchange to on-prem server
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+
+== Compatibility Notes
+
+There are no compatibility notes in this release.

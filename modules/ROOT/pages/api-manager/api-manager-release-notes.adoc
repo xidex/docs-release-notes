@@ -16,6 +16,51 @@ Anypoint Platform supports the following browsers:
 * Chrome (latest version)
 * Internet Explorer 11 and newer
 
+== 2.2.9
+
+*Jan 26, 2019*
+
+This release provides this new feature:
+
+* Automated policy for Mule 4 APIs
+* Adding RAML support for "Create new API"
+* While creating an API instance, API version and asset version are prepopulated
+* When deploying Mule 4 to CloudHub it is possible to choose specific runtime version
+* Notification for a managed API if API spec changes or newer version available in Exchange
+
+
+== 2.2.8
+
+*December 21, 2018*
+
+This release provides this new feature:
+
+*  JWT policy for Mule 4 APIs
+
+== 2.2.7
+
+*November 17, 2018*
+
+This release provides this new feature:
+
+*  Domain support for Mule 4
+
+=== Fixed in This Release
+
+* Bug when users download a HTTPS proxy without TLS context.
+* Changed policy display order, sorting version in descending order.
+
+
+== 2.2.6
+
+*November 3, 2018*
+
+This release provides this new feature:
+
+*  API Manager 2.x users will get access to Secrets Manager.
+*  Configure, secure & deploy HTTPs proxies using certificates (keystore/truststore) stored in Secrets Manager. This feature will be available for Mule 4 APIs deployed to CloudHub & Hybrid deployment targets.
+
+
 == 2.2.5
 
 *August 30, 2018*
@@ -112,7 +157,7 @@ This release of API Manager includes new and enhanced features for accounts that
 ** This release of Mule 4 xref:api-manager::policy-scope-size-concept.adoc[changes the packaging, size, and scope] of a policy.
 ** All policies are non-blocking.
 ** All policies except CORS, which is executed first, can be ordered.
-* xref:api-manager::develop-custom-policies-reference.adoc[Custom policy development] has changed.
+* xref:api-manager::custom-policy-getting-started.adoc[Custom policy development] has changed.
 * Header propagation no longer occurs by default and needs to be configured.
 * Resource level policy support, which was restricted to RAML-based APIs, is extended to any HTTP API.
 

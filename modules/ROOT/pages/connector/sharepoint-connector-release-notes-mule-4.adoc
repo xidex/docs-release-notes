@@ -2,13 +2,47 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, sharepoint, connector
-
-*January 2018*
 
 _Select_
 
 The Anypoint Connector for SharePoint lets you connect to the Microsoft SharePoint application. The connector exposes convenient methods to work with Microsoft SharePoint API.
+
+== 3.1.1
+
+*October 5, 2018*
+
+=== Compatibility
+
+The SharePoint connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|Studio 7.0.0 and later
+|===
+
+=== Fixed in this Release
+
+*  When doing a Select Item Query the connector threw NullPointerException.
+The problem was solved by parsing the query provided by the client.
+
+== Version 3.1.0 
+
+*May 10, 2018*
+
+The Sharepoint connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio|Studio 7.0.0 and later
+|===
+
+=== Features:
+
+* Implemented triggers for created, deleted and updated objects. The triggers are New Objects Trigger, Deleted Objects Trigger, Modified Objects Trigger.
 
 == 3.0.0
 
@@ -22,10 +56,10 @@ The SharePoint connector is compatible with:
 |===
 |Application/Service |Version
 |Mule Runtime|Mule Enterprise Edition 4.0.0 and later
-|Anypoint Studio|Only works with Studio 7.0.0 and later
+|Anypoint Studio|Studio 7.0.0 and later
 |===
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

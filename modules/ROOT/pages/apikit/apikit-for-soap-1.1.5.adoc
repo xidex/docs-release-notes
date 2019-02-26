@@ -1,0 +1,27 @@
+= APIkit for SOAP 1.1.5 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This version of APIkit for SOAP includes bug fixes.
+
+For Anypoint Studio, this version is distributed as Anypoint APIkit SOAP Extension 1.2.3.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|===
+
+== Fixed in This Release
+
+* APIKit for Soap Router doesn't route correctly when multiple port types are present in a WSDL.
+* Sometimes XSD and WSLD files are not being imported when creating a Mule project using WSDL.
+* Deduce automatically SOAP Version from WSDL.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].

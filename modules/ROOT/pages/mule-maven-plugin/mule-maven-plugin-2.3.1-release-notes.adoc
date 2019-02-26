@@ -1,0 +1,43 @@
+= Mule Maven Plugin 2.3.1 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+[WARNING]
+This release breaks backward compatibility on the deployment configuration section.
+It follows the same configuration as the 3.x version of the plugin. +
+Check this xref:3.9@mule-runtime::mule-maven-plugin.adoc[section] to make the proper changes.
+
+This new release of the plugin includes the support to deploy applications into Runtime Fabric. +
+Also, we have manage to fix a small number of issues that were affecting the product.
+
+== Hardware and Software Requirements
+
+Hardware and Software Requirements
+
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+* Java 8,7
+* Maven 3.3.3, 3.3.9, 3.5.0
+
+== Compatibility
+
+* Mule 3.x
+* Anypoint Studio 6.x
+
+== Features and Functionality
+
+No new feature was introduced on this release.
+
+== Fixed Issues
+
+* MMP-382 - Merge RF deployment code back to 2.3.x
+* MMP-416 - Redeploy fails when static ip configured on CH app
+* MMP-420 - hange calls to organization hierarchy due to security issue
+* MMP-430 - Support properties for Runtime Fabric deployment
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].

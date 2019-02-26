@@ -4,6 +4,22 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: cli, command line interface, command line, release notes, anypoint platform cli
 
+== Version 3.0.3 - December 27, 2018
+
+This release of the Anypoint CLI fixes the following issue:
+
+* `api-mgr api manage` command when using `--referencesUserDomain true` on Hybrid does not checks the *Reference User Domain* checkmark when viewing the API in the API Manager UI.
+
+
+== Version 3.0.2 - December 12, 2018
+
+This release of Anypoint CLI focuses on bug fixes.
+
+== Version 3.0.1 - November 20, 2018
+
+This release of Anypoint CLI focuses on bug fixes.
+
+
 == Version 3.0.0 - October 5, 2018
 
 Anypoint CLI 3.x is not compatible with Anypoint Platform versions pre-Crowd release.
@@ -12,12 +28,12 @@ To keep using CLI with pre-crowd release organization, use xref:runtime-manager:
 
 This release of the Anypoint CLI inclues CLI commands for API Manager 2.x (crowd release)
 
-* Added support for API Manager v2: all changes documented here.
+* Added support for API Manager v2.
 * Removed previous api-mgr commands (API Manage v1).
 * Renamed api-mgr applications * -> api-mgr contract *.
 * Renamed api-mgr tiers * -> api-mgr tier *.
 * Fixed an issue whereby if an API contained null values, it was trowing an error.
-* Added support for graphQL APIs, see "extra cost" report here.
+* Added support for graphQL APIs.
 * Removed support for Node < 8.12.0.
 
 

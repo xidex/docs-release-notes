@@ -5,10 +5,83 @@ endif::[]
 
 This document describes any new features and enhancements, known limitations, issues, and fixes in Anypoint Monitoring.
 
+== 2.1
+
+=== February 22, 2018
+
+The following new charts are available in the built-in dashboards:
+
+* Inbound
+ ** Maximum Response Time
+* Infrastructure
+ ** System Memory
+ ** Application Process CPU Load
+ ** Application Process CPU Minutes
+ ** Operating System Swap Space
+* JVM
+ ** Committed Virtual Memory
+
+For more information about built-in dashboards, see xref:monitoring::app-dashboards.adoc[Built-in Application Dashboards] 
+
+=== February 16, 2018
+
+* You can now monitor Web Services connectors in the *Connectors* tab. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors].
+* Custom metrics can now be visualized in real time using the built-in *Custom metrics* dashboard. For more information, see xref:monitoring::anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].  
+
+=== February 7, 2019
+
+The Anypoint Monitoring log points feature now supports the following API types and versions:
+
+* Basic endpoint APIs (CloudHub and hybrid)
+ ** CloudHub
+ ** Hybrid
+* Endpoint with Proxy APIs
+  ** CloudHub proxy
+  ** Hybrid proxy
+* Mule 3 versions 3.8.5 and later
+* Mule 4 versions 4.1.1 and later
+
+See xref:monitoring::log-points.adoc[Log Points]
+
+=== January 12, 2019
+This release contains the following new features:
+
+* *Custom Dashboard API Support* 
+** When you configure a custom dashboard, in Basic Mode, you can choose between an Application Panel and an API Panel to allow you to create dashboards to visualize API metrics. 
+** In Advanced Mode you can add queries based on API metrics.
+
+=== December 15, 2018
+This release contains the following new features:
+
+* *API Analytics* - API Analytics is now available in Anypoint Monitoring. See xref:monitoring::api-analytics-dashboard.adoc[Builtin API Analytics Dashboard].
+* *Anypoint Custom Metrics Connector* - (Requires a Titanium subscription) The Anypoint Custom Metrics connector enables sending metric values with dimensions to Anypoint Monitoring, where they can be visualized in real time using Custom Dashboards. See xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector].
+
+=== December 8, 2018
+This release contains the following new features:
+
+* *Log Points* - (Requires Titanium subscription) You can generate logs for a running API without writing any code or redeploying your application. You can select specific parameters within the API for which to generate logs, for example, the request header `host` parameter. For more information about log points, see xref:monitoring::log-points.adoc[Anypoint Monitoring Log Points]
+* *Connector-level Flow Analysis* - (Requires Titanium subscription) You can now monitor the performance for connectors. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors]
+
+
+=== Known Issues
+
+The Anypoint Monitoring log points feature is only supported on Mule runtime engine version 3.8.5-AM or later. For APIs not running on Mule runtime engine 3.8.5-AM or later, the log points feature does not appear for the API.
+
+Since you can't select the runtime version when you deploy an API from API Manager, you need to navigate to Runtime Manager, select the runtime version (3.8.5-AM or later), then redeploy the API.
+
+[NOTE]
+Mule runtime engine versions appended with `-AM` are listed in Runtime Manager, in the *Runtime Version* menu under *Show old patch releases*. 
+
+=== Fixed Issues
+
+* General bug fixes.
+
+
 == Version 1.05
 
 === New Features and Enhancements
 
+* Environment-wide reporting on application performance, including requests, failures, CPU and memory utilization. (Requires a Titanium subscription)
 * Performance Improvements
 ** All static resources are stored on a content delivery network (CDN).
 ** Resources are prefetched on page load.

@@ -5,11 +5,172 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-3,2.4.3>>
+* <<2-4-2,2.4.2>>
+* <<2-4-1,2.4.1>>
+* <<2-4-0,2.4.0>>
 * <<2-2-9,2.2.9>>
 * <<2-2-8,2.2.8>>
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.4.3
+*February 23, 2019*
+
+This release fixes two issues.
+
+=== Fixed Issues
+// SE-10793
+* The behavior of the *Import API Example* dialog was faulty, making a selection difficult. You can open this dialog when you first create an API-specification project by clicking the word "example" in the sentence "Start project from an existing example," which appears in the left pane of the editor
+// SE-10890
+* The mocking service created invalid OAuth redirect URLs.
+
+
+== 2.4.2
+*February 9, 2019*
+
+This release fixes a number of issues.
+
+=== Fixed Issues
+// SE-10631
+* When the Mocking Service was on, the right pane of the editor was not displaying examples of JSON types for request bodies.
+// SE-10632
+* The editor did not show errors when the facet `properties` was declared twice for a type.
+// SE-10659
+* The editor displayed the error message `Expecting !!str and !!int provided` when numbers were used as keys in type definitions and in named examples.
+// SE-10701
+* For type declarations such as the one in this example, the editor displayed an error message that said the example value should be a multiple of the value of the `multipleOf` key:
+----
+#%RAML 1.0 DataType
+displayName: exampleType
+type: number
+multipleOf: 0.01
+example: 19.99
+----
+// SE-10702
+* The editor displayed the following error message after parsing a RAML project that included an XSD schema: `The schema document '<filename>.xsd' cannot include itself`
+// SE-10779
+* MIME types are now validated as strings, not as regular expressions.
+// SE-10863
+* Auto-completion after elements such as `uses` and `!include` was not working, and suggestions for content to place after such elements were not being offered.
+
+== 2.4.1
+*January 25, 2019*
+
+This release includes enhancements and fixes a number of issues.
+
+=== Enhancements
+
+* *For projects created before January 10, 2019:* You can turn on or off the stricter validation that began with the 2.4.0 release on January 10, 2019. You might want to do so to work with in an API-specification project that was created before this date, but don't yet have plans for resolving the messages that this validation displays.
++
+To turn this validation off, toggle the switch that is labeled *Show Strict Errors* in the top-right corner of the editor. The default is On.
++ Even if you toggle this validation off, the grace period in which you must resolve the messages is still in effect. The grace period lasts at least until January 10, 2020.
+* The documentation describes additional RAML problems that generate violation and warning messages since the 2.4.0 release.
+
+
+=== Fixed Issues
+
+// SE-10558
+* When a RAML specification uses an `example` facet was being used, rather than an `examples` facet, the API editor displays a message. In the previous release, the message was not clear.
+// SE-10631
+* Design Center was not using the latest version of the API Console. Therefore, the JSON type for request bodies was not appearing in the right-hand pane of the API editor.
+// SE-10639
+* In Firefox, the body of POST and PUT requests was not appearing when the mocking service was being used, preventing requests from being sent correctly.
+
+
+== 2.4.0
+*January 10, 2019*
+
+This release includes several enhancements and fixes a number of issues.
+
+=== Enhancement
+
+* The API editor (one of the two editors in Design Center's API Designer) is now using the AMF parser. This parser checks for full conformance with the RAML specification (either 0.8 or 1.0) that is being used for an API specification. If you reopen in the API editor any RAML API specifications that have already been published, you might find that there are instances of stricter validation. For more information about what to do in such cases, see xref:design-center::design-modify-raml-specs-conform.adoc[Modify Published RAML API Specifications to Conform Completely to RAML 0.8 or 1.0].
++
+The AMF parser is at version 2.0.0.
+* The Design Center now provides native support for OAS 2.0. To learn more, xref:design-center::design-create-publish-api-specs.adoc[see the documentation].
+* The names of projects for API specifications and API fragments can now be as long as 64 characters.
+* The option to download a project in YAML is now replaced with the following options, which you can access by clicking the three dots next to the name of a specification in the left pane:
+** *Download as*: Downloads a RAML specification as an OAS specification, or an OAS specification as a RAML specification.
++
+[WARNING]
+====
+The downloaded file is not guaranteed to be a correct specification.
+====
+** *Convert*: Converts a RAML specification to an OAS specification, or an OAS specification to a RAML specification.
++
+[WARNING]
+====
+The converted file is not guaranteed to be a correct specification.
+====
+
+=== Fixed Issues
+
+// SE-7433
+* A problem occurred in which an API specification could not be tested with the mocking service when OAuth 2.0 was used for security. Clicking *Authorize and Send* after filling in all of the required authentication information merely resulted in the message "Fill in the authorization form first".
+// SE-7817
+* The API editor did not detect that an incorrect JSON schema was being referenced.
+// SE-7869
+* The API console pane of the API editor was sometimes not being refreshed as different types were being selected. The same problem could occur as different responses were selected.
+* There were a few formatting problems in the information displayed in the API console pane.
+// SE-7898
+* Swedish characters were not supported in the Crowd release (November 2017).
+// SE-8242
+* If a RAML API specification contained a DataType that extended another DataType, the information shown in the API console pane about the extending DataType could sometimes be incorrect.
+// SE-8323
+* The API editor could take too long to resolve one or more DataType resources. During that time, the API console pane was blank.
+// SE-8424
+* When a RAML extension extended a file that used a library that was itself defined in a fragment, and the library included a trait with the `!include` tag, the API editor was unable to locate the trait.
+// SE-8464
+* If a RAML API fragment defined multiple properties as `<propertyName>: string | nil`, the API console pane did not display any information, or did so only after a long delay, after the API specification that referenced the fragment was opened.
+// SE-8628, SE-9703
+* If a project included a JSON schema, and that file itself included another JSON schema, Design Center failed to load the second schema.
+// SE-9121
+* The API editor was requiring the media type to be declared for message bodies, even though the RAML specifications state that `mediaType` is optional for `body` nodes.
+// SE-9165
+* If you tried to import a Swagger 2.0 JSON file that contained an array of objects, Design Center threw a parsing error.
+// SE-9269
+* The mocking service was not presenting a choice of authentication methods when a basic `securityScheme` was being referenced from a library RAML fragment.
+// SE-9276
+* It was possible for projects imported into Anypoint Studio from the API editor in Design Studio to contain RAML errors that were not pointed out by the API editor.
+// SE-9545
+* RAML errors not reported by the API editor could cause problems in the API console pane, such as failures to display various pieces of information.
+// SE-9284
+* If a `uses` node specified an invalid path to a library, the API editor displayed this unhelpful message:
++
+----
+Cannot read property 'ast' of null at (1, 0)
+----
++
+The message has been improved.
+// SE-9994
+* The API editor was allowing a blank line as the first line in RAML files.
+// SE-10064
+* For very large API specifications, validation and the appearance of the API Console in the API editor could require much more time than usual.
+// SE-10137
+* If an endpoint were simply `/`, the API editor would throw a parsing error.
+// SE-10144
+* In the API console of the API editor, query parameters did not appear after you clicked the *Try It* button.
+// SE-10150
+* In the API editor, changing the version number of an API specification that you were publishing to Exchange would change the value of all instances of the "version" keyword in the specification. Only the value for the root instance should have been changed.
+// SE-10246
+* When a custom datatype was declared as Int64, the range declared for the datatype was not validated. For example, the mistake in this definition -- declaring a maximum value that is too high for Int64 values -- was not caught:
++
+----
+my_int64:
+  type: integer
+  format: int64
+  minimum: 1000000000000000000
+  maximum: 9999999999999999999
+----
+// SE-10257
+* Using double angle brackets (double chevrons) enclose a parameter name in resource type and trait definitions was not supported in the API editor.
+// SE-10277
+* Some valid regular expressions in the RAML "pattern" element were unsupported in the API editor.
+// SE-10309
+* In some cases, publishing an API specification to Exchange from the API editor would result in the content of the API specification being reordered incorrectly in the editor.
+
 
 == 2.2.9
 *August 9, 2018*
@@ -18,7 +179,7 @@ This release contains an enhancement.
 
 === Enhancement
 
-If your organization contains more than one business group, you can now select the group ID to associate an API specification with when you publish that specification to Anypoint Exchange.
+If your organization contains more than one group ID, you can now select the group ID to associate an API specification with when you publish that specification to Anypoint Exchange.
 
 == 2.2.8
 

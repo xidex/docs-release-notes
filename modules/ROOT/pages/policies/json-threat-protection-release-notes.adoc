@@ -1,0 +1,46 @@
+= JSON Threat Protection Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, json, threat, protection, policy, release notes
+
+== 1.1.1
+
+*Jun 25, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Added `violationCategory` in the YAML configuration for Feedback Loop.
+
+== 1.1.0
+
+*Jan 25, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+* Reduced error-handling verbosity in templates.
+
+=== Fixed Issues
+
+* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+
+== 1.0.0
+
+*Nov 13, 2017*
+
+=== Minimum Mule Version
+
+*4.0.0*
+
+
+== See Also
+
+* xref:api-manager::apply-configure-json-threat-task.adoc[JSON Threat Protection for Mule 4]

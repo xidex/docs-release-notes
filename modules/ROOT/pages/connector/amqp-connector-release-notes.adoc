@@ -2,15 +2,131 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: amqp, release, notes
 
-*October 2018 - 3.8.2* +
-*September 2018 - 3.7.11*
-
-_Select_
+Support Category: Select
 
 AMQP Connector has two active versions each supporting different versions of the RabbitMQ library. AMQP Connector
-version 3.8.2 supports RabbitMQ client library 5.3.0 and requires JDK 8 and later. AMQP Connector 3.7.11 supports RabbitMQ client library 4.6.0.
+versions 3.8.x and 3.9.x support RabbitMQ client library 5.3.0 and require JDK 8. AMQP Connector 3.7.x supports RabbitMQ client library 4.6.0.
+
+== 3.9.2
+
+*January 25, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
+|===
+
+*Note:* This version requires Java 8 or later.
+
+=== Fixed in this Release
+
+* Minor 3.9.x is not adding amqp dependencies in studio. (AMQP-128)
+
+== 3.9.1
+
+*January 24, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
+|===
+
+*Note:* This version requires Java 8 or later.
+
+=== Fixed in this Release
+
+* Problem on switching the primary node. Cluster notification is ignored. (AMQP-123)
+
+== 3.9.0
+
+*January 24, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
+|===
+
+*Note:* This version requires Java 8 or later.
+
+=== Fixed in this Release
+
+Add cluster supportability for this connector. (AMQP-119)
+
+== 3.8.5
+
+*January 16, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
+|===
+
+*Note:* This version requires Java 8 or later.
+
+=== Fixed in this Release
+
+AMQP connector overwrites threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
+
+== 3.8.4
+
+*December 3, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
+|===
+
+*Note:* This version requires Java 8 or later.
+
+=== Features
+
+An attribute to define if the AMQP subreceivers should be started asynchronously must be added. (AMQP-81)
+
+== 3.8.3
+
+*October 30, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
+|===
+
+*Note:* This version requires Java 8 or later.
+
+=== Fixed in this Release
+
+Minor 3.8.x is not adding AMQP dependencies in Studio. (AMQP-104)
 
 == 3.8.2
 
@@ -23,6 +139,7 @@ version 3.8.2 supports RabbitMQ client library 5.3.0 and requires JDK 8 and late
 |Software |Version
 |Mule Runtime |3.9 and later
 |Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
 |===
 
 *Note:* This version requires Java 8 or later.
@@ -42,6 +159,7 @@ RabbitMQ Client Channel is stored as a flowVar that resulted in a serialization 
 |Software |Version
 |Mule Runtime |3.9 and later
 |Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
 |===
 
 *Note:* This version requires Java 8 or later.
@@ -61,6 +179,7 @@ Add RabbitMQ broker blocking handler in the Mule 3 Connector. (AMQP-99)
 |Software |Version
 |Mule Runtime |3.9 and later
 |Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |5.3.0
 |===
 
 *Note:* This version requires Java 8 or lare.
@@ -73,6 +192,42 @@ This release consists of the upgrade of amqp-client RabbitMQ library to 5.3.0.
 
 * Update RabbitMQ client version to 5.x. (AMQP-95)
 
+== 3.7.13
+
+*January 16, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.5 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |4.6.0
+|===
+
+=== Fixed in this Release
+
+AMQP connector overwrites threadpool.amqpReceiver from other instances of the connector. (AMQP-112)
+
+== 3.7.12
+
+*December 3, 2018*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.5 and later
+|Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |4.6.0
+|===
+
+=== Features
+
+An attribute to define if the AMQP subreceivers should be started asynchronously must be added. (AMQP-81)
+
 == 3.7.11
 
 *September 14, 2018*
@@ -84,6 +239,7 @@ This release consists of the upgrade of amqp-client RabbitMQ library to 5.3.0.
 |Software |Version
 |Mule Runtime |3.5 and later
 |Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |4.6.0
 |===
 
 === Features
@@ -101,6 +257,7 @@ Rabbitmq Client Channel is stored as a flowVar resulting in serialization error.
 |Software |Version
 |Mule Runtime |3.5 and later
 |Anypoint Studio |3.5 and later
+|RabbitMQ Client Library |4.6.0
 |===
 
 === Features
