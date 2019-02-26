@@ -29,7 +29,7 @@ Compatible with:
 
 === Fixed in this Release
 
-* Updated APIs to allow passing a header to protect against potential XSS attacks. 
+* The Partner Manager APIs have been updated support passing an HTTP header (*x-entity-encoding*) to protect against potential XSS attacks when Partner Manager is used with custom-built HTML pages. 
 Use of this header is optional; it is only needed if you are building a custom UI for the Partner Manager APIs and want the returned data to be html encoded.
 
 * Fixed error in which Partner Manager Connector returns a “JSON property value too long” error when posting large error messages to the Tracker API.  The fix is to extend the maximum length of the field and truncate the message when it exceeds the maximum length.
