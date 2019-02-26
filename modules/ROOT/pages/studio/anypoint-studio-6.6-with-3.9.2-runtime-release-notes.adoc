@@ -37,7 +37,7 @@ Build Id: 201902212149
 |===
 
 
-The 6.6.0 Studio release includes a number of bug fixes and comes with Mule 3.9.2 runtime.
+The 6.6.0 Studio release includes some bug fixes and comes with Mule 3.9.2 runtime.
 
 == What's New
 
@@ -113,7 +113,7 @@ Then specify the location of your old version of Anypoint Studio in your local d
 == Bug Fixes
 
 * Studio Debugger now works with Scatter Gather.
-* Fixed issue that prevented APIKit to import all the files when having `$ref` references in a project.
+* Fixed issue that prevented APIKit from importing all the files when having `$ref` references in a project.
 * Fixed issue that prevented the transformer from showing when it references an external `dwl` file that is located outside the Mule project.
 * Importing API from Design Center now generates flow scaffolding.
 * Fixed `NullPointerException` error thrown when opening the Custom Type dialog from an Exchange example.
@@ -134,10 +134,10 @@ Then specify the location of your old version of Anypoint Studio in your local d
 * Fixed issue that caused metadata to be lost when adding anything to a Catch Exception Strategy.
 * Mimetype autocomplete now works in every possible XML tag.
 * Fixed issue where the timestamp added to mule-*.properties file caused Git merge conflicts.
-* Fixed issue that prevented metadata from being correctly populated in salesforce's `query-all` with nested query.
+* Fixed issue that prevented metadata from being correctly populated in salesforce's `query-all` with nested queries.
 * Fixed issue that prevented users from seeing their enterprises when importing a private API from Exchange.
 * Fixed issue that prevented private APIs from changing when changing modal for import.
-* Fixed scaffolding errors when I importing severals APIs.
+* Fixed scaffolding errors when importing severals APIs.
 * Metadata tree now updates when creating a new metadata type.
 
 == Finished Tasks
