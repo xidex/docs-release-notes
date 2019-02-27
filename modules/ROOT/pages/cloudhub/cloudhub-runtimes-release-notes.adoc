@@ -6,6 +6,17 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== February 27, 2019
+
+4.1.5 Runtime Update:
+
+* `Context does not contain key` error shown in the logs [SE-10867]
+
+4.1.4 Runtime Update:
+
+* `Context does not contain key` error shown in the logs [SE-10867]
+
+
 == February 26, 2019
 
 3.9.2 Runtime Update:
@@ -37,6 +48,8 @@ These are the release notes for patches which are made to the Mule runtimes on C
 4.1.5 Runtime Update:
 
 * Address incomplete fix of performance degradation caused by high volume of logging [SE-10742]
+
+
 == February 7, 2019
 
 4.1.5 Runtime Update:
