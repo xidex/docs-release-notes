@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 *February 20, 2019* +
-*Build ID: 201902212149*
+*Build ID: 201902221758*
 
 <<migration,Skip to Migration Guide>>
 
@@ -17,7 +17,7 @@ endif::[]
 
 |*Anypoint Studio*
 |Version: 6.6 +
-Build Id: 201902212149
+Build Id: 201902221758
 
 |*APIkit*
 |Versions: 3.9.1
@@ -97,8 +97,8 @@ To get the latest runtime version after updating Studio follow xref:6.5@studio::
 
 == Known Issues
 
-When opening a previous workspace with projects that were created with Studio 5.1.0 or older, and which has metadata stored in disk, Studio asks you to perform an update to all the projects so that the Metadata Manager can handle the existing types and show them in your project.
-
+* When opening a previous workspace with projects that were created with Studio 5.1.0 or older, and which has metadata stored in disk, Studio asks you to perform an update to all the projects so that the Metadata Manager can handle the existing types and show them in your project.
++
 [TIP]
 ====
 You can easily import all of the external components that you had installed in your old version of Anypoint Studio through a single action. This includes connectors, runtimes, and any other type of extension added through the Anypoint Exchange or the ​*Help -> Install new software*​ menu, as long as there are no compatibility restrictions.
@@ -109,6 +109,8 @@ image::studio/import-extensions.png[import]
 
 Then specify the location of your old version of Anypoint Studio in your local drive.
 ====
+* Since this version of Anypoint Studio upgrades its core Eclipse version, it is recommended to download and run the latest installer to install a fresh new full copy from https://www.mulesoft.com/lp/dl/studio[The Studio download site]. 
+
 
 == Bug Fixes
 
