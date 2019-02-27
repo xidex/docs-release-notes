@@ -90,7 +90,7 @@ If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint S
 [[migration]]
 == Migration Guide
 
-Since this version of Anypoint Studio upgrades its core Eclispe version, it is recommended to download and run the latest installer to install a fresh new full copy. +
+Since this version of Anypoint Studio upgrades its core Eclipse version, it is recommended to download and run the latest installer to install a fresh new full copy. +
 
 [TIP]
 --
