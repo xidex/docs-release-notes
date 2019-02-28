@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 == 2.0.3 
 
@@ -21,12 +21,12 @@ _Select_
 
 === Fixed in this Release
 
-* A number of issues regarding connection leaks were fixed.
+* Connection leaks were fixed.
 * The connector would stop receiving messages when the flow threw an error. This was fixed.
 
 === Known Issues
 
-* Automatic completion of queue/topic names, subscriptions and rules may not work in Design Center.
+* Automatic completion of queue and topic names, subscriptions, and rules may not work in Design Center.
 
 == 2.0.2 
 
