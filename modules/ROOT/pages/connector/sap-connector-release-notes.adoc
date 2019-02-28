@@ -12,11 +12,37 @@ The Mule Runtime supports SAP integration through our Anypoint Connector for SAP
 
 xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
 
+== 3.2.1 
+
+*February 28, 2019*
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|3.5.x and later
+|Anypoint Studio|6.3 and later
+|Java|7, 8
+|SAP Solution| ECC 6.0 or later
+|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+* *Outbound endpoint timeout doesn't work* - When calling an RFC that takes a long time to complete, the responseTimeout parameter is not considered and waits for the longest time. Not error or messages is triggered.
+ Fixed by throwing an exception when timeout value is reached.
+
+* *Outbound endpoint duplicate connection to SAP backend* - In case of error or timeout a second connection is triggered behind the scenes.
+Fixed by removing of duplicate retry call in the exception handling block.
+
+=== Known Issues
+
+* Destination Provider reference gets lost after hot redeploy of an application (i.e. modifying the `mule-config.xml`)
+
 == 3.2.0
 
 *October 3, 2017*
 
-[%header%autowidth]
+[%header%autowidth.spread]
 |===
 |Software |Version
 |Mule Runtime|3.5.x and later
