@@ -98,6 +98,10 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 == FAQ on Upgrades
 
+*How do I reschedule my upgrade?*
+
+Click *Cancel booking* in your *Booking confirmed* email. You can reschedule your upgrade by accessing the calendar view at the bottom of the self service upgrade portal and selecting a new upgrade date and time (7 days advance notice is required).
+
 *What is the API grouping step about?* 
 
 Group your APIs so they are organized on one or multiple API portals. Group API versions of the same API and that share the same specification standard (for example WSDL, RAML). Each group shares a single portal page in https://www.mulesoft.com/exchange/[Exchange]. If you have multiple versions in the API, click the checkbox in the grouping popup to select the portal and associated RAML to be the master portal for the API. In Exchange, the specification for any version on your API can be downloaded for your API consumers.
@@ -112,7 +116,7 @@ Yes, API policies remain in effect during the upgrade. You should not have to ch
 
 *How do I cancel my upgrade?*
 
-After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email is sent. For help, email crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
+After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click *Cancel booking* and click *Cancel this booking* in the window that opens. Once you cancel, a confirmation email is sent. For help, email crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
 
 *How can I test the upgrade before scheduling the upgrade for my Anypoint org?*
 
