@@ -98,6 +98,10 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 == FAQ on Upgrades
 
+*How do I reschedule my upgrade?*
+
+Click "Cancel booking" from your "Booking confirmed" email. Then, schedule again by accessing the calendar view at the bottom of the self service upgrade portal and select a new date/time (7 days in advance required).
+
 *What is the API grouping step about?* 
 
 Group your APIs so they are organized on one or multiple API portals. Group API versions of the same API and that share the same specification standard (for example WSDL, RAML). Each group shares a single portal page in https://www.mulesoft.com/exchange/[Exchange]. If you have multiple versions in the API, click the checkbox in the grouping popup to select the portal and associated RAML to be the master portal for the API. In Exchange, the specification for any version on your API can be downloaded for your API consumers.
