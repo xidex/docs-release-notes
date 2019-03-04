@@ -116,7 +116,7 @@ Yes, API policies remain in effect during the upgrade. You should not have to ch
 
 *How do I cancel my upgrade?*
 
-After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click "Cancel booking" and click "Cancel this booking" in the window that opens. Once you cancel, a confirmation email is sent. For help, email crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
+After you accepted the calendar invitation sent to you, open the email with subject "Your booking confirmation". Click *Cancel booking* and click *Cancel this booking* in the window that opens. Once you cancel, a confirmation email is sent. For help, email crowd@mulesoft.com. When you are ready to select a new time, log back into the platform to schedule the upgrade.
 
 *How can I test the upgrade before scheduling the upgrade for my Anypoint org?*
 
