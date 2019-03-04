@@ -100,7 +100,7 @@ For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classif
 
 *How do I reschedule my upgrade?*
 
-Click "Cancel booking" from your "Booking confirmed" email. Then, schedule again by accessing the calendar view at the bottom of the self service upgrade portal and select a new date/time (7 days in advance required).
+Click *Cancel booking* in your *Booking confirmed* email. You can reschedule your upgrade by accessing the calendar view at the bottom of the self service upgrade portal and selecting a new upgrade date and time (7 days advance notice is required).
 
 *What is the API grouping step about?* 
 
