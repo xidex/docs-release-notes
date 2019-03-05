@@ -411,6 +411,26 @@ expected single matching bean but found 2: _muleObjectStoreManager,_muleLocalObj
 +
 In this version Salesforce Connector works correctly in EU.
 
+== 9.2.0
+
+*May 2, 2018*
+
+=== Compatibility
+
+Salesforce connector version 9.2.0 is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
+|===
+
+=== Features
+
+* Changed Minimum Mule Version to 4.1.1.
+
 == 9.1.2
 
 *May 18, 2018*
@@ -438,26 +458,6 @@ expected single matching bean but found 2: _muleObjectStoreManager,_muleLocalObj
 ----
 +
 In this version Salesforce Connector works correctly in EU.
-
-== 9.2.0
-
-*May 2, 2018*
-
-=== Compatibility
-
-Salesforce connector version 9.2.0 is compatible with:
-
-[%header%autowidth.spread]
-|===
-|Application/Service |Version
-|Mule Runtime |Mule Enterprise Edition 4.1.0 and later
-|Anypoint Studio |7.1.0 and later
-|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0
-|===
-
-=== Features
-
-* Changed Minimum Mule Version to 4.1.1.
 
 == 9.1.1
 
