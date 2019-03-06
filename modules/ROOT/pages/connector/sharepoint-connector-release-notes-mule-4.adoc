@@ -27,7 +27,7 @@ The SharePoint connector is compatible with:
 *  When doing a Select Item Query the connector threw NullPointerException.
 The problem was solved by parsing the query provided by the client.
 
-== Version 3.1.0 
+== 3.1.0 
 
 *May 10, 2018*
 
