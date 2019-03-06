@@ -45,7 +45,8 @@ These release notes cover the following versions of these features:
 
 * Display descriptions of the operations to choose from when you add new cards to your flows. When you add a card, the list of operations is opened automatically. Mouse over any operation to display an icon to the right of the operation's name. Mouse over the icon to see a description of the operation.
 * If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see options for transforming the value and a preview of what the value will be.
-
+* If you drag and drop a "custom expression" element into a text field and then display the *Custom Expression* dialog to build an expression, you can click any DataWeave function in the right-hand pane of the dialog to see a description and examples of that function.
+* Use the Remove Variable card to remove a variable from a flow.
 
 
 ////
