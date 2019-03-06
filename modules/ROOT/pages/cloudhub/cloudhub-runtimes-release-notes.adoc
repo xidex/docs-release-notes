@@ -6,15 +6,25 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== March 4, 2019
+== March 6, 2019
 
 4.1.5 Runtime Update:
 
 * Incorrect handling of backslashes in logger component [SE-10940]
+* `NullPointerException` when MUnit tries to dispose object after test [SE-10038]
+
+4.1.4 Runtime Update:
+
+* `NullPointerException` when MUnit tries to dispose object after test [SE-10038]
 
 3.9.2 Runtime Update:
 
 * Partitioned object store does not delete partition folder [SE-10999]
+* Hung thread in WMQ transport with synchronous processing strategy [SE-10743]
+
+3.9.1 Runtime Update:
+
+* Hung thread in WMQ transport with synchronous processing strategy [SE-10743]
 
 3.8.7 Runtime Update:
 
