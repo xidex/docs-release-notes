@@ -1,0 +1,24 @@
+= = APIkit for OData 2.0.2 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+February 22, 2019
+
+== Compatibility
+
+* Mule 4.1.x+
+* APIkit M4-1.2.x+
+* Anypoint Studio 7.3.x+
+
+== Fixed in this Release
+
+* Fixed 500 error caused by Header Accept:'Application/xml'.
+* Fixed Metadata URI.
+* Fixed error that caused to recieve an "application/xml" type while expecting an "application/atom+xml" when format is atom.
+* RAML `union` type is now supported.
+
+== Links to Legacy OData Documentation
+
+* xref:studio/odata-extension-release-notes-101.adoc[OData Extension Studio Plugin 1.0.1 Release Notes]
+* xref:studio/odata-extension-studio-plugin-release-notes.adoc[OData Extension Studio Plugin 1.0.0 Release Notes]
