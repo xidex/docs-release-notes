@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: aggregators, module, release notes
 
 xref:connectors::aggregator/aggregators-module-reference.adoc[Aggregators Module Reference]
 
@@ -12,7 +11,7 @@ xref:connectors::aggregator/aggregators-module-reference.adoc[Aggregators Module
 
 === Fixed in this Release
 
-* Timeout aggregation being executed even if maxSize was reached (link:https://www.mulesoft.org/jira/browse/MULE-16539[MULE-16539])
+* Timeout aggregation executed even if the maxSize was reached. (link:https://www.mulesoft.org/jira/browse/MULE-16539[MULE-16539])
 
 === Compatibility
 
@@ -20,7 +19,7 @@ The Aggregators Module is compatible with:
 
 |===
 |Application/Service|Version
-|Mule Runtime|4.1.1 and higher.
+|Mule Runtime|4.1.1 and later
 |===
 
 == 1.0.0
@@ -33,10 +32,10 @@ The Aggregators Module is compatible with:
 
 |===
 |Application/Service|Version
-|Mule Runtime|4.1.1 and higher.
+|Mule Runtime|4.1.1 and later
 |===
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
