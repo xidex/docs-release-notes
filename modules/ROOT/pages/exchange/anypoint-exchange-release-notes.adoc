@@ -7,13 +7,13 @@ endif::[]
 
 === Fixed in this Release
 
-* Validate organizationId mandatory field in asset publication using Exchange xAPI. (EXC-3168)
-* Load API Console for public portals with vanity domains. (EXC-3143)
-* Fix error when going to draft/edit mode from a page that does not exist in draft. (EXC-2992)
-* Fix Maven Facade 404 errors when internal service fails to validate a Mule asset. (EXC-2911)
-* Fix Unauthorized error from Exchange when authentication server is rate limiting. (EXC-2900)
-* Avoid zip files that have a content size greater than the maximum allowed. (EXC-2527)
-* Add categories with Cyrillic names to an asset. (EXC-2461)
+* The organizationId field is mandatory when publishing assets through Exchange xAPIs. Previously not sending organizationId returned a misleading 404 (Not Found) error. Now not sending organizationId returns an accurate 400 (Bad Request) error. (EXC-3168)
+* Public portals that use vanity domains to promote their company domain name can now render the API Console. API console enables users to explore the API spec and try it out. (EXC-3143)
+* When a user goes to edit mode from a page that does not exist in the draft, Exchange now opens the home page in edit mode without an error. (EXC-2992)
+* Maven Facade now returns user-friendly and relevant error message text and code when internal services fail to validate a Mule asset. (EXC-2911)
+* Previously exceeding the rate limit for the underlying authentication service returned a misleading 401 (Unauthorized) error. Now exceeding the rate limit for the underlying authentication service returns an accurate 429 (Too Many Requests) error. (EXC-2900)
+* Prevent users from uploading compressed (zip) files whose uncompressed contents will exceed the maximum allowed size limit. Users will receive a 413 (Payload Too Large) HTTP error. (EXC-2527)
+* Enable support for Cyrillic text to be used for category names. (EXC-2461)
 
 == January 2019
 
