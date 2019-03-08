@@ -10,15 +10,15 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 3.8.7 Runtime Update:
 
-* Dnsmasq unavilable [SE-11197]
+* Dnsmasq unavailable [SE-11197]
 
 3.8.6 Runtime Update:
 
-* Dnsmasq unavilable [SE-11197]
+* Dnsmasq unavailable [SE-11197]
 
 3.8.5 Runtime Update:
 
-* Dnsmasq unavilable [SE-11197]
+* Dnsmasq unavailable [SE-11197]
 
 == March 7, 2019
 
