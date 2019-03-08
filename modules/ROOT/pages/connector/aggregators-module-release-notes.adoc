@@ -4,9 +4,24 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: aggregators, module, release notes
 
-*August 2018*
-
 xref:connectors::aggregator/aggregators-module-reference.adoc[Aggregators Module Reference]
+
+== 1.0.1
+
+*March 8, 2019*
+
+=== Fixed in this Release
+
+* Timeout aggregation being executed even if maxSize was reached (link:https://www.mulesoft.org/jira/browse/MULE-16539[MULE-16539])
+
+=== Compatibility
+
+The Aggregators Module is compatible with:
+
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.1 and higher.
+|===
 
 == 1.0.0
 
