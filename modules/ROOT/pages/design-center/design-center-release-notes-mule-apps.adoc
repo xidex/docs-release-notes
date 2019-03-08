@@ -41,7 +41,7 @@ This release contains the following new features and enhancements.
 
 * The new *Problems* pane lists errors in the currently open project. Open the pane by clicking *Problems* in the lower-right corner of the canvas. Click an error to be shown where you can resolve that error.
 * You can import a Mule-application project that was exported from Design Center. This feature is useful when you want to continue developing a Mule application in an environment in Anypoint Platform that is different from the environment in which the application was created.
-* When you open an existing Mule app after a new version of Mule runtime is released, Design Center will display a message stating that the app now uses the latest version of Mule runtime. The Mule app will then restart. This features ensures that Mule apps are always using the latest version of Mule runtime.
+* When you open an existing Mule application after a new version of Mule runtime is released, Design Center will display a message stating that the application now uses the latest version of Mule runtime. The Mule application will then restart. This feature ensures that Mule applications are always using the latest version of Mule runtime.
 
 === Enhancements
 
