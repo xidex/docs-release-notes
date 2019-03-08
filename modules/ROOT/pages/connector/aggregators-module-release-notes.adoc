@@ -11,7 +11,7 @@ xref:connectors::aggregator/aggregators-module-reference.adoc[Aggregators Module
 
 === Fixed in this Release
 
-* Timeout aggregation executed even if the maxSize was reached. (link:https://www.mulesoft.org/jira/browse/MULE-16539[MULE-16539])
+* Timeout aggregation executed even if the maxSize was reached. (https://www.mulesoft.org/jira/browse/MULE-16539[MULE-16539])
 
 === Compatibility
 
