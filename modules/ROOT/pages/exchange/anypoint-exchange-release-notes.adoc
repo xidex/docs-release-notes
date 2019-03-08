@@ -7,13 +7,13 @@ endif::[]
 
 === Fixed in this Release
 
-* Validate organizationId mandatory field in asset publication using Exchange xAPI (EXC-3168)
-* API Console not loading for public portals with vanity domains (EXC-3143)
-* Error when going to draft/edit mode from a page that does not exists in draft (EXC-2992)
-* Maven Facade returns 404 when internal service fail to validate a mule asset (EXC-2911)
-* Exchange returns Unauthorized error when authentication server is rate limiting (EXC-2900)
-* Avoid zip files that have a content size greater than the maximum allowed (EXC-2527)
-* Categories with Cyrillic names can't be added to an asset (EXC-2461)
+* Validate organizationId mandatory field in asset publication using Exchange xAPI. (EXC-3168)
+* Load API Console for public portals with vanity domains. (EXC-3143)
+* Fix error when going to draft/edit mode from a page that does not exist in draft. (EXC-2992)
+* Fix Maven Facade 404 errors when internal service fails to validate a Mule asset. (EXC-2911)
+* Fix Unauthorized error from Exchange when authentication server is rate limiting. (EXC-2900)
+* Avoid zip files that have a content size greater than the maximum allowed. (EXC-2527)
+* Add categories with Cyrillic names to an asset. (EXC-2461)
 
 == January 2019
 
