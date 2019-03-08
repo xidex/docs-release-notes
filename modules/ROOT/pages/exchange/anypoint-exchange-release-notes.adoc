@@ -13,7 +13,7 @@ endif::[]
 * Maven Facade now returns user-friendly and relevant error message text and code when internal services fail to validate a Mule asset. (EXC-2911)
 * Previously exceeding the rate limit for the underlying authentication service returned a misleading 401 (Unauthorized) error. Now exceeding the rate limit for the underlying authentication service returns an accurate 429 (Too Many Requests) error. (EXC-2900)
 * Prevent users from uploading compressed (zip) files whose uncompressed contents will exceed the maximum allowed size limit. Users will receive a 413 (Payload Too Large) HTTP error. (EXC-2527)
-* Enable support for Cyrillic text to be used for category names. (EXC-2461)
+* Allow Cyrillic text in category names. (EXC-2461)
 
 == January 2019
 
