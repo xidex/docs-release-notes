@@ -4,9 +4,10 @@ include::_attributes.adoc[]
 endif::[]
 
 
+* xref:apikit/apikit-for-odata-2.0.2.adoc[APIkit for OData 2.0.2 Release Notes]
 * xref:apikit/apikit-for-odata-2.0.1.adoc[APIkit for OData 2.0.1 Release Notes]
 * xref:apikit/apikit-for-odata-1.0.9.adoc[APIkit for OData 1.0.9 Release Notes]
-* xref:apikit/apikit-for-odata-1.0.7.adoc[APIkit for OData 1.0.7 Release Notes]
+* xref:apikit/apikit-for-odata-1.0.7.adoc[sAPIkit for OData 1.0.7 Release Notes]
 * xref:apikit/apikit-for-odata-1.0.6.adoc[APIkit for OData 1.0.6 Release Notes]
 * xref:apikit/apikit-for-soap-1.1.10.adoc[APIkit for SOAP 1.1.10 Release Notes]
 * xref:apikit/apikit-for-soap-1.1.9.adoc[APIkit for SOAP 1.1.9 Release Notes]
