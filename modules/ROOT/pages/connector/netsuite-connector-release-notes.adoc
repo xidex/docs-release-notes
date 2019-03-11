@@ -11,6 +11,26 @@ IMPORTANT: The NetSuite version is not the same as the SuiteTalk API version. Yo
 
 xref:3.9@mule-runtime::netsuite-connector.adoc[Connector User Guide]
 
+== 7.7.2 
+
+*March 7, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|3.5 and later
+|Java|7
+|API|SuiteTalk 2017.1
+|===
+
+[NOTE]
+The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
+
+=== Fixed in this Release
+Minor performance enhancements.
+
 == 7.7.1 
 
 *November 7, 2018*
