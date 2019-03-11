@@ -3,9 +3,33 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 The Anypoint Connector for Salesforce Composite provides a way to integrate with Salesforce Composite API https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite.htm[Salesforce Composite API]. The connector exposes convenient methods for preparing sub-requests, executing them in one batch, and parsing the results. It provides DataSense on both the preparation of sub-requests and parsing responses of their execution.
+
+== 1.1.1 
+
+*March 8, 2018*
+
+=== Compatibility
+
+The Salesforce Composite 1.1.1 connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime |3.7.5 or later
+|Salesforce Rest API | v43.0
+|===
+
+=== Fixes
+
+* Fixed an issue with the reconnection mechanism. When the session became invalid the connector was not able to reconnect.
+
+=== Known Issues
+
+* Support for TLS1.0 is discontinued in Salesforce.
+* If by default the application tries to use TLS1.0, then, when running it, the following VM argument should be added -`Dhttp.protocols=TLSv1.1,TLSv1.2` - This ensures that TLS1.1 or TLS1.2 will be used for the communication with Salesforce.
 
 == 1.1.0 
 
