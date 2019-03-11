@@ -25,7 +25,7 @@ The Salesforce Marketing Cloud connector is compatible with:
 
 === Fixed in this Release
 
-* Cannot connect to Salesforce Marketing: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog. The issue was fixed wrapping the thrown exception to a more readable one.
+* Cannot connect to Salesforce Marketing: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog. This issue was fixed by wrapping the thrown exception with a more readable one, SFDC-MARKETING-CLOUD:UNKNOWN.
 
 == 2.1.1
 
