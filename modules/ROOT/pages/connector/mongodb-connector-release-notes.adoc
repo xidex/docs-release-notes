@@ -10,6 +10,14 @@ _Select_
 
 Mule Runtime supports MongoDB integration by using the http://mongodb.github.io/mongo-java-driver/[MongoDB Java Driver].
 
+== 4.4.1 
+
+*March 9, 2019*
+
+=== Fixed in this Release
+
+* Find-documents operation returned an invalid response, now correct results are retrieved.
+
 == 4.4.0
 
 June 20, 2017
