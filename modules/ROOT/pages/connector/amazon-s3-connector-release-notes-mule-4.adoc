@@ -12,6 +12,27 @@ The Anypoint Amazon S3 Connector provides connectivity to the the Amazon S3 API,
 
 Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint Platform as with other Select connectors.  Prior versions remain freely available to the community.
 
+== 5.2.1
+
+*February 25, 2019*
+
+=== Compatibility
+
+The Amazon S3 connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0 and later
+|AWS SDK for Java	|1.11.79
+|===
+
+=== Fixed in this Release
+
+The connector was unable to properly stream large files to Dataweave. By adding content length value as a message attribute, this issue was fixed.
+
+Test connection functionality did not work properly, this release solved the mentioned issue.
+
 == 5.2.0
 
 *August 16, 2018*
