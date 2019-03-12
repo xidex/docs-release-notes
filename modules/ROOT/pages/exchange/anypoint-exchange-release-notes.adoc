@@ -5,6 +5,12 @@ endif::[]
 
 == February 2019
 
+=== New Features
+
+* Syntax highlighting in asset description markdown content. (EXC-3226)
+* Faster contextual navigation with clickable tags and categories in asset details page. By clicking on a tag or category, Exchange triggers a search of all of the assets that contain that tag or category. (EXC-3227)
+* Easy drag and drop image upload on Exchange's markdown editor. (EXC-3228)
+
 === Fixed in this Release
 
 * The organizationId field is mandatory when publishing assets through Exchange xAPIs. Previously not sending organizationId returned a misleading 404 (Not Found) error. Now not sending organizationId returns an accurate 400 (Bad Request) error. (EXC-3168)
