@@ -6,9 +6,26 @@ endif::[]
 
 _Select_
 
-*October 2018*
+*February 2019*
 
 The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 instance.
+
+== 2.3.1 
+
+*February 19, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
+|Microsoft Dynamics 365 | 2.2.1
+|===
+
+=== Features
+
+* The connector now supports API version 9.x, and potentially future ones, by making the version number configurable.
 
 == 2.2.1 
 
