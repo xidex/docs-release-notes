@@ -52,34 +52,6 @@ This release provides a bug fix.
 
 Fixed test connectivity.
 
-== 9.1.0
-
-*December 22, 2017*
-
-This release provides support for Workday v29.1.
-
-[%header%autowidth.spread]
-|===
-|Software |Version
-|Mule Runtime |4.0.0
-|Workday API |v29.1
-|===
-
-== 9.0.0
-
-*November 18, 2017*
-
-[%header%autowidth.spread]
-|===
-|Software |Version
-|Mule Runtime |4.0.0
-|Workday API |v28.0
-|===
-
-=== Features
-
-This version is compatible with Mule 4.0.0.
-
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
