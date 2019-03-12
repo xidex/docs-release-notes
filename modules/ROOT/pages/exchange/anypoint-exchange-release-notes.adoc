@@ -7,9 +7,9 @@ endif::[]
 
 === New Features
 
-* Syntax-highlighting in asset description markdown content (EXC-3226)
-* Clickable tags and categories in asset detail page. By clicking on a tag or category, Exchange triggers a search of all the asset that contains that tag or category (EXC-3227)
-* Image upload on Exchange's markdown editor using drag and drop (EXC-3228) 
+* Syntax highlighting in asset description markdown content. (EXC-3226)
+* Faster contextual navigation with clickable tags and categories in asset details page. By clicking on a tag or category, Exchange triggers a search of all of the assets that contain that tag or category. (EXC-3227)
+* Easy drag and drop image upload on Exchange's markdown editor. (EXC-3228)
 
 === Fixed in this Release
 
