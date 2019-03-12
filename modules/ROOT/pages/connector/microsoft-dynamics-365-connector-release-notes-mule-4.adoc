@@ -96,23 +96,6 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 
 * Microsoft Dynamics 365 Connector didn't renew the token. This issue was fixed by reimplementing error handling.
 
-== 2.0.0
-
-*November 18, 2017*
-
-=== Compatibility
-
-[%header%autowidth.spread]
-|===
-|Software |Version
-|Mule Runtime | Mule Runtime Enterprise Edition 4.0.0 and later
-|Microsoft Dynamics 365 | 2.0.0
-|===
-
-=== Features
-
-* Migrated to Mule 4.0.0 runtime.
-
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
