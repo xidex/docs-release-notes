@@ -71,25 +71,6 @@ The Amazon S3 connector is compatible with:
 
 AWS connectors shared a common library for the supported region endpoints that caused an issue when two different AWS connectors were used in a Mule app. This version fixes this issue.
 
-== 5.0.0
-
-*November 18, 2017*
-
-=== Compatibility
-
-The Amazon S3 connector is compatible with:
-
-[%header%autowidth.spread]
-|===
-|Application/Service |Version
-|Mule Runtime |4.0.x or later
-|AWS SDK for Java	|1.11.79
-|===
-
-=== Features
-
-* Migrated to Mule 4.0.0 runtime.
-
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
