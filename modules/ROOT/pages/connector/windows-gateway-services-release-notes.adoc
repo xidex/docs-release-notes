@@ -9,7 +9,7 @@ Windows Gateway Services was originally released as a supporting component of th
 xref:connector/msmq-connector-release-notes.adoc[MSMQ Connector]. This service is
 now a product of its own providing services to the following connectors:
 
-* xref:connector/msmq-connector-release-notes.adoc[MSMQ connector]
+* xref:connector/msmq-connector-release-notes.adoc[MSMQ Connector]
 * xref:connector/windows-powershell-release-notes.adoc[PowerShell Connector]
 * xref:connector/microsoft-dynamics-crm-connector-release-notes.adoc[Dynamics CRM Connector]
 * xref:connector/microsoft-dynamics-ax-2012-connector-release-notes.adoc[Dynamics AX Connector]
