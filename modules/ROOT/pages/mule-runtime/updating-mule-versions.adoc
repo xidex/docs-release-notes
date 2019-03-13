@@ -99,7 +99,15 @@ Through executing this command, you're installing the latest version of the Runt
 [NOTE]
 ====
 Even when you're installing your new Mule runtime version on another server or VM, the copied configuration files should suffice to smoothly transition the Mule instance's identity on the Runtime Manager.
-
+====
++
+[CAUTION]
+====
+Applications must be running and showing as "Started" in Runtime Manager. This process does not migrate stopped Applications.
+====
++
+[NOTE]
+====
 If your origin server had apps that were deployed to it through the Runtime Manager, there's no need to manually copy these, as they automatically upload to your new server when instructed to deploy them through Runtime Manager.
 ====
 +
