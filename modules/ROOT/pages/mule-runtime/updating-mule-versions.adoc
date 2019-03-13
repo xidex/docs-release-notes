@@ -103,7 +103,7 @@ Even when you're installing your new Mule runtime version on another server or V
 +
 [CAUTION]
 ====
-Applications must be running and showing as "Started" in Runtime Manager. This process does not migrate stopped Applications.
+Applications must be running and showing as `Started` in Runtime Manager. This process does not migrate stopped Applications.
 ====
 +
 [NOTE]
