@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: Microsoft Dynamics 365 connector, user guide, Dynamics 365, 365, release notes
 
-_Select_
-
-*February 2019*
+Support Category: Select
 
 The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 instance.
 
@@ -25,7 +22,7 @@ The Dynamics 365 connector allows you to connect to the Microsoft Dynamics 365 i
 
 === Features
 
-* The connector now supports API version 9.x, and potentially future ones, by making the version number configurable.
+* The connector now supports API version 9.x, and potentially future ones, by making the version number configurable. The default in version 2.3.1 is 9.0.
 
 == 2.2.1 
 
