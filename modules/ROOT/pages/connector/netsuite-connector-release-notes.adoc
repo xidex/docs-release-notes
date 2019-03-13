@@ -3,9 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
-
-_Select_
+Support Category: Select
 
 IMPORTANT: The NetSuite version is not the same as the SuiteTalk API version. Your account may be running a different version of NetSuite than the version of the API you are using.
 
@@ -20,15 +18,13 @@ xref:3.9@mule-runtime::netsuite-connector.adoc[Connector User Guide]
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime|3.5 and later
+|Mule Runtime|3.5 and later Mule 3 versions
 |Java|7
 |API|SuiteTalk 2017.1
 |===
 
-[NOTE]
-The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
-
 === Fixed in this Release
+
 Minor performance enhancements.
 
 == 7.7.1 
@@ -718,4 +714,4 @@ None.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
