@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: apache kafka connector, user guide, apachekafka, apache kafka, release notes
 
-*November 2017*
-
-_Select_
+Support Category: Select
 
 The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messaging system over Mule runtime, enabling seamless integration between your applications and an Apache Kafka cluster.
 
@@ -34,4 +31,4 @@ The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messa
 === See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
