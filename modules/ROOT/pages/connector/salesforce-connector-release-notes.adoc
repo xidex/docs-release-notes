@@ -7,6 +7,29 @@ Support Category: Select
 
 Starting with v.6.0.2, the Salesforce Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions are freely available to the community.
 
+== 8.8.0 
+
+*March 14, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 3.5.2 and later
+|Anypoint Studio|5.4.0 and later
+|Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Features
+
+* Added new connection providers in order to match the behavior of the Salesforce API(only 1 connection with the same credentials).
+Added keep-alive functionality to these connection providers, meaning that the connector can try to keep the session alive even if it is not used(This functionality can be enabled/disabled by the users).
+
+=== Fixed in this Release
+
+* If a custom endpoint was specified in the config, it was not used for connection validation causing issues. This is now fixed.
+
 == 8.7.1 
 
 *February 6, 2019*
