@@ -2,15 +2,32 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, amazon s3, s3, connector
 
-*August 2018*
-
-_Select_
+Support Category: Select
 
 The Anypoint Amazon S3 Connector provides connectivity to the the Amazon S3 API, enabling you to interface with Amazon S3 to store objects, download and use data with other AWS services, and build applications that call for internet storage. Instant access to the Amazon S3 API enables seamless integrations between Amazon S3 and other databases, CMS applications such as Drupal, and CRM applications such as Salesforce.
 
 Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint Platform as with other Select connectors.  Prior versions remain freely available to the community.
+
+== 5.2.1
+
+*February 25, 2019*
+
+=== Compatibility
+
+The Amazon S3 connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0 and later
+|AWS SDK for Java |1.11.79
+|===
+
+=== Fixed in this Release
+
+* The connector was unable to properly stream large files to DataWeave. By adding the content length value as a message attribute, this issue was fixed.
+* Test connection functionality did not work properly and is now fixed.
 
 == 5.2.0
 
@@ -74,4 +91,5 @@ AWS connectors shared a common library for the supported region endpoints that c
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
+

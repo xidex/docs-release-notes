@@ -2,20 +2,17 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: windows, gateway, .net, windows server
 
-*July 2016*
-
-_Select_
+Support Category: Select
 
 Windows Gateway Services was originally released as a supporting component of the
 xref:connector/msmq-connector-release-notes.adoc[MSMQ Connector]. This service is
 now a product of its own providing services to the following connectors:
 
-* MSMQ connector
-* PowerShell Connector
-* Dynamics CRM Connector
-* Dynamics AX Connector
+* xref:connector/msmq-connector-release-notes.adoc[MSMQ Connector]
+* xref:connector/windows-powershell-release-notes.adoc[PowerShell Connector]
+* xref:connector/microsoft-dynamics-crm-connector-release-notes.adoc[Dynamics CRM Connector]
+* xref:connector/microsoft-dynamics-ax-2012-connector-release-notes.adoc[Dynamics AX Connector]
 
 These release notes describe the features of the latest release.
 
@@ -64,7 +61,7 @@ Included in this release:
 * Added trace of routing errors (used by AX & CRM connectors).
 * Added support to operate disabling 2PC for the MSMQ connector.
 * Installation improved to update/migrate configuration settings through updates.
-* Keeping Windows Service configuration settings (after installing this version, future upgrades will keep the Windows Service configuration if customized).
+* Keeping Windows Service configuration settings (after installing this version, future upgrades will keep the Windows Service configuration updated if customized).
 
 == 1.10.0
 
@@ -72,7 +69,7 @@ Included in this release:
 
 Included in this release:
 
-* Fixed input parameters for Powershell connector.
+* Fixed input parameters for PowerShell connector.
 * Support timeouts configuration for AX services.
 * Improved error messages for MSMQ connector.
 
@@ -111,4 +108,4 @@ Included in this release:
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

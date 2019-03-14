@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: workday, connector, release notes
 
-*October 2018*
-
-_Select_
+Support Category: Select
 
 Workday is a software as a service (SaaS) solution developed by Workday comprising of a set of management applications that cover areas such as human resources management, staffing, recruiting, and performance management.
 
@@ -28,8 +25,8 @@ Depending on the connectivity conditions while using Workday connector in Anypoi
 
 === Features
 
-- This connector now supports multiple versions of the Workday API.
-- *New Object Trigger* - You can now start a flow with the connector every time an object of a specific type is created.
+* This connector now supports multiple versions of the Workday API.
+* New Object Trigger - You can now start a flow with the connector every time an object of a specific type is created.
 
 === Fixed in this Release
 
@@ -51,34 +48,6 @@ This release provides a bug fix.
 === Fixed in this Release
 
 Fixed test connectivity.
-
-== 9.1.0
-
-*December 22, 2017*
-
-This release provides support for Workday v29.1.
-
-[%header%autowidth.spread]
-|===
-|Software |Version
-|Mule Runtime |4.0.0
-|Workday API |v29.1
-|===
-
-== 9.0.0
-
-*November 18, 2017*
-
-[%header%autowidth.spread]
-|===
-|Software |Version
-|Mule Runtime |4.0.0
-|Workday API |v28.0
-|===
-
-=== Features
-
-This version is compatible with Mule 4.0.0.
 
 == See Also
 
