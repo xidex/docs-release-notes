@@ -23,8 +23,8 @@ Starting with v.6.0.2, the Salesforce Connector is licensed commercially with An
 
 === Features
 
-* Added new connection providers in order to match the behavior of the Salesforce API(only 1 connection with the same credentials).
-Added keep-alive functionality to these connection providers, meaning that the connector can try to keep the session alive even if it is not used(This functionality can be enabled/disabled by the users).
+* Added new connection providers to match the behavior of the Salesforce API that provides a single connection with the same credentials.
+* Added keep-alive functionality to the connection providers, meaning that a connector can try to keep the session alive even if it is not used. This functionality can be enabled or disabled by users.
 
 === Fixed in this Release
 
