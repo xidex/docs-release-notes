@@ -96,13 +96,15 @@ amc_setup -U
 +
 Through executing this command, you're installing the latest version of the Runtime Manager Agent on your Mule runtime, which is assured to be compatible with your target runtime version. The files you copied from your old installation hold all of the configuration information that registers the Mule instance on Runtime Manager, so no further steps should be needed.
 +
-[NOTE]
-====
 Even when you're installing your new Mule runtime version on another server or VM, the copied configuration files should suffice to smoothly transition the Mule instance's identity on the Runtime Manager.
-
-If your origin server had apps that were deployed to it through the Runtime Manager, there's no need to manually copy these, as they automatically upload to your new server when instructed to deploy them through Runtime Manager.
-====
 +
+If your origin server had apps that were deployed to it through the Runtime Manager, there's no need to manually copy these, as they automatically upload to your new server when instructed to deploy them through Runtime Manager.
++
+[CAUTION]
+====
+Applications must be running and showing as `Started` in Runtime Manager. This process does not migrate stopped Applications.
+====
+
 . At this point the Mule server is already updated to the target version. Updating the Mule applications that are deployed to it is optional. If wish to do so to take full advantage of the features of the target runtime, then you must also:
 .. Follow the steps in <<Application Runtime Version>> to update your application.
 .. Find the application on the *Applications* tab on Runtime Manager and click *Choose File* to xref:runtime-manager::managing-deployed-applications.adoc#updating-your-application[upload] the new Mule Deployable Archive (.zip file).
