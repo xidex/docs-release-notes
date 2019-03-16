@@ -12,8 +12,22 @@ These are the release notes for patches which are made to the Mule runtimes on R
 
 This release includes the following fixes:
 
- * Fixed: SE-9974-9836-9899, SE-9471, SE-9879, SE-10226, SE-9149, SE-10306, SE-10273, SE-10867-10791-10641-10343-10212, SE-10273
-
+ * Fixed: Event instances were kept too long in the buffer [SE-9556]
+ * Fixed: DataWeave stream is closed before being consumed in batch aggregator [SE-9836]
+ * Fixed: Batch process not doing "on complete" step when results collection is empty [SE-9899]
+ * Fixed: Invalid Session ID on SFDC connector reconnnection attempt. [SE-9471]
+ * Fixed: 'Could not deserialize object' in cache component. [SE-9879]
+ * Fixed: DataWeave stream closed intermittently in a batch process. [SE-9974]
+ * Fixed: Amazon SQS connector shutdown exception. [SE-9149]
+ * Fixed: Backpressure is not triggered by a saturated CPU_INTENSIVE thread pool. [SE-10078]
+ * Fixed: Invalid XML generated for artifact declaration [MULE-15835]
+ * Fixed: ProcessingStrategy internal bufferSize is always 256 for flow-ref [SE-10226]
+ * Fixed: IdempotentRedeliveryPolicy blocks CPU_LITE thread [SE-10306]
+ * Fixed: Source error callback is not called when an error is caught in error handler [SE-10212]
+ * Fixed: Gatekeeper policy causes memory leak on policy engine [SE-10641]
+ * Fixed: Salesforce Marketing connector throws token expired exception [SE-10343]
+ * Fixed: Context does not contain key error shown in the logs [SE-10867]
+ 
 == Feburary 11, 2019
 
 === 4.1.4 Runtime Update:
