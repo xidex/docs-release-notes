@@ -22,7 +22,8 @@ These release notes cover the following versions of these features:
 === Fixed Issues
 // SE-11152
 * When you are working on an API fragment, the editor now no longer displays the switch to turn on the mocking service.
-
+// SE-11095
+* When the documentation displayed in the *Documentation* pane contains more lines than the pane can accommodate, the pane does not display a scrollbar. Therefore, it is not possible to see all of the documentation.
 
 == 2.4.3
 *February 23, 2019*
