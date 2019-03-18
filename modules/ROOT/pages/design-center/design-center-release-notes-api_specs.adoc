@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-4,2.4.4>>
 * <<2-4-3,2.4.3>>
 * <<2-4-2,2.4.2>>
 * <<2-4-1,2.4.1>>
@@ -14,6 +15,14 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.4.4
+*March 23, 2019*
+
+=== Fixed Issues
+// SE-11152
+* When you are working on an API fragment, the editor now no longer displays the switch to turn on the mocking service.
+
 
 == 2.4.3
 *February 23, 2019*
