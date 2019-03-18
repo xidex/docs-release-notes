@@ -27,6 +27,7 @@ This release includes the following fixes:
  * Fixed: Gatekeeper policy causes memory leak on policy engine [SE-10641]
  * Fixed: Salesforce Marketing connector throws token expired exception [SE-10343]
  * Fixed: Context does not contain key error shown in the logs [SE-10867]
+ * Fixed: Feedback Loop not working impacts on DoS policy behavior [AGW-2956]
  
 == Feburary 11, 2019
 
