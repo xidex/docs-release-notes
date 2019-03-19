@@ -16,6 +16,11 @@ This release contains the following enhancement:
 
 The sidebar menu in Anypoint Monitoring is restyled to simplify and make navigation more intuitive. 
 
+=== Fixed Issues
+
+* General bug fixes.
+
+
 == February 22, 2019
 
 The following new charts are available in the built-in dashboards:
