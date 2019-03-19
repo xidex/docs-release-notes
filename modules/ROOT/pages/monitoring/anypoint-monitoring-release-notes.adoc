@@ -72,7 +72,7 @@ This release contains the following new features:
 * *Connector-level Flow Analysis* - (Requires Titanium subscription) You can now monitor the performance for connectors. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors]
 
 
-== Known Issues
+=== Known Issues
 
 The Anypoint Monitoring log points feature is only supported on Mule runtime engine version 3.8.5-AM or later. For APIs not running on Mule runtime engine 3.8.5-AM or later, the log points feature does not appear for the API.
 
@@ -81,7 +81,7 @@ Since you can't select the runtime version when you deploy an API from API Manag
 [NOTE]
 Mule runtime engine versions appended with `-AM` are listed in Runtime Manager, in the *Runtime Version* menu under *Show old patch releases*. 
 
-== Fixed Issues
+=== Fixed Issues
 
 * General bug fixes.
 
