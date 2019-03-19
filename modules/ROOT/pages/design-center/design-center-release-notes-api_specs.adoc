@@ -31,7 +31,7 @@ These release notes cover the following versions of these features:
 // SE-9582
 * The mocking service responded with a `400 Bad Request` error if a RAML API specification defined a JSON type for an HTTP header.
 // SE-10974
-* The editor did not display an error message is a NamedExample fragment contained properties that the RAML specification does not allow.
+* The editor did not display an error message when a NamedExample fragment contained properties that the RAML specification does not allow.
 
 == 2.4.3
 *February 23, 2019*
