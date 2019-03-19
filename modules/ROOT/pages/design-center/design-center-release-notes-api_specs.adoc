@@ -26,7 +26,8 @@ These release notes cover the following versions of these features:
 * When the documentation displayed in the *Documentation* pane contains more lines than the pane can accommodate, the pane does not display a scrollbar. Therefore, it is not possible to see all of the documentation.
 // SE-10926
 * Properties that are defined as numbers in the body of an API appear as strings in the API console.
-
+// SE-10879
+* The mocking service might return a response in JSON, even though the specification defined responses to be in XML.
 
 
 == 2.4.3
