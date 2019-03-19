@@ -10,7 +10,7 @@ These are the new features and enhancements, known limitations and issues, and f
 This release contains the following new features:
 
 . You can save built-in dashboards as custom dashboards, which simplifies the process of building custom dashboards and allows you to leverage the features and flexibility available in custom dashboards. For more information, see xref:save-builtin-dashboard-as-custom.adoc[Save a Built-in Dashboard as a Custom Dashboard].
-. In built-in dashboards, you can export data for an app into a CSV file. For more information, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV File].
+. In built-in and custom dashboards, you can export data for an app into a CSV file. For more information, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV File].
 
 This release contains the following enhancement:
 
