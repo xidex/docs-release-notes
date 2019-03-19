@@ -28,7 +28,8 @@ These release notes cover the following versions of these features:
 * Properties that are defined as numbers in the body of an API appear as strings in the API console.
 // SE-10879
 * The mocking service might return a response in JSON, even though the specification defined responses to be in XML.
-
+// SE-9582
+* The mocking service responded with a `400 Bad Request` error if a RAML API specification defined a JSON type for an HTTP header.
 
 == 2.4.3
 *February 23, 2019*
