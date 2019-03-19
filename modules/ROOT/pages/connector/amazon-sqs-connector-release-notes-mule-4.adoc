@@ -24,7 +24,7 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 === Fixed in this Release
 
-* The issue *Amazon SQS connector throws java.lang.UnsupportedOperationException for sqs:delete-message-batch* has been fixed.
+* The issue Amazon SQS connector throws java.lang.UnsupportedOperationException for sqs:delete-message-batch has been fixed.
 
 == 5.1.2
 
