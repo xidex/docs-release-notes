@@ -3,11 +3,20 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This document describes any new features and enhancements, known limitations, issues, and fixes in Anypoint Monitoring.
+These are the new features and enhancements, known limitations and issues, and fixes in Anypoint Monitoring.
 
-== 2.1
+== March 21, 2019
 
-=== February 22, 2018
+This release contains the following new features:
+
+. You can save built-in dashboards as custom dashboards, which simplifies the process of building custom dashboards and allows you to leverage the features and flexibility available in custom dashboards. For more information, see xref:save-builtin-dashboard-as-custom.adoc[Save a Built-in Dashboard as a Custom Dashboard].
+. In built-in dashboards, you can export data for an app into a CSV file. For more information, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV File].
+
+This release contains the following enhancement:
+
+The sidebar menu in Anypoint Monitoring is restyled to simplify and make navigation more intuitive. 
+
+== February 22, 2019
 
 The following new charts are available in the built-in dashboards:
 
@@ -23,12 +32,12 @@ The following new charts are available in the built-in dashboards:
 
 For more information about built-in dashboards, see xref:monitoring::app-dashboards.adoc[Built-in Application Dashboards] 
 
-=== February 16, 2018
+== February 16, 2019
 
 * You can now monitor Web Services connectors in the *Connectors* tab. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors].
 * Custom metrics can now be visualized in real time using the built-in *Custom metrics* dashboard. For more information, see xref:monitoring::anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].  
 
-=== February 7, 2019
+== February 7, 2019
 
 The Anypoint Monitoring log points feature now supports the following API types and versions:
 
@@ -43,27 +52,27 @@ The Anypoint Monitoring log points feature now supports the following API types 
 
 See xref:monitoring::log-points.adoc[Log Points]
 
-=== January 12, 2019
+== January 12, 2019
 This release contains the following new features:
 
 * *Custom Dashboard API Support* 
 ** When you configure a custom dashboard, in Basic Mode, you can choose between an Application Panel and an API Panel to allow you to create dashboards to visualize API metrics. 
 ** In Advanced Mode you can add queries based on API metrics.
 
-=== December 15, 2018
+== December 15, 2018
 This release contains the following new features:
 
 * *API Analytics* - API Analytics is now available in Anypoint Monitoring. See xref:monitoring::api-analytics-dashboard.adoc[Builtin API Analytics Dashboard].
 * *Anypoint Custom Metrics Connector* - (Requires a Titanium subscription) The Anypoint Custom Metrics connector enables sending metric values with dimensions to Anypoint Monitoring, where they can be visualized in real time using Custom Dashboards. See xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector].
 
-=== December 8, 2018
+== December 8, 2018
 This release contains the following new features:
 
 * *Log Points* - (Requires Titanium subscription) You can generate logs for a running API without writing any code or redeploying your application. You can select specific parameters within the API for which to generate logs, for example, the request header `host` parameter. For more information about log points, see xref:monitoring::log-points.adoc[Anypoint Monitoring Log Points]
 * *Connector-level Flow Analysis* - (Requires Titanium subscription) You can now monitor the performance for connectors. For more information about monitoring connectors, see xref:monitoring::monitor-connectors.adoc[Monitor Connectors]
 
 
-=== Known Issues
+== Known Issues
 
 The Anypoint Monitoring log points feature is only supported on Mule runtime engine version 3.8.5-AM or later. For APIs not running on Mule runtime engine 3.8.5-AM or later, the log points feature does not appear for the API.
 
@@ -72,7 +81,7 @@ Since you can't select the runtime version when you deploy an API from API Manag
 [NOTE]
 Mule runtime engine versions appended with `-AM` are listed in Runtime Manager, in the *Runtime Version* menu under *Show old patch releases*. 
 
-=== Fixed Issues
+== Fixed Issues
 
 * General bug fixes.
 
