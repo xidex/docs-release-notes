@@ -5,6 +5,28 @@ endif::[]
 
 Support Category: Select
 
+== 9.6.0
+
+*March 20, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== New Features
+
+* Added new versions of connection providers for JWT and SAML, because the existing ones do not match the Salesforce API behavior (one session with the same credentials at a time).
+
+=== Fixed in this Release
+
+* Improved connection performance when executing operations by making better use of the Mule SDK's thread pools.
+* Fixed an issue where the connector was unable to handle empty body requests to Apex services.
+* Fixed an issue where for the Retrieve operation when the specified ID was invalid the connector was trying to reconnect because of a wrong exception that was thrown.
+
 == 9.5.2
 
 *February 22, 2019*
