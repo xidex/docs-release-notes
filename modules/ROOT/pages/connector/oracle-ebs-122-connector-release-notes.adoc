@@ -49,8 +49,8 @@ None.
 
 === Fixed in this Release
 
-* *WADL Alias* - Users needed to define the alias of deployed WADLs as their internal names in lowercase. This new version fixes that and this is no longer required.
-* *Dynamic metadata* - We detected differences in the responses of the Rest Service Locator web service, and the structure of the WADL and XSD files, depending on the patch version of EBS 12.2. This caused problems while fetching and processing dynamic metadata. Our metadata routines were revised and should now work perfectly with all 12.2.x installations.
+* WADL Alias - Users needed to define the alias of deployed WADLs as their internal names in lowercase. This new version fixes that and this is no longer required.
+* Dynamic metadata - We detected differences in the responses of the Rest Service Locator web service, and the structure of the WADL and XSD files, depending on the patch version of EBS 12.2. This caused problems while fetching and processing dynamic metadata. Our metadata routines were revised and should now work perfectly with all 12.2.x installations.
 
 === Known Issues
 
@@ -72,7 +72,7 @@ None.
 
 === Features
 
-* *PL/SQL REST Integration* - The connector provides the functionality to invoke both _standard and user-defined PL/SQL_ functions that are _deployed as REST services_. There is a single processor that takes the alias of a given WADL (REST service endpoint), the name of a service operation available for that WADL and the input parameters required by the selected operation.
+* PL/SQL REST Integration - The connector provides the functionality to invoke both standard and user-defined PL/SQL functions that are deployed as REST services. There is a single processor that takes the alias of a given WADL (REST service endpoint), the name of a service operation available for that WADL and the input parameters required by the selected operation.
 
 == See Also
 
