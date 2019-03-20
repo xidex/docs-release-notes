@@ -1,18 +1,15 @@
-= SAP Connector Release Notes
+= SAP Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: java connector, jco, release notes, sap
 
-*October 2018*
-
-_Premium_
+Support Category: Premium
 
 The Mule Runtime supports SAP integration through our Anypoint Connector for SAP, which is an SAP-certified Java connector that leverages the SAP Java Connector (JCo) libraries.
 
 Note: This connector is not supported for use with Anypoint Design Center.
 
-== Version 4.1.2
+== 4.1.2
 
 *March 8, 2019*
 
@@ -130,4 +127,4 @@ Note: This connector is not supported for use with Anypoint Design Center.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
