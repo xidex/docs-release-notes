@@ -11,6 +11,24 @@ xref:3.9@mule-runtime::oracle-ebs-122-connector.adoc[Oracle E-Business Suite 12.
 
 For Mule 4, see xref:connector/oracle-ebs-122-connector-release-notes-mule-4[Oracle E-Business Suite 12.2 Connector Release Notes for Mule 4]
 
+== 1.0.2 
+
+*March 20, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.7 and later Mule 3 versions
+|Oracle EBS |12.2.x
+|Java | 7
+|===
+
+=== Fixed in this Release
+
+* *Metadata* - Various fixes for the metadata resolving strategy were applied. It should now work as expected in all 12.2.x instances.
+
 == 1.0.1
 
 *December 28, 2018*
