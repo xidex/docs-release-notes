@@ -66,7 +66,11 @@ Note: If you have two or more identical version names in one API group for examp
 +
 NOTE: Avoid storing the environment name in the API Name or Version Name if possible. After the upgrade, classify your APIs to the appropriate environment from the new API Manager.
 
-== Request a Platform Upgrade
+== Schedule Platform Upgrade
+
+Schedule the upgrade for your Anypoint organization by entering the self service portal and following the steps.
+
+image::platform/enter-upgrade-self-serve-portal.png[]
 
 image::platform/schedule-upgrade-button-crowd-self-service-portal.png[]
 
