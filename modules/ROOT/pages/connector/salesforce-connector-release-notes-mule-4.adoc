@@ -18,12 +18,14 @@ Support Category: Select
 |===
 
 === New Features
+
 * Added new versions of connection providers for JWT and SAML, because the existing ones do not match the Salesforce API behavior (one session with the same credentials at a time).
 
 === Fixed in this Release
+
 * Improved connection performance when executing operations by making better use of the Mule SDK's thread pools.
-* The connector was not able to handle empty body requests to Apex services. Now this is fixed.
-* Fixed an issue where for the Retrieve operation when the id specified was invalid the connector was trying to reconnect because of a wrong exception that was thrown.
+* Fixed an issue where the connector was unable to handle empty body requests to Apex services.
+* Fixed an issue where for the Retrieve operation when the specified ID was invalid the connector was trying to reconnect because of a wrong exception that was thrown.
 
 == 9.5.2
 
