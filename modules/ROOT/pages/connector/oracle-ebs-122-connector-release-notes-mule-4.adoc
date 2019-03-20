@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Premium_
+Support Category: Premium
 
 The Anypoint Connector for Oracle E-Business Suite (EBS) 12.2 provides real-time connectivity to query and update Oracle EBS using REST web services. The connector has been developed for the Oracle EBS v12.2.x.
 
