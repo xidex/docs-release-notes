@@ -10,6 +10,7 @@ Release notes for API Manager Policies include information about changes, improv
 
 ** xref:policies/cors-policy-release-notes.adoc[Cross-Origin Resource Sharing (CORS) Policy]
 ** xref:policies/client-id-enforcement-release-notes.adoc[Client ID Enforcement Policy]
+** xref:policies/detokenization-release-notes.adoc[Detokenization Policy]
 ** xref:policies/header-injection-release-notes.adoc[Header Injection Policy]
 ** xref:policies/header-removal-release-notes.adoc[Header Removal Policy]
 ** xref:policies/http-basic-auth-release-notes.adoc[HTTP Basic Authentication Policy]
@@ -26,6 +27,7 @@ Release notes for API Manager Policies include information about changes, improv
 ** xref:policies/rate-limit-policy-release-notes.adoc[Rate Limiting Policy]
 ** xref:policies/rate-limit-sla-release-notes.adoc[Rate Limiting SLA Policy]
 ** xref:policies/spike-control-release-notes.adoc[Spike Control Policy]
+** xref:policies/tokenization-release-notes.adoc[Tokenization Policy]
 ** xref:policies/xml-threat-protection-release-notes.adoc[XML Threat Protection Policy]
 
 == See Also
