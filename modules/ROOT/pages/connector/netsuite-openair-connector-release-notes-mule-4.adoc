@@ -2,15 +2,32 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: openair, netsuite, release notes
 
-*May 2018*
-
-_Select_
+Support Category: Select
 
 The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connector which provides a connection between OpenAir and third party software.
 
 xref:connectors::netsuite/netsuite-openair-connector.adoc[NetSuite OpenAir Connector User Guide]
+
+== 2.0.1 
+
+*March 7, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.1.0 and later
+|===
+
+=== Fixed in this Release
+
+* Chunked transfer encoding was disabled, as it is not supported by OpenAir.
+
+=== Known Issues
+
+* Metadata in Flow Designer - Although metadata works under Anypoint Studio, Design Center displays incomplete structures. The connector can still be used, but metadata cannot be used as a guide.
 
 == 2.0.0
 
@@ -36,4 +53,4 @@ xref:connectors::netsuite/netsuite-openair-connector.adoc[NetSuite OpenAir Conne
 
 * NetSuite http://www.openair.com/download/NetSuiteOpenAirSOAPAPIGuide.pdf[OpenAir SOAP API Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
