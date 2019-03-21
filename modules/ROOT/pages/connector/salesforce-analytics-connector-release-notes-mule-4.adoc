@@ -30,6 +30,26 @@ The Salesforce Analytics Cloud connector is compatible with:
 
 * Added support for Salesforce Analytics Cloud V43.
 
+== 3.0.1 
+
+*March 15, 2018*
+
+=== Compatibility
+
+The Salesforce Analytics Cloud connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|Only works with Studio 7.0.0 and later
+|External Data API | v36.0
+|===
+
+=== Fixed in this Release
+
+* Changed connector icon.
+
 == 3.0.0
 
 *January 15, 2018*
