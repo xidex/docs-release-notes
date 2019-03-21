@@ -8,6 +8,12 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 == March 15, 2019
 
+3.8.4 Runtime Update:
+
+* Max buffer size fix for file system full [SE-11147]
+
+== March 15, 2019
+
 3.9.1 Runtime Update:
 
 * Schedules not registered [SE-11264]
