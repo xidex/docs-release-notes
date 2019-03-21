@@ -20,9 +20,9 @@ Support Category: Select
 === New Features
 
 * Added new versions of connection providers for JWT and SAML, because the existing ones do not match the Salesforce API behavior (one session with the same credentials at a time).
-
++
 To change an existing program to the new features, change the XML for the `<salesforce:` element as follows (in essence, add `cached-` after `salesforce:` in your XML configuration):
-
++
 [%header%autowidth.spread]
 |===
 |Previous Value: | Salesforce v9.6 Value:
@@ -32,7 +32,7 @@ To change an existing program to the new features, change the XML for the `<sale
 |salesforce:oauth-user-pass-connection | salesforce:cached-oauth-user-pass-connection
 |salesforce:config-with-oauth-connection | None: Removed in v9.6
 |===
-
++
 The previous values are available but are deprecated and cause errors when run.
 
 === Fixed in this Release
