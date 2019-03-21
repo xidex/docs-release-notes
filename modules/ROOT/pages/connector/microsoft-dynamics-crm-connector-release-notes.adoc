@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 *Guide*:  xref:3.9@mule-runtime::microsoft-dynamics-crm-connector.adoc[Microsoft Dynamics CRM Connector]
 
@@ -11,7 +11,7 @@ _Select_
 
 *September 12, 2017*
 
-===  Compatibility
+=== Compatibility
 
 [%header%autowidth.spread]
 |===
