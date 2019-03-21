@@ -5,6 +5,32 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== March 23, 2019
+
+== New Features and Enhancements
+
+=== Anypoint Monitoring Agent Available in Mule 4
+
+Mule 4 patch releases available on or after March 23, 2019 include an agent that unifies the Anypoint Monitoring and Anypoint Visualizer agents.
+Having this single agent means that applications using these versions of Mule display metrics in Visualizer and the -AM runtime version is no longer required. 
+
+[NOTE]
+Note which Mule version Visualizer now supports and the necessary tasks that to perform, depending on the version, to ensure that your applications appear in Visualizer and have metrics enabled.
+
+Upgrade to 4.1.x 03-23-2019 
+
+If you upgrade Mule version 4 to a patch released on 03-23-2019 or later, you'll notice that you can't see your apps in Visualizer or Anypoint Monitoring. Don't worry, they are still running.
+
+To see your apps and metrics in Visualizer, enable the Anypoint Monitoring agent (Mysti: link to section we're writing about how to enable the agent).
+
+=== Changes to Layers
+
+add content
+
+=== Changes to Display named
+
+add content
+
 == February 11, 2019
 Version 2.0.3
 
