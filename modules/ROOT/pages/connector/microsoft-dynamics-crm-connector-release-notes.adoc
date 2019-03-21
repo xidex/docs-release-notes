@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 *Guide*:  xref:3.9@mule-runtime::microsoft-dynamics-crm-connector.adoc[Microsoft Dynamics CRM Connector]
 
@@ -11,7 +11,7 @@ _Select_
 
 *September 12, 2017*
 
-===  Compatibility
+=== Compatibility
 
 [%header%autowidth.spread]
 |===
@@ -31,7 +31,7 @@ _Select_
 
 Added in this release:
 
-* Federated authentication with the Online Connection configuration for for Dynamics 365 (Dynamics CRM 8.2)
+* Federated authentication with the Online Connection configuration for Dynamics 365 (Dynamics CRM 8.2)
 
 == 2.8.0
 
@@ -42,7 +42,6 @@ Added in this release:
 * New "Execute Multiple" operation available
 * Support efficient/compact data input at execute and execute multiple operations (using Map instances in addition to typed POJOs)
 * Support to use single transaction on multiple operations (Create, Update, Delete & Execute Multiple) for Dynamics CRM 2016 and later
-* Support to federate with a custom STS with Dynamics CRM Online version
 
 == 2.7.0
 
@@ -363,7 +362,7 @@ The Microsoft Dynamics CRM connector is compatible with:
 
 * *More complete object model:* The object model for CRUD of CRM objects is now more complete, allowing you to get deep visibility into the structure and properties of messages in and out of CRM. This is particularly helpful for reference fields, for example where one entity has a relationship with another entity.
 
-* *CRM 2013 support*: The Dynamics CRM connector now provides support for CRM 2011 + CRM 2013 On-Premises installs and hosted CRM Online instances in a single unified connector. Simply drop the connector into your flow, and specify the connection details for your specific instance.
+* *CRM 2013 support*: The Dynamics CRM connector now provides support for CRM 2011 + CRM 2013 On-Premises installs in a single unified connector. Simply drop the connector into your flow, and specify the connection details for your specific instance.
 
 === Fixed in this Release
 
