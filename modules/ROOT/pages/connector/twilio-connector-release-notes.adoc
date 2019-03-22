@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, twilio, connector
 
-*March 2017*
-
-_Select_
+Support Category: Select
 
 Twilio is an API cloud provider for voice and SMS communications for customers who want to use phone services as marketing leverage. The Mule Twilio Connector allows users to interact with the Twilio SMS API within the Mule Runtime.
 
@@ -27,15 +24,8 @@ xref:3.9@mule-runtime::twilio-connector.adoc[Twilio Connector]
 
 === Fixed in this Release
 
-* Twilio Connector is showing sensitive information - Previously Twilio was printing Authentication information, request and response ids in the console.
-* Unable to log error messages for Twilio Connector - When the costumer used Twilio connector on Anypoint and the operation "SendMessage" failed for some invalid input,
-he wasn´t getting the message with the cause of the problem.
-
-=== Support Resources
-
-* Learn how to link:/mule-user-guide/v/3.8/installing-connectors[Install Anypoint Connectors] using Anypoint Exchange.
-* Access the link:http://forum.mulesoft.org/mulesoft[MuleSoft Forum] to pose questions and get help from Mule’s broad community of users.
-* To access MuleSoft’s expert support team, link:http://www.mulesoft.com/mule-esb-subscription[subscribe] and log in to MuleSoft’s link:http://www.mulesoft.com/support-login[Customer Portal].
+* Twilio Connector is showing sensitive information - Previously Twilio was printing Authentication information, request, and response IDs in the console.
+* Unable to log error messages for Twilio Connector - When the costumer used Twilio connector on Anypoint Platform and the operation "SendMessage" failed for some invalid input, the user wouldn't receive the message with the cause of the problem.
 
 == 2.0.0
 
@@ -72,4 +62,4 @@ The following message operations are supported:
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
