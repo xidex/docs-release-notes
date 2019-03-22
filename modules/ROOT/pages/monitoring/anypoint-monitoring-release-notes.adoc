@@ -5,16 +5,29 @@ endif::[]
 
 These are the new features and enhancements, known limitations and issues, and fixes in Anypoint Monitoring.
 
-== March 21, 2019
+== March 23, 2019
+
+=== New Features
 
 This release contains the following new features:
 
-. You can save built-in dashboards as custom dashboards, which simplifies the process of building custom dashboards and allows you to leverage the features and flexibility available in custom dashboards. For more information, see xref:save-builtin-dashboard-as-custom.adoc[Save a Built-in Dashboard as a Custom Dashboard].
-. In built-in and custom dashboards, you can export data for an app into a CSV file. For more information, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV File].
+. You can save built-in dashboards as custom dashboards, which simplifies the process of building custom dashboards and allows you to leverage the features and flexibility available in custom dashboards. For more information, see xref:monitoring::save-builtin-dashboard-as-custom.adoc[Save a Built-in Dashboard as a Custom Dashboard].
+. In built-in and custom dashboards, you can export data for an app into a CSV file. For more information, see xref:monitoring::export-app-data-to-csv.adoc[Export App Data to a CSV File].
 
-This release contains the following enhancement:
+=== Enhancements
 
-The sidebar menu in Anypoint Monitoring is restyled to simplify and make navigation more intuitive. 
+This release contains the following enhancements:
+
+* In addition to enabling monitoring for apps deployed to CloudHub and running on Mule 3.9.2, you can enable monitoring for apps running on the following Mule versions: 
+ ** 4.1.5
+ ** 4.1.4
+ ** 4.1.3
+ ** 4.1.2
+ ** 4.1.1
+ ** 3.9.1
+ ** 3.9.0  +
+ For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub]
+* The sidebar menu in Anypoint Monitoring is restyled to simplify and make navigation more intuitive. 
 
 === Fixed Issues
 
