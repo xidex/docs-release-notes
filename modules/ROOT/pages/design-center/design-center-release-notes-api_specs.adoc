@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-4,2.4.4>>
 * <<2-4-3,2.4.3>>
 * <<2-4-2,2.4.2>>
 * <<2-4-1,2.4.1>>
@@ -14,6 +15,23 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.4.4
+*March 23, 2019*
+
+=== Fixed Issues
+// SE-11152
+* When you are working on an API fragment, the editor now no longer displays the switch to turn on the mocking service.
+// SE-11095
+* When the documentation displayed in the *Documentation* pane contains more lines than the pane can accommodate, the pane does not display a scrollbar. Therefore, it is not possible to see all of the documentation.
+// SE-10926
+* Properties that are defined as numbers in the body of an API appear as strings in the API console.
+// SE-10879
+* The mocking service might return a response in JSON, even though the specification defined responses to be in XML.
+// SE-9582
+* The mocking service responded with a `400 Bad Request` error if a RAML API specification defined a JSON type for an HTTP header.
+// SE-10974
+* The editor did not display an error message when a NamedExample fragment contained properties that the RAML specification does not allow.
 
 == 2.4.3
 *February 23, 2019*
