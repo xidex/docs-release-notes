@@ -98,6 +98,12 @@ Using credentials from one environment does not allow:
 * Tracking APIs from different environment
 * Tracking APIs from different organizations
 
+[IMPORTANT]
+--
+In the Pre-Crowd version of API Manager, all API Analytics dashboards were organization-wide. In Crowd, each dashboard links to a particular environment. +
+If you had custom reports for your APIs before migrating, those custom reports would no longer work after you classify all your APIs.
+--
+
 For more information see xref:2.x@api-manager::classify-api-task.adoc[To Classify APIs].
 
 == FAQ on Upgrades
