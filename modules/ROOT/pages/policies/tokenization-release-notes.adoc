@@ -1,0 +1,33 @@
+= Tokenization Policy
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, tokenization, policy, release notes
+
+== 1.1.0
+
+*Mar 20, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== New Features and Enhancements
+
+* Improved performance in header manipulation.
+
+=== Fixed Issues
+
+* Fixed error that caused the policy to apply the configuration in the response incorrectly.
+
+== 1.0.0
+
+*Jan 30, 2019*
+
+=== Minimum Mule Version
+
+*4.1.1*
+
+== See Also
+
+* xref:api-manager::policy-mule4-tokenization.adoc[Tokenization Policy for Mule 4]
