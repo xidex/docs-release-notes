@@ -2,15 +2,30 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, twilio, connector
 
-*March 2017*
-
-_Select_
+Support Category: Select
 
 Twilio is an API cloud provider for voice and SMS communications for customers who want to use phone services as marketing leverage. The Mule Twilio Connector allows users to interact with the Twilio SMS API within the Mule Runtime.
 
 xref:3.9@mule-runtime::twilio-connector.adoc[Twilio Connector]
+
+== 2.0.1
+
+*March 21, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.8.0 and later
+|Twilio REST API |2010-04-01
+|===
+
+=== Fixed in this Release
+
+* Twilio Connector is showing sensitive information - Previously Twilio was printing Authentication information, request, and response IDs in the console.
+* Unable to log error messages for Twilio Connector - When the costumer used Twilio connector on Anypoint Platform and the operation "SendMessage" failed for some invalid input, the user wouldn't receive the message with the cause of the problem.
 
 == 2.0.0
 
@@ -47,4 +62,4 @@ The following message operations are supported:
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
