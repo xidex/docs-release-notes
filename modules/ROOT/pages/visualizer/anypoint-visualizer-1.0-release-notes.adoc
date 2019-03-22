@@ -5,6 +5,39 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
+== March 21, 2019
+Version 2.1.0
+
+== New Features and Enhancements
+
+* Side Panel
+** Replaced Rename Node feature with the ability to modify the Display Name of a service from the Customization section of the details.
+
+* View
+** Layers set via application properties can no longer be overridden in the Customization section within the Visualizer UI.
+** Layers can no longer be deleted or renamed. Instead, reassign a service to a new layer to accomplish the same outcome. 
+*** All default layers (System, Process, Experience) will be offered by default and cannot be deleted.
+
+* Anypoint Monitoring Agent Moving to Non-AM Runtimes
+
+** The latest patch release for Mule runtime engine version 4.1.x (03-23-2019 or later) includes an agent that unifies the Anypoint Monitoring and Anypoint Visualizer agents. Having this single agent means that applications using this Mule version display metrics in Visualizer and the -AM runtime version is no longer required.
+** Upgrade to 4.1.x 03-23-2019
++
+. If you upgrade Mule 4 to the newest patch (03-23-2019 or later), you'll notice that you can't see your apps in Visualizer or Anypoint Monitoring. Don't worry, they are still running.
+. You must xref:visualizer::setup.adoc[enable the Anypoint Monitoring agent] to see your applications appear in Visualizer after the upgrade.
+
+[NOTE]
+Please take careful note of which Mule versions that Visualizer now supports and xref:visualizer::setup.adoc[the necessary tasks to perform] (depending on the version) to ensure that your applications appear in Visualizer and have metrics enabled.
+
+
+=== Changes to Layers
+
+* Layer labels and names may change. The first letter of every layer will be capitalized. All default layers will be restored.
+
+=== Changes to Display Name
+
+add content
+
 == February 11, 2019
 Version 2.0.3
 
