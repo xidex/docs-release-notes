@@ -18,7 +18,7 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed error that caused the policy to incorrectly apply the configuration in the response.
+* Fixed error that caused the policy to apply the configuration in the response incorrectly.
 
 == 1.0.0
 
