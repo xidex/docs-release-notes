@@ -24,10 +24,6 @@ See Also:
 * Change UI details header hover state. (MQ-1435) (UI) 
 * Fixed MQ queues, clients, message list was "jumpy". (MW-1478) 
 * MQ Console: Update TTL label for creating and updating a queue. (MW-1335) 
-* Update destinations and client empty state. (MQ-1440) 
-* Update message toast UI. (MQ-1427) 
-* Update queue and message exchange create or update UI. (MQ-1418) 
-* Upgrade anypoint-components and anypoint-icon to the latest version. (MQ-1442, MW-1407) 
 
 == 2.0.6
 
