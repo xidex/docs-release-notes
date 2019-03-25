@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, amazon rds, rds, connector
 
-_Select_
-
-*March 2019*
+Support Category: Select
 
 Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. The Anypoint Connector for Amazon RDS provides connectivity to the Amazon Relational Database Service (Amazon RDS) API, enabling you to interface with Amazon RDS to provide cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups.
 
@@ -84,31 +81,35 @@ The Amazon RDS Connector is compatible with:
 * Support for Retry Policy - The connector can be configured with a Reconnection strategy that is provided in the Advanced tab
 * The following operations are supported:
 
-** *DB Instances*
-*** CreateDBInstance
-*** CreateDBInstanceReadReplica
-*** DeleteDBInstance
-*** DescribeDBInstances
-*** ModifyDBInstance
-*** RebootDBInstance
-*** RestoreDBInstanceFromDBSnapshot
-*** RestoreDBInstanceToPointInTime
-*** StartDBInstance
-*** StopDBInstance
+DB Instances:
 
-**  *DB Snapshots*
-*** CreateDBSnapshot
-*** DeleteDBSnapshot
-*** DescribeDBSnapshots
-*** ModifyDBSnapshot
+* CreateDBInstance
+* CreateDBInstanceReadReplica
+* DeleteDBInstance
+* DescribeDBInstances
+* ModifyDBInstance
+* RebootDBInstance
+* RestoreDBInstanceFromDBSnapshot
+* RestoreDBInstanceToPointInTime
+* StartDBInstance
+* StopDBInstance
 
-**  *Events*
-*** DescribeEvents
+DB Snapshots:
 
-**  *Reserved DB Instances*
-*** DescribeReservedDBInstances
-*** DescribeReservedDBInstancesOfferings
-*** PurchaseReservedDBInstancesOffering
+* CreateDBSnapshot
+* DeleteDBSnapshot
+* DescribeDBSnapshots
+* ModifyDBSnapshot
+
+Events:
+
+* DescribeEvents
+
+Reserved DB Instances:
+
+* DescribeReservedDBInstances
+* DescribeReservedDBInstancesOfferings
+* PurchaseReservedDBInstancesOffering
 
 
 === Fixed in this Release
@@ -119,4 +120,4 @@ Initial version.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
