@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, amazon dynamodb, dynamodb, connector
 
-*February 2018*
+*March 2019*
 
 _Select_
 
@@ -14,6 +14,29 @@ The Anypoint Connector for Amazon DynamoDB provides connectivity to the Amazon D
 *Connector Guide*: xref:connectors::amazon/amazon-dynamodb-connector.adoc[Amazon DynamoDB Connector]
 
 Starting with v.1.0.0, the DynamoDB connector is licensed commercially with Anypoint Platform as with other Select connectors.
+
+== 1.2.0
+
+*March 21, 2019*
+
+Release notes for version 1.2.0 of the Amazon DynamoDB connector.
+
+=== Compatibility
+
+The Amazon DynamoDB Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0
+|Amazon Java SDK for DynamoDB|v1.11.515
+|Java|1.8.0_x
+|Anypoint Studio|7.0 and later
+|===
+
+=== Features
+
+* Added support for new AWS region endpoints.
 
 == 1.1.0
 
