@@ -33,7 +33,7 @@ To change an existing connection type to the new features, change the XML for th
 |salesforce:config-with-oauth-connection | No change
 |===
 +
-IMPORTANT: The OAuth 2.0 connection type is marked as Deprecated in Studio and Design Center, however OAuth 2.0 is still available. The "Deprecated" label was accidentally added and can be ignored.
+IMPORTANT: The OAuth 2.0 connection type is marked as Deprecated in Studio and Design Center, however OAuth 2.0 is still available. The "Deprecated" label can be ignored.
 +
 The previous values are available but are deprecated. We recommend moving to the new versions.
 
