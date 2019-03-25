@@ -11,8 +11,6 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 == 5.3.0
 
-*March 29, 2019*
-
 === Compatibility
 
 [%header%autowidth.spread]
