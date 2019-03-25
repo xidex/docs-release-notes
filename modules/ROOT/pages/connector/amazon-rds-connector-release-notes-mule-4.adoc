@@ -79,10 +79,11 @@ The Amazon RDS Connector is compatible with:
 * Built with AWS SDK v1.11.172
 * Support for Temporary Credentials - A checkbox named Try Default AWS Credentials Provider Chain has been added to the Global Configuration Elements. If selected, the connector will first try to obtain the credentials from an AWS environment.
 * Support for Retry Policy - The connector can be configured with a Reconnection strategy that is provided in the Advanced tab
-* The following operations are supported:
-+
+
+The following operations are supported:
+
 Database Instances:
-+
+
 * CreateDBInstance
 * CreateDBInstanceReadReplica
 * DeleteDBInstance
@@ -93,20 +94,20 @@ Database Instances:
 * RestoreDBInstanceToPointInTime
 * StartDBInstance
 * StopDBInstance
-+
+
 Database Snapshots:
-+
+
 * CreateDBSnapshot
 * DeleteDBSnapshot
 * DescribeDBSnapshots
 * ModifyDBSnapshot
-+
+
 Events:
-+
+
 * DescribeEvents
-+
+
 Reserved Database Instances:
-+
+
 * DescribeReservedDBInstances
 * DescribeReservedDBInstancesOfferings
 * PurchaseReservedDBInstancesOffering
