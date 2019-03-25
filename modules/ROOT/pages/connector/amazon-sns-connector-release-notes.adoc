@@ -22,6 +22,27 @@ Starting with v.3.0.0, the SNS connector is licensed commercially with Anypoint 
 . Search for the connector and click Install.
 . Follow the prompts to install the connector.
 
+== 3.2.0
+
+Release notes for version 3.2.0 of the Amazon SNS connector.
+
+=== Compatibility
+
+The Amazon SNS Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|3.8.x or later
+|Amazon Java SDK for SNS|v1.11.515
+|Anypoint Studio|5.2 or later
+|===
+
+=== Features
+
+* Added support for connecting to new AWS region endpoints.
+* Upgraded to support AWS SDK v1.11.515
+
 == 3.1.0
 
 *September 30, 2016*
