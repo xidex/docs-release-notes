@@ -6,11 +6,34 @@ endif::[]
 
 _Select_
 
-*February 2018*
+*March 2019*
 
 Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. The Anypoint Connector for Amazon RDS provides connectivity to the Amazon Relational Database Service (Amazon RDS) API, enabling you to interface with Amazon RDS to provide cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups.
 
 Starting with v.1.0.0, the RDS connector is licensed commercially with Anypoint Platform as with other Select connectors.
+
+== 1.2.0
+
+*March 21, 2019*
+
+Release notes for version 1.2.0 of the Amazon RDS connector.
+
+=== Compatibility
+
+The Amazon RDS Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0
+|Amazon Java SDK for RDS|v1.11.515
+|Java|1.8 and later
+|Anypoint Studio|7.0 and later
+|===
+
+=== Features
+
+* Added support for connecting to new AWS region endpoints.
 
 == 1.1.0
 
