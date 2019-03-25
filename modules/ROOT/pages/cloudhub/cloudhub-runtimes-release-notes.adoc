@@ -11,23 +11,23 @@ These are the release notes for patches which are made to the Mule runtimes on C
 3.9.2 Runtime Update:
 
 * Oracle type with CLOB field raises error [SE-10726]
-* Database connector file descriptor leak when processing large payloads [SE-11071]
-* SFTP connector not closing connections [SE-10977]
-* Throttling policy doesn't clean it's cache [SE-10534]
+* Database connector file descriptor leaks when processing large payloads [SE-11071]
+* SFTP connector is not closing connections [SE-10977]
+* Throttling policy doesn't clean its cache [SE-10534]
 
 3.9.1 Runtime Update:
 
 * Oracle type with CLOB field raises error [SE-10726]
-* Database connector file descriptor leak when processing large payloads [SE-11071]
+* Database connector file descriptor leaks when processing large payloads [SE-11071]
 
 3.8.7 Runtime Update:
 
 * SFTP connector not closing connections [SE-10977]
-* Throttling policy doesn't clean it's cache [SE-10534]
+* Throttling policy doesn't clean its cache [SE-10534]
 
 3.8.6 Runtime Update:
 
-* Throttling policy doesn't clean it's cache [SE-10534]
+* Throttling policy doesn't clean its cache [SE-10534]
 
 
 == March 21, 2019
