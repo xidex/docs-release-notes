@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, amazon s3, s3, connector
 
-*March 2017*
+*March 2019*
 
 _Select_
 
@@ -14,6 +14,32 @@ The Anypoint Amazon S3 Connector provides connectivity to the the Amazon S3 API,
 
 [IMPORTANT]
 Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint Platform as with other Select connectors.  Prior versions will remain freely available to the community.
+
+== Version 4.3.0 
+
+*March 25, 2019*
+
+=== Compatibility
+
+The Amazon S3 connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|3.5.x or later
+|AWS SDK for Java|1.11.515
+|===
+
+=== Features
+
+* Added support for connecting to new AWS region endpoints.
+
+=== Fixed in this Release
+
+* Refactored AWS and S3 Connector;
+* Refactored client configuration and moved common params to CommonConfig.
+* Fixed conflict with net.javacrumbs.json-unit library.
+* Corrected icons for theme.light.
 
 == 4.2.0
 
