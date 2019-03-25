@@ -8,7 +8,8 @@ endif::[]
 
 This release of Anypoint Platform CLI addresses the following issue:
 
-* Added support for pagination within Design Center.
+* Added support for pagination within Design Center. +
+When running `designcenter project list`, you can now pass `--pageIndex` to set the number of pages to retrieve, and `--pageSize` to set the amount of results per page. 
 
 == Version 3.0.4 - January 18, 2019
 
