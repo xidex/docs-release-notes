@@ -11,6 +11,8 @@ The Mule Connector for SuccessFactors provides full support to query, create, up
 
 == 3.1.0
 
+*March 25, 2019*
+
 === Compatibility
 
 [%header%autowidth.spread]
