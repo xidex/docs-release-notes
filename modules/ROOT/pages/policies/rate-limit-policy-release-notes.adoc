@@ -4,6 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, rate-limit, policy, release notes
 
+== 1.2.3
+
+*Feb 14, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== Fixed Issues
+
+* Fixed `NullPointerException` thrown when disposing policy in a Mule Cluster.
+
 == 1.2.2
 
 *Oct 17, 2018*
