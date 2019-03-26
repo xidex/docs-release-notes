@@ -17,6 +17,9 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 * Throttling policy doesn't clean its cache [SE-10534]
 
+3.8.4 Runtime Update:
+
+* Added alerting in case disk usage exceeds threshold [SE-11147]
 
 == March 25, 2019
 
