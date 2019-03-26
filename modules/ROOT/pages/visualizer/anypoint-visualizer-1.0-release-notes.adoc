@@ -5,7 +5,17 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
-== March 21, 2019
+== March 25, 2019
+
+* Standalone Mule Only 
++
+Due to a potential performance impact for Mule 4.1.x, header injection in the Anypoint Monitoring agent is now disabled by default for standalone Mule.
+Visualizer does not work properly without this header, so to see your applications correctly, you must enable the property at the server level 
+after you install the Anypoint Monitoring Agent. 
++
+For instructions, see xref:visualizer::setup.adoc#_set_up_for_standalone_mule[Set up Anypoint Visualizer].
+
+== March 23, 2019
 Version 2.1.0
 
 == New Features and Enhancements
