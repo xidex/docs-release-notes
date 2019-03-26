@@ -2,15 +2,29 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, connector, sap, successfactors
 
-*June 2018*
-
-_Select_
+Support Category: Select
 
 The Mule Connector for SuccessFactors provides full support to query, create, update and delete entities using the SFAPI API exposed by SuccessFactors.
 
 *Note:* Version 3.0.0 discards the SFAPI and introduces the ODATA API v2 exposed by SuccessFactors.
+
+== 3.1.0
+
+*March 25, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 4.1.1 and later
+|SuccessFactors API | OData API v2
+|===
+
+=== Features
+
+* Added support for SuccessFactors upsert operation.
 
 == 3.0.0
 
@@ -31,4 +45,4 @@ Mule 4 version of the SuccessFactors connector.
 
 * https://help.sap.com/viewer/p/SAP_SUCCESSFACTORS_HCM_SUITE[SuccessFactors HCM Suite site]
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
