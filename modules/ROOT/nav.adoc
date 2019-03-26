@@ -360,7 +360,7 @@
  ** xref:apikit/apikit-1.7.3-release-notes.adoc[APIkit 1.7.3 Release Notes]
 * xref:cloudhub/cloudhub-release-notes.adoc[CloudHub Release Notes]
  ** xref:cloudhub/cloudhub-runtimes-release-notes.adoc[CloudHub Runtimes Release Notes]
- ** xref:cloudhub/cloudhub-dedicated-load-balancer-release-notes.adoc[CloudHub Deditaced Load Balancer Release Notes]
+ ** xref:cloudhub/cloudhub-dedicated-load-balancer-release-notes.adoc[CloudHub Dedicated Load Balancer Release Notes]
  ** xref:cloudhub/cloudhub-r40-migration-guide.adoc[CloudHub R40 Migration Guide]
 * xref:design-center/design-center-release-notes.adoc[Design Center Release Notes]
  ** xref:design-center/design-center-release-notes-api_specs.adoc[Features for Creating API Specifications]
