@@ -17,7 +17,7 @@ If you update the Runtime Manager agent, you must execute the Anypoint Monitorin
 
 2.1.0.0 Anypoint Monitoring agent installer update:
 
-This release includes support for the SOCKS5 proxy. For more information, see xref:monitoring::am-installing.adoc[Install Anypoint Monitoring On-Premises].
+This release includes support for the SOCKS5 proxy. For more information, see xref:monitoring::am-installing.adoc[Install the Anypoint Monitoring Agent].
 
 You can download the Anypoint Monitoring agent installer from https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.1.0.0.zip[Anypoint Monitoring Agent Installer 2.1.0.0] or from the Anypoint Monitoring *Settings > Hybrid* page. 
 
