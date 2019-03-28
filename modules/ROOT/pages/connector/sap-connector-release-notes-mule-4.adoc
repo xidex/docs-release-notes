@@ -27,8 +27,8 @@ Note: This connector is not supported for use with Anypoint Design Center.
 
 === Fixed in this release
 
-* Customer facing SAP Connector not able to update SAP correctly when IDOCs sent as collection. (SE-11221)
-* SAP Connector not accepting slash "/" on BAPI function call. (SE-10952)
+* Customer facing SAP connector was not able to update SAP correctly when IDOCs were sent as a collection. (SE-11221)
+* SAP connector did not accept slash "/" on a BAPI function call. (SE-10952)
 
 == 4.1.2
 
