@@ -1,0 +1,43 @@
+= Anypoint Runtime Fabric Installer Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: install package, installer, release notes, runtime fabric, runtimefabric, fabric, rtf
+
+These are the release notes for the install bundle for Runtime Fabric. In addition to these release notes, see the xref:runtime-fabric/runtime-fabric-release-notes.adoc[Anypoint Runtime Fabric release notes] and the complete xref:1.2@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
+
+== 1.0.5 - February 22, 2019
+
+This release includes the following fixes and enhancements:
+
+* Added: Script to allow updating HTTP proxy configuration. (See `scripts/` directory)
+
+== 1.0.4 - February 13, 2019
+
+This release includes the following fixes and enhancements:
+
+* Added: Security patch to address CVE-2019-5736
+
+== 1.0.3 - February 6, 2019
+
+This release includes the following fixes and enhancements:
+
+* Added: Support for RHEL/CentOS 7.6
+
+== 1.0.2 - January 17, 2019
+
+This release includes the following fixes and enhancements:
+
+* Added: Patch for internal component used by Ops Center
+
+== 1.0.1 - December 13, 2018
+
+This release includes the following fixes and enhancements:
+
+* Added: Security patch to address CVE-2018-1002105
+* Added: Support for RedHatEnterpriseServer
+* Fixed: Mule 4 license handling
+
+== 1.0.0 - August 13, 2018
+
+Initial release
