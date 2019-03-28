@@ -24,8 +24,8 @@ The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 co
 
 === Fixed in this Release
 
-* The connector did  not accept JKS and JCEKS keystores. This was fixed.
-* The encryption and signing algorithm lists in the configuration are now tho separate ones. Previously, you were able to select signing algorithm for encrypting and vice-versa, which would not work.
+* The connector did not accept JKS and JCEKS keystores.
+* The encryption and signing algorithm lists in the configuration are now tho separate ones. Previously, you were able to select a signing algorithm for encrypting and vice-versa, which would not work.
 * The connector is now able to receive both signed and unsigned MDNs.
 
 == 4.0.1
