@@ -6,6 +6,15 @@ endif::[]
 
 In addition to these release notes, see the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== 1.2.60 - March 28, 2019
+
+This release includes the following fixes and enhancements:
+
+* Added: Support for consuming secure properties in applications.
+* Added: Cluster Service upgraded to Java 8u191.
+* Added: Automatic HTTP proxy configuration for API Gateways.
+* Fixed: Agent upgrade did not successfully complete in some cases.
+
 == 1.2.36 - February 22, 2019
 
 This release includes the following fixes and enhancements:
