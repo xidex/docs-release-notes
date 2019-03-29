@@ -3,6 +3,18 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Support Category: Select
+
+== 1.2.3
+
+*March 29, 2019*
+
+=== New Features and Enhancements
+
+* Fixed reconnection issue when Queue Manager is shutdown while handling REPLY_TO.
+* Fixed IBM MQ Client unhandled exception when cleaning a consumer's message listener.
+* Cleanup of IBM MQ exception listener state, when a cached connection is not cleaned up.
+
 == 1.2.0
 
 *February 5, 2019*
@@ -53,7 +65,6 @@ durable subscriptions.
 === Features and Enhancements
 
 * Release of IBM MQ Connector, which supports consuming and publishing messages through the JMS API.
-* https://docs.mulesoft.com/connectors/ibm/ibm-mq-connector[IBM MQ Documentation]
 
 === Mule Version
 
@@ -61,5 +72,6 @@ Mule 4.1.1
 
 == See Also
 
+* https://docs.mulesoft.com/connectors/ibm/ibm-mq-connector[IBM MQ Documentation]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
