@@ -65,7 +65,6 @@ durable subscriptions.
 === Features and Enhancements
 
 * Release of IBM MQ Connector, which supports consuming and publishing messages through the JMS API.
-* https://docs.mulesoft.com/connectors/ibm/ibm-mq-connector[IBM MQ Documentation]
 
 === Mule Version
 
@@ -73,5 +72,6 @@ Mule 4.1.1
 
 == See Also
 
+* https://docs.mulesoft.com/connectors/ibm/ibm-mq-connector[IBM MQ Documentation]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
