@@ -22,6 +22,7 @@ This release contains the following issue fixes:
 * Displays the correct VM Vendor installed in the Mule Runtime in Runtime Manager
 * Returns the correct status response and message when trying to deploy an application with errors.
 * Upgrade version of several dependency libraries.
+* Changed default Agent truststore name from truststore.jks to anypoint-truststore.jks to avoid conflicts with application defined trust stores. 
 
 == Known Limitations and Workarounds
 
