@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Support Category: Select
+
 The Anypoint Connector for NetSuite synchronizes data and automates business processes between NetSuite and third-party applications, either on-premises or in the cloud.
 
 == 8.3.0
@@ -23,7 +25,7 @@ The NetSuite version is _not_ the same as the SuiteTalk API version. Your accoun
 
 === Features
 
-* Token authentication is now supported for RESTlet operations.
+* Token authentication is now supported for RESTlet operations. (SE-11335)
 
 === Fixed in this Release
 
