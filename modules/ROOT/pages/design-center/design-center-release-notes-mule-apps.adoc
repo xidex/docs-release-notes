@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-9-0,1.9.0>>
 * <<1-8-0,1.8.0>>
 // * <<1-7-2,1.7.2>>
 * <<1-7-1,1.7.1>>
@@ -32,6 +33,24 @@ These release notes cover the following versions of these features:
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
 
+== 1.9.0
+*April 6, 2019*
+
+This release contains the following new features...
+
+=== New Features
+
+* You can now add notes to cards. You can write notes, for example, to explain the purpose of a card or to remind yourself of tasks you still need to complete in a flow.
+* When you open an existing Mule application after a new version of Mule runtime is released, Design Center will display a message stating that the application now uses the latest version of Mule runtime. The Mule application will then restart. This feature ensures that Mule applications are always using the latest version of Mule runtime.
+
+=== Enhancements
+
+* The previous release included this enhancement:
+** _If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see functions for transforming the value and a preview of what the value will be._
+
++
+For the 1.9.0 release, more functions have been made available, including some mathematical functions that take parameters.
+
 == 1.8.0
 *March 9, 2019*
 
@@ -41,12 +60,12 @@ This release contains the following new features and enhancements.
 
 * The new *Problems* pane lists errors in the currently open project. Open the pane by clicking *Problems* in the lower-right corner of the canvas. Click an error to be shown where you can resolve that error.
 * You can import a Mule-application project that was exported from Design Center. This feature is useful when you want to continue developing a Mule application in an environment in Anypoint Platform that is different from the environment in which the application was created.
-* When you open an existing Mule application after a new version of Mule runtime is released, Design Center will display a message stating that the application now uses the latest version of Mule runtime. The Mule application will then restart. This feature ensures that Mule applications are always using the latest version of Mule runtime.
+
 
 === Enhancements
 
 * Display descriptions of the operations to choose from when you add new cards to your flows. When you add a card, the list of operations is opened automatically. Mouse over any operation to display an icon to the right of the operation's name. Mouse over the icon to see a description of the operation.
-* If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see options for transforming the value and a preview of what the value will be.
+* If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see functions for transforming the value and a preview of what the value will be.
 * If you drag and drop a "custom expression" element into a text field and then display the *Custom Expression* dialog to build an expression, you can click any DataWeave function in the right-hand pane of the dialog to see a description and examples of that function.
 * Use the Remove Variable card to remove a variable from a flow.
 
