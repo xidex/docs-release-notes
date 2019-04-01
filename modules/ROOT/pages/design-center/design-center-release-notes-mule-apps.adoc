@@ -38,11 +38,12 @@ These release notes cover the following versions of these features:
 
 This release contains the following new features...
 
-// From Badi's draft release announcement: Anypoint Design Center - flow designer: New Comments in cards available; Preview of data pills with live data after running app; New visual function editor supported functions; New create project modal; 
+// From Badi's draft release announcement: Anypoint Design Center - flow designer: New Comments in cards available; Preview of data pills with live data after running app; New visual function editor supported functions; New create project modal;
 
 === New Features
 
 * When you click the *Create* button that is on top of the list of projects in Design Center, a new dialog appears with clearer choices for project types.
+*
 * You can now add notes to cards. You can write notes, for example, to explain the purpose of a card or to remind yourself of tasks you still need to complete in a flow.
 // * When you open an existing Mule application after a new version of Mule runtime is released, Design Center will display a message stating that the application now uses the latest version of Mule runtime. The Mule application will then restart. This feature ensures that Mule applications are always using the latest version of Mule runtime. https://mulesoft.slack.com/archives/G1GE46NQL/p1554142341009300?thread_ts=1554132676.000800&cid=G1GE46NQL
 
@@ -53,6 +54,8 @@ This release contains the following new features...
 
 +
 For the 1.9.0 release, more functions have been made available, including some mathematical functions that take parameters.
++
+Also, you can now see previews of live data when a Mule application is running.
 
 
 == 1.8.0
