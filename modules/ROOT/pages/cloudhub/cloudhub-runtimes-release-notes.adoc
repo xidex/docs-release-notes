@@ -10,7 +10,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 3.9.2 Runtime Update:
 
-* Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime you will no longer see your apps in Visualizer. They are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring Settings. For more information, see xref:visualizer::setup.adoc[enable the Anypoint Monitoring agent].
+* Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime you will no longer see your apps in Visualizer. They are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring Settings. For more information, see xref:visualizer::setup.adoc#_set_up_for_standalone_mule[Set up Anypoint Visualizer].
 
 == March 26, 2019
 
