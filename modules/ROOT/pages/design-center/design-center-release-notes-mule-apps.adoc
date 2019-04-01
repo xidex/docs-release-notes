@@ -44,7 +44,10 @@ This release contains the following new features...
 
 * When you click the *Create* button that is on top of the list of projects in Design Center, a new dialog appears with clearer choices for project types.
 *
-* You can now add notes to cards. You can write notes, for example, to explain the purpose of a card or to remind yourself of tasks you still need to complete in a flow.
+* You can now add notes to cards. Here are some examples of why you might add notes:
+** To explain the purpose of using a card in a flow
+** To remind yourself of tasks you still need to complete in a card
+** To log changes that you make to a card
 // * When you open an existing Mule application after a new version of Mule runtime is released, Design Center will display a message stating that the application now uses the latest version of Mule runtime. The Mule application will then restart. This feature ensures that Mule applications are always using the latest version of Mule runtime. https://mulesoft.slack.com/archives/G1GE46NQL/p1554142341009300?thread_ts=1554132676.000800&cid=G1GE46NQL
 
 === Enhancements
