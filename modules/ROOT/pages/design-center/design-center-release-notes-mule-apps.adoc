@@ -36,7 +36,7 @@ These release notes cover the following versions of these features:
 == 1.9.0
 *April 6, 2019*
 
-This release contains the following new features...
+This release contains the following new features and enhancements.
 
 // From Badi's draft release announcement: Anypoint Design Center - flow designer: New Comments in cards available; Preview of data pills with live data after running app; New visual function editor supported functions; New create project modal;
 
@@ -52,7 +52,7 @@ This release contains the following new features...
 
 === Enhancements
 
-* The previous release included this enhancement:
+The previous release included this enhancement:
 ** _If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see functions for transforming the value and a preview of what the value will be._
 
 +
