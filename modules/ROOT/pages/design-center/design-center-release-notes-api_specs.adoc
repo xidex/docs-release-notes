@@ -1,10 +1,11 @@
-= Design Center Release Notes: Features for Creating API Specifications
+= API Designer
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-5,2.4.5>>
 * <<2-4-4,2.4.4>>
 * <<2-4-3,2.4.3>>
 * <<2-4-2,2.4.2>>
@@ -16,8 +17,21 @@ These release notes cover the following versions of these features:
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
 
+== 2.4.5
+*April 6, 2019*
+
+
+=== Fixed Issues
+
+//SE-11361
+* The option *API is behind a firewall*, which you can toggle on and off by clicking the shield that is on the left side of the toggle for the mocking service, was not functional.
+// SE-11353
+* The validation of headers was not occurring when the headers were defined in RAML files that were included as dependencies from Anypoint Exchange.
+
 == 2.4.4
 *March 23, 2019*
+
+This release fixes six issues.
 
 === Fixed Issues
 // SE-11152
