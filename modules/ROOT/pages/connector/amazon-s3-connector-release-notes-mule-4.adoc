@@ -11,6 +11,8 @@ Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint P
 
 == 5.3.0
 
+*Date to be determined.*
+
 === Compatibility
 
 The Amazon S3 connector is compatible with:
