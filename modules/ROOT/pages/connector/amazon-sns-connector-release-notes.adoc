@@ -14,6 +14,8 @@ Starting with v.3.0.0, the SNS connector is licensed commercially with Anypoint 
 
 == 3.2.0
 
+*Date to be determined.*
+
 Release notes for version 3.2.0 of the Amazon SNS connector.
 
 === Compatibility
