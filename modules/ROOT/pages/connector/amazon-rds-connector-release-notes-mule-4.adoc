@@ -11,6 +11,8 @@ Starting with v.1.0.0, the RDS connector is licensed commercially with Anypoint 
 
 == 1.2.0
 
+*Date to be determined.*
+
 Release notes for version 1.2.0 of the Amazon RDS connector.
 
 === Compatibility
