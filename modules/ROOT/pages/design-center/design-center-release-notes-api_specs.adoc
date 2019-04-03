@@ -20,16 +20,19 @@ These release notes cover the following versions of these features:
 == 2.4.5
 *April 6, 2019*
 
-
-// I'm not documenting the color change in the sidebar. (DESIGNER-3474)
+This release includes a new feature, an enhancement, and two fixes.
 
 == New Feature
 // DESIGNER-3463
 The editor now caches validations that are made by the AMF parser. (This parser was released on January 10 this year in the 2.4.0 release. See the release notes for 2.4.0 for more details about this parser.) Every time a file was opened in previous releases, the AMF parser would validate the file; during the validation, the API console would not appear in the right-hand pane of the editor. Now, opening a file does not cause the AMF parser to validate it. Therefore, the API console appears immediately whenever you switch to another file in a project. Any change to a project -- typing, importing a file, or other actions -- clears the project's cache and triggers the AMF parser to validate the project again.
 
-=== Enhancement
+=== Enhancements
 
-The usability of the feature for forking projects is improved.
+* The usability of the feature for forking projects is improved.
+* The navigation bar at the top of API Designer is now consistent with the navigation bars in other tools within Design Center.
+
+// I'm not documenting the color change in the sidebar. It is a very minor change.
+
 
 === Fixed Issues
 
