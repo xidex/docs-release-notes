@@ -25,11 +25,11 @@ These release notes cover the following versions of these features:
 
 == New Feature
 // DESIGNER-3463
-The editor now caches validations that are made by the AMF parser. (This parser was released on January 10 this year in the 2.4.0 release. See the release notes for 2.4.0 for more details about this parser.) Caching greatly reduces the time required for the API console to appear in the right-hand pane whenever you switch to another file in a project. Any change to a project -- typing, importing a file, and more -- invalidates its cache, and a rebuild of the cache is triggered immediately.
+The editor now caches validations that are made by the AMF parser. (This parser was released on January 10 this year in the 2.4.0 release. See the release notes for 2.4.0 for more details about this parser.) Every time a file was opened in previous releases, the AMF parser would validate the file; during the validation, the API console would not appear in the right-hand pane of the editor. Now, opening a file does not cause the AMF parser to validate it. Therefore, the API console appears immediately whenever you switch to another file in a project. Any change to a project -- typing, importing a file, or other actions -- clears the project's cache and triggers the AMF parser to validate the project again.
 
 === Enhancement
 
-The appearance of the tool for forking projects is improved.
+The usability of the feature for forking projects is improved.
 
 === Fixed Issues
 
@@ -37,8 +37,7 @@ The appearance of the tool for forking projects is improved.
 * The option *API is behind a firewall*, which you can toggle on and off by clicking the shield that is on the left side of the toggle for the mocking service, was not functional.
 // SE-11353
 * The validation of headers was not occurring when the headers were defined in RAML files that were included as dependencies from Anypoint Exchange.
-// DESIGNER-3442
-
+// I documented none of the other fixed issues because they were not reported by customers.
 
 == 2.4.4
 *March 23, 2019*
