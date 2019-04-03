@@ -27,12 +27,18 @@ These release notes cover the following versions of these features:
 // DESIGNER-3463
 The editor now caches validations that are made by the AMF parser. (This parser was released on January 10 this year in the 2.4.0 release. See the release notes for 2.4.0 for more details about this parser.) Caching greatly reduces the time required for the API console to appear in the right-hand pane whenever you switch to another file in a project. Any change to a project -- typing, importing a file, and more -- invalidates its cache, and a rebuild of the cache is triggered immediately.
 
+=== Enhancement
+
+The appearance of the tool for forking projects is improved.
+
 === Fixed Issues
 
 //SE-11361
 * The option *API is behind a firewall*, which you can toggle on and off by clicking the shield that is on the left side of the toggle for the mocking service, was not functional.
 // SE-11353
 * The validation of headers was not occurring when the headers were defined in RAML files that were included as dependencies from Anypoint Exchange.
+// DESIGNER-3442
+
 
 == 2.4.4
 *March 23, 2019*
