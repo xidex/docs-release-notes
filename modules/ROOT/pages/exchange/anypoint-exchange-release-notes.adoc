@@ -3,6 +3,21 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== March 2019
+
+=== New Features
+* Add option to use API behind firewall (EXC-3117)
+
+=== Fixed in this Release
+* Fix links inside asset detail page in marketing website (https://www.mulesoft.com/exchange) (EXC-3172)
+* Dependency snippet displays incorrectly on public Exchange (EXC-3166)
+* Improve error message on Maximum Page limit in Public Portal (EXC-3054)
+* When Requesting Access to API, not All Applications are listed (current limitation to 200 client apps) (EXC-3017)
+* Exclude test dependencies when using Maven interface (EXC-2624)
+* Improve error message for unsupported OAS3 specs (EXC-2552)
+* Improve error message on 409 when existing asset was deleted (EXC-2484)
+* Exchange manual publication allows publishing a WSDL with both file and url (EXC-2354)
+
 == February 2019
 
 === New Features
