@@ -2,13 +2,14 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, File, connector, runtime, release notes
+
+Support Category: Select
 
 == 1.2.2
 
-*Apr 3, 2019*
+*April 3, 2019*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.1*
 
@@ -16,15 +17,15 @@ endif::[]
 
 * File Connector should not gather attributes twice on the list operation. (MULE-16356)
 * File Connector doesn't fail when a file lock is not obtained. (MULE-16353)
-* Removed Guava dependency (MULE-14275)
-* Upgraded File Commons dependency to 1.2.1
-* Upgraded Commons IO to 2.6
+* Removed Guava dependency. (MULE-14275)
+* Upgraded File Commons dependency to 1.2.1.
+* Upgraded Commons IO to 2.6.
 
 == 1.2.1
 
-*Nov 8, 2018*
+*November 8, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.1*
 
@@ -35,9 +36,9 @@ endif::[]
 
 == 1.2.0
 
-*Aug 14, 2018*
+*August 14, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.0*
 
@@ -57,7 +58,7 @@ endif::[]
 
 *May 7, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.0*
 
@@ -69,12 +70,11 @@ endif::[]
 
 * File Connector does not check for files recursively if a filenamePattern is given. (MULE-14863)
 
-
 == 1.1.2
 
-*Mar 14, 2018*
+*March 14, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.0*
 
@@ -84,7 +84,7 @@ endif::[]
 
 == 1.1.1
 
-*Feb 2, 2018*
+*February 2, 2018*
 
 === Fixed Issues
 
@@ -92,7 +92,7 @@ endif::[]
 
 == 1.1.0
 
-*Jan 19, 2018*
+*January 19, 2018*
 
 === New Features and Enhancements
 
@@ -111,4 +111,4 @@ Mule 4.1
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
