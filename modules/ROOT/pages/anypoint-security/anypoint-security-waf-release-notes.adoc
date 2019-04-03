@@ -5,6 +5,10 @@ endif::[]
 
 == April 6, 2019
 
+== New Features
+
+In Runtime Fabrics that are enabled with Anypoint Security, you can manage blocked IP addresses. For more information, see xref:anypoint-security::manage-blocked-ip-in-rtf.adoc[Manage Blocked IP Addresses in Runtime Fabric]. 
+
 == Fixed Issues
 
 === Application Deployment Fails
