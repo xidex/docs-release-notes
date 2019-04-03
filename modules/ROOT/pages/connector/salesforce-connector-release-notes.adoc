@@ -9,6 +9,7 @@ Starting with v.6.0.2, the Salesforce Connector is licensed commercially with An
 
 
 == 8.8.1
+
 *April 2, 2019*
 
 === Compatibility
@@ -27,7 +28,7 @@ Starting with v.6.0.2, the Salesforce Connector is licensed commercially with An
 
 === Fixed in this Release
 
-* _Metadata not populated correctly in Salesforce query-all with nested query (SE-10720)_. Query Operations now have proper datasense support for nested queries
+* Metadata not populated correctly in Salesforce query-all with a nested query. Query Operations now have proper DataSense support for nested queries. (SE-10720)
 
 
 == 8.8.0 
