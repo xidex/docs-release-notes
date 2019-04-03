@@ -23,6 +23,10 @@ These release notes cover the following versions of these features:
 
 // I'm not documenting the color change in the sidebar. (DESIGNER-3474)
 
+== New Feature
+// DESIGNER-3463
+The editor now caches validations that are made by the AMF parser. (This parser was released on January 10 this year in the 2.4.0 release. See the release notes for 2.4.0 for more details about this parser.) Caching greatly reduces the time required for the API console to appear in the right-hand pane whenever you switch to another file in a project. Any change to a project -- typing, importing a file, and more -- invalidates its cache, and a rebuild of the cache is triggered immediately.
+
 === Fixed Issues
 
 //SE-11361
