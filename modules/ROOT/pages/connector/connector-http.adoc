@@ -5,6 +5,19 @@ endif::[]
 
 Support Category: Select
 
+== 1.5.2
+
+*April 3, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* Source completion callback not called on failure causing leaks. (https://www.mulesoft.org/jira/browse/MULE-16634[MULE-16634])
+* Add missing MediaType to HTTP operations, equals/hash to CORS components and upgrade CORS to 1.1.2 (https://www.mulesoft.org/jira/browse/MULE-16632[MULE-16632])
+
 == 1.5.1
 
 *March 28, 2019*
