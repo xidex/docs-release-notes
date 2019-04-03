@@ -15,8 +15,8 @@ Support Category: Select
 
 === Fixed Issues
 
-* Source completion callback not called on failure causing leaks. (https://www.mulesoft.org/jira/browse/MULE-16634[MULE-16634])
-* Add missing MediaType to HTTP operations, equals/hash to CORS components and upgrade CORS to 1.1.2 (https://www.mulesoft.org/jira/browse/MULE-16632[MULE-16632])
+* Source completion callback that was not called on failure was causing leaks. (https://www.mulesoft.org/jira/browse/MULE-16634[MULE-16634])
+* Add missing MediaType to HTTP operations, equals or hash to CORS components, and upgrade CORS to 1.1.2. (https://www.mulesoft.org/jira/browse/MULE-16632[MULE-16632])
 
 == 1.5.1
 
