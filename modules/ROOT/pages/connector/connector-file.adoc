@@ -4,7 +4,21 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, File, connector, runtime, release notes
 
-*Nov 2018*
+== 1.2.2
+
+*Apr 3, 2019*
+
+=== Min Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* File Connector should not gather attributes twice on the list operation. (MULE-16356)
+* File Connector doesn't fail when a file lock is not obtained. (MULE-16353)
+* Removed Guava dependency (MULE-14275)
+* Upgraded File Commons dependency to 1.2.1
+* Upgraded Commons IO to 2.6
 
 == 1.2.1
 
