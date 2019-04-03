@@ -5,10 +5,6 @@ endif::[]
 
 These are the new features and enhancements, known limitations and issues, and fixes in Anypoint Monitoring.
 
-== April 6, 2019
-
-An enhanced Monitoring agent is now included in CloudHub runtime versions 3.9.0, 3.9.1, and 3.9.2.
-
 == March 27, 2019
 
 The following features now support CloudHub apps running on Mule 4.1.x:
