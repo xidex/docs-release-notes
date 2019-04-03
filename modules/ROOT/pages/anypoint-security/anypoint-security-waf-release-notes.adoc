@@ -7,14 +7,14 @@ endif::[]
 
 == New Features
 
-In Runtime Fabrics that are enabled with Anypoint Security, you can manage blocked IP addresses. For more information, see xref:anypoint-security::manage-blocked-ip-in-rtf.adoc[Manage Blocked IP Addresses in Runtime Fabric]. 
+In Runtime Fabrics that are configured with a DoS policy, you can manage blocked IP addresses. For more information, see xref:anypoint-security::manage-blocked-ip-in-rtf.adoc[Manage Blocked IP Addresses in Runtime Fabric]. 
 
 == Fixed Issues
 
 === Application Deployment Fails
 
 * The issue where Edge did not honor the *Read Request Time-out* configuration setting of the Runtime Fabric inbound traffic configuration is fixed.
-* The issue where Edge failed to route requests to the Mule when the client (through the request header) asserts `Transfer-Encoding: chunked` is fixed.
+* The issue where Edge failed to route requests to the application when the client (through the request header) asserts `Transfer-Encoding: chunked` is fixed.
 
 == December 10, 2018
 
