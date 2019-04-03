@@ -21,6 +21,8 @@ These release notes cover the following versions of these features:
 *April 6, 2019*
 
 
+// I'm not documenting the color change in the sidebar. (DESIGNER-3474)
+
 === Fixed Issues
 
 //SE-11361
