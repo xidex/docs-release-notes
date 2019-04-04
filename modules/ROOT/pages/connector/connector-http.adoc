@@ -5,6 +5,18 @@ endif::[]
 
 Support Category: Select
 
+== 1.5.3
+
+*April 4, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* HTTP Connector does not implement equals/hash on RequestHeader POJO (https://www.mulesoft.org/jira/browse/MULE-16652[MULE-16652])
+
 == 1.5.2
 
 *April 3, 2019*
