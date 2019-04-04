@@ -15,7 +15,7 @@ Support Category: Select
 
 === Fixed Issues
 
-* HTTP Connector does not implement equals/hash on RequestHeader POJO (https://www.mulesoft.org/jira/browse/MULE-16652[MULE-16652])
+* HTTP Connector does not implement equals or hash signs in a RequestHeader POJO. (https://www.mulesoft.org/jira/browse/MULE-16652[MULE-16652])
 
 == 1.5.2
 
