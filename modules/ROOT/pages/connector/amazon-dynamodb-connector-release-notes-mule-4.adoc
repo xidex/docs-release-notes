@@ -13,7 +13,7 @@ Starting with v.1.0.0, the DynamoDB connector is licensed commercially with Anyp
 
 == 1.2.0
 
-*Date to be determined.*
+*April 4, 2019*
 
 Release notes for version 1.2.0 of the Amazon DynamoDB connector.
 
