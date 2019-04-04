@@ -19,7 +19,7 @@ endif::[]
 * Maven dependencies for the test scope are no longer visible in the dependencies section in Exchange. (EXC-2624)
 * Correct error message when trying to publish an OAS 3 specification, since OAS 3 is not supported. (EXC-2552)
 * New error message reflects the correct information when an attempt is made to create a new asset with the same GroupID-AssetID-Version (GAV) as an asset deleted within the past 7 days. Error message changed from "Asset already exists. Choose another asset name or version." to "There is a deleted asset with the same version number. Try creating your new asset with a higher version number." (EXC-2484)
-* Exchange now enables users to publish a WSDL with either the WSDL file or the URL for the WSDL file. (EXC-2354)
+* Validate that a published WSDL has either a WSDL file or a URL for a WSDL file, and not both. (EXC-2354)
 
 == February 2019
 
