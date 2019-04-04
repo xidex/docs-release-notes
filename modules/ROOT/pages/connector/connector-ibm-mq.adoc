@@ -5,6 +5,14 @@ endif::[]
 
 Support Category: Select
 
+== 1.2.4
+
+*April 4, 2019*
+
+=== New Features and Enhancements
+
+* Cleanup of IBM MQ exception listener state is now done in a silent manner.
+
 == 1.2.3
 
 *March 29, 2019*
