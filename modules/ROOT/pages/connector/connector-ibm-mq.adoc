@@ -11,7 +11,7 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Cleanup of IBM MQ exception listener state is now done in a silent manner.
+* Clean up the IBM MQ exception listener states so that they are now done silently.
 
 == 1.2.3
 
