@@ -8,18 +8,18 @@ endif::[]
 === New Features
 
 * Enable customers to use the Try It panel for API instances that are behind their firewall. (EXC-3117)
-* Enable customers to add custom headers in the Try It panel in the Exchange Portal API Console. (EXC-3008)
 
 === Fixed in this Release
 
-* Links to websites that do not support iFrames, inside asset portals, maintained by MuleSoft and partners, in the public Exchange (http://www.mulesoft.com/exchange) no longer show a blank page. (EXC-3172)
+* Links to websites outside the MuleSoft Public Exchange no longer show a blank page. (EXC-3172)
 * Dependency snippet in Public Exchange now shows up in focus, so users don't have to scroll down and don't fail to see the snippet dialog at the bottom of the page. (EXC-3166)
 * Accurate warning and error displayed when the user has reached the Maximum Page limit of 10 pages per portal in Public Portal. (EXC-3054)
 * There is no limit on the number of client applications or contracts visible to the user when the user tries to request access for an API or browses the client applications in the "My Applications" page. Previous limit was 200. (EXC-3017)
+* Enable customers to add custom headers in the Try It panel in the Exchange Portal API Console. (EXC-3008)
 * Maven dependencies for the test scope are no longer visible in the dependencies section in Exchange. (EXC-2624)
-* Correct error message displayed to avoid confusion when the OAS to RAML converter is not able to convert a valid OAS 3 specification. MuleSoft doesn't yet support OAS 3 specifications. (EXC-2552)
+* Correct error message when trying to publish an OAS 3 specification, since OAS 3 is not supported. (EXC-2552)
 * New error message reflects the correct information when an attempt is made to create a new asset with the same GroupID-AssetID-Version (GAV) as an asset deleted within the past 7 days. Error message changed from "Asset already exists. Choose another asset name or version." to "There is a deleted asset with the same version number. Try creating your new asset with a higher version number." (EXC-2484)
-* Exchange now enables users to publish a WSDL with both the WSDL file and/or the URL for the WSDL file. (EXC-2354)
+* Exchange now enables users to publish a WSDL with either the WSDL file or the URL for the WSDL file. (EXC-2354)
 
 == February 2019
 
