@@ -7,7 +7,8 @@ endif::[]
 
 === New Features
 
-* Enable Customers to use the Try It panel for API instances that are behind their firewall. (EXC-3117)
+* Enable customers to use the Try It panel for API instances that are behind their firewall. (EXC-3117)
+* Enable customers to add custom headers in the Try It panel in the Exchange Portal API Console. (EXC-3008)
 
 === Fixed in this Release
 
