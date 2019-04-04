@@ -11,6 +11,20 @@ See Also:
 * xref:connector/anypoint-mq-connector-release-notes-mule-4.adoc[Mule 4 Anypoint MQ Connector Release Notes]
 * xref:mq::index.adoc[Anypoint MQ Documentation]
 
+== 2.1.1
+
+*April 4, 2019*
+
+* Backend and user interface improvements.
+
+=== Fixed in this Release
+
+* Audit all auditable actions even if they fail or are invalid. (MQ-629)
+* Catch Exception when tries to delete a queue and It is not in SQS. (MQ-726)
+* Delete environment fails when there are a lot of destinations to delete. (MQ-736)
+* Make Okta users able to create a client app. (MQ-1499)
+* Queue and message exchange is not showing the name properly when the name is too long. (MQ-1487)
+
 == 2.1.0
 
 *March 23, 2019*
