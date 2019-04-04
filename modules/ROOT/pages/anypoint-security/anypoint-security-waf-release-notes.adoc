@@ -7,7 +7,7 @@ endif::[]
 
 == New Features
 
-In Runtime Fabric configured with a DoS policy, you can manage blocked IP addresses. For more information, see xref:anypoint-security::manage-blocked-ip-in-rtf.adoc[Manage Blocked IP Addresses in Runtime Fabric]. 
+In a Runtime Fabric configured with a DoS policy, you can manage blocked IP addresses. For more information, see xref:anypoint-security::manage-blocked-ip-in-rtf.adoc[Manage Blocked IP Addresses in Runtime Fabric]. 
 
 == Fixed Issues
 
