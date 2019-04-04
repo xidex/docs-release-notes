@@ -10,13 +10,13 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 3.9.0 and 3.9.1 Runtimes Update:	
 
- * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see https://docs.mulesoft.com/monitoring/enable-apps-deployed-to-cloud.
+ * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
 
 == April 4, 2019	
 
 3.9.2 Runtime Update:	
 
- * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see https://docs.mulesoft.com/monitoring/enable-apps-deployed-to-cloud.
+ * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
 
 == March 26, 2019
 
