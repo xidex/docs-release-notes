@@ -20,10 +20,10 @@ See Also:
 === Fixed in this Release
 
 * Audit all auditable actions even if they fail or are invalid. (MQ-629)
-* Catch Exception when tries to delete a queue and It is not in SQS. (MQ-726)
-* Delete environment fails when there are a lot of destinations to delete. (MQ-736)
-* Make Okta users able to create a client app. (MQ-1499)
-* Queue and message exchange is not showing the name properly when the name is too long. (MQ-1487)
+* Catch exception when a user tries to delete a queue and the queue is not in SQS. (MQ-726)
+* Deleting an environment fails when there are a lot of destinations to delete. (MQ-736)
+* Enable Okta users create a client app. (MQ-1499)
+* Queue and message exchange are not showing the name properly when the name is too long. (MQ-1487)
 
 == 2.1.0
 
