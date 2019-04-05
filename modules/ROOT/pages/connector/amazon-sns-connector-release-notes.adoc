@@ -2,9 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, amazon sns, sns, connector
 
-Connector category: Select
+Support Category: Select
 
 Amazon Simple Notification Service (SNS) provides a hosted multi-protocol "push" messaging for applications. The Anypoint Connector for Amazon SNS allows Mule applications to interact with Amazon SNS.
 
