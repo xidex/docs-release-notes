@@ -7,7 +7,7 @@ Support Category: Premium
 
 The Mule Runtime supports SAP integration through our Anypoint Connector for SAP, which is an SAP-certified Java connector that leverages the SAP Java Connector (JCo) libraries.
 
-Note: This connector is not supported for use with Anypoint Design Center.
+NOTE: This connector is not supported for use with Anypoint Design Center.
 
 == 4.1.4
 
@@ -27,7 +27,7 @@ Note: This connector is not supported for use with Anypoint Design Center.
 
 === Fixed in this release
 
-* SAP Connector not accepting slash "/" on BAPI function call. (SE-10952)
+* SAP connector did not accept slash `/` in a BAPI function call. (SE-10952)
 
 == 4.1.3
 
