@@ -6,13 +6,17 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== April 4, 2019	
+== April 5, 2019
 
-3.9.2 Runtime Update:	
+3.9.1 Runtime Update:
 
- * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them.
+* Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
 
-For more information, see xref:visualizer::setup.adoc#_set_up_for_standalone_mule[Set up Anypoint Visualizer].
+== April 4, 2019
+
+3.9.2 Runtime Update:
+
+* Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
 
 == March 26, 2019
 
