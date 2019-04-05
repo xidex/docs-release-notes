@@ -4,5 +4,5 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, design center, flow designer, api designer, mule application, editor, raml, swagger
 
-* xref:design-center/design-center-release-notes-api_specs.adoc[Features for Creating API Specifications]
-* xref:design-center/design-center-release-notes-mule-apps.adoc[Features for Creating and Deploying Mule Applications]
+* xref:design-center/design-center-release-notes-api_specs.adoc[API Designer]
+* xref:design-center/design-center-release-notes-mule-apps.adoc[Flow Designer]
