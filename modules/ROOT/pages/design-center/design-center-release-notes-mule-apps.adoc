@@ -1,10 +1,11 @@
-= Design Center Release Notes: Features for Creating and Deploying Mule Applications
+= Release Notes for Flow Designer
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-9-0,1.9.0>>
 * <<1-8-0,1.8.0>>
 // * <<1-7-2,1.7.2>>
 * <<1-7-1,1.7.1>>
@@ -32,6 +33,37 @@ These release notes cover the following versions of these features:
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
 
+== 1.9.0
+*April 6, 2019*
+
+This release contains the following new features and enhancements.
+
+// From Badi's draft release announcement: Anypoint Design Center - flow designer: New Comments in cards available; Preview of data pills with live data after running app; New visual function editor supported functions; New create project modal;
+
+=== New Features
+
+* When you click the *Create* button that is on top of the list of projects in Design Center, a new dialog appears with clearer choices for project types.
+*
+* You can now add notes to cards. Here are some examples of why you might add notes:
+** To explain the purpose of using a card in a flow
+** To remind yourself of tasks you still need to complete in a card
+** To log changes that you make to a card
+// * When you open an existing Mule application after a new version of Mule runtime is released, Design Center will display a message stating that the application now uses the latest version of Mule runtime. The Mule application will then restart. This feature ensures that Mule applications are always using the latest version of Mule runtime. https://mulesoft.slack.com/archives/G1GE46NQL/p1554142341009300?thread_ts=1554132676.000800&cid=G1GE46NQL
+
+=== Enhancements
+
+The previous release included this enhancement:
+** _If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see functions for transforming the value and a preview of what the value will be._
+
++
+For the 1.9.0 release, more functions have been made available, including some mathematical functions that take parameters. The additional functions are:
++
+* For integers: absolute value, modulus, raise to a power, round, and square root
+* For strings: convert to uppercase, convert to lowercase, and trim off surrounding spaces
++
+Also, you can now see previews of live data when a Mule application is running.
+
+
 == 1.8.0
 *March 9, 2019*
 
@@ -41,12 +73,12 @@ This release contains the following new features and enhancements.
 
 * The new *Problems* pane lists errors in the currently open project. Open the pane by clicking *Problems* in the lower-right corner of the canvas. Click an error to be shown where you can resolve that error.
 * You can import a Mule-application project that was exported from Design Center. This feature is useful when you want to continue developing a Mule application in an environment in Anypoint Platform that is different from the environment in which the application was created.
-* When you open an existing Mule application after a new version of Mule runtime is released, Design Center will display a message stating that the application now uses the latest version of Mule runtime. The Mule application will then restart. This feature ensures that Mule applications are always using the latest version of Mule runtime.
+
 
 === Enhancements
 
 * Display descriptions of the operations to choose from when you add new cards to your flows. When you add a card, the list of operations is opened automatically. Mouse over any operation to display an icon to the right of the operation's name. Mouse over the icon to see a description of the operation.
-* If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see options for transforming the value and a preview of what the value will be.
+* If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see functions for transforming the value and a preview of what the value will be.
 * If you drag and drop a "custom expression" element into a text field and then display the *Custom Expression* dialog to build an expression, you can click any DataWeave function in the right-hand pane of the dialog to see a description and examples of that function.
 * Use the Remove Variable card to remove a variable from a flow.
 
@@ -94,7 +126,7 @@ This release includes the following new features, enhancements, and fixes.
 
 Mule Runtime 4.1.4 is now supported. All new Mule-application projects use 4.1.4 by default.
 
-=== Fixes
+=== Fixed Issues
 
 // PROJECTX-4045
 * Suggestions in expression editors in the Choice and Try cards were partially obscured.
@@ -114,7 +146,7 @@ This release includes the following enhancements and fixes.
 * A Transform card no longer displays an error if there is no sample data. Transform cards now display a hint that sample data needs to be present.
 * You can return to the list of Design Center projects by clicking the name "Design Center" at the top of the canvas. The back arrow that was present in the top-left corner in previous releases has been removed.
 
-=== Fixes
+=== Fixed Issues
 
 * View in Runtime Manager doesn't work when the current Runtime Manager environment is not the design environment.
 * The Set Expression functionality in a Transform card doesn't disable the *OK* button if the text is blank.
@@ -192,7 +224,7 @@ You can now prevent connectors that are listed in Anypoint Exchange from being u
 // PROJECTX-3721
 * As in previous releases, when you are adding a card to a flow, you can start typing the name in the *Select a Component* dialog to filter the list of components. Now, when you have filtered the list down to one component, you no longer have to click on that component to select it. You can simply type *Enter*.
 
-=== Fixes
+=== Fixed Issues
 
 //PROJECTX-4432
 * If changes were made to a Mule app while the status was “Starting Application”, the status continued to change to “Running” and the changes were not applied. The status should have reverted to “Ready to Run” and the changes applied.
@@ -250,7 +282,7 @@ This release includes the following enhancements and fixes. There were also seve
 * The tool for designing Mule apps now uses Mule Runtime 4.1.3.
 
 
-=== Fixes
+=== Fixed Issues
 
 * It was possible for cards to overlap the name of the current flow, which appears in the top-left corner of the canvas.
 * Open Try cards overlapped other cards within the Try scope.
