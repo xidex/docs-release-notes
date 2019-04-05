@@ -53,14 +53,14 @@ This release contains the following new features and enhancements.
 === Enhancements
 
 The previous release included this enhancement:
+
 ** _If you drag and drop a payload element, attribute, or variable into a plain text field, you can click the element, attribute, or variable to see functions for transforming the value and a preview of what the value will be._
 
-+
 For the 1.9.0 release, more functions have been made available, including some mathematical functions that take parameters. The additional functions are:
-+
+
 * For integers: absolute value, modulus, raise to a power, round, and square root
 * For strings: convert to uppercase, convert to lowercase, and trim off surrounding spaces
-+
+
 Also, you can now see previews of live data when a Mule application is running.
 
 
