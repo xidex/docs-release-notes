@@ -7,6 +7,30 @@ Support Category: Select
 
 Starting with v.6.0.2, the Salesforce Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions are freely available to the community.
 
+
+== 8.8.1
+
+*April 2, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 3.5.2 and later
+|Anypoint Studio|5.4.0 and later
+|Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Features
+
+* None.
+
+=== Fixed in this Release
+
+* Metadata not populated correctly in Salesforce query-all with a nested query. Query Operations now have proper DataSense support for nested queries. (SE-10720)
+
+
 == 8.8.0 
 
 *March 14, 2019*

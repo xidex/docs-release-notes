@@ -2,18 +2,37 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, amazon dynamodb, dynamodb, connector
 
-*February 2018*
+Support Category: Select
 
-_Select_
-
-Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
-The Anypoint Connector for Amazon DynamoDB provides connectivity to the Amazon DynamoDB API, enabling you to interact with Amazon DynamoDB to create a database table that can store and retrieve any amount of data, serve any level of request traffic and it automatically spreads the data and traffic for the table over a sufficient number of servers to handle the request capacity specified by the customer and the amount of data stored, while maintaining consistent and fast performance.
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. The Anypoint Connector for Amazon DynamoDB provides connectivity to the Amazon DynamoDB API, enabling you to interact with Amazon DynamoDB to create a database table that can store and retrieve any amount of data, and serve any level of request traffic. It automatically spreads the data and traffic for the table over a sufficient number of servers to handle the request capacity specified by the customer and the amount of data stored, while maintaining consistent and fast performance.
 
 *Connector Guide*: xref:connectors::amazon/amazon-dynamodb-connector.adoc[Amazon DynamoDB Connector]
 
 Starting with v.1.0.0, the DynamoDB connector is licensed commercially with Anypoint Platform as with other Select connectors.
+
+== 1.2.0
+
+*April 4, 2019*
+
+Release notes for version 1.2.0 of the Amazon DynamoDB connector.
+
+=== Compatibility
+
+The Amazon DynamoDB Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0
+|Amazon Java SDK for DynamoDB|v1.11.515
+|Java|1.8.0_x
+|Anypoint Studio|7.0 and later
+|===
+
+=== Features
+
+* Added support for new AWS region endpoints.
 
 == 1.1.0
 
@@ -63,32 +82,39 @@ The Amazon DynamoDB Connector is compatible with:
 * Built with AWS SDK v1.11.247
 * Support for Temporary Credentials - A checkbox named *Try Default AWS Credentials Provider Chain* has been added to the Global Element configuration. If selected, the connector first tries to obtain the credentials from an AWS environment.
 * Support for Retry Policy - The connector performs a maximum of 10 retries when a request fails due to server-side throttling or dropped connection.
-* The following operations are supported:
-+
-** *Control Plane*
+
+The following operations are supported:
+
+Control Plane:
+
 *** CreateTable
 *** ListTables
 *** UpdateTable
 *** DeleteTable
 
-** *Data Plane*
+Data Plane:
+
 *** PutItem
 *** BatchWriteItem
 
-** *Reading Data*
+Reading Data:
+
 *** GetItem
 *** BatchGetItem
 *** Query
 *** Scan
 
-** *Updating Data*
+Updating Data:
+
 *** Updating Data
 
-** *Deleting Data*
+Deleting Data:
+
 *** DeleteItem
 *** BatchDeleteItem
 
-** *DynamoDB Streams*
+DynamoDB Streams:
+
 *** ListStreams
 *** DescribeStream
 *** GetShardIterator
@@ -105,4 +131,4 @@ None.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

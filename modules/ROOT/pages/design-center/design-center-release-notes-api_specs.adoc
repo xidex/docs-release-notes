@@ -1,4 +1,4 @@
-= API Designer
+= Release Notes for API Designer
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

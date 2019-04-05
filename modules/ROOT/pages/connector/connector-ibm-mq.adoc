@@ -5,6 +5,14 @@ endif::[]
 
 Support Category: Select
 
+== 1.2.4
+
+*April 4, 2019*
+
+=== New Features and Enhancements
+
+* Clean up the IBM MQ exception listener states so that they are now done silently.
+
 == 1.2.3
 
 *March 29, 2019*
@@ -14,6 +22,22 @@ Support Category: Select
 * Fixed reconnection issue when Queue Manager is shutdown while handling REPLY_TO.
 * Fixed IBM MQ Client unhandled exception when cleaning a consumer's message listener.
 * Cleanup of IBM MQ exception listener state, when a cached connection is not cleaned up.
+
+== 1.2.2
+
+*March 19, 2019*
+
+=== New Features and Enhancements
+
+* Fixed a bug that prevented the reconnection stategy to be triggered in the publish operation.
+
+== 1.2.1
+
+*February 22, 2019*
+
+=== New Features and Enhancements
+
+* Fixed a bug with the MQ Listener using Transactional Action Begin that stoped messages from being processed.
 
 == 1.2.0
 
