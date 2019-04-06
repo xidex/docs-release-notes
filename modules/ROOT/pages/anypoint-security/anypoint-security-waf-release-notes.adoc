@@ -3,6 +3,19 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== April 6, 2019
+
+== New Features
+
+In a Runtime Fabric configured with a DoS policy, you can manage blocked IP addresses. For more information, see xref:anypoint-security::manage-blocked-ip-in-rtf.adoc[Manage Blocked IP Addresses in Runtime Fabric]. 
+
+== Fixed Issues
+
+=== Application Deployment Fails
+
+* The issue where Edge did not honor the *Read Request Time-out* configuration setting of the Runtime Fabric inbound traffic configuration is fixed.
+* The issue where Edge failed to route requests to the application when the client (through the request header) asserts `Transfer-Encoding: chunked` is fixed.
+
 == December 10, 2018
 
 == New Feature: Web Application Firewall Policy

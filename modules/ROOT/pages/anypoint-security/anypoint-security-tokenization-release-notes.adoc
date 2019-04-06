@@ -3,6 +3,18 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== April 6, 2019
+
+== Fixed Issues
+
+(MSG-7266) If *Luhn* and *None* were mixed for the *Check Digit* in custom tokenization formats, tokenization and detokenization requests failed.
+
+Fix: A mix of *Luhn* and *None* for *Check Digit* is not allowed. If you try to add custom formats and mix *Luhn* and *None* for *Check Digit*, when you try to save the custom formats, the UI enforces proper configuration. 
+
+An error appears, which states that `All entries for custom credit card formats should have the same value for luhnCheck and must also match the value of Luhn Digit Test field` and you are not allowed to save the incorrectly configured custom formats. 
+
+Additionally, if all formats are set to *None*, you cannot select *Generated token must pass Luhn test*. The same error message as above appears, and you are not allowed to save the custom format.  
+
 == January 12, 2019
 
 == Enhancements
