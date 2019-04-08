@@ -5,9 +5,9 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
-== April 6, 2019
+== April 5, 2019
 
-* Anypoint Monitoring Agent Moving to Mule Version 3.9 Non-AM Runtimes
+* Anypoint Monitoring Agent Moving to Mule Version 3.9 Runtimes
 
 ** The latest patch release for Mule runtime engine version 3.9.x (04-05-2019 or later) includes an agent that unifies the Anypoint Monitoring and Anypoint Visualizer agents. Having this single agent means that applications using this Mule version display metrics in Visualizer and the -AM runtime version is no longer required.
 ** Upgrade to 4.1.x 03-22-2019 or later, or 3.9.x 04-05-2019 or later
@@ -18,12 +18,10 @@ This document describes new features and enhancements, known limitations, issues
 [NOTE]
 Please take careful note of which Mule versions that Visualizer now supports and xref:visualizer::setup.adoc[the necessary tasks to perform] (depending on the version) to ensure that your applications appear in Visualizer and have metrics enabled.
 
-* Visualizer Supports Dedicated Load Balancer with Mule Version 3.9.x
-+
-Visualizer supports dedicated load balancers for apps using Mule version 3.9.x.
+* Visualizer supports dedicated load balancers for apps using Mule version 3.9.x.
 +
 [NOTE]
-While Visualizer doesn't yet support dedicated load balancers for apps using Mule version 4.1.x and 4.1.x-AM, MuleSoft anticipates that support for Mule version 4.2.
+While Visualizer doesn't yet support dedicated load balancers for apps using Mule version 4.1.x, MuleSoft anticipates that support for Mule version 4.2.
 This anticipation is not a guarantee. Visualizer documentation and release notes will be updated when support is available.
 
 == March 25, 2019
