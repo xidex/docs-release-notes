@@ -12,6 +12,8 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 * Unclosed stream causes memory leak in foreach loop [SE-11390]
 * Degraded performance when using a Custom Transport Configuration in Web Service Consumer [SE-10687]
+* DataWeave buffer output throws `FileNotFoundException` [SE-9379]
+* DataWeave expression in a Logger component fails on high load [SE-10706]
 
 3.9.2 Runtime Update:
 
