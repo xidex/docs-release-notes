@@ -7,6 +7,8 @@ Support Category: Select
 
 Starting with v.6.0.2, the Salesforce Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions are freely available to the community.
 
+IMPORTANT: This known issue affects all v8.x versions of the Salesforce connector: The "Resume from the last replay ID” doesn’t work on CloudHub because the persistent object store is not supported by CloudHub.
+
 
 == 8.8.1
 
@@ -384,7 +386,7 @@ Salesforce connector version 8.1.0 is compatible with:
 
 === Known Issues
 
-* "Resume from the last replay id” won’t work on Cloudhub because the persistent object store is not supported by Cloudhub.
+* "Resume from the last replay id” won’t work on Cloudhub because the persistent object store is not supported by CloudHub.
 
 === Migration Guide
 
