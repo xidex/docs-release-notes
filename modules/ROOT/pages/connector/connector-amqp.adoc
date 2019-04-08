@@ -11,7 +11,7 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Provide a way to define queues bindings to exchange in queues declarations as in mule 3. (AMQP-138)
+* Defines queues bindings to exchange in queues declarations as in Mule 3. (AMQP-138)
 
 == 1.3.4
 
