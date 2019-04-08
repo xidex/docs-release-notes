@@ -385,7 +385,7 @@ Salesforce connector version 8.1.0 is compatible with:
 
 === Known Issues
 
-* "Resume from the last replay id” won’t work on Cloudhub because the persistent object store is not supported by CloudHub.
+* In the `Replay Topic` and `Replay Stream Channel` operations, the `FROM_REPLAY_ID` value in the *replayOption* field is not supported for use in CloudHub.
 
 === Migration Guide
 
