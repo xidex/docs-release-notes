@@ -8,9 +8,23 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 == April 8, 2019
 
+4.1.5 Runtime Update:
+
+* Unclosed stream causes memory leak in foreach loop [SE-11390]
+* Degraded performance when using a Custom Transport Configuration in Web Service Consumer [SE-10687]
+
+3.9.2 Runtime Update:
+
+* MEL variable returns `null` instead of actual value [SE-11479]
+
+3.9.1 Runtime Update:
+
+* MEL variable returns `null` instead of actual value [SE-11479]
+
 3.9.0 Runtime Update:
 
 * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
+
 
 == April 5, 2019
 
@@ -18,11 +32,13 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
 
+
 == April 4, 2019
 
 3.9.2 Runtime Update:
 
 * Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
+
 
 == March 26, 2019
 
@@ -38,6 +54,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 3.8.4 Runtime Update:
 
 * Added alerting in case disk usage exceeds threshold [SE-11147]
+
 
 == March 25, 2019
 
