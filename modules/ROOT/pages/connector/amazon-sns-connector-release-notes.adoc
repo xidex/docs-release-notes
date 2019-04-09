@@ -2,11 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, amazon sns, sns, connector
 
-*September 2016*
-
-_Select_
+Support Category: Select
 
 Amazon Simple Notification Service (SNS) provides a hosted multi-protocol "push" messaging for applications. The Anypoint Connector for Amazon SNS allows Mule applications to interact with Amazon SNS.
 
@@ -21,6 +18,37 @@ Starting with v.3.0.0, the SNS connector is licensed commercially with Anypoint 
 . Click Login in Anypoint Exchange.
 . Search for the connector and click Install.
 . Follow the prompts to install the connector.
+
+== 3.2.0
+
+*April 8, 2019*
+
+Release notes for version 3.2.0 of the Amazon SNS connector.
+
+=== Compatibility
+
+The Amazon SNS Connector is compatible with:
+
+|===
+|Application/Service|Version
+|Mule Runtime|3.6 or higher
+|Java version|JDK 8
+|Amazon Java SDK for SNS|v1.11.515
+|Anypoint Studio|5.4 or higher
+|===
+
+=== Features
+
+* Added support for connecting to new AWS region endpoints.
+* Upgraded to support AWS SDK v1.11.515
+
+=== Fixed in this Release
+
+None.
+
+=== Known Issues
+
+None.
 
 == 3.1.0
 
