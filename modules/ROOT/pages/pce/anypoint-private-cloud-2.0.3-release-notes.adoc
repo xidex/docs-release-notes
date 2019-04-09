@@ -13,7 +13,7 @@ This version of Anypoint Platform Private Cloud Edition contains the following f
 * Reliability enhancements for install operation.
 * Reliability enhancements for pithos, stolon and anypoint update operation.
 * Reliability enhancements for backup operation.
-* System overall stability enhancements by protecting the system services and enforcing resource quotas on the pods.
+* Overall system stability enhancements by protecting system services and enforcing resource quotas on the pods.
 
 == Software Compatibility
 
