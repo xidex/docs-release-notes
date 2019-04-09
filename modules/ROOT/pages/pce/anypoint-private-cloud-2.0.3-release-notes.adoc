@@ -37,7 +37,6 @@ This version of Anypoint Platform Private Cloud Edition contains the following f
 
 [%header%autowidth.spread]
 |===
-| Issue
 | Kubernetes security patch for CVE-2019-5736
 | Fix for operations to continue when a is node down
 | Updates to outdated packages in containers
