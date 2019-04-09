@@ -20,7 +20,6 @@ This version of APIkit for SOAP includes bug fixes.
 * Fixed issue that caused SOAP APIkit to return a `200 Status Code` for `Schema Validation Fault`.
 * Fixed issue that caused an error in SOAP operation to return `SOAP fault` but to not trigger  a `<http:error-response>` and `</http:error>`, and  to return a `HTTP Status 200` response.
 * Fixed issue causing a `Unbound namespace prefix` error for working Mule applications.
-* Removed `HTTP Status` as a protocol header.
 
 == See Also
 
