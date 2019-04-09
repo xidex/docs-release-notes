@@ -1,0 +1,26 @@
+= APIkit for SOAP 1.1.11 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This version of APIkit for SOAP includes bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|===
+
+== Issues Fixed in this Release
+
+* Fixed issue that prevented metadata from working when importing a project created in Windows.
+* Fixed issue that caused SOAP APIkit to return a `200 Status Code` for `Schema Validation Fault`.
+* Fixed issue that caused an error in SOAP operation to return `SOAP fault` but to not trigger  a `<http:error-response>` and `</http:error>`, and  to return a `HTTP Status 200` response.
+* Fixed issue causing a `Unbound namespace prefix` error for working Mule applications.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].
