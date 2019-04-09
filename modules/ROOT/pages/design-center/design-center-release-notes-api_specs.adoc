@@ -22,7 +22,7 @@ These release notes cover the following versions of these features:
 
 This release includes a new feature, two enhancements, and two fixes.
 
-== New Feature
+=== New Feature
 
 // DESIGNER-3463
 The editor now caches validations that are made by the AMF parser. (This parser was released on January 10 this year in the 2.4.0 release. See the release notes for 2.4.0 for more details about it.) Every time a file was opened in previous releases, the AMF parser would validate the file; during the validation, the API console would not appear in the right-hand pane of the editor. Now, opening a file does not cause the AMF parser to validate it. Therefore, the API console appears immediately whenever you switch to another file in a project. Any change to a project -- typing, importing a file, or other actions -- clears the project's cache and triggers the AMF parser to validate the project again.
