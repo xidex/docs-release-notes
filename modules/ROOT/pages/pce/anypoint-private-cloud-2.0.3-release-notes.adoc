@@ -58,6 +58,6 @@ Upgrades from the following PCE versions are supported:
 |===
 | Description | Workaround
 | Some parts of the UI make requests to an external CDN | While browsing Anypoint Platform, you may see some failed requests in your browser JavaScript console.
-| Studio 7 management not supported | Users can manually upload their application to PCE from Studio
+| Studio 7 integration with Exchange artifacts fail | Users can manually upload their application to PCE from Studio
 | Platform settings (DNS/IP, Disclaimer, NFS) have to be reconfigured after upgrade | Manually reapply the configurations after the upgrade
 |===
