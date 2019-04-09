@@ -33,6 +33,12 @@ This version of Anypoint Platform Private Cloud Edition contains the following f
 * Safari (latest version)
 |===
 
+== Upgrade Paths
+Upgrades from the following PCE versions are supported:
+
+* PCE 1.7.x
+* PCE 2.0.x
+
 == Fixed Issues
 
 [%header%autowidth.spread]
