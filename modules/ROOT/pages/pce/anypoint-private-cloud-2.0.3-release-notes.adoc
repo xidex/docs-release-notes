@@ -43,6 +43,7 @@ Upgrades from the following PCE versions are supported:
 
 [%header%autowidth.spread]
 |===
+| Description
 | Kubernetes security patch for CVE-2019-5736
 | Fix for operations to continue when a is node down
 | Updates to outdated packages in containers
