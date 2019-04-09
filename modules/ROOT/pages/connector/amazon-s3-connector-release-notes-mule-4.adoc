@@ -11,7 +11,7 @@ Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint P
 
 == 5.3.0
 
-*Date to be determined.*
+*April 9, 2019*
 
 === Compatibility
 
@@ -25,6 +25,7 @@ The Amazon S3 connector is compatible with:
 |===
 
 === Features
+
 * Added support for connecting to new AWS region endpoints.
 * Connector now supports latest Amazon S3 storage classes: S3 Intelligent-Tiering, S3 Standard-IA, S3 One Zone-IA. (SE-11149)
 
