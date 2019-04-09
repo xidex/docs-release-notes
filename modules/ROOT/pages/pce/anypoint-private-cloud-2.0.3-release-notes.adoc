@@ -1,0 +1,58 @@
+= Anypoint Platform Private Cloud Edition 2.0.3 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*April 8, 2019*
+
+== New Features and Enhancements
+
+This version of Anypoint Platform Private Cloud Edition contains the following features and enhancements:
+
+* Support for RHEL 7.6
+* Reliability enhancements for install operation.
+* Reliability enhancements for pithos, stolon and anypoint update operation.
+* Reliability enhancements for backup operation.
+* System overall stability enhancements by protecting the system services and enforcing resource quotas on the pods.
+
+== Software Compatibility
+
+[%header,cols="2*a"]
+|===
+| Compatible with |Version
+| Mule runtime | 3.7.x , 3.8.x, 3.9.x 4.x, 4.1.x
+| API Gateway Runtime | 2.1.x - 2.2.x
+| Runtime Manager Agent | 1.7 - 1.9.x, 2.1.x
+| Infrastructure providers |
+* VMWare
+* Bare Metal
+* AWS
+| Compatible browsers when running the installer |
+* Firefox (latest version)
+* Chrome (latest version)
+* Safari (latest version)
+|===
+
+== Fixed Issues
+
+[%header%autowidth.spread]
+|===
+| Issue
+| Kubernetes security patch for CVE-2019-5736
+| Fix for operations to continue when a is node down
+| Updates to outdated packages in containers
+| Users api responses sanitized
+| Reject deployments to servers that are part of the group
+| Fix to support certificates in chain when retrieving Policies
+| Fix Operation Center monitoring dashboards
+|===
+
+== Known Issues
+
+[%header%autowidth.spread]
+|===
+| Description | Workaround
+| Some parts of the UI make requests to an external CDN | While browsing Anypoint Platform, you may see some failed requests in your browser JavaScript console.
+| Studio 7 management not supported | Users can manually upload their application to PCE from Studio
+| Platform settings (DNS/IP, Disclaimer, NFS) have to be reconfigured after upgrade | Manually reapply the configurations after the upgrade
+|===
