@@ -33,9 +33,7 @@ The Amazon S3 connector is compatible with:
 
 === Fixed in this Release
 
-* Refactored AWS and S3 Connector.
-* Refactored client configuration and moved common params to CommonConfig.
-* Fixed conflict with net.javacrumbs.json-unit library.
+* Fixed conflict with net.javacrumbs.json-unit library. (SE-9670)
 * Corrected icons for theme.light.
 
 == 4.2.0
