@@ -26,7 +26,7 @@ The Amazon S3 connector is compatible with:
 
 === Features
 * Added support for connecting to new AWS region endpoints.
-* Connector now supports latest Amazon S3 storage classes: S3 Intelligent-Tiering, S3 Standard-IA, S3 One Zone-IA
+* Connector now supports latest Amazon S3 storage classes: S3 Intelligent-Tiering, S3 Standard-IA, S3 One Zone-IA. (SE-11149)
 
 == 5.2.1
 
