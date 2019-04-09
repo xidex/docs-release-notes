@@ -40,6 +40,9 @@ The editor now caches validations that are made by the AMF parser. (This parser 
 * The option *API is behind a firewall*, which you can toggle on and off by clicking the shield that is on the left side of the toggle for the mocking service, was not functional.
 // SE-11353
 * The validation of headers was not occurring when the headers were defined in RAML files that were included as dependencies from Anypoint Exchange.
+// SE-11505
+* API Designer did not release a user's lock on a project branch if the user left the project in the API editor by clicking the hamburger icon (the stack of three horizontal bars) in the top-left corner of the screen. Subsequently, no other user could edit the project branch until the previous user opened the project, opened the branch, and then left the project by clicking *Design Center* to the right of the hamburger icon.
+
 // I documented none of the other fixed issues because they were not reported by customers.
 
 == 2.4.4
