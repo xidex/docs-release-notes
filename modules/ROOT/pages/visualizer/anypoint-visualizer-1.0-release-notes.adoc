@@ -5,7 +5,36 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
 
-== March 21, 2019
+== April 5, 2019
+
+* Anypoint Monitoring Agent Moving to Mule Version 3.9 Runtimes
+
+** The latest patch release for Mule runtime engine version 3.9.x (04-05-2019 or later) includes an agent that unifies the Anypoint Monitoring and Anypoint Visualizer agents. Having this single agent means that applications using this Mule version display metrics in Visualizer and the -AM runtime version is no longer required.
+** Upgrade to 4.1.x 03-22-2019 or later, or 3.9.x 04-05-2019 or later
++
+. If you upgrade Mule 4 to the newest patch (03-22-2019 or later) or the Mule 3.9.x newest patch (04-05-2019 or later), you'll notice that you can't see your apps in Visualizer or Anypoint Monitoring. Don't worry, they are still running.
+. You must xref:visualizer::setup.adoc[enable the Anypoint Monitoring agent] to see your applications appear in Visualizer after the upgrade.
++
+[NOTE]
+Please take careful note of which Mule versions that Visualizer now supports and xref:visualizer::setup.adoc[the necessary tasks to perform] (depending on the version) to ensure that your applications appear in Visualizer and have metrics enabled.
+
+* Visualizer supports dedicated load balancers for apps using Mule version 3.9.x.
++
+[NOTE]
+While Visualizer doesn't yet support dedicated load balancers for apps using Mule version 4.1.x, MuleSoft anticipates that support for Mule version 4.2.
+This anticipation is not a guarantee. Visualizer documentation and release notes will be updated when support is available.
+
+== March 25, 2019
+
+* Standalone Mule Only 
++
+Due to a potential performance impact for Mule 4.1.x, header injection in the Anypoint Monitoring agent is now disabled by default for standalone Mule.
+Visualizer does not work properly without this header, so to see your applications correctly, you must enable the property at the server level 
+after you install the Anypoint Monitoring Agent. 
++
+For instructions, see xref:visualizer::setup.adoc#_set_up_for_standalone_mule[Set up Anypoint Visualizer].
+
+== March 23, 2019
 Version 2.1.0
 
 == New Features and Enhancements

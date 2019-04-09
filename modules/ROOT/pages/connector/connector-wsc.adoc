@@ -3,6 +3,17 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.3.1
+
+*April 4, 2019*
+
+=== Fixed Issues
+
+* Fixed issue that caused the WDSL parsing to fail when an import with HTTPS was included in the WSDL. (MULE-16623)
+* Fixed issue that caused the connector to fail when finding attachments when element has namespace. (MULE-16592)
+* Fixed issue that caused the connector to be unable to decrypt responses using the Key Transport Algorithm RSA 1.5. (MULE-16605)
+* Fixed issue that caused the connector to be unable to generate the signature value, CXF library version upgraded. (MULE-16637)
+
 == 1.3.0
 
 *February 11, 2019*

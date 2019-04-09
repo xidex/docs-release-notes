@@ -3,18 +3,18 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Premium_
+Support Category: Premium
 
 xref:connectors::oauth/oauth2-provider-documentation-reference.adoc[OAuth2 Provider Documentation Reference]
 
-== 1.0.2
+== 1.0.3
 
-*January 21, 2019*
+*January 23, 2019*
 
 === Fixed in this Release
 
-* HTTP request parameters are validated twice (link:https://www.mulesoft.org/jira/browse/EE-6529[EE-6529])
-* Missing default login page files (link:https://www.mulesoft.org/jira/browse/EE-6528[EE-6528])
+* HTTP request parameters are validated twice. (https://www.mulesoft.org/jira/browse/EE-6529[EE-6529])
+* Missing default login page files. (https://www.mulesoft.org/jira/browse/EE-6528[EE-6528])
 
 === Compatibility
 
@@ -23,7 +23,23 @@ The OAuth2 Provider Module is compatible with:
 |===
 |Application/Service|Version
 
-|Mule Runtime|4.1.1 and higher.
+|Mule Runtime|4.1.1 and later.
+|===
+
+== 1.0.2
+
+*January 21, 2019*
+
+=== Fixed in this Release
+
+=== Compatibility
+
+The OAuth2 Provider Module is compatible with:
+
+|===
+|Application/Service|Version
+
+|Mule Runtime|4.1.1 and later.
 |===
 
 == 1.0.1
@@ -32,9 +48,10 @@ The OAuth2 Provider Module is compatible with:
 
 === Fixed in this Release
 
-* ClientCredential grants inconsistent error codes. This broke compatibility, so use system property: `mule.oauth.provider.oldErrors=true` if wanting to get the previous error codes. (link:https://www.mulesoft.org/jira/browse/EE-6521[EE-6521])
-* `clientSecurityProvider` is no longer mandatory. (link:https://www.mulesoft.org/jira/browse/EE-6488[EE-6488])
-* Static login page is now being exported. (link:https://www.mulesoft.org/jira/browse/EE-6519[EE-6519])
+* Token response content-type header is not application/json (https://www.mulesoft.org/jira/browse/EE-6224[EE-6224])
+* ClientCredential grants inconsistent error codes. This broke compatibility, so use system property: `mule.oauth.provider.oldErrors=true` if wanting to get the previous error codes. (https://www.mulesoft.org/jira/browse/EE-6521[EE-6521])
+* `clientSecurityProvider` is no longer mandatory. (https://www.mulesoft.org/jira/browse/EE-6488[EE-6488])
+* Static login page is now being exported. (https://www.mulesoft.org/jira/browse/EE-6519[EE-6519])
 
 
 === Compatibility
@@ -44,7 +61,7 @@ The OAuth2 Provider Module is compatible with:
 |===
 |Application/Service|Version
 
-|Mule Runtime|4.1.1 and higher.
+|Mule Runtime|4.1.1 and later.
 |===
 
 == 1.0.0
@@ -58,5 +75,10 @@ The OAuth2 Provider Module is compatible with:
 |===
 |Application/Service|Version
 
-|Mule Runtime|4.1.1 and higher.
+|Mule Runtime|4.1.1 and later.
 |===
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

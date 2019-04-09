@@ -7,6 +7,31 @@ Support Category: Select
 
 Starting with v.6.0.2, the Salesforce Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions are freely available to the community.
 
+IMPORTANT: From Salesforce connector v8.1.0 and later, in the `Replay Topic` and `Replay Stream Channel` operations, the `FROM_REPLAY_ID` value in the *replayOption* field is not supported for use in CloudHub.
+
+== 8.8.1
+
+*April 2, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 3.5.2 and later
+|Anypoint Studio|5.4.0 and later
+|Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Features
+
+* None.
+
+=== Fixed in this Release
+
+* Metadata not populated correctly in Salesforce query-all with a nested query. Query Operations now have proper DataSense support for nested queries. (SE-10720)
+
+
 == 8.8.0 
 
 *March 14, 2019*
@@ -74,7 +99,7 @@ Starting with v.6.0.2, the Salesforce Connector is licensed commercially with An
 * Fixed parsing of the SOQL for comma separated values and added support for date functions in `where` clauses.
 * Fixed nonpaginated query containing: `count()`
 +
-The `count()` method was not supported in query operations. Now this can be used in the Non Paginated Query operation and it  returns the count for the specified entity.
+The `count()` method was not supported in query operations. Now this can be used in the Non-Paginated Query operation and it  returns the count for the specified entity.
 +
 * `query` operation ignores the fetch size.
 +
@@ -360,7 +385,7 @@ Salesforce connector version 8.1.0 is compatible with:
 
 === Known Issues
 
-* "Resume from the last replay id” won’t work on Cloudhub because the persistent object store is not supported by Cloudhub.
+* In the `Replay Topic` and `Replay Stream Channel` operations, the `FROM_REPLAY_ID` value in the *replayOption* field is not supported for use in CloudHub.
 
 === Migration Guide
 

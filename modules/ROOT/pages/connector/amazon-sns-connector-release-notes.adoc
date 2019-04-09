@@ -35,6 +35,37 @@ The Amazon SNS Connector is compatible with:
 * Added support for connecting to new AWS region endpoints.
 * Upgraded to support AWS SDK v1.11.515.
 
+== 3.2.0
+
+*April 8, 2019*
+
+Release notes for version 3.2.0 of the Amazon SNS connector.
+
+=== Compatibility
+
+The Amazon SNS Connector is compatible with:
+
+|===
+|Application/Service|Version
+|Mule Runtime|3.6 or higher
+|Java version|JDK 8
+|Amazon Java SDK for SNS|v1.11.515
+|Anypoint Studio|5.4 or higher
+|===
+
+=== Features
+
+* Added support for connecting to new AWS region endpoints.
+* Upgraded to support AWS SDK v1.11.515
+
+=== Fixed in this Release
+
+None.
+
+=== Known Issues
+
+None.
+
 == 3.1.0
 
 *September 30, 2016*

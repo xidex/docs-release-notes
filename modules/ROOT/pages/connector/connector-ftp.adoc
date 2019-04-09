@@ -3,6 +3,19 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.5
+
+*March 25, 2019*
+
+=== Minimum Mule Version
+
+*4.1.1*
+
+=== Fixed Issues
+
+* Improved FTP Write operation performance when writing on remote servers. (MULE-16557)
+* Fixed a bug that prevented the usage of the list operation on some FTP server configurations. (MULE-16591)
+
 == 1.2.4
 
 *January 21, 2019*

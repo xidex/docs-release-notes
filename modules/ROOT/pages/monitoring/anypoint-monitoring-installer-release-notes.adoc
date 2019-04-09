@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, cloudhub, cloud hub
 
-These are the release notes for patches which are made to the Anypoint Monitoring hybrid installer and agent . In addition to these release notes, see:
+These release notes are for patches made to the Anypoint Monitoring agent installer. In addition to these release notes, see:
 
 * xref:monitoring/anypoint-monitoring-release-notes.adoc[Anypoint Monitoring Release Notes] 
 * xref:monitoring::am-installing#update-the-monitoring-agent.adoc[Update the Monitoring Agent]
@@ -13,9 +13,17 @@ These are the release notes for patches which are made to the Anypoint Monitorin
 [NOTE]
 If you update the Runtime Manager agent, you must execute the Anypoint Monitoring agent uninstall script and then re-install the Anypoint Monitoring agent. 
 
+== March 26, 2019
+
+2.1.0.0 Anypoint Monitoring agent installer update:
+
+This release includes support for the SOCKS5 proxy. For more information, see xref:monitoring::am-installing.adoc[Install the Anypoint Monitoring Agent].
+
+You can download the Anypoint Monitoring agent installer from https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.1.0.0.zip[Anypoint Monitoring Agent Installer 2.1.0.0] or from the Anypoint Monitoring *Settings > Hybrid* page. 
+
 == February 13, 2019
 
-2.0.5.0 Anypoint Monitoring installer update:
+2.0.5.0 Anypoint Monitoring agent installer update:
 
 * Added metrics for operating system
 * Added support for the following versions of Mule Runtime Manager agent:
@@ -23,11 +31,11 @@ If you update the Runtime Manager agent, you must execute the Anypoint Monitorin
 ** 1.12.x
 ** 2.2.x
 
-You can download the Anypoint Monitoring installer from https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip[Anypoint Monitoring Installer 2.0.5.0]
+You can download the Anypoint Monitoring agent installer from https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.0.5.0.zip[Anypoint Monitoring Agent Installer 2.0.5.0]
 
 == February 11, 2019
 
-2.0.4.0 Anypoint Monitoring installer update:
+2.0.4.0 Anypoint Monitoring agent installer update:
 
 * Added support for Mule Runtime Manager agent version 2.1.8.
 * Added support for Mule runtime engine version 4.1.5.

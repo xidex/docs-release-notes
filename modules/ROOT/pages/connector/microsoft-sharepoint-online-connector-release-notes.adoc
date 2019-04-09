@@ -4,9 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, connectors, sharepoint, online
 
-*September 2017*
-
 _Select_
+
+*Guide*: xref:3.9@mule-runtime::microsoft-sharepoint-online-connector.adoc[Microsoft SharePoint Online Connector]
+
+== Version 1.0.1 - April 4, 2019
+
+=== Features
+
+None.
+
+=== Fixed in this release
+
+- When using native query language for reference fields, Object To JSON throws an exception: `java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.Integer`; fixed the issue by improving the fields lookup algorithm. (SE-9230)
 
 *Guide*: xref:3.9@mule-runtime::microsoft-sharepoint-online-connector.adoc[Microsoft SharePoint Online Connector]
 

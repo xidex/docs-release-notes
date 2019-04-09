@@ -178,7 +178,6 @@ DataWeave fixes:
 | EE-5991 | Allow the user to configure cluster datasource as cluster properties
 | EE-5816 | Need to validate Hostname resolution and error reporting in Mule HTTP module
 | EE-4945 | JDBC Map Store: Add support for configurable DataSource
-| EE-5959 | Add optional functionality to manage license keys in default env preferences location
 | AGW-1953 | API tracking is not retried in case of error in slave nodes
 | AGW-1995 | Add Host Server name as part of the Analytics data 3.x
 |===

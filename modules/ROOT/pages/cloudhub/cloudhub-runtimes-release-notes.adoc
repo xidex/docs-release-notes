@@ -6,7 +6,74 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== March 23, 2019
+== April 8, 2019
+
+4.1.5 Runtime Update:
+
+* Unclosed stream causes memory leak in foreach loop [SE-11390]
+* Degraded performance when using a Custom Transport Configuration in Web Service Consumer [SE-10687]
+* DataWeave buffer output throws `FileNotFoundException` [SE-9379]
+* DataWeave expression in a Logger component fails on high load [SE-10706]
+
+3.9.2 Runtime Update:
+
+* MEL variable returns `null` instead of actual value [SE-11479]
+
+3.9.1 Runtime Update:
+
+* MEL variable returns `null` instead of actual value [SE-11479]
+
+3.9.0 Runtime Update:
+
+* Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
+
+
+== April 5, 2019
+
+3.9.1 Runtime Update:
+
+* Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
+
+
+== April 4, 2019
+
+3.9.2 Runtime Update:
+
+* Both Visualizer and Monitoring functionality are now controlled through the Anypoint Monitoring UI. After you upgrade to this runtime, your apps no longer appear in Visualizer. The apps are still there, but you need to re-enable Visualizer functionality in the Anypoint Monitoring *Settings* to see them. For more information, see xref:monitoring::enable-apps-deployed-to-cloud.adoc[Enable Monitoring for Mule Apps Deployed to CloudHub].
+
+
+== March 26, 2019
+
+3.8.7 Runtime Update:
+
+* SFTP connector is not closing connections [SE-10977]
+* Throttling policy doesn't clean its cache [SE-10534]
+
+3.8.6 Runtime Update:
+
+* Throttling policy doesn't clean its cache [SE-10534]
+
+3.8.4 Runtime Update:
+
+* Added alerting in case disk usage exceeds threshold [SE-11147]
+
+
+== March 25, 2019
+
+3.9.2 Runtime Update:
+
+* Oracle type with CLOB field raises error [SE-10726]
+* Database connector file descriptor leaks when processing large payloads [SE-11071]
+* SFTP connector is not closing connections [SE-10977]
+* Throttling policy doesn't clean its cache [SE-10534]
+
+3.9.1 Runtime Update:
+
+* Oracle type with CLOB field raises error [SE-10726]
+* Database connector file descriptor leaks when processing large payloads [SE-11071]
+
+
+== March 22, 2019
 
 4.1.1, 4.1.2, 4.1.3, 4.1.4 and 4.1.5 Runtimes Update:
 
@@ -19,17 +86,20 @@ SE-11007: Enabling Advanced App Log functionality is not recommended on 0.1 VCor
 
 Workaround: Use 0.2 VCore or higher configurations.
 
+
 == March 21, 2019
 
 3.8.4 Runtime Update:
 
 * Max buffer size fix for file system full [SE-11147]
 
+
 == March 15, 2019
 
 3.9.1 Runtime Update:
 
 * Schedules not registered [SE-11264]
+
 
 == March 8, 2019
 
@@ -45,6 +115,7 @@ Workaround: Use 0.2 VCore or higher configurations.
 
 * Dnsmasq unavailable [SE-11197]
 
+
 == March 7, 2019
 
 4.1.5 Runtime Update:
@@ -54,6 +125,7 @@ Workaround: Use 0.2 VCore or higher configurations.
 4.1.4 Runtime Update:
 
 * Batch fails in CloudHub with persistent queues enabled [SE-10583]
+
 
 == March 6, 2019
 

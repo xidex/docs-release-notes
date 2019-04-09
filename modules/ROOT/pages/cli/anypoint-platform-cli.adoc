@@ -4,6 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: cli, command line interface, command line, release notes, anypoint platform cli
 
+== Version 3.0.5 - January 25, 2019
+
+This release of Anypoint Platform CLI addresses the following issue:
+
+* Added support for pagination within Design Center. +
+When running `designcenter project list`, you can now pass `--pageIndex` to set number of the page to retrieve from a paginated project, and `--pageSize` to set the number of results per page. 
+
+== Version 3.0.4 - January 18, 2019
+
+This release of Anypoint Platform CLI adds the following Exchange feature:
+
+* Added `mainFile` option to determine a main file for OAS and WSDL API types when publishing an API specification to Exchange.
+
 == Version 3.0.3 - December 27, 2018
 
 This release of the Anypoint CLI fixes the following issue:

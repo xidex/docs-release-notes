@@ -30,8 +30,10 @@ To change an existing connection type to the new features, change the XML for th
 |salesforce:oauth-jwt-connection | salesforce:cached-oauth-jwt-connection
 |salesforce:oauth-saml-connection | salesforce:cached-oauth-saml-connection
 |salesforce:oauth-user-pass-connection | salesforce:cached-oauth-user-pass-connection
-|salesforce:config-with-oauth-connection | None: Removed in v9.6
+|salesforce:config-with-oauth-connection | No change
 |===
++
+IMPORTANT: The OAuth 2.0 connection type is marked as Deprecated in Studio and Design Center, however OAuth 2.0 is still available. The OAuth 2.0 "(Deprecated)" label can be ignored.
 +
 The previous values are available but are deprecated. We recommend moving to the new versions.
 

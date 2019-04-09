@@ -4,7 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, sockets, connector, release notes
 
-*March 2018*
+*March 28, 2019*
+
+== 1.1.5
+
+=== Min Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* Upgraded Commons IO dependency to version 2.6
+
 
 == 1.1.1
 

@@ -3,6 +3,25 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Support Category: Select
+
+== 1.1.5
+
+*April 8, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+== New Features and Enhancements
+
+None.
+
+=== Fixed Issues
+
+* Upgraded JRuby dependency to 9.2.6.0. (https://www.mulesoft.org/jira/browse/MULE-16673[MULE-16673])
+* Upgraded Reactor dependency to 3.2.6. (https://www.mulesoft.org/jira/browse/MULE-16189[MULE-16189])
+
 == 1.1.4
 
 *January 31, 2019*
