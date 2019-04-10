@@ -3,6 +3,19 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.1.8
+
+*April 10, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* OAuth authenticators do not implement equals() and hashCode(). (https://www.mulesoft.org/jira/browse/MULE-16704[MULE-16704])
+
+
 == 1.1.7
 
 *November 2, 2018*
