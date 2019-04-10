@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Support Category: Select_
+Support Category: Select
 
 The Mule 3 Salesforce Analytics Cloud connector lets you connect to the Salesforce Analytics Cloud application using the Salesforce External Data API. The connector exposes convenient methods for creating and populating data sets into Salesforce Analytics Cloud system.
 
