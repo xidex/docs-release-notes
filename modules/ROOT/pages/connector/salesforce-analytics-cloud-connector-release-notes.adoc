@@ -3,9 +3,31 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+_Support Category: Select_
 
 The Mule 3 Salesforce Analytics Cloud connector lets you connect to the Salesforce Analytics Cloud application using the Salesforce External Data API. The connector exposes convenient methods for creating and populating data sets into Salesforce Analytics Cloud system.
+
+== 2.3.1 
+
+*April 12, 2019*
+
+Release notes for version 2.3.0 of the Salesforce Analytics Cloud connector. These release notes accompany the
+xref:3.9@mule-runtime::salesforce-analytics-cloud-connector.adoc[Salesforce Analytics Cloud Connector User Guide].
+
+=== Compatibility
+
+The Salesforce Analytics Cloud connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime | 3.5.0 and later
+|External Data API | v43.0
+|===
+
+=== Fixed in this Release
+
+* Salesforce Analytics upload parts concurrently has issues when INVALID_SESSION_ID is received (SE-9555) - Using the connector with the Batch Module was not working well when a connection issue appeared as the connector was not able to handle reconnection. This is now fixed.
 
 == 2.3.0 
 
