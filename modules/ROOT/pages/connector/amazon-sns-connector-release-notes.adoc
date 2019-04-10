@@ -24,10 +24,10 @@ The Amazon SNS Connector is compatible with:
 
 |===
 |Application/Service|Version
-|Mule Runtime|3.8.x or higher
+|Mule Runtime|3.6 or higher
 |Java version|JDK 8
 |Amazon Java SDK for SNS|v1.11.515
-|Anypoint Studio|5.2 or higher
+|Anypoint Studio|5.4 or higher
 |===
 
 === Features
