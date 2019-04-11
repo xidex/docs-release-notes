@@ -5,6 +5,24 @@ endif::[]
 
 Support Category: Select
 
+== 1.1.6
+
+*April 11, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+== New Features and Enhancements
+
+None.
+
+=== Fixed Issues
+
+* Upgraded JRuby dependency to 9.2.7.0. (https://www.mulesoft.org/jira/browse/MULE-16706[MULE-16706])
+* Upgraded Reactor dependency to 3.2.8. (https://www.mulesoft.org/jira/browse/MULE-16706[MULE-16706])
+* Upgraded Groovy dependency to 2.4.16. (https://www.mulesoft.org/jira/browse/MULE-16706[MULE-16706])
+
 == 1.1.5
 
 *April 8, 2019*
