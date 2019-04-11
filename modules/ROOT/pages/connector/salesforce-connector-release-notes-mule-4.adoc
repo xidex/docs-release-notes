@@ -5,6 +5,32 @@ endif::[]
 
 Support Category: Select
 
+== 9.6.1
+
+*March 27, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |Only works with Studio 7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Fixed in this Release
+* Salesforce __r usage for relationship throwing error(SE-10599) - Fixed an issue regarding object relationships in Salesforce. There was a bug causing troubles when creating objects with custom fields that had relationships to other objects.
+* Salesforce Connector return wrong metadata when include a subquery with a list(SE-10255) - Fixed output metadata issues for the query operation when there was a subquery included to retrieve related objects
+* Subscribe topic operation throws 'Invalid SObject Type: null' error(CONN-1660) - Fixed metadata issues for the Subscribe Topic source. There was an exception thrown when trying to retrieve metadata for different object types.
+* Salesforce Metadata create order issue(SE-10375) - There was an issue with reference fields in input metadata, that now is fixed
+* Salesforce connector create job bulk v 2 operation content type field is not valid(SE-11043) - The only valid content type for this operation is CSV. We could not remove the parameter or the other content types, but the field was moved to the Advanced tab and a proper Summary was added for it. The operation is also fail fast(fails without making an API call) if a type other than CSV is specified.
+* Removed the (Deprecated) keyword in the name of the OAuth 2.0 Connection which was added by mistake in a previous release. The connection was not changed and can be used the same way as up until now.
+
+=== Known Issues
+* Salesforce invoke apex metadata request for each invoke(SE-10925)
+* Batch aggregator with Salesforce Connector executing an upsert operation does not return the right number of failed records when something went wrong(SE-10501)
+* Salesforce connector replayId feature gap between 3.x and 4.x(SE-11258)
+* Salesforce Connector autoreplay after restarting the application in Cloudhub(SE-9992)
+
 == 9.6.0
 
 *March 20, 2019*
