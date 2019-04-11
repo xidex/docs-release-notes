@@ -27,7 +27,7 @@ The LDAP Connector is compatible with:
 
 === Fixed in this Release
 
-* Returned attributes names were normalized to lowercase (SE-1147) - This fix will prevent the conversion of attributes names to lowercase.
+* Returned attributes names were normalized to lowercase. This fix prevents the conversion of attributes names to lowercase.  (SE-1147)
 
 == 2.2.2
 
@@ -181,5 +181,5 @@ None.
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum].
-* https://support.mulesoft.com[Contact MuleSoft Support].
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
