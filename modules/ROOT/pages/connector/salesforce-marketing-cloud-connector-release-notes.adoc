@@ -2,15 +2,31 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, salesforce, marketing, cloud, connector
 
-*March 2018*
-
-_Select_
+Support Category: Select
 
 *Connector Guide*: xref:3.9@mule-runtime::salesforce-marketing-cloud-connector.adoc[Salesforce Marketing Cloud Connector]
 
 The Salesforce Marketing Cloud connector allows you to connect to the Salesforce Marketing Cloud web services using the https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/index-api.htm[Salesforce Marketing Cloud API]. The connector exposes convenient methods for managing objects and calling services provided by Salesforce Marketing Cloud.
+
+== 1.1.1
+
+*April 12, 2019*
+
+=== Compatibility
+
+The Salesforce Marketing Cloud Connector Version 1.1.1 is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|3.5.2 and later
+|Marketing Cloud API|v145.3
+|===
+
+=== Fixed in this Release
+
+* Cannot connect to Salesforce Marketing: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog (SE-10880) - Wrapped the exception in a more readable one.
 
 == 1.1.0
 
