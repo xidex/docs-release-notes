@@ -14,7 +14,7 @@ Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint P
 
 == Version 4.3.0 
 
-*April 9, 2019*
+*April 12, 2019*
 
 === Compatibility
 
