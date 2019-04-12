@@ -12,7 +12,7 @@ The Mule 3 Salesforce Analytics Cloud connector lets you connect to the Salesfor
 *April 12, 2019*
 
 Release notes for version 2.3.0 of the Salesforce Analytics Cloud connector. These release notes accompany the
-xref:3.9@mule-runtime::salesforce-analytics-cloud-connector.adoc[Salesforce Analytics Cloud Connector User Guide].
+xref:3.9@mule-runtime::salesforce-analytics-cloud-connector.adoc[Salesforce Analytics Cloud Connector Guide].
 
 === Compatibility
 
@@ -27,7 +27,7 @@ The Salesforce Analytics Cloud connector is compatible with:
 
 === Fixed in this Release
 
-* Salesforce Analytics upload parts concurrently has issues when INVALID_SESSION_ID is received (SE-9555) - Using the connector with the Batch Module was not working well when a connection issue appeared as the connector was not able to handle reconnection. This is now fixed.
+* The Salesforce Analytics feature that uploads parts concurrently has issues when INVALID_SESSION_ID is received  - Using the connector with the Batch Module was not working well when a connection issue appeared as the connector was not able to handle reconnection. This is now fixed. (SE-9555)
 
 == 2.3.0 
 
