@@ -26,7 +26,7 @@ The Salesforce Marketing Cloud Connector Version 1.1.1 is compatible with:
 
 === Fixed in this Release
 
-* Cannot connect to Salesforce Marketing: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog (SE-10880) - Wrapped the exception in a more readable one.
+* Cannot connect to Salesforce Marketing: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog - Wrapped the exception in a more readable one.  (SE-10880)
 
 == 1.1.0
 
@@ -90,22 +90,22 @@ The Version 1.0.0 Salesforce Marketing Cloud connector is compatible with:
 
 * This is the first version of the connector, thus no fixes were required; there are only new features.
 
-=== Known Issues
+== Known Issues
 
-==== Providing a Subclass as Type to a Complex Field
+=== Providing a Subclass as Type to a Complex Field
 
 * Some objects have complex fields that represent a base class from Salesforce Marketing. So, if instead of the base class, you want to pass a subclass of it as value to that field, that is not possible
 because the connector cannot recognize the fields that do not belong to the base class. You must manually map those fields in Transform Message and add a field named "concreteClassType" with the name of the subclass as value. For more information and an example, read the User Guide.
 
-==== Retrieving Fields From a Hierarchy Not Possible
+=== Retrieving Fields From a Hierarchy Not Possible
 
 * Querying fields that are lower than level 1 in the hierarchy is not supported by the API. For example,queries like "Select Attributes.Name from Subscriber" because "Name" is at level 2 in the hierarchy.
 
-==== Server Results that Contain an Automation Object Structure Cause Exception to Be Thrown
+=== Server Results that Contain an Automation Object Structure Cause Exception to Be Thrown
 
 * When performing operations on an Automation object, the result of the operation causes an exception to be thrown because the response has a field that cannot be parsed by the API. To bypass this, make those types of operations asynchronous. For more information and an example on this issue, please read the User Guide.
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
