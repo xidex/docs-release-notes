@@ -5,6 +5,34 @@ endif::[]
 
 Support Category: Select
 
+== 2.1.0 
+
+*April 15, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|Microsoft Azure Service Bus (Cloud) | -
+|Microsoft Windows Service Bus (on-premises) | -
+|===
+
+=== Features
+
+* *Redelivery policy* - Redelivery policy options (_max. redeliveries_ and _outcome_) were added to the connector's configuration.
+
+=== Fixed in this Release
+
+* When dealing with manual ACK, if the flow failed with an error, the message could be reprocessed indefinitely. This is now fixed, by the addition of the *redelivery policy* configuration.
+
+=== Known Issues
+
+* Automatic completion of queue/topic names, subscriptions and rules may not work in Design Center.
+* Under some scenarios, users can get an `InterruptedException` error on the Mule app startup. This will not affect the proper operation. To get rid of this message, check the "Skip Connectivity Test" checkbox in the connector's configuration.
+
+
 == 2.0.3 
 
 *February 22, 2019*
