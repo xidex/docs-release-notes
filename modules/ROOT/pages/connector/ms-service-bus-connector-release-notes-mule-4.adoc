@@ -5,6 +5,8 @@ endif::[]
 
 Support Category: Select
 
+Microsoft Service Bus connector provides support for Microsoft Azure Service Bus (cloud) and Microsoft Windows Service Bus (on-premises).
+
 == 2.1.0 
 
 *April 15, 2019*
@@ -15,13 +17,11 @@ Support Category: Select
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Features
 
-* *Redelivery policy* - Redelivery policy options (_max. redeliveries_ and _outcome_) were added to the connector's configuration.
+* Redelivery policy options (max. redeliveries and outcome) were added to the connector's configuration.
 
 === Fixed in this Release
 
@@ -43,8 +43,6 @@ Support Category: Select
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Fixed in this Release
@@ -66,8 +64,6 @@ Support Category: Select
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Fixed in this Release
@@ -89,8 +85,6 @@ Support Category: Select
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Features
@@ -99,7 +93,7 @@ None.
 
 === Fixed in this Release
 
-* *Manual ACK not working* - Previously, when attempting to do a manual acknowledge of a message, the connector would lock the flow. This was now fixed, and doing this works as expected.
+* Manual ACK not working - Previously, when attempting to do a manual acknowledge of a message, the connector would lock the flow. This was now fixed, and doing this works as expected.
 
 === Known Issues
 
@@ -117,8 +111,6 @@ None.
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Features
