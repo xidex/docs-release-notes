@@ -37,6 +37,6 @@ There are no upgrade requirements for this release.
 |Software|Version
 |Mule Runtime|3.6.x, 3.7.x, 3.8.x, 3.9.x
 |API Gateway|2.x and above
-|JDK    |JRE 1.7.0 (Recommended JRE 1.7.0_79/80)
+|Java    |JRE 1.7.0, 1.8.0 [Oracle, IBM, OpenJDK]
 |Runtime Manager|V2.0
 |===
