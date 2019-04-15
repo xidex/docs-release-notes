@@ -7,7 +7,7 @@ endif::[]
 
 === New Features
 
-* Enable customers to discard portal draft documentation
+* Enable customers to discard drafts of portal documentation.
 
 == March 2019
 
