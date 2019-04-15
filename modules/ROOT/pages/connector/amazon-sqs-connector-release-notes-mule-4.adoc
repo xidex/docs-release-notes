@@ -24,6 +24,23 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 * Added support for connecting to new AWS region endpoints.
 
+== 5.2.1
+
+*February 22, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0 and later
+|AWS SDK for Java|1.11.79
+|===
+
+=== Fixed in this Release
+
+* In earlier versions, when Amazon SQS threw an error, SQS listener stopped working. Now the reconnect process for the listener is triggered in such case.
+
 == 5.2.0
 
 *August 28, 2018*
@@ -41,26 +58,9 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 
 * The issue where this connector threw java.lang.UnsupportedOperationException for sqs:delete-message-batch has been fixed.
 
-== 5.1.2
-
-=== Compatibility
-
-[%header%autowidth.spread]
-|===
-|Application/Service|Version
-|Mule Runtime|4.1.0 and later
-|AWS SDK for Java|1.11.79
-|===
-
-=== Fixed in this Release
-
-* In earlier versions, when Amazon SQS threw an error, the SQS listener stopped working. Now the reconnect process for the listener is triggered in this case.
-
 == 5.1.1
 
-*May 2, 2018*
-
-This release provides a bug fix.
+*May 3, 2018*
 
 === Compatibility
 
@@ -78,8 +78,6 @@ Receive Message Source was failing to retrieve the Messages on the Queue renderi
 == 5.1.0
 
 *February 21, 2018*
-
-This release provides a bug fix.
 
 === Compatibility
 
