@@ -5,6 +5,34 @@ endif::[]
 
 Support Category: Select
 
+Microsoft Service Bus connector provides support for Microsoft Azure Service Bus (cloud) and Microsoft Windows Service Bus (on-premises).
+
+== 2.1.0 
+
+*April 16, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|===
+
+=== Features
+
+* Redelivery policy options (max. redeliveries and outcome) were added to the connector's configuration.
+
+=== Fixed in this Release
+
+* When dealing with manual ACK, if the flow failed with an error, the message could be reprocessed indefinitely. This is now fixed, by the addition of the *redelivery policy* configuration.
+
+=== Known Issues
+
+* Automatic completion of queue/topic names, subscriptions and rules may not work in Design Center.
+* Under some scenarios, users can get an `InterruptedException` error on the Mule app startup. This will not affect the proper operation. To get rid of this message, check the "Skip Connectivity Test" checkbox in the connector's configuration.
+
+
 == 2.0.3 
 
 *February 22, 2019*
@@ -15,8 +43,6 @@ Support Category: Select
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Fixed in this Release
@@ -38,8 +64,6 @@ Support Category: Select
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Fixed in this Release
@@ -61,8 +85,6 @@ Support Category: Select
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Features
@@ -71,7 +93,7 @@ None.
 
 === Fixed in this Release
 
-* *Manual ACK not working* - Previously, when attempting to do a manual acknowledge of a message, the connector would lock the flow. This was now fixed, and doing this works as expected.
+* Manual ACK not working - Previously, when attempting to do a manual acknowledge of a message, the connector would lock the flow. This was now fixed, and doing this works as expected.
 
 === Known Issues
 
@@ -89,8 +111,6 @@ None.
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|Microsoft Azure Service Bus (Cloud) | -
-|Microsoft Windows Service Bus (on-premises) | -
 |===
 
 === Features
