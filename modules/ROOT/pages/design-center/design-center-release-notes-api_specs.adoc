@@ -22,9 +22,11 @@ These release notes cover the following versions of these features:
 *April 20, 2019*
 
 
-=== New Feature
+=== New Features
 
-Import projects directly from Exchange. You no longer have to download a project from Exchange to your computer or other location, and then import it into a new project in API Designer. See xref:design-center::design-import-files.adoc[Import Files into an API Project] for the steps.
+* You can now import projects directly from Exchange. You no longer have to download a project from Exchange to your computer or other location, and then import it into a new project in API Designer. See xref:design-center::design-import-files.adoc[Import Files into an API Project] for the steps.
+* If you define a global media type in a specification in the visual API editor, you no longer are required to select a media type when you define the body of a response for a method. Instead, you can now leave the option `default` specified. This option is available only if a global media type is defined.
+
 
 === Fixed Issues
 // SE-10861
