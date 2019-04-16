@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-6,2.4.6>>
 * <<2-4-5,2.4.5>>
 * <<2-4-4,2.4.4>>
 * <<2-4-3,2.4.3>>
@@ -16,6 +17,15 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.4.6
+*April 20, 2019*
+
+
+=== Fixed Issues
+// SE-10861
+* Specifications that were several MB in size could not be published to Exchange.
+
 
 == 2.4.5
 *April 6, 2019*
