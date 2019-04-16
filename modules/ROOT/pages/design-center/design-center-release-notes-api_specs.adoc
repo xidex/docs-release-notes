@@ -25,6 +25,8 @@ These release notes cover the following versions of these features:
 === Fixed Issues
 // SE-10861
 * Specifications that were several MB in size could not be published to Exchange.
+// SE-10917
+* Resource types and traits in API specifications that were written in RAML 1.0 were not being validated.
 
 
 == 2.4.5
