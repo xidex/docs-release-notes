@@ -2,7 +2,20 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, access management, anypoint platform, permissions, entitlements, roles, users, administrator, gear icon
+
+== April 20, 2019
+
+These are the enhancements and new features for Access Management. 
+
+* A VPN counter is added under Business Group settings to allow a fine-grained allocation of purchased VPNs within your organizations.
+* Audit log dates now display a timestamp for a year.
+* When configuring an external identity provider, users can now disable server certificate validation.
+* Enablement of non-SSO users for your organization allows organization administrators to invite and authenticate users outside of the external SSO configured for your organization.
+* Organization administrators can enable and disable automapper capability for Flow Designer under the organization settings in Access Manager.
+* You can enable client deletion in Anypoint Platform, which allows deletions of clients within Anypoint Platform.
+* You can enable client deletion and updates in IdP, which allows updates and deletions of external clients in the configured IdP through an outbound call made by Anypoint Platform. To use this feature, you should opt-in to client deletion within Anypoint Platform.
+* The Audit Log screen and a downloadable CSV file now include environment names for events from API Manager, Runtime Manager, CloudHub, Partner Manager, and MQ.
+
 
 == August 25, 2018
 *_Version 0.46.0_*
@@ -13,7 +26,7 @@ MuleSoft supports using https://developer.salesforce.com/page/Identity[Salesforc
 
 * Deleted federated users are no longer able to sign in from the SSO login page. Organization administrators must re-enable deleted users before they can continue operations on Anypoint Platform.
 
-* You can't createa a Business Group name using special characters. Only the following characters are valid:
+* You can't create a a Business Group name using special characters. Only the following characters are valid:
 +
 ** Letter
 ** Number
