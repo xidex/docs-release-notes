@@ -21,6 +21,7 @@ These release notes cover the following versions of these features:
 == 2.4.6
 *April 20, 2019*
 
+This release includes two new features and several fixes.
 
 === New Features
 
