@@ -9,7 +9,7 @@ Microsoft Service Bus connector provides support for Microsoft Azure Service Bus
 
 == 2.1.0 
 
-*April 15, 2019*
+*April 16, 2019*
 
 === Compatibility
 
