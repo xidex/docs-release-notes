@@ -29,6 +29,8 @@ These release notes cover the following versions of these features:
 * Resource types and traits in API specifications that were written in RAML 1.0 were not being validated.
 // SE-11123
 * A project might never finish loading if you created the project in the visual API editor, created a data type in that project, closed the project, and then attempted to reopen the project.
+// SE-11193
+* The API editor returned the error message `Recursive type at (_x_, _y_)` for recursive DataType definitions.
 
 
 == 2.4.5
