@@ -22,6 +22,10 @@ These release notes cover the following versions of these features:
 *April 20, 2019*
 
 
+=== New Feature
+
+Import projects directly from Exchange. You no longer have to download a project from Exchange to your computer or other location, and then import it into a new project in API Designer. See xref:design-center::design-import-files.adoc[Import Files into an API Project] for the steps.
+
 === Fixed Issues
 // SE-10861
 * Specifications that were several MB in size could not be published to Exchange.
