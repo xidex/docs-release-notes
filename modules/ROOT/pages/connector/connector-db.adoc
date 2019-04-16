@@ -13,7 +13,7 @@ Mule 4.1.1
 
 === New Features and Enhancements
 
-* Add connector Icon.
+* Add connector icon.
 
 === Fixed Issues
 
