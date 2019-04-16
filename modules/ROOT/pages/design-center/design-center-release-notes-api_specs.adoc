@@ -31,7 +31,8 @@ These release notes cover the following versions of these features:
 * A project might never finish loading if you created the project in the visual API editor, created a data type in that project, closed the project, and then attempted to reopen the project.
 // SE-11193
 * The API editor returned the error message `Recursive type at (_x_, _y_)` for recursive DataType definitions.
-
+// SE-11374
+* The mocking service would fail if an API specification used the `example` facet, rather than the `examples` facet, to include a NamedExample fragment.
 
 == 2.4.5
 *April 6, 2019*
