@@ -3,6 +3,28 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.5.2
+
+*April 16, 2019*
+
+=== Minimum Mule Version
+
+Mule 4.1.1
+
+=== New Features and Enhancements
+
+* Add connector icon.
+
+=== Fixed Issues
+
+* Errors while transforming to JSON the output of Oracle SP call with custom types. (https://www.mulesoft.org/jira/browse/MULE-16589[MULE-16589])
+* Can't get parameter data types when store procedure name includes schema. (https://www.mulesoft.org/jira/browse/MULE-16685[MULE-16685])
+* FlowListener callback retains too much state. (https://www.mulesoft.org/jira/browse/MULE-16366[MULE-16366])
+* Errors when using Oracle's UDT Table type. (https://www.mulesoft.org/jira/browse/MULE-16401[MULE-16401])
+* Database connector not sending value of the IN-OUT parameter. (https://www.mulesoft.org/jira/browse/MULE-16484[MULE-16484])
+* "Unable to convert between" error when using SP in MsSql. (https://www.mulesoft.org/jira/browse/MULE-16339[MULE-16339])
+
+
 == 1.5.0
 
 *December 28, 2018*
