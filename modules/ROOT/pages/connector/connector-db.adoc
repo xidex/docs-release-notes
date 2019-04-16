@@ -11,6 +11,10 @@ endif::[]
 
 Mule 4.1.1
 
+=== New Features and Enhancements
+
+* Add connector Icon.
+
 === Fixed Issues
 
 [%header,cols="15a,85a"]
@@ -18,6 +22,7 @@ Mule 4.1.1
 |Issue |Description
 | link:https://www.mulesoft.org/jira/browse/MULE-16589[MULE-16589] | Errors while transforming to json the output of oracle SP call with custom types
 | link:https://www.mulesoft.org/jira/browse/MULE-16685[MULE-16685] | Can't get parameter data types when store procedure name includes schema
+| link:https://www.mulesoft.org/jira/browse/MULE-16366[MULE-16685] | FlowListener callback retains too much state
 |===
 
 == 1.5.1
