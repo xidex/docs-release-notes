@@ -3,6 +3,41 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.5.2
+
+*April 16, 2019*
+
+=== Minimum Mule Version
+
+Mule 4.1.1
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| link:https://www.mulesoft.org/jira/browse/MULE-16589[MULE-16589] | Errors while transforming to json the output of oracle SP call with custom types
+| link:https://www.mulesoft.org/jira/browse/MULE-16685[MULE-16685] | Can't get parameter data types when store procedure name includes schema
+|===
+
+== 1.5.1
+
+*February 26, 2019*
+
+=== Minimum Mule Version
+
+Mule 4.1.1
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| link:https://www.mulesoft.org/jira/browse/MULE-16401[MULE-16401] | Errors when using Oracle's UDT Table type
+| link:https://www.mulesoft.org/jira/browse/MULE-16484[MULE-16484] | DB Connector not sending value of IN-OUT Parameter
+| link:https://www.mulesoft.org/jira/browse/MULE-16339[MULE-16339] | "Unable to convert between" error when using SP in MsSql
+|===
+
 == 1.5.0
 
 *December 28, 2018*
