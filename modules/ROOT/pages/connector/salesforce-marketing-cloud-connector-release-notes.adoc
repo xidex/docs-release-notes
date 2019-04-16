@@ -11,7 +11,7 @@ The Salesforce Marketing Cloud connector allows you to connect to the Salesforce
 
 == 1.1.1
 
-*April 12, 2019*
+*April 16, 2019*
 
 === Compatibility
 
