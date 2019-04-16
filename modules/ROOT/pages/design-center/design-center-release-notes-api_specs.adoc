@@ -33,6 +33,8 @@ These release notes cover the following versions of these features:
 * The API editor returned the error message `Recursive type at (_x_, _y_)` for recursive DataType definitions.
 // SE-11374
 * The mocking service would fail if an API specification used the `example` facet, rather than the `examples` facet, to include a NamedExample fragment.
+// SE-11175
+*  The API console might display all examples for all methods that were in a specification, not just the examples for the selected method.
 
 == 2.4.5
 *April 6, 2019*
