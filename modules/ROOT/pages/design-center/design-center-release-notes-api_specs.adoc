@@ -27,6 +27,8 @@ These release notes cover the following versions of these features:
 * Specifications that were several MB in size could not be published to Exchange.
 // SE-10917
 * Resource types and traits in API specifications that were written in RAML 1.0 were not being validated.
+// SE-11123
+* A project might never finish loading if you created the project in the visual API editor, created a data type in that project, closed the project, and then attempted to reopen the project.
 
 
 == 2.4.5
