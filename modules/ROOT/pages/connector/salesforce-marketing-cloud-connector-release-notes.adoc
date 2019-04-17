@@ -26,7 +26,7 @@ The Salesforce Marketing Cloud Connector Version 1.1.1 is compatible with:
 
 === Fixed in this Release
 
-* Cannot connect to Salesforce Marketing: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog - Wrapped the exception in a more readable one.  (SE-10880)
+* Wrapped this exception in a more readable one: `Cannot connect to Salesforce Marketing: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog`. (SE-10880)
 
 == 1.1.0
 
@@ -47,7 +47,7 @@ The Salesforce Marketing Cloud Connector Version 1.1.0 is compatible with:
 
 === Fixed in this Release
 
-* Fixed NullPointerException when trying to fetch data-sense.
+* Fixed NullPointerException when trying to fetch DataSense.
 
 === Features
 
@@ -58,7 +58,7 @@ The Salesforce Marketing Cloud Connector Version 1.1.0 is compatible with:
 
 *February 12, 2016*
 
-Release notes for version 1.0.0 of the Salesforce Marketing Cloud connector. These Release Notes accompany the xref:3.9@mule-runtime::salesforce-marketing-cloud-connector.adoc[Salesforce Marketing Cloud Connector User Guide].
+Release notes for version 1.0.0 of the Salesforce Marketing Cloud connector. 
 
 === Compatibility
 
