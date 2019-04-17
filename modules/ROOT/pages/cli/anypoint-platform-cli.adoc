@@ -4,6 +4,13 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: cli, command line interface, command line, release notes, anypoint platform cli
 
+== Version 3.1.0 - Apr 17, 2019
+
+This release of Anypoint Platform CLI adds the following Exchange feature:
+
+* Added the ability to publish RAML assets. Example: `exchange asset upload --classifier raml --apiVersion v1 --name HelloWorld --mainFile helloworld.raml helloword/1.0.0 /Users/nmouso/Downloads/helloworld.raml.zip`
+
+
 == Version 3.0.5 - January 25, 2019
 
 This release of Anypoint Platform CLI addresses the following issue:
