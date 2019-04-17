@@ -31,7 +31,7 @@ This release includes two new features and several fixes.
 
 === Fixed Issues
 // SE-10861
-* Specifications that were several MB in size could not be published to Exchange.
+* Specifications that were several MB in size could not be published to Exchange. Now, for both the importing of projects from Exchange and the publishing projects to Exchange, the .zip files are reduced in size, preventing such errors.
 // SE-10917
 * Resource types and traits in API specifications that were written in RAML 1.0 were not being validated.
 // SE-11123
