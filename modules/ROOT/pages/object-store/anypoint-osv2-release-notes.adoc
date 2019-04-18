@@ -5,19 +5,19 @@ endif::[]
 
 Support Category: Select
 
-The Anypoint Object Store v2 release allows applications and users to share data and share states across batch processes, Mule components, and multiple distributed applications.
+The Anypoint Object Store v2 release allows applications and users to share data and share states across batch processes, Mule components, and multiple distributed applications. Object Store v2 works with Mule 3.8.5 and later, and all 4.x versions. See: xref:object-store::osv2-faq.adoc#where-is-object-store-v2-available[Where is Object Store v2 available?]
+
+== 2.4.8
+
+*April 18, 2019*
+
+Minor improvements to Object Store performance.
 
 == 2.4.7
 
 *February 7, 2019*
 
 This release provides bug fixes.
-
-=== Compatibility
-
-* OSv2 works with Mule 3.8.5 and later, and all 4.x versions.
-
-See: xref:object-store::osv2-faq.adoc#where-is-object-store-v2-available[Where is Object Store v2 available?]
 
 === Fixed in this Release
 
