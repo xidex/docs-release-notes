@@ -11,7 +11,7 @@ The Anypoint Object Store v2 release allows applications and users to share data
 
 *April 18, 2019*
 
-This release provides faster performance for storing key-value pairs in the Object Store backend.
+This release improves internal performance.
 
 == 2.4.7
 
