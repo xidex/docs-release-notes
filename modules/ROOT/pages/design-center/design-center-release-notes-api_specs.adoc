@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-6,2.4.6>>
 * <<2-4-5,2.4.5>>
 * <<2-4-4,2.4.4>>
 * <<2-4-3,2.4.3>>
@@ -16,6 +17,31 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.4.6
+*April 20, 2019*
+
+This release includes two new features and several fixes.
+
+=== New Features
+
+* You can now import projects directly from Exchange. You no longer have to download a project from Exchange to your computer or other location, and then import it into a new project in API Designer. See xref:design-center::design-import-files.adoc[Import Files into an API Project] for the steps.
+* If you define a global media type in a specification in the visual API editor, you no longer are required to select a media type when you define the body of a response for a method. Instead, you can now leave the option `default` specified. This option is available only if a global media type is defined.
+
+
+=== Fixed Issues
+// SE-10861
+* Specifications that were several MB in size could not be published to Exchange. Now, for both the importing of projects from Exchange and the publishing projects to Exchange, the .zip files are reduced in size, preventing such errors.
+// SE-10917
+* Resource types and traits in API specifications that were written in RAML 1.0 were not being validated.
+// SE-11123
+* A project might never finish loading if you created the project in the visual API editor, created a data type in that project, closed the project, and then attempted to reopen the project.
+// SE-11193
+* The API editor returned the error message `Recursive type at (_x_, _y_)` for recursive DataType definitions.
+// SE-11374
+* The mocking service would fail if an API specification used the `example` facet, rather than the `examples` facet, to include a NamedExample fragment.
+// SE-11175
+*  The API console might display all examples for all methods that were in a specification, not just the examples for the selected method.
 
 == 2.4.5
 *April 6, 2019*
