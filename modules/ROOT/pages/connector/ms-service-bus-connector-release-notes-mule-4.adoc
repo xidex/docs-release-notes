@@ -25,7 +25,7 @@ Microsoft Service Bus connector provides support for Microsoft Azure Service Bus
 
 === Fixed in this Release
 
-* When dealing with manual ACK, if the flow failed with an error, the message could be reprocessed indefinitely. This is now fixed, by the addition of the *redelivery policy* configuration.
+* When dealing with manual ACK, if the flow failed with an error, the message could be reprocessed indefinitely. This is now fixed by the addition of the *redelivery policy* configuration.
 
 === Known Issues
 
