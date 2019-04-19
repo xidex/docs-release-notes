@@ -5,7 +5,26 @@ endif::[]
 
 Support Category: Select
 
-Mule supports MongoDB integration by using the MongoDB Java Driver.
+Mule supports MongoDB integration by using the MongoDB Java driver.
+
+== 5.3.1
+
+*April 15, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.0.0 and later
+|MongoDB|3.8
+|===
+
+=== Fixed in this Release
+
+* MongoDB `get-file-content` operation expects user to pass internal type of connector. (SE-10073)
+* MongoDB triggers fails with `java.lang.NullPointerException`. (SE-11354)
+* Domain name did not have a recognized public suffix for the MongoDB connector. (SE-10149)
 
 == 5.3.0
 
@@ -88,6 +107,5 @@ Now it is working.
 
 == See Also
 
-* http://mongodb.github.io/mongo-java-driver/[MongoDB Java Driver]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
