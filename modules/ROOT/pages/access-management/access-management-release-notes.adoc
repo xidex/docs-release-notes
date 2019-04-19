@@ -26,7 +26,7 @@ MuleSoft supports using https://developer.salesforce.com/page/Identity[Salesforc
 
 * Deleted federated users are no longer able to sign in from the SSO login page. Organization administrators must re-enable deleted users before they can continue operations on Anypoint Platform.
 
-* You can't create a a Business Group name using special characters. Only the following characters are valid:
+* You can't create a Business Group name using special characters. Only the following characters are valid:
 +
 ** Letter
 ** Number
