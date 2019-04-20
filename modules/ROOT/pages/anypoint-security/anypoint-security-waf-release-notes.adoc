@@ -3,6 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+
+== April 20, 2019
+
+== New Features
+
+When you configure a WAF policy, there is a new option to enable sensitive information detection (SID) for the request and response bodies. For more information, see xref:anypoint-security::create-waf-policy.adoc[Create a Web Application Firewall Security Policy].
+
 == April 6, 2019
 
 == New Features
