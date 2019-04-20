@@ -11,7 +11,7 @@ These are the enhancements and new features for Access Management.
 * Audit log dates now display a timestamp for a year.
 * When configuring an external identity provider, users can now disable server certificate validation. See xref:access-management::configure-client-management-openid-task.adoc[Configure OpenID Connect Client Management].
 * Enablement of non-SSO users for your organization allows organization administrators to invite and authenticate users outside of the external SSO configured for your organization.
-* Organization administrators can enable and disable automapper capability for Flow Designer under the organization settings in Access Manager. See xref:design-center::get-mapping-recommendations.adoc#before-you-begin[the Flow Designer documentation] for more information.
+* Organization administrators can enable and disable automapper capability for Flow Designer under the organization settings in Access Manager. See the Flow Designer documentation for more information.
 * You can enable client deletion in Anypoint Platform, which allows deletions of clients within Anypoint Platform. See xref:access-management::configure-client-management-openid-task.adoc[Configure OpenID Connect Client Management].
 * You can enable client deletion and updates in IdP, which allows updates and deletions of external clients in the configured IdP through an outbound call made by Anypoint Platform. To use this feature, you should opt-in to client deletion within Anypoint Platform.
 * The Audit Log screen and a downloadable CSV file now include environment names for events from API Manager, Runtime Manager, CloudHub, Partner Manager, and MQ.
