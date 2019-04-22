@@ -4,6 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, FTP, connector, release notes
 
+== 1.4.1
+
+*April 22, 2019*
+
+=== Fixed Issues
+
+* Fixed an issue that prevented to read files that had a space on its name.
+* Improved FTPS Write operation performance when writing on remote servers.
+* Fixed a bug that prevented the usage of the list operation on some FTPS server configurations. 
+* Fixed bug that made the list operation take too long when the listed directory contained a large number of files.
+* Fixed bug that made the connector get stuck while reading files from remote server, degrading performance.
+
 == 1.4.0
 
 *September 14, 2018*
