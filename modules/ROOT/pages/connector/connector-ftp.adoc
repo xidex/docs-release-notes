@@ -3,6 +3,19 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.6
+
+*April 22, 2019*
+
+=== Minimum Mule Version
+
+*4.1.1*
+
+=== Fixed Issues
+
+* Fixed an issue that prevented to read files that had a space on its name. (MULE-16729)
+* Fixed an issue that prevented virtual directories to be listed or use the polling source on them. (MULE-16625)
+
 == 1.2.5
 
 *March 25, 2019*
