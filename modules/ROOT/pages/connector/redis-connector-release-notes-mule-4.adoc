@@ -5,7 +5,7 @@ endif::[]
 
 Support Category: Select
 
-Redis is an open source advanced key-value store that is often referred to as a data structure server because the keys can contain strings, hashes, lists, sets. and sorted sets.
+Redis is an open source advanced key-value store that is often referred to as a data structure server because the keys can contain strings, hashes, lists, sets, and sorted sets.
 
 The Redis Connector offers complete support for its CRUD API.
 
