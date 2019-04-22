@@ -5,6 +5,14 @@ endif::[]
 
 Support Category: Select
 
+== 1.1.4
+
+*April 22, 2019*
+
+=== Fixed Issues
+
+* Fixed an issue that caused NullPointerException when polling a mailbox folder. (https://www.mulesoft.org/jira/browse/MULE-16746[MULE-16746])
+
 == 1.1.3
 
 *February 8, 2019*
