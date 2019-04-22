@@ -2,7 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, FTP, connector, release notes
+
+Support Category: Select
 
 == 1.4.1
 
@@ -10,11 +11,11 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed an issue that prevented to read files that had a space on its name.
+* Fixed an issue that prevented reading files that had a space on its name.
 * Improved FTPS Write operation performance when writing on remote servers.
 * Fixed a bug that prevented the usage of the list operation on some FTPS server configurations. 
 * Fixed bug that made the list operation take too long when the listed directory contained a large number of files.
-* Fixed bug that made the connector get stuck while reading files from remote server, degrading performance.
+* Fixed bug that made the connector get stuck while reading files from a remote server, degrading performance.
 
 == 1.4.0
 
