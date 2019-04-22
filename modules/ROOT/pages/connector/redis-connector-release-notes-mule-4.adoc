@@ -2,15 +2,29 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: cluster, redis, release notes, connector, object store
 
-*November 2017*
+Support Category: Select
 
-_Select_
-
-Redis is an open source advanced key-value store that is often referred to as a data structure server because the keys can contain strings, hashes, lists, sets. and sorted sets.
+Redis is an open source advanced key-value store that is often referred to as a data structure server because the keys can contain strings, hashes, lists, sets, and sorted sets.
 
 The Redis Connector offers complete support for its CRUD API.
+
+== 5.1.0
+
+*April 22, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | 4.0 and later
+|Redis server | 2.8.x, 3.0.x, and 3.2.x
+|===
+
+=== Features
+
+Added support so that the Redis connector can be used as a custom object store in a Mule application.
 
 == 5.0.0
 
@@ -32,4 +46,4 @@ Migrated to Mule 4.0.0 and later runtime.
 === See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
