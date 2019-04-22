@@ -16,7 +16,7 @@ endif::[]
 * To prevent hackers from accessing the authorization token from the request header, the authorization token is no longer included in the request header in each request made with API Console. (EXC-3416)
 * APIs in the public portal can now be filtered by asset types. Previously all assets were shown, disregarding type filter selection. (EXC-3400)
 * If the user creates a Terms and Conditions page to supplement their asset documentation page, the Terms and Conditions page is now visible at all times. (EXC-3383)
-* Add `jpeg` to the list of supported extensions for portal resources (`bmp`, `gif`, `ico`, `jpe`, `jpeg`, `jpg`, `png`, `tif`, `tiff`, `webp`). (EXC-3351)
+* Add `jpeg` to the list of supported extensions for portal resources (`bmp`, `gif`, `ico`, `jpe`, `jpeg`, `jpg`, `png`, `svg`, `tif`, `tiff`, `webp`). (EXC-3351)
 * Provide guardrails to prevent users from creating more than 50 pages in the documentation of a single asset. This prevents wasting unnecessary resources to support an unlimited number of pages. (EXC-3157)
 * Prevent users from creating portal contents without an associated file when publishing API specifications. (EXC-2541)
 
