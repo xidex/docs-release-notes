@@ -5,6 +5,30 @@ endif::[]
 
 Support Category: Select
 
+== 9.6.2
+
+*April 22, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Fixed in this Release
+
+* Salesforce invokes Apex metadata request for each invoke. (SE-10925) - Now the connector does not fetch all the metadata to validate the connection, it only performs a Get Server Timstamp operation which should tell the app if reconnection is necesarry or not.
+* Vulnerability reported for Salesforce connector 9.2.2. (SE-9824) - A part of the vulnerabilities reported were fixed by upgrading some of the dependencies the connector uses.
+
+=== Known Issues
+
+* Batch aggregator with Salesforce Connector executing an upsert operation does not return the right number of failed records when something went wrong. (SE-10501)
+* Salesforce connector replayId feature gap between 3.x and 4.x. (SE-11258)
+* Salesforce connector autoreplays after restarting the application in CloudHub. (SE-9992)
+
+
 == 9.6.1
 
 *April 11, 2019*
