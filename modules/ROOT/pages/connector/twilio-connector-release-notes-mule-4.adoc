@@ -8,7 +8,7 @@ Support Category: Select
 Twilio is an API cloud provider for voice and SMS communications for customers who want to use phone services as marketing leverage. The Mule Twilio Connector allows users to interact with the Twilio SMS API within the Mule Runtime.
 
 == 3.0.2
-*DATE TO BE ADDED*
+*April 22, 2019*
 
 === Compatibility
 
