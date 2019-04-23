@@ -24,7 +24,7 @@ The LDAP Connector is compatible with:
 
 === Fixed in this Release
 
-* Fixed issue regarding transformation of an LDAPEntry to a string which was causing java.lang.ArrayIndexOutOfBoundsException.
+* Fixed an issue regarding transformation of an LDAPEntry to a string which was causing java.lang.ArrayIndexOutOfBoundsException.
  
 == 3.1.2 
 
