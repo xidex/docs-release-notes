@@ -13,7 +13,7 @@ Support Category: Select
 
 *Mule 4.1.1*
 
-== New Features and Enhancements
+=== New Features and Enhancements
 
 None.
 
@@ -31,7 +31,7 @@ None.
 
 *Mule 4.1.1*
 
-== New Features and Enhancements
+=== New Features and Enhancements
 
 None.
 
