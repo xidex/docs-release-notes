@@ -13,8 +13,8 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed an issue that prevented to read files that had a space on its name. (MULE-16729)
-* Fixed an issue that prevented virtual directories to be listed or use the polling source on them. (MULE-16625)
+* Fixed an issue that prevented reading files that had a space in its name. (MULE-16729)
+* Fixed an issue that prevented virtual directories to be listed or use the polling source in them. (MULE-16625)
 
 == 1.2.5
 
