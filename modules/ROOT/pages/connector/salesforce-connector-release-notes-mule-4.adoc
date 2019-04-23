@@ -7,7 +7,7 @@ Support Category: Select
 
 == 9.6.2
 
-*April 22, 2019*
+*April 23, 2019*
 
 [%header%autowidth.spread]
 |===
@@ -19,8 +19,18 @@ Support Category: Select
 
 === Fixed in this Release
 
-* Salesforce invokes Apex metadata request for each invoke. (SE-10925) - Now the connector does not fetch all the metadata to validate the connection, it only performs a Get Server Timstamp operation which should tell the app if reconnection is necesarry or not.
-* Vulnerability reported for Salesforce connector 9.2.2. (SE-9824) - A part of the vulnerabilities reported were fixed by upgrading some of the dependencies the connector uses.
+* Salesforce invokes Apex metadata request for each invoke. Now the connector does not fetch all the metadata to validate the connection, it only performs a Get Server Timstamp operation which should tell the app if reconnection is necessary or not. (SE-10925)
+* Vulnerability reported for Salesforce connector 9.2.2. A part of the vulnerabilities reported were fixed by upgrading some of the dependencies the connector uses. (SE-9824)
++
+Salesforce connector 9.6.2 now supports these library upgrades:
++
+** Xalan Java (xalan:xalan:2.7.0) upgraded to 2.7.2
+** Apache Commons FileUpload (commons-fileupload:commons-fileupload:1.3.1) upgraded to 1.4
+** Xerces (xerces:xercesImpl:2.8.0) upgraded to 2.12.0
+** ackson-Databind (com.fasterxml.jackson.core:jackson-databind:2.9.7) upgraded to 2.9.8
+** Apache Commons BeanUtils (commons-beanutils:commons-beanutils:1.7.0) upgraded to 1.9.2
+** OWASP AntiSamy (org.owasp.antisamy:antisamy:1.5.3) upgraded to 1.5.8
+** Guava: Google Core Libraries for Java (com.google.guava:guava:22.0) upgraded to 27.0.1-jre 
 
 === Known Issues
 
