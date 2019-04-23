@@ -162,7 +162,7 @@ In short, VersionData for the Version Content expects a Base64 format.
 
 === Fixed in this Release
 
-* The clearNullFields config parameter was not used properly and its functionality would have never worked. Fixed the way clearNullFields is handled and now it`s working as intended.
+* The clearNullFields config parameter was not used properly and its functionality would have never worked. Fixed the way clearNullFields is handled and now works as intended.
 * Fixed Salesforce Connector not reconnecting when a Bulk operation session expired. Fixed by changing the exception thrown in this case.
 * Retrieve record failure Bulk v2 not failing because of column delimiter. Fixed by adding handling for a column delimiter for the retrieve record failure Bulk v2.
 * Invalid Session ID and Reconnection Strategy works only after multiple invalid requests when the Mule connector performs a concurrent query. Fixed by implementing a new CachedBasicConnectionProvider with keep-alive functionality. 
@@ -420,7 +420,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 
 === Fixed in this Release
 
-*Salesforce connector disconnects and never connects back again*. The issue was fixed by making changes in the Reconnection Strategy.
+Salesforce connector disconnects and never connects back again. The issue was fixed by making changes in the Reconnection Strategy.
 
 
 == 9.3.0
