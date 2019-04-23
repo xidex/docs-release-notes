@@ -1,0 +1,51 @@
+= Runtime Manager Agent 2.3.0 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+_April 22, 2019_
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager Agent, version 2.3.0.
+
+== New Features and Enhancements
+
+This release contains the following new features or enhancements:
+
+* Secrets (clientId, clientSecret and Proxy password) can now be stored encrypted in the wrapper.conf file when an encryption key is provided at setup time.
+
+== Changes in This Release
+
+This release contains no changes to existing functionality.
+
+== Fixed Issues
+
+This release contains the following fixed issue:
+
+* HTTP 400 response when uploading metrics via mule agent for flow names with non-ASCII characters.
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+
+[NOTE]
+Only applicable to users with httpevents enabled and stored on an onprem database:
+
+* policy_violation_policy_id data type must be updated in the Database Schema.
+
+link:https://docs.mulesoft.com/runtime-manager/api-analytics-db-internal-handler.adoc | API Analytics DB Internal Handler
+
+
+== Compatibility Notes
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Software|Version
+|Mule Runtime| This agent version is compatible only with Mule 4.1.x versions.
+|Java      |JRE/JDK 1.8.0 (Recommended JRE 1.8.0_151/52)
+|OS       |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+|Runtime Manager|V2.10.0+
+|===
