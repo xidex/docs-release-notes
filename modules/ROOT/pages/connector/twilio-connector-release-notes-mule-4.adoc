@@ -3,9 +3,25 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 Twilio is an API cloud provider for voice and SMS communications for customers who want to use phone services as marketing leverage. The Mule Twilio Connector allows users to interact with the Twilio SMS API within the Mule Runtime.
+
+== 3.0.2
+*April 22, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.1
+|Twilio REST API |2010-04-01
+|===
+
+=== Fixed in this release
+
+* Several minor fixes
 
 == 3.0.1
 
@@ -44,7 +60,7 @@ This version provides support for Mule 4.
 
 * This version supports Mule 4.
 
-=== See Also
+== See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
