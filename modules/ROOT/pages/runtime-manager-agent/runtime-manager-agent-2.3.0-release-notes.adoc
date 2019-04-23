@@ -34,7 +34,7 @@ Only applicable to users with httpevents enabled and stored on an onprem databas
 
 * policy_violation_policy_id data type must be updated in the Database Schema.
 
-link:https://docs.mulesoft.com/runtime-manager/api-analytics-db-internal-handler.adoc[API Analytics DB Internal Handler]
+Please refer to the following documentation: link:https://docs.mulesoft.com/runtime-manager/api-analytics-db-internal-handler.adoc[API Analytics DB Internal Handler]
 
 
 == Compatibility Notes
