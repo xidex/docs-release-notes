@@ -5,13 +5,13 @@ endif::[]
 
 _April 22, 2019_
 
-This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager Agent, version 2.3.0.
+These are the new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager agent, version 2.3.0.
 
 == New Features and Enhancements
 
 This release contains the following new features or enhancements:
 
-* Secrets (clientId, clientSecret and Proxy password) can now be stored encrypted in the wrapper.conf file when an encryption key is provided at setup time.
+* Secrets (`clientId`, `clientSecret`, and `Proxy password`) can now be stored, encrypted, in the `wrapper.conf` file when an encryption key is provided at setup time.
 
 == Changes in This Release
 
@@ -30,11 +30,11 @@ There are no known limitations or workarounds in this release.
 == Upgrade Requirements
 
 [NOTE]
-Only applicable to users with httpevents enabled and stored on an onprem database:
+This is only applicable to users with HTTP events enabled and stored in an on premises database:
 
-* policy_violation_policy_id data type must be updated in the Database Schema.
+* `policy_violation_policy_id` data type must be updated in the Database Schema.
 
-Please refer to the following documentation: link:https://docs.mulesoft.com/runtime-manager/api-analytics-db-internal-handler.adoc[API Analytics DB Internal Handler]
+Please refer to the following documentation: xref:runtime-manager::sending-api-analytics-from-arm-to-db.adoc[API Analytics DB Internal Handler]
 
 
 == Compatibility Notes
@@ -42,8 +42,8 @@ Please refer to the following documentation: link:https://docs.mulesoft.com/runt
 [%header%autowidth.spread,cols="a,a"]
 |===
 |Software|Version
-|Mule Runtime| This agent version is compatible only with Mule 4.1.x and Mule 4.2.x versions.
-|Java      |JRE/JDK 1.8.0 (Recommended JRE 1.8.0_151/52)
+|Mule Runtime| This agent version is compatible only with Mule 4.1.x and Mule 4.2.x.
+|Java      |JRE/JDK 1.8.0
 |OS       |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
 |Runtime Manager|V2.10.0+
 |===
