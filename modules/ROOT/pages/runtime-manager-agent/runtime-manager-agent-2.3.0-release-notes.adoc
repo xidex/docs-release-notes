@@ -29,14 +29,12 @@ There are no known limitations or workarounds in this release.
 
 == Upgrade Requirements
 
-There are no upgrade requirements for this release.
-
 [NOTE]
 Only applicable to users with httpevents enabled and stored on an onprem database:
 
 * policy_violation_policy_id data type must be updated in the Database Schema.
 
-link:https://docs.mulesoft.com/runtime-manager/api-analytics-db-internal-handler.adoc | API Analytics DB Internal Handler
+link:https://docs.mulesoft.com/runtime-manager/api-analytics-db-internal-handler.adoc[API Analytics DB Internal Handler]
 
 
 == Compatibility Notes
@@ -44,7 +42,7 @@ link:https://docs.mulesoft.com/runtime-manager/api-analytics-db-internal-handler
 [%header%autowidth.spread,cols="a,a"]
 |===
 |Software|Version
-|Mule Runtime| This agent version is compatible only with Mule 4.1.x versions.
+|Mule Runtime| This agent version is compatible only with Mule 4.1.x and Mule 4.2.x versions.
 |Java      |JRE/JDK 1.8.0 (Recommended JRE 1.8.0_151/52)
 |OS       |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
 |Runtime Manager|V2.10.0+
