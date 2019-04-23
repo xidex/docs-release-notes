@@ -5,6 +5,40 @@ endif::[]
 
 Support Category: Select
 
+== 9.6.2
+
+*April 23, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Fixed in this Release
+
+* Salesforce invokes Apex metadata request for each invoke. Now the connector does not fetch all the metadata to validate the connection, it only performs a Get Server Timstamp operation which should tell the app if reconnection is necessary or not. (SE-10925)
+* Vulnerability reported for Salesforce connector 9.2.2. A part of the vulnerabilities reported were fixed by upgrading some of the dependencies the connector uses. (SE-9824)
++
+Salesforce connector 9.6.2 now supports these library upgrades:
++
+** Xalan Java (xalan:xalan:2.7.0) upgraded to 2.7.2
+** Apache Commons FileUpload (commons-fileupload:commons-fileupload:1.3.1) upgraded to 1.4
+** Xerces (xerces:xercesImpl:2.8.0) upgraded to 2.12.0
+** Jackson-Databind (com.fasterxml.jackson.core:jackson-databind:2.9.7) upgraded to 2.9.8
+** Apache Commons BeanUtils (commons-beanutils:commons-beanutils:1.7.0) upgraded to 1.9.2
+** OWASP AntiSamy (org.owasp.antisamy:antisamy:1.5.3) upgraded to 1.5.8
+** Guava: Google Core Libraries for Java (com.google.guava:guava:22.0) upgraded to 27.0.1-jre 
+
+=== Known Issues
+
+* Batch aggregator with Salesforce Connector executing an upsert operation does not return the right number of failed records when something went wrong. (SE-10501)
+* Salesforce connector replayId feature gap between 3.x and 4.x. (SE-11258)
+* Salesforce connector autoreplays after restarting the application in CloudHub. (SE-9992)
+
+
 == 9.6.1
 
 *April 11, 2019*
@@ -128,7 +162,7 @@ In short, VersionData for the Version Content expects a Base64 format.
 
 === Fixed in this Release
 
-* The clearNullFields config parameter was not used properly and its functionality would have never worked. Fixed the way clearNullFields is handled and now it`s working as intended.
+* The clearNullFields config parameter was not used properly and its functionality would have never worked. Fixed the way clearNullFields is handled and now works as intended.
 * Fixed Salesforce Connector not reconnecting when a Bulk operation session expired. Fixed by changing the exception thrown in this case.
 * Retrieve record failure Bulk v2 not failing because of column delimiter. Fixed by adding handling for a column delimiter for the retrieve record failure Bulk v2.
 * Invalid Session ID and Reconnection Strategy works only after multiple invalid requests when the Mule connector performs a concurrent query. Fixed by implementing a new CachedBasicConnectionProvider with keep-alive functionality. 
@@ -386,7 +420,7 @@ The problem was solved by adding missing error handling for reconnection due to 
 
 === Fixed in this Release
 
-*Salesforce connector disconnects and never connects back again*. The issue was fixed by making changes in the Reconnection Strategy.
+Salesforce connector disconnects and never connects back again. The issue was fixed by making changes in the Reconnection Strategy.
 
 
 == 9.3.0
