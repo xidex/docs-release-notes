@@ -2,16 +2,32 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, ldap, active directory, connector
 
-*November 2017*
-
-_Select_
+Support Category: Select
 
 The Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network. The LDAP connector allows Mule applications to interact with LDAP servers.
 
 Guide: xref:3.9@mule-runtime::ldap-connector.adoc[LDAP Connector] +
 Reference: https://mulesoft.github.io/mule-ldap-connector/[Mule LDAP Connector]
+
+== 2.2.3
+
+*April 12, 2019*
+
+=== Compatibility
+
+The LDAP Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Serice|Version
+|Mule Runtime|3.5.0 and later
+|Java|1.7 and later
+|===
+
+=== Fixed in this Release
+
+* Returned attributes names were normalized to lowercase. This fix prevents the conversion of attributes names to lowercase.  (SE-1147)
 
 == 2.2.2
 
@@ -165,5 +181,5 @@ None.
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum].
-* https://support.mulesoft.com[Contact MuleSoft Support].
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
