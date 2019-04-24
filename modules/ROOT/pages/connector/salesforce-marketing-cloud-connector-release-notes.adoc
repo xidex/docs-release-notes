@@ -9,6 +9,29 @@ Support Category: Select
 
 The Salesforce Marketing Cloud connector allows you to connect to the Salesforce Marketing Cloud web services using the https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/index-api.htm[Salesforce Marketing Cloud API]. The connector exposes convenient methods for managing objects and calling services provided by Salesforce Marketing Cloud.
 
+== 1.2.0
+
+*April 24, 2019*
+
+=== Compatibility
+
+The Salesforce Marketing Cloud Connector Version 1.2.0 is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|3.5.2 and later
+|Marketing Cloud API|v43
+|===
+
+=== Features
+
+* Support for Salesforce Marketing Cloud API v43
+
+=== Fixed in this Release
+
+* Salesforce Marketing Cloud Connector cannot retrieve DataExtensionObject(SE-10134) - This issue has been fixed by adding support for the ClientId property in the connector's config and also adding support for SQL like queries in the Retrieve operation. Now an user is able to select Native Query as the query to be used with this operation and he will be able to write queries on custom data extensions such as: SELECT PRODUCT_TYPE_CODE, MSG_CONTENT, CREATION_DATE  from DataExtensionObject[My_Custom_Data_Extension] WHERE CREATION_DATE > '2019-04-24T06:11:00.000+03:00'
+
 == 1.1.1
 
 *April 16, 2019*
