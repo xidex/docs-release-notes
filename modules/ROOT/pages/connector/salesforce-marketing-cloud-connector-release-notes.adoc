@@ -30,7 +30,16 @@ The Salesforce Marketing Cloud Connector Version 1.2.0 is compatible with:
 
 === Fixed in this Release
 
-* Salesforce Marketing Cloud Connector cannot retrieve DataExtensionObject(SE-10134) - This issue has been fixed by adding support for the ClientId property in the connector's config and also adding support for SQL like queries in the Retrieve operation. Now an user is able to select Native Query as the query to be used with this operation and he will be able to write queries on custom data extensions such as: SELECT PRODUCT_TYPE_CODE, MSG_CONTENT, CREATION_DATE  from DataExtensionObject[My_Custom_Data_Extension] WHERE CREATION_DATE > '2019-04-24T06:11:00.000+03:00'
+* Salesforce Marketing Cloud Connector cannot retrieve `DataExtensionObject`. This issue has been fixed by adding support for the `ClientId` property in the connector's configuration and also adding support for SQL-like queries in the `Retrieve` operation. (SE-10134)
++
+Users can now select *Native Query* as the query to be used with this operation and write queries on custom data extensions.
++
+For example: 
++
+[source,example]
+----
+SELECT PRODUCT_TYPE_CODE, MSG_CONTENT, CREATION_DATE from DataExtensionObject[My_Custom_Data_Extension] WHERE CREATION_DATE > '2019-04-24T06:11:00.000+03:00'
+----
 
 == 1.1.1
 
@@ -115,16 +124,16 @@ The Version 1.0.0 Salesforce Marketing Cloud connector is compatible with:
 
 == Known Issues
 
-=== Providing a Subclass as Type to a Complex Field
+=== Provide a Subclass as Type to a Complex Field
 
 * Some objects have complex fields that represent a base class from Salesforce Marketing. So, if instead of the base class, you want to pass a subclass of it as value to that field, that is not possible
 because the connector cannot recognize the fields that do not belong to the base class. You must manually map those fields in Transform Message and add a field named "concreteClassType" with the name of the subclass as value. For more information and an example, read the User Guide.
 
-=== Retrieving Fields From a Hierarchy Not Possible
+=== Retrieve Fields From a Hierarchy Not Possible
 
 * Querying fields that are lower than level 1 in the hierarchy is not supported by the API. For example,queries like "Select Attributes.Name from Subscriber" because "Name" is at level 2 in the hierarchy.
 
-=== Server Results that Contain an Automation Object Structure Cause Exception to Be Thrown
+=== Server Results that Contain an Automation Object Structure Causes an Exception
 
 * When performing operations on an Automation object, the result of the operation causes an exception to be thrown because the response has a field that cannot be parsed by the API. To bypass this, make those types of operations asynchronous. For more information and an example on this issue, please read the User Guide.
 
