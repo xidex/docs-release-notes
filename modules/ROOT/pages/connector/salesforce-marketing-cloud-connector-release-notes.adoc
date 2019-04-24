@@ -26,13 +26,13 @@ The Salesforce Marketing Cloud Connector Version 1.2.0 is compatible with:
 
 === Features
 
-* Support for Salesforce Marketing Cloud API v43
+* Support for Salesforce Marketing Cloud API v43.
 
 === Fixed in this Release
 
 * Salesforce Marketing Cloud Connector cannot retrieve `DataExtensionObject`. This issue has been fixed by adding support for the `ClientId` property in the connector's configuration and also adding support for SQL-like queries in the `Retrieve` operation. (SE-10134)
 +
-Users can now select *Native Query* as the query to be used with this operation and write queries on custom data extensions.
+Users can now select *Native Query* as the query to use with this operation, and write queries on custom data extensions.
 +
 For example: 
 +
