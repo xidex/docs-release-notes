@@ -11,6 +11,8 @@ The Email connector can send and retrieve email messages over the standard email
 
 *April 22, 2019*
 
+=== Compatibility
+
 [%header%autowidth.spread]
 |===
 |Software |Version
@@ -21,7 +23,7 @@ The Email connector can send and retrieve email messages over the standard email
 
 === Fixed Issues
 
-* Fixed an issue that caused NullPointerException when polling a mailbox folder. (https://www.mulesoft.org/jira/browse/MULE-16746[MULE-16746])
+* Fixed an issue that caused a 'NullPointerException' when polling a mailbox folder. (https://www.mulesoft.org/jira/browse/MULE-16746[MULE-16746])
 
 == 1.1.3
 
