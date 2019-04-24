@@ -11,7 +11,7 @@ These are the new features and enhancements, known limitations, issues, and fixe
 
 This release contains the following new features or enhancements:
 
-* API Manager secrets (`clientId`, `clientSecret`, and `Proxy password`) can now be stored, encrypted, in the `wrapper.conf` file when an encryption key is provided at setup time.
+* Secrets (`clientId`, `clientSecret`, and `Proxy password`) can now be stored, encrypted, in the `wrapper.conf` file when an encryption key is provided at setup time.
 
 == Changes in This Release
 
