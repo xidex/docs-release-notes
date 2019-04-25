@@ -4,9 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: cassandra
 
-*July 2018*
-
-_Select_
+Support Category: Select
 
 The Anypoint Cassandra connector provides the capability to connect a Mule application to a Cassandra database or cluster.
 
@@ -14,13 +12,12 @@ The Anypoint Cassandra connector provides the capability to connect a Mule appli
 
 *April 26, 2019*
 
-Cassandra connector is available on Mule 4.0.
-
 == Compatibility
 
 [%header%autowidth.spread]
 |===
 |Application/Service |Version
+|Mule Runtime |4.0 and later
 |Cassandra database or cluster | 1.2 and later
 |CQL spec | 3.x
 |Mule Runtime | 4.0 and later
@@ -28,7 +25,9 @@ Cassandra connector is available on Mule 4.0.
 
 == Fixed in this release 
 
-* Cassandra insert into timestamp field type failing with error: com.datastax.driver.core.exceptions.CodecNotFoundException: Codec not found for requested operation: [timestamp <-> java.lang.String](SE-10920) - This issue was fixed by converting the string date into a date accepted by the Cassandra driver.
+* Fixed an issue where the timestamp field was presenting the following error:
+com.datastax.driver.core.exceptions.CodecNotFoundException: Codec not found for requested operation: [timestamp <-> java.lang.String](SE-10920) 
+The string date is now converted into a date accepted by the Cassandra driver. (SE-11613) 
 
 == 3.1.0
 
