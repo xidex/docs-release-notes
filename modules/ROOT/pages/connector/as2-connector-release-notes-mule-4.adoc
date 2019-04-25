@@ -24,7 +24,7 @@ The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 co
 
 === Fixed in this Release
 
-* The connector sent always the connector signed with SHA256.
+* The connector always sent the content signed with SHA256.
 
 == 4.0.2
 
