@@ -3,7 +3,11 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
+This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] documentation for more information.
+
+== April 25, 2019
+
+Visualizer editors can create and share views across the team, so the team has a dynamic and consistent view of the app network architecture. 
 
 == April 5, 2019
 
