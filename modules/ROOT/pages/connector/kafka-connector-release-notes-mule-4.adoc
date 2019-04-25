@@ -22,8 +22,7 @@ The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messa
 
 === Fixed in this Release
 
-* SE-11337 - Can't stop Kafka consumer flow
-* This release provides internal fixes and does not affect customer interfaces.
+* Can't stop Kafka consumer flow. See https://support.mulesoft.com/s/article/How-To-Stop-Or-Start-Flows-In-Mule-4-x-Programmatically[How To Stop Or Start Flows In Mule 4.x Programmatically]. (SE-11337)
 
 == 3.0.1
 
