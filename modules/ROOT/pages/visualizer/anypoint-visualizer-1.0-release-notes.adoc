@@ -3,7 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] for more information.
+This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] documentation for more information.
+
+== April 25, 2019
+
+* Visualizer editors can define views so that everyone in the organization has a dynamic and consistent view of the architecture for each project. 
+* All Visualizer users have a private view, which provides a complete picture of all the apps they have access to.
+
+See xref:visualizer::view.adoc[Visualizer Views] for more information.
 
 == April 5, 2019
 
