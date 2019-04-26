@@ -5,6 +5,15 @@ endif::[]
 
 Support Category: Select
 
+== 1.2.5
+
+*April 26, 2019*
+
+=== New Features and Enhancements
+
+* Connector now implements its own reconnection logic.
+* Custom way of cleaning consumer's listeners.
+
 == 1.2.4
 
 *April 4, 2019*
