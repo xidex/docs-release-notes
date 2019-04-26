@@ -6,6 +6,47 @@ endif::[]
 
 // Product_Name Version number/date Release Notes
 
+== 1.1.0
+
+*Apr 23, 2019*
+
+=== Min Mule Version
+*Mule 4.1.1*
+
+=== Known Limitations and Workarounds
+
+None
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| EE-6623  | Reduce the size of the mule-secure-configuration-property-module by removing dependency to BC
+| AGW-2709 | Review: Encryption is adding 4MB to each policy.
+| AGW-2405 | Extract secure properties encryption code into runtime module
+| EE-6260  | Secure Configuration Properties should have correct display model for File Attribute
+|===
+
+== 1.0.2
+
+*Jul 25, 2018*
+
+=== Min Mule Version
+*Mule 4.1.1*
+
+=== Known Limitations and Workarounds
+
+None
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| MULE-15392 | NPE when using secure-properties and mode is not set
+|===
+
 == 1.0.1
 
 *May 2, 2018*
