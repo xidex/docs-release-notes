@@ -4,6 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, mule oauth provider, oauth 2.0, policy, release notes
 
+== 1.2.0
+*Apr 26, 2019*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+* Introduces support to encrypt sensitive information related to the policy. The runtime version needs to support encryption and needs to be properly configured. Encryption is supported since Mule Runtime v4.2.0.
+* The default configuration has been modified to avoid propagating or returning policy headers unless explicitly configured by checking the "Expose headers" option.
+* Performance improvements.
+
 == 1.1.4
 
 *Feb 22, 2019*
