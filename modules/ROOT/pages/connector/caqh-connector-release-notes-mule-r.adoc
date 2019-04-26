@@ -1,0 +1,39 @@
+= CAQH Connector Release Notes - Mule 4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Support Category: Premium
+
+<Add some introduction of the connector here.>
+
+== Version???
+
+*May 2, 2019  -- verify this date!*
+// Verify this date pls
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|CAQH ProView| |
+|CAQH DirectAssure| |
+|===
+
+=== Features
+
+* <Add features here>.
+
+=== Fixed in this Release
+<anything that's fixed in this release here>
+
+*March 11, 2015*
+
+MuleSoft recommends that you install the latest version of Studio.
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
