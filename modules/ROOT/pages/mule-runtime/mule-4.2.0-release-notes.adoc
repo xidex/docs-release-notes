@@ -29,20 +29,9 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 |Issue |Description
 | MULE-16742 | XML attachment is corrupted when sent as multipart/form-data 
 | MULE-16735 | XML transformation to JSON fails when ? present in large payload 
-| MULE-16730 | Interception API: Validation all throws NullPointerException 
-| MULE-16717 | Error generating DSL for extension with annotated parameters 
 | MULE-16709 | Parallel ForEach should have index and rootMessage Variables 
-| MULE-16703 | Missing validation in the SDK allows invalid parameters. 
 | MULE-16696 | Schedulers unavailable after disposing policies (rarely) 
-| MULE-16688 | When using properties placeholder on import tag deployment properties are not considered 
 | MULE-16668 | Excessive validations on pooled connections. 
-| MULE-16622 | Fix flaky com.mulesoft.mule.test.batch.BatchStopTestCase.stopFlowStopsDispatching 
-| MULE-16528 | remove `flatMap` in foreach 
-| MULE-16527 | Remove `flatMap` in UntilSuccesful 
-| MULE-16463 | Remove `flatMap` in static <flow-ref> 
-| MULE-16462 | Remove `flatMap` in ModuleFlowProcessingPhase$FlowProcessor 
-| MULE-16461 | Remove `concatMap` in XML SDK chain execution 
-| MULE-16125 | IntelliJ fails when running SDK annotation processor with JDK 11 
 | MULE-15752 | InjectParamsFromContextServiceMethodInvoker makes excessive registry lookups 
 | MULE-15194 | Race condition is produced when trying to bind a connection in a high load scenario 
 | EE-6700 | Huge application creates OOM when redeploying 
@@ -54,7 +43,7 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 [%header,cols="15a,85a"] 
 |===
 |Issue |Description
-| MULE-15586 | `lookup` function in DataWeave now has a timeout. The timeout for a specific lookup call may be increased by providing the new value with a third parameter (i.e.: lookup(vars.flow, payload, 10000).
+| MULE-15586 | "lookup` function in DataWeave now has a timeout. The timeout for a specific lookup call may be increased by providing the new value with a third parameter (i.e.: lookup(vars.flow, payload, 10000).
 | MULE-15730 | TLS keystore entries must now reference at least one key to use or reference a key alias. Using an invalid keystore will result in an initialisation failure.
 |=== 
  
@@ -115,7 +104,6 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | MULE-16298 | Redeployment fails due to file descriptor leaks when loading class model loader 
 | MULE-16294 | Paged Operations doesn't apply Connection Lifecycle correctly 
 | MULE-16289 | raise-error is not setting the description as payload when used in a policy. 
-| MULE-16288 | Fix flaky ValidShutdownTimeoutRequestResponseTestCase and ExpiredShutdownTimeoutRequestResponseTestCase 
 | MULE-16282 | ProcessingStrategies not working when scheduler raises REE 
 | MULE-16281 | Tests for Emitter ProcessingStrategy with RateLimit policy scenario 
 | MULE-16275 | Fix performance degradation introduced by MULE-16040 
@@ -190,7 +178,6 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | MULE-15730 | Keystores can feature no key entries 
 | MULE-15728 | Resource is not found when declaring extension in domain project. 
 | MULE-15716 | Leaks through hard references to types, classloaders and schedulers 
-| MULE-15709 | Fix JdkVersionUtilsTestCase 
 | MULE-15708 | async in sub-flow must use its own processingStrategy instance 
 | MULE-15705 | Configuration#defaultResponseTimeout not being initialized with lazyInit 
 | MULE-15694 | Variables and Payload values set inside UntilSuccessful are not propagated outside of it in case of retry exhausted 
@@ -276,7 +263,6 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | MULE-15264 | Message attachments have no order 
 | MULE-15255 | Sources onResponse not invoked when using a RedeliveryPolicy 
 | MULE-15249 | CaseInsensitiveMultiMap#keySet is not case insensitive 
-| MULE-15242 | Fix flaky OnError* test cases that use notifications 
 | MULE-15235 | Connection not released when output is Result<InputStream> 
 | MULE-15215 | Classloading error when having xerces as mule app dependency 
 | MULE-15207 | Apps can't be undeployed in Windows if depending on a custom lib 
@@ -432,7 +418,6 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | EE-6558 | Mule 4 AMQP Listener scenario stops working after a few seconds 
 | EE-6548 | Fix ConcurrentModificationExceptions of Kryo serializer on Java 11 
 | EE-6539 | [REGRESSION] Error handler not working properly on a policy 
-| EE-6535 | Fix BatchStopTestCase flaky test 
 | EE-6455 | race condition on batch jobs with consumable variables 
 | EE-6435 | bti:transaction-manager not being lazy initialized 
 | EE-6421 | On step commit cursor providers are incorrectly closed 
@@ -447,7 +432,6 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | EE-6298 | Batch throws NPE if placed in a subflow 
 | EE-6294 | Wrong length serialized by Kryo for TypedValues of InputStream 
 | EE-6292 | Kryo serialization fails when deserializing old objects 
-| EE-6289 | Fix SpringUsingSecurePropertiesTestCase (ee-distro) 
 | EE-6272 | DB errors in a batch step breaks the stream in DW 
 | EE-6265 | Cannot convert InputStream to String in after block of policy source 
 | EE-6248 | Fluent-hc dependency is used in cluster discoverySpi and has to be added to the distro 
@@ -521,7 +505,6 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | MULE-15182 | XML SDK support stereotypes in parameters 
 | MULE-15154 | Until successfull should support 0 as a maxRetries value 
 | MULE-15095 | Overly verbose output 
-| MULE-15035 | Allow test runner to dynamically add test resources to the region classloader 
 | MULE-14918 | Declare more granular stereotypes to all the Extension Components 
 | MULE-14913 | Allow Extension developer to mark a parameter as "component ID" 
 | MULE-14884 | Add support for file-level encryption for Secure Configuration Properties 
