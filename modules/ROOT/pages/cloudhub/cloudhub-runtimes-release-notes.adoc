@@ -8,7 +8,7 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 == April 26, 2019
 
-4.1.1-4.1.4 Runtime Update:
+4.1.2-4.1.4 Runtime Update:
 
 * Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. (SE-11483)
 
