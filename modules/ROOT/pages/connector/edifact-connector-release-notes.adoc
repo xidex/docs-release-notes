@@ -5,26 +5,27 @@ endif::[]
 
 Support Category: Premium
 
+The EDIFACT EDI connector lets you convert EDIFACT messages to and from DataWeave-compatible representations using lists and maps.
+
 == 1.3.4
 
 *April 2019*
 
 === Fixed in this Release
 
-* Fix infinite loop when missing UNT segment. (SE-10442)
-* Add specific error message when missing UNT segment. (SE-10442)
-* Support integer value types for implied decimal format. (SE-11494)
-* Correct escape character handling on read. (SE-9795)
-* Eliminate NPE when space value set for delimiter character. (SE-11312)
-* Change shaded pacakge name for debugger compatibility. (SE-10796)
+* Fixed the infinite loop when missing a UNT segment. (SE-10442)
+* Added a specific error message when missing a UNT segment. (SE-10442)
+* Added support for integer value types for implied decimal format. (SE-11494)
+* Corrected escape character handling on read. (SE-9795)
+* Eliminated NPE when space value is set for a delimiter character. (SE-11312)
+* Changed the shaded package name for debugger compatibility. (SE-10796)
 
 === Compatibility
 
-EDIFACT EDI Connector v1.3.4 is compatible with the following:
 
 [%header,cols="30a,70a"]
 |===
-|Application/Service |Version
+|Application or Service |Version
 |Mule Runtime |Mule 3.6.0 and later
 |EDIFACT |d93a, d95b, d96a, d97a, d98b, d99a, d99b, d00a, d01b, d02a, and d03a
 |===
