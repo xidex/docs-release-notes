@@ -10,41 +10,41 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 4.1.1-4.1.4 Runtime Update:
 
-* Fix `NullPointerException` reported in the logs by some connectors (SE-11483)
-* Some inbound request failures are not taken into account (SE-10544)
-* Visualizer properties are not picked up from `mule-app.properties` file (SE-10374)
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. (SE-11483)
+* Some inbound request failures are not taken into account in Monitoring dashboards. (SE-10544)
+* Visualizer properties are not picked up from the `mule-app.properties` file. (SE-10374)
 
 
 3.9.0 Runtime Update:
 
-* Fix `NullPointerException` reported in the logs by some connectors (SE-11483)
-* Some inbound request failures are not taken into account (SE-10544)
-* Visualizer properties are not picked up from `mule-app.properties` file (SE-10374)
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. (SE-11483)
+* Some inbound request failures are not taken into account in Monitoring dashboards. (SE-10544)
+* Visualizer properties are not picked up from the `mule-app.properties` file. (SE-10374)
 
 == April 25, 2019
 
 4.1.5 Runtime Update:
 
-* HTTP Listener discloses full URL in error response [SE-10302]
-* `NullPointerException` reported in the logs by some connectors (SE-11483)
+* HTTP Listener discloses full URL in error response. [SE-10302]
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. (SE-11483)
 
 3.9.2 Runtime Update:
 
-* RAML with date-only/datetime-only fails to parse in APIKit [SE-10737]
-* String interpolation in logger component fails on debug mode [SE-11094]
-* Login screen in API Console disappears [SE-8445]
-* Fix `NullPointerException` reported in the logs by some connectors (SE-11483)
-* Some inbound request failures are not taken into account (SE-10544)
-* Visualizer properties are not picked up from `mule-app.properties` file (SE-10374)
+* RAML with date-only/datetime-only fails to parse in APIKit. [SE-10737]
+* String interpolation in logger component fails on debug mode. [SE-11094]
+* Login screen in API Console disappears. [SE-8445]
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. (SE-11483)
+* Some inbound request failures are not taken into account in Monitoring dashboards. (SE-10544)
+* Visualizer properties are not picked up from the `mule-app.properties` file. (SE-10374)
 
 3.9.1 Runtime Update:
 
-* RAML with date-only/datetime-only fails to parse in APIKit [SE-10737]
-* String interpolation in logger component fails on debug mode [SE-11094]
-* Login screen in API Console disappears [SE-8445]
-* Fix `NullPointerException` reported in the logs by some connectors (SE-11483)
-* Some inbound request failures are not taken into account (SE-10544)
-* Visualizer properties are not picked up from `mule-app.properties` file (SE-10374)
+* RAML with date-only/datetime-only fails to parse in APIKit. [SE-10737]
+* String interpolation in logger component fails on debug mode. [SE-11094]
+* Login screen in API Console disappears. [SE-8445]
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. (SE-11483)
+* Some inbound request failures are not taken into account in Monitoring dashboards. (SE-10544)
+* Visualizer properties are not picked up from the `mule-app.properties` file. (SE-10374)
 
 
 == April 8, 2019
