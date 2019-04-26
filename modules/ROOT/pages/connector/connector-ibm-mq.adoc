@@ -11,7 +11,7 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Connector now implements it's own reconnection logic.
+* Connector now implements its own reconnection logic.
 * Custom way of cleaning consumer's listeners.
 
 == 1.2.4
