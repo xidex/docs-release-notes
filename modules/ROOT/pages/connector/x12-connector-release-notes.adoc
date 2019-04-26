@@ -11,19 +11,17 @@ Support Category: Premium
 
 === Fixed in this Release
 
-* Support integer value types for implied decimal format. (SE-11494)
-* Correctly handle multiple HIPAA transaction sets in a group. (SE-9043)
-* Identify the ISA segment when it's the cause of a write error. (SE-10796)
-* Change shaded pacakge name for debugger compatibility. (SE-10796)
-* Add transaction set information to error message for schema not found. (SE-7935)
+* Added support for integer value types for implied decimal format. (SE-11494)
+* Multiple HIPAA transaction sets in a group are now correctly handled. (SE-9043)
+* Identified the ISA segment when it’s the cause of a write error. (SE-10796)
+* Changed the shaded package name for debugger compatibility. (SE-10796)
+* Added the transaction set information to the error message for 'schema not found'. (SE-7935)
 
 === Compatibility
 
-X12 EDI Connector v1.3.4 is compatible with the following:
-
 [%header,cols="30a,70a"]
 |===
-|Application/Service |Version
+|Application or Service |Version
 |Mule Runtime |Mule 3.6.0 and later
 |X12 |003010, 003020, 003030, 003040, 003050, 003060, 003070, 004010, 004020, 004030, 004040, 004050, 004060, 005010, 005020, 005030, 005040, 005050, and 006020
 |HIPAA |005010X212, 005010X214B3, 005010X217, 005010X218, 005010X220A1, 005010X221A1, 005010X222A1, 005010X222A2, 005010X223A2, 005010X223A3, 005010X224A2, 005010X224A3, and 005010X279A1
