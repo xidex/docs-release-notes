@@ -3,6 +3,19 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.2
+
+*April 26, 2019*
+
+=== New Features and Enhancements
+
+None.
+
+=== Fixed Issues
+
+* Upgrade Spring to 5.1.6.
+* Upgrade Apache Commons Lang to 3.8.1.
+
 == 1.2.1
 
 *January 14, 2019*
