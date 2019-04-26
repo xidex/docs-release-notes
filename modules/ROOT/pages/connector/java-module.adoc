@@ -13,8 +13,8 @@ None.
 
 === Fixed Issues
 
-* Upgrade Spring to 5.1.6
-* Upgrade Apache Commons Lang to 3.8.1
+* Upgrade Spring to 5.1.6.
+* Upgrade Apache Commons Lang to 3.8.1.
 
 == 1.2.1
 
