@@ -9,6 +9,26 @@ The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connec
 
 xref:connectors::netsuite/netsuite-openair-connector.adoc[NetSuite OpenAir Connector User Guide]
 
+== 2.0.2 
+
+*April 26, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.1.0 and later
+|===
+
+=== Fixed in this Release
+
+* The connector will now work on Java 9 to 12, using Mule Runtime 4.2.0.
+
+=== Known Issues
+
+* Metadata in Flow Designer - Although metadata works under Anypoint Studio, Design Center displays incomplete structures. The connector can still be used, but metadata cannot be used as a guide.
+
 == 2.0.1 
 
 *March 7, 2019*
