@@ -15,7 +15,7 @@ Support Category: Premium
 * Multiple HIPAA transaction sets in a group are now correctly handled. (SE-9043)
 * Identified the ISA segment when it’s the cause of a write error. (SE-10796)
 * Changed the shaded package name for debugger compatibility. (SE-10796)
-* Added the transaction set information to the error message for 'schema not found'. (SE-7935)
+* Added the transaction set information to the error message for "schema not found". (SE-7935)
 
 === Compatibility
 
