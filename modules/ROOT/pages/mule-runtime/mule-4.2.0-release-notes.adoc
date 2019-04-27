@@ -2,24 +2,30 @@
 = Mule Runtime 4.2.0 Release Notes 
 :keywords: mule, 4.2.0, runtime, release notes 
  
-** 
+Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes.
  
-// // <All sections are required. If there is nothing to say, then the body text in the section should read, â€œNot applicable.â€ 
-link:http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-4.2.0.zip[Download Mule 4.2.0 EE Distribution] 
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
 == New Features and Enhancements 
+
+=== Mule Runtime Features and Enhancements
+
+* Java 11 support
+* Fedramp support
+* Performance improvements
+* Faster start time
  
-* <TO_COMPLETE> 
+=== API Gateway Features and Enhancements
+
+* Improved security, which allows for the encryption of credentials used to configure the connection between the runtime and Anypoint Platform, as well as encrypting all sensitive information stored by the Gateway, such as policies configuration and contracts.
+* Analytics can now be configured to send data both to Anypoint Platform and to process the events through Anypoint Runtime Manager. The latest allows setting third-party systems such as Splunk to consume the Analytics info.
+* This version introduces support to use Mule 4.0’s OAuth 2.0 Provider for the “OAuth 2.0 Access Token Enforcement Using Mule OAuth Provider” policy.
+* Performance improvements on policies and proxy applications.
+* To reduce log verbosity, some logs where moved from INFO to DEBUG level:
+** `{} events from {} were sent to analytics ingest`
+** `Starting API Gateway runnables`
  
+//== Changes 
  
-Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes: 
- 
-* <TO_COMPLETE> 
- 
- 
-== Changes 
- 
-* <TO_COMPLETE> 
+//* <TO_COMPLETE> 
  
  
 == Known Limitations and Workarounds 
@@ -37,6 +43,13 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | EE-6700 | Huge application creates OOM when redeploying 
 | EE-6104 | Wrapper properties are not passed through the CLI if not accompanied by Mule properties 
 |=== 
+
+=== API Gateway Known Limitations and Workarounds
+
+The HTTP Caching Policy v1.0.0 has been deprecated and is not compatible with Mule Runtime v4.2.0. Customers need to use or upgrade to v1.0.1 of the policy. The latest version introduces many bug fixes as well as performance improvements. Version 1.0.0 will continue to work with v4.1.x of the Runtime but customers are encouraged to upgrade to v1.0.1.
+
+//TODO: CHANGE LINK TO LATEST RUNTIME MANAGER RNS WHEN AVAILABLE
+Customers that process analytic events through Anypoint Runtime Manager and send them to an external database need to run a migration because one field type was modified. It was modified to fix a bug with automated policies and for the reporting of policy violations. See xref:runtime-manager-release-notes.adoc[Anypoint Runtime Manager Release Notes].
  
 == Upgrade Requirements 
  
@@ -534,6 +547,19 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes:
 | EE-6020 | AMQP: Create a global disable flag for fallback creation of AMQP exchange/queues/bindings 
 | EE-5991 | Allow the user to configure cluster datasource as cluster properties 
 | EE-5893 | Support file-level encryption for configuration property files 
+| AGW-2927 | Fix policy violation analytics for automated policies
+| AGW-2848 | Fix to avoid returning payload when gatekeeper blocks an API 
+| AGW-2826 | Exception fixed when disposing runtime in slave mode
+| AGW-2810 | Content-Length header is not used in Analytics payload size when the header is set manually
+| AGW-2794 | The IP is not being sent to analytics when the proxy uses HTTP Connector v1.4.1 and v1.4.2
+| AGW-2715 | Restarting runtime with contracts is deleting them until the next polling cycle
+| AGW-2571 | When the HTTP Requester is configured in a sub-flow, operation policies are not applied to it
+| AGW-2457 | Fixed cannot deserialize with a null classloader error
+| AGW-2409 | Parallel requests to an API with same x-correlation-id breaks policy engine
+| AGW-2305 | Downloading template with TRACE enabled logs the content of the file
+| AGW-2852 | Reset contracts local db in case of corruption
+| AGW-2171 | Reviewed runtime behavior when an API is returned as removed from API Manager
+| AGW-2088 | Fixed elements showing as unknown when importing proxy to Studio
 |=== 
  
 == Compatibility Testing Notes 
