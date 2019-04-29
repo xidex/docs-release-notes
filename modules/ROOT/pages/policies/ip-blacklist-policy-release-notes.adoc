@@ -4,6 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, ip-blacklist, policy, release notes
 
+== 1.2.0
+
+*Apr 26, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Introduces support to encrypt sensitive information related to the policy. The runtime version needs to support encryption and needs to be properly configured. Encryption is supported since Mule Runtime v4.2.0.
+* Performance improvements.
+
 == 1.1.1
 
 *Jun 05, 2018*
