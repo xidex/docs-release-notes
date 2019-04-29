@@ -11,7 +11,7 @@ These are the new features and enhancements, known limitations, issues, and fixe
 
 This release contains the following new features or enhancements:
 
-* Starting with Mule 4.2.0 and 3.9.3, API Manager Secrets (`clientId`, `clientSecret`, and `Proxy password`) can be stored, encrypted, in the `wrapper.conf` file when an encryption key is provided at setup time. For more information, see xref:2.x@api-manager::api-gateway-encryption-mule4.adoc[API Gateway Encryption on Mule 4]
+* Starting with Mule 4.2.0 and 3.9.3, API Manager Secrets (`clientId`, `clientSecret`, and `Proxy password`) can be stored, encrypted, in the `wrapper.conf` file when an encryption key is provided at setup time. For more information, see xref:2.x@api-manager::api-gateway-encryption-mule4.adoc[API Gateway Encryption on Mule 4] and xref:2.x@api-manager::api-gateway-encryption-mule3.adoc[API Gateway Encryption on Mule 3].
 
 == Changes in This Release
 
