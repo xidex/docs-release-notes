@@ -6,9 +6,6 @@ endif::[]
 
 These are the release notes for the install bundle for Runtime Fabric. In addition to these release notes, see the xref:runtime-fabric/runtime-fabric-release-notes.adoc[Anypoint Runtime Fabric release notes] and the complete xref:1.2@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
-== x.x.x - April 30, 2019
-
-
 == 1.0.6 - March 10, 2019
 
 This release includes the following fixes and enhancements:
