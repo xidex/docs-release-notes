@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_April 25, 2019_
+_April 30, 2019_
 
 This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager Agent, version 1.12.2.
 
