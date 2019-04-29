@@ -21,7 +21,7 @@ These release notes cover the following versions of these features:
 == 2.4.6
 *April 20, 2019*
 
-This release includes two new features and several fixes.
+This release includes two new features and several fixes. There is also one known issue
 
 === New Features
 
@@ -42,6 +42,10 @@ This release includes two new features and several fixes.
 * The mocking service would fail if an API specification used the `example` facet, rather than the `examples` facet, to include a NamedExample fragment.
 // SE-11175
 *  The API console might display all examples for all methods that were in a specification, not just the examples for the selected method.
+
+== Known Issue
+// DOCS-4552
+Because of a bug in a third-party library that is used for the validation of the XML in XSD schemas, the API editor can be inconsistent in displaying the error message `Could not validate XSD schema`. For example, you might or might not see the error message whenever you open a particular XSD schema.
 
 == 2.4.5
 *April 6, 2019*
