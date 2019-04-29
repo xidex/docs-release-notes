@@ -5,6 +5,19 @@ endif::[]
 
 Support Category: Select
 
+== 1.2.3
+
+*April 29, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* Fixed a bug that made the list operation fail when listing a directory found a file which was later moved or deleted before reading it. (MULE-16766)
+* Fixed a bug that made the listener abort a poll when failing to list a file. Now the connector either lists all files, or fails entirely. (MULE-15792)
+
 == 1.2.2
 
 *April 3, 2019*
