@@ -7,7 +7,7 @@ Support Category: Premium
 
 The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and DirectAssure Rosters using CAQH Data API. The connector exposes convenient methods to retrieve information about providers in real-time for credentialing and other purposes for Participating Organizations(PO).   
 
-== Version???
+== V2.0
 
 *May 4, 2019*
 
@@ -19,8 +19,8 @@ The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and Direc
 |Mule Runtime|Mule Enterprise Edition 4.0.0 and later
 |Anypoint Studio|7.0 and later
 |Java|8
-|CAQH - ProView|v2|
-|CAQH - DirectAssure|v2|
+|CAQH - ProView|v2
+|CAQH - DirectAssure|v2
 |===
 
 === Features
