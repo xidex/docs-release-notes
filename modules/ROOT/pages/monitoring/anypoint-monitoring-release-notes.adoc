@@ -7,7 +7,7 @@ These are the new features and enhancements, known limitations and issues, and f
 
 == April 30, 2019
 
-Anypoint Monitoring for applications deployed to Runtime Fabric is now supported. Monitoring is enabled by default, so you don't need to set anything up in Anytime Monitoring. For more information, see xref:runtime-fabric::manage-monitor-applications.adoc[Monitoring Applications Deployed to Runtime Fabric. ]
+Anypoint Monitoring for applications deployed to Runtime Fabric is now supported. Monitoring is enabled by default, so you don't need to set anything up in Anytime Monitoring. For more information, see xref:runtime-fabric::manage-monitor-applications.adoc[Monitoring Applications Deployed to Runtime Fabric].
 
 == March 27, 2019
 
