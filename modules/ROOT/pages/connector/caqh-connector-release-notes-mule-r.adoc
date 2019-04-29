@@ -5,33 +5,35 @@ endif::[]
 
 Support Category: Premium
 
-<Add some introduction of the connector here.>
+The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and DirectAssure Rosters using CAQH Data API. The connector exposes convenient methods to retrieve information about providers in real-time for credentialing and other purposes for Participating Organizations(PO).   
 
 == Version???
 
-*May 2, 2019  -- verify this date!*
-// Verify this date pls
+*May 4, 2019*
 
 === Compatibility
 
 [%header%autowidth.spread]
 |===
 |Application/Service|Version
-|Mule Runtime|4.0.0 and later
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
 |Anypoint Studio|7.0 and later
 |Java|8
-|CAQH ProView| |
-|CAQH DirectAssure| |
+|CAQH - ProView|v2|
+|CAQH - DirectAssure|v2|
 |===
 
 === Features
 
-* <Add features here>.
+* *ProView Roster API Service* - Add/Update/Delete Roster Request.
+* *Proview Roster Status Check* - To check status of providers in CAQH ProView.
+* *DirectAssure Roster API Service* - Add/Update/Delete Roster Request.
+* *DirectAssure Roster Status Check* - To check status of providers in CAQH DirectAssure.
 
 === Fixed in this Release
-<anything that's fixed in this release here>
+First version
 
-*March 11, 2015*
+== See Also
 
 MuleSoft recommends that you install the latest version of Studio.
 
