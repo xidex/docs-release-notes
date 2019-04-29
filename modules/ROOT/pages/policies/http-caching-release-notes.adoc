@@ -18,6 +18,10 @@ endif::[]
 * Fix issue when trying to serialize internal parameters that are not serializable.
 * Fix issue when there was a cache hit, the loaded Event was using the old Context (event Id, correlation Id), affecting error handling and feedback loop.
 
+=== Known Issues
+
+* Upgrading from a previous policy version invalidates the existing cache
+
 == 1.0.0 - Deprecated
 
 *Jul 03, 2018*
