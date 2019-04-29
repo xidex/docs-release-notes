@@ -586,6 +586,7 @@
  ** xref:runtime-manager-agent/runtime-manager-agent-1.2.0-release-notes.adoc[Runtime Manager Agent 1.2.0 Release Notes]
  ** xref:runtime-manager-agent/runtime-manager-agent-1.1.1-release-notes.adoc[Runtime Manager Agent 1.1.1 Release Notes]
 * xref:runtime-manager/runtime-manager-release-notes.adoc[Runtime Manager Release Notes]
+** xref:runtime-manager/runtime-manager-2.11.0-release-notes.adoc[Runtime Manager 2.11.0]
 ** xref:runtime-manager/runtime-manager-2.10.0-release-notes.adoc[Runtime Manager 2.10.0 Release Notes]
 ** xref:runtime-manager/runtime-manager-2.9.2-release-notes.adoc[Runtime Manager 2.9.2 Release Notes]
 ** xref:runtime-manager/runtime-manager-2.9.0-release-notes.adoc[Runtime Manager 2.9.0 Release Notes]
