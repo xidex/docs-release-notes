@@ -6,6 +6,8 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes.
 
 == Mule Runtime Features and Enhancements
 
+=== Java 11 support
+
 * Java support is extended to Java 11. Note that AdoptOpenJDK 8 is
 recommended over Java 11 and other Java 8 SDKs.
 +
@@ -16,12 +18,20 @@ In addition:
   ** For custom connectors built with the Mule SDK, you
      still need to compile against Java 8, but MuleSoft supports running
      them on Java 11 or Java 8.
+  ** At the moment, the following connectors only support Java 8:
+  *** DotNet
+  *** Dynamics CRM
+  *** Dynamics NAV
+  *** Netsuite
+  *** Oracle EBS 12.1
+  *** Oracle EBS 12.2
 
-* Fedramp support
 
-* Performance improvements
+=== Fedramp support
 
-* Faster start time
+=== Performance improvements
+
+=== Faster start time
 
 == API Gateway Features and Enhancements
 
