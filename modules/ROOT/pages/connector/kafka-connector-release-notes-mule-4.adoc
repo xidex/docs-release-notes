@@ -9,7 +9,7 @@ The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messa
 
 == 3.0.2
 
-*April 24, 2019*
+*April 30, 2019*
 
 === Compatibility
 
