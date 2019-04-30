@@ -4,9 +4,22 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, rate-limit, policy, release notes
 
+
+== 1.2.1
+
+*Apr 30, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== Fixed Issues
+
+* Fixed multiple Client Applications using one rate limiting algorithm when configured with same SLA in Anypoint Platform.
+
 == 1.2.0
 
-*Apr 26, 2018*
+*Apr 26, 2019*
 
 === Minimum Mule Version
 
