@@ -45,7 +45,7 @@ This release includes two new features and several fixes. There is also one know
 
 == Known Issue
 // DOCS-4552
-Because of a bug in a third-party library that is used for the validation of an XML against an XSD schema, the API editor can be inconsistent in displaying the error message `Could not validate XSD schema`. For example, you might or might not see the error message whenever you open a particular file that contains XML.
+Because of a bug in a third-party library that is used for the validation of XML against an XSD schema, the API editor can be inconsistent in displaying the error message `Could not validate XSD schema`. For example, you might or might not see the error message whenever you open a particular file that contains XML.
 
 == 2.4.5
 *April 6, 2019*
