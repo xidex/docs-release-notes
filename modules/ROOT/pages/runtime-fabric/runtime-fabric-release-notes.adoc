@@ -11,7 +11,6 @@ In addition to these release notes, see the complete xref:1.0@runtime-fabric::in
 This release includes the following fixes and enhancements:
 
 * Added: Support for viewing application metrics and logs to Anypoint Monitoring.
-* Added: Support for proxy authentication.
 
 == 1.2.61 - March 28, 2019
 
