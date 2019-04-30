@@ -5,6 +5,19 @@ endif::[]
 
 This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] documentation for more information.
 
+== April 30, 2019
+
+Visualizer now supports applications that are deployed to Runtime Fabric. See xref:visualizer::setup.adoc[Set up Anypoint Visualizer] for more information.
+
+This release has the following known limitations:
+
+* If a Mule 3 CloudHub application with the old Visualizer agent (version earlier than April 5, 2019) is calling a Runtime Fabric ingress endpoint, there will be extra edge from the CloudHub app to a node with the IP address for the controller. Please upgrade to the latest release of the Mule runtime engine.
+* If a Mule 4 CloudHub application is calling a Runtime Fabric ingress endpoint, there will be and extra edge from the CloudHub app to a node with the IP address for the controller. You can use your filters within Visualizer to hide this node.
+* If a Runtime Fabric Mule app is calling a Mule 3 CloudHub Mule app with the old Visualizer agent (version earlier than April 5, 2019) using its DNS, the correct connection will be drawn, but there will be an additional edge from the *External Traffic* node to the CloudHub application.
+* If a Runtime Fabric Mule app is calling a Mule 4 CloudHub Mule app using its DNS, the correct connection will be drawn, but there will be an additional edge from the *External Traffic* node to the CloudHub application.
+* If you have an application in two different clusters with the same name, these applications will appear as one node on the canvas. You should rename one application. 
+
+
 == April 25, 2019
 
 * Visualizer editors can define views so that everyone in the organization has a dynamic and consistent view of the architecture for each project. 
