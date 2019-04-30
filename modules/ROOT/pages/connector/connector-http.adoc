@@ -15,9 +15,9 @@ Support Category: Select
 
 === Fixed Issues
 
-* Allow the encoding of URI parameters in the requester via the system property 'mule.http.client.encodeUriParams'. (https://www.mulesoft.org/jira/browse/MULE-16772[MULE-16772])
-* User credentials are shown in attributes toString(). (https://www.mulesoft.org/jira/browse/MULE-10525[MULE-10525])
-* Mule throws error Illegal group reference Exception when trying to pass $ into URI Parameter in HTTP request. (https://www.mulesoft.org/jira/browse/MULE-16669[MULE-16669])
+* Allow the encoding of URI parameters in the requester using the system property `mule.http.client.encodeUriParams`. (https://www.mulesoft.org/jira/browse/MULE-16772[MULE-16772])
+* User credentials are shown in attributes `toString()`. (https://www.mulesoft.org/jira/browse/MULE-10525[MULE-10525])
+* Mule throws error illegal group reference exception when trying to pass `$` in a URI Parameter in an HTTP request. (https://www.mulesoft.org/jira/browse/MULE-16669[MULE-16669])
 
 == 1.5.3
 
