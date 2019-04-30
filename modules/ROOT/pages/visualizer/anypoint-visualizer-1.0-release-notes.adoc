@@ -17,6 +17,8 @@ This release has the following known limitations:
 * If a Runtime Fabric Mule app calls a Mule 4 CloudHub Mule app using its DNS, the correct connection is drawn, but there will be an additional edge from the *External Traffic* node to the CloudHub app.
 * If you have an app in two different clusters with the same name, these applications are drawn as one node on the canvas. You should rename one app. 
 
+Visualizer relies on a header injection to display connections between services correctly. The header injection is disabled by default for Mule 4. The correct connections will not be displayed for your Mule 4 Runtime Fabric applications unless you enable the header injection. See xref:visualizer::setup.adoc[Set up Anypoint Visualizer] for more information. 
+
 == April 25, 2019
 
 * Visualizer editors can define views so that everyone in the organization has a dynamic and consistent view of the architecture for each project. 
