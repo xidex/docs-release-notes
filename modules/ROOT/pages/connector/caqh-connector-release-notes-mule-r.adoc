@@ -25,10 +25,10 @@ The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and Direc
 
 === Features
 
-* *ProView Roster API Service* - Add/Update/Delete Roster Request.
-* *Proview Roster Status Check* - To check status of providers in CAQH ProView.
-* *DirectAssure Roster API Service* - Add/Update/Delete Roster Request.
-* *DirectAssure Roster Status Check* - To check status of providers in CAQH DirectAssure.
+* *ProView Roster API Service*: Add, update, or delete roster request for CAQH ProView.
+* *Proview Roster Status Check*: Check status of providers in CAQH ProView.
+* *DirectAssure Roster API Service*: Add, update, or delete roster Request for CAQH DirectAssure.
+* *DirectAssure Roster Status Check*: Check status of providers in CAQH DirectAssure.
 
 === Fixed in this Release
 First version
