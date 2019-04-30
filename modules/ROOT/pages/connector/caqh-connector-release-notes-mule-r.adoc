@@ -3,9 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Support Category: Premium
+Support Category: Select
 
-The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and DirectAssure Rosters using CAQH Data API. The connector exposes convenient methods to retrieve information about providers in real-time for credentialing and other purposes for Participating Organizations(PO).   
+The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and DirectAssure Rosters using CAQH Data API. The connector exposes convenient methods to retrieve information about providers in real-time for credentialing and other purposes for Participating Organizations.
 
 == V2.0
 
