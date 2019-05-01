@@ -41,10 +41,6 @@ These release notes cover the following versions of these features:
 
 Importing a template is now the easiest way to get started creating a Mule application in Flow Designer.  A template is a pre-built integration that you can customize. Go to Anypoint Exchange to see templates for the most popular integration use cases. You can open templates in read-only mode in Flow Designer and review them. If you believe that a template will help you create the Mule application that you need, you can switch to edit mode, customize it, and then test and deploy it.
 
-== Enhancement
-
-As described in xref::design-center[Specify a Dynamic Value in a Text Field], you can drag payload items, attributes, and variables into text fields to create values that incorporate real-time data. The menus that appear when you expand an data element that you've dragged into a field in a card have been redesigned for improved usability and readability.
-
 === Fixed Issue
 
 // PROJECTX-4044
