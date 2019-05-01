@@ -1,9 +1,9 @@
-= Upgrade Notice for Anypoint Platform (November Release)
+= Upgrade Notice for Anypoint Platform (November 2017 Release)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The November (Crowd) release includes many improvements across API Designer, API Portal, and API Manager.
+The November 2017 (Crowd) release includes many improvements across API Designer, API Portal, and API Manager.
 
 Organization administrators must schedule the upgrade through the green banner seen when log in. If you are already upgraded, you will not see this banner.
 
