@@ -43,7 +43,7 @@ Importing a template is now the easiest way to get started creating a Mule appli
 
 == Enhancement
 
-As described in xref::design-center[Specify a Dynamic Value in a Text Field], you can drag payload elements, attributes, and variables into text fields to create values that incorporate real-time data. The menus that appear when you expand an element that you've dragged into a field in a card have been redesigned for improved usability and readability.
+As described in xref::design-center[Specify a Dynamic Value in a Text Field], you can drag payload items, attributes, and variables into text fields to create values that incorporate real-time data. The menus that appear when you expand an data element that you've dragged into a field in a card have been redesigned for improved usability and readability.
 
 === Fixed Issue
 
