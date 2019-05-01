@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This topic describes the major feature enhancements added for the July and November releases of Anypoint Platform. To prepare for the upgrade see xref:platform/upgrade.adoc[Anypoint Platform Upgrade to Latest Software Guide].
+This topic describes the major feature enhancements added for the July and November, 2017 releases of Anypoint Platform. To prepare for the upgrade see xref:platform/upgrade.adoc[Anypoint Platform Upgrade to Latest Software Guide].
 
 NOTE: Self-service upgrade option is available. Ask your organization administrator or reach out to your Customer Success contact for information.
 
