@@ -1,4 +1,4 @@
-= Anypoint Platform July and November Release: Release Notes
+= Anypoint Platform July and November 2017 Release: Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
