@@ -1,0 +1,49 @@
+= Runtime Manager Agent 2.3.0 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+_May 2, 2019_
+
+These are the new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager agent, version 2.3.0.
+
+== New Features and Enhancements
+
+This release contains the following new features or enhancements:
+
+* Starting with Mule 4.2.0, API Manager Secrets (`clientId`, `clientSecret`, and `Proxy password`) can be stored, encrypted, in the `wrapper.conf` file when an encryption key is provided at setup time. For more information, see xref:2.x@api-manager::api-gateway-encryption-mule4.adoc[API Gateway Encryption on Mule 4].
+
+== Changes in This Release
+
+This release contains no changes to existing functionality.
+
+== Fixed Issues
+
+This release contains the following fixed issue:
+
+* HTTP 400 response when uploading metrics via mule agent for flow names with non-ASCII characters.
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+[NOTE]
+This is only applicable to users with HTTP events enabled and stored in an on premises database:
+
+* `policy_violation_policy_id` data type must be updated in the Database Schema.
+
+Please refer to the following documentation: xref:runtime-manager::sending-api-analytics-from-arm-to-db.adoc[API Analytics DB Internal Handler]
+
+
+== Compatibility Notes
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Software|Version
+|Mule Runtime| This agent version is compatible only with Mule 4.1.x and Mule 4.2.x.
+|Java      |JRE/JDK 1.8.0
+|OS       |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+|Runtime Manager|V2.10.0+
+|===
