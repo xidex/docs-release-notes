@@ -10,9 +10,9 @@ These are the release notes for patches which are made to the Mule runtimes on C
 
 4.2.0 Initial Release:
 
-* The Runtime now uses AdoptOpenJDK 1.8 instead of Oracle JDK.
-* API Caching Policy: there is an important update included for this policy. Please read its xref:policies/http-caching-release-notes.adoc[release notes].
-* For information about changes and improvements in the 4.2.0 Runtime, please refer to its xref:mule-runtime/mule-4.2.0-release-notes.adoc[release notes].
+* Mule 4.2 runs on CloudHub using AdoptOpenJDK 1.8 instead of Oracle JDK.
+* There is an important update included for the API Caching Policy. See the xref:policies/http-caching-release-notes.adoc[HTTP Caching Release Notes] for more information.
+* For information about changes and improvements in the Mule 4.2.0 runtime, see xref:mule-runtime/mule-4.2.0-release-notes.adoc[Mule Runtime 4.2.0 Release Notes].
 
 
 == April 26, 2019
