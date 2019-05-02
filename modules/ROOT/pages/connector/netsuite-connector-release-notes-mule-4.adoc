@@ -25,7 +25,7 @@ The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your ac
 
 === Features
 
-* The list operations (Add list, Delete list, Uppdate list and Upsert list) now return information about the status of the result in each record.
+* The list operations (Add list, Delete list, Update list and Upsert list) now return information about the status of the result in each record.
 
 === Fixed in this Release
 
