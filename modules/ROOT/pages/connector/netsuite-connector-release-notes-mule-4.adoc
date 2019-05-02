@@ -21,11 +21,11 @@ The Anypoint Connector for NetSuite synchronizes data and automates business pro
 |===
 
 [NOTE]
-The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different to the version of the the API you are using.
+The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different than the version of the API you are using.
 
 === Features
 
-* Now the list operations: Add list, Delete list, Uppdate list and Upsert list return information about the status of the result in each record.
+* The list operations (Add list, Delete list, Uppdate list and Upsert list) now return information about the status of the result in each record.
 
 === Fixed in this Release
 
@@ -37,7 +37,7 @@ None.
 
 === Migrating from Older Versions
 
-* In the old versions, the list operations returned a list of BaseRef, now they return a list of WriteResponse. The WriteResponse has as fields: the `baseRef` (like the previous versions) and also the `status`. The `status` field is a structure that contains the information about whether the operation was successful (`isSuccess` Boolean) and details of the status (`statusDetail` structure). In case of error the structure of `statusDetail` indicates in the field `type` if it was an ERROR, in the field `code` indicates the type of error (for example: 'INVALID_KEY_OR_REF') and finally in the field `message` contains details of the error (as the value and/or field involved).
+* In the old versions, the list operations returned a list of type `BaseRef`. Now they return a list of type `WriteResponse`. The `WriteResponse` has as fields: the `baseRef` (like the previous versions) and also the `status`. The `status` field is a structure that contains the information about whether the operation was successful (`isSuccess` Boolean) and details of the status (`statusDetail` structure). In case of error the structure of `statusDetail` indicates in the field `type` if it was an ERROR, in the field `code` indicates the type of error (for example: 'INVALID_KEY_OR_REF') and finally in the field `message` contains details of the error (as the value and/or field involved).
 
 == 8.3.0
 
