@@ -6,10 +6,10 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes.
 
 == Mule Runtime Features and Enhancements
 
-* <<java_11>>
 * Fedramp support
 * Performance improvements
 * Faster start time
+* <<java_11>>
 
 [[java_11]]
 === Java 11 support
@@ -32,7 +32,7 @@ In addition:
   *** Oracle EBS 12.1
   *** Oracle EBS 12.2
 
-* To configure JDK 11 in Anypoint Studio, see xref:v7.3@studio::change-jdk-config-in-projects.adoc[Change the JDK from Studio].
+* To configure JDK 11 in Anypoint Studio, see xref:7.3@studio::change-jdk-config-in-projects.adoc[Change the JDK from Studio].
 
 == API Gateway Features and Enhancements
 
