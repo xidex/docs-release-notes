@@ -6,6 +6,15 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== May 2, 2019
+
+4.2.0 Initial Release:
+
+* Mule 4.2 runs on CloudHub using AdoptOpenJDK 1.8 instead of Oracle JDK.
+* There is an important update included for the API Caching Policy. See the xref:policies/http-caching-release-notes.adoc[HTTP Caching Release Notes] for more information.
+* For information about changes and improvements in the Mule 4.2.0 runtime, see xref:mule-runtime/mule-4.2.0-release-notes.adoc[Mule Runtime 4.2.0 Release Notes].
+
+
 == April 26, 2019
 
 4.1.2-4.1.4 Runtime Update:
