@@ -4,6 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, anypoint studio, studio
 
+* xref:studio/anypoint-studio-7.3-with-4.2-runtime-update-site-3-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.2.0 Update Site 3 Release Notes]
 * xref:studio/anypoint-studio-7.3-with-4.1-update-site-2-runtime-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.1.4 Update Site 2 Release Notes]
 * xref:studio/anypoint-studio-7.3-with-4.1-update-site-1-runtime-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.1.4 Update Site 1 Release Notes]
 * xref:studio/anypoint-studio-7.3-with-4.1-runtime-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.1.4 Release Notes]

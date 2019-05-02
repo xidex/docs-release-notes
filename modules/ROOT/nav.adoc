@@ -199,6 +199,7 @@
  ** xref:pcf/anypoint-platform-pcf-1.5.0.adoc[Anypoint Platform for PCF Beta 1.5.0 Release Notes]
 * xref:pce/anypoint-onpremise-release-notes.adoc[Anypoint Platform On-Premises Edition]
 * xref:studio/anypoint-studio.adoc[Anypoint Studio Release Notes]
+ ** xref:studio/anypoint-studio-7.3-with-4.2-runtime-update-site-3-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.2.0 Update Site 3 Release Notes]
  ** xref:studio/anypoint-studio-7.3-with-4.1-update-site-2-runtime-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.1.4 Update Site 2 Release Notes]
  ** xref:studio/anypoint-studio-7.3-with-4.1-update-site-1-runtime-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.1.4 Update Site 1 Release Notes]
  ** xref:studio/anypoint-studio-7.3-with-4.1-runtime-release-notes.adoc[Anypoint Studio 7.3 with Mule Runtime 4.1.4 Release Notes]
