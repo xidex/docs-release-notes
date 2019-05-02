@@ -3,8 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*Tuesday 30, 2019* +
-*Build ID: *
+*Thursday May 2, 2019* +
+*Build ID: 201810261725*
 
 == Compatibility
 
@@ -16,7 +16,7 @@ endif::[]
 
 |*Anypoint Studio*
 |Version: 7.3.3 +
-Build Id:
+Build Id: 201810261725
 
 |*Maven*
 |Version: 3.3.9
