@@ -34,7 +34,7 @@ Build Id: 201810261725
 
 === Runtime Compatibility
 
-* Studio 7.3.3 comes bundled with Mule Runtime 4.2.0, however you can use it with earlier Mule Runtime versions as early as 4.1.4.
+* Studio 7.3.3 is bundled with Mule Runtime 4.2.0, however, you can use it with earlier Mule Runtime versions such as as 4.1.4.
 
 === Studio Compatibility
 
@@ -45,7 +45,7 @@ To fix this issue, you only need to update Studio to the latest 7.2.x version av
 == What's New
 
 * Studio 7.3.3 includes a number of bug fixes and comes with Mule 4.2.0 runtime. +
-Although Mule runtime engine 4.2.0 adds support for Java 11, Studio still requires Java 8 to run on your machine. +
+Although the Mule runtime engine 4.2.0 adds support for Java 11, Studio still requires Java 8 to run on your machine. +
 You can install and configure Java 11 on your machine, but make sure to configure this JDK to be used by the embedded 4.2.x runtime running in Studio. +
 See xref:studio::change-jdk-config-in-projects.adoc[Change the JDK from Studio] for instructions on how to do this.
 * New functionality that allows you to go from the XML code, to the flow canvas, or to the global element tab.
@@ -105,13 +105,13 @@ If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint S
 Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting Issues with Your Default OS Browser] for more details.
 * Copybook import fails with no message.
 * Copybook import file not copied to project.
-* Mule modules needs to provide icons, today many of the modules have the generic icon.
-* Running application "Pom.xml" is not updated when changing dependencies.
+* Mule modules need to provide icons as today many of the modules have the generic icon.
+* The `pom.xml` file of a running application is not updated when changing dependencies.
 * Debugger: payload shown while debugging is partial but there is no way to view the rest of the payload
 * Mule plugins with snapshot versions should always be regenerated.
 * Datasense/Runtime not working correctly through proxy on connectors using TCP/IP or connectors which don’t yet support it.
 * When importing a project with a runtime that is not installed in Studio there is no notification to the User.
-* Define Metadata - selected schema file does not exist when I have an example JSON set for the metadata type.
+* Define Metadata - selected schema file does not exist when an example JSON is set for the metadata type.
 
 == Bug Fixes
 
