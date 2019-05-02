@@ -141,13 +141,9 @@ isolated environment:
 |Issue |Description
 | MULE-16742 | XML attachment is corrupted when sent as multipart/form-data
 | MULE-16735 | XML transformation to JSON fails when ? present in large payload
-| MULE-16709 | Parallel ForEach should have index and rootMessage Variables
 | MULE-16696 | Schedulers unavailable after disposing policies (rarely)
 | MULE-16668 | Excessive validations on pooled connections.
 | MULE-15752 | InjectParamsFromContextServiceMethodInvoker makes excessive registry lookups
-| MULE-15194 | Race condition is produced when trying to bind a connection in a high load scenario
-| EE-6700 | Huge application creates OOM when redeploying
-| EE-6104 | Wrapper properties are not passed through the CLI if not accompanied by Mule properties
 |===
 
 === API Gateway Known Limitations and Workarounds
