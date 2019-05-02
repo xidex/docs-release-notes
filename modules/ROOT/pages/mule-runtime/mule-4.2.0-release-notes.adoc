@@ -6,6 +6,12 @@ Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes.
 
 == Mule Runtime Features and Enhancements
 
+* <<java_11>>
+* Fedramp support
+* Performance improvements
+* Faster start time
+
+[[java_11]]
 === Java 11 support
 
 * Java support is extended to Java 11. Note that AdoptOpenJDK 8 is
@@ -25,13 +31,6 @@ In addition:
   *** Netsuite
   *** Oracle EBS 12.1
   *** Oracle EBS 12.2
-
-
-=== Fedramp support
-
-=== Performance improvements
-
-=== Faster start time
 
 == API Gateway Features and Enhancements
 
