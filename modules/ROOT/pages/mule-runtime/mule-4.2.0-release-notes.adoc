@@ -77,7 +77,7 @@ because `not` has a lower precedence and is therefore executed as
 ** Crypto (`dw::Crypto`): The `algorithm` parameter to the `HMACWith`
    function is new. It supports custom algorithms.
 ** DataFormat (`dw::extension::DataFormat`) is new and has all the functionality
-   needed to define a custom data type (`DataFormat`) in DataWeave. The module
+   needed to define a custom data format (`DataFormat`) in DataWeave. The module
    includes its own types and annotations.
 ** Mule (`Mule`) module and all of its functions and types are new.
 ** Multipart (`dw::module::Multipart`)  and all its functions and types are new.
