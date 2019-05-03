@@ -9,7 +9,7 @@ The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and Direc
 
 == 2.1
 
-*May 2, 2019*
+*May 3, 2019*
 
 === Compatibility
 
