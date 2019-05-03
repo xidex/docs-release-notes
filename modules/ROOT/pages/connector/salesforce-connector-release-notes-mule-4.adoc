@@ -23,8 +23,8 @@ Support Category: Select
 
 === Fixed in this Release
 
-* Salesforce Subscribe topic connector is disconnected - We have upgraded the CometD library (org.cometd.java:cometd-java-client:3.0.10) to a newer version org.cometd.java:cometd-java-client:3.1.5 because this is Salesforce's recommentadion, otherwise there might be connectivity issues. Also we have fixed an issue related to "Resume from last replay Id" feature of the Replay Topic and Replay Channel sources where if there were no events for 24 hours and a connection issue appeared, the reconnection was not working. (SE-11365)
-* Salesforce connector memory leak - There was an issue in Cached connection providers where some objects could not be cleared properly and this was leading to a memory leak. (CONN-1625)
+* Salesforce Subscribe topic connector is disconnected - We have upgraded the CometD library `org.cometd.java:cometd-java-client:3.0.10` to a newer version `org.cometd.java:cometd-java-client:3.1.5` per a Salesforce recommendation, otherwise there might be connectivity issues. Also we have fixed an issue related to "Resume from last replay Id" feature of the Replay Topic and Replay Channel sources where if there were no events for 24 hours and a connection issue appeared, the reconnection stopped working. (SE-11365)
+* Salesforce connector memory leak - There was an issue in cached connection providers where some objects could not be cleared properly and this was leading to a memory leak. (CONN-1625)
 * Vulnerability reported for Salesforce connector 9.2.2 - A part of the vulnerabilities reported were fixed by upgrading some of the dependencies the connector uses. (SE-9824)
 +
 Salesforce connector 9.7.0 now supports these library upgrades:
