@@ -9,7 +9,7 @@ These are the new features and enhancements, known limitations and issues, and f
 
 This release contains the following new features and enhancements:
 
-* Support for hybrid apps running on Mule 4.2
+* Support for hybrid and CloudHub apps running on Mule 4.2.0
 * A *Custom Metrics* page, where you can easily access the xref:monitoring::anypoint-custom-metrics-connector.adoc[Custom Metrics connectors] for Mule 3 and 4
 * Support for these xref:monitoring::monitor-connectors.adoc[connector metrics]: 
 ** FTP
@@ -23,6 +23,10 @@ This release contains the following new features and enhancements:
 == April 30, 2019
 
 Anypoint Monitoring for applications deployed to Runtime Fabric is now supported. Monitoring is enabled by default, so you don't need to set anything up in Anypoint Monitoring. For more information, see xref:runtime-fabric::manage-monitor-applications.adoc[Monitoring Applications Deployed to Runtime Fabric].
+
+== April 6, 2019
+
+ An enhanced Monitoring agent is now included in CloudHub runtime versions 3.9.0, 3.9.1, and 3.9.2.
 
 == March 27, 2019
 
