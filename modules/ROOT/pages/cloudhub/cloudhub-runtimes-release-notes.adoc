@@ -24,16 +24,19 @@ These are the release notes for patches which are made to the Mule runtimes on C
 3.9.2 Runtime Update:
 
 * Address incomplete fix in RAML parser [SE-10737]
+* Ping Flow flooding Insight when Metadata is enabled and Auto Restart set for CH Applications [SE-11327]
 
 3.9.1 Runtime Update:
 
 * Address incomplete fix in RAML parser [SE-10737]
+* Ping Flow flooding Insight when Metadata is enabled and Auto Restart set for CH Applications [SE-11327]
 
 3.9.0 Runtime Update:
 
 * Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. (SE-11483)
 * Some inbound request failures are not taken into account in Monitoring dashboards. (SE-10544)
 * Visualizer properties are not picked up from the `mule-app.properties` file. (SE-10374)
+* Ping Flow flooding Insight when Metadata is enabled and Auto Restart set for CH Applications [SE-11327]
 
 == April 25, 2019
 
