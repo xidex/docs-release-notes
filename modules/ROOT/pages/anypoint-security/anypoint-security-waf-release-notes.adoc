@@ -4,6 +4,16 @@ include::_attributes.adoc[]
 endif::[]
 
 
+== May 4, 2019
+
+A summary log (`rtfSidSummary`) is generated, which contains a list of rule instances (rule ID, API, method, direction, and count) where at least one SID rule was triggered during the one-minute collection interval. See xref:anypoint-security::sid-reference.adoc[Sensitive Information Detection] for more information. 
+
+This release contains the following known issue:
+
+Sensitive information detection is not bi-directional. When you configure the WAF policy and enable the *Detect sensitive information* option for *Request Rulesets* and also enable the *Detect sensitive information* option for *Response Rulesets*, the response does not get scanned for sensitive information detection. 
+
+Workaround: If you need to enable SID for responses, de-select the *Detect sensitive information* option for requests. 
+
 == April 20, 2019
 
 == New Features
