@@ -11,7 +11,7 @@ xref:connectors::netsuite/netsuite-openair-connector.adoc[NetSuite OpenAir Conne
 
 == 2.0.2 
 
-*April 26, 2019*
+*May 6, 2019*
 
 === Compatibility
 
@@ -27,7 +27,7 @@ xref:connectors::netsuite/netsuite-openair-connector.adoc[NetSuite OpenAir Conne
 
 === Known Issues
 
-* Do not use Metadata as a guide in Flow Designer as it displays incomplete structures.
+* Do not use Metadata as a guide in Flow Designer as not all fields are visible.
 
 == 2.0.1 
 
