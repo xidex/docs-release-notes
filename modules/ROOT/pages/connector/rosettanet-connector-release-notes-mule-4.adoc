@@ -36,15 +36,16 @@ RosettaNet Connector v2.0.0 is compatible with:
 
 === Known Issues
 
-The Mule 4 RosettaNet connectory only supports:
+The Mule 4 RosettaNet connector only supports:
 
-* Not supported on Flow Designer
 * Asynchronous response messages
 * RNIF 2.00.01
 * Cluster 3 PIPs (limited selection)
 * Message signing (optional), not encryption
-* Certificate revocation managed directly by user in keystore
-* The maximum supported message size is 5 MB.
+* Certificate revocation managed directly by the user in a keystore
+* The maximum supported message size is 5 MB
+
+It is not supported with Flow Designer.
 
 == 2.0.0
 
