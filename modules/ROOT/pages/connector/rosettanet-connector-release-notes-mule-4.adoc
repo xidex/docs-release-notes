@@ -3,9 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*May 2019*
-
-_Premium_
+Support Category: Premium
 
 The Anypoint Connector for RosettaNet sends and receives RosettaNet messages
 using RNIF 2.00.01. The connector automatically handles send timeouts and retries,
@@ -18,7 +16,7 @@ signal. Users work directly with the RosettaNet message service content as an XM
 
 === Compatibility
 
-RosettaNet Connector v2.0.0 is compatible with the following:
+RosettaNet Connector v2.0.0 is compatible with:
 
 [%header,cols="30a,70a"]
 |===
@@ -72,16 +70,16 @@ RosettaNet Connector v2.0.0 is compatible with the following:
 
 === Known Issues
 
-The Mule 4 RosettaNet connectory only supports:
+The Mule 4 RosettaNet connector only supports:
 
-* Not supported on Flow Designer
 * Asynchronous response messages
 * RNIF 2.00.01
 * Cluster 3 PIPs (limited selection)
 * Message signing (optional), not encryption
-* Certificate revocation managed directly by user in keystore
-* The maximum supported message size is 5 MB.
+* Certificate revocation managed directly by a user in the keystore
+* The maximum supported message size is 5 MB
 
+It is not supported on Flow Designer.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Foum]
