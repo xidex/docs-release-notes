@@ -3,6 +3,22 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.5.3
+
+*May 7, 2019*
+
+=== Minimum Mule Version
+
+Mule 4.1.1
+
+=== New Features and Enhancements
+
+* No new features were added in this version.
+
+=== Fixed Issues
+
+
+
 == 1.5.2
 
 *April 16, 2019*
@@ -16,6 +32,9 @@ Mule 4.1.1
 * Add connector icon.
 
 === Fixed Issues
+
+* Connector doesn't ensure data is consumable by DataWeave when it's encoded with an encoding different from the one used by the runtime. (https://www.mulesoft.org/jira/browse/MULE-16460[MULE-16460])
+* Clob in out parameters are not made consumable with Oracle DB. (https://www.mulesoft.org/jira/browse/MULE-16770[MULE-16770])
 
 * Errors while transforming to JSON the output of Oracle SP call with custom types. (https://www.mulesoft.org/jira/browse/MULE-16589[MULE-16589])
 * Can't get parameter data types when store procedure name includes schema. (https://www.mulesoft.org/jira/browse/MULE-16685[MULE-16685])
