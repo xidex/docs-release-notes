@@ -20,7 +20,6 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 * xref:connector/as2-connector-release-notes-mule-4.adoc[AS2 Connector Release Notes (for Mule 4)]
 * xref:connector/bmc-remedy-connector-release-notes-mule-4.adoc[BMC Remedy Connector Release Notes (for Mule 4)]
 * xref:connector/box-connector-release-notes-mule-4.adoc[Box Connector Release Notes (for Mule 4)]
-* xref:connector/caqh-connector-release-notes-mule-4.adoc[CAQH Connector Release Notes (for Mule 4)]
 * xref:connector/cassandra-connector-release-notes-mule-4.adoc[Cassandra Connector Release Notes (for Mule 4)]
 * xref:connector/cloudhub-connector-release-notes-mule-4.adoc[CloudHub Connector Release Notes (for Mule 4)]
 * xref:mule-runtime/module-compression.adoc[Compression Module Release Notes (for Mule 4)]
@@ -157,3 +156,4 @@ Anypoint Connectors facilitate easy integration of your Mule applications with t
 
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
+
