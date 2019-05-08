@@ -26,7 +26,7 @@ The Amazon S3 connector is compatible with:
 
 === Fixed in this Release
 
-* Connector would fail to create a connection to S3 service, when user lacked s3:ListAllMyBuckets permission (SE-11434).
+* Connection to S3 no longer requires `s3:ListAllMyBuckets` permission. [SE-11434]
 
 == 5.3.0
 
