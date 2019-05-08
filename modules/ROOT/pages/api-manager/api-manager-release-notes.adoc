@@ -16,7 +16,13 @@ Anypoint Platform supports the following browsers:
 * Chrome (latest version)
 * Internet Explorer 11 and newer
 
+== 2.2.11
 
+*May 4, 2019*
+
+This release provides this new feature:
+
+* Improved UI modal for changing Mule 3 custom policy version: https://docs.mulesoft.com/api-manager/2.x/change-custom-policy-mule3
 
 == 2.2.10
 
@@ -24,7 +30,11 @@ Anypoint Platform supports the following browsers:
 
 This release provides this new feature:
 
-* Improved UI modal for changing Mule 3 custom policy version: https://docs.mulesoft.com/api-manager/2.x/change-custom-policy-mule3
+* Support for Mule 4 API proxy versions in API configuration
+
+=== Fixed in This Release
+* Incorrect user information received in request api access email 
+* Federated users unable to create APIs
 
 == 2.2.9
 
