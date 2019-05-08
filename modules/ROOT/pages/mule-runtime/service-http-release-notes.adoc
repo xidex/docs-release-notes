@@ -91,7 +91,7 @@ endif::[]
  
 === Fixed Issues 
  
-* Local authentication doesn't prevail when there're multiple authentication method headers (https://www.mulesoft.org/jira/browse/MULE-16308[MULE-16308])
+* Local authentication doesn't prevail when there are multiple authentication method headers (https://www.mulesoft.org/jira/browse/MULE-16308[MULE-16308])
 
 == 1.2.2
  
