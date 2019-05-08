@@ -1,0 +1,180 @@
+= Anypoint Studio 7.3 with Mule Runtime 4.2.0 Update Site 4 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*Thursday May 2, 2019* +
+*Build ID: *
+
+== Compatibility
+
+[cols="30a,70a"]
+|===
+| Product | Version
+| *Mule Runtime*
+| Version: 4.2.0
+
+|*Anypoint Studio*
+|Version: 7.3.4 +
+Build Id:
+
+|*Maven*
+|Version: 3.3.9
+
+|*DataWeave* +
+|Version: 2.2.0
+
+|*MUnit* +
+|Version: 2.3.2 (munit-studio-plugin)
+
+|*Eclipse* +
+|Version: 4.7.2
+
+|===
+
+=== Runtime Compatibility
+
+* Studio 7.3.3 is bundled with Mule Runtime 4.2.0, however, you can use it with earlier Mule Runtime versions such as as 4.1.4.
+
+=== Studio Compatibility
+
+* Projects created or updated with Studio 7.3.x or 7.2.x are not compatible with 7.1.x due to some improvements with the management of the `mule-artifact.json` file. The content of the file was reduced and part of the content used to be required by Studio 7.1.x. +
+To fix this issue, you only need to update Studio to the latest 7.2.x version available. See xref:studio::update-workspace.adoc[Updating Workspaces] for more information.
+* Workspaces created using Anypoint Studio 6.x or below are not compatible with Anypoint Studio 7 workspaces.
+
+== What's New
+
+* Studio 7.3.3 includes a number of bug fixes and comes with Mule 4.2.0 runtime. +
+Although the Mule runtime engine 4.2.0 adds support for Java 11, Studio still requires Java 8 to run on your machine. +
+You can install and configure Java 11 on your machine, but make sure to configure this JDK to be used by the embedded 4.2.x runtime running in Studio. +
+See xref:studio::change-jdk-config-in-projects.adoc[Change the JDK from Studio] for instructions on how to do this.
+* New functionality that allows you to go from the XML code, to the flow canvas, or to the global element tab.
+* Improved the experience using shortcuts.
+* Support for metadata in the Java module.
+
+== Hardware Requirements
+
+* For most use cases, Anypoint Studio with the 4.2.0 Runtime does not change hardware or software requirements from the previous Studio 7 versions.
+* MuleSoft recommends a minimum of 4GB of free RAM available on a developer workstation. As applications become complex, consider adding more RAM.
+
+* 4GB of free memory available.
+* 2GHz CPU.
+* 10GB free hard drive space.
+
+== Software Requirements
+
+[cols="30a,70a"]
+|===
+| Software | Version
+|Java Environments
+| * AdoptOpenJDK 8
+
+This version of Studio is not compatible with Java 9 or Java 10. +
+If you are having issues installing Studio, follow xref:7.2@studio::faq-jdk-requirement.adoc[this guide] to reconfigure your Java installation.
+
+The only compatibility introduced for Java 11 is when using the Mule runtime engine version 4.2.0 and later. +
+Studio still requires Java 8 to launch and run properly. You can install and configure Java 11 on your machine, but make sure to configure this JDK to be used by the embedded 4.2.x runtime running in Studio. +
+See xref:studio::change-jdk-config-in-projects.adoc[Change the JDK from Studio] for instructions on how to do this.
+
+|Operating Systems |* MacOS 10.12.0 +
+* Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10 +
+* RHEL 7.0 +
+* Ubuntu 15.04 or later
+|Suggested Web Browsers by Platform. +
+_Studio will always use the OS default web browser_ | * Windows: +
+** Microsoft Edge 25.0  +
+** Internet Explorer 11 +
+* Linux +
+** Mozilla Firefox 51.0.1  +
+* OS X +
+** Safari 10.1
+| Maven
+| Studio comes with Maven 3.3.9 bundled, but you can externally use the versions: 3.3.3 or your own  3.3.9
+|===
+
+[NOTE]
+--
+If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+--
+
+== Known Issues
+
+* Studio 7 only supports Mule 4.x projects. Due to the structure of projects, export format, xml and scripting language differences, we do not offer backwards compatibility with Mule 3.x runtimes.
+* Some existing features in Studio 6.x are not yet supported in Studio 7: Custom Policies, API Sync, Anypoint Private Cloud.
+* Anypoint Studio uses your configured default browser to display web content such as Exchange and the Runtime Manager UI when deploying an application to Anypoint Platform. If your default internet browser does not display this content correctly, you can configure Anypoint Studio to use a Mozilla/XULRunner runtime environment as the underlying renderer for the Web UI. +
+Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting Issues with Your Default OS Browser] for more details.
+* Copybook import fails with no message.
+* Copybook import file not copied to project.
+* Mule modules need to provide icons as today many of the modules have the generic icon.
+* The `pom.xml` file of a running application is not updated when changing dependencies.
+* Debugger: payload shown while debugging is partial but there is no way to view the rest of the payload
+* Mule plugins with snapshot versions should always be regenerated.
+* Datasense/Runtime not working correctly through proxy on connectors using TCP/IP or connectors which don’t yet support it.
+* When importing a project with a runtime that is not installed in Studio there is no notification to the User.
+* Define Metadata - selected schema file does not exist when an example JSON is set for the metadata type.
+
+== Bug Fixes
+
+* Fixed issue where pressing backspace while renaming a component deleted it.
+* Fixed issue where creating an HTTP processor threw an "Error while creating application model" message.
+* Fixed issue where `Types` retrieval failed for an API global element when a property was set in a `config.yaml` file
+* Fixed issue where creating a JMS Configuration caused the runtime to throw a Datasense metadata retrieval error.
+* Fixed issue where a "Unable to define metadata" error was thrown for a variable in the Transform Message output in Studio 7.2.1.
+* Fixed NullPointerException thrown while resolving Datasense related with a 'database-select' operation.
+* Fixed issue where spec with `enum` failed to be consumed from Exchange by a client application.
+* Fixed issue where Mule projects launched empty when using an external domain.
+* Fixed issue where tooling instance for runtime 4.1.5 downgraded the agent to 2.0.0.
+* Fixed issue where having an incomplete domain dependency caused the *Run configuration* window to fail to open.
+* Fixed issue where metadata keys were not refreshed when the user clicked the refresh icon.
+* Fixed issue where Studio doesn't show JMS client libraries for *Generic Connection* `JMS_Config`.
+* Fixed issue where Studio automatically added the `doc:id` tag to "when" expression in Choice components.
+* Fixed issue where Studio 7 did not show links to classes in `Console View`.
+* Fixed issue causing metadata loss in the Transform Message component after renaming it.
+* Fixed issue where an internal error occurred during: "XtextReconcilerJob" at `org.mule.tooling.dfl.dFL.impl.VariableReferenceImpl`.
+* Fixed issue where creating and testing connection of a global element that was not unique global caused the connection to fail.
+* Fixed issue preventing to assign a variable in an API module processor when expected an `Enum` value.
+* Fixed issue where Studio wasn't able to generate a sample payload for preview based on defined metadata in the Transform message component.
+* Fixed issue where DataWeave automatically changed the output configuration when the "drag and drop" function was used.
+* Fixed issue where a Jeeeyul's theme preset selection was not a persisting setting in Anypoint Studio 7.
+* Fixed issue where Anypoint Studio showed errors in the dependencies when using the Authotization filter.
+* Fixed issue where Hot deployment did not work for `DW` files.
+* Fixed issue where trying to add a file to the configuration properties, it showed invalid options.
+* Fixed issue where Studio was unable to resolve bundle to a directory for server `org.mule.tooling.server.4.2.0.ee`.
+* Fixed issue where Studio threw several errors while resolving Datasense values.
+* Fixed issue where `sizeOf(..)` was not available inside a MEL expression in a 'Set Variable' component.
+* Fixed issue where deleting a global element reverted previous changes in flow reference name.
+* Fixed issue where `MaxAge` settings in batch history were not reflecting in the XML configuration file.
+* Fixed issue when deploying a project with ActiveMQ dependency threw a "Class not found" exception.
+* Fixed issue where moving text between XML files threw an "Unexpected error".
+* Fixed issue where HTTP's requester `followRedirect` was not set to `false` when box was unchecked.
+* Fixed issue causing the `followRedirects` parameter in global request configuration to not be able to be set to `false`.
+* Fixed issue preventing the "Go to configuration XML" option from working on Windows.
+* Fixed issue where the default value of `maxRedeliveryCount` attribute was not added to the XML code.
+* Fixed issue where the error handling name was including the error "type".
+* Fixed issue causing a "RAML resolution error: Error reading API definition" on a newly imported working project.
+* Fixed issue where the JavaModule was not fetching the class' methods when first created.
+* Fixed issue where terminated launches in Studio for Windows were removed even if the "remove" option was unticked.
+* Fixed issue where adding a Salesforce connector thre "Error retrieving list of Metadata keys (NullPointerException)".
+* Fixed issue where adding new methods to a Java class were not reflected in the Java Module's class combobox.
+
+=== Fixed Developer Bugs
+
+* Fixed memory leak causing Studio performance to degrade until freeze.
+* Fixed issue where a "Missing constructor error" was shown when openning the "new" Java operation, even when it was configured.
+* Fixed issue where an imported Copybook could not load custom metadata.
+* Fixed issue causing "NoSuchMethodError (ServerDefinition)" when opening the Mule context menu.
+
+== Closed Stories
+
+* It is now possible to go to a node in the canvas, and to go to a global element configuration from the XML code.
+
+== Enhancements in This Release
+
+* Studio now supports metadata keys resolution when no `config ref` is required.
+* Studio now has compiler flags, so that java classes preserve the parameter names.
+* Deprecated connection providers no longer appear first in configurations.
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].
