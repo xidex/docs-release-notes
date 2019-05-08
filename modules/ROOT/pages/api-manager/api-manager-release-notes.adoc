@@ -22,7 +22,8 @@ Anypoint Platform supports the following browsers:
 
 This release provides this new feature:
 
-* Improved UI modal for changing Mule 3 custom policy version: https://docs.mulesoft.com/api-manager/2.x/change-custom-policy-mule3
+* Improved UI modal for changing Mule 3 custom policy version. +
+See xref:change-custom-policy-mule3.adoc[Change a Custom Policy Version for Mule 3] for more information.
 
 == 2.2.10
 
