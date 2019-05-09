@@ -4,7 +4,6 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, ibm ctg, cics, jca, connector
 
-*May 2019*
 
 Support Category: Premium
 
