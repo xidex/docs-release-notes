@@ -27,7 +27,7 @@ The connector serves as a handrail between Mule applications and the CTG.
 [IMPORTANT]
 ====
 * The remote CICS TG must be at the same release level or a higher than the version of the JCA resource adapter.
-* The JCA resource adapter must match the CICS TG platform. For example, if you have CICS TG for Multiplatforms, you cannot connect to it to or from a CICS TG for z/OS resource adapter.
+* The JCA resource adapter must match the CICS TG platform. For example, if you have CICS TG for Multiplatforms, you cannot connect with it, to or from a CICS TG for z/OS resource adapter.
 ====
 
 The following required JAR files are needed to set up the connector configuration:
