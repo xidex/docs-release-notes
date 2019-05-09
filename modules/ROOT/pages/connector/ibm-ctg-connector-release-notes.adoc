@@ -4,12 +4,54 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, ibm ctg, cics, jca, connector
 
-*April 2018*
+*May 2019*
 
 _Premium_
 
 The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with back-end CICS applications using the CICS Transaction Gateway. For Java platforms, CTG implements the JCA resource adapter to connect Java applications to the CICS system.
 The connector serves as a handrail between Mule applications and the CTG.
+
+== 1.1.1
+
+*May 9, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.8
+|IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
+|IBM CICS TG SDK |9.1 and 9.2
+|===
+
+[IMPORTANT]
+====
+* The remote CICS TG must be at the same or a higher release level than the version of the JCA resource adapter.
+* The JCA resource adapter must match the CICS TG platform. For example, if you have CICS TG for Multiplatforms, you cannot connect to it from a CICS TG for z/OS resource adapter.
+====
+
+The following are required JAR files to set up the connector configuration:
+
+* ccf2.jar (CICS Common Connector Framework)
+* cicsjee.jar (CICS JEE)
+* ctgclient.jar (CTG Client Library)
+* ctgserver.jar (CTG Server Library)
+* geronimo-j2ee-connector_1.6_spec-1.0.jar (JCA 1.6 Specification)
++
+IMPORTANT: JCA 1.6 is needed as a required library to overcome conflicts with JCA 1.5 shipped with the Mule Runtime.
+
+=== Features
+
+* Added support for customize the response time in the IBM CTG Config (Additional Settings section).
+
+=== Fixed in this Release
+
+* None.
+
+=== Known Issues
+
+* Although the inclusion of JCA 1.6 as a required library is meant to solve compatibility conflicts with the JCA 1.5 shipped with the Mule Runtime, it is yet unknown if this will cause side effects.
 
 == 1.1.0
 
