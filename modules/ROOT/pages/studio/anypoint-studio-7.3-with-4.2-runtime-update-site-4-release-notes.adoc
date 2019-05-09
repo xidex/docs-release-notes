@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*Thursday May 9, 2019* +
+*May 9, 2019* +
 *Build ID: 201905081644*
 
 == Compatibility
