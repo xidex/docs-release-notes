@@ -110,7 +110,7 @@ Follow the xref:7.1@studio::faq-default-browser-config.adoc[FAQ: Troubleshooting
 == Bug Fixes
 
 * Fixed issue when Studio tried to upgrade workspaces that were using a packager version that didn't need to be upgraded.
-* Fixes issue causing the editor to fail to open the SAP connector `Create IDoc` operation configuration.
+* Fixed issue causing the editor to fail to open the SAP connector `Create IDoc` operation configuration.
 
 == Support
 
