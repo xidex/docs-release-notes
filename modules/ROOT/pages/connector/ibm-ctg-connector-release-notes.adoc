@@ -43,7 +43,7 @@ NOTE: JCA 1.6 is a required library needed to overcome conflicts with the JCA 1.
 
 === Features
 
-* The 'customize the response time' in the IBM CTG Config (in the Additional Settings section) is now supported.
+* The *response time* is now configurable. It is located under _Additional Settings_ in the Connector configuration file.
 
 === Known Issues
 
