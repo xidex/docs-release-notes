@@ -1,4 +1,4 @@
-= IBM CICS Transaction Gateway Connector Release Notes
+= IBM CICS Transaction Gateway Connector Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,7 +6,7 @@ endif::[]
 
 *May 2019*
 
-_Premium_
+Support Category: Premium
 
 The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with back-end CICS applications using the CICS Transaction Gateway. For Java platforms, CTG implements the JCA resource adapter to connect Java applications to the CICS system.
 The connector serves as a handrail between Mule applications and the CTG.
@@ -27,11 +27,11 @@ The connector serves as a handrail between Mule applications and the CTG.
 
 [IMPORTANT]
 ====
-* The remote CICS TG must be at the same or a higher release level than the version of the JCA resource adapter.
-* The JCA resource adapter must match the CICS TG platform. For example, if you have CICS TG for Multiplatforms, you cannot connect to it from a CICS TG for z/OS resource adapter.
+* The remote CICS TG must be at the same release level or a higher than the version of the JCA resource adapter.
+* The JCA resource adapter must match the CICS TG platform. For example, if you have CICS TG for Multiplatforms, you cannot connect to it to or from a CICS TG for z/OS resource adapter.
 ====
 
-The following are required JAR files to set up the connector configuration:
+The following required JAR files are needed to set up the connector configuration:
 
 * ccf2.jar (CICS Common Connector Framework)
 * cicsjee.jar (CICS JEE)
@@ -39,19 +39,15 @@ The following are required JAR files to set up the connector configuration:
 * ctgserver.jar (CTG Server Library)
 * geronimo-j2ee-connector_1.6_spec-1.0.jar (JCA 1.6 Specification)
 +
-IMPORTANT: JCA 1.6 is needed as a required library to overcome conflicts with JCA 1.5 shipped with the Mule Runtime.
+NOTE: JCA 1.6 is a required library needed to overcome conflicts with the JCA 1.5 shipped with Mule Runtime.
 
 === Features
 
-* Added support for customize the response time in the IBM CTG Config (Additional Settings section).
-
-=== Fixed in this Release
-
-* None.
+* The 'customize the response time' in the IBM CTG Config (in the Additional Settings section) is now supported.
 
 === Known Issues
 
-* Although the inclusion of JCA 1.6 as a required library is meant to solve compatibility conflicts with the JCA 1.5 shipped with the Mule Runtime, it is yet unknown if this will cause side effects.
+* Although the inclusion of JCA 1.6 as a required library is meant to solve compatibility conflicts with the JCA 1.5 (shipped with the Mule Runtime), it is currently unknown if this causes side effects.
 
 == 1.1.0
 
