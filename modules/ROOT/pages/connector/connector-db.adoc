@@ -16,6 +16,7 @@ Mule 4.1.1
 * No new features were added in this version.
 
 === Fixed Issues
+
 * Connector doesn't ensure data is consumable by DataWeave when it's encoded with an encoding different from the one used by the runtime. (https://www.mulesoft.org/jira/browse/MULE-16460[MULE-16460])
 * Clob in out parameters are not made consumable with Oracle DB. (https://www.mulesoft.org/jira/browse/MULE-16770[MULE-16770])
 
