@@ -5,6 +5,21 @@ endif::[]
 
 Support Category: Select
 
+== 1.2.4
+
+*May 10, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* The List operation fails to list files in a directory when encountering a file without read permissions. (MULE-16819)
+* In Windows, the List operation fails to list files in a directory where a file has been deleted just before the list operation is executed. (MULE-16827)
+* NoSuchFileExceptions with file listeners in clustered environment. (MULE-16766)
+* File Listener with watermark skips a file. (MULE-15792)
+
 == 1.2.3
 
 *April 29, 2019*
@@ -15,7 +30,7 @@ Support Category: Select
 
 === Fixed Issues
 
-* The list operation failed when listing a directory that contained a file that had been moved or deleted. (MULE-16766)
+* The List operation failed when listing a directory that contained a file that had been moved or deleted. (MULE-16766)
 * The listener stopped polling when failing to list a file. Now the connector either lists all files, or fails entirely. (MULE-15792)
 
 == 1.2.2
