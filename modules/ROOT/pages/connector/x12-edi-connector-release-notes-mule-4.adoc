@@ -3,11 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*May 2019*
 
-_Premium_
-
-xref:connectors::x12-edi/x12-edi-connector.adoc[X12 EDI Connector Guide]
+Support Category: Premium
 
 
 == 2.1.0
@@ -16,17 +13,17 @@ xref:connectors::x12-edi/x12-edi-connector.adoc[X12 EDI Connector Guide]
 
 === Features
 
-* Adds support for user-supplied values for control segments (controlled by `useSuppliedValues` configuration parameter).
+* Added support for user-supplied values for control segments. These are controlled by the `useSuppliedValues` configuration parameter.
 
 === Fixed in this Release
 
-* Make sure data not passed out of parser for transaction set with fatal error (SE-11384)
-* Implement lock sharing for tracking identifier numbers in ObjectStore with multiple CloudHub workers (SE-11308)
-* Allow multiple HIPAA transaction sets in group (SE-9043)
-* Correct issues found with metadata representation.
-* Fix logging to follow Mule conventions.
-* Update to latest dependency versions to avoid security issues.
-* Correct errors in schemas for 005010X222A1 and 005010X224A2.
+* The transaction set parser was passing data with a fatal error. This is fixed. (SE-11384)
+* Implemented lock sharing for tracking identifier numbers in the ObjectStore connector with multiple CloudHub workers. (SE-11308)
+* Multiple HIPAA transaction sets are now allowed in a group. (SE-9043)
+* Corrected issues found with metadata representation.
+* Logging now follows Mule conventions.
+* Updated to latest dependency versions in order to prevent security issues.
+* Corrected errors in schemas for 005010X222A1 and 005010X224A2.
 
 === Compatibility
 
