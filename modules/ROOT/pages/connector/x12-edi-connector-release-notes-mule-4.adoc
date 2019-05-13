@@ -17,13 +17,13 @@ Support Category: Premium
 
 === Fixed in this Release
 
-* The transaction set parser was passing data with a fatal error. This is fixed. (SE-11384)
+* Was passing out data for bad transaction sets in the output of the reader. (SE-11384)
 * Implemented lock sharing for tracking identifier numbers in the ObjectStore connector with multiple CloudHub workers. (SE-11308)
 * Multiple HIPAA transaction sets are now allowed in a group. (SE-9043)
 * Corrected issues found with metadata representation.
-* Logging now follows Mule conventions.
-* Updated to latest dependency versions in order to prevent security issues.
-* Corrected errors in schemas for 005010X222A1 and 005010X224A2.
+* Logging didn't follow Mule conventions.
+* Updated to latest dependency versions.
+* Schemas 005010X222A1 and 005010X224A2 contained errors.
 
 === Compatibility
 
