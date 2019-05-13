@@ -9,6 +9,27 @@ The Mule Runtime supports SAP integration through our Anypoint Connector for SAP
 
 NOTE: This connector is not supported for use with Anypoint Design Center.
 
+== 4.1.6
+
+*May 10, 2019*
+
+=== Compatibility
+
+[width="100%", cols=",", options="header"]
+|===
+|Software |Version
+|Mule Runtime|4.0.0
+|Anypoint Studio|7.0
+|Java|8
+|SAP Solution| ECC 6.0 or higher
+|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this release
+
+* SAP connector not honoring the encoding set in the config.  (SE-11690)
+* I_DOCNUM is not being returned. (SE-11630)
+
 == 4.1.4
 
 *April 4, 2019*
