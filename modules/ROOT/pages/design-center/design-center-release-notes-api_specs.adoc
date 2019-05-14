@@ -54,6 +54,11 @@ types:
     type: !include b.raml
 ----
 
+// SE-11419
+* The `title` facet was allowed in RAML Library fragments, even though this facet is invalid in fragments of that type.
+
+
+
 == 2.4.6
 *April 20, 2019*
 
