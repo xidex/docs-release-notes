@@ -56,7 +56,8 @@ types:
 
 // SE-11419
 * The `title` facet was allowed in RAML Library fragments, even though this facet is invalid in fragments of that type.
-
+// SE-11433
+* The Javascript exception `Maximum call stack size exceeded` was thrown when an API specification contained a recursive datatype reference.
 
 
 == 2.4.6
