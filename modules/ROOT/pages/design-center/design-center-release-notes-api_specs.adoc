@@ -58,6 +58,25 @@ types:
 * The `title` facet was allowed in RAML Library fragments, even though this facet is invalid in fragments of that type.
 // SE-11433
 * The Javascript exception `Maximum call stack size exceeded` was thrown when an API specification contained a recursive datatype reference.
+// SE-11789
+* The error message `Syntax error, generating empty array at...` appeared when an array type was included in the declaration of a union type by means of a type expression, as in this example:
++
+----
+#%RAML 1.0
+title: Example
+
+types:
+  a1:
+    type: string[]
+
+/samples:
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            type: string | a1
+----
 
 
 == 2.4.6
