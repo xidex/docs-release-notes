@@ -22,6 +22,8 @@ These release notes cover the following versions of these features:
 == 2.4.8
 *May 18, 2019*
 
+This release introduces two new features and fixes several issues.
+
 == New Features
 * The visual API editor now supports union datatypes and enums.
 * An information icon now appears after error messages that are related to problems with named examples. Click the icon for a description of such errors and of ways to resolve them.
