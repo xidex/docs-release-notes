@@ -102,7 +102,7 @@ The version of the RAML fragment that is being used in the project is now 1.0.0,
 
 === Known Issue
 
-If you are not using Google Chrome as your web browser when using the API editor, clicking an information icon that appears next to an error message does not open a window to display information about the error.
+If you are not using Google Chrome or Mozilla Firefox as your web browser when using the API editor, clicking an information icon that appears next to an error message does not open a window to display information about the error.
 
 == API Designer 2.4.6
 *April 20, 2019*
