@@ -1,0 +1,33 @@
+= Anypoint Runtime Manager Version 2.11.2 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+_May 18, 2019_
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager version 2.11.2.
+
+== New Features and Enhancements
+
+There are no new features or enhancements in this release.
+
+== Changes in This Release
+
+This release contains no feature changes.
+
+== Fixed Issues
+
+* Multiple connections of different runtimes were accepted with the same certificate in certain scenarios.
+* Orphan deployments left in the database when concurrent deployment requests were executed.
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+ 
+== Compatibility Notes
+
+There are no compatibility notes in this release.
