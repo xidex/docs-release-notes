@@ -77,7 +77,18 @@ types:
           application/json:
             type: string | a1
 ----
-
+// DESIGNER-3619
+* Importing an API specification from Exchange would overwrite newer versions existing assets in a project.
++
+These steps reproduced the problem:
++
+. Create a RAML fragment and publish it as version 1.0.0 to Exchange.
+. Create a RAML API specification, import the fragment, and publish the API specification to Exchange.
+. Open the RAML fragment created in step 1, edit it, and publish it as version 1.0.1.
+. Create a new project and RAML API specification, import version 1.0.1 of the fragment.
+. In the project, import from Exchange the RAML API specification created in step 2.
++
+The version of the RAML fragment that is being used in the project is now 1.0.0, rather than 1.0.1. 
 
 == 2.4.6
 *April 20, 2019*
