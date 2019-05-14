@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-4-8,2.4.8>>
 * <<2-4-6,2.4.6>>
 * <<2-4-5,2.4.5>>
 * <<2-4-4,2.4.4>>
@@ -17,6 +18,13 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== 2.4.8
+*May 18, 2019*
+
+=== Fixed Issues
+// SE-11154
+* When a datatype was declared as the union of an object type with an array type, the API editor returned an incorrect parsing error.
 
 == 2.4.6
 *April 20, 2019*
