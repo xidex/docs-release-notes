@@ -22,7 +22,7 @@ These release notes cover the following versions of these features:
 == 2.4.8
 *May 18, 2019*
 
-This release introduces two new features and fixes several issues.
+This release introduces two new features and fixes several issues. There is also one known issue.
 
 == New Features
 * The visual API editor now supports union datatypes and enums.
@@ -99,6 +99,10 @@ The version of the RAML fragment that is being used in the project is now 1.0.0,
 
 // DESIGNER-2145
 * In the visual API editor, it was not possible to drag resources and data types into groups in the left pane of the editor if you were using Microsoft Internet Explorer.
+
+=== Known Issue
+
+If you are not using Google Chrome as your web browser when using the API editor, clicking an information icon that appears next to an error message does not open a window to display information about the error.
 
 == 2.4.6
 *April 20, 2019*
