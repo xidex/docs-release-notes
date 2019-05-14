@@ -23,6 +23,8 @@ endif::[]
 
 // SE-10775
 * The API Console and the mocking service were adding invalid tags to XML examples.
+// MSERV-539
+* Though multiple examples were defined for an endpoint, the mocking service always used the same example, rather than randomly selecting one to use.
 // MSERV-620
 * When an OAS API specification did not define any consuming media type for a specific endpoint, the mocking service failed.
 
