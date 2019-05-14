@@ -22,6 +22,10 @@ These release notes cover the following versions of these features:
 == 2.4.8
 *May 18, 2019*
 
+== New Features
+* The visual API editor now supports union datatypes and enums.
+* An information icon now appears after error messages that are related to problems with named examples. Click the icon for a description of such errors and of ways to resolve them.
+
 === Fixed Issues
 // SE-11154
 * When a datatype was declared as the union of an object type with an array type, the API editor returned an incorrect parsing error.
