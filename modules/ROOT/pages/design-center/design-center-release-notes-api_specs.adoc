@@ -32,32 +32,69 @@ This release introduces two new features and fixes several issues. There is also
 // SE-11154
 * When a datatype was declared as the union of an object type with an array type, the API editor returned an incorrect parsing error.
 // SE-11358
-* When a datatype was declared as a union in the last `type` entry of a `types` declaration, the API console did not display the datatype. For example, the datatype `c` below would not appear in the API console because it is the last `type` declared in the list of `types`.
+* When a datatype was declared as a union in the last `type` entry of a `types` declaration, the API console did not display the datatype. For example, the datatype `unionType` that is declared in the specification `Test types` below would not appear in the API console because it is the last `type` declared in the list of `types`.
 +
 ----
-#%RAML 1.0 Library
-usage:
-types:
+#%RAML 1.0 DataType
+# This file is located at DataTypeA.raml
+type: object
+additionalProperties: false
+properties:
   a:
-    type: !include a.raml
-  b:
-    type: !include b.raml
-  c:
-    type:  d | e
+    type: string
 ----
-+
-However, if you moved the declaration of `c` (as in the example below), then `c` would appear in the API console.
-+
+
 ----
-#%RAML 1.0 Library
-usage:
-types:
+#%RAML 1.0 DataType
+# This file is located at DataTypeB.raml
+type: object
+properties:
   a:
-    type: !include a.raml
-  c:
-    type:  d | e
+    type: number
   b:
-    type: !include b.raml
+    type: string
+----
+
+----
+#%RAML 1.0
+title: Test types
+
+types:
+  A:
+    type: !include DataTypeA.raml
+  B:
+    type: !include DataTypeB.raml
+  unionType:
+    type: A | B
+
+/events:
+  /device:
+    get:
+      body:
+        application/json:
+          type: unionType
+----
++
+However, if you moved the declaration of `unionType` (as in the example below), then `unionType` would appear in the API console.
++
+----
+#%RAML 1.0
+title: Test types
+
+types:
+  A:
+    type: !include DataTypeA.raml
+  unionType:
+    type: A | B
+  B:
+    type: !include DataTypeB.raml
+
+/events:
+  /device:
+    get:
+      body:
+        application/json:
+          type: unionType
 ----
 
 // SE-11419
