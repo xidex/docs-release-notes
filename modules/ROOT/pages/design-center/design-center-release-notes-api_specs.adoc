@@ -22,11 +22,14 @@ These release notes cover the following versions of these features:
 == API Designer 2.4.8
 *May 18, 2019*
 
-This release introduces two new features and fixes several issues. There is also one known issue.
+This release introduces two new features and an enhancement, and it fixes several issues. There is also one known issue.
 
 === New Features
 * The visual API editor now supports union datatypes and enums.
 * An information icon now appears after error messages that are related to problems with named examples. Click the icon for a description of such errors and of ways to resolve them.
+
+=== Enhancement
+The dialog for creating projects in API Designer has been redesigned for a simpler experience.
 
 === Fixed Issues
 // SE-11154
@@ -43,7 +46,7 @@ properties:
   a:
     type: string
 ----
-
++
 ----
 #%RAML 1.0 DataType
 # This file is located at DataTypeB.raml
@@ -54,7 +57,7 @@ properties:
   b:
     type: string
 ----
-
++
 ----
 #%RAML 1.0
 title: Test types
