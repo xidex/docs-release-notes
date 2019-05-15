@@ -22,7 +22,7 @@ The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messa
 
 === Fixed in this Release
 
-* Test connection button in Anypoint Studio for kafka connector does not work in Mule 4, Looks like the default connector template for "Test Connection" button is incorrect. (SE-11817)
+* The Test Connection button in Anypoint Studio for the Kafka connector did not work in Mule 4. (SE-11817)
 
 == 3.0.2
 
@@ -60,7 +60,7 @@ The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messa
 
 === Fixed in this Release
 
-* Kafka connector was not serializing/deserializing properly the messages that were not plain text. Now the content of the messages can be sent as any type (plain, XML, JSON) as the value is serialized and deserialized properly.
+* Kafka connector was not serializing and deserializing properly the messages that were not plain text. Now the content of the messages can be sent as any type (plain, XML, JSON) as the value is serialized and deserialized properly.
 
 === See Also
 
