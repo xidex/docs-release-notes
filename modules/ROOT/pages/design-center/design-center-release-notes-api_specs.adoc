@@ -27,6 +27,7 @@ This release introduces two new features and an enhancement, and it fixes severa
 === New Features
 * The visual API editor now supports union datatypes and enums.
 * An information icon now appears after error messages that are related to problems with named examples. Click the icon for a description of such errors and of ways to resolve them.
+* There is a new dialog that asks you to confirm whether you want to delete a branch.
 
 === Enhancement
 The dialog for creating projects in API Designer has been redesigned for a simpler experience.
