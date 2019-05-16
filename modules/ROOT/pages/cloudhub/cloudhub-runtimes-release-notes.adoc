@@ -6,6 +6,17 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== May 14, 2019
+
+4.2.0 Runtime Update:
+
+* Persistent queues not working for batch and vm:publish-consume operation. [SE-11698, SE-11599, SE-10583]
+
+4.1.1, 4.1.2, 4.1.3, 4.1.4 and 4.1.5 Runtimes Update:
+
+* Persistent queues not working for batch and vm:publish-consume operation. [SE-11698, SE-11599, SE-10583]
+
+
 == May 8, 2019
 
 4.2.0 Runtime Update:
