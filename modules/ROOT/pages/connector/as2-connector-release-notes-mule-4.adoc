@@ -9,6 +9,25 @@ AS2 (Applicability Statement 2) is a specification about how to transport data s
 
 The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 connector enables trading partners transmit and receive AS2 messages with EDI-X12, EDIFACT, XML, or binary payloads.
 
+== 4.0.4
+
+*May 16, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.1.0 and later
+|Java| 8
+|===
+
+=== Fixed in this Release
+
+* The connector process receive request until file is completed transferred.
+* The send process is releasing threads and files operations used during the transferring in a safe mode.
+* Delete the file after receive process ended for suport send and receive operations in same instance.
+
 == 4.0.3
 
 *April 26, 2019*
