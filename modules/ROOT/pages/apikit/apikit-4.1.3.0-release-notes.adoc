@@ -22,6 +22,7 @@ This release focused on bug fixes.
 
 == Improvements 
 
+* The Scaffolding result is now enriched with errors during the processs.
 * AMF console updated to lastest version
 * Java 11 support on APIKit
 * now when Scaffolding empty API Specs (no resources). APIKit generates mule configs with the main flow but no resource flows.
