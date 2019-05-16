@@ -6,6 +6,13 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== May 16, 2019
+
+3.8.7 Runtime Update:
+
+* FTP connector not properly closing connection when server close socket. [SE-11688]
+
+
 == May 14, 2019
 
 4.2.0 Runtime Update:
