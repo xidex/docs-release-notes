@@ -7,20 +7,20 @@ endif::[]
 
 === New Features
 
-* Improve user experience for direct upload by specifying which files you can upload for each asset type. (EXC-3427)
-* Users can re-order the custom pages in a public portal by dragging and dropping them. (EXC-3405)
+* Improve user experience for direct upload by providing relevant information about the files that should be uploaded for each asset type. (EXC-3427)
+* Users can now customize the order of the user generated pages in the public portal. (EXC-3405)
 * Unauthenticated access to portal images is disabled. (EXC-3394)
 
 === Fixed in this Release
 
 * Users can use the mocking service to try the APIs available in public portals with branded domain names. (EXC-3585)
-* Return correct `401 Unauthorized` error and not incorrect `404 Not Found` error to Maven CLI so that Maven can retry with the proper credentials instead of failing. (EXC-3520)
-* When an API version is made public, the visibility indicator in the API version drop-down reflects the correct state. (EXC-3513)
-* Remove orphan connectors when an asset version is deleted. (EXC-3510)
-* Correct generation of the mocking service URL for OAS API specifications. (EXC-3478)
-* Tags are no longer overwritten with the previous version's tags when updating the asset name. (EXC-3442)
-* Prevent inconsistent asset types across versions. (EXC-3392)
-* Improve validation of the request body when creating contracts using the Experience API. (EXC-3021)
+* Provide correct error information to the Maven CLI so that Maven can retry the request with proper credentials instead of failing. (EXC-3520)
+* When an API version is made public, the visibility indicator in the API version drop-down in the asset portal reflects the correct state. (EXC-3513)
+* Remove orphan connectors when an API asset version is deleted. (EXC-3510)
+* Generate the correct mocking service URL for OAS API specifications. (EXC-3478)
+* Tags are no longer overwritten with the previous asset version's tags when updating the asset name. (EXC-3442)
+* Prevent inconsistent asset type across multiple versions of an asset. (EXC-3392)
+* Improve validation of the request body when creating contracts using the Experience API. (A contract is the link between a client application and an API instance.) (EXC-3021)
 
 == April 2019
 
