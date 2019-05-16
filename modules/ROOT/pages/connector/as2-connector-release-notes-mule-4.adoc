@@ -24,9 +24,9 @@ The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 co
 
 === Fixed in this Release
 
-* The app was failing with both send and receive requests because it was starting to process files before they were completely transferred.
-* Releasing threads and file operations from the Send process was increasing the size of the thread pool and many operations were failing.
-* The send and receive operations were not supported together in the same instance.
+* The connector process receive request until file is completed transferred.
+* The send process is releasing threads and files operations used during the transferring in a safe mode.
+* Delete the file after receive process ended for suport send and receive operations in same instance.
 
 == 4.0.3
 
