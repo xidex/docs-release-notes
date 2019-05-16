@@ -5,7 +5,7 @@ endif::[]
 
 Support Category: Select
 
-The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messaging system over Mule runtime, enabling seamless integration between your applications and an Apache Kafka cluster.
+The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messaging system over the Mule runtime, enabling seamless integration between your applications and an Apache Kafka cluster.
 
 == 3.0.4
 
@@ -22,7 +22,7 @@ The Anypoint Connector for Kafka allows you to connect to the Apache Kafka messa
 
 === Fixed in this Release
 
-* Fixed performance connection validation issue. (SE-11817)
+* Fixed a performance connection validation issue relating to the same issue as in v3.0.3. (SE-11817)
 
 == 3.0.3
 
