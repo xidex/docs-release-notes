@@ -22,7 +22,7 @@ These release notes cover the following versions of these features:
 == API Designer 2.4.8
 *May 18, 2019*
 
-This release introduces two new features and an enhancement, and it fixes several issues. There is also one known issue.
+This release introduces three new features and an enhancement, and it fixes several issues. There is also one known issue.
 
 === New Features
 * The visual API editor now supports union datatypes and enums.
@@ -125,7 +125,7 @@ types:
             type: string | a1
 ----
 // DESIGNER-3619
-* Importing an API specification from Exchange would overwrite newer versions existing assets in a project.
+* Importing an API specification from Exchange would overwrite newer versions of existing assets in a project.
 +
 These steps reproduced the problem:
 +
