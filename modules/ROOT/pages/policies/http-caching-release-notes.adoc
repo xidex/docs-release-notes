@@ -4,9 +4,31 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, http, caching, QoS, policy, release notes
 
-== 1.0.0
+== 1.0.1
+
+*Apr 26, 2019*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== Fixed Issues
+
+* Fix previous version incompatible with Mule Runtime 4.2.0 and greater.
+* Fix issue when trying to serialize internal parameters that are not serializable.
+* Fix issue when there was a cache hit, the loaded Event was using the old Context (event Id, correlation Id), affecting error handling and feedback loop.
+
+=== Known Issues
+
+* Upgrading from a previous policy version invalidates the existing cache
+
+== 1.0.0 - Deprecated
 
 *Jul 03, 2018*
+
+=== Compatibility
+
+* v1.0.0 is not compatible with Mule Runtime v4.2.0 and greater. It will continue to work with v4.1.x of the Runtime.
 
 === Minimum Mule Version
 

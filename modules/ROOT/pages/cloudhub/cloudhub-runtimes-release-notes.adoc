@@ -6,19 +6,80 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== April 25, 2019
+== May 14, 2019
+
+4.2.0 Runtime Update:
+
+* Persistent queues not working for batch and vm:publish-consume operation. [SE-11698, SE-11599, SE-10583]
+
+4.1.1, 4.1.2, 4.1.3, 4.1.4 and 4.1.5 Runtimes Update:
+
+* Persistent queues not working for batch and vm:publish-consume operation. [SE-11698, SE-11599, SE-10583]
+
+
+== May 8, 2019
+
+4.2.0 Runtime Update:
+
+* Streaming a large payload through HTTP generates a timeout [SE-10129]
+
+
+== May 2, 2019
+
+4.2.0 Initial Release:
+
+* Mule 4.2 runs on CloudHub using AdoptOpenJDK 1.8 instead of Oracle JDK.
+* There is an important update included for the API Caching Policy. See the xref:policies/http-caching-release-notes.adoc[HTTP Caching Release Notes] for more information.
+* For information about changes and improvements in the Mule 4.2.0 runtime, see xref:mule-runtime/mule-4.2.0-release-notes.adoc[Mule Runtime 4.2.0 Release Notes].
+
+
+== April 26, 2019
+
+4.1.2-4.1.4 Runtime Update:
+
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. [SE-11483]
 
 3.9.2 Runtime Update:
 
-* RAML with date-only/datetime-only fails to parse in APIKit [SE-10737]
-* String interpolation in logger component fails on debug mode [SE-11094]
-* Login screen in API Console disappears [SE-8445]
+* Address incomplete fix in RAML parser [SE-10737]
+* Ping flow flooding Insight when metadata is enabled and auto restart is set for CloudHub applications [SE-11327]
 
 3.9.1 Runtime Update:
 
-* RAML with date-only/datetime-only fails to parse in APIKit [SE-10737]
-* String interpolation in logger component fails on debug mode [SE-11094]
-* Login screen in API Console disappears [SE-8445]
+* Address incomplete fix in RAML parser [SE-10737]
+* Ping flow flooding Insight when metadata is enabled and auto restart is set for CloudHub applications [SE-11327]
+
+3.9.0 Runtime Update:
+
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. [SE-11483]
+* Some inbound request failures are not taken into account in Monitoring dashboards. [SE-10544]
+* Visualizer properties are not picked up from the `mule-app.properties` file. [SE-10374]
+* Ping flow flooding Insight when metadata is enabled and auto restart is set for CloudHub applications [SE-11327]
+
+== April 25, 2019
+
+4.1.5 Runtime Update:
+
+* HTTP Listener discloses full URL in error response. [SE-10302]
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. [SE-11483]
+
+3.9.2 Runtime Update:
+
+* RAML with date-only/datetime-only fails to parse in APIKit. [SE-10737]
+* String interpolation in logger component fails on debug mode. [SE-11094]
+* Login screen in API Console disappears. [SE-8445]
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. [SE-11483]
+* Some inbound request failures are not taken into account in Monitoring dashboards. [SE-10544]
+* Visualizer properties are not picked up from the `mule-app.properties` file. [SE-10374]
+
+3.9.1 Runtime Update:
+
+* RAML with date-only/datetime-only fails to parse in APIKit. [SE-10737]
+* String interpolation in logger component fails on debug mode. [SE-11094]
+* Login screen in API Console disappears. [SE-8445]
+* Fix `NullPointerException` reported in the logs by some connectors when the Monitoring feature is enabled. [SE-11483]
+* Some inbound request failures are not taken into account in Monitoring dashboards. [SE-10544]
+* Visualizer properties are not picked up from the `mule-app.properties` file. [SE-10374]
 
 
 == April 8, 2019

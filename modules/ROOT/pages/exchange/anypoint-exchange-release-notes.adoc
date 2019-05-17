@@ -7,18 +7,23 @@ endif::[]
 
 === New Features
 
+* Adding multiple tags to an asset is now easier. After a user types the tag and presses enter, a new tag is automatically started. (EXC-3431)
 * Exchange events, such as the most recent asset details page visited in Exchange, are now shown in the Recent Items list in the common Anypoint Platform navigation bar. (EXC-3264)
 * Users can now delete a draft of portal documentation. Previously users could only delete by editing the draft, removing all new edits, and publishing. When there were multiple changes in the draft, it could be difficult to tell which edits belonged to the draft and which to the old version. With the new option to delete a draft, users can have confidence that the right changes will be discarded automatically, preserving the original documentation content. (EXC-3116)
+* Added information messages when trying to create a page with an invalid name in the Asset Detail Page to explain why the validation failed and how the user can make the page name valid. (EXC-3041)
+* All policy URLs now have MuleSoft domains, so whitelists for API policies now require only MuleSoft URLs. No need to also add Amazon S3 URLs. (EXC-2680)
 * Users can now automate the publishing process by using the Command Line Interface (CLI) to upload RAML and OAS specifications to Exchange. (EXC-2539)
 
 === Fixed in this Release
 
+* Exchange now generates the correct representation of mocking service URLs for OAS specifications. (EXC-3478)
 * To prevent hackers from accessing the authorization token from the request header, the authorization token is no longer included in the request header in each request made with API Console. (EXC-3416)
-* APIs in the public portal can now be filtered by asset types. Previously all assets were shown, disregarding type filter selection. (EXC-3400)
+* Enabled filtering by asset type in the public portal. (EXC-3400, EXC-3390)
 * If the user creates a Terms and Conditions page to supplement their asset documentation page, the Terms and Conditions page is now visible at all times. (EXC-3383)
-* Add `jpeg` to the list of supported extensions for portal resources (`bmp`, `gif`, `ico`, `jpe`, `jpeg`, `jpg`, `png`, `svg`, `tif`, `tiff`, `webp`). (EXC-3351)
-* Provide guardrails to prevent users from creating more than 50 pages in the documentation of a single asset. This prevents wasting unnecessary resources to support an unlimited number of pages. (EXC-3157)
-* Prevent users from creating portal contents without an associated file when publishing API specifications. (EXC-2541)
+* Added `jpeg` to the list of supported extensions for portal resources (`bmp`, `gif`, `ico`, `jpe`, `jpeg`, `jpg`, `png`, `svg`, `tif`, `tiff`, `webp`). (EXC-3351)
+* If the user selects the *API is behind firewall* option, navigates away, and returns, the selection is now remembered. (EXC-3335)
+* Provided guardrails to prevent users from creating more than 50 pages in the documentation of a single asset. This prevents wasting unnecessary resources to support an unlimited number of pages. (EXC-3157)
+* Prevented users from creating portal contents without an associated file when publishing API specifications. (EXC-2541)
 
 == March 2019
 

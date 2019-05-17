@@ -4,6 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, spike control, policy, release notes
 
+== 1.1.2
+
+*Apr 26, 2018*
+
+=== Minimum Mule Version
+
+*4.1.0*
+
+=== New Features and Enhancements
+
+* Performance improvements.
+
 == 1.1.1
 
 *Mar 16, 2018*

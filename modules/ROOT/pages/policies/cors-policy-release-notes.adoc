@@ -4,6 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, cors, policy, release notes
 
+== 1.1.2
+
+*Apr 26, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Performance improvements.
+
 == 1.1.1
 
 *Dec 05, 2018*

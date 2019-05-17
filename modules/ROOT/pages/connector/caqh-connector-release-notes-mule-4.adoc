@@ -36,5 +36,6 @@ First version.
 
 == See Also
 
+* xref:connectors::caqh/caqh-connector.adoc[CAQH Connector Guide]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

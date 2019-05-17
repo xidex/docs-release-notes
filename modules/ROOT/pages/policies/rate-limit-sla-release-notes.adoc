@@ -4,6 +4,32 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, rate-limit, policy, release notes
 
+
+== 1.2.1
+
+*Apr 30, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== Fixed Issues
+
+* Fixed multiple Client Applications using one rate limiting algorithm when configured with same SLA in Anypoint Platform.
+
+== 1.2.0
+
+*Apr 26, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* The default configuration has been modified to avoid propagating or returning policy headers unless explicitly configured by checking the "Expose headers" option.
+* Performance improvements.
+
 == 1.1.3
 
 *Feb 14, 2019*

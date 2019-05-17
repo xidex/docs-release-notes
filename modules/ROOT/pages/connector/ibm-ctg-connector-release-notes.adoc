@@ -1,15 +1,87 @@
-= IBM CICS Transaction Gateway Connector Release Notes
+= IBM CICS Transaction Gateway Connector Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, ibm ctg, cics, jca, connector
 
-*April 2018*
+Support Category: Premium
 
-_Premium_
+The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with backend CICS applications using the CICS Transaction Gateway. For Java platforms, CTG implements the JCA resource adapter to connect Java applications to the CICS system. The connector connects Mule applications and the CTG.
 
-The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with back-end CICS applications using the CICS Transaction Gateway. For Java platforms, CTG implements the JCA resource adapter to connect Java applications to the CICS system.
-The connector serves as a handrail between Mule applications and the CTG.
+== 1.1.4
+
+*May 13, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.7 and later
+|IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
+|IBM CICS TG SDK |9.1 and 9.2
+|===
+
+[IMPORTANT]
+====
+* The remote CICS Transaction Gateway  must be at the same release level or later than the version of the JCA resource adapter.
+* The JCA resource adapter must match the CICS TG platform. For example, if you have CICS TG for Multiplatforms, you cannot connect with it, to, or from a CICS TG that uses the z/OS resource adapter.
+====
+
+The following required JAR files are needed to set up the connector configuration:
+
+* ccf2.jar (CICS Common Connector Framework)
+* cicsjee.jar (CICS JEE)
+* ctgclient.jar (CTG Client Library)
+* ctgserver.jar (CTG Server Library)
+* geronimo-j2ee-connector_1.6_spec-1.0.jar (JCA 1.6 Specification)
++
+NOTE: JCA 1.6 is a required library needed to overcome conflicts with the JCA 1.5 shipped with Mule Runtime.
+
+=== Features
+
+* The *response time* change from version 1.1.1 was reverted. This version is essentially the same as 1.1.0.
+
+=== Known Issues
+
+* Although the inclusion of JCA 1.6 as a required library is meant to solve compatibility conflicts with the JCA 1.5 (shipped with the Mule Runtime), it is currently unknown if this causes side effects.
+
+== 1.1.1
+
+*May 9, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.7 and later
+|IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
+|IBM CICS TG SDK |9.1 and 9.2
+|===
+
+[IMPORTANT]
+====
+* The remote CICS TG must be at the same release level or a higher than the version of the JCA resource adapter.
+* The JCA resource adapter must match the CICS TG platform. For example, if you have CICS TG for Multiplatforms, you cannot connect with it, to or from a CICS TG for z/OS resource adapter.
+====
+
+The following required JAR files are needed to set up the connector configuration:
+
+* ccf2.jar (CICS Common Connector Framework)
+* cicsjee.jar (CICS JEE)
+* ctgclient.jar (CTG Client Library)
+* ctgserver.jar (CTG Server Library)
+* geronimo-j2ee-connector_1.6_spec-1.0.jar (JCA 1.6 Specification)
++
+NOTE: JCA 1.6 is a required library needed to overcome conflicts with the JCA 1.5 shipped with Mule Runtime.
+
+=== Features
+
+* The *response time* is now configurable. It is located under _Additional Settings_ in the Connector configuration file.
+
+=== Known Issues
+
+* Although the inclusion of JCA 1.6 as a required library is meant to solve compatibility conflicts with the JCA 1.5 (shipped with the Mule Runtime), it is currently unknown if this causes side effects.
 
 == 1.1.0
 
@@ -20,7 +92,7 @@ The connector serves as a handrail between Mule applications and the CTG.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.8
+|Mule Runtime |3.8 and 3.9
 |IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
 |IBM CICS TG SDK |9.1 and 9.2
 |===
@@ -58,12 +130,10 @@ IMPORTANT: JCA 1.6 is needed as a required library to overcome conflicts with JC
 
 *January 19, 2018*
 
-IBM CICS Transactions Gateway (IBM CTG) connector is available in Mule 4.0.
-
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |4.0 and later
+|Mule Runtime |3.8 and 3.9
 |Java | 8
 |IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
 |IBM CICS TG SDK |9.1 and 9.2
@@ -110,7 +180,7 @@ Note: JCA 1.6 is needed as a required library to overcome conflicts with JCA 1.5
 [%headercols="50a,50a"]
 |===
 |Software |Version
-|Mule Runtime |3.8
+|Mule Runtime |3.8 and 3.9
 |IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
 |IBM CICS TG SDK |9.1 and 9.2
 |===
@@ -153,5 +223,5 @@ See: xref:6@studio::defining-metadata.adoc[User-defined metadata in Anypoint Stu
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum].
-* https://support.mulesoft.com[Contact MuleSoft Support].
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]

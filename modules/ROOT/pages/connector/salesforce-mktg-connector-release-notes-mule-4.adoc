@@ -7,6 +7,27 @@ Support Category: Select
 
 The Salesforce Marketing Cloud connector lets you connect to the Salesforce Marketing Cloud web services using the Exact Target API. The connector exposes convenient methods for managing objects and calling services provided by Exact Target API, also known as Salesforce Marketing Cloud.
 
+== 2.1.3
+
+*May 6, 2019*
+
+=== Compatibility
+
+The Salesforce Marketing Cloud connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.1 and later
+|Anypoint Studio|7 and later
+|Fuel SDK|v1.2.2
+|===
+
+=== Fixed in this Release
+
+* SFMC (Salesforce Marketing Connector) no longer erroneously appends a timestamp to the value in a SQL statement(SE-11603).
+* Now works with Mule Runtime 4.2.0 and Java 11. Added the following missing dependencies: com.sun.xml.messaging.saaj:saaj-impl:1.5.1, javax.ws.rs:javax.ws.rs-api:2.1.1 and javax.xml.ws:jaxws-api:2.3.1
+
 == 2.1.2
 
 *March 11, 2019*

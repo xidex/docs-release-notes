@@ -5,9 +5,52 @@ endif::[]
 
 Support Category: Premium
 
-The Mule Runtime supports SAP integration through our Anypoint Connector for SAP, which is an SAP-certified Java connector that leverages the SAP Java Connector (JCo) libraries.
+The Mule Runtime supports SAP integration through the Anypoint Connector for SAP, which is an SAP-certified Java connector that leverages the SAP Java Connector (JCo) libraries.
 
-NOTE: This connector is not supported for use with Anypoint Design Center.
+NOTE: This connector is not supported for use with Flow Designer in Design Center.
+
+== 4.1.6
+
+*May 10, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|SAP Solution| ECC 6.0 and later
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+* SAP connector is not honoring the encoding set in the configuration. (SE-11690)
+* I_DOCNUM is not being returned. (SE-11630)
+
+== 4.1.5
+
+*April 10, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|SAP Solution| ECC 6.0 and later
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+* SAP Connector throws parsing XML error for a BAPI call (SE-11457)
+* Sap Connector caching JCOFunction templates. (SE-11417)
+* Solved the issue where empty tables would crash the metadata generation. (SE-10776)
 
 == 4.1.4
 
@@ -22,10 +65,10 @@ NOTE: This connector is not supported for use with Anypoint Design Center.
 |Anypoint Studio|7.0 and later
 |Java|8
 |SAP Solution| ECC 6.0 and later
-|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
 |===
 
-=== Fixed in this release
+=== Fixed in this Release
 
 * SAP connector did not accept slash `/` in a BAPI function call. (SE-10952)
 
@@ -42,10 +85,10 @@ NOTE: This connector is not supported for use with Anypoint Design Center.
 |Anypoint Studio|7.0 and later
 |Java|8
 |SAP Solution| ECC 6.0 and later
-|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
 |===
 
-=== Fixed in this release
+=== Fixed in this Release
 
 * Customer facing SAP connector was not able to update SAP correctly when IDOCs were sent as a collection. (SE-11221)
 * SAP connector did not accept slash "/" on a BAPI function call. (SE-10952)
@@ -61,7 +104,7 @@ NOTE: This connector is not supported for use with Anypoint Design Center.
 |Anypoint Studio|7.0 and later
 |Java|8
 |SAP Solution| ECC 6.0 and later
-|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
 |===
 
 === Fixed in this Release
@@ -81,7 +124,7 @@ NOTE: This connector is not supported for use with Anypoint Design Center.
 |Anypoint Studio|7.0 and later
 |Java|8
 |SAP Solution| ECC 6.0 and later
-|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
 |===
 
 === Fixed in this Release
@@ -100,7 +143,7 @@ NOTE: This connector is not supported for use with Anypoint Design Center.
 |Anypoint Studio|7.0 and later
 |Java|8
 |SAP Solution| ECC 6.0 and later
-|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
 |===
 
 === Features
@@ -127,7 +170,7 @@ NOTE: This connector is not supported for use with Anypoint Design Center.
 |Anypoint Studio|7.0 and later
 |Java|8
 |SAP Solution| ECC 6.0 and later
-|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
 |===
 
 === Features
