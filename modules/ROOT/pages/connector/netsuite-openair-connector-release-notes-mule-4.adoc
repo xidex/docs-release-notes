@@ -9,7 +9,7 @@ The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connec
 
 == 2.0.2 
 
-*May 6, 2019*
+*May 17, 2019*
 
 === Compatibility
 
