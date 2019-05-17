@@ -13,12 +13,24 @@ There are no new features or enhancements in this release.
 
 == Changes in This Release
 
-This release contains no feature changes.
+Previous to this release, multiple Mule runtime engines (Mule) sharing the same identity were able to connect to the Anypoint control plane. 
+
+Starting with this release, *only one Mule* is allowed to connect to the control plane per server. Concurrent Mule runtimes will no longer be allowed to connect and provide status, which means any concurrent Mule runtimes will become unmanaged. 
+
+Having multiple Mule runtimes with the same identity attempting to connect to the control plane can cause issues because the concurrent runtimes are essentially competing with each other to establish a connection. 
+
+The runtime that connects first is able to send information over and sync (in some cases this can mean re-deploying applications that are not actually running on the runtime). If initial runtime then becomes disconnected, there is the potential that the other runtimes may connect before the initial runtime can re-connect. This means that the sync process occurs from the current state of the newly connected runtime.
+
+This change is beneficial to prevent the possibility of: 
+
+* Multiple instances of an application running across two or more Mule runtimes unintentionally
+* Inaccurate statuses for runtime and/or applications
+
 
 == Fixed Issues
 
-* Multiple connections of different runtimes were accepted with the same certificate in certain scenarios
-* Orphan deployments left in the database when concurrent deployment requests were executed
+* The issue where multiple connections of different runtimes were accepted with the same certificate in certain scenarios.
+* The issue where orphan deployments were left in the database when concurrent deployment requests were executed is fixed.
 
 == Known Limitations and Workarounds
 
