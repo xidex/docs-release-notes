@@ -8,10 +8,13 @@ These are the release notes for patches which are made to the Mule runtimes on R
 
 == May 17, 2019
 
-This release adds the following runtimes:
+=== 4.2.0 `v1.2.2`
 
- * 4.1.5 `v1.2.1`
- * 4.2.0 `v1.2.2`
+* Added: Support for Runtime Fabric deployments
+
+=== 4.1.5 `v1.2.1`
+
+* Added: Support for Runtime Fabric deployments
 
 == April 30, 2019
 
