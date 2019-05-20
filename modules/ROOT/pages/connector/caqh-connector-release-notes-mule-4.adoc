@@ -25,9 +25,9 @@ The Anypoint Connector for CAQH lets you connect to the CAQH - ProView and Direc
 
 === Fixed in this Release
 
-* Test connection bug is fixed which we are facing in Design Centre.
-* Get provider credentials media type is changed to application/xml.
-* Updated Icon to CAQH
+* Test connection bug is fixed for use in Design Center.
+* The Get Provider Credentials operation's media type is changed to `application/xml`.
+* Updated icon to CAQH.
 
 == 1.0.0
 
