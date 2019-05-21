@@ -19,14 +19,16 @@ Support Category: Select
 
 === Fixed in this Release
 
-* Metadata issues for sources(ONN-1918) - The keys and output datasense were wrong for the SubscribeTopic, SubscribeChannel, ReplayTopic and ReplayChannel sources. With this version metadata was fixed.
-* Duplicate values with objectType case(CONN-451) - There were some issues in the input/output datasense for different objects where some of the fields were duplicated.
-* Vulnerability reported for Salesforce connector 9.2.2 - A part of the vulnerabilities reported were fixed by upgrading some of the dependencies the connector uses. (SE-9824)
+* Metadata issues for sources - The DataSense keys and output were wrong in the SubscribeTopic, SubscribeChannel, ReplayTopic, and ReplayChannel sources. With this version, the metadata has been fixed. (CONN-1918)
+* Duplicate values with objectType case - Issues in the input and output DataSense for different objects where some of the fields were duplicated. (CONN-451)
+* Vulnerability reported for Salesforce connector 9.2.2 - Part of the vulnerabilities reported were fixed by upgrading the dependencies the connector uses. (SE-9824)
 +
 Salesforce connector 9.7.1 now supports these library upgrades:
 +
 ** Jetty `org.eclipse.jetty:jetty-util:9.4.11.v20180605` changed to `org.eclipse.jetty:jetty-util:9.4.17.v20190418`.
-** Commons BeanUtils Core(`commons-beanutils:commons-beanutils-core:1.8.3`), BeanShell(org.beanshell:bsh-core:2.0b4) and ESAPI(`org.owasp.esapi:esapi:2.1.0.1`) dependencies were removed as they were not used anymore.
+** Commons BeanUtils Core (`commons-beanutils:commons-beanutils-core:1.8.3`)
++
+NOTE: The BeanShell (`org.beanshell:bsh-core:2.0b4`) and ESAPI (`org.owasp.esapi:esapi:2.1.0.1`) dependencies were removed as they were no longer used.
 
 === Known Issues
 
