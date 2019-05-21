@@ -76,7 +76,7 @@ The Datasense resolution speed has been significantly enhanced in this release.
 
 == Hardware Requirements
 
-* For most use cases, Anypoint Studio with the 4.1.3 Runtime does not change hardware or software requirements from the previous Studio 7  versions.
+* For most use cases, Anypoint Studio with the 4.1.3 Runtime does not change hardware or software requirements from the previous Studio 7 versions.
 * MuleSoft recommends a minimum of 4GB of free RAM available on a developer workstation. As applications become complex, consider adding more RAM.
 
 * 4GB of free memory available.
@@ -89,7 +89,7 @@ The Datasense resolution speed has been significantly enhanced in this release.
 |===
 | Software | Version
 |Java Environments
-| * Oracle JDK 1.8.0
+| * AdoptOpenJDK 8
 
 This version of Studio is not compatible with Java 9 or Java 10. +
 If you are having issues installing Studio, follow xref:7.2@studio::faq-jdk-requirement.adoc[this guide] to reconfigure your Java installation.
