@@ -9,7 +9,6 @@ endif::[]
 
 * Improve user experience for direct upload by providing relevant information about the files that should be uploaded for each asset type. (EXC-3427)
 * Users can now customize the order of the user generated pages in the public portal. (EXC-3405)
-* Unauthenticated access to portal images is disabled. (EXC-3394)
 
 === Fixed in this Release
 
@@ -21,6 +20,7 @@ endif::[]
 * Tags are no longer overwritten with the previous asset version's tags when updating the asset name. (EXC-3442)
 * Prevent inconsistent asset type across multiple versions of an asset. (EXC-3392)
 * Improve validation of the request body when creating contracts using the Experience API. (A contract is the link between a client application and an API instance.) (EXC-3021)
+* Unauthenticated access to portal images is disabled for all new uploaded images. Existing images previous to this change must be re-uploaded for this fix to take effect. (EXC-3394)
 
 == April 2019
 
