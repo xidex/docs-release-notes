@@ -37,7 +37,18 @@ A new parameter in the SAP outbound configuration has been added to the Global E
 
 * The SAP connector did not accept special characters in an incoming BAPI function sRFC response. (SE-11651)
 
-* Configuring SNC in SAP connector was not working. Added message server configuration parameters: String host, String systemId, Integer port, String group, String router - these are reflections of JCo properties. (SE-10985)
+* Configuring SNC in SAP connector was not working. Added message server configuration parameters:
++
+[source,code,linenums]
+----
+String JCO_MSHOST = "jco.client.mshost";
+String JCO_MSSERV = "jco.client.msserv";
+String JCO_R3NAME = "jco.client.r3name";
+String JCO_GROUP = "jco.client.group";
+String JCO_SAPROUTER = "jco.client.saprouter";
+----
++
+These are reflections of JCo properties. (SE-10985)
 
 == 4.1.6
 
