@@ -9,6 +9,34 @@ The Mule Runtime supports SAP integration through the Anypoint Connector for SAP
 
 NOTE: This connector is not supported for use with Flow Designer in Design Center.
 
+== 4.2.0
+
+*May 23, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|SAP Solution| ECC 6.0 and later
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Features
+
+* Added the option to use default SAP format for date and time when working with BAPIFunctions over sRFC.
+
+=== Fixed in this Release
+
+* A new parameter in SAP Outbound configuration was added in Advanced tab. The parameter name is: "Use SAP date time format" and has false as default value. If true the DATE and TIME fields will be formatted as strings (yyyy-MM-dd / HH:mm:ss); if false their value will be returned. (SE-11815)
+
+* Fixed SAP Connector not accepting special character for incoming BAPI function RFC response. (SE-11651)
+
+* Configuring SNC in SAP connector not working. Added message server configuration parameters. (SE-10985)
+
 == 4.1.6
 
 *May 10, 2019*
