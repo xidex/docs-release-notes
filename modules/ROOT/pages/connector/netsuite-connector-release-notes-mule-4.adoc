@@ -21,7 +21,7 @@ The Anypoint Connector for NetSuite synchronizes data and automates business pro
 |===
 
 [NOTE]
-The NetSuite version is not the same as the SuiteTalk API version. Your account may run on a different NetSuite version  than the version of the the API you are using.
+The NetSuite version is not the same as the SuiteTalk API version. Your account may run on a different NetSuite version than the version of the the API you are using.
 
 === Features
 
