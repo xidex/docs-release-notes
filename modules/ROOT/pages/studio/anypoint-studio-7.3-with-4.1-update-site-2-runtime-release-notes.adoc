@@ -62,7 +62,7 @@ The 7.3.2 Studio release includes a number of bug fixes.
 |===
 | Software | Version
 |Java Environments
-| * Oracle JDK 1.8.0
+| * AdoptOpenJDK 8
 
 This version of Studio is not compatible with Java 9 or Java 10. +
 If you are having issues installing Studio, follow xref:7.2@studio::faq-jdk-requirement.adoc[this guide] to reconfigure your Java installation.
