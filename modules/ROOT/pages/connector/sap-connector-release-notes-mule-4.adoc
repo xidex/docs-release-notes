@@ -9,6 +9,47 @@ The Mule Runtime supports SAP integration through the Anypoint Connector for SAP
 
 NOTE: This connector is not supported for use with Flow Designer in Design Center.
 
+== 4.2.0
+
+*May 23, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|SAP Solution| ECC 6.0 and later
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Features
+
+* New SAP format for the date and time when working with BAPI functions over sRFC:
++
+A new parameter in the SAP outbound configuration has been added to the Global Element Properties > *Advanced* tab. The  *Use SAP date time format* defaults to the `false` value. If `true`, the DATE and TIME fields are formatted as strings in the `yyyy-MM-dd / HH:mm:ss` format. If false, the DATE and TIME fields values are returned. 
+
+=== Fixed in this Release
+
+* Added SAP date and time format (see Features for more information). (SE-11815)
+
+* The SAP connector did not accept special characters in an incoming BAPI function sRFC response. (SE-11651)
+
+* Configuring SNC in SAP connector was not working. Added message server configuration parameters:
++
+[source,code,linenums]
+----
+String JCO_MSHOST = "jco.client.mshost";
+String JCO_MSSERV = "jco.client.msserv";
+String JCO_R3NAME = "jco.client.r3name";
+String JCO_GROUP = "jco.client.group";
+String JCO_SAPROUTER = "jco.client.saprouter";
+----
++
+These are reflections of JCo properties. (SE-10985)
+
 == 4.1.6
 
 *May 10, 2019*
