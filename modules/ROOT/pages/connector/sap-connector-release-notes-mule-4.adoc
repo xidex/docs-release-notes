@@ -27,15 +27,17 @@ NOTE: This connector is not supported for use with Flow Designer in Design Cente
 
 === Features
 
-* Added the option to use default SAP format for date and time when working with BAPIFunctions over sRFC.
+* New SAP format for the date and time when working with BAPI functions over sRFC:
++
+A new parameter in the SAP outbound configuration has been added to the Global Element Properties > *Advanced* tab. The  *Use SAP date time format* defaults to the `false` value. If `true`, the DATE and TIME fields are formatted as strings in the `yyyy-MM-dd / HH:mm:ss` format. If false, the DATE and TIME fields values are returned. 
 
 === Fixed in this Release
 
-* A new parameter in SAP Outbound configuration was added in Advanced tab. The parameter name is: "Use SAP date time format" and has false as default value. If true the DATE and TIME fields will be formatted as strings (yyyy-MM-dd / HH:mm:ss); if false their value will be returned. (SE-11815)
+* Added SAP date and time format (see Features for more information). (SE-11815)
 
-* Fixed SAP Connector not accepting special character for incoming BAPI function RFC response. (SE-11651)
+* The SAP connector did not accept special characters in an incoming BAPI function sRFC response. (SE-11651)
 
-* Configuring SNC in SAP connector not working. Added message server configuration parameters. (SE-10985)
+* Configuring SNC in SAP connector was not working. Added message server configuration parameters: String host, String systemId, Integer port, String group, String router - these are reflections of JCo properties. (SE-10985)
 
 == 4.1.6
 
