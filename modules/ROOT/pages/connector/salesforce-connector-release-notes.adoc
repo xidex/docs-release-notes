@@ -29,8 +29,8 @@ IMPORTANT: From Salesforce connector v8.1.0 and later, in the `Replay Topic` and
 
 === Fixed in this Release
 
-* readMetadata operation was filtering the null values from the Salesforce response. (CONN-1664)
-* update operation was unable to send the proper request to Salesforce in case of a CustomField of type Picklist which contained ValueSet and ValueSetDefinition nested objects. (CONN-1693)
+* The `Read Metadata` operation was filtering null values from the Salesforce response. (CONN-1664)
+* The Update operation was unable to send a proper request to Salesforce if a CustomField of type Picklist contained the ValueSet or ValueSetDefinition nested objects. (CONN-1693)
 
 
 == 8.8.1
