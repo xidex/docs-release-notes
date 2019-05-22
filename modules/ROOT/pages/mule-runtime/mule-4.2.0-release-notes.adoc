@@ -2,6 +2,8 @@
 = Mule Runtime 4.2.0 Release Notes
 :keywords: mule, 4.2.0, runtime, release notes
 
+*May 6, 2019*
+
 Mule Runtime 4.2.0 includes the following enhancements, changes, and fixes.
 
 == Mule Runtime Features and Enhancements
