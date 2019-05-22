@@ -9,6 +9,30 @@ Starting with v.6.0.2, the Salesforce Connector is licensed commercially with An
 
 IMPORTANT: From Salesforce connector v8.1.0 and later, in the `Replay Topic` and `Replay Stream Channel` operations, the `FROM_REPLAY_ID` value in the *replayOption* field is not supported for use in CloudHub.
 
+== 8.8.2
+
+*May 22, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 3.5.2 and later
+|Anypoint Studio|5.4.0 and later
+|Salesforce|v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Features
+
+* None.
+
+=== Fixed in this Release
+
+* readMetadata operation was filtering the null values from the Salesforce response. (CONN-1664)
+* update operation was unable to send the proper request to Salesforce in case of a CustomField of type Picklist which contained ValueSet and ValueSetDefinition nested objects. (CONN-1693)
+
+
 == 8.8.1
 
 *April 2, 2019*
