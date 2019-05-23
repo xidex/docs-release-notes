@@ -1,0 +1,30 @@
+= Cryptography Module Release Notes for Mule 4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, cryptography, module, release notes
+
+== 1.0.1
+
+*May 23, 2019*
+
+=== Min Mule Version
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| https://www.mulesoft.org/jira/browse/MULE-16870[MULE-16870] | Upgrade BouncyCastle dependency to 1.61
+| https://www.mulesoft.org/jira/browse/MULE-16870[MULE-16870] | Upgrade Commons Lang dependency to 3.8.1
+| https://www.mulesoft.org/jira/browse/MULE-16870[MULE-16870] | Upgrade Commons Codec dependency to 1.12
+| https://www.mulesoft.org/jira/browse/MULE-16870[MULE-16870] | Upgrade XML Sec dependency to 2.1.3
+|===
+
+== 1.0.0
+
+*Mar 19, 2018*
+
+=== Min Mule Version
+*Mule 4.1.0*
