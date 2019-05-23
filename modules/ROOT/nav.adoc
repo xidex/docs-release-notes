@@ -86,6 +86,7 @@
   *** xref:connector/x12-edi-connector-release-notes-mule-4.adoc[X12 EDI Connector Release Notes (for Mule 4)]
   *** xref:mule-runtime/module-xml.adoc[XML Module Release Notes (for Mule 4)]
   *** xref:connector/spring-module-release-notes.adoc[Spring Module Release Notes (for Mule 4)]
+  *** xref:connector/cryptography-module-release-notes.adoc[Cryptography Module Release Notes (for Mule 4)]
   *** xref:connector/zuora-connector-release-notes-mule-4.adoc[Zuora Connector Release Notes (for Mule 4)]
  ** xref:connector/anypoint-connector-release-notes.adoc#mule_3[Connector Release Notes (for Mule 3)]
   *** xref:connector/amazon-ec2-connector-release-notes.adoc[Amazon EC2 Connector Release Notes (for Mule 3)]
