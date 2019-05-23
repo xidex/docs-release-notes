@@ -6,6 +6,23 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== May 22, 2019
+
+3.9.1 Runtime Update:
+
+* Switched from OracleJDK 8 to OpenJDK 8
+* Address incomplete fix in RAML parser [SE-11926]
+
+3.9.2 Runtime Update:
+
+* Switched from OracleJDK 8 to OpenJDK 8
+* Address incomplete fix in RAML parser [SE-11926]
+
+3.9.0 Runtime Update:
+
+* Switched from OracleJDK 8 to OpenJDK 8
+
+
 == May 21, 2019
 
 3.9.1 Runtime Update:
