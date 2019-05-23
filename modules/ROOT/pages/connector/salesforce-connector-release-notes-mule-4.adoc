@@ -5,10 +5,9 @@ endif::[]
 
 Support Category: Select
 
-////
 == 9.7.1
 
-*May 21, 2019*
+*May 23, 2019*
 
 [%header%autowidth.spread]
 |===
@@ -36,7 +35,6 @@ NOTE: The BeanShell (`org.beanshell:bsh-core:2.0b4`) and ESAPI (`org.owasp.esapi
 * Batch aggregator with Salesforce Connector executing an upsert operation does not return the right number of failed records when something went wrong. (SE-10501)
 * Salesforce connector replayId feature gap between 3.x and 4.x. (SE-11258)
 * Salesforce connector autoreplays after restarting the application in CloudHub. (SE-9992)
-////
 
 == 9.7.0
 
