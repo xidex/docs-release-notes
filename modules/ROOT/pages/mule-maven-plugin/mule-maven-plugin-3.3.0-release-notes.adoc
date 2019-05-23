@@ -22,9 +22,9 @@ Hardware and Software Requirements
 
 == Fixed Issues
 
-* CH undeploy need to delete app from the platform too
-* Dependencies with different classifier are considered equal
-* Validate mule configuration files on packaging
+* When you undeploy an app from CloudHub, the app is also deleted from the platform.
+* Dependencies with different classifier are now considered different.
+* The plugin validates mule configuration files when packaging. If the configuration files are invalid, the build will fail when generating the JAR file.
 
 == Support
 
