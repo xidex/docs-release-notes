@@ -354,6 +354,7 @@
  ** xref:apikit/apikit-4.1-release-notes.adoc[APIkit Mule4-1.1.0 Release Notes]
  ** xref:apikit/apikit-4.0.1-release-notes.adoc[APIkit 4.0.1 Release Notes]
  ** xref:apikit/apikit-4.0-release-notes.adoc[APIkit 4.0.0 Release Notes]
+ ** xref:apikit/apikit-3.9.3-release-notes.adoc[APIkit 3.9.3 Release Notes]
  ** xref:apikit/apikit-3.9.2-release-notes.adoc[APIkit 3.9.2 Release Notes]
  ** xref:apikit/apikit-3.9.1-release-notes.adoc[APIkit 3.9.1 Release Notes]
  ** xref:apikit/apikit-3.9.0-release-notes.adoc[APIkit 3.9.0 Release Notes]
