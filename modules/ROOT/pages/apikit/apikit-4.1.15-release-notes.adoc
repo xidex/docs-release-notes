@@ -1,4 +1,4 @@
-= APIkit 3.9.3 Release Notes
+= APIkit 4.1.15 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
