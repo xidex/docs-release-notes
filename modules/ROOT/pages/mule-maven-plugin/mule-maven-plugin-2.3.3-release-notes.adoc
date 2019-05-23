@@ -27,13 +27,13 @@ Hardware and Software Requirements
 
 == Features and Functionality
 
-* CH undeploy need to delete app from the platform too
+* When you undeploy an app from CloudHub, the app is also deleted from the platform.
 
 == Fixed Issues
 
-* Add classifier to application name
-* Support attachSources feature
-* Support inclusions/exclusions
+* Added classifier to application name
+* Added support for `attachSources` feature
+* Added support for `inclusions` and `exclusions`
 
 == Support
 
