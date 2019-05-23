@@ -17,17 +17,20 @@ There are no new features in this version. There are just a few enhancements and
 |Mule Runtime |3.9.1 and later 3.9 versions
 |===
 
-== Big Fixes
+== Enhancement in This Release
 
-Don't know how to parse org.mule.transport.NullPayload sending null payload.
-When a Query Parameter type is defined as nil|string and a number is sent the response is 400 Bad Request.
-Query Parameters are parsed as a ParameterMap and some other times as a HashMap.
-Invalid APIKit WARN messages when two APIKit routers included in project.
-The content-type request header is not case insensitive
-Missing validation of RAML specified date time format
-Multipart parameters are not being validated
-API Specification not working on Raml parser (Merging not supported for nodes of type OverridableNativeTypeExpressionNode and TypeDeclarationNode)
-Importing RAML from Design Center creates duplicate APIKit configurations
+* APIkit now parses `org.mule.transport.NullPayload` when sending a `null` payload.
+* Removed invalid APIKit `WARN` messages when two APIKit routers were included in a project.
+* The `content-type` request header is now case insensitive.
+* Added validation for RAML specified date time format.
+
+== Bug Fixes
+
+* Fixed issue preventing APIkit to respond with a `400 Bad Request` response whenever a query parameter type was defined as `nil|string` and a number was sent instead.
+* Fixed issue where query parameters were parsed as a `ParameterMap` and some other times as a `HashMap`.
+* Fixed issue preventing multipart parameters from being validated.
+* Fixed issue where the RAML parser threw a `Raml parser uncaught exception: Merging not supported for nodes of type OverridableNativeTypeExpressionNode and TypeDeclarationNode` error when parsing an API specification.
+* Fixed issue where importing a RAML definition from Design Center duplicated the APIKit configurations.
 
 
 == See Also
