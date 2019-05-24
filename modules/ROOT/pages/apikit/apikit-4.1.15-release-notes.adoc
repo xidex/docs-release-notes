@@ -17,8 +17,8 @@ There are no new features in this version. There are just a few enhancements and
 
 == Fixed in this release
 
-* Fixed issue APIKit returns 404 for url with ":".
-* Fixed issue APIKit won't send error response when request leads to an exception.
+* Fixed issue where APIKit returns 404 for url with ":".
+* Fixed issue where APIKit won't send error response when request leads to an exception.
 
 
 == See Also
