@@ -7,9 +7,9 @@ Support Category: Select
 
 The Anypoint Connector for NetSuite synchronizes data and automates business processes between NetSuite and third-party applications, either on-premises or in the cloud.
 
-== 8.4.0
+== 9.0.0
 
-*May 3, 2019*
+*May 31, 2019*
 
 === Compatibility
 
