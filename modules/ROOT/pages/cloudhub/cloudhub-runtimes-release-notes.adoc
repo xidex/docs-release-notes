@@ -10,12 +10,12 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 4.1.5 and 4.2.0 Runtime Update:
 
-* Visuzlizer properties not picked up from the `mule-app.properties` file [SE-10374
+* Visuzlizer properties not picked up from the `mule-app.properties` file [SE-10374]
 
 3.9.2 Runtime Update:
 
 * Address incomplete fix in OAuth service [SE-10423]
-* Visuzlizer properties not picked up from the `mule-app.properties` file [SE-10374
+* Visuzlizer properties not picked up from the `mule-app.properties` file [SE-10374]
 
 3.9.1 Runtime Update:
 
