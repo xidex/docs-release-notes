@@ -9,6 +9,24 @@ IMPORTANT: The NetSuite version is not the same as the SuiteTalk API version. Yo
 
 xref:3.9@mule-runtime::netsuite-connector.adoc[Connector User Guide]
 
+== 7.7.3
+
+*May 24, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|3.5 and later Mule 3 versions
+|Java|7
+|API|SuiteTalk 2017.1
+|===
+
+=== Fixed in this Release
+
+* On certain scenarios, calls to the *Get Select Value* operation used to fail with a `NullPointerException`. This was fixed.
+
 == 7.7.2 
 
 *March 7, 2019*
