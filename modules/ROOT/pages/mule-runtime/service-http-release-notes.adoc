@@ -3,6 +3,24 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.4.2
+ 
+*May 24, 2019* 
+
+=== Mule Version
+
+*Mule 4.1.5*
+ 
+// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
+
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+=== Fixed Issues 
+ 
+* When a non supported cipherSuite is set grizzly ignores restriction after first request (https://www.mulesoft.org/jira/browse/MULE-16852[MULE-16852])
+
 == 1.2.4
  
 *May 24, 2019* 
