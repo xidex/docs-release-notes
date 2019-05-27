@@ -14,13 +14,13 @@ This release focused on bug fixes.
 
 == Bug Fixes
 
-* Invalid URI when using absolute includes from files in subfolders.
-* Flow names generated with charset content.
-* Schemas (JSON or XML) referenced from other schemas in a raml file not being considered.
-* apikit.exception.NotAcceptableException when using charset in OAS response types.
-* APIKit returns 404 for url with colons (:) 
-* Fixed issue where APIKit won't send error response when request leads to an exception.
+* Fixed issue causing `Invalid URI` message when using absolute `includes` from files in subfolders.
+* Fixed issue when flow names were generated with charset content.
+* Fixed issue when schemas (JSON or XML) referenced from other schemas in a RAML file were not being considered.
+* Fixed `apikit.exception.NotAcceptableException` when using charset in OAS response types.
+* Fixed issue when APIKit returned 404 for URL with colons (`:`).
+* Fixed issue where APIKit did not send an error response when a request leads to an exception.
 
-== Improvements 
+== Improvements
 
 * Support JSON and XML files as form parameters
