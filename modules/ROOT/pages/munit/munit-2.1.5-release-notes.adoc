@@ -35,11 +35,11 @@ There are no known issues for this release.
 
 == Bug Fixes
 
-* MUnit maven runner doesn't propagate security settings to Mule embedded container
-* Nullpointer exception log when having operation inside before/after-test
-* Iterable Matchers doesn't work with Iterators
-* Problem when configured two http:request mock processors
-* If AssertionError is thrown with a cause, test is marked as ERROR
+* Fixed issue where MUnit Maven runner did not propagate security settings to the Mule embedded container.
+* Fixed `Nullpointer` exception log when having operation inside a `before` or `after-test` suite.
+* Fixed issue where Iterable Matchers did not work with Iterators.
+* Fixed issue when configuring two `http:request` mock processors.
+* Fixed issue when an `If AssertionError` was thrown with a cause, it caused the test to be marked as `ERROR`.
 
 == Enhancements
 
