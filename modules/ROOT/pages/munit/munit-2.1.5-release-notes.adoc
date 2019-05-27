@@ -1,0 +1,60 @@
+= MUnit 2.1.5 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: munit, 2.1.5, release notes
+
+This release is focused on fixing bugs and to extend Java support to OpenJDK 11.
+
+== Hardware and Software Requirements
+
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+* Java 8, OpenJDK 11
+* Maven 3.3.3, 3.3.9, 3.5.4, 3.6.0
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule | Mule 4.1.4 or higher
+|Anypoint Studio | Anypoint Studio 7.3.4
+|===
+
+== Features and Functionality
+
+=== MUnit Runtime
+
+No new feature was introduced on this release.
+
+== Known Issues
+
+There are no known issues for this release.
+
+== Bug Fixes
+
+* Fixed issue where MUnit Maven runner did not propagate security settings to the Mule embedded container.
+* Fixed `Nullpointer` exception log when having operation inside a `before` or `after-test` suite.
+* Fixed issue where Iterable Matchers did not work with Iterators.
+* Fixed issue when configuring two `http:request` mock processors.
+* Fixed issue when an `If AssertionError` was thrown with a cause, it caused the test to be marked as `ERROR`.
+
+== Enhancements
+
+* Coerce values to Java String for String matchers
+
+== Story
+
+There are no stories for this release.
+
+=== Anypoint Studio Plugin
+
+This release introduces MUnit Studio plugin 2.3.3.
+
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum].
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal].

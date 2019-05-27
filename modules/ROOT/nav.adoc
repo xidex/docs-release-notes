@@ -537,6 +537,7 @@
  ** xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes]
  ** xref:mule-runtime/service-soap-release-notes.adoc[Mule SOAP Service Release Notes]
 * xref:munit/munit-release-notes.adoc[MUnit Release Notes]
+ ** xref:munit/munit-2.1.5-release-notes.adoc[MUnit 2.1.5 Release Notes]
  ** xref:munit/munit-2.1.4-release-notes.adoc[MUnit 2.1.4 Release Notes]
  ** xref:munit/munit-2.1.3-release-notes.adoc[MUnit 2.1.3 Release Notes]
  ** xref:munit/munit-2.1.2-release-notes.adoc[MUnit 2.1.2 Release Notes]
