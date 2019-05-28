@@ -3,12 +3,28 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*November 2018*
+Support Category: Premium
 
-_Premium_
+The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with backend CICS applications using the CICS Transaction Gateway. For Java platforms, CTG implements the JCA resource adapter to connect Java applications to the CICS system. This connector provides connectivity between Mule applications and the CTG.
 
-The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with backend CICS applications using the CICS Transaction Gateway. For Java platforms, CTG implements the JCA resource adapter to connect Java applications to the CICS system.
-This connector provides connectivity between Mule applications and the CTG.
+== 2.2.0
+
+*May 27, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.0 and later
+|Java |8
+|IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
+|IBM CICS TG SDK |9.1 and 9.2
+|===
+
+=== Features
+
+* `Pooling profile` was enabled for connections.
 
 == 2.1.1
 
@@ -56,13 +72,13 @@ The following JAR files are required to set up a connector configuration:
 * ctgclient.jar (CTG Client Library)
 * ctgserver.jar (CTG Server Library)
 * geronimo-j2ee-connector_1.6_spec-1.0.jar (JCA 1.6 Specification)
-+
-Note: JCA 1.6 is needed as a required library to overcome conflicts with JCA 1.5 shipped with the Mule Runtime.
+
+NOTE: JCA 1.6 is needed as a required library to overcome conflicts with JCA 1.5 shipped with the Mule Runtime.
 
 === Features
 
-* Authentication - The connector uses, under the hood, the IPIC (IP interconnectivity) protocol to establish communication with CICS regions over TCP/IP. This type of client also supports SSL authentication.
-* Execution of CICS Programs - The connector allows users to invoke CICS programs in two manners:
+* Authentication - The connector uses under the hood, the IPIC (IP interconnectivity) protocol to establish communication with CICS regions over TCP/IP. This type of client also supports SSL authentication.
+* Execution of CICS Programs - The connector allows users to invoke CICS programs:
 ** Using Channels and Containers.
 ** Using a COMMAREA. Data transfers are limited to 32 KB.
 * Transactions - The connector leverages XA Transactions by means of Mule's Transactional scope and the Bitronix Transaction Manager components.
