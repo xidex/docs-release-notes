@@ -13,11 +13,13 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 * APIKit validation error issue after version 1.1.9 [SE-11839]
 * Sporadic NullPointerException in grizzly ClientHttpResponseImpl.getProcessingState() [SE-8085]
 * Accept-Expression in Batch job not evaluated correctly [SE-11666]
+* JMS consumer stop to consume messages after stop/start flow [11450]
 
 4.1.5 Runtime Update:
 
 * Sporadic NullPointerException in grizzly ClientHttpResponseImpl.getProcessingState() [SE-8085]
 * Accept-Expression in Batch job not evaluated correctly [SE-11666]
+* JMS consumer stop to consume messages after stop/start flow [11450]
 
 
 == May 24, 2019
