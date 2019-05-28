@@ -5,6 +5,36 @@ endif::[]
 
 Support Category: Select
 
+== 9.7.2
+
+*May 24, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Fixed in this Release
+
+* Metadata propagation error. (SE-11757)
+* Batch aggregator executed an Upsert operation and did not return the right number of failed records if an error occurred. (SE-10501)
+* NullPointerException occurred when resolving metadata. (CONN-1938)
+* OAuth v2.0 failed to get the right session and threw INVALID_SESSION_ID after being idle. This was fixed partially for core operations (Create, Retrieve, Upsert, Update, Merge, Delete, Convert Lead, Find Duplicates, and others). (SE-10988)
+* Vulnerability reported for Salesforce connector 9.2.2 - Part of the vulnerabilities reported were fixed by upgrading the dependencies that the connector uses. (SE-9824)
++
+Salesforce connector 9.7.2 now supports this library upgrade:
++
+** Dozer `net.sf.dozer:dozer:5.5.1` changed to `com.github.dozermapper:dozer-core:6.4.1`
+
+=== Known Issues
+
+* Salesforce connector replayId feature gap between 3.x and 4.x. (SE-11258)
+* Salesforce connector autoreplays after restarting the application in CloudHub. (SE-9992)
+* Salesforce connector OAuth v2.0 fails to get right session and throws INVALID_SESSION_ID after being idle. This issue still appears for the sources and operations that use the Bulk API and the Apex API. (SE-10988)
+
 == 9.7.1
 
 *May 23, 2019*
