@@ -1,4 +1,4 @@
-= Salesforce Marketing Cloud Connector Release Notes
+= Salesforce Marketing Cloud Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -25,7 +25,7 @@ The Salesforce Marketing Cloud connector is compatible with:
 
 === Fixed in this Release
 
-* Salesforce Marketing Cloud Connector does not parse query correctly - The connector now translates SOQL query correctly when including clauses in parenthesis(SE-11721).
+* Salesforce Marketing Cloud Connector did not parse queries correctly. The connector now translates an SOQL query correctly when including a clause in parentheses. (SE-11721).
 
 == 2.1.3
 
