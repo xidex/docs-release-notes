@@ -6,27 +6,30 @@ endif::[]
 
 These are the release notes for patches made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== May 27, 2019
+== May 28, 2019
 
 4.2.0 Runtime Update:
 
 * APIKit validation error issue after version 1.1.9 [SE-11839]
+* Sporadic NullPointerException in grizzly ClientHttpResponseImpl.getProcessingState() [SE-8085]
+* Accept-Expression in Batch job not evaluated correctly [SE-11666]
 
-4.1.5 and 4.2.0 Runtime Update:
+4.1.5 Runtime Update:
 
 * Sporadic NullPointerException in grizzly ClientHttpResponseImpl.getProcessingState() [SE-8085]
-* Accept-Expression in Batch job not evaluated correctly [11666]
+* Accept-Expression in Batch job not evaluated correctly [SE-11666]
+
 
 == May 24, 2019
 
 4.1.5 and 4.2.0 Runtime Update:
 
-* Visuzlizer properties not picked up from the `mule-app.properties` file [SE-10374]
+* Visualizer properties not picked up from the `mule-app.properties` file [SE-10374]
 
 3.9.2 Runtime Update:
 
 * Address incomplete fix in OAuth service [SE-10423]
-* Visuzlizer properties not picked up from the `mule-app.properties` file [SE-10374]
+* Visualizer properties not picked up from the `mule-app.properties` file [SE-10374]
 
 3.9.1 Runtime Update:
 
