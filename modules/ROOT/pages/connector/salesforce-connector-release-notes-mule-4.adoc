@@ -20,14 +20,14 @@ Support Category: Select
 === Fixed in this Release
 
 * Metadata propagation error. (SE-11757)
-* Batch aggregator executed an Upsert operation and did not return the right number of failed records when something went wrong. (SE-10501)
+* Batch aggregator executed an Upsert operation and did not return the right number of failed records if an error occurred. (SE-10501)
 * NullPointerException occurred when resolving metadata. (CONN-1938)
-* OAuth v2.0 fails to get right session and throws INVALID_SESSION_ID after being idle. This was fixed partially for core operations (Create, Retrieve, Upsert, Update, Merge, Delete, Convert Lead, Find Duplicates and others). (SE-10988)
-* Vulnerability reported for Salesforce connector 9.2.2 - Part of the vulnerabilities reported were fixed by upgrading the dependencies the connector uses. (SE-9824)
+* OAuth v2.0 failed to get the right session and threw INVALID_SESSION_ID after being idle. This was fixed partially for core operations (Create, Retrieve, Upsert, Update, Merge, Delete, Convert Lead, Find Duplicates, and others). (SE-10988)
+* Vulnerability reported for Salesforce connector 9.2.2 - Part of the vulnerabilities reported were fixed by upgrading the dependencies that the connector uses. (SE-9824)
 +
-Salesforce connector 9.7.2 now supports these library upgrades:
+Salesforce connector 9.7.2 now supports this library upgrade:
 +
-** Dozer `net.sf.dozer:dozer:5.5.1` changed to `com.github.dozermapper:dozer-core:6.4.1`.
+** Dozer `net.sf.dozer:dozer:5.5.1` changed to `com.github.dozermapper:dozer-core:6.4.1`
 
 === Known Issues
 
