@@ -17,11 +17,11 @@ None.
 
 === Fixed Issues
 
-* Upgrade Guava to latest version in XML module. (https://www.mulesoft.org/jira/browse/MULE-16910[MULE-16910])
-* Fixed an issue that prevented the 'validate-schema' operation from working concurrenctly. (https://www.mulesoft.org/jira/browse/MULE-16317[MULE-16317])
-* XML module suggests wrong expression in failure scenarios. (https://www.mulesoft.org/jira/browse/MULE-16239[MULE-16239])
-* validate-schema is not working with a XSD referencing other schema. (https://www.mulesoft.org/jira/browse/MULE-15526[MULE-15526])
-* Provide the option to reset underlying controller of XSLTTransformer. (https://www.mulesoft.org/jira/browse/MULE-15259[MULE-15259])
+* Upgrade Guava to the latest version in the XML module. (https://www.mulesoft.org/jira/browse/MULE-16910[MULE-16910])
+* Fixed an issue that prevented the 'validate-schema' operation from working concurrently. (https://www.mulesoft.org/jira/browse/MULE-16317[MULE-16317])
+* XML module suggests the wrong expression in failure scenarios. (https://www.mulesoft.org/jira/browse/MULE-16239[MULE-16239])
+* validate-schema is not working when an XSD references other schema. (https://www.mulesoft.org/jira/browse/MULE-15526[MULE-15526])
+* Provide the option to reset the underlying controller of XSLTTransformer. (https://www.mulesoft.org/jira/browse/MULE-15259[MULE-15259])
 
 == 1.1.3
 
