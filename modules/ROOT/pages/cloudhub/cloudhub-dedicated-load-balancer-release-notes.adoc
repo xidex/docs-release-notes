@@ -6,9 +6,11 @@ endif::[]
 
 == CloudHub Dedicated Load Balancer 1.1.5
 
-* Improved log rotation.
+This release contains the following enhancements:
+
+* Improved log rotation
 * Security updates and patches
-* Performance and resiliency improvements.
+* Performance and resiliency improvements
 
 == CloudHub Dedicated Load Balancer 1.1.4
 
