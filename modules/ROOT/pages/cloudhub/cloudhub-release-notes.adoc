@@ -6,6 +6,16 @@ endif::[]
 
 In addition to these release notes, see the complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== 1.75.0 - June 1, 2019
+
+This release includes the following changes and improvements:
+
+* A series of reliability and resiliency enhancements
+* Bug fixes and performance improvements
+* Fix for Cloudhub logs not seen issue [SE-11744, SE-11514]
+* Mule 4 Persistent queue fixes related to vm:listener [SE-11698] and NullPointerException when using Batch module with persistent queues [SE-10583,SE 11599]
+* Custom categories root logging issues fixed [SE-10609]
+
 == 1.72.3 - December 8, 2018
 
 This release includes the following changes and improvements:
