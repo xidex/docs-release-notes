@@ -5,6 +5,18 @@ endif::[]
 
 == 1.2.2
 
+*May 29, 2019*
+
+=== New Features and Enhancements
+
+None.
+
+=== Fixed Issues
+
+* Java module fails to transform null into empty Optional. (https://www.mulesoft.org/jira/browse/MULE-16918[MULE-16918])
+
+== 1.2.2
+
 *April 26, 2019*
 
 === New Features and Enhancements
