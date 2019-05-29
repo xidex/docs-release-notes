@@ -8,6 +8,12 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 == May 28, 2019
 
+3.9.2, 3.9.1 and 3.9.0 Runtime Update:
+
+* Remove unexpected warnings and errors related to file system permissions in logs when using secure properties [SE-7975] 
+
+== May 28, 2019
+
 4.2.0 Runtime Update:
 
 * APIKit validation error issue after version 1.1.9 [SE-11839]
