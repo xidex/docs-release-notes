@@ -14,7 +14,7 @@ This release focused on bug fixes.
 
 == Bug Fixes
 
-* Fixed an issue with a size limit for multipart form-data requests.
+* Fixed issue regarding a size limit for multipart form-data requests.
 * Upgraded several libraries versions that were causing security violations.
 
 
