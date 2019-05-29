@@ -337,6 +337,7 @@
  ** xref:apikit/apikit-for-soap-1.0.3.adoc[APIkit for SOAP 1.0.3 Release Notes]
  ** xref:apikit/apikit-for-soap-1.0.2.adoc[APIkit for SOAP 1.0.2 Release Notes]
  ** xref:apikit/apikit-for-soap-1.0.1.adoc[APIkit for SOAP 1.0.1 Release Notes]
+ ** xref:apikit/apikit-4.1.3.2-release-notes.adoc[APIkit Mule4-1.3.2 Release Notes]
  ** xref:apikit/apikit-4.1.3.1-release-notes.adoc[APIkit Mule4-1.3.1 Release Notes]
  ** xref:apikit/apikit-4.1.3.0-release-notes.adoc[APIkit Mule4-1.3.0 Release Notes]
  ** xref:apikit/apikit-4.1.2.4-release-notes.adoc[APIkit Mule4-1.2.4 Release Notes]
