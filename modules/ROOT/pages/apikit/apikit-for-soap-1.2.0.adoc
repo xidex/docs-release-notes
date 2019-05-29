@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This version of APIkit for SOAP includes the capability to set custom prefixes for the 
+This version of APIkit for SOAP includes the capability to set custom prefixes for the
 namespaces of the XML responses and bug fixes.
 
 == Compatibility
@@ -15,13 +15,14 @@ namespaces of the XML responses and bug fixes.
 |Anypoint Studio |7.1.0 and later
 |===
 
-== Enhancements 
+== Enhancements
 * Added the capability to change namespaces prefixes on APIKit for SOAP responses
 
 == Issues Fixed in this Release
-* Payload set in on error propagate for a SOAP Fault isn't returned to caller
-* SOAPRouter is not trowing any error and it does not go in to error handling block.
-* APIKit soap does not support simple type message parts on operation
+
+* Fixed issue when payload set in an `on error propagate` for a SOAP Fault wasn't returned to the caller.
+* Fixed issue when `SOAPRouter` was not trowing any error and did not go in to  the error handling block.
+* Fixed issue when APIKit soap did not support simple type message parts on operations.
 
 == See Also
 
