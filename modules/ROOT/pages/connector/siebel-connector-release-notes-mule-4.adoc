@@ -16,7 +16,7 @@ The connector is comprised of three modules, conglomerated into a single connect
 
 == 4.0.1
 
-*May 24, 2019*
+*May 29, 2019*
 
 === Compatibility
 
@@ -31,7 +31,7 @@ Siebel connector 4.0.0 is compatible with:
 
 === Fixed in this release
 
-* Metadata for Business Services was fixed. It now generates metadata for lists of objects correctly.
+* Metadata for Business Services is fixed. It now generates metadata for lists of objects correctly.
 
 == 4.0.0
 
