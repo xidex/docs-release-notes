@@ -4,6 +4,12 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, cloudhub, cloud hub
 
+== CloudHub Dedicated Load Balancer 1.1.5
+
+* Improved log rotation.
+* Security updates and patches
+* Performance and resiliency improvements.
+
 == CloudHub Dedicated Load Balancer 1.1.4
 
 * Remove deprecated 3DES ciphers from the accepted ciphersuite.
