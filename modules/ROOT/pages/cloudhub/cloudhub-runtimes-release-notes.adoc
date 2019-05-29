@@ -14,7 +14,7 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 * Sporadic `NullPointerException` in Grizzly `ClientHttpResponseImpl.getProcessingState()` [SE-8085]
 * Accept-Expression in Batch job not evaluated correctly [SE-11666]
 * JMS consumer stops consuming messages after the stop/start flow operation [SE-11450]
-* Remove unexpected FileSystemPreferences errors in logs when using secure properties [SE-7975]
+* Remove unexpected warnings and errors related to File System Permissions in logs when using secure properties [SE-7975] 
 
 4.1.5 Runtime Update:
 
