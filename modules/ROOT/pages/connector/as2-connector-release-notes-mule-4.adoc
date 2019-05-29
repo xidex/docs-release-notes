@@ -24,7 +24,7 @@ The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 co
 
 === Fixed in this Release
 
-* Some receive requests failed because the app try to continue processing files that where deleted.
+* Certain receive requests failed because the App was trying to process deleted files.
 
 
 == 4.0.4
