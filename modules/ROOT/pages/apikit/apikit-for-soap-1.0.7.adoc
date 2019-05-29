@@ -1,4 +1,4 @@
-= APIkit for SOAP 1.0.5 Release Notes
+= APIkit for SOAP 1.0.7 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -11,7 +11,7 @@ This version of APIkit for SOAP includes fixes to the runtime.
 |===
 |Software |Version
 |Mule Runtime |3.7.3, 3.8.x, and 3.9.x
-|Anypoint Studio |6.2.3 and later
+|Anypoint Studio |6.3.0 and later
 |===
 
 == Fixed in This Release
