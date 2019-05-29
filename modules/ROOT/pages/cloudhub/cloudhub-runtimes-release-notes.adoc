@@ -10,7 +10,7 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 3.9.2, 3.9.1 and 3.9.0 Runtime Update:
 
-* Remove unexpected warnings and errors related to File System Permissions in logs when using secure properties [SE-7975] 
+* Remove unexpected warnings and errors related to file system permissions in logs when using secure properties [SE-7975] 
 
 == May 28, 2019
 
