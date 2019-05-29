@@ -9,7 +9,7 @@ The Salesforce Marketing Cloud connector lets you connect to the Salesforce Mark
 
 == 2.1.4
 
-*May 28, 2019*
+*May 29, 2019*
 
 === Compatibility
 
