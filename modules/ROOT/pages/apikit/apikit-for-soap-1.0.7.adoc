@@ -15,7 +15,8 @@ This version of APIkit for SOAP includes fixes to the runtime.
 |===
 
 == Fixed in This Release
-* Schema Validation (inboundValidationMessage="true") returns the tagnames enclosed by <> in a SOAP:fault.
+
+* Fixed issue when schema validation ()`inboundValidationMessage="true"``) returned the tag names enclosed by `<``>` in a `SOAP:fault`.
 
 == See Also
 
