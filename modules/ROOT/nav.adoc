@@ -330,6 +330,7 @@
  ** xref:apikit/apikit-for-soap-1.1.2.adoc[APIkit for SOAP 1.1.2 Release Notes]
  ** xref:apikit/apikit-for-soap-1.1.1.adoc[APIkit for SOAP 1.1.1 Release Notes]
  ** xref:apikit/apikit-for-soap-1.1.0.adoc[APIkit for SOAP 1.1.0 Release Notes]
+ ** xref:apikit/apikit-for-soap-1.0.7.adoc[APIkit for SOAP 1.0.7 Release Notes]
  ** xref:apikit/apikit-for-soap-1.0.5.adoc[APIkit for SOAP 1.0.5 Release Notes]
  ** xref:apikit/apikit-for-soap-1.0.4.adoc[APIkit for SOAP 1.0.4 Release Notes]
  ** xref:apikit/apikit-for-soap-1.0.3.adoc[APIkit for SOAP 1.0.3 Release Notes]
