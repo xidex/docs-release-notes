@@ -16,8 +16,12 @@ This release is supported on Anypoint Private Cloud Edition 1.6.1 and later.
 
 Key Enhancements
 
-* <TO_COMPLETE>
+//From https://docs.google.com/document/d/1Sxf8exkJ0LXMThomTDKDbm8LhvvVPa3TAP147AwrT9I/edit#
+//TODO add links to articles mentioned below
 
+* API Gateway: 
+** Improved security. You can encrypt credentials used to configure the connection between the runtime and Anypoint Platform, and you can encrypt all sensitive information stored by the API Gateway, such as policies configuration and contracts. (Link to encryption in Mule 3.9.3 documentation)
+** Analytics can be configured to send data both to Anypoint Platform and to process the events through Runtime Manager. You can set third-party systems, such as Splunk, to consume the Analytics info. (Link to documentation: https://docs.mulesoft.com/runtime-manager/sending-data-from-arm-to-external-analytics-software)
 
 == Changes
 
@@ -84,6 +88,15 @@ Key Enhancements
 | MULE-16771 | Add shutdown hooks for deployment service
 | MULE-15603 | Values of AsyncInterceptingMessageProcessor maxThreadsActive and minThreadsActive are not accurate
 | MULE-11900 | Different default timeouts for connectionIdle on server and client
+| AGW-2696 | Stopping and starting, not restarting, a RAML Proxy through ARM leaves the application in an unusable state
+| AGW-2900 | Throttling policy doesn’t clean its cache
+| AGW-2958 | Unexpected policy behavior when on proxy mode, without a proxy
+| AGW-3050 | MapDB is leaving old data in files
+| AGW-2855 | Catch analytics error are thrown on runtime shutdown
+| AGW-2905 | Null pointer exception (NPE) when there are no permissions to write in the policies folder
+| AGW-2938 | Disable autodiscovery auto creation when the organization is in API Manager 2.x
+| AGW-2856 | In some scenarios, the throttling algorithm might lock the Mule cluster
+| AGW-3010 | Reduce max cache size for Federation Policies to 10K entries
 //
 // -----
 // -DataWeave
