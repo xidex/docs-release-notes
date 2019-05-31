@@ -27,10 +27,10 @@ NOTE: This connector is not supported for use with Flow Designer in Design Cente
 
 === Fixed in this Release
 
-* SAP Connector - Wrong number format returned (SE-12022). Fixed by adding new parameter useSAPFormat which if set to true, will return default values received from SAP.
+* SAP Connector - Wrong number format returned. Fixed by adding the new `useSAPFormat` parameter, which if set to true,  returns the default values received from SAP. (SE-12022)
 * SAP Connector - Parsing error when SAP response contains nested tables. (SE-11910)
-* Fixed SAP Connector vulnerable to XML External Entity (XXE).
-* Fixed SAP Connector Encoding field needs hint description. 
+* Fixed SAP Connector vulnerability to an XML External Entity (XXE).
+* Fixed SAP Connector Encoding field with a hint description. 
 
 == 4.2.0
 
