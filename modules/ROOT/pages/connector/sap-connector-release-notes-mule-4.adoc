@@ -9,6 +9,29 @@ The Mule Runtime supports SAP integration through the Anypoint Connector for SAP
 
 NOTE: This connector is not supported for use with Flow Designer in Design Center.
 
+== 4.2.1
+
+*May 31, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|SAP Solution| ECC 6.0 and later
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+* SAP Connector - Wrong number format returned (SE-12022). Fixed by adding new parameter useSAPFormat which if set to true, will return default values received from SAP.
+* SAP Connector - Parsing error when SAP response contains nested tables. (SE-11910)
+* Fixed SAP Connector vulnerable to XML External Entity (XXE).
+* Fixed SAP Connector Encoding field needs hint description. 
+
 == 4.2.0
 
 *May 23, 2019*
