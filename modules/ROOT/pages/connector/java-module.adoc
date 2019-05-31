@@ -13,7 +13,7 @@ None.
 
 === Fixed Issues
 
-* Java module fails to invoke method which receives Optional<Pojo> (https://www.mulesoft.org/jira/browse/MULE-16932[MULE-16932])
+* Java module fails to invoke method that receives Optional<Pojo> (https://www.mulesoft.org/jira/browse/MULE-16932[MULE-16932])
 
 == 1.2.3
 
