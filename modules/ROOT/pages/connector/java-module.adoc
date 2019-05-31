@@ -3,6 +3,18 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.4
+
+*May 30, 2019*
+
+=== New Features and Enhancements
+
+None.
+
+=== Fixed Issues
+
+* Java module fails to invoke method which receives Optional<Pojo> (https://www.mulesoft.org/jira/browse/MULE-16932[MULE-MULE-16932])
+
 == 1.2.3
 
 *May 29, 2019*
