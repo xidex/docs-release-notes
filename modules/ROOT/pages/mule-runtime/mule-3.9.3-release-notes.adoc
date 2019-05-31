@@ -19,7 +19,7 @@ Key API Gateway Enhancements:
 
 * Improved security. You can encrypt credentials used to configure the connection between the runtime and Anypoint Platform, and you can encrypt all sensitive information stored by the API Gateway, such as policies configuration and contracts. See 
 xref:api-manager::api-gateway-encryption-mule3.adoc[Gateway Startup Encryption in Mule 3].
-* API Gateway can be configured to send the events that reach your API to both Anypoint Platform's Analytics tool and Runtime Manager. The latter enables you to set up third-party analytics tool, such as Splunk, to consume your event's analytics data. See xref:runtime-manager::sending-data-from-arm-to-external-analytics-software.adoc[Export Data to External Analytics Tools (Hybrid)] 
+* API Gateway can be configured to send the events that reach your API to Anypoint Platform's Analytics tool and to Runtime Manager. In other words, you can now send the events to both the Analytics tool and to Runtime Manager, not just one or the other. The latter enables you to set up third-party analytics tool, such as Splunk, to consume your event's analytics data. See xref:runtime-manager::sending-data-from-arm-to-external-analytics-software.adoc[Export Data to External Analytics Tools (Hybrid)] 
 
 ////
 
