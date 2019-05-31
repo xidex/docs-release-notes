@@ -4,10 +4,11 @@
 
 *May 31, 2019*
 
-// <All sections are required. If there is nothing to say, then the body text in the section should read, â€œNot applicable.â€
-Mule Runtime 3.9.3 includes the following enhancements, changes, and fixes:
+// <All sections are required. If there is nothing to say, then the body text in the section should read, Not applicable.
 
-* <TO_COMPLETE>
+Mule Runtime 3.9.3 includes the following enhancements, changes, and fixes.
+
+//* <TO_COMPLETE>
 
 
 This release is supported on Anypoint Private Cloud Edition 1.6.1 and later.
@@ -20,13 +21,15 @@ Key Enhancements
 //TODO add links to articles mentioned below
 
 * API Gateway: 
-** Improved security. You can encrypt credentials used to configure the connection between the runtime and Anypoint Platform, and you can encrypt all sensitive information stored by the API Gateway, such as policies configuration and contracts. (Link to encryption in Mule 3.9.3 documentation)
-** Analytics can be configured to send data both to Anypoint Platform and to process the events through Runtime Manager. You can set third-party systems, such as Splunk, to consume the Analytics info. (Link to documentation: https://docs.mulesoft.com/runtime-manager/sending-data-from-arm-to-external-analytics-software)
+** Improved security. You can encrypt credentials used to configure the connection between the runtime and Anypoint Platform, and you can encrypt all sensitive information stored by the API Gateway, such as policies configuration and contracts. See 
+xref:api-manager::api-gateway-encryption-mule3.adoc[Gateway Startup Encryption in Mule 3].
+** Analytics can be configured to send data both to Anypoint Platform and to process the events through Runtime Manager. You can set third-party systems, such as Splunk, to consume the Analytics info. See xref:runtime-manager::sending-data-from-arm-to-external-analytics-software.adoc[Export Data to External Analytics Tools (Hybrid)] 
 
+////
 == Changes
 
 * <TO_COMPLETE>
-
+////
 
 == Known Issues
 
