@@ -3,13 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-May 23, 2019
+May 31, 2019
 
 This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager agent, version 1.13.0.
 
 == New Features and Enhancements
 
-* Starting with Mule 3.9.3, API Manager Secrets (clientId, clientSecret, and Proxy password) can be stored, encrypted, in the wrapper.conf file when an encryption key is provided at setup time. For more information, see API Gateway Encryption on Mule 3.
+* Starting with Mule 3.9.3, API Manager Secrets (`clientId`, `clientSecret`, and `Proxy password`) can be stored, encrypted, in the `wrapper.conf` file when an encryption key is provided at setup time. For more information, see xref:2.x@api-manager::api-gateway-encryption-mule3.adoc[API Gateway Encryption on Mule 3].
 
 == Changes in This Release
 
