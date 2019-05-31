@@ -5,19 +5,21 @@ endif::[]
 
 Support Category: Select
 
-The Anypoint Connector for the Mule Object Store enables the manipulation of object stores within Mule. This connector provides access to default in-memory, custom, and persistent object stores.
+The Anypoint Connector for the Mule Object Store enables the manipulation of object stores within Mule 3. This connector provides access to default in-memory, custom, and persistent object stores.
 
-== 2.2.1 - *ADD RELEASE DATE*
+== 2.2.1
+
+*ADD RELEASE DATE*
 
 === Compatibility
 
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime|3.6.x or higher
-|ObjectStore|2013
-|Java|7
-|Anypoint Studio|5.x and later
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore |2013
+|Java |7
+|Anypoint Studio |5 and 6
 |===
 
 === Features
@@ -41,10 +43,10 @@ None.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.6.x or higher
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
 |ObjectStore|2013
 |Java|7
-|Anypoint Studio|5.x and later
+|Anypoint Studio|5 and 6
 |===
 
 === Features
@@ -71,10 +73,10 @@ None.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.6.x or higher
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
 |ObjectStore|2013
 |Java|7
-|Anypoint Studio|5.x and later
+|Anypoint Studio|5 and 6
 |===
 
 === Features
@@ -98,10 +100,10 @@ None.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.6.x or higher
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
 |ObjectStore|2013
 |Java|7
-|Anypoint Studio|5.x and later
+|Anypoint Studio|5 and 6
 |===
 
 === Features
@@ -125,10 +127,10 @@ None.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.6.x or higher
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
 |ObjectStore|2013
 |Java|7
-|Anypoint Studio|5.x and later
+|Anypoint Studio|5 and 6
 |===
 
 === Features
@@ -152,10 +154,10 @@ None.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.6.x or higher
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
 |ObjectStore|2013
 |Java|7
-|Anypoint Studio|5.x and later
+|Anypoint Studio|5 and 6
 |===
 
 === Features
@@ -165,7 +167,7 @@ None.
 === Fixed in this Release
 
 * Processor *retrieveWithLock* was removed as a consequence of the lock implementation described above.
-* Updated connector support category to link:/mule-user-guide/v/3.8/anypoint-connectors#connector-categories[_Select_].
+* Updated connector support category to link:/mule-user-guide/v/3.8/anypoint-connectors#connector-categories[Select].
 * Added user manual describing the usage of the connector.
 
 === Known Issues
@@ -181,10 +183,10 @@ None.
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.6.x or higher
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
 |ObjectStore|2013
 |Java|7
-|Anypoint Studio|5.x and later
+|Anypoint Studio|5 and 6
 |===
 
 === Features
