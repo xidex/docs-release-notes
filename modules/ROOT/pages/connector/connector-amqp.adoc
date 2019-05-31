@@ -5,6 +5,14 @@ endif::[]
 
 Support Category: Select
 
+== 1.4.3
+
+*May 31, 2019*
+
+=== Fixed issues
+
+* Consumer Manager does not stop consumers separately when configuring a domain. (AMQP-142)
+
 == 1.4.2
 
 *March 27, 2019*
