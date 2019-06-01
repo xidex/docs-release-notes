@@ -15,7 +15,6 @@ This release includes the following changes and improvements:
 * Reliability and resiliency enhancements.
 * Bug fixes and performance improvements.
 * Fix for the CloudHub logs not seen issue. (SE-11744, SE-11514)
-* Mule 4 Persistent queue fixes related to vm:listener and NullPointerException when using Batch module with persistent queues. (SE-11698, SE-10583, SE 11599)
 * Custom categories root logging issues fixed. (SE-10609)
 
 == 1.72.3
