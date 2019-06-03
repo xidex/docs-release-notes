@@ -7,8 +7,6 @@ Mule Maven Plugin 3.3.1 is mainly focused on fixing bugs.
 
 == Hardware and Software Requirements
 
-Hardware and Software Requirements
-
 * Microsoft Windows 8+
 * Apple Mac OS X 10.10+
 * Linux (tested on Ubuntu 15)
