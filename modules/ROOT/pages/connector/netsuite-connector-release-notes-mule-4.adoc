@@ -9,7 +9,7 @@ The Anypoint Connector for NetSuite synchronizes data and automates business pro
 
 == 9.0.0
 
-*May 31, 2019*
+*June 7, 2019*
 
 === Compatibility
 
@@ -17,7 +17,7 @@ The Anypoint Connector for NetSuite synchronizes data and automates business pro
 |===
 |Software | Version
 |Mule Runtime | 4.0.0 and later
-|SuiteTalk API | 2017.2
+|SuiteTalk API | 2018.2
 |===
 
 [NOTE]
@@ -25,6 +25,7 @@ The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your ac
 
 === Features
 
+* Support for SuiteTalk API version 2018.2. For a detailed list of changes, log into NetSuite, open Help Center and navigate to New Release > Release Notes > NetSuite 2018.2 Release Notes > SuiteTalk (Web Services) Integration.
 * The list operations (Add list, Delete list, Update list and Upsert list) now return information about the status of the result in each record.
 
 === Fixed in this Release
