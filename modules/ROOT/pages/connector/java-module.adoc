@@ -3,6 +3,30 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.2.4
+
+*May 30, 2019*
+
+=== New Features and Enhancements
+
+None.
+
+=== Fixed Issues
+
+* Java module fails to invoke method that receives Optional<Pojo> (https://www.mulesoft.org/jira/browse/MULE-16932[MULE-16932])
+
+== 1.2.3
+
+*May 29, 2019*
+
+=== New Features and Enhancements
+
+None.
+
+=== Fixed Issues
+
+* Java module fails to transform null into an empty Optional. (https://www.mulesoft.org/jira/browse/MULE-16918[MULE-16918])
+
 == 1.2.2
 
 *April 26, 2019*
@@ -86,7 +110,7 @@ Mule 4.1.0
 === New Features and Enhancements
 
 * When argument types don't match the java function arguments, a best effort will be done
-in order to transform these arguments.
+to transform these arguments.
 
 === Fixed Issues
 

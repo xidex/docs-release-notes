@@ -1,0 +1,27 @@
+= APIkit 4.1.15 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*May 23, 2019*
+
+There are no new features in this version. There are just a few enhancements and bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.2 and later
+|===
+
+== Fixed in this release
+
+* Fixed issue where APIKit returns 404 for url with ":".
+* Fixed issue where APIKit won't send error response when request leads to an exception.
+
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].
+* https://support.mulesoft.com[Contact MuleSoft Support].

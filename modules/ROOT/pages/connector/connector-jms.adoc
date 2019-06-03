@@ -5,6 +5,36 @@ endif::[]
 
 Support Category: Select
 
+== 1.5.0
+
+*May 29, 2019*
+
+=== New Features and Enhancements
+
+* Make XA pool configurable in JMS connector (https://www.mulesoft.org/jira/browse/MULE-16926[MULE-16926])
+
+
+=== Fixed Issues
+
+* JMS Publish Consumer Operation leaks connection (https://www.mulesoft.org/jira/browse/MULE-16927[MULE-16927])
+
+
+== 1.4.1
+
+*May 28, 2019*
+
+=== Fixed Issues
+
+* Fix issue with reconnection
+
+== 1.4.0
+
+*May 27, 2019*
+
+=== Fixed Issues
+
+* Fix issue with XA transactions on reconnection scenarios
+
 == 1.3.7
 
 *April 17, 2019*

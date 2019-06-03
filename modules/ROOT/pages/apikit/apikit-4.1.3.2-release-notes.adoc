@@ -1,0 +1,20 @@
+= APIkit Module 1.3.2 for Mule 4 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== What's New
+
+This release focused on bug fixes.
+
+== Compatibility
+
+* Mule Runtime 4.1.2 and later
+* Anypoint Studio 7.2.0 and later
+
+== Bug Fixes
+
+* Fixed issue regarding a size limit for multipart form-data requests.
+* Upgraded several libraries versions that were causing security violations.
+
+

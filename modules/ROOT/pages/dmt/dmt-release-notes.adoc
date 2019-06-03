@@ -1,13 +1,13 @@
-= Devkit Migration Tool (DMT) Release Notes
+= DevKit Migration Tool (DMT) Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, dmt, connector, release notes, migration, tool, dmt
 
-The DMT enables the migration of a Connector built with Devkit that runs on Mule 3.x
+The DMT enables the migration of a connector built with DevKit that runs on Mule 3.x
 to a Mule 4 SDK compatible project.
 
 == 1.0.0
+
 *May 18, 2018*
 
 === New Features and Enhancements
@@ -16,8 +16,8 @@ None
 
 === Known Limitations and Workarounds
 
-* `mule-devkit-maven-plugin` needs to be removed from the pom.xml file of Connectors that
-overrides it.
+* `mule-devkit-maven-plugin` needs to be removed from the pom.xml file in connectors that
+override it.
 
 === Upgrade Requirements
 
@@ -52,7 +52,7 @@ None
 [%header,cols="15a,85a"]
 |===
 |Issue |Description
-| https://www.mulesoft.org/jira/browse/DEVKIT-2256[DEVKIT-2256]	| DMT beta fails when devkit plugin is redefined in the extension POM
+| 	| DMT beta fails when DevKit plugin is redefined in the extension POM
 | https://www.mulesoft.org/jira/browse/DEVKIT-2257[DEVKIT-2257]	| DMT: Migrate BulkOperationResult
 | https://www.mulesoft.org/jira/browse/DEVKIT-2258[DEVKIT-2258]	| DMT: @Transformer is not being replaced/migrated
 | https://www.mulesoft.org/jira/browse/DEVKIT-2259[DEVKIT-2259]	| DMT: Replace processor XMLTypes output for InputStream
@@ -77,8 +77,8 @@ Supports:
 
 === Known Limitations and Workarounds
 
-* `mule-devkit-maven-plugin` needs to be removed from the pom.xml file of Connectors that
-overrides it.
+* `mule-devkit-maven-plugin` needs to be removed from the pom.xml file in connectors that
+override it.
 
 === Upgrade Requirements
 

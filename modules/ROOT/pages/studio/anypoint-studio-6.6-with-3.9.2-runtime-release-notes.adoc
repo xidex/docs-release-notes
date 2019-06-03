@@ -56,7 +56,7 @@ This editor is now the default when opening `mule:domain` xml files.
 [cols="30a,70a"]
 |===
 |Java Environments |
-This version of Anypoint Studio requires Java 8 to run properly. +
+This version of Anypoint Studio requires AdoptOpenJDK 8 to run properly. +
 Depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
 
 * Mule 3.9.x requires Studio running on Java 8.
@@ -109,7 +109,7 @@ image::studio/import-extensions.png[import]
 
 Then specify the location of your old version of Anypoint Studio in your local drive.
 ====
-* Since this version of Anypoint Studio upgrades its core Eclipse version, it is recommended to download and run the latest installer to install a fresh new full copy from https://www.mulesoft.com/lp/dl/studio[The Studio download site]. 
+* Since this version of Anypoint Studio upgrades its core Eclipse version, it is recommended to download and run the latest installer to install a fresh new full copy from https://www.mulesoft.com/lp/dl/studio[The Studio download site].
 
 
 == Bug Fixes

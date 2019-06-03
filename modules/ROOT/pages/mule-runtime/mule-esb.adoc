@@ -4,6 +4,10 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, mule, 3.8, 3.7, 3.6, 3.5, 3.4, 3.3, 3.2, 3.1
 
+== Mule 4.2.n
+
+* xref:mule-runtime/mule-4.2.0-release-notes.adoc[Mule Runtime 4.2.0 Release Notes]
+
 == Mule 4.1.n
 
 * xref:mule-runtime/mule-4.1.5-release-notes.adoc[Mule Runtime 4.1.5 Release Notes]
@@ -27,6 +31,7 @@ endif::[]
 
 == Mule 3.9.n
 
+* xref:mule-runtime/mule-3.9.3-release-notes.adoc[Mule 3.9.3 Runtime]
 * xref:mule-runtime/mule-3.9.2-release-notes.adoc[Mule 3.9.2 Runtime]
 * xref:mule-runtime/mule-3.9.1-release-notes.adoc[Mule 3.9.1 Runtime]
 * xref:mule-runtime/mule-3.9.0-release-notes.adoc[Mule 3.9.0 Runtime]

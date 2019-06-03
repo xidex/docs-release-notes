@@ -39,6 +39,30 @@ None.
 
 * In the old versions, the list operations returned a list of type `BaseRef`. Now they return a list of type `WriteResponse`. The `WriteResponse` has as fields: the `baseRef` (like the previous versions) and also the `status`. The `status` field is a structure that contains the information about whether the operation was successful (`isSuccess` Boolean) and details of the status (`statusDetail` structure). In case of error the structure of `statusDetail` indicates in the field `type` if it was an ERROR, in the field `code` indicates the type of error (for example: 'INVALID_KEY_OR_REF') and finally in the field `message` contains details of the error (as the value and/or field involved).
 
+== 8.3.2
+
+*May 22, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|SuiteTalk API | 2017.2
+|===
+
+[NOTE]
+The NetSuite version is not the same as the SuiteTalk API version. Your account may run on a different NetSuite version than the version of the the API you are using.
+
+=== Features
+
+None.
+
+=== Fixed in this Release
+
+* The HTTP Proxy for RESTlet operations now works in all scenarios. (SE-11716)
+
 == 8.3.0
 
 *March 29, 2019*
