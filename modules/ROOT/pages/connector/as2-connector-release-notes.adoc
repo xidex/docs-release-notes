@@ -46,7 +46,7 @@ Compatible Mule versions have been changed from 3.5.x and later to 3.7 and later
 
 === Compatibility
 
-Supported Mule Runtime Versions: Mule 3.5.+
+Supported Mule Runtime Versions: Mule 3.5.+ +
 Tested against: 3.5.4, 3.6.4, 3.7.3, 3.7.5, 3.8.2, and 3.8.5
 
 === New Features and Functionality
