@@ -1,4 +1,4 @@
-= = APIkit for OData 2.0.3 Release Notes
+= APIkit for OData 2.0.3 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
