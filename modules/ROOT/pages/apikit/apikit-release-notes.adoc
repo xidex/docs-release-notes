@@ -4,6 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 
+* xref:apikit/apikit-for-odata-2.0.3.adoc[APIkit for OData 2.0.3 Release Notes]
 * xref:apikit/apikit-for-odata-2.0.2.adoc[APIkit for OData 2.0.2 Release Notes]
 * xref:apikit/apikit-for-odata-2.0.1.adoc[APIkit for OData 2.0.1 Release Notes]
 * xref:apikit/apikit-for-odata-1.0.9.adoc[APIkit for OData 1.0.9 Release Notes]
