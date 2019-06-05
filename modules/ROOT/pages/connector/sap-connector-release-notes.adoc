@@ -28,13 +28,13 @@ xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
 Configuring SNC in SAP connector was not working. Added message server configuration parameters:
 
 [source,java,linenums]
-====
+----
 String JCO_MSHOST = "jco.client.mshost";
 String JCO_MSSERV = "jco.client.msserv";
 String JCO_R3NAME = "jco.client.r3name";
 String JCO_GROUP = "jco.client.group";
 String JCO_SAPROUTER = "jco.client.saprouter";
-====
+----
 
 These are reflections of JCo properties. (SE-10985)
 
