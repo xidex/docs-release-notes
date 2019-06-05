@@ -9,6 +9,32 @@ The Mule Runtime supports SAP integration through our Anypoint Connector for SAP
 
 xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
 
+== Version 3.2.2 - May 29, 2019
+
+[%header%autowidth]
+|===
+|Software |Version
+|Mule Runtime|3.5.x
+|Anypoint Studio|6.3
+|Java|7, 8
+|SAP Solution| ECC 6.0 or higher
+|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+Configuring SNC in SAP connector was not working. Added message server configuration parameters:
+
+    String JCO_MSHOST = "jco.client.mshost";
+    String JCO_MSSERV = "jco.client.msserv";
+    String JCO_R3NAME = "jco.client.r3name";
+    String JCO_GROUP = "jco.client.group";
+    String JCO_SAPROUTER = "jco.client.saprouter";
+
+These are reflections of JCo properties. (SE-10985)
+
+Fixed SAP Connector not sending back to SAP when source uses request-response pattern without XML to SAP Function. (SE-11761)
+
 == 3.2.1 
 
 *February 28, 2019*
