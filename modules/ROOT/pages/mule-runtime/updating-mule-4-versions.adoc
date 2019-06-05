@@ -36,16 +36,15 @@ You can check xref:6@studio::adding-community-runtime.adoc[this documentation pa
 
 . For every application that you update:
 .. xref:6@studio::importing-and-exporting-in-studio.adoc#exporting-a-mule-deployable-archive[Import the application] to Anypoint Studio as a Mule project.
-.. During the import remember to change the Mule version by selecting it from the *Server Runtime* dropdown menu.
+.. During the import process remember to change the Mule version by selecting it from the *Server Runtime* dropdown menu.
 +
 image::mule-runtime/updating-mule-versions-415.png[]
 
 .. Make any other changes to your Mule project that may be necessary depending on the version gap you're transitioning.
-.. xref:6@studio::importing-and-exporting-in-studio.adoc#exporting-a-mule-deployable-archive[Export your project] as a Mule Deployable Archive (.zip file).
+.. xref:6@studio::importing-and-exporting-in-studio.adoc#exporting-a-mule-deployable-archive[Export your project] as a Mule Deployable Archive (.jar file).
+.. Edit the *pom.xml* file to change the `muleVersion` property value, so that it matches the target version.
 
-If you use Maven to build your application, edit its *pom.xml* file to change the `muleVersion` property value, so that it matches the target version.
-
-Once the Mule Deployable Archives (.zip files) are in versions that you're sure are compatible with the target runtime version and you've also validated that any other necessary changes that ensure compatibility have been applied, you can move on to installing the corresponding Mule Runtime on your servers.
+Once the Mule Deployable Archives (.jar files) are in versions that you're sure are compatible with the target runtime version and you've also validated that any other necessary changes that ensure compatibility have been applied, you can move on to installing the corresponding Mule Runtime on your servers.
 
 
 == Mule Standalone Runtime Version
@@ -58,7 +57,7 @@ To ensure that you have faster downtime and an easier backup route, we recommend
 +
 [NOTE]
 ====
-If any of your previous applications rely on a full or a partial custom patch in order to work properly (these would be found in the folder `<MULE_HOME>/lib/user`), please verify that the fix is included in this target release by reviewing the corresponding xref:mule-runtime/mule-esb.adoc[release notes] page.
+If any of your previous applications rely on a full or a partial custom patch in order to work properly (these would be found in the folder `<MULE_HOME>/lib/patches`), please verify that the fix is included in this target release by reviewing the corresponding xref:mule-runtime/mule-esb.adoc[release notes] page.
 
 Otherwise, please contact MuleSoft Support by creating a new support case, to request a new patch compatible with the target version. Patch files are version specific and MUST NOT be used in a different runtime version.
 ====
@@ -106,7 +105,7 @@ Applications must be running and showing as `Started` in Runtime Manager. This p
 
 . At this point the Mule server is already updated to the target version. Updating the Mule applications that are deployed to it is optional. If wish to do so to take full advantage of the features of the target runtime, then you must also:
 .. Follow the steps in <<Application Runtime Version>> to update your application.
-.. Find the application on the *Applications* tab on Runtime Manager and click *Choose File* to xref:runtime-manager::managing-deployed-applications.adoc#updating-your-application[upload] the new Mule Deployable Archive (.zip file).
+.. Find the application on the *Applications* tab on Runtime Manager and click *Choose File* to xref:runtime-manager::managing-deployed-applications.adoc#updating-your-application[upload] the new Mule Deployable Archive (.jar file).
 
 == Upgrading a Runtime Manager Cluster     
 
