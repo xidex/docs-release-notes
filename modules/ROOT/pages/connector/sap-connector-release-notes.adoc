@@ -27,7 +27,7 @@ xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
 
 * Configuring SNC in SAP connector was not working. 
 +
-Added message server configuration parameters:
+Added these message server configuration parameters to fix this issue:
 +
 [source,java,linenums]
 ----
@@ -40,7 +40,7 @@ String JCO_SAPROUTER = "jco.client.saprouter";
 +
 These are reflections of JCo properties. (SE-10985)
 +
-* Fixed SAP connector not sending back to SAP when a source uses the request-response pattern without the XML-to-SAP Function. (SE-11761)
+* Fixed the SAP connector not sending back to SAP when a source used the request-response pattern without using the XML-to-SAP function. (SE-11761)
 
 == 3.2.1 
 
