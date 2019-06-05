@@ -7,9 +7,9 @@ Support Category: Premium
 
 The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with backend CICS applications using the CICS Transaction Gateway. For Java platforms, CTG implements the JCA resource adapter to connect Java applications to the CICS system. The connector connects Mule applications and the CTG.
 
-== 1.1.5
+== 1.2.0
 
-*June 5, 2019*
+*June 6, 2019*
 
 === Compatibility
 
