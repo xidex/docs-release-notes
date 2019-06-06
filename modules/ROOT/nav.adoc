@@ -544,6 +544,7 @@
   *** xref:migration/1.4-migration-guide.adoc[1.4 Migration Guide]
  ** xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes]
  ** xref:mule-runtime/service-soap-release-notes.adoc[Mule SOAP Service Release Notes]
+ ** xref:mule-runtime/service-scheduler-release-notes.adoc[Scheduler Service Release Notes - Mule 4]
 * xref:munit/munit-release-notes.adoc[MUnit Release Notes]
  ** xref:munit/munit-2.1.5-release-notes.adoc[MUnit 2.1.5 Release Notes]
  ** xref:munit/munit-2.1.4-release-notes.adoc[MUnit 2.1.4 Release Notes]

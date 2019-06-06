@@ -113,3 +113,4 @@ endif::[]
 
 * xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes]
 * xref:mule-runtime/service-soap-release-notes.adoc[Mule SOAP Service Release Notes]
+* xref:mule-runtime/service-scheduler-release-notes.adoc[Scheduler Service Release Notes - Mule 4]
