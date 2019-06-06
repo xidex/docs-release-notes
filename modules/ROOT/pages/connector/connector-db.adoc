@@ -19,7 +19,7 @@ Mule 4.1.1
 
 === Fixed Issues
 
-* On stored procedures where output return variable is set to null, output should not be processed further. (https://www.mulesoft.org/jira/browse/MULE-16961[MULE-16961])
+* On stored procedures where the output return variable is set to null, the output should not be processed further. (https://www.mulesoft.org/jira/browse/MULE-16961[MULE-16961])
 
 
 == 1.5.3
