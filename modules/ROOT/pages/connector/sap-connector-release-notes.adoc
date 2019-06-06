@@ -11,7 +11,7 @@ xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
 
 == Version 3.2.2
 
-*May 29, 2019*
+*June 6, 2019*
 
 [%header%autowidth.spread]
 |===
