@@ -45,11 +45,12 @@ image::mule-runtime/updating-mule-versions-415.png[]
 Once the Mule Deployable Archives (`.jar` files) are in versions that are compatible with the target Mule version and you have applied any other necessary changes to ensure compatibility, you can move on to installing the corresponding Mule runtime engine on your servers.
 
 
+== Mule Standalone Runtime Engine Version
 
-== Mule Standalone Runtime Version
+=== Recommendations
 
-[TIP]
-To ensure that you have faster downtime and an easier backup route, we recommend that you initially install your new Mule Runtime on a separate server from where you have your current Mule Runtime installed.
+To ensure that you have lower downtime and an easier backup route, we recommend that you initially install your new Mule runtime engine on a separate server from where you have your current Mule runtime engine installed.
+
 
 . Download the new Mule version from the Customer Portal and install it (preferably on a different server or virtual machine).
 . If any of your applications use shared custom libraries, make sure you copy those .jar files to the `<MULE_HOME>/lib/user` directory of the new version.
