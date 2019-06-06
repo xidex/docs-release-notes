@@ -51,9 +51,10 @@ Once the Mule Deployable Archives (`.jar` files) are in versions that are compat
 
 To ensure that you have lower downtime and an easier backup route, we recommend that you initially install your new Mule runtime engine on a separate server from where you have your current Mule runtime engine installed.
 
+=== Steps to Upgrade Mule Version
 
 . Download the new Mule version from the Customer Portal and install it (preferably on a different server or virtual machine).
-. If any of your applications use shared custom libraries, make sure you copy those .jar files to the `<MULE_HOME>/lib/user` directory of the new version.
+. If any of your applications use shared custom libraries, make sure you copy those `.jar` files to the `<MULE_HOME>/lib/user` directory of the new version.
 +
 [NOTE]
 ====
@@ -62,11 +63,11 @@ If any of your previous applications rely on a full or a partial custom patch in
 Otherwise, please contact MuleSoft Support by creating a new support case, to request a new patch compatible with the target version. Patch files are version specific and MUST NOT be used in a different runtime version.
 ====
 +
-. Download a new copy of your license from the Customer Portal and install it on the target version, by following the instructions described at xref:4.2@mule-runtime::installing-an-enterprise-license.adoc[Installing an Entrerprise License].
-. If you have set any custom configurations to your runtime instance – for example: if you defined a different maximum heap size in the `wrapper.conf` file –  you might want to replicate these settings manually.
-. xref:4.2@mule-runtime::starting-and-stopping-mule-esb.adoc[Run your new Mule Server] to verify your installation is working as expected.
+. Download a new copy of your license from the Customer Portal and install it on the target version, by following the instructions described at xref:mule-runtime::installing-an-enterprise-license.adoc[Installing an Enterprise License].
+. If you have set any custom configurations to your Mule instance – for example: if you defined a different maximum heap size in the `wrapper.conf` file –  you need to replicate these settings manually.
+. xref:mule-runtime::starting-and-stopping-mule-esb.adoc#running-mule[Run your new Mule Server] to verify that your installation is working as expected.
 . Depending on the circumstances and your current infrastructure, you might want to consider shutting down your previous Mule Server at this point. Please evaluate the impact of this action before proceeding.
-. If you have previously set any environment variables, such as `MULE_HOME` or `PATH`, make sure that they are now pointing to the new Runtime's installation path.
+. If you have previously set any environment variables, such as `MULE_HOME` or `PATH`, make sure that they are now pointing to the new Mule runtime engine's installation path.
 . Deploy your applications to your new Mule Server.
 
 == Mule Runtime Engine Version on CloudHub
