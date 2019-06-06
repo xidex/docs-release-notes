@@ -426,6 +426,7 @@
  ** xref:mule-runtime/mule-enterprise-management-console-security-update.adoc[Mule Enterprise Management Console Security Update]
  ** xref:mule-runtime/xml-issues-in-mule-esb.adoc[XML Issues in Mule]
 * xref:mule-runtime/mule-esb.adoc[Mule Runtime Release Notes]
+ ** xref:mule-runtime/updating-mule-4-versions.adoc[Upgrading Mule Runtime (Versions 4.x to 4.n)]
  ** xref:mule-runtime/mule-4.2.0-release-notes.adoc[Mule Runtime 4.2.0 Release Notes]
  ** xref:mule-runtime/mule-4.1.5-release-notes.adoc[Mule Runtime 4.1.5 Release Notes]
  ** xref:mule-runtime/mule-4.1.4-release-notes.adoc[Mule Runtime 4.1.4 Release Notes]
