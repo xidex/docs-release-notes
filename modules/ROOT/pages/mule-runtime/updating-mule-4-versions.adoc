@@ -77,12 +77,14 @@ To change the version of the Mule runtime engine that runs a Mule application de
 If you need to change the Mule runtime engine version used to develop your application, refer to the  <<Mule Application Runtime Version>> section.
 
 [[mulerunvers]]
-== Mule Runtime Version on Runtime Manager
+== Mule Runtime Engine Version on Runtime Manager
 
-[NOTE]
-To migrate following these steps, you must have the xref:runtime-manager::runtime-manager-agent.adoc[Runtime Management Agent] installed.
+=== Prerequisites
 
-[TIP]
+To migrate following these steps, you must have the xref:runtime-manager::runtime-manager-agent.adoc[Runtime Manager Agent] installed.
+
+=== Recommendations
+
 To ensure that you'll have less downtime and an easier backup route, we recommend that you initially install your new Mule Runtime on a separate server from where you have your current Mule Runtime installed. That way you can set everything up and only then decouple the old server and initiate the new one.
 
 To migrate your Mule servers on-premises that are being managed through Runtime Manager, you must perform these steps on each:
