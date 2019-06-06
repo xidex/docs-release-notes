@@ -9,6 +9,7 @@ endif::[]
 
 * When using direct upload, provide relevant information about the files that should be uploaded for each asset type. (EXC-3427)
 * Users can now customize the order of the user-generated pages in the public portal. (EXC-3405)
+* Exchange now searches the full text of API specifications and portal content. (EXC-2967)
 
 === Fixed in this Release
 
