@@ -27,24 +27,23 @@ Read the xref:mule-runtime/mule-esb.adoc[release notes] for the Mule runtime eng
 
 If there are no relevant changes between the Mule version in which the application is developed and the target Mule version to which you're migrating, then you don't need to modify your application. Mule supports having applications that are built with older Mule versions deployed to them.
 
-If you do decide to change your Mule application's version, you must:
+=== Steps to Change Version
 
-. xref:7.3@studio::studio-update-sites.adoc[Download the newest Mule runtime] on Anypoint Studio so that you can handle that version in the IDE.
-+
-[TIP]
-You can check xref:6@studio::adding-community-runtime.adoc[this documentation page], as a reference on how to install additional runtimes on Anypoint Studio.
+If you do decide to change your Mule application's runtime version, you must:
 
+. xref:studio::studio-update-sites#mule-runtimes-for-anypoint-studio-update-site[Download the newest Mule runtime engine] on Anypoint Studio so that you can handle that version in the IDE.
 . For every application that you update:
-.. xref:6@studio::importing-and-exporting-in-studio.adoc#exporting-a-mule-deployable-archive[Import the application] to Anypoint Studio as a Mule project.
+.. xref:studio::import-export-packages#importing-projects-to-studio[Import the application] to Anypoint Studio as a Mule project.
 .. During the import process remember to change the Mule version by selecting it from the *Server Runtime* dropdown menu.
 +
 image::mule-runtime/updating-mule-versions-415.png[]
 
-.. Make any other changes to your Mule project that may be necessary depending on the version gap you're transitioning.
-.. xref:6@studio::importing-and-exporting-in-studio.adoc#exporting-a-mule-deployable-archive[Export your project] as a Mule Deployable Archive (.jar file).
-.. Edit the *pom.xml* file to change the `muleVersion` property value, so that it matches the target version.
+.. Make any other changes to your Mule project that are necessary depending on the version gap you are transitioning.
+.. xref:studio::import-export-packages#exporting-projects-from-studio[Export your project] as a Mule Deployable Archive (`.jar` file).
+.. Edit the `pom.xml` file to change the `muleVersion` property value, so that it matches the target version.
 
-Once the Mule Deployable Archives (.jar files) are in versions that you're sure are compatible with the target runtime version and you've also validated that any other necessary changes that ensure compatibility have been applied, you can move on to installing the corresponding Mule Runtime on your servers.
+Once the Mule Deployable Archives (`.jar` files) are in versions that are compatible with the target Mule version and you have applied any other necessary changes to ensure compatibility, you can move on to installing the corresponding Mule runtime engine on your servers.
+
 
 
 == Mule Standalone Runtime Version
