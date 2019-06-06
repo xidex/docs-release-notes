@@ -118,9 +118,9 @@ Applications must be running and showing as `Started` in Runtime Manager. This p
 .. Follow the steps in <<Mule Application Runtime Version>> to update your application.
 .. Find the application on the *Applications* tab on Runtime Manager and click *Choose File* to xref:runtime-manager::managing-deployed-applications.adoc#updating-your-application[upload] the new Mule Deployable Archive (`.jar` file).
 
-== Upgrading a Runtime Manager Cluster     
+== Upgrading a Runtime Manager Cluster
 
-Zero downtime cannot be guaranteed when migrating clusters to another version. At some point during the migration the cluster is in a mixed state, with coexisting nodes running two different versions. This might lead to incompatible communication protocols between Hazelcast instances. +
+Zero downtime cannot be guaranteed when migrating clusters to another version. At some point during the migration, the cluster is in a mixed state, with coexisting nodes running two different versions. This might lead to incompatible communication protocols between Hazelcast instances. +
 When such errors occur, every node in the cluster must be shut down to proceed with the migration.
 
 == See Also
