@@ -11,18 +11,15 @@ This document describes considerations and best practices when changing the 4.x 
 For guidance with migrations from Mule 3.x to Mule 4, see xref:4.1@mule-runtime::index-migration.adoc[Mule 4 for Mule 3 Users].
 ====
 
+== Mule Application Runtime Version
 
+Mule runtime engines use semantic versioning, therefore note that Mule applications:
 
-== Application Runtime Version
-
-[NOTE]
-====
-Mule runtimes use semantic versioning, therefore please note that Mule applications:
-
-* Are most likely not compatible between major runtime versions releases (e.g. *z*.0.0)
+* Are most likely not compatible between major runtime version releases (e.g. *z*.0.0)
 * Are potentially compatible between minor runtime version releases (e.g: 4.*y*.0), but MuleSoft recommends executing a regression test cycle to validate this.
-* Are assured to be fully compatible for patch releases of the Mule runtime (e.g: 4.1.*x*)
-====
+* Are assured to be fully compatible for patch releases of the Mule runtime engine(e.g: 4.1.*x*)
+
+
 
 Before you begin, read the xref:mule-runtime/mule-esb.adoc[release notes] for the Mule Runtime version you wish to upgrade to (which we will call the target version, from here on), to know if you must make any necessary changes to your applications to ensure compatibility.
 
