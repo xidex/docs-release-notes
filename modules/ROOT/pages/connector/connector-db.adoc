@@ -291,5 +291,5 @@ This release includes the following enhancements, changes, and fixes:
 
 == See Also
 
-* https://forums.mulesoft.com[MuleSoft Forum].
-* https://support.mulesoft.com[Contact MuleSoft Support].
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
