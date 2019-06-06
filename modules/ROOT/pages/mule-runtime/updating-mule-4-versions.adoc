@@ -87,34 +87,36 @@ To migrate following these steps, you must have the xref:runtime-manager::runtim
 
 To ensure that you'll have less downtime and an easier backup route, we recommend that you initially install your new Mule Runtime on a separate server from where you have your current Mule Runtime installed. That way you can set everything up and only then decouple the old server and initiate the new one.
 
-To migrate your Mule servers on-premises that are being managed through Runtime Manager, you must perform these steps on each:
+=== Steps to Upgrade Mule Version
 
-. Go through steps 1 through to 5 of the previous section, <<Mule Standalone Runtime Version>>
-. Copy the following three files from the path `<MULE_HOME>/conf` from your old Mule installation into the same on the new installation:
+To migrate your on-premise Mule servers that are being managed through Runtime Manager, you must perform these steps on each:
+
+. Go through steps 1 through to 5 of the previous section, <<Mule Standalone Runtime Engine Version>>
+. Copy the following three files from the path `<MULE_HOME>/conf` from your old Mule installation into the same folder on the new installation:
 * `mule-agent.yml`
 * `mule-agent.jks`
 * `truststore.jks` and/or `anypoint-truststore.jks`
-. Copy the mule-agent-plugin folder from the path `<MULE_HOME>/plugins` from your old Mule installation into the same on the new installation.
-. Open a terminal window and navigate to the `<MULE_HOME>/bin` of your new Mule installation. Once there, run the following command:
+. Copy the `mule-agent-plugin` folder from the path `<MULE_HOME>/plugins` from your old Mule installation into the same folder on the new installation.
+. Open a terminal window and navigate to the `<MULE_HOME>/bin` folder of your new Mule installation. Once there, run the following command:
 +
 ----
 amc_setup -U
 ----
 +
-Through executing this command, you're installing the latest version of the Runtime Manager Agent on your Mule runtime, which is assured to be compatible with your target runtime version. The files you copied from your old installation hold all of the configuration information that registers the Mule instance on Runtime Manager, so no further steps should be needed.
+Through executing this command, you're installing the latest version of the Runtime Manager Agent on your Mule runtime engine, which is assured to be compatible with your target runtime version. The files you copied from your old installation hold all of the configuration information that registers the Mule instance on Runtime Manager, so no further steps should be needed.
 +
-Even when you're installing your new Mule runtime version on another server or VM, the copied configuration files should suffice to smoothly transition the Mule instance's identity on the Runtime Manager.
+Even when you're installing your new Mule version on another server or VM, the copied configuration files should suffice to smoothly transition the Mule instance's identity on Runtime Manager.
 +
-If your origin server had apps that were deployed to it through the Runtime Manager, there's no need to manually copy these, as they automatically upload to your new server when instructed to deploy them through Runtime Manager.
+If your origin server had apps that were deployed to it through Runtime Manager, there's no need to manually copy these, as they automatically upload to your new server when instructed to deploy them through Runtime Manager.
 +
 [CAUTION]
 ====
 Applications must be running and showing as `Started` in Runtime Manager. This process does not migrate stopped Applications.
 ====
 
-. At this point the Mule server is already updated to the target version. Updating the Mule applications that are deployed to it is optional. If wish to do so to take full advantage of the features of the target runtime, then you must also:
-.. Follow the steps in <<Application Runtime Version>> to update your application.
-.. Find the application on the *Applications* tab on Runtime Manager and click *Choose File* to xref:runtime-manager::managing-deployed-applications.adoc#updating-your-application[upload] the new Mule Deployable Archive (.jar file).
+. At this point, the Mule server is already updated to the target version. Updating the Mule applications that are deployed to it is optional. If you wish to do so, then you must also:
+.. Follow the steps in <<Mule Application Runtime Version>> to update your application.
+.. Find the application on the *Applications* tab on Runtime Manager and click *Choose File* to xref:runtime-manager::managing-deployed-applications.adoc#updating-your-application[upload] the new Mule Deployable Archive (`.jar` file).
 
 == Upgrading a Runtime Manager Cluster     
 
