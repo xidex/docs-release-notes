@@ -11,8 +11,6 @@ This document describes considerations and best practices when changing the 4.x 
 For guidance with migrations from Mule 3.x to Mule 4, see xref:4.1@mule-runtime::index-migration.adoc[Mule 4 for Mule 3 Users].
 ====
 
-[TIP]
-Keep in mind that if you're deploying your applications to *CloudHub*, then this content is not relevant to you, with the exception of the steps outlined in the section <<Application Runtime Version>>. Changing the Mule runtime version of a Mule application that's deployed to on CloudHub is simply managed from the xref:runtime-manager::deploying-to-cloudhub.adoc#runtime-tab[runtime version drop-down box] in the application settings deployment configuration page.
 
 
 == Application Runtime Version
@@ -71,6 +69,12 @@ Otherwise, please contact MuleSoft Support by creating a new support case, to re
 . Depending on the circumstances and your current infrastructure, you might want to consider shutting down your previous Mule Server at this point. Please evaluate the impact of this action before proceeding.
 . If you have previously set any environment variables, such as `MULE_HOME` or `PATH`, make sure that they are now pointing to the new Runtime's installation path.
 . Deploy your applications to your new Mule Server.
+
+== Mule Runtime Engine Version on CloudHub
+
+To change the version of the Mule runtime engine that runs a Mule application deployed to CloudHub, you need to use the xref:runtime-manager::deploying-to-cloudhub.adoc#runtime-tab[runtime version drop-down box] in the application settings deployment configuration page.
+
+If you need to change the Mule runtime engine version used to develop your application, refer to the  <<Mule Application Runtime Version>> section.
 
 [[mulerunvers]]
 == Mule Runtime Version on Runtime Manager
