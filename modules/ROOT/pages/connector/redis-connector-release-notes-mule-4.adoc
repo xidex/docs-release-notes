@@ -1,4 +1,4 @@
-= Redis Connector Release Notes
+= Redis Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -24,7 +24,7 @@ The Redis Connector offers complete support for its CRUD API.
 
 === Fixed in this Release
 
-* Redis connector 5.1.0 test connection always return successful - This issue was fixed by making sure the Redis instance being used is actually up and running by sending an ECHO command to it.(SE-11775)
+* Redis connector 5.1.0 test connection always return successful. This issue was fixed by making sure the Redis instance being used is actually up and running by sending an ECHO command to it. (SE-11775)
 
 == 5.1.0
 
