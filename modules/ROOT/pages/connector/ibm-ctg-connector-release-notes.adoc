@@ -16,7 +16,7 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |3.7 and later
+|Mule Runtime |3.7, 3.8, 3.9
 |IBM CICS TG (for Multiplatforms and for z/OS) |9.1 and 9.2
 |IBM CICS TG SDK |9.1 and 9.2
 |===
