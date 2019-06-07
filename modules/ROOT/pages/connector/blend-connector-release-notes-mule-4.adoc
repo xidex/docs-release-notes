@@ -1,0 +1,39 @@
+= Blend Connector Release Notes - Mule 4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Support Category: Select
+
+The Anypoint Connector for Blend lets you connect to the Blend Data APIs to support workflows related to Loans, Borrowers, Realtors, Documents & Disclousers. The connector exposes convenient methods to alter data on Blend platform. MuleSoft recommends that you install the latest version of Studio.
+
+== 1.0.0
+
+*Jun 10, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|Blend|v2.0.0
+|===
+
+=== Features
+
+* Loans - Processing features with GET,POST,DELETE & PUT
+* Borrowers - Processing features
+* Realtors - Processing features
+* Documents & Disclosures - Processing features
+
+=== Fixed in this Release
+
+First version.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
