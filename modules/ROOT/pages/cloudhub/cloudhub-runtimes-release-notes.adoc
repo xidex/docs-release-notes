@@ -14,7 +14,7 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 3.9.1 and 3.9.2 Runtime Update:
 
-* JSON validation fails "error: object instance has properties which are not allowed by the schema:"	[SE-11753]
+* JSON validation fails with the error `error: object instance has properties which are not allowed by the schema:`	[SE-11753]
 
 
 == June 5, 2019
