@@ -1,4 +1,4 @@
-= Oauth Service Release Notes - Mule 4
+= OAuth Service Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
