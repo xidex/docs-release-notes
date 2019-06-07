@@ -42,7 +42,7 @@ image::mule-runtime/updating-mule-versions-415.png[]
 .. xref:studio::import-export-packages#exporting-projects-from-studio[Export your project] as a Mule Deployable Archive (`.jar` file).
 .. Edit the `pom.xml` file to change the `muleVersion` property value, so that it matches the target version.
 
-Once the Mule Deployable Archives (`.jar` files) are in versions that are compatible with the target Mule version and you have applied any other necessary changes to ensure compatibility, you can move on to installing the corresponding Mule runtime engine on your servers.
+Once you have successfully built the Mule Deployable Archives (`.jar` files) with the target Mule version, and you have applied any other necessary changes to ensure compatibility, you can move on to installing the corresponding Mule runtime engine on your servers.
 
 
 == Mule Standalone Runtime Engine Version
