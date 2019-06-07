@@ -28,7 +28,7 @@ endif::[]
 == Services
 
 * xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes - Mule 4]
-* xref:mule-runtime/service-oauth-release-notes.adoc[Oauth Service Release Notes - Mule 4]
+* xref:mule-runtime/service-oauth-release-notes.adoc[OAuth Service Release Notes - Mule 4]
 * xref:mule-runtime/service-scheduler-release-notes.adoc[Scheduler Service Release Notes - Mule 4]
 * xref:mule-runtime/service-soap-release-notes.adoc[Mule SOAP Service Release Notes - Mule 4]
 
