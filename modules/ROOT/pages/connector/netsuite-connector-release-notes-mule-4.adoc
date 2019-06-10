@@ -10,7 +10,7 @@ The Anypoint Connector for NetSuite synchronizes data and automates business pro
 
 == 8.3.3
 
-*June 10, 2019*
+*June 11, 2019*
 
 === Compatibility
 
