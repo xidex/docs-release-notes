@@ -1,13 +1,12 @@
-= SAP SuccessFactors Connector Release Notes
+= SAP SuccessFactors Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 Support Category: Select
 
-The Mule Connector for SuccessFactors provides full support to query, create, update and delete entities using the SFAPI API exposed by SuccessFactors.
-
-*Note:* Version 3.0.0 discards the SFAPI and introduces the ODATA API v2 exposed by SuccessFactors.
+The Mule connector for SAP SuccessFactors provides full support to query, create, update, and delete entities 
+using the ODATA API v2 exposed by SuccessFactors.
 
 == 3.1.1
 
@@ -24,7 +23,7 @@ The Mule Connector for SuccessFactors provides full support to query, create, up
 
 === Fixed in this Release
 
-* SuccessFactors connector does not send mandatory fields hr and manager (SE-12039)
+* SuccessFactors connector does not send mandatory fields `hr` and `manager`. (SE-12039)
 
 == 3.1.0
 
@@ -41,13 +40,15 @@ The Mule Connector for SuccessFactors provides full support to query, create, up
 
 === Features
 
-* Added support for SuccessFactors upsert operation.
+* Added support for the SuccessFactors upsert operation.
 
 == 3.0.0
 
 *June 27, 2018*
 
 Mule 4 version of the SuccessFactors connector.
+
+*Note:* Version 3.0.0 and later discards the SFAPI API and introduces the ODATA API v2 exposed by SuccessFactors.
 
 === Compatibility
 
