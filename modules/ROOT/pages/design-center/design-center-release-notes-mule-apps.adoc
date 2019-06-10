@@ -38,7 +38,7 @@ These release notes cover the following versions of these features:
 == 1.11.0
 *June 15, 2019*
 
-=== New Features
+This release includes the following new features:
 
 * Publish Mule applications as templates in Exchange
 +
@@ -58,15 +58,17 @@ When filling out cards for popular connectors, such as the Database connector or
 +
 As explained in xref::design-center:dynamic-expression-field.adoc[Fill in Cards with Values that Change at Runtime], you can drag data elements into fields in cards, and then expand the data elements to see menus for applying transformations to data. The menu labels are now easier to understand. For example, in the previous release, the labels for three of the transformation that you can apply to strings were Lower, Trim, and Upper. In this release, the labels are Lowercase, Remove Extra Whitespace, and Uppercase.
 
-Automatic upgrade of the version of Mule Runtime being used
-Now Flow Designer automatically updates your projects to the latest runtime.  As a result, your projects will run faster and you will see fewer errors.  You can see the Mule runtime version for your project in the Flow Designer logs or by viewing your project in Runtime Manager.
+* Automatic upgrade of the version of Mule Runtime being used
++
+Now, Flow Designer automatically updates your projects to the latest version of Mule Runtime. These automatic updates ensure that your projects run faster and have fewer errors at runtime.  You can see the Mule Runtime version for your project in the Flow Designer logs or by viewing your project in Runtime Manager.
 
+* Get mapping recommendations even for nested object properties
++
+If your data types include a nested object properties (or arrays), the Transform card can give you recommendations for how to map those properties to other objects.
 
-Use automapper with nested object properties
-Now, if your data types include a nested object properties (or arrays), you can use automapper to map those properties to other objects.
-
-Support for Mule 4.2
-Now, Flow Designer runs on Mule 4.2.  Enjoy a stabler, more reliable experience.
+* Support for Mule Runtime 4.2
++
+Flow Designer now runs on Mule Runtime 4.2. Enjoy a stabler, more reliable experience.
 
 
 
