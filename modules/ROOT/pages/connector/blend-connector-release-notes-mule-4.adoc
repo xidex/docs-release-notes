@@ -5,11 +5,11 @@ endif::[]
 
 Support Category: Select
 
-The Anypoint Connector for Blend lets you connect to the Blend Data APIs to support workflows related to Loans, Borrowers, Realtors, Documents & Disclousers. The connector exposes convenient methods to alter data on Blend platform. MuleSoft recommends that you install the latest version of Studio.
+The Anypoint Connector for Blend lets you connect to the Blend Data APIs to support workflows for loans, borrowers, realtors, documents, and disclosures. The connector exposes convenient methods to alter data on the Blend platform. MuleSoft recommends that you install the latest version of Anypoint Studio.
 
 == 1.0.0
 
-*Jun 10, 2019*
+*June 10, 2019*
 
 === Compatibility
 
@@ -24,10 +24,10 @@ The Anypoint Connector for Blend lets you connect to the Blend Data APIs to supp
 
 === Features
 
-* Loans - Processing features with GET,POST,DELETE & PUT
-* Borrowers - Processing features
-* Realtors - Processing features
-* Documents & Disclosures - Processing features
+* Loans - Processing features with GET,POST,DELETE, and PUT.
+* Borrowers - Processing features.
+* Realtors - Processing features.
+* Documents & Disclosures - Processing features.
 
 === Fixed in this Release
 
