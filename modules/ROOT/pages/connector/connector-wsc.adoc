@@ -9,7 +9,7 @@ endif::[]
 
 === Fixed Issues
 * Fixed issue that caused metadata not being collected when the location of the  WSDL was a relative path. (MULE-16876)
-* Fixed issue that caused the signature and the timestamp being wrongly swapped when signing the timestamp.(MULE-16834)
+* Fixed issue that caused the signature and the timestamp to be incorrectly swapped when signing the timestamp. (MULE-16834)
 * Fixed issue that caused the operation not being loaded on Studio.(MULE-16931)
 
 == 1.3.1
@@ -19,7 +19,7 @@ endif::[]
 === Fixed Issues
 
 * Fixed issue that caused the WDSL parsing to fail when an import with HTTPS was included in the WSDL. (MULE-16623)
-* Fixed issue that caused the connector to fail when finding attachments when element has namespace. (MULE-16592)
+* Fixed issue that caused the connector to fail finding attachments when an element has a namespace. (MULE-16592)
 * Fixed issue that caused the connector to be unable to decrypt responses using the Key Transport Algorithm RSA 1.5. (MULE-16605)
 * Fixed issue that caused the connector to be unable to generate the signature value, CXF library version upgraded. (MULE-16637)
 
