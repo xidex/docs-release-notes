@@ -10,7 +10,7 @@ using the ODATA API v2 exposed by SuccessFactors.
 
 == 3.1.1
 
-*Jun 10, 2019*
+*June 10, 2019*
 
 === Compatibility
 
@@ -23,7 +23,7 @@ using the ODATA API v2 exposed by SuccessFactors.
 
 === Fixed in this Release
 
-* SuccessFactors connector does not send mandatory fields `hr` and `manager`. (SE-12039)
+* SuccessFactors connector did not send the mandatory `hr` and `manager` fields. (SE-12039)
 
 == 3.1.0
 
