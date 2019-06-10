@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-5-0,2.5.0>>
 * <<2-4-8,2.4.8>>
 * <<2-4-6,2.4.6>>
 * <<2-4-5,2.4.5>>
@@ -18,6 +19,19 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== API Designer 2.5.0
+*June 15, 2019*
+
+This release introduces several new features in the visual editor.
+
+=== New Features in the Visual Editor
+
+* Support for security schemes
+* Support for union types
+* Support for enums for strings and numbers
+* Support for setting display names for methods
+* Support for adding groups to help you organize assets in the left pane
 
 == API Designer 2.4.8
 *May 18, 2019*
