@@ -38,7 +38,9 @@ These release notes cover the following versions of these features:
 == 1.11.0
 *June 15, 2019*
 
-This release includes the following new features:
+This release includes the following new features and enhancements:
+
+=== New Features
 
 * Publish Mule applications as templates in Exchange
 +
@@ -54,23 +56,24 @@ Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a
 +
 When filling out cards for popular connectors, such as the Database connector or the Slack connector, in previous releases, you had to remember the names of tables that you wanted to query or Slack channels that you wanted to send messages to. Now, rather than do that, you can click a drop-down list that is populated with the names of tables, the names of Slack channels, or other items, depending on the connector.
 
-* Choose data transformations more easily due to descriptive labels
-+
-As explained in xref::design-center:dynamic-expression-field.adoc[Fill in Cards with Values that Change at Runtime], you can drag data elements into fields in cards, and then expand the data elements to see menus for applying transformations to data. The menu labels are now easier to understand. For example, in the previous release, the labels for three of the transformation that you can apply to strings were Lower, Trim, and Upper. In this release, the labels are Lowercase, Remove Extra Whitespace, and Uppercase.
-
 * Let Flow Designer automatically upgrade the version of Mule Runtime being used in your projects
 +
 Now, Flow Designer automatically updates your projects to the latest version of Mule Runtime. These automatic updates ensure that your projects run faster and have fewer errors at runtime.  You can see the Mule Runtime version for your project in the Flow Designer logs or by viewing your project in Runtime Manager.
+
+
+=== Enhancements
 
 * Get mapping recommendations even for nested object properties
 +
 If your data types include a nested object properties (or arrays), the Transform card can give you recommendations for how to map those properties to other objects.
 
+* Choose data transformations more easily due to descriptive labels
++
+As explained in xref::design-center:dynamic-expression-field.adoc[Fill in Cards with Values that Change at Runtime], you can drag data elements into fields in cards, and then expand the data elements to see menus for applying transformations to data. The menu labels are now easier to understand. For example, in the previous release, the labels for three of the transformation that you can apply to strings were Lower, Trim, and Upper. In this release, the labels are Lowercase, Remove Extra Whitespace, and Uppercase.
+
 * Enjoy support for Mule Runtime 4.2
 +
 Flow Designer now runs on Mule Runtime 4.2. Enjoy a stabler, more reliable experience.
-
-
 
 
 == 1.10.0
