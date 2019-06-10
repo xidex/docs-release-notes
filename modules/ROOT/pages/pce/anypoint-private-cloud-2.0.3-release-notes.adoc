@@ -58,7 +58,10 @@ Upgrades from the following PCE versions are supported:
 [%header%autowidth.spread]
 |===
 | Description | Workaround
-| Some parts of the UI make requests to an external CDN | While browsing Anypoint Platform, you may see some failed requests in your browser JavaScript console.
-| Studio 7 integration with Exchange fail to download/upload applications | Users can manually upload their applications to PCE from Studio
-| Platform settings (DNS/IP, Disclaimer, NFS) have to be reconfigured after upgrade | Manually reapply the configurations after the upgrade
+| Some parts of the UI make requests to an external CDN. | While browsing Anypoint Platform, you may see some failed requests in your browser JavaScript console.
+| Studio 7 integration with Exchange fails to download or upload applications.| Manually upload applications to PCE from Studio.
+| You must reconfigure Anypoint Platform settings (DNS/IP, Disclaimer, NFS) after upgrade. | xref:private-cloud::config-workflow.adoc[Manually reapply the configurations after the upgrade].
+| Unable to deploy JAR files. | https://support.mulesoft.com/s/article/Runtime-Manager-using-PCE-2-0-3-rejects-JAR-files[Apply the patch to the Runtime Manager UI].
+| Unable see the application's *Properties* tab in Runtime Manager. | https://support.mulesoft.com/s/article/Runtime-Manager-using-PCE-2-0-3-rejects-JAR-files[Apply the patch to the Runtime Manager UI].
+| When an installation or an upgrade has to be resumed manually, the operation is never marked as complete. | Run the command: `curl -o gravity +https://get.gravitational.io/telekube/bin/5.0.33/linux/x86_64/gravity+ && chmod +x ./gravity && sudo ./gravity upgrade --complete`
 |===
