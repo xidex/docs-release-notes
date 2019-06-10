@@ -30,7 +30,7 @@ None.
 
 === Fixed in this Release
 
-* HTTP Proxy for RESTlet operations: a new fix was implemented. Previously, the proxy configuration was ignored by the dynamic endpoint resolution. It now works as expected.
+* HTTP Proxy for RESTlet operations: a new fix was implemented. Previously, the proxy configuration was ignored by the dynamic endpoint resolution. It now works as expected. (SE-11716)
 
 == 8.3.2
 
