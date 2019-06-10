@@ -40,7 +40,7 @@ using the ODATA API v2 exposed by SuccessFactors.
 
 === Features
 
-* Added support for the SuccessFactors upsert operation.
+* Added support for the SuccessFactors Update operation.
 
 == 3.0.0
 
