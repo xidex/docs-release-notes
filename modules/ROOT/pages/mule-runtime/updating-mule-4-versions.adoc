@@ -17,7 +17,7 @@ Mule runtime engines use semantic versioning, therefore note that Mule applicati
 
 * Are most likely not compatible between major runtime version releases (e.g. *z*.0.0)
 * Are potentially compatible between minor runtime version releases (e.g: 4.*y*.0), but MuleSoft recommends executing a regression test cycle to validate this.
-* Are assured to be fully compatible for patch releases of the Mule runtime engine(e.g: 4.1.*x*)
+* Are assured to be fully compatible for patch releases of the Mule runtime engine (e.g: 4.1.*x*)
 
 === Prerequisites
 
@@ -58,7 +58,7 @@ To ensure that you have lower downtime and an easier backup route, we recommend 
 +
 [NOTE]
 ====
-If any of your previous applications rely on a full or a partial custom patch in order to work properly (these would be found in the folder `<MULE_HOME>/lib/patches`), please verify that the fix is included in this target release by reviewing the corresponding xref:mule-runtime/mule-esb.adoc[release notes] page.
+If any of your previous applications rely on a full or a partial custom patch in order to work properly (these would be found in the `<MULE_HOME>/lib/patches` directory), please verify that the fix is included in this target release by reviewing the corresponding xref:mule-runtime/mule-esb.adoc[release notes] page.
 
 Otherwise, please contact MuleSoft Support by creating a new support case, to request a new patch compatible with the target version. Patch files are version specific and MUST NOT be used in a different runtime version.
 ====
@@ -97,7 +97,7 @@ To migrate your on-premise Mule servers that are being managed through Runtime M
 * `mule-agent.jks`
 * `truststore.jks` and/or `anypoint-truststore.jks`
 . Copy the `mule-agent-plugin` folder from the path `<MULE_HOME>/plugins` from your old Mule installation into the same folder on the new installation.
-. Open a terminal window and navigate to the `<MULE_HOME>/bin` folder of your new Mule installation. Once there, run the following command:
+. Open a terminal window and navigate to the `<MULE_HOME>/bin` directory of your new Mule installation. Once there, run the following command:
 +
 ----
 amc_setup -U
