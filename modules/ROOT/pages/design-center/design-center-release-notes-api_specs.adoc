@@ -51,7 +51,8 @@ This release introduces several new features in the visual editor.
 *
 // SE-11617
 * For certain API specifications, the API console was not appearing.
-
+// SE-11318
+* Not all types were being displayed in the list of types in the API console.
 
 
 
