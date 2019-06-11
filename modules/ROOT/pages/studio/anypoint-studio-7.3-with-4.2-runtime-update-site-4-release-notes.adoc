@@ -88,7 +88,8 @@ _Studio will always use the OS default web browser_ | * Windows: +
 
 [NOTE]
 --
-If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+If you are running real-time antivirus protection software on your operating system, Eclipse-based Anypoint Studio may experience negative performance impacts. This issue is most prominent on the Windows OS (easily observable using Task Manager), but other platforms are not exempt from it. The solution details vary for each antivirus software, but usually involve whitelisting or excluding the AnypointStudio and java executables, the Studio install and workspace filesystem locations, or some combination of that. See examples of suggested remedies for  https://kc.mcafee.com/corporate/index?page=content&id=KB58727[McAfee Viruscan], https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security[Windows Defender] and https://support.symantec.com/en_US/article.TECH104326.html[Symantec Endpoint Protection].
+
 --
 
 == Known Issues
