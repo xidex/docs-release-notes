@@ -55,6 +55,8 @@ This release introduces several new features in the visual editor.
 * Not all types were being displayed in the list of types in the API console.
 // SE-11208
 * When a specification defines a boolean value but does not provide a default value, the API console now provides a default value. Doing so prevents problems from arising with the mocking service.
+// SE-11123
+* In some cases, an API-specification project might never finish loading when an attempt was made to open it.
 
 
 
