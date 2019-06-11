@@ -6,6 +6,16 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on Runtime Fabric. In addition to these release notes, see the xref:runtime-fabric/runtime-fabric-release-notes.adoc[Anypoint Runtime Fabric release notes] and the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== May 17, 2019
+
+=== 4.2.0 `v1.2.2`
+
+* Added: Support for Runtime Fabric deployments
+
+=== 4.1.5 `v1.2.1`
+
+* Added: Support for Runtime Fabric deployments
+
 == April 30, 2019
 
 === 4.1.4 `v1.2.1`

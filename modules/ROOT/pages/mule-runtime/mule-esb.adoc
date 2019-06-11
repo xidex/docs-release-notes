@@ -25,12 +25,20 @@ endif::[]
 * xref:mule-runtime/mule-4.0-rc-release-notes.adoc[Mule Runtime 4.0 RC Release Notes]
 * xref:mule-runtime/mule-4.0-beta-release-notes.adoc[Mule Runtime 4.0 Beta Release Notes]
 
+== Services
+
+* xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes - Mule 4]
+* xref:mule-runtime/service-oauth-release-notes.adoc[OAuth Service Release Notes - Mule 4]
+* xref:mule-runtime/service-scheduler-release-notes.adoc[Scheduler Service Release Notes - Mule 4]
+* xref:mule-runtime/service-soap-release-notes.adoc[Mule SOAP Service Release Notes - Mule 4]
+
 == Mule Upgrades (3.x to 3.n)
 
 * xref:mule-runtime/updating-mule-versions.adoc[Upgrading Mule Runtime (Versions 3.x to 3.n)]
 
 == Mule 3.9.n
 
+* xref:mule-runtime/mule-3.9.3-release-notes.adoc[Mule 3.9.3 Runtime]
 * xref:mule-runtime/mule-3.9.2-release-notes.adoc[Mule 3.9.2 Runtime]
 * xref:mule-runtime/mule-3.9.1-release-notes.adoc[Mule 3.9.1 Runtime]
 * xref:mule-runtime/mule-3.9.0-release-notes.adoc[Mule 3.9.0 Runtime]
@@ -107,8 +115,3 @@ endif::[]
 * xref:deprecated/legacy-mule-migration-notes.adoc[Legacy Mule Migration Notes]
 * xref:deprecated/legacy-mule-release-notes.adoc[Legacy Mule Release Notes]
 * xref:deprecated/legacy-mule-ide-release-notes.adoc[Legacy Mule IDE Release Notes]
-
-== Services
-
-* xref:mule-runtime/service-http-release-notes.adoc[HTTP Service Release Notes]
-* xref:mule-runtime/service-soap-release-notes.adoc[Mule SOAP Service Release Notes]

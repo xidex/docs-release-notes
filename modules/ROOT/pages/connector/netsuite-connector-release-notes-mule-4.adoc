@@ -7,6 +7,55 @@ Support Category: Select
 
 The Anypoint Connector for NetSuite synchronizes data and automates business processes between NetSuite and third-party applications, either on-premises or in the cloud.
 
+
+== 8.3.3
+
+*June 11, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|SuiteTalk API | 2017.2
+|===
+
+[NOTE]
+The NetSuite version is not the same as the SuiteTalk API version. Your account may run on a different NetSuite version than the version of the the API you are using.
+
+=== Features
+
+None.
+
+=== Fixed in this Release
+
+* HTTP Proxy for RESTlet operations: a new fix was implemented. Previously, the proxy configuration was ignored by the dynamic endpoint resolution. It now works as expected. (SE-11716)
+
+== 8.3.2
+
+*May 22, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|SuiteTalk API | 2017.2
+|===
+
+[NOTE]
+The NetSuite version is not the same as the SuiteTalk API version. Your account may run on a different NetSuite version than the version of the the API you are using.
+
+=== Features
+
+None.
+
+=== Fixed in this Release
+
+* The HTTP Proxy for RESTlet operations now works in all scenarios. (SE-11716)
+
 == 8.3.0
 
 *March 29, 2019*

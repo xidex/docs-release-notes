@@ -3,6 +3,38 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.4.2
+ 
+*May 24, 2019* 
+
+=== Mule Version
+
+*Mule 4.2.0*
+
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+=== Fixed Issues 
+ 
+* When a non-supported CipherSuite is set, Grizzly ignores the restriction after the first request.  (https://www.mulesoft.org/jira/browse/MULE-16852[MULE-16852])
+
+== 1.2.4
+ 
+*May 24, 2019* 
+
+=== Mule Version
+
+*Mule 4.1.5*
+ 
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+=== Fixed Issues 
+ 
+* When a non-supported CipherSuite is set, Grizzly ignores the restriction after the first request.  (https://www.mulesoft.org/jira/browse/MULE-16852[MULE-16852])
+
 == 1.4.1
  
 *May 3, 2019* 
@@ -11,15 +43,13 @@ endif::[]
 
 *Mule 4.2.0*
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
  
 * None. 
  
 === Fixed Issues 
  
-* HTTP request streaming throws out of memory (https://www.mulesoft.org/jira/browse/MULE-16756[MULE-16756])
+* HTTP request streaming throws out-of-memory exception. (https://www.mulesoft.org/jira/browse/MULE-16756[MULE-16756])
 
 == 1.2.3
  
@@ -29,15 +59,13 @@ endif::[]
 
 *Mule 4.1.5*
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
  
 * None. 
  
 === Fixed Issues 
  
-* HTTP request streaming throws out of memory (https://www.mulesoft.org/jira/browse/MULE-16756[MULE-16756])
+* HTTP request streaming throws out-of-memory exception. (https://www.mulesoft.org/jira/browse/MULE-16756[MULE-16756])
 
 == 1.1.9 
  
@@ -47,15 +75,13 @@ endif::[]
 
 *Mule 4.1.4*
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
  
 * None. 
  
 === Fixed Issues 
  
-* HTTP request streaming throws out of memory (https://www.mulesoft.org/jira/browse/MULE-16756[MULE-16756])
+* HTTP request streaming throws out-of-memory exception. (https://www.mulesoft.org/jira/browse/MULE-16756[MULE-16756])
 
 == 1.1.8 
  
@@ -65,15 +91,13 @@ endif::[]
 
 *Mule 4.1.4*
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
  
 * None. 
  
 === Fixed Issues 
  
-* HTTP client should use worker pool when streaming responses (https://www.mulesoft.org/jira/browse/MULE-16597[MULE-16597])
+* HTTP client should use the worker pool when streaming responses. (https://www.mulesoft.org/jira/browse/MULE-16597[MULE-16597])
 
 == 1.4.0 
  
@@ -82,16 +106,15 @@ endif::[]
 === Mule Version
 
 *Mule 4.2.0*
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
 
 === New Features and Enhancements 
  
-* Miscellaneous performance improvements (https://www.mulesoft.org/jira/browse/MULE-16101[MULE-16101])
-* Introduce support for WebSockets (https://www.mulesoft.org/jira/browse/MULE-15850[MULE-15850])
+* Miscellaneous performance improvements. (https://www.mulesoft.org/jira/browse/MULE-16101[MULE-16101])
+* Introduce support for WebSockets. (https://www.mulesoft.org/jira/browse/MULE-15850[MULE-15850])
  
 === Fixed Issues 
  
-* Local authentication doesn't prevail when there are multiple authentication method headers (https://www.mulesoft.org/jira/browse/MULE-16308[MULE-16308])
+* Local authentication doesn't prevail when there are multiple authentication method headers.  (https://www.mulesoft.org/jira/browse/MULE-16308[MULE-16308])
 
 == 1.2.2
  
@@ -100,8 +123,6 @@ endif::[]
 === Mule Version
 
 *Mule 4.1.5*
- 
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
 
 === New Features and Enhancements 
  
@@ -109,9 +130,9 @@ endif::[]
  
 === Fixed Issues 
  
-* Source completion callback not called on failure (https://www.mulesoft.org/jira/browse/MULE-16634[MULE-16634])
-* HTTP client should use worker pool when streaming responses (https://www.mulesoft.org/jira/browse/MULE-16597[MULE-16597])
-* HTTP Client throws NPE if not started (https://www.mulesoft.org/jira/browse/MULE-15205[MULE-15205])
+* Source completion callback not called on failure. (https://www.mulesoft.org/jira/browse/MULE-16634[MULE-16634])
+* HTTP client should use worker pool when streaming responses. (https://www.mulesoft.org/jira/browse/MULE-16597[MULE-16597])
+* HTTP client throws NPE if not started. (https://www.mulesoft.org/jira/browse/MULE-15205[MULE-15205])
 
 == 1.2.1 
  
@@ -121,8 +142,6 @@ endif::[]
 
 *Mule 4.1.5*
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
  
 * None. 
@@ -139,8 +158,6 @@ endif::[]
 === Mule Version
 
 *Mule 4.1.4*
- 
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
 
 === New Features and Enhancements 
  
@@ -158,8 +175,6 @@ endif::[]
  
 *December 18, 2018* 
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
  
 * None. 
@@ -177,8 +192,6 @@ endif::[]
 
 *Mule 4.1.5*
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
 
 * Parameterize HTTP server's path tree structure. (https://www.mulesoft.org/jira/browse/MULE-15632[MULE-15632])
@@ -191,8 +204,8 @@ endif::[]
 * Miscellaneous performance improvements. (https://www.mulesoft.org/jira/browse/MULE-16101[MULE-16101])
 * Miscellaneous performance improvements for proxy scenario. (https://www.mulesoft.org/jira/browse/MULE-15924[MULE-15924])
 * Malformed URL returns 500 instead of 400. (https://www.mulesoft.org/jira/browse/MULE-15888[MULE-15888])
-* Some HTTP log entries go to the runtime log instead of the app's. (https://www.mulesoft.org/jira/browse/MULE-15871[MULE-15871])
-* Update grizzly version to MULE-005. (https://www.mulesoft.org/jira/browse/MULE-15853[MULE-15853])
+* Some HTTP log entries go to the runtime log instead of to the app. (https://www.mulesoft.org/jira/browse/MULE-15871[MULE-15871])
+* Update Grizzly version to MULE-005. (https://www.mulesoft.org/jira/browse/MULE-15853[MULE-15853])
 
 == 1.1.5 
  
@@ -202,8 +215,6 @@ endif::[]
 
 *Mule 4.1.4*
  
-// <This section lists all the major new features available with this latest version. Do not provide links to documentation and do not use images, which make reusing the release note content more difficult.> 
-
 === New Features and Enhancements 
  
 * None. 
@@ -248,7 +259,7 @@ None.
 
 === Fixed Issues
 
-* Cannot replace a catch all listener with another. (https://www.mulesoft.org/jira/browse/MULE-15246[MULE-15246]) 
+* Cannot replace a catch-all listener with another. (https://www.mulesoft.org/jira/browse/MULE-15246[MULE-15246]) 
 * HTTP with one config and two listeners fails to find the correct resolution path. (https://www.mulesoft.org/jira/browse/MULE-14929[MULE-14929])
 * HTTP: Reduce request creation overhead. (https://www.mulesoft.org/jira/browse/MULE-15419[MULE-15419])
 * Infinite timeout conflicts with socket timeout. (https://www.mulesoft.org/jira/browse/MULE-15062[MULE-15062]) 
@@ -288,10 +299,10 @@ None.
 
 === Fixed Issues
 
-* HTTP Service should support Java network properties to allow the usage of proxies during design time. (https://www.mulesoft.org/jira/browse/MULE-14644[MULE-14644]) 
-* Http: Allow requester to keep provided headers case. (https://www.mulesoft.org/jira/browse/MULE-14530[MULE-14530]) 
+* HTTP service should support Java network properties to allow the usage of proxies during design time. (https://www.mulesoft.org/jira/browse/MULE-14644[MULE-14644]) 
+* HTTP: Allow requester to keep provided headers case. (https://www.mulesoft.org/jira/browse/MULE-14530[MULE-14530]) 
 * HTTP: Performance improvements in listener. (https://www.mulesoft.org/jira/browse/MULE-14519[MULE-14519])
-* Load REMOTELY_CLOSED_EXCEPTION on service classlaoder (. (https://www.mulesoft.org/jira/browse/MULE-14565[MULE-14565])
-* Update minMuleVersion in the mule-http-service and the mule-http-ee-service to 4.1.1 after changes in MULE-14530. (https://www.mulesoft.org/jira/browse/MULE-14624[MULE-14624])
+* Load REMOTELY_CLOSED_EXCEPTION on service classloader. (https://www.mulesoft.org/jira/browse/MULE-14565[MULE-14565])
+* Update minMuleVersion in the HTTP service and the HTTP EE service to 4.1.1 after changes in MULE-14530. (https://www.mulesoft.org/jira/browse/MULE-14624[MULE-14624])
 * Upgrade Grizzly version 2.3.35. (https://www.mulesoft.org/jira/browse/MULE-14442[MULE-14442]) 
 * Use content-id for setting part name, when name is not present. (https://www.mulesoft.org/jira/browse/MULE-14549[MULE-14549]).  

@@ -85,9 +85,6 @@ Please take careful note of which Mule versions that Visualizer now supports and
 
 * Layer labels and names may change. The first letter of every layer will be capitalized. All default layers will be restored.
 
-=== Changes to Display Name
-
-add content
 
 == February 11, 2019
 Version 2.0.3

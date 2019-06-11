@@ -1,13 +1,29 @@
-= NetSuite Connector Release Notes
+= NetSuite Connector Release Notes for Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 Support Category: Select
 
-IMPORTANT: The NetSuite version is not the same as the SuiteTalk API version. Your account may be running a different version of NetSuite than the version of the API you are using.
+NOTE: The NetSuite connector version is not the same as the SuiteTalk API version. Your account may be running a different version of NetSuite than the version of the API you are using.
 
-xref:3.9@mule-runtime::netsuite-connector.adoc[Connector User Guide]
+== 7.7.3
+
+*May 24, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|3.5 and later Mule 3 versions
+|Java|7
+|API|SuiteTalk 2017.1
+|===
+
+=== Fixed in this Release
+
+* In certain scenarios, calls to the `Get Select Value` operation failed with a `NullPointerException`.
 
 == 7.7.2 
 

@@ -1,9 +1,26 @@
-= AMQP Connector Release Notes for Mule 4
+= AMQP Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 Support Category: Select
+
+== 1.4.3
+
+*May 31, 2019*
+
+=== Fixed issues
+
+* Consumer Manager does not stop consumers separately when configuring a domain. (AMQP-142)
+
+== 1.4.2
+
+*March 27, 2019*
+
+=== Fixed issues
+
+* Race condition with consumer regeneration and Mule redeploy in domain. (AMQP-140)
+* Default Exchange is not taken into account in publish. (AMQP-141)
 
 == 1.4.1
 

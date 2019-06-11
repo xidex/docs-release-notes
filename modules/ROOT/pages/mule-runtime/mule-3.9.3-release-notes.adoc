@@ -1,0 +1,135 @@
+// Product_Name Version number/date Release Notes
+= Mule Runtime 3.9.3 Release Notes
+:keywords: mule, 3.9.3, runtime, release notes
+
+*May 31, 2019*
+
+// <All sections are required. If there is nothing to say, then the body text in the section should read, Not applicable.
+
+Mule Runtime 3.9.3 includes the following enhancements, changes, and fixes.
+
+//* <TO_COMPLETE>
+
+
+This release is supported on Anypoint Private Cloud Edition 1.6.1 and later.
+
+== Key Enhancements
+
+Key API Gateway Enhancements:
+
+* Improved security. You can encrypt credentials used to configure the connection between the runtime and Anypoint Platform, and you can encrypt all sensitive information stored by the API Gateway, such as policies configuration and contracts. See 
+xref:api-manager::api-gateway-encryption-mule3.adoc[Gateway Startup Encryption in Mule 3].
+* API Gateway can be configured to send the events that reach your API to Anypoint Platform's Analytics tool and to Runtime Manager. In other words, you can now send the events to both the Analytics tool and to Runtime Manager, not just one or the other. The latter enables you to set up third-party analytics tool, such as Splunk, to consume your event's analytics data. See xref:runtime-manager::sending-data-from-arm-to-external-analytics-software.adoc[Export Data to External Analytics Tools (Hybrid)] 
+
+////
+
+== Changes
+
+* <TO_COMPLETE>
+
+== Known Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+|===
+
+== Issues Impacting Migration
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// <TO COMPLETE>
+|===
+
+////
+
+== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+// Fixed Issues
+| MULE-16852 | When a non supported cipherSuite is set grizzly ignores restriction after first request
+| MULE-16846 | DB QueryTimeout not being able to set this value from configuration property
+| MULE-16763 | Choice (ExpressionFilter) does not act like Boolean.valueOf
+| MULE-16724 | Lookup of converters after initialization generates leaks in MuleRegistryHelper
+| MULE-16721 | Upgrade jaxb version in cxf to 2.3.1-MULE-001
+| MULE-16674 | MEL caching null values after second nullsafe operation is done
+| MULE-16614 | Some core classes do not generate any logs
+| MULE-16598 |  filter.setNullReturnsTrue(false); fails with {NullPayload}
+| MULE-16547 | IMAP not receiving emails working on 3.9.2
+| MULE-16514 | Persistent Partiion Store should delete partiition directory on dispose
+| MULE-16498 | Add option to not recycle receiver in case of Connection Exception in WMQ
+| MULE-16494 | Application start up time is delayed due to delay after Initialise phase
+| MULE-16433 | Error when using persistent object store with until successful scope
+| MULE-16405 | Add element in children DefaultMessageProcessorPathElement is not synchronized
+| MULE-16350 | HTTP Requester with OAuth2 client credentials is causing thread leak after redeployment
+| MULE-16349 | MessagingException does not preserve bare fault message (extra dot)
+| MULE-16322 | Mule must load wsdl only once for each wsconfig
+| MULE-16315 | Mime type is ignored when sending an HTTP request with a source
+| MULE-16241 | Cases where the JMS Multiconsumers cannot be recycled must be considered
+| MULE-16027 | NPE on quarts trigger when schedulerFactory is configured with Spring
+| MULE-16015 | StackOverflow when an error reset filter context before Response Completion Handler
+| MULE-15987 | Incomplete Multipart request should return 400 instead of 500
+| MULE-15975 | Problem tokenizing multiple colllection/map accessors [] in MEL
+| MULE-15396 | Use deadlock safe strategy for transaction logging
+| MULE-13751 | Issue with #[function.datestamp('yyyyMMdd')] extra ) added
+| MULE-11864 | Mule ObjectStore dispose method shouldn't delete partition_descriptor file
+| MULE-8787 | Cannot set an array element in a property from an enricher.
+| EE-6742 | Update jaxb to 2.3.1-MULE-001 in EE distribution
+| EE-6734 | HazelcastObjectStoreTestCase fail when you update Hazelcast to 3.12
+| EE-6616 | Add option to not recycle receiver in case of Connection Exception in WMQ
+| EE-6468 | Make configurable batch history expiration frequency
+//
+// -------------------------------
+// - Enhancement Request Issues
+// -------------------------------
+| MULE-16851 | Implement CompositeConverter#toString to aid in transformers troubleshooting
+| MULE-16771 | Add shutdown hooks for deployment service
+| MULE-15603 | Values of AsyncInterceptingMessageProcessor maxThreadsActive and minThreadsActive are not accurate
+| MULE-11900 | Different default timeouts for connectionIdle on server and client
+| AGW-2696 | Stopping and starting, not restarting, a RAML Proxy through ARM leaves the application in an unusable state
+| AGW-2900 | Throttling policy doesn’t clean its cache
+| AGW-2958 | Unexpected policy behavior when on proxy mode, without a proxy
+| AGW-3050 | MapDB is leaving old data in files
+| AGW-2855 | Catch analytics error are thrown on runtime shutdown
+| AGW-2905 | Null pointer exception (NPE) when there are no permissions to write in the policies folder
+| AGW-2938 | Disable autodiscovery auto creation when the organization is in API Manager 2.x
+| AGW-2856 | In some scenarios, the throttling algorithm might lock the Mule cluster
+| AGW-3010 | Reduce max cache size for Federation Policies to 10K entries
+//
+// -----
+// -DataWeave
+// -----
+| DataWeave a|
+
+* Error parsing strings ending with escaped backslash.
+* Excel file parsing issues when column contains Boolean values.
+* Add system a system property `com.mulesoft.dw.WrapFunctionCallInNullSafe` so that functions are wrapped in null safe.
+* DataWeave `map` operator performance issues.
+* Invalid packed decimal data in next field.
+* Correct handling of repeated fields/structures in REDEFINES.
+* Reset stream if possible on the payload, when it is already consumed.
+* Error when variable name starts with now.
+* DataWeave `filter` operator is removing XML attributes.
+|===
+
+== Software Compatibility Testing
+
+Mule was tested on the following software:
+
+[%header,cols="15a,85a"]
+|===
+|Software |Version
+| JDK | JDK 1.8 (Recommended AdoptJDK)
+| OS | MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+| Application Servers | Tomcat 7, Tomcat 8, Weblogic 12c, Wildfly 8, Wildfly 9, Websphere 8, Jetty 8, Jetty 9
+| Databases | Oracle 11g, Oracle 12c, MySQL 5.5+, DB2 10, PostgreSQL 9, Derby 10, Microsoft SQL Server 2014
+|===
+
+The unified Mule Runtime 3.9.3 and API Gateway is compatible with APIkit 3.9.3.
+
+This version of Mule runtime is bundled with the Runtime Manager Agent plugin version 1.13.0.
+
+// No tickets for the library changes section (tickets with the 'library-version-update' label)

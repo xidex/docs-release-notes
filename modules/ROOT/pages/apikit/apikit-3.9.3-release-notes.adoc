@@ -1,0 +1,39 @@
+= APIkit 3.9.3 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*May 31, 2019*
+
+This release supports the Mule 3.9.3 Runtime release and corresponding Studio version.
+
+There are no new features in this version. There are just a few enhancements and bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.9.1 and later 3.9 versions
+|===
+
+== Enhancement in This Release
+
+* APIkit now parses `org.mule.transport.NullPayload` when sending a `null` payload.
+* Removed invalid APIKit `WARN` messages when two APIKit routers were included in a project.
+* The `content-type` request header is now case insensitive.
+* Added validation for RAML specified date time format.
+
+== Bug Fixes
+
+* Fixed issue preventing APIkit to respond with a `400 Bad Request` response whenever a query parameter type was defined as `nil|string` and a number was sent instead.
+* Fixed issue where query parameters were parsed as a `ParameterMap` and some other times as a `HashMap`.
+* Fixed issue preventing multipart parameters from being validated.
+* Fixed issue where the RAML parser threw a `Raml parser uncaught exception: Merging not supported for nodes of type OverridableNativeTypeExpressionNode and TypeDeclarationNode` error when parsing an API specification.
+* Fixed issue where importing a RAML definition from Design Center duplicated the APIKit configurations.
+
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].
+* https://support.mulesoft.com[Contact MuleSoft Support].
