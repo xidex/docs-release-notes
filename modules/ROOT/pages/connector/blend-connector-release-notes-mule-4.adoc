@@ -9,7 +9,7 @@ The Anypoint Connector for Blend lets you connect to the Blend Data APIs to supp
 
 == 1.0.0
 
-*June 10, 2019*
+*June 11, 2019*
 
 === Compatibility
 
