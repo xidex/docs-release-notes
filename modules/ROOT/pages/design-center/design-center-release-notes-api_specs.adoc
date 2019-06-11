@@ -25,6 +25,10 @@ These release notes cover the following versions of these features:
 
 This release introduces several new features in the visual editor.
 
+=== New Features in the Code Editor
+// DESIGNER-3615
+You can now import binary files, such as PDF and PNG files, into your projects. Such files are not parsed and no preview for them is available.
+
 === New Features in the Visual Editor
 
 * Support for security schemes
@@ -32,6 +36,13 @@ This release introduces several new features in the visual editor.
 * Support for enums for strings and numbers
 * Support for setting display names for methods
 * Support for adding groups to help you organize assets in the left pane
+
+== Enhancements
+
+// DESIGNER-3711
+* When you are using Microsoft Internet Explorer or Microsoft Edge as your browser and you click *Design Center* or the hamburger menu in the top-left corner as you are using the code editor, there is no longer a browser pop-up asking whether you want to leave the page.
+// DESIGNER-3710
+* It is now possible to view inline documentation for errors if you are using Microsoft Internet Explorer, Microsoft Edge, or Mozilla Firefox as your browser. Click the information icon that appears next to error messages.
 
 === Fixed Issues
 
@@ -59,7 +70,8 @@ This release introduces several new features in the visual editor.
 * In some cases, an API-specification project might never finish loading when an attempt was made to open it.
 // SE-10576
 * API specifications that included binary files were not displayed properly in Exchange after being published.
-
+// SE-11925
+* The mocking service included invalid tags in returned XML when the data type contained an array.
 
 
 
