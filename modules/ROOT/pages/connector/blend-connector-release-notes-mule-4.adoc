@@ -24,7 +24,7 @@ The Anypoint Connector for Blend lets you connect to the Blend Data APIs to supp
 
 === Features
 
-* Loans - Processing features with GET,POST,DELETE, and PUT.
+* Loans - Processing features for the HTTP GET, POST, DELETE, and PUT operations.
 * Borrowers - Processing features.
 * Realtors - Processing features.
 * Documents and Disclosures - Processing features.
