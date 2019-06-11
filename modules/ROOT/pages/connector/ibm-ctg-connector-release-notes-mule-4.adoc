@@ -24,7 +24,7 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 
 === Features
 
-The *Response Time* is now configurable. This field is located under *Additional Settings* in the connector's configuration.
+*Response Time* is now configurable. This field is located under *Additional Settings* in the connector's configuration.
 
 == 2.2.0
 
