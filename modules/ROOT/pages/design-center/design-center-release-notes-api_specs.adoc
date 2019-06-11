@@ -52,14 +52,52 @@ You can now import binary files, such as PDF and PNG files, into your projects. 
 * In the code editor, creating a fragment in an API-specification project, leaving the fragment without content, and then adding a reference to it from the main file before adding content to the fragment, caused the reference to be parsed as an error
 // SE-11944
 * Underscores, spaces, and hyphen were not parsed as separator characters in variables in resourceTypes.
-// SE-11937
-*
 // SE-11832
 * It was possible to create API specifications without the appropriate entitlement.
 // SE-11807
 * Very long names of API-specification projects are now better supported. If the name of a branch does not appear because the name of a project is too long, you can move your mouse over the path of the branch to see the full path. If the name of a project is too long to be seen all at once in the *Publish API Specification to Exchange* dialog, you can scroll though the field in which the name appears.
-// SE-11788
-*
+// SE-11788 and SE-11937
+* When an API specification included the definition of a type with an `!include` tag and the example of the type was also included with an `!include` tag, then the following message appeared:
+`should have required property '<name of property>' at <name of file>.raml`
++
+Here are examples of an API specification, a data type, and an example that would produce this error:
++
+.API specification
+----
+#%RAML 1.0
+title: ac-dgt-xcpr
+
+types:
+  DigitalProfileCreateRequest:
+    type: !include dataType.raml
+    examples:
+      DigitalProfileCreateRequest_Example: !include example.raml
+
+/profiles:
+  post:
+    body:
+      application/json: DigitalProfileCreateRequest
+----
++
+.Data type
+----
+#%RAML 1.0 DataType
+type: object
+properties:
+  customerProfile:
+    type: object
+    properties:
+      password:
+        type: string
+----
++
+.Example
+----
+#%RAML 1.0 NamedExample
+"customerProfile": {
+  "password": "abc123"
+}
+----
 // SE-11617
 * For certain API specifications, the API console was not appearing.
 // SE-11318
@@ -72,7 +110,8 @@ You can now import binary files, such as PDF and PNG files, into your projects. 
 * API specifications that included binary files were not displayed properly in Exchange after being published.
 // SE-11925
 * The mocking service included invalid tags in returned XML when the data type contained an array.
-
+// SE-11683
+* The mocking service converted null values to string "null" values.
 
 
 == API Designer 2.4.8
