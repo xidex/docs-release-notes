@@ -37,7 +37,8 @@ This release introduces several new features in the visual editor.
 
 // SE-12002
 * Changes made in the code editor might take up to six minutes to be parsed.
-
+// SE-11942
+* In the code editor, creating a fragment in an API-specification project, leaving the fragment without content, and then adding a reference to it from the main file before adding content to the fragment, caused the reference to be parsed as an error.
 
 == API Designer 2.4.8
 *May 18, 2019*
