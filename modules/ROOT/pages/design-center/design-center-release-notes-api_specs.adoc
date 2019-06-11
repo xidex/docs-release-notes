@@ -47,6 +47,10 @@ This release introduces several new features in the visual editor.
 * It was possible to create API specifications without the appropriate entitlement.
 // SE-11807
 * Very long names of API-specification projects are now better supported. If the name of a branch does not appear because the name of a project is too long, you can move your mouse over the path of the branch to see the full path. If the name of a project is too long to be seen all at once in the *Publish API Specification to Exchange* dialog, you can scroll though the field in which the name appears.
+// SE-11788
+*
+// SE-11617
+* For certain API specifications, the API console was not appearing.
 
 
 
