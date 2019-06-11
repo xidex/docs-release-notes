@@ -24,7 +24,7 @@ The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 co
 
 === Fixed in this Release
 
-* The AS2 Connector did not refer an SSL certificate from the keyStorePath specified in the Secure Receiver Module Ports.
+* The AS2 Connector did not refer an SSL certificate from the keyStorePath specified in the Secure Receiver Module ports.
 
 
 == 4.0.5
