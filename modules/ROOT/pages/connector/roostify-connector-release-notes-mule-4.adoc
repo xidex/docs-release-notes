@@ -1,0 +1,60 @@
+= Roostify Connector Release Notes - Mule 4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Support Category: Select
+
+The Anypoint Connector for Roostify allows interaction with Roostify using:
+
+* Webhooks, which are callbacks that let you react to activity in Roostify.
+* A RESTful web API that lets operations work with data stored in Roostify.
+
+MuleSoft recommends that you install the latest version of Anypoint Studio.
+
+== 1.0.0
+
+*June 12, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|Roostify|v1
+|===
+
+=== Features
+
+This connector provides access to Roostify APIs for these workflows:
+
+* Access Control
+* Accounts
+* Desktop Underwriter Report
+* Documents
+* Leads (Draft)
+* Loan Applications
+* Messages
+* Offerings (Draft)
+* Reference IDs
+* Service
+* Settings
+* State Changes
+* Status Update
+* Tasks
+* User Management
+* User Settings
+* Webhook events
+* Webhooks
+
+=== Fixed in this Release
+
+First version.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
