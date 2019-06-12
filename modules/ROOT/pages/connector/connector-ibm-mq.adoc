@@ -11,8 +11,8 @@ Support Category: Select
 
 === Fixed Issues
 
-* Consume operation doesn't rollback correctly on XA transactions (https://www.mulesoft.org/jira/browse/MULE-16969[MULE-16969])
-* Bridge scenario with XA hands in some cases
+* The Consume operation didn't roll back correctly on XA transactions. (https://www.mulesoft.org/jira/browse/MULE-16969[MULE-16969])
+* Bridge scenario with XA hands in some cases.
 
 == 1.4.0
 
