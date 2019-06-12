@@ -71,7 +71,7 @@ If your data types include nested object properties (or arrays), the Transform c
 
 * Choose data transformations more easily due to descriptive labels
 +
-As explained in xref::design-center:dynamic-expression-field.adoc[Fill in Cards with Values that Change at Runtime], you can drag data elements into fields in cards, and then expand the data elements to see menus for applying functions to data. The function names are now easier to understand. For example, in the previous release, the labels for three of the functions that you can apply to strings were Lower, Trim, and Upper. In this release, the labels are Lowercase, Remove Extra Whitespace, and Uppercase.
+As explained in xref::design-center:dynamic-expression-field.adoc[Fill in Cards with Values that Change at Runtime], you can drag data elements into fields in cards, and then expand the data elements to see menus for applying functions to data. The function names are now easier to understand. For example, in the previous release, the labels for three of the functions that you can apply to strings were *Lower*, *Trim*, and *Upper*. In this release, the labels are *Lowercase*, *Remove Extra Whitespace*, and *Uppercase*.
 
 * Enjoy support for Mule Runtime 4.2
 +
