@@ -67,7 +67,7 @@ Now, Flow Designer automatically updates your projects to the latest version of 
 
 * Get mapping recommendations even for nested object properties
 +
-If your data types include a nested object properties (or arrays), the Transform card can give you recommendations for how to map those properties to other objects.
+If your data types include nested object properties (or arrays), the Transform card can give you recommendations for how to map those properties to other objects.
 
 * Choose data transformations more easily due to descriptive labels
 +
