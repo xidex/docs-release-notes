@@ -48,9 +48,11 @@ You can publish a Mule application as a template on Exchange, which makes it eas
 +
 You might even find in the future that you need to create Mule applications that are similar to one that you've already created. Rather than search for a project in Design Center, clone it, and then try to remember what it does and how it works, you can read the page that you wrote for the corresponding template in Exchange.
 
+////
 * Create custom expressions in drop-down lists
 +
 Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. Into that second field, you can drag the *Custom Expression* data element from the right side of the card. See xref::design-center:custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
+////
 
 * Rely on dynamic lists in popular connectors, rather than your memory
 +
