@@ -27,7 +27,9 @@ This release introduces several new features in the visual editor.
 
 === New Features in the Code Editor
 // DESIGNER-3615
-You can now import binary files, such as PDF and PNG files, into your projects. Such files are not parsed and no preview for them is available.
+* You can now import binary files, such as PDF and PNG files, into your projects. Such files are not parsed and no preview for them is available.
+// MSERV-285
+*
 
 === New Features in the Visual Editor
 
@@ -56,7 +58,7 @@ You can now import binary files, such as PDF and PNG files, into your projects. 
 * It was possible to create API specifications without the appropriate entitlement.
 // SE-11807
 * Very long names of API-specification projects are now better supported. If the name of a branch does not appear because the name of a project is too long, you can move your mouse over the path of the branch to see the full path. If the name of a project is too long to be seen all at once in the *Publish API Specification to Exchange* dialog, you can scroll though the field in which the name appears.
-// SE-11788 and SE-11937
+// SE-11937
 * When an API specification included the definition of a type with an `!include` tag and the example of the type was also included with an `!include` tag, then the following message appeared:
 `should have required property '<name of property>' at <name of file>.raml`
 +
@@ -112,7 +114,8 @@ properties:
 * The mocking service included invalid tags in returned XML when the data type contained an array.
 // SE-11683
 * The mocking service converted null values to string "null" values.
-
+// SE-11788
+* 
 
 == API Designer 2.4.8
 *May 18, 2019*
