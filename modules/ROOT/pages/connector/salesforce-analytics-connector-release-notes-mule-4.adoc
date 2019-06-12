@@ -25,7 +25,7 @@ The Salesforce Analytics Cloud connector is compatible with:
 
 === Fixed in this Release
 
-* Salesforce analytics - unable to upload external data - There was an error when trying to upload data to analytics, caused by the fact that the specified dataset id was invalid. We've fixed this by improving the error handling and now an exception specifying the dataset id is invalid is raised. (SE-12115)
+* Unable to upload external data - An error occurred when uploading data to Salesforce Analytics if a dataset's ID was invalid. The fix improves error handling and provides an exception if a dataset ID is invalid. (SE-12115)
 
 == 3.1.0
 
