@@ -6,6 +6,40 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on Runtime Fabric. In addition to these release notes, see the xref:runtime-fabric/runtime-fabric-release-notes.adoc[Anypoint Runtime Fabric release notes] and the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== June 12 2019
+
+=== 4.2.0 `v1.2.12`
+
+* Added: Java 8u191
+
+=== 4.1.5 `v1.2.15`
+
+* Added: Java 8u212
+
+=== 4.1.4 `v1.2.23`
+
+* Added: Java 8u212
+
+=== 4.1.3 `v1.2.16`
+
+* Added: Java 8u212
+
+=== 4.1.2 `v1.2.16`
+
+* Added: Java 8u212
+
+=== 3.9.2 `v1.2.5`
+
+* Added: Java 8u212
+
+=== 3.9.1 `v1.2.8`
+
+* Added: Java 8u212
+
+=== 3.8.7 `v1.2.5`
+
+* Added: Java 8u212
+
 == May 17, 2019
 
 === 4.2.0 `v1.2.2`
