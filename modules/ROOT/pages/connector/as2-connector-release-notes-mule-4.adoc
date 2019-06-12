@@ -7,7 +7,25 @@ Support Category: Premium
 
 AS2 (Applicability Statement 2) is a specification about how to transport data securely and reliably over the internet. Security is achieved by using digital certificates and encryption.
 
-The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 connector enables trading partners transmit and receive AS2 messages with EDI-X12, EDIFACT, XML, or binary payloads.
+The Mule Runtime supports the AS2 protocol through the AS2 Connector. The AS2 connector enables trading partners to transmit and receive AS2 messages with EDI-X12, EDIFACT, XML, or binary payloads.
+
+== 4.0.6
+
+*June 11, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software|Version
+|Mule Runtime|4.1.0 and later
+|Java| 8
+|===
+
+=== Fixed in this Release
+
+* The AS2 Connector did not refer an SSL certificate from the keyStorePath specified in the Secure Receiver Module ports.
+
 
 == 4.0.5
 
