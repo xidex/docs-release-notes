@@ -9,6 +9,25 @@ _Select_
 
 PowerShell is a Windows command line shell for system administrators. Windows PowerShell includes an interactive prompt and a scripting environment that can be used independently or in combination.
 
+== 2.0.1
+
+*June 13, 2019*
+
+=== Compatibility
+
+The PowerShell Connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |4.0.0 and later
+|Java |1.8 and later
+|===
+
+=== Fixed in this release
+
+* Powershell error stop logging anything on the console.(SE-11546)
+
 == 2.0.0
 
 *January 27, 2018*
