@@ -14,7 +14,7 @@ MuleSoft recommends that you install the latest version of Anypoint Studio.
 
 == 1.0.0
 
-*June 11, 2019*
+*June 12, 2019*
 
 === Compatibility
 
