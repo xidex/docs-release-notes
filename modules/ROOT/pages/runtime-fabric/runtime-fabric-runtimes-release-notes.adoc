@@ -10,7 +10,7 @@ These are the release notes for patches which are made to the Mule runtimes on R
 
 === 4.2.0 `v1.2.12`
 
-* Added: Java 8u191
+* Added: Java 8u212
 * Fixed: Updating policy version is not using correct policy jar [SE-12023]
 
 === 4.1.5 `v1.2.15`
