@@ -11,8 +11,8 @@ Support Category: Select
 
 === Fixed Issues
 
-* JMS Consume doesn't rollback correctly on XA transactions (https://www.mulesoft.org/jira/browse/MULE-16969[MULE-16969])
-* JMS Bridge with XA hands in some cases
+* The JMS Consume operation didn't roll back correctly on XA transactions. (https://www.mulesoft.org/jira/browse/MULE-16969[MULE-16969])
+* The JMS Bridge with XA hands in some cases.
 
 == 1.5.0
 
