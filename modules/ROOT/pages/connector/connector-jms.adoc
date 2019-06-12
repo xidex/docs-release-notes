@@ -5,6 +5,15 @@ endif::[]
 
 Support Category: Select
 
+== 1.5.1
+
+*June 12, 2019*
+
+=== Fixed Issues
+
+* JMS Consume doesn't rollback correctly on XA transactions (https://www.mulesoft.org/jira/browse/MULE-16969[MULE-16969])
+* JMS Bridge with XA hands in some cases
+
 == 1.5.0
 
 *May 29, 2019*

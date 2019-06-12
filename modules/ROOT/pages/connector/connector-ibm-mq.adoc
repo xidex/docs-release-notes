@@ -5,6 +5,15 @@ endif::[]
 
 Support Category: Select
 
+== 1.4.1
+
+*June 12, 2019*
+
+=== Fixed Issues
+
+* Consume operation doesn't rollback correctly on XA transactions (https://www.mulesoft.org/jira/browse/MULE-16969[MULE-16969])
+* Bridge scenario with XA hands in some cases
+
 == 1.4.0
 
 *May 29, 2019*
@@ -20,7 +29,7 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Fixed issue with XQ transactions on reconnection scenarios
+* Fixed issue with XA transactions on reconnection scenarios
 
 == 1.2.6
 
