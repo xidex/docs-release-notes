@@ -29,20 +29,20 @@ This release introduces several new features in the visual editor.
 // DESIGNER-3615
 * You can now import binary files, such as PDF and PNG files, into your projects. Such files are not parsed and no preview for them is available.
 // MSERV-285
-*
+* Use behavioral headers with the mocking service to modify in various ways how the mocking service behaves. See xref:design-center::apid-behavioral-headers.adoc[Add Behavioral Headers to Simulated API Calls].
 
 === New Features in the Visual Editor
 
 * Create security schemes for your API specifications. The different supported types are OAuth 1.0, OAuth 2.0, Basic Authentication, Digest Authentication, and Pass Through.
-* Define union types for elements
+* Define union types for elements.
 +
 In previous releases, you could select only one data type at a time for properties, bodies, payloads, headers, and any other kind of element. Now, you can choose multiple data types to create _union_ data types for any of those elements.
 +
 The chosen data types must have the same built-in type. For example, if you choose two data types to create a union data type from, both data types must be strings, or both must be numbers, and so on. You must not create a union data type from a custom data type that is a string and another that is an object. If you do, you cannot edit other properties of the element that you have created the union datatype for.
 
-* Define enums for strings and numbers
-* Specify display names for methods
-* Add groups to help you organize assets in the left pane
+* Define enums for strings and numbers.
+* Specify display names for methods.
+* Add groups to help you organize assets in the left pane.
 
 == Enhancements
 
