@@ -7,6 +7,26 @@ Support Category: Select
 
 The Anypoint Connector for Salesforce Analytics Cloud lets you connect to the Salesforce Analytics Cloud application using Salesforce External Data API. The connector exposes convenient methods for creating and populating data sets into Salesforce Analytics Cloud system.
 
+== 3.1.1
+
+*June 12, 2019*
+
+=== Compatibility
+
+The Salesforce Analytics Cloud connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|7.0.0 and later
+|External Data API | v43.0
+|===
+
+=== Fixed in this Release
+
+* Salesforce analytics - unable to upload external data - There was an error when trying to upload data to analytics, caused by the fact that the specified dataset id was invalid. We've fixed this by improving the error handling and now an exception specifying the dataset id is invalid is raised. (SE-12115)
+
 == 3.1.0
 
 *September 18, 2018*
