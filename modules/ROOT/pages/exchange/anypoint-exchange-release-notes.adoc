@@ -15,7 +15,7 @@ endif::[]
 
 === Fixed in this Release
 
-* When creating a SOAP API, the "File URL" link is now validated. File URLs entered before the validation was in place without a protocol (`http` / `https`) now default to `http`. (EXC-3641)
+* When creating a SOAP API, the "File URL" link is now validated. File URLs entered with no protocol before validation was enabled will be updated to default to `http`. (EXC-3641)
 * Users can use the mocking service to try the APIs available in public portals with branded domain names. (EXC-3585)
 * Prevent Exchange contributors and Exchange admins from changing the API name in the public portal, which should be a read-only view of the asset. (EXC-3568)
 * When accessing Mulesoft public assets, provide correct error information (401 instead of 404) to the Maven CLI so that Maven can retry the request with proper credentials instead of failing. (EXC-3520)
