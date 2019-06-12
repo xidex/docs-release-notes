@@ -19,13 +19,13 @@ Support Category: Select
 
 === Fixed in this Release
 
-* Subscribe to filtered topic not working with v9.7.0 - This issue was fixed and now the connector supports subscribing to a topic using a filter with the following syntax topicName?filterKey=filterValue. For more details regarding this type of subscription visit https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/using_filtered_subscriptions.htm[Filtered Subscriptions] page. (SE-11869)
+* Subscribe to a filtered topic not working with v9.7.0 - The Salesforce connector now supports subscribing to a topic using a filter with the syntax `topicName?filterKey=filterValue`. For more information, see the Salesforce https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/using_filtered_subscriptions.htm[Filtered Subscriptions] page. (SE-11869)
 
 === Known Issues
 
 * Salesforce connector replayId feature gap between 3.x and 4.x. (SE-11258)
 * Salesforce connector autoreplays after restarting the application in CloudHub. (SE-9992)
-* Salesforce connector OAuth v2.0 fails to get right session and throws INVALID_SESSION_ID after being idle. This issue still appears for the sources and operations that use the Bulk API and the Apex API. (SE-10988)
+* Salesforce connector OAuth v2.0 fails to get the right session and throws INVALID_SESSION_ID after being idle. This issue still appears for the sources and operations that use the Bulk API and the Apex API. (SE-10988)
 
 == 9.7.2
 
