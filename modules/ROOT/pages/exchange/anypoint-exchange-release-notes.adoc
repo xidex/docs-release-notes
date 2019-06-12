@@ -10,14 +10,14 @@ endif::[]
 * Improved readability of API instances when requesting API access, especially for long API instance names. (EXC-3636)
 * When using direct upload, provide relevant information about the files that should be uploaded for each asset type. (EXC-3427)
 * Users can now customize the order of the user-generated pages in the public portal. (EXC-3405)
-* Add SVG image support. (EXC-3350)
+* Users can now add SVG images as resources for asset portals and public portal customization. (EXC-3350)
 * Exchange now xref:exchange::to-find-info.adoc[searches] properties defined in RAML and OAS API specifications and the full text of asset portal page content. Users no longer need to create complex tags and categories to enable finding assets, since they can now search the API docs and API specs in addition to name, categories, and tags. (EXC-2967)
 
 === Fixed in this Release
 
-* The "View WSDL" link is now validated. URLs without a protocol default to `http`. (EXC-3641)
+* When creating a SOAP API, the "File URL" link is now validated. File URLs entered before the validation was in place without a protocol (`http` / `https`) now default to `http`. (EXC-3641)
 * Users can use the mocking service to try the APIs available in public portals with branded domain names. (EXC-3585)
-* Keep names synchronized across API versions. (EXC-3568)
+* Prevent Exchange contributors and Exchange admins from changing the API name in the public portal, which should be a read-only view of the asset. (EXC-3568)
 * When accessing Mulesoft public assets, provide correct error information (401 instead of 404) to the Maven CLI so that Maven can retry the request with proper credentials instead of failing. (EXC-3520)
 * When an API version is made public, the visibility indicator in the API version drop-down in the asset portal reflects the correct state. (EXC-3513)
 * Remove orphan connectors when an API asset version is deleted. (EXC-3510)
@@ -28,7 +28,7 @@ endif::[]
 * Users can now upload assets using relative file paths in an `anypoint-cli` interactive session. (EXC-3423)
 * Unauthenticated access to portal images is disabled for images uploaded after this update. To disable unauthenticated access to an image uploaded before this update, download it, remove it, and xref:exchange::to-describe-an-asset.adoc#add-an-image[upload it again]. (EXC-3394)
 * Prevent inconsistent asset type across multiple versions of an asset. (EXC-3392)
-* Making a version of an API public now depends on validation of that version and not on validation of more recent versions. (EXC-3336)
+* Making a version of an API public now depends on validation of that version and not on validation of uncompleted versions. (EXC-3336)
 * The browser back button now displays the correct pages in all cases. (EXC-3334)
 * Improve validation of the request body when creating contracts using the Experience API. (A contract is the link between a client application and an API instance.) (EXC-3021)
 
