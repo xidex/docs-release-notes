@@ -27,8 +27,8 @@ NOTE: This connector is not supported for use with Flow Designer in Design Cente
 
 === Fixed in this Release
 
-* Retrieving 50K records using SAP connectors results in OOME inconsistently at 1.5 GB heap memory. (CONN-1838)
-* Unable to define RFC timeout setting in SAP connector in Mule4.(SE-12045)
+* Retrieving 50K records using the SAP connector results in an OOME inconsistency at 1.5 GB heap memory. (CONN-1838)
+* Unable to define the RFC timeout setting in the SAP connector in Mule 4.(SE-12045)
 
 == 4.2.1
 
