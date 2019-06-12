@@ -52,6 +52,7 @@ You might even find in the future that you need to create Mule applications that
 * Create custom expressions in drop-down lists
 +
 Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. Into that second field, you can drag the *Custom Expression* data element from the right side of the card. See xref::design-center:custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
+
 ////
 
 * Rely on dynamic lists in popular connectors, rather than your memory
