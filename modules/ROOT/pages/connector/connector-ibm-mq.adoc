@@ -12,7 +12,7 @@ Support Category: Select
 === Fixed Issues
 
 * The Consume operation didn't roll back correctly on XA transactions. (https://www.mulesoft.org/jira/browse/MULE-16969[MULE-16969])
-* Bridge scenario with XA hands in some cases.
+* Bridge scenario with XA hangs in some cases.
 
 == 1.4.0
 
@@ -20,8 +20,8 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Make XA Connection pool configurable
-* Fixed issue with Publish Consume Operation leaking connections
+* Make XA Connection pool configurable.
+* Fixed issue with Publish Consume Operation leaking connections.
 
 == 1.3.0
 
@@ -29,7 +29,7 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Fixed issue with XA transactions on reconnection scenarios
+* Fixed issue with XA transactions on reconnection scenarios.
 
 == 1.2.6
 
