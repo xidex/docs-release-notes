@@ -3,7 +3,17 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-These are the new features and enhancements, known limitations and issues, and fixes in Anypoint Monitoring.
+These are the new features and enhancements, known limitations and issues, fixes, and changes in Anypoint Monitoring.
+
+== June 12, 2019
+
+Anypoint Monitoring support for Mule 3.9.x-AM and Mule 4.x-AM is being deprecated. 
+
+To ensure you receive patch updates as soon as they are available, you must update your applications to run on mainline Mule versions (3.9.x and 4.x).
+
+If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, monitoring will continue to work, but you will not receive important patch updates. 
+
+For information about setting the runtime version for your Mule app and enabling monitoring, see xref:monitoring::configure-monitoring-cloudhub.adoc[Configure and Enable Anypoint Monitoring for Mule Apps].
 
 == May 4, 2019
 
