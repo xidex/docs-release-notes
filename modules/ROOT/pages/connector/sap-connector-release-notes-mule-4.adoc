@@ -9,6 +9,27 @@ The Mule Runtime supports SAP integration through the Anypoint Connector for SAP
 
 NOTE: This connector is not supported for use with Flow Designer in Design Center.
 
+== 4.3.0
+
+*June 12, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|4.0.0 and later
+|Anypoint Studio|7.0 and later
+|Java|8
+|SAP Solution| ECC 6.0 and later
+|Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+* Retrieving 50K records using the SAP connector results in an OOME inconsistency at 1.5 GB heap memory. (CONN-1838)
+* Unable to define the RFC timeout setting in the SAP connector in Mule 4.(SE-12045)
+
 == 4.2.1
 
 *May 31, 2019*
