@@ -1,4 +1,4 @@
-= Upgrading Mule Runtime (Versions 4.x to 4.n)
+= Upgrading Mule Runtime Engine (Versions 4.x to 4.n)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
