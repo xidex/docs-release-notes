@@ -9,14 +9,14 @@ These release notes cover the following versions of this product:
 * <<1-1,1.1>>
 * <<1-0,1.0>>
 
-== API Funtional Montitoring 1.15
+== API Functional Montitoring 1.15
 *June 15, 2019*
 
 This release introduces one new feature: you can now get notifications of failed tests through email. Select *Email* as the reporter in API Functional Monitoring in Anypoint Monitoring, or set up email as a reporter in the BAT CLI.
 
 See xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor] for instructions about using API Functional Monitoring in Anypoint monitoring, and see xref:api-functional-monitoring::bat-reporting-task.adoc[To Configure and View Test Reports] for details about creating reporters in the BAT CLI.
 
-== API Funtional Montitoring 1.1
+== API Functional Montitoring 1.1
 *July 12, 2018*
 
 This release introduces an enhancement and a new feature.
@@ -29,7 +29,7 @@ When you create a monitor in the *Functional Monitoring* section of Anypoint Mon
 
 You can write and run BAT tests in IntelliJ IDEA with the support of the DataWeave 2.0 IntelliJ plugin. For details, see xref:api-functional-monitoring::bat-intellij-idea.adoc[Write and Run BAT Tests in IntelliJ IDEA].
 
-== API Funtional Montitoring 1.0
+== API Functional Montitoring 1.0
 
 This release introduces a new user interface that is incorporated into Anypoint Monitoring. To access this user interface, select *Functional Monitoring* after opening Anypoint Monitoring.
 
