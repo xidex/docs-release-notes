@@ -115,8 +115,6 @@ properties:
 * In some cases, an API-specification project might never finish loading when an attempt was made to open it.
 // SE-10576
 * API specifications that included binary files were not displayed properly in Exchange after being published.
-// SE-11925
-* The mocking service included invalid tags in returned XML when the data type contained an array.
 // SE-11683
 * The mocking service converted null values to string "null" values.
 // SE-11788
