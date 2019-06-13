@@ -25,7 +25,7 @@ The Anypoint Cassandra connector provides the capability to connect a Mule app t
 
 == Fixed in this release 
 
-* If the first cluster node in the list is unavailable, connecting to the cluster fails regardless of the status of the 2nd node. Added an optional parameter in the advanced configuration tab called Load Balancing Policy that allows users to specify a round robin type policy, thus preventing the problem.. (SE-11191)
+* If the first cluster node in the list is unavailable, connecting to the cluster fails regardless of the status of the second node. Added an optional parameter in the advanced configuration tab called Load Balancing Policy that allows users to specify a round-robin type policy, thus preventing the problem. (SE-11191)
 
 == 2.1.1
 
