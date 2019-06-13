@@ -22,7 +22,7 @@ The Anypoint Connector for Apache Kafka allows you to connect to the Apache Kafk
 
 === Fixed in this Release
 
-* Updated Kafka Clients library to version 2.2.0.
+* Updated the Kafka Clients library to version 2.2.0.
 * Updated code to use the `poll(java.time.Duration)` method provided in the new library to replace the deprecated `poll(long)` method. The deprecated method did not block beyond the timeout awaiting partition assignment. (KIP-266)
 
 == 3.0.4
