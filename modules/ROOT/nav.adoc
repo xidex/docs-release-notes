@@ -276,8 +276,6 @@
 * xref:api-console/api-console-release-notes.adoc[API Console Release Notes]
 * xref:api-designer/api-designer-release-notes.adoc[API Designer Release Notes]
 * xref:api-functional-monitoring/api-functional-monitoring-release-notes.adoc[API Functional Monitoring Release Notes]
- ** xref:api-functional-monitoring/api-functional-monitoring-1.1-release-notes.adoc[API Functional Monitoring 1.1 Release Notes]
- ** xref:api-functional-monitoring/api-functional-monitoring-1.0-release-notes.adoc[API Functional Monitoring 1.0 Release Notes]
 * xref:api-gateway/api-gateway-runtime.adoc[API Gateway Runtime Release Notes]
  ** xref:api-gateway/api-gateway-runtime-to-mule-3.8.0-migration-guide.adoc[API Gateway Runtime to Mule 3.8.0 Migration Guide]
  ** xref:api-gateway/api-gateway-2.0-and-newer-version-faq.adoc[API Gateway 2.x FAQ]
