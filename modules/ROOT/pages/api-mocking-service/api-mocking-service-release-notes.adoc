@@ -21,6 +21,13 @@ endif::[]
 == API Mocking Service 2.2.0
 *June 15, 2019*
 
+This release contains one new feature and two fixes.
+
+=== New Feature
+// MSERV-285
+* Use behavioral headers with the mocking service to modify in various ways how the mocking service behaves. See xref:design-center::apid-behavioral-headers.adoc[Add Behavioral Headers to Simulated API Calls].
+
+=== Fixed Issues
 // SE-11925
 * The mocking service included invalid tags in returned XML when the data type contained an array.
 // SE-11683
