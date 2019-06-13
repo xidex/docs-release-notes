@@ -23,7 +23,8 @@ endif::[]
 
 // SE-11925
 * The mocking service included invalid tags in returned XML when the data type contained an array.
-
+// SE-11683
+* The mocking service converted null values to string "null" values.
 
 == API Mocking Service 2.1.8
 
