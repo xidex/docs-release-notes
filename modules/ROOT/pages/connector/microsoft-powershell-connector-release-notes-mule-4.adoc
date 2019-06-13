@@ -1,13 +1,13 @@
-= PowerShell Connector Release Notes
+= PowerShell Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*January 2018*
+*June 2019*
 
-_Select_
+Support Category: Select 
 
-PowerShell is a Windows command line shell for system administrators. Windows PowerShell includes an interactive prompt and a scripting environment that can be used independently or in combination.
+PowerShell is a Windows command line shell for system administrators. Windows PowerShell includes an interactive prompt and a scripting environment that can be used independently or together.
 
 == 2.0.1
 
