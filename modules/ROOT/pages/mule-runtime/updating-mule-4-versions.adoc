@@ -4,12 +4,15 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, runtime, release notes, migration, installation, downtime, uptime, best practices
 
-This document describes considerations and best practices when changing the 4.x versions of Mule Runtime on your servers. This covers the use cases of deploying to Mule standalone instances, and to on-premises Mule instances through xref:runtime-manager::index.adoc[Runtime Manager].
+To upgrade your current Mule runtime engine instance (version 4.x) to a later release, you must follow some best practices. The following steps and recommendations help you to:
 
-[IMPORTANT]
-====
-For guidance with migrations from Mule 3.x to Mule 4, see xref:4.1@mule-runtime::index-migration.adoc[Mule 4 for Mule 3 Users].
-====
+* Update your standalone Mule instances.
+* Update your on-premise Mule instances managed through xref:runtime-manager::index.adoc[Runtime Manager].
+* Change the Mule version used to build your Mule applications, if necessary.
+
+For guidance with migrations from Mule 3 to Mule 4, see xref:4.1@mule-runtime::index-migration.adoc[Mule 4 for Mule 3 Users].
+
+To change the Mule runtime engine version of your CloudHub workers, you need to use the xref:runtime-manager::deploying-to-cloudhub.adoc#runtime-tab[runtime version drop-down box] in the application settings deployment configuration page.
 
 == Mule Application Runtime Version
 
