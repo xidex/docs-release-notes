@@ -26,12 +26,15 @@ This release contains one new feature and two fixes.
 === New Feature
 // MSERV-285
 * Use behavioral headers with the mocking service to modify in various ways how the mocking service behaves. See xref:design-center::apid-behavioral-headers.adoc[Add Behavioral Headers to Simulated API Calls].
+// MSERV-600
+* Now, the mocking service supports XML serialization facets, such as `wrapped`, `attribute`, and `name`, when generating an XML response that is based on a RAML example.
 
 === Fixed Issues
 // SE-11925
 * The mocking service included invalid tags in returned XML when the data type contained an array.
 // SE-11683
 * The mocking service converted null values to string "null" values.
+
 
 == API Mocking Service 2.1.8
 
