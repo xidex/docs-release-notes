@@ -6,7 +6,7 @@ endif::[]
 
 == Mule Upgrades (4.x to 4.n)
 
-* xref:mule-runtime/updating-mule-4-versions.adoc[Upgrading Mule Runtime (Versions 4.x to 4.n)]
+* xref:mule-runtime/updating-mule-4-versions.adoc[Upgrading Mule Runtime Engine (Versions 4.x to 4.n)]
 
 == Mule 4.2.n
 
