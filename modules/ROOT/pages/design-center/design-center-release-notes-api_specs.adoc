@@ -115,8 +115,9 @@ properties:
 * In some cases, an API-specification project might never finish loading when an attempt was made to open it.
 // SE-10576
 * API specifications that included binary files were not displayed properly in Exchange after being published.
-
 // SE-11788
+* In some cases, references could not be resolved when examples were included. The error message was confusing and gave little information about the cause.
+
 
 
 == API Designer 2.4.8
