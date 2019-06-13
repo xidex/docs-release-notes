@@ -9,7 +9,7 @@ These release notes cover the following versions of this product:
 * <<1-1,1.1>>
 * <<1-0,1.0>>
 
-== API Funtional Montitoring 1.1
+== API Funtional Montitoring 1.15
 *June 15, 2019*
 
 This release introduces one new feature: you can now get notifications of failed tests through email. Select *Email* as the reporter in API Functional Monitoring in Anypoint Monitoring, or set up email as a reporter in the BAT CLI.
