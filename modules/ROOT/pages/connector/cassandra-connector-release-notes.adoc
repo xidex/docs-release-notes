@@ -3,11 +3,29 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*October 2018*
+*June 2019*
 
-_Select_
+Support Category: Select
 
-The Anypoint Cassandra connector provides the capability to connect a Mule app to a Cassandra database or cluster. The MuleSoft support category for the Cassandra connector is xref:3.9@mule-runtime::anypoint-connectors.adoc#connector-categories[Select].
+The Anypoint Cassandra connector provides the capability to connect a Mule app to a Cassandra database or cluster. 
+
+== 2.1.2
+
+*June 12, 2019*
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |3.6 and later
+|Cassandra database or cluster | 1.2 and later
+|CQL spec | 3.x
+|===
+
+== Fixed in this release 
+
+* If the first cluster node in the list is unavailable, connecting to the cluster fails regardless of the status of the second node. Added an optional parameter in the advanced configuration tab called Load Balancing Policy that allows users to specify a round-robin type policy, thus preventing the problem. (SE-11191)
 
 == 2.1.1
 
