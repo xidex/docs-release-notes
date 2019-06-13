@@ -56,7 +56,7 @@ The chosen data types must have the same built-in type. For example, if you choo
 // SE-12002
 * Changes made in the code editor might take up to six minutes to be parsed.
 // SE-11942
-* In the code editor, creating a fragment in an API-specification project, leaving the fragment without content, and then adding a reference to it from the main file before adding content to the fragment, caused the reference to be parsed as an error
+* In the code editor, creating a fragment in an API-specification project, leaving the fragment without content, and then adding a reference to it from the main file before adding content to the fragment, caused the reference to be parsed as an error.
 // SE-11944
 * Underscores, spaces, and hyphen were not parsed as separator characters in variables in resourceTypes.
 // SE-11832
