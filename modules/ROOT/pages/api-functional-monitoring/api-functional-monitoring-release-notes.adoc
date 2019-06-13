@@ -14,7 +14,7 @@ These release notes cover the following versions of this product:
 
 This release introduces one new feature: you can now get notifications of failed tests through email. Select *Email* as the reporter in API Functional Monitoring in Anypoint Monitoring, or set up email as a reporter in the BAT CLI.
 
-See xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor] for instructions about using API Functional Monitoring in Anypoint monitoring, and see xref:api-functional-monitoring::bat-reporting-task.adoc[To Configure and View Test Reports] for details about creating reporters in the BAT CLI.
+See xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor] for instructions about using API Functional Monitoring in Anypoint Monitoring, and see xref:api-functional-monitoring::bat-reporting-task.adoc[To Configure and View Test Reports] for details about creating reporters in the BAT CLI.
 
 == API Functional Monitoring 1.1
 *July 12, 2018*
