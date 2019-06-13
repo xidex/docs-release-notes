@@ -17,6 +17,12 @@ In addition to these release notes, see:
 [NOTE]
 If you update the Runtime Manager agent, you must execute the Anypoint Monitoring agent uninstall script and then re-install the Anypoint Monitoring agent. 
 
+== Version 2.1.4.0 June 7, 2019
+
+This release contains the following fixed issue:
+
+High thread count in a clustered environment (SE-11772)
+
 == Version 2.1.2.0 May 17, 2019
 
 This release includes the following updates:

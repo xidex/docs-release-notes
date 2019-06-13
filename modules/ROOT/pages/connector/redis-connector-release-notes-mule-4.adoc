@@ -1,4 +1,4 @@
-= Redis Connector Release Notes
+= Redis Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -8,6 +8,23 @@ Support Category: Select
 Redis is an open source advanced key-value store that is often referred to as a data structure server because the keys can contain strings, hashes, lists, sets, and sorted sets.
 
 The Redis Connector offers complete support for its CRUD API.
+
+== 5.1.1
+
+*June 6, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime | 4.0 and later
+|Redis server | 2.8.x, 3.0.x, and 3.2.x
+|===
+
+=== Fixed in this Release
+
+* Redis connector 5.1.0 test connection always return successful. This issue was fixed by making sure the Redis instance being used is actually up and running by sending an ECHO command to it. (SE-11775)
 
 == 5.1.0
 

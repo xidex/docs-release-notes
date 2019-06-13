@@ -6,6 +6,43 @@ endif::[]
 
 These are the release notes for patches made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== June 12, 2019
+
+4.2.0, 4.1.5, 4.1.4, 4.1.3, 4.1.2 and 4.1.1 Runtime Update:
+
+Fixed:
+
+* `NullPointerException` when running Mule applications with batches and persistent queues enabled in CloudHub. [SE-11599]
+
+
+== June 7, 2019
+
+4.1.5 Runtime Update:
+
+* Batch job corrupted when debugging app [SE-9826]
+
+3.9.1 and 3.9.2 Runtime Update:
+
+* JSON validation fails with the error: `error: object instance has properties which are not allowed by the schema:`	[SE-11753]
+
+
+== June 5, 2019
+
+4.1.5, 4.1.4, 4.1.3, 4.1.2 and 4.1.1 Runtime Update:
+
+* Switched from OracleJDK 8 to OpenJDK 8
+
+== June 4, 2019
+
+4.1.4, 4.1.5 and 4.2.0 Runtime Update:
+
+* Fix custom policies reusing class loader between versions. [SE-12023]
+* Fix class loading isolation issues when initialising apps. [SE-11887]
+
+4.1.1, 4.1.2, 4.1.3, 4.1.4 and 4.1.5 Runtime Update:
+
+* Fix policy violations not being sent when caused by an automated policy.
+
 == May 28, 2019
 
 3.9.2, 3.9.1 and 3.9.0 Runtime Update:

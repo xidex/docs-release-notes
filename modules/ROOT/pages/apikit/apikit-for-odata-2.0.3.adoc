@@ -1,0 +1,22 @@
+= APIkit for OData 2.0.3 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+June 5, 2019
+
+== Compatibility
+
+* Mule 4.1.x+
+* APIkit M4-1.2.x+
+* Anypoint Studio 7.3.x+
+
+== Fixed in this Release
+
+* Fix error when the path to the RAML contains blank spaces.
+* Fix error when the entity key contains special characters.
+
+== Links to Legacy OData Documentation
+
+* xref:studio/odata-extension-release-notes-101.adoc[OData Extension Studio Plugin 1.0.1 Release Notes]
+* xref:studio/odata-extension-studio-plugin-release-notes.adoc[OData Extension Studio Plugin 1.0.0 Release Notes]

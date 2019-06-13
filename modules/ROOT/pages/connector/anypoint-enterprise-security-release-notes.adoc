@@ -2,7 +2,26 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, security, enterprise
+
+== 1.8.1
+
+*October 26, 2018*
+
+* Studio update site: `+http://anypoint-enterprise-security-update-site.s3.amazonaws.com/1.8.1+`
+
+=== Compatibility
+
+[%header,cols="4*"]
+|===
+|  |Enterprise |Community |Mule Runtime Version Compatibility
+|Anypoint Enterprise Security |1.8.1 |n/a |3.9.x
+|===
+
+=== Fixed in this Release
+
+* OAuth Provider: The token request for clientCredentials with encoded credentials fails. (EE-6223)
+* OAuth Provider: The token response body is JSON, but the `content-type` header is `application/x-www-form-urlencoded`. (EE-6224)
+* Fixed `OAuth2ProviderModuleCoreTestCase` tests after a Jetty upgrade. (SEC-332)
 
 == 1.8.0
 
@@ -10,18 +29,31 @@ endif::[]
 
 * Studio update site: `+http://anypoint-enterprise-security-update-site.s3.amazonaws.com/1.8.0+`
 
-=== Compatibility
+=== Fixed in this Release
 
-[%header,cols="4*"]
-|===
-|  |Enterprise |Community |Mule Runtime Version Compatibility
-|Anypoint Enterprise Security |1.8.0 |n/a |3.9.x
-|===
+* `PGPEncrypter` not adding Armor-ASCII output for string payloads. (EE-6206)
+* `TokenStore` should remove expired tokens. (SEC-330)
+
+== 1.7.6
+
+*June 11, 2019*
+
+* Studio update site: `+http://anypoint-enterprise-security-update-site.s3.amazonaws.com/1.7.6+`
 
 === Fixed in this Release
 
-* PGPEncrypter not adding Armor-ASCII output for string payloads. (EE-6206)
-* TokenStore should remove expired tokens. (SEC-330)
+* `ClientCredential` grant inconsistent error codes. (SEC-333)
+
+== 1.7.5
+
+*November 15, 2018*
+
+* Studio update site: `+http://anypoint-enterprise-security-update-site.s3.amazonaws.com/1.7.5+`
+
+=== Fixed in this Release
+
+* Fix `OAuth2ProviderModuleCoreTestCase` tests after a Jetty upgrade. (SEC-332)
+* `TokenStore` should remove expired tokens. (SEC-330)
 
 == 1.7.4
 
@@ -31,9 +63,9 @@ endif::[]
 
 === Fixed in this Release
 
-* Upgrade BouncyCastle to 1.60. (MULE-15332)
-* OAuth Provider: token request for clientCredentials with encoded credentials fails. (EE-6223)
-* OAuth Provider: token response body is JSON, but content-type header is application/x-www-form-urlencoded. (EE-6224)
+* Upgraded BouncyCastle to 1.60. (MULE-15332)
+* OAuth Provider: The token request for clientCredentials with encoded credentials fails. (EE-6223)
+* OAuth Provider: The token response body is JSON, but content-type header is `application/x-www-form-urlencoded`. (EE-6224)
 
 == 1.7.3
 
@@ -43,8 +75,8 @@ endif::[]
 
 === Fixed in this Release
 
-* MULE-14382: Upgrade BouncyCastle to 1.59
-* SEC-319: Race condition when concurrent request use the same refresh
+* MULE-14382: Upgraded BouncyCastle to 1.59.
+* SEC-319: Race condition when concurrent requests use the same refresh.
 * SEC-322: It is not possible to encrypt using a public key from a certificate in a keystore.
 
 == 1.7.2
@@ -161,7 +193,7 @@ January 6, 2017
 === Fixed in this Release
 
 ** SEC-288: Refresh tokens expiration new features: Support expiration of refresh tokens and when refreshing an access token whether to provide a new refresh token or not should be configurable.
-** SEC-277: allow url encoded passwords in oauth (characters like '+' and '%')
+** SEC-277: Allow URL encoded passwords in OAuth (characters like '+' and '%')
 ** SEC-290: Exception handling not reporting correct exception.
 ** SEC-289: Fix OAuth2 test assertions to compare JSON Objects instead o
 ** SEC-286: Encrypt/decrypt operations should support OutputHandler
@@ -373,7 +405,10 @@ May 14, 2013
 [%header%autowidth.spread]
 |===
 |AES version |Mule Runtime Version
+|1.8.1 |3.9.0 or later
 |1.8.0 |3.9.0 or later
+|1.7.6 |3.9.0 or later
+|1.7.5 |3.9.0 or later
 |1.7.4 |3.9.0 or later
 |1.7.3 |3.9.0 or later
 |1.7.2 |3.9.0 or later

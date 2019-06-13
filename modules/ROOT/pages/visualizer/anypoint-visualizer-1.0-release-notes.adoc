@@ -3,7 +3,19 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This document describes new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] documentation for more information.
+These are the new features and enhancements, known limitations, issues, and fixes for Anypoint Visualizer. See xref:visualizer::index.adoc[Anypoint Visualizer] documentation for more information.
+
+== June 7, 2019
+
+=== New Features and Enhancements
+
+Visualizer now detects running Mule applications that don't appear on the canvas and: 
+
+* Lists the missing applications in each environment
+* Outlines the reasons why Visualizer cannot support them in their current states
+* Directs you to where you can update the applications to make them appear in the Visualizer canvas
+
+If any apps are missing from a given environment, an icon and the number of excluded apps appear by the environment name in the side panel. Click the icon for more details.
 
 == April 30, 2019
 
@@ -85,9 +97,6 @@ Please take careful note of which Mule versions that Visualizer now supports and
 
 * Layer labels and names may change. The first letter of every layer will be capitalized. All default layers will be restored.
 
-=== Changes to Display Name
-
-add content
 
 == February 11, 2019
 Version 2.0.3

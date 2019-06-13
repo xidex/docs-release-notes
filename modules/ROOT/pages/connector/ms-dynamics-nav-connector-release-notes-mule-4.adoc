@@ -9,6 +9,25 @@ _Select_
 
 The Microsoft Dynamics NAV Connector enables Mule applications to interact with the Microsoft Dynamics NAV Web Services versions 2013 R2, 2015, 2016, 2017.
 
+== 2.0.1
+
+*June 10, 2019*
+
+=== Compatibility
+
+The Microsoft Dynamics Nav connector is compatible with:
+
+[%header%autowidth,spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio |Only works with Studio 7.0.0 and later
+|===
+
+=== Fixed in this Release
+
+* Microsoft Dynamics NAV Connector Test connection fails with Unable to create JAXBContext for generated packages - There were some issues with some dependencies of the connector that were causing this problem with Mule runtime 4.2.0 and later. This was fixed by upgrading some dependencies to newer versions: *org.apache.cxf:cxf-rt-transports-http:3.2.1* was updated to *org.apache.cxf:cxf-rt-transports-http:3.3.1* and *org.apache.cxf:cxf-rt-frontend-jaxws:3.2.1* was updated to *org.apache.cxf:cxf-rt-frontend-jaxws:3.3.1*. (SE-11902)
+
 == 2.0.0
 
 *March 23, 2018*
