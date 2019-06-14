@@ -5,6 +5,14 @@ endif::[]
 
 Support Category: Select
 
+== 1.5.0
+
+*June 13, 2019*
+
+=== New Features and Enhancements
+
+* Added support for different (https://docs.mulesoft.com/connectors/ibm/ibm-mq-publish-consume[Request Reply patterns]) for Publish Consume Operation and Listener.
+
 == 1.4.1
 
 *June 12, 2019*
