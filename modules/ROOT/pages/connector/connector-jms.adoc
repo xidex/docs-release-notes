@@ -11,7 +11,7 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Added support for different (https://docs.mulesoft.com/connectors/jms/jms-publish-consume[Request Reply patterns]) for Publish Consume Operation and Listener.
+* Added support for different xref:connectors::ibm/ibm-mq-publish-consume[request reply patterns] for the *Publish Consume* and *Listener* operations.
 
 == 1.5.1
 
