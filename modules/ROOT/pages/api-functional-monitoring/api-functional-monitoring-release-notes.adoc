@@ -36,7 +36,3 @@ This release introduces a new user interface that is incorporated into Anypoint 
 For documentation about this new user interface, see xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
 
 You can still create tests and schedule them using the BDD Test-Writing Language and the Blackbox Automated Testing (BAT) CLI. The documentation for doing that is located at xref:api-functional-monitoring::bat-top.adoc[API Functional Monitoring with the Blackbox Automated Testing (BAT) CLI].
-
-
-* xref:api-functional-monitoring/api-functional-monitoring-1.1-release-notes.adoc[API Functional Monitoring 1.1 Release Notes]
-* xref:api-functional-monitoring/api-functional-monitoring-1.0-release-notes.adoc[API Functional Monitoring 1.0 Release Notes]
