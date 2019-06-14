@@ -29,6 +29,7 @@ This change is beneficial to prevent the possibility of:
 * The issue where multiple connections of different runtimes were accepted with the same certificate in certain scenarios.
 * Hybrid scheduler is removed after the flow name changes https://www.mulesoft.org/jira/browse/SE-11484
 * Unable to add email address starts with # in alert configuration https://www.mulesoft.org/jira/browse/SE-11733
+* Unable to create a cluster from the UI when runtimes don't report IP addresses https://www.mulesoft.org/jira/browse/SE-12000
 
 == Known Limitations and Workarounds
 
