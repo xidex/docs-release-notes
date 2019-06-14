@@ -39,7 +39,7 @@ Build Id:
 
 == What's New
 
-The 6.6.1 Studio release includes a number of bug fixes and comes with Mule 3.9.1 runtime.
+The 6.6.1 Studio release includes a number of bug fixes and comes with Mule 3.9.2 runtime.
 
 == Hardware Requirements
 
@@ -87,6 +87,8 @@ If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint S
 
 == Known Issues
 
+There are no knonw issues for this release.
+
 [[migration]]
 == Migration Guide
 
@@ -117,9 +119,9 @@ Then specify the location of your old version of Anypoint Studio in your local d
 
 * Fixed issue where Datasense could not resolve JSON schemas included via `$ref` under *Windows environment* when an `API.raml` file was included in project.
 * Fixed issue where Studio showed errors for Dataweave while the runtime had no issues.
-* Fixed issue where ,ultiple Transform Message property files caused Studio to slowdown.
+* Fixed issue where multiple Transform Message property files caused Studio to slowdown.
 * Fixed issue preventing to have multiple `xmlns` namespace declarations in root element for DataWeave.
-* Fixed performance issues while using DataWave.
+* Fixed performance issues while using DataWeave.
 * Fixed issue where Mimetype autocomplete did not work in every possible XML tag.
 * Fixed issue preventing exporting special characters at processor's Notes.
 * Fixed issue retrieving metadata when configuration contained a Windows non breaking space.
@@ -135,7 +137,8 @@ Then specify the location of your old version of Anypoint Studio in your local d
 * Fixed slow performance for DataWeave Transform Message component.
 * Fixed issue where Studio did not correctly validate MUnit configurtaion files.
 * Fixed thread deadlock in Studio.
-* Fixed issue where APIKit did not resolve `include` paths correctly.
+* Fixed issue where APIKit did not resolve `include` paths correctly. +
+You might need to apply a patch to your APIkit installation. Follow https://support.mulesoft.com/s/article/How-to-apply-patches-to-APIKit[How to apply patches to APIKit] support article for detailed instructions.
 * Fixed Studio memory issues on Windows.
 * Fixed issue where nested `includes` in a RAML file resulted in Studio throwing a `RAML typed fragment is not referenced by any root RAML file in the project` error.
 * Fixed `IndexOutOfBoundsException: toIndex = 2` error when deploying an application using Studio 6.
