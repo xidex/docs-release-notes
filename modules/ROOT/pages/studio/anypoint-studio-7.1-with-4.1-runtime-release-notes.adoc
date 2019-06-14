@@ -134,8 +134,6 @@ If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint S
 [[migration]]
 == Migration Guide
 
-== Migration Guide
-
 Studio 7.1 only supports Mule 4.x projects. The structure of the project, export format, XML and scripting language are different. +
 Users must migrate Mule 3 projects to Mule 4 manually, before they can be used in Studio 7. See the Mule migration guide for more information.
 
