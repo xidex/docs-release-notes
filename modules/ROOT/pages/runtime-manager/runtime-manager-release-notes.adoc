@@ -8,6 +8,10 @@ endif::[]
 
 The releases listed in this page refer to changes made to Runtime Manager in hybrid deployment scenarios, which enables you to deploy Mule applications on user-hosted servers, but continue to manage and monitor them through MuleSoft's cloud based platform.
 
+== Version 2.11.3 - Jun 15, 2019
+
+See xref:runtime-manager/runtime-manager-2.11.3-release-notes.adoc[Runtime Manager v2.11.3 Release Notes] 
+
 == Version 2.11.2 - May 18, 2019
 
 See xref:runtime-manager/runtime-manager-2.11.2-release-notes.adoc[Runtime Manager v2.11.2 Release Notes] 
