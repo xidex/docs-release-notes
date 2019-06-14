@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<2-5-0,2.5.0>>
 * <<2-4-8,2.4.8>>
 * <<2-4-6,2.4.6>>
 * <<2-4-5,2.4.5>>
@@ -18,6 +19,105 @@ These release notes cover the following versions of these features:
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== API Designer 2.5.0
+*June 15, 2019*
+
+This release introduces several new features in the visual editor.
+
+=== New Features in the Code Editor
+// DESIGNER-3615
+* You can now import binary files, such as PDF and PNG files, into your projects. Such files are not parsed and no preview for them is available.
+// MSERV-285
+* Use behavioral headers with the mocking service to modify in various ways how the mocking service behaves. See xref:design-center::apid-behavioral-headers.adoc[Add Behavioral Headers to Simulated API Calls].
+
+=== New Features in the Visual Editor
+
+* Create security schemes for your API specifications. The different supported types are OAuth 1.0, OAuth 2.0, Basic Authentication, Digest Authentication, and Pass Through.
+* Define union types for elements.
++
+In previous releases, you could select only one data type at a time for properties, bodies, payloads, headers, and any other kind of element. Now, you can choose multiple data types to create _union_ data types for any of those elements.
++
+When creating a union type, you won't be able to edit any custom properties of the union type itself. An instance of the data type should meet all restrictions of at least one of the super types.
+* Define enums for strings and numbers.
+* Specify display names for methods.
+* Add groups to help you organize assets in the left pane.
+
+== Enhancements
+
+// DESIGNER-3711
+* When you are using Microsoft Internet Explorer or Microsoft Edge as your browser and you click *Design Center* or the hamburger menu in the top-left corner as you are using the code editor, there is no longer a browser pop-up asking whether you want to leave the page.
+// DESIGNER-3710
+* It is now possible to view inline documentation for errors if you are using Microsoft Internet Explorer, Microsoft Edge, or Mozilla Firefox as your browser. Click the information icon that appears next to error messages.
+
+=== Fixed Issues
+
+// SE-12002
+* Changes made in the code editor might take up to six minutes to be parsed.
+// SE-11942
+* In the code editor, creating a fragment in an API-specification project, leaving the fragment without content, and then adding a reference to it from the main file before adding content to the fragment, caused the reference to be parsed as an error.
+// SE-11944
+* Underscores, spaces, and hyphen were not parsed as separator characters in variables in resourceTypes.
+// SE-11832
+* It was possible to create API specifications without the appropriate entitlement.
+// SE-11807
+* Very long names of API-specification projects are now better supported. If the name of a branch does not appear because the name of a project is too long, you can move your mouse over the path of the branch to see the full path. If the name of a project is too long to be seen all at once in the *Publish API Specification to Exchange* dialog, you can scroll though the field in which the name appears.
+// SE-11937
+* When an API specification included the definition of a type with an `!include` tag and the example of the type was also included with an `!include` tag, then the following message appeared:
+`should have required property '<name of property>' at <name of file>.raml`
++
+Here are examples of an API specification, a data type, and an example that would produce this error:
++
+.API specification
+----
+#%RAML 1.0
+title: ac-dgt-xcpr
+
+types:
+  DigitalProfileCreateRequest:
+    type: !include dataType.raml
+    examples:
+      DigitalProfileCreateRequest_Example: !include example.raml
+
+/profiles:
+  post:
+    body:
+      application/json: DigitalProfileCreateRequest
+----
++
+.Data type
+----
+#%RAML 1.0 DataType
+type: object
+properties:
+  customerProfile:
+    type: object
+    properties:
+      password:
+        type: string
+----
++
+.Example
+----
+#%RAML 1.0 NamedExample
+"customerProfile": {
+  "password": "abc123"
+}
+----
+// SE-11617
+* For certain API specifications, the API console was not appearing.
+// SE-11318
+* Not all types were being displayed in the list of types in the API console.
+// SE-11208
+* When a specification defines a boolean value but does not provide a default value, the API console now provides a default value. Doing so prevents problems from arising with the mocking service.
+// SE-11123
+* In some cases, an API-specification project might never finish loading when an attempt was made to open it.
+// SE-10576
+* API specifications that included binary files were not displayed properly in Exchange after being published.
+// SE-11788
+* In some cases, references could not be resolved when examples were included. The error message was confusing and gave little information about the cause.
+
+
 
 == API Designer 2.4.8
 *May 18, 2019*
