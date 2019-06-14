@@ -1,10 +1,10 @@
-= Anypoint Studio 6.6 with Mule Runtime 3.9.2 Update Site 1
+= Anypoint Studio 6.6 with Mule Runtime 3.9.2 Update Site 1 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*October 10, 2019* +
-*Build ID:*
+*June 14, 2019* +
+*Build ID: 201906072050*
 
 <<migration,Skip to Migration Guide>>
 
@@ -17,7 +17,7 @@ endif::[]
 
 |*Anypoint Studio*
 |Version: 6.6.1 +
-Build Id:
+Build Id: 201906072050
 
 |*APIkit*
 |Versions: 3.9.3
