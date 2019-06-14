@@ -20,7 +20,7 @@ Mule 4.1.1
 === Fixed Issues
 
 * On stored procedures where the output return variable is set to null, the output should not be processed further. (https://www.mulesoft.org/jira/browse/MULE-16961[MULE-16961])
-
+* db:select operation fails to throw a connectivity error (https://www.mulesoft.org/jira/browse/MULE-16950[MULE-16950])
 
 == 1.5.3
 
