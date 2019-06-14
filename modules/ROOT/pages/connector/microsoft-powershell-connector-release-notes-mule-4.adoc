@@ -26,7 +26,7 @@ The PowerShell Connector is compatible with:
 
 === Fixed in this release
 
-* Powershell error stop logging anything on the console.(SE-11546)
+* Powershell error stopped logging anything on the console. (SE-11546)
 
 == 2.0.0
 
