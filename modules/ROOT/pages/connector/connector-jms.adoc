@@ -11,7 +11,7 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Added support for different xref:connectors::ibm/ibm-mq-publish-consume.adoc[request reply patterns] for the *Publish Consume* and *Listener* operations.
+* Added support for different xref:connectors::jms/jms-connector.adoc[request reply patterns] for the *Publish Consume* and *Listener* operations.
 
 == 1.5.1
 
