@@ -3,5 +3,36 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-* xref:api-functional-monitoring/api-functional-monitoring-1.1-release-notes.adoc[API Functional Monitoring 1.1 Release Notes]
-* xref:api-functional-monitoring/api-functional-monitoring-1.0-release-notes.adoc[API Functional Monitoring 1.0 Release Notes]
+These release notes cover the following versions of this product:
+
+* <<1-15,1.15>>
+* <<1-1,1.1>>
+* <<1-0,1.0>>
+
+== API Functional Monitoring 1.15
+*June 15, 2019*
+
+This release introduces one new feature: you can now get notifications of failed tests through email. Select *Email* as the reporter in API Functional Monitoring in Anypoint Monitoring, or set up email as a reporter in the BAT CLI.
+
+See xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor] for instructions about using API Functional Monitoring in Anypoint Monitoring, and see xref:api-functional-monitoring::bat-reporting-task.adoc[To Configure and View Test Reports] for details about creating reporters in the BAT CLI.
+
+== API Functional Monitoring 1.1
+*July 12, 2018*
+
+This release introduces an enhancement and a new feature.
+
+=== Enhancement
+
+When you create a monitor in the *Functional Monitoring* section of Anypoint Monitoring, you can now specify more than one endpoint to test and more than one assertion per endpoint.
+
+=== New Feature
+
+You can write and run BAT tests in IntelliJ IDEA with the support of the DataWeave 2.0 IntelliJ plugin. For details, see xref:api-functional-monitoring::bat-intellij-idea.adoc[Write and Run BAT Tests in IntelliJ IDEA].
+
+== API Functional Monitoring 1.0
+
+This release introduces a new user interface that is incorporated into Anypoint Monitoring. To access this user interface, select *Functional Monitoring* after opening Anypoint Monitoring.
+
+For documentation about this new user interface, see xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
+
+You can still create tests and schedule them using the BDD Test-Writing Language and the Blackbox Automated Testing (BAT) CLI. The documentation for doing that is located at xref:api-functional-monitoring::bat-top.adoc[API Functional Monitoring with the Blackbox Automated Testing (BAT) CLI].
