@@ -7,6 +7,38 @@ Support Category: Select
 
 The Anypoint Connector for NetSuite synchronizes data and automates business processes between NetSuite and third-party applications, either on-premises or in the cloud.
 
+== 9.0.0
+
+*June 7, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|SuiteTalk API | 2018.2
+|===
+
+[NOTE]
+The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different than the version of the API you are using.
+
+=== Features
+
+* Support for SuiteTalk API version 2018.2. For a detailed list of changes, log into NetSuite, open Help Center and navigate to New Release > Release Notes > NetSuite 2018.2 Release Notes > SuiteTalk (Web Services) Integration.
+* The list operations (Add list, Delete list, Update list and Upsert list) now return information about the status of the result in each record.
+
+=== Fixed in this Release
+
+None.
+
+=== Known Issues
+
+None.
+
+=== Migrating from Older Versions
+
+* In the old versions, the list operations returned a list of type `BaseRef`. Now they return a list of type `WriteResponse`. The `WriteResponse` has as fields: the `baseRef` (like the previous versions) and also the `status`. The `status` field is a structure that contains the information about whether the operation was successful (`isSuccess` Boolean) and details of the status (`statusDetail` structure). In case of error the structure of `statusDetail` indicates in the field `type` if it was an ERROR, in the field `code` indicates the type of error (for example: 'INVALID_KEY_OR_REF') and finally in the field `message` contains details of the error (as the value and/or field involved).
 
 == 8.3.3
 
