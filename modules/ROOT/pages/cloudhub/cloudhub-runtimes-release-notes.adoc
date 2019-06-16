@@ -23,7 +23,7 @@ Fixed:
 
 3.9.1 and 3.9.2 Runtime Update:
 
-* JSON validation fails with the error: `error: object instance has properties which are not allowed by the schema:`	[SE-11753]
+* JSON validation fails with the error: `error: object instance has properties which are not allowed by the schema:` [SE-11753]
 
 
 == June 5, 2019
@@ -37,7 +37,7 @@ Fixed:
 4.1.4, 4.1.5 and 4.2.0 Runtime Update:
 
 * Fix custom policies reusing class loader between versions. [SE-12023]
-* Fix class loading isolation issues when initialising apps. [SE-11887]
+* Fix class loading isolation issues when initializing apps. [SE-11887]
 
 4.1.1, 4.1.2, 4.1.3, 4.1.4 and 4.1.5 Runtime Update:
 

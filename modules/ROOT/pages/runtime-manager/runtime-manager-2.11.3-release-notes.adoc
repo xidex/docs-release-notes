@@ -1,0 +1,44 @@
+= Anypoint Runtime Manager Version 2.11.3 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+June 15, 2019
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager version 2.11.3.
+
+== New Features and Enhancements
+
+There are no new features or enhancements in this release.
+
+== Changes in This Release
+
+Previous to this release, multiple Mule runtime engines (Mules) sharing the same identity were able to connect to the Anypoint control plane when a connection request happened concurrently. 
+
+Starting with this release, *only one Mule* is allowed to connect to the control plane per server. Concurrent Mule connections will no longer be allowed to connect and provide status, which means all but one of the concurrent Mules will become unmanaged. 
+
+The Mule that connects first is able to send information over and sync (in some cases this can mean re-deploying applications that are not actually running on the connected Mule). If the initial Mule then becomes disconnected, there is the potential that the other Mules may connect before the initial Mule can re-connect. This means that the sync process occurs from the current state of the newly connected Mule.
+
+This change is beneficial to prevent the possibility of: 
+
+* Multiple instances of an application running across two or more Mule runtime engines unintentionally
+* Inaccurate statuses for the Mule runtime engine and/or applications
+
+== Fixed Issues
+
+* The issue where multiple connections of different Mule runtime engines were accepted with the same certificate in certain scenarios.
+* Hybrid scheduler is removed after the flow name changes. [SE-11484]
+* Unable to add email address starts with # in alert configuration. [SE-11733].
+* Unable to create a cluster from the UI when runtimes don't report IP addresses. [SE-12000]
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+ 
+== Compatibility Notes
+
+There are no compatibility notes in this release.
