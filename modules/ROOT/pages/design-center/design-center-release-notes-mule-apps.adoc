@@ -52,6 +52,8 @@ You might even find in the future that you need to create Mule applications that
 ====
 Templates do not include the authentication credentials that are specified for the connectors used in Mule applications. Authentication credentials are never published. People who use a template to start their own Mule applications must provide their own credentials.
 ====
++
+For more details, see xref::design-center:fd-publish-app-as-template.adoc[Share a Mule Application as a Template on Exchange].
 
 * Create custom expressions in drop-down lists
 +
