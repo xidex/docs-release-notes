@@ -47,10 +47,17 @@ This release includes the following new features and enhancements:
 You can publish a Mule application to Exchange as a template, which makes it easy for you and other people to create similar Mule applications in the future. Publishing Mule applications as templates is a great way to share your work with other people. When they need to build a similar application, they can get a head start by downloading and using your template to start their own project. If you accompany your template in Exchange with a good description, screenshots, and perhaps even a video, those other people could get going even more quickly.
 +
 You might even find in the future that you need to create Mule applications that are similar to one that you've already created. Rather than search for a project in Design Center, clone it, and then try to remember what it does and how it works, you can read the page that you wrote for the corresponding template in Exchange.
++
+[IMPORTANT]
+====
+Templates do not include the authentication credentials that are specified for the connectors used in Mule applications. Authentication credentials are never published. People who use a template to start their own Mule applications must provide their own credentials.
+====
++
+For more details, see xref:design-center::fd-publish-app-as-template.adoc[Share a Mule Application as a Template on Exchange].
 
 * Create custom expressions in drop-down lists
 +
-Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. Into that second field, you can drag the *Custom Expression* data element from the right side of the card. See xref::design-center:custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
+Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. You can drag the *Custom Expression* data element from the right side of the card into that second field. See xref:design-center::custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
 
 ////
 
@@ -72,7 +79,7 @@ If your data types include nested object properties (or arrays), the Transform c
 
 * Choose data transformations more easily due to descriptive labels
 +
-As explained in xref::design-center:dynamic-expression-field.adoc[Fill in Cards with Values that Change at Runtime], you can drag data elements into fields in cards, and then expand the data elements to see menus for applying functions to data. The function names are now easier to understand. For example, in the previous release, the labels for three of the functions that you can apply to strings were *Lower*, *Trim*, and *Upper*. In this release, the labels are *Lowercase*, *Remove Extra Whitespace*, and *Uppercase*.
+As explained in xref:design-center::dynamic-expression-field.adoc[Fill in Cards with Values that Change at Runtime], you can drag data elements into fields in cards, and then expand the data elements to see menus for applying functions to data. The function names are now easier to understand. For example, in the previous release, the labels for three of the functions that you can apply to strings were *Lower*, *Trim*, and *Upper*. In this release, the labels are *Lowercase*, *Remove Extra Whitespace*, and *Uppercase*.
 
 * Enjoy support for Mule Runtime 4.2
 +
