@@ -53,11 +53,11 @@ You might even find in the future that you need to create Mule applications that
 Templates do not include the authentication credentials that are specified for the connectors used in Mule applications. Authentication credentials are never published. People who use a template to start their own Mule applications must provide their own credentials.
 ====
 +
-For more details, see xref::design-center:fd-publish-app-as-template.adoc[Share a Mule Application as a Template on Exchange].
+For more details, see xref:design-center::fd-publish-app-as-template.adoc[Share a Mule Application as a Template on Exchange].
 
 * Create custom expressions in drop-down lists
 +
-Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. Into that second field, you can drag the *Custom Expression* data element from the right side of the card. See xref::design-center:custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
+Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. Into that second field, you can drag the *Custom Expression* data element from the right side of the card. See xref:design-center::custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
 
 ////
 
