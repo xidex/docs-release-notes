@@ -1,11 +1,11 @@
-= SAP Connector Release Notes - Mule 3
+= SAP Transport Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 Support Category: Premium
 
-The Mule runtime supports SAP integration through the SAP connector. This SAP-certified Java connector leverages the SAP Java Connector (JCo) libraries.
+The Mule runtime supports SAP integration through the SAP transport. This SAP-certified Java transport leverages the SAP Java Connector (JCo) libraries.
 
 xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
 
