@@ -1,13 +1,46 @@
-= SAP Connector Release Notes
+= SAP Transport Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 Support Category: Premium
 
-The Mule Runtime supports SAP integration through our Anypoint Connector for SAP, which is an SAP-certified Java connector that leverages the SAP Java Connector (JCo) libraries.
+The Mule runtime supports SAP integration through the SAP transport. This SAP-certified Java transport leverages the SAP Java Connector (JCo) libraries.
 
 xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
+
+== Version 3.2.2
+
+*June 6, 2019*
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime|3.5.x and later
+|Anypoint Studio|6.3 and later
+|Java|7, 8
+|SAP Solution| ECC 6.0 or higher
+|Supported modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
+|===
+
+=== Fixed in this Release
+
+* Configuring SNC in SAP connector was not working. 
++
+Added these message server configuration parameters to fix this issue:
++
+[source,java,linenums]
+----
+String JCO_MSHOST = "jco.client.mshost";
+String JCO_MSSERV = "jco.client.msserv";
+String JCO_R3NAME = "jco.client.r3name";
+String JCO_GROUP = "jco.client.group";
+String JCO_SAPROUTER = "jco.client.saprouter";
+----
++
+These are reflections of JCo properties. (SE-10985)
++
+* Fixed the SAP connector not sending back to SAP when a source used the request-response pattern without using the XML-to-SAP function. (SE-11761)
 
 == 3.2.1 
 
@@ -25,13 +58,13 @@ xref:3.9@mule-runtime::sap-connector.adoc[SAP Connector User Guide]
 
 === Fixed in this Release
 
-* Outbound endpoint timeout doesn't work - When calling an RFC that takes a long time to complete, the responseTimeout parameter was not considered and waited for a long time, and no error or messages were triggered. This was fixed by throwing an exception when the timeout value is reached.
+* Outbound endpoint timeout doesn't work - When calling an RFC that takes a long time to complete, the `responseTimeout` parameter was not considered, and waited for a long time, and no error or messages were triggered. This was fixed by throwing an exception when the timeout value is reached.
 
 * Outbound endpoint duplicate connection to SAP backend - If an error or timeout occurs, a second connection was triggered behind the scenes. Fixed by removing the duplicate retry call in the exception handling block.
 
 === Known Issues
 
-* Destination Provider reference gets lost after hot redeploy of an application (i.e. modifying the `mule-config.xml`)
+* Destination Provider reference gets lost after hot redeploy of an application (such as modifying the `mule-config.xml`).
 
 == 3.2.0
 
@@ -53,7 +86,7 @@ None.
 
 === Fixed in this Release
 
-* Transaction ID (TID) not copied to the outbound scope - This issue occurs when making outbound calls with the Mule Runtime 3.8.x EE, which introduced modifications in the transaction management implementation that affected the connector. The SAP transaction component would never initialize a transaction, resulting in a null TID when executing `#[message.outboundProperties.sapTid]`. The issue is now fixed and transactions are again working with Mule Runtime 3.5.x to 3.8.x. In addition to the present patch, a workaround is also available by wrapping the SAP component in a Transactional scope.
+* Transaction ID (TID) not copied to the outbound scope - This issue occurs when making outbound calls with the Mule runtime 3.8.x EE, which introduced modifications in the transaction management implementation that affected the connector. The SAP transaction component would never initialize a transaction, resulting in a null TID when executing `#[message.outboundProperties.sapTid]`. The issue is now fixed and transactions are again working with Mule Runtime 3.5.x to 3.8.x. In addition to the present patch, a workaround is also available by wrapping the SAP component in a Transactional scope.
 
 * NoSuchMethodError `getDefaultEncoding()` - A regression bug introduced in SAP 3.1.1 as a result of fixing an encoding issue. This exception arises only in Mule Runtime 3.5.x EE because the method `getDefaultEncoding()` is not present in that version. It was introduced in 3.6.x.
 
@@ -61,18 +94,21 @@ None.
 +
 Supported options:
 +
-** PARSE_ACCEPT_ONLY_XMLVERSION_10
-** PARSE_ACCEPT_ONLY_XMLVERSION_11
-** PARSE_ACCEPT_ONLY_XMLVERSIONS_10_TO_11
-** PARSE_IGNORE_INVALID_CHAR_ERRORS
-** PARSE_IGNORE_UNKNOWN_FIELDS
-** PARSE_REFUSE_UNKNOWN_XMLVERSION
-** PARSE_REFUSE_XMLVERSION_10
-** PARSE_REFUSE_XMLVERSION_11
-** PARSE_WITH_FIELD_VALUE_CHECKING
-** PARSE_WITHOUT_FIELD_DATATYPE_CHECKING
+[source,code,linenums]
+----
+PARSE_ACCEPT_ONLY_XMLVERSION_10
+PARSE_ACCEPT_ONLY_XMLVERSION_11
+PARSE_ACCEPT_ONLY_XMLVERSIONS_10_TO_11
+PARSE_IGNORE_INVALID_CHAR_ERRORS
+PARSE_IGNORE_UNKNOWN_FIELDS
+PARSE_REFUSE_UNKNOWN_XMLVERSION
+PARSE_REFUSE_XMLVERSION_10
+PARSE_REFUSE_XMLVERSION_11
+PARSE_WITH_FIELD_VALUE_CHECKING
+PARSE_WITHOUT_FIELD_DATATYPE_CHECKING
+----
 
-*Note:* Option `PARSE_WITH_IGNORE_UNKNOWN_FIELDS` is deprecated.
+*Note:* The `PARSE_WITH_IGNORE_UNKNOWN_FIELDS` option was deprecated.
 
 === Known Issues
 
@@ -160,7 +196,7 @@ None.
 
 === Features
 
-* Enhanced DataSense for IDocs -  For every IDoc field, additional information is displayed as part of the UI label: the data type, its length and a description.
+* Enhanced DataSense for IDocs -  For every IDoc field, additional information is displayed as part of the UI label: the data type, its length, and a description.
 
 === Fixed in this Release
 
@@ -171,17 +207,19 @@ NOTE: Due to the metadata retrieval timeout fix, both Input and Output tabs in D
 +
 * IDoc attributes "BEGIN" and "SEGMENT" not displayed in DataSense - Regression issue introduced in version 3.0.0. Now both DataSense UI and DataWeave correctly display these attributes, which are required to properly build the XML of a given IDoc.
 +
-NOTE: DataSense will display unwanted fields, such as: @begin and @segment. This is DS default behavior when working with XML data. Skip these when binding data with DataWeave.
+NOTE: DataSense displays unwanted fields, such as: `@begin` and `@segment`. This is DS default behavior when working with XML data. Skip these when binding data with DataWeave.
 * `Redundant XSD attribute names` - To improve readability, the `sap` prefix has been removed from the XSD/XML template. Attributes `sapOptional`, `sapType`, `sapLength` and `sapDescription` have been renamed to `optional`. `dataType`, `length` and `description` respectively.
 * Parameters of type XSTRING are passed as String - XSTRING represents a byte array in ABAP. This data type was not being handled by the connector. The value was passed without any conversion. In this version, XSTRING parameters are received as a Base64 string (the user is in charge of encoding it) and converted to a byte array.
 * Connector hangs when application is redeployed - This occurs when deploying an application that uses an Inbound endpoint inside a Mule EE Standalone distribution. When un-deploying the app and performing a second re-deploy attempt, the Mule Runtime gets stuck and does not finish deploying it completely (the log will end at New app 'my-sap-app' instead of Started app 'my-sap-app'). As a workaround, the default value of `operationTimeout` has been changed from 0 (zero) -Mule would block forever until the JCo server operations to execute- to 30 (thirty) seconds. For previous versions of the connector, where the default value is 0, the workaround is to explicitly declare `operationTimeout` with a value greater than 0, similarly to the example below:
-```xml
++
+[source,xml]
+----
 <sap:inbound-endpoint connector-ref="SAP" operationTimeout="5" type="idoc" ... />
-```
+----
 
 === Known Issues
 
-* Though the Connector hangs when application is redeployed a workaround has been provided in the previous section. The underlying issue persists and will be addressed in a future release.
+* Although the connector hangs when an application is redeployed, a workaround has been provided in the previous section. The underlying issue persists and will be addressed in a future release.
 * Destination Provider reference gets lost after hot redeploy of an application (that is, modifying the `mule-config.xml`)
 
 == 3.0.0
