@@ -13,7 +13,7 @@ Support Category: Premium
 
 === Fixed in this Release
 
-* Improve write error reporting. (SE-10716)
+* Improved error reporting for write operations. (SE-10716)
 
 === Compatibility
 
