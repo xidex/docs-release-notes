@@ -113,7 +113,12 @@ properties:
 // SE-11123
 * In some cases, an API-specification project might never finish loading when an attempt was made to open it.
 // SE-10576
-* API specifications that included binary files were not displayed properly in Exchange after being published.
+* API specifications that included binary files were not displayed properly in Exchange after being published. To ensure that binary files appear properly for API specifications that were created in previous releases of API Designer, follow these steps:
++
+. Delete the binary file from your API-specification project.
+. Import the binary file again into your project.
+. Publish the specification to Exchange again, making sure to increment the version number.
+
 // SE-11788
 * In some cases, references could not be resolved when examples were included. The error message was confusing and gave little information about the cause.
 
