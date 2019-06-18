@@ -5,11 +5,17 @@ endif::[]
 
 These are the new features and enhancements, known limitations and issues, fixes, and changes in Anypoint Monitoring.
 
+== June 18, 2019
+
+This release contains the following enhancement:
+
+The retention period for API analytics is increasing to 90 days for Gold and Platinum subscriptions. 
+
 == June 12, 2019
 
 Anypoint Monitoring support for Mule 3.9.x-AM and Mule 4.x-AM is being deprecated. 
 
-To ensure you receive patch updates as soon as they are available, you must update your applications to run on mainline Mule versions (3.9.x and 4.x).
+Update your applications to run on mainline Mule versions (3.9.x and 4.x) for better functionality, improved performance, and the latest patch updates as soon as they are available.
 
 If you currently have Anypoint Monitoring enabled for applications running on 3.9.x-AM or 4.x-AM, monitoring will continue to work, but you will not receive important patch updates. 
 
