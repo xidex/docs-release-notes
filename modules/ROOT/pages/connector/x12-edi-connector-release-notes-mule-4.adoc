@@ -7,6 +7,27 @@ endif::[]
 Support Category: Premium
 
 
+== 2.1.1
+
+*June 18, 2019*
+
+=== Fixed in this Release
+
+* Improved error reporting for write operations. (SE-10716)
+
+=== Compatibility
+
+X12 EDI Connector v2.0.0 is compatible with the following:
+
+[%header,cols="30a,70a"]
+|===
+|Application/Service |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|X12 |003010, 003020, 003030, 003040, 003050, 003060, 003070, 004010, 004020, 004030, 004040, 004050, 004060, 005010, 005020, 005030, 005040, 005050, and 006020
+|HIPAA |005010X212, 005010X214B3, 005010X217, 005010X218, 005010X220A1, 005010X221A1, 005010X222A1, 005010X222A2, 005010X223A2, 005010X223A3, 005010X224A2, 005010X224A3, and 005010X279A1
+|===
+
 == 2.1.0
 
 *May 10, 2019*
