@@ -7,7 +7,7 @@ endif::[]
 
 *June 17, 2019*
 
-* Studio update site: `+http://anypoint-enterprise-security-update-site.s3.amazonaws.com/1.8.1+`
+* Studio update site: `+http://anypoint-enterprise-security-update-site.s3.amazonaws.com/1.8.2+`
 
 === Compatibility
 
