@@ -4,7 +4,15 @@ include::_attributes.adoc[]
 endif::[]
 
 
+== June 18, 2019
+
+This release contains the following fixed issue:
+
+Client failed when the value of the connection header was neither `keep-alive` nor `close`. (SE-12165)
+
 == May 4, 2019
+
+This release contains the following enhancement:
 
 A summary log (`rtfSidSummary`) is generated, which contains a list of rule instances (rule ID, API, method, direction, and count) where at least one SID rule was triggered during the one-minute collection interval. See xref:anypoint-security::sid-reference.adoc[Sensitive Information Detection] for more information. 
 
