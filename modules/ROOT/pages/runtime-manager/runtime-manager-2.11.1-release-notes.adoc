@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-May 18, 2019
+May 4, 2019
 
 This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager version 2.11.1.
 
