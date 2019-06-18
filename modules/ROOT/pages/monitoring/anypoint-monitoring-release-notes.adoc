@@ -9,7 +9,7 @@ These are the new features and enhancements, known limitations and issues, fixes
 
 This release contains the following enhancement:
 
-The retention period for API analytics is increasing to 90 days for Gold and Platinum subscriptions. 
+The retention period for Anypoint Monitoring API analytics is increasing to 90 days for Gold and Platinum subscriptions. 
 
 == June 12, 2019
 
