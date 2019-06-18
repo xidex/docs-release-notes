@@ -3,6 +3,25 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.8.2
+
+*June 17, 2019*
+
+* Studio update site: `+http://anypoint-enterprise-security-update-site.s3.amazonaws.com/1.8.1+`
+
+=== Compatibility
+
+[%header,cols="4*"]
+|===
+|  |Enterprise |Community |Mule Runtime Version Compatibility
+|Anypoint Enterprise Security |1.8.2 |n/a |3.9.x
+|===
+
+=== Fixed in this Release
+
+* `ClientCredential` grant inconsistent error codes. (SEC-333)
+* OAuth2Provider fails to create http endpoint when listener is on domain. (SEC-335)
+
 == 1.8.1
 
 *October 26, 2018*
