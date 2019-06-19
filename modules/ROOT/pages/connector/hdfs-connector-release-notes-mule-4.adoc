@@ -2,7 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: release notes, connectors, hdfs
+
+Support Category: Select
 
 The Anypoint Connector for the Hadoop Distributed File System (HDFS) is used as a bi-directional gateway between Mule applications and HDFS.
 
@@ -21,7 +22,7 @@ The Anypoint Connector for the Hadoop Distributed File System (HDFS) is used as 
 
 === Fixed in this Release
 
-* Cannot install HDFS connector in Anypoint Studio 7.3.4 (SE-12006)
+* Cannot install the HDFS connector in Anypoint Studio 7.3.4. (SE-12006)
 
 == 6.0.0
 
@@ -48,4 +49,4 @@ Not applicable
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
