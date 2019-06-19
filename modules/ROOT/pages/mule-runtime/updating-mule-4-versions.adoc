@@ -65,7 +65,7 @@ If any of your applications rely on a full or a partial custom patch to work pro
 . If you have custom configurations in your previous Mule instance (for example, if you defined a different maximum heap size in the `wrapper.conf` file), replicate these settings in the new Mule instance.
 . xref:mule-runtime::starting-and-stopping-mule-esb.adoc#running-mule[Run your new Mule instance] to verify that your installation is working as expected.
 . After considering possible negative impact, you can shut down your previous Mule instance at this point.
-. If you set environment variables such as `MULE_HOME` or `PATH`, verify that they point to the new Mule instance’s installation path.
+. If you set environment variables such as `MULE_HOME` or `PATH`, verify that they point to the new Mule runtime engine's installation path.
 . Deploy your applications to your new Mule instance.
 
 [[mulerunvers]]
