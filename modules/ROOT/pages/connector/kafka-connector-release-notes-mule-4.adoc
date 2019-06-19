@@ -7,11 +7,9 @@ Support Category: Select
 
 The Anypoint Connector for Apache Kafka allows you to connect to the Apache Kafka messaging system over the Mule runtime, enabling seamless integration between your applications and an Apache Kafka cluster.
 
-////
-
 == 3.0.5
 
-*June 13, 2019*
+*June 19, 2019*
 
 === Compatibility
 
@@ -25,9 +23,7 @@ The Anypoint Connector for Apache Kafka allows you to connect to the Apache Kafk
 === Fixed in this Release
 
 * Updated the Kafka Clients library to version 2.2.0.
-* Updated code to use the `poll(java.time.Duration)` method provided in the new library to replace the deprecated `poll(long)` method. The deprecated method did not block beyond the timeout awaiting partition assignment. (KIP-266)
-
-////
+* Updated code to use the `poll(java.time.Duration)` method provided in the new library that replaces the deprecated `poll(long)` method. The deprecated method did not block beyond the timeout for waiting on a partition assignment. (KIP-266)
 
 == 3.0.4
 
