@@ -7,6 +7,30 @@ Support Category: Select
 
 Microsoft Service Bus connector provides support for Microsoft Azure Service Bus (cloud) and Microsoft Windows Service Bus (on-premises).
 
+== 2.1.1
+
+*June 19, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|===
+
+=== Features
+
+* JMS 2.0 shared subscription -  Added support for having multiple consumers subscribe to a single topic. This functionality distributes the topic's message load among all subscribers.
+
+=== Fixed in this Release
+
+None
+
+=== Known Issues
+
+None
+
 == 2.1.0 
 
 *April 16, 2019*
