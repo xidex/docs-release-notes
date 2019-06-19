@@ -87,13 +87,13 @@ _Studio will always use the OS default web browser_ | * Windows: +
 
 [NOTE]
 --
-If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+include::partial$studio/antivirus-impact.adoc[]
 --
 
 == Known Issues
 
 * This version of Studio was released with an issue causing the MUnit Studio Plugin to fail. +
-Upgrade your MUnit Studio plugin to version 2.3.3 or later. Go to xref:studio::studio-update-sites.adoc[Anypoint Studio Update Sites] for more information. 
+Upgrade your MUnit Studio plugin to version 2.3.3 or later. Go to xref:studio::studio-update-sites.adoc[Anypoint Studio Update Sites] for more information.
 * Studio 7 only supports Mule 4.x projects. Due to the structure of projects, export format, xml and scripting language differences, we do not offer backwards compatibility with Mule 3.x runtimes.
 * Some existing features in Studio 6.x are not yet supported in Studio 7: Custom Policies, API Sync, Anypoint Private Cloud.
 * Anypoint Studio uses your configured default browser to display web content such as Exchange and the Runtime Manager UI when deploying an application to Anypoint Platform. If your default internet browser does not display this content correctly, you can configure Anypoint Studio to use a Mozilla/XULRunner runtime environment as the underlying renderer for the Web UI. +
