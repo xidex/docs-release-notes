@@ -1,9 +1,9 @@
-= Release Notes for API Designer
+= Release Notes for API Designer (Crowd)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-These release notes cover the following versions of these features:
+These release notes cover the following versions of API Designer (Crowd):
 
 * <<2-5-0,2.5.0>>
 * <<2-4-8,2.4.8>>
@@ -20,7 +20,7 @@ These release notes cover the following versions of these features:
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
 
-== API Designer 2.5.0
+== API Designer (Crowd) 2.5.0
 *June 15, 2019*
 
 This release introduces several new features in the visual editor.
@@ -124,7 +124,7 @@ properties:
 
 
 
-== API Designer 2.4.8
+== API Designer (Crowd) 2.4.8
 *May 18, 2019*
 
 This release introduces three new features and an enhancement, and it fixes several issues. There is also one known issue.
@@ -250,7 +250,7 @@ The version of the RAML fragment that is being used in the project is now 1.0.0,
 
 If you are not using Google Chrome or Mozilla Firefox as your web browser when using the API editor, clicking an information icon that appears next to an error message does not open a window to display information about the error.
 
-== API Designer 2.4.6
+== API Designer (Crowd) 2.4.6
 *April 20, 2019*
 
 This release includes two new features and several fixes. There is also one known issue.
@@ -279,7 +279,7 @@ This release includes two new features and several fixes. There is also one know
 // DOCS-4552
 Because of a bug in a third-party library that is used for the validation of XML against an XSD schema, the API editor can be inconsistent in displaying the error message `Could not validate XSD schema`. For example, you might or might not see the error message whenever you open a particular file that contains XML.
 
-== API Designer 2.4.5
+== API Designer (Crowd) 2.4.5
 *April 6, 2019*
 
 This release includes a new feature, two enhancements, and two fixes.
@@ -307,7 +307,7 @@ The editor now caches validations that are made by the AMF parser. (This parser 
 
 // I documented none of the other fixed issues because they were not reported by customers.
 
-== API Designer 2.4.4
+== API Designer (Crowd) 2.4.4
 *March 23, 2019*
 
 This release fixes six issues.
@@ -326,7 +326,7 @@ This release fixes six issues.
 // SE-10974
 * The editor did not display an error message when a NamedExample fragment contained properties that the RAML specification does not allow.
 
-== API Designer 2.4.3
+== API Designer (Crowd) 2.4.3
 *February 23, 2019*
 
 This release fixes two issues.
@@ -338,7 +338,7 @@ This release fixes two issues.
 * The mocking service created invalid OAuth redirect URLs.
 
 
-== API Designer 2.4.2
+== API Designer (Crowd) 2.4.2
 *February 9, 2019*
 
 This release fixes a number of issues.
@@ -366,7 +366,7 @@ example: 19.99
 // SE-10863
 * Auto-completion after elements such as `uses` and `!include` was not working, and suggestions for content to place after such elements were not being offered.
 
-== API Designer 2.4.1
+== API Designer (Crowd) 2.4.1
 *January 25, 2019*
 
 This release includes enhancements and fixes a number of issues.
@@ -390,7 +390,7 @@ To turn this validation off, toggle the switch that is labeled *Show Strict Erro
 * In Firefox, the body of POST and PUT requests was not appearing when the mocking service was being used, preventing requests from being sent correctly.
 
 
-== API Designer 2.4.0
+== API Designer (Crowd) 2.4.0
 *January 10, 2019*
 
 This release includes several enhancements and fixes a number of issues.
@@ -483,7 +483,7 @@ my_int64:
 * In some cases, publishing an API specification to Exchange from the API editor would result in the content of the API specification being reordered incorrectly in the editor.
 
 
-== API Designer 2.2.9
+== API Designer (Crowd) 2.2.9
 *August 9, 2018*
 
 This release contains an enhancement.
@@ -492,7 +492,7 @@ This release contains an enhancement.
 
 If your organization contains more than one group ID, you can now select the group ID to associate an API specification with when you publish that specification to Anypoint Exchange.
 
-== API Designer 2.2.8
+== API Designer (Crowd) 2.2.8
 
 *July 26, 2018*
 
@@ -578,7 +578,7 @@ types:
 * If in the code editor you clicked the plus sign in the left sidebar, selected *Other* in the *Add New File* dialog, and then clicked *Create* without specifying a name for the file, a new file with the name `*/` appeared in the file list. It was not possible to delete that file.
 
 
-== API Designer 2.2.7
+== API Designer (Crowd) 2.2.7
 
 *May 16, 2018*
 
@@ -589,7 +589,7 @@ This release fixes these issues:
 * In the visual editor, changing the type for a base URI parameter caused the RAML viewer to show the new type, but the *Type* field continued to show the previously selected type.
 
 
-== API Designer 2.2.6
+== API Designer (Crowd) 2.2.6
 
 *April 20, 2018*
 
@@ -599,7 +599,7 @@ This release fixes these issues:
 * Some warning and error messages were not being displayed.
 
 
-== API Designer 2.2.5
+== API Designer (Crowd) 2.2.5
 
 *April 6, 2018*
 
