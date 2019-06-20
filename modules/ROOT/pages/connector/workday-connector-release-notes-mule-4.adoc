@@ -10,13 +10,11 @@ Workday is a software as a service (SaaS) solution developed by Workday comprisi
 The Workday connector requires an Enterprise license.
 
 [IMPORTANT]
-Depending on the connectivity conditions while using Workday connector in Anypoint Studio, there can be a timeout while obtaning Workday metadata. See xref:connectors::workday/workday-studio.adoc#to-increase-timeout-in-studio[To Increase Timeout in Studio].
+Depending on the connectivity conditions while using the Workday connector in Anypoint Studio, there can be a timeout when obtaining Workday metadata. See xref:connectors::workday/workday-studio.adoc#to-increase-timeout-in-studio[To Increase Timeout in Studio].
 
 == 10.0.1
 
-*Date of the release TBD*
-
-This release provides a bug fix.
+*June 2019*
 
 
 [%header%autowidth.spread]
@@ -28,7 +26,7 @@ This release provides a bug fix.
 
 === Fixed in this Release
 
-Connector had connectivity issue when Workday password contained special characters e.g.(< > & ") . This issue has been fixed  [SE-12090]
+Workday passwords that contained special characters (such as < > & ") caused connectivity issues. [SE-12090]
 
 == 10.0.0
 
