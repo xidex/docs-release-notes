@@ -43,7 +43,7 @@ When creating a union type, you won't be able to edit any custom properties of t
 * Specify display names for methods.
 * Add groups to help you organize assets in the left pane.
 
-== Enhancements
+=== Enhancements
 
 // DESIGNER-3711
 * When you are using Microsoft Internet Explorer or Microsoft Edge as your browser and you click *Design Center* or the hamburger menu in the top-left corner as you are using the code editor, there is no longer a browser pop-up asking whether you want to leave the page.
@@ -275,7 +275,7 @@ This release includes two new features and several fixes. There is also one know
 // SE-11175
 *  The API console might display all examples for all methods that were in a specification, not just the examples for the selected method.
 
-== Known Issue
+=== Known Issue
 // DOCS-4552
 Because of a bug in a third-party library that is used for the validation of XML against an XSD schema, the API editor can be inconsistent in displaying the error message `Could not validate XSD schema`. For example, you might or might not see the error message whenever you open a particular file that contains XML.
 
