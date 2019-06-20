@@ -3,6 +3,26 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== June 2019
+
+=== New Features
+
+* Simplified interface by removing links when they are not applicable. (EXC-3759)
+* When users do not have permission to view a dependent asset, the asset is not clickable. (EXC-3607)
+* Exchange offers three scopes, which show all assets, all assets in the master organization, or all assets in the current business group. When a user has selected the business group scope and selects a new business group, Exchange previously changed to the master organization scope, and now stays at the business group scope. (EXC-3430)
+* When users search with clickable categories and tags, Exchange now shows assets from all business groups by default. Users can still filter these results by business group. (EXC-3219)
+* When users reach the rate limit for an API, a message appears explaining this. (EXC-2991)
+
+=== Fixed in this Release
+
+* Images uploaded after May 31st, 2019 now render correctly on the MuleSoft public portal. (EXC-3793)
+* Users can view images on custom pages in a public portal in all cases. (EXC-3669)
+* Category names can include the slash and backslash characters (`/` and `\`). Users are now able to delete category names containing these characters. (EXC-3662)
+* Users editing one page can discard those changes and create a second page. (EXC-3642)
+* Improved error message for attempts to use Maven to publish a new version of a REST API created in Exchange, since REST APIs are not one of the asset types Maven can publish. (EXC-3511)
+* Users uploading a file can change the asset type without uploading the file again. Exchange re-validates the file. (EXC-3503)
+* Users can view the full RAML or OAS code in public Exchange portals in all cases. (EXC-3254)
+
 == May 2019
 
 === New Features
