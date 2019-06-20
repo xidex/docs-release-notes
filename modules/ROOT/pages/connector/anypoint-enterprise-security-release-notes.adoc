@@ -19,8 +19,8 @@ endif::[]
 
 === Fixed in this Release
 
-* `ClientCredential` grant inconsistent error codes. (SEC-333)
-* OAuth2Provider fails to create http endpoint when listener is on domain. (SEC-335)
+* `ClientCredential` grant provided inconsistent error codes. (SEC-333)
+* `OAuth2Provider` failed to create an HTTP endpoint when the Listener was in a domain. (SEC-335)
 
 == 1.8.1
 
