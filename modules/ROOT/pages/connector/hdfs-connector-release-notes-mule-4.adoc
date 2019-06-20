@@ -5,7 +5,7 @@ endif::[]
 
 Support Category: Select
 
-The Anypoint Connector for the Hadoop Distributed File System (HDFS) is used as a bi-directional gateway between Mule applications and HDFS.
+The Anypoint Connector for the Hadoop Distributed File System (HDFS) is used as a bidirectional gateway between Mule applications and HDFS.
 
 == 6.0.1
 
