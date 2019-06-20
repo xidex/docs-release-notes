@@ -1,4 +1,4 @@
-= Release Notes for API Designer (Crowd)
+= API Designer (Crowd) Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

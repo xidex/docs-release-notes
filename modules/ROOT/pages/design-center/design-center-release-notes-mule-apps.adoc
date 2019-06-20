@@ -1,4 +1,4 @@
-= Release Notes for Flow Designer
+= Flow Designer Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
