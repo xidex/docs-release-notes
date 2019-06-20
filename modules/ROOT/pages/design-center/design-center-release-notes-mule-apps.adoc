@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-11-1,1.11.1>>
 * <<1-11-0,1.11.0>>
 * <<1-10-0,1.10.0>>
 * <<1-9-0,1.9.0>>
@@ -34,6 +35,17 @@ These release notes cover the following versions of these features:
 * <<1-0-2,1.0.2>>
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
+
+
+== 1.11.1
+*July 11, 2019*
+
+
+=== Fixed Issues
+// PROJECTX-6834
+* The *New Type* dialog did not indicate errors in JSON examples or JSON schemas. 
+
+
 
 == 1.11.0
 *June 15, 2019*
