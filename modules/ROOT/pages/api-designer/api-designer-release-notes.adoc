@@ -1,41 +1,43 @@
-= API Designer Release Notes
+= API Designer (Pre-Crowd) Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-* <<API Designer 0.4.14 Release Notes>>
+To read the release notes for the API Designer (Crowd), go xref:design-center/design-center-release-notes-api_specs.adoc[here].
 
-* <<API Designer 0.4.13 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.14 Release Notes>>
 
-* <<API Designer 0.4.12 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.13 Release Notes>>
 
-* <<API Designer 0.4.11 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.12 Release Notes>>
 
-* <<API Designer 0.4.9 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.11 Release Notes>>
 
-* <<API Designer 0.4.6 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.9 Release Notes>>
 
-* <<API Designer 0.4.5 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.6 Release Notes>>
 
-* <<API Designer 0.4.4 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.5 Release Notes>>
 
-* <<API Designer 0.4.3 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.4 Release Notes>>
 
-* <<API Designer 0.4.2 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.3 Release Notes>>
 
-* <<API Designer 0.4.1 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.2 Release Notes>>
 
-* <<API Designer 0.4.0 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.1 Release Notes>>
 
-* <<API Designer 0.3.2 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.4.0 Release Notes>>
 
-* <<API Designer 0.3.1 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.3.2 Release Notes>>
 
-* <<API Designer 0.3.0 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.3.1 Release Notes>>
 
-* <<API Designer 0.2.0 Release Notes>>
+* <<API Designer (Pre-Crowd) 0.3.0 Release Notes>>
 
-== API Designer 0.4.14 Release Notes
+* <<API Designer (Pre-Crowd) 0.2.0 Release Notes>>
+
+== API Designer (Pre-Crowd) 0.4.14 Release Notes
 October 24, 2018
 
 This release contains one enhancement and fixes a number of issues.
@@ -60,7 +62,7 @@ The following issues were fixed in this release:
 * No error message was displayed when a `uses` node specified an invalid path to a library.
 
 
-== API Designer 0.4.13 Release Notes
+== API Designer (Pre-Crowd) 0.4.13 Release Notes
 
 *August 23, 2018*
 
@@ -84,7 +86,7 @@ protocols: [ HTTPS ]
 
 
 
-== API Designer 0.4.12 Release Notes
+== API Designer (Pre-Crowd) 0.4.12 Release Notes
 
 *June 28, 2018*
 
@@ -93,7 +95,7 @@ protocols: [ HTTPS ]
 * Importing an API specification written in OAS 2.0 sometimes resulted in the following error: `Failed to parse Swagger: Swagger schema validation failed.`
 * Resolved an issue with a warning message `path exceeds file system root at (_position in file_).` that  should not have appeared for an API specification in the code editor in the following situation: A fragment where the notation `../` is used in a path that references a file that is in a subdirectory of an upper level.
 
-== API Designer 0.4.11 Release Notes
+== API Designer (Pre-Crowd) 0.4.11 Release Notes
 
 *May 19, 2018*
 
@@ -109,7 +111,7 @@ protocols: [ HTTPS ]
 * The OAS-to-RAML converter did not recognize the API Key authentication type. If you tried to import an OAS file that used this type of authentication, the import failed.
 
 
-== API Designer 0.4.9 Release Notes
+== API Designer (Pre-Crowd) 0.4.9 Release Notes
 
 *February 24, 2018*
 
@@ -123,7 +125,7 @@ Bumped API Console to https://github.com/mulesoft/api-console/releases/tag/v3.0.
 
 When including a data type, the invalid error in IE _Object doesn’t support property or method `include`_ no longer appears.
 
-== API Designer 0.4.6 Release Notes
+== API Designer (Pre-Crowd) 0.4.6 Release Notes
 
 *November 4, 2017*
 
@@ -137,7 +139,7 @@ Bump API Console to https://github.com/mulesoft/api-console/releases/tag/v3.0.21
 
 Fixed the issue allowing only the name `body` for the root RAML element type Now, you can use a RAML type to define all XML and JSON input types.
 
-== API Designer 0.4.5 Release Notes
+== API Designer (Pre-Crowd) 0.4.5 Release Notes
 
 *August 26, 2017*
 
@@ -148,7 +150,7 @@ This release focuses on minor bug fixes.
 * Bumped RAML Parser to version to https://github.com/raml-org/raml-js-parser-2/releases/tag/1.1.29[1.1.29]
 * Bumped API Console to version https://github.com/mulesoft/api-console/releases/tag/v3.0.20[3.0.20].
 
-== API Designer 0.4.4 Release Notes
+== API Designer (Pre-Crowd) 0.4.4 Release Notes
 
 *July 15, 2017*
 
@@ -163,7 +165,7 @@ Fixed an issue related to a parsing empty RAML files using Internet Explorer 11.
 * Bumped RAML Parser to version https://github.com/raml-org/raml-js-parser-2/releases/tag/1.1.26[1.1.26].
 * Bumped API Console to version https://github.com/mulesoft/api-console/releases/tag/v3.0.19[3.0.19].
 
-== API Designer 0.4.3 Release Notes
+== API Designer (Pre-Crowd) 0.4.3 Release Notes
 
 *June 17, 2017*
 
@@ -180,7 +182,7 @@ This release focuses on minor bug fixes.
 * Bumped API Console to version xref:api-console/api-console-release-notes.adoc#api-console-3-0-18[3.0.18].
 * Bumped OAS RAML Converter to version 0.2.4.
 
-== API Designer 0.4.2 Release Notes
+== API Designer (Pre-Crowd) 0.4.2 Release Notes
 
 *June 3, 2017*
 
@@ -207,7 +209,7 @@ See xref:1.x@api-manager::designing-your-api.adoc#supported-extensions[supported
 +
 Improved the efficiency and conversion of RAML 0.8 schemas to OAS 2.0 definitions.
 
-== API Designer 0.4.1 Release Notes
+== API Designer (Pre-Crowd) 0.4.1 Release Notes
 
 *April 8, 2017*
 
@@ -224,7 +226,7 @@ This release focuses on minor bug fixes.
 * Bumped RAML Parser to version to https://github.com/raml-org/raml-js-parser-2/releases/tag/1.1.19[1.1.19]
 * Bumped API Console version to xref:api-console/api-console-release-notes.adoc#api-console-3-0-16[3.0.16]
 
-== API Designer 0.4.0 Release Notes
+== API Designer (Pre-Crowd) 0.4.0 Release Notes
 
 *March 11, 2017*
 
@@ -253,7 +255,7 @@ Above the editor, near the file name, there is now a validation indicator.
 +
 * Improved performance by no longer rendering the console when the right panel is hidden.
 
-== API Designer 0.3.2 Release Notes
+== API Designer (Pre-Crowd) 0.3.2 Release Notes
 
 *February 3, 2017*
 
@@ -273,7 +275,7 @@ This release focuses on minor bug fixes.
 * Importing an OAS 2.0 document is greatly improved and is no longer in Beta.
 
 
-== API Designer 0.3.1 Release Notes
+== API Designer (Pre-Crowd) 0.3.1 Release Notes
 
 *January 14, 2017*
 
@@ -291,7 +293,7 @@ This release focuses on minor bug fixes.
  * Bumped the JS parser version to https://github.com/raml-org/raml-js-parser-2/releases/tag/1.1.12[1.1.12].
  * Bumped the API Console version to xref:api-console/api-console-release-notes.adoc#api-console-3-0-12[3.0.12].
 
-== API Designer 0.3.0 Release Notes
+== API Designer (Pre-Crowd) 0.3.0 Release Notes
 
 *December 3, 2016*
 
@@ -312,7 +314,7 @@ This release includes a new, xref:1.x@api-manager::designing-your-api.adoc#savin
 
 Import OAS 2.0 (beta).
 
-== API Designer 0.2.0 Release Notes
+== API Designer (Pre-Crowd) 0.2.0 Release Notes
 
 *November 19, 2016*
 
