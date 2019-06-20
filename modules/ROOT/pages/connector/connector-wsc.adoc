@@ -3,14 +3,24 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.3.3
+
+*June 18, 2019*
+
+=== Fixed Issues
+
+* Fixed issue that caused performance degradation when using an expression in a configuration. (MULE-16970)
+
+
 == 1.3.2
 
 *May 3, 2019*
 
 === Fixed Issues
+
 * Fixed issue that caused metadata not being collected when the location of the  WSDL was a relative path. (MULE-16876)
 * Fixed issue that caused the signature and the timestamp to be incorrectly swapped when signing the timestamp. (MULE-16834)
-* Fixed issue that caused the operation not being loaded on Studio.(MULE-16931)
+* Fixed issue that caused the operation not being loaded on Studio. (MULE-16931)
 
 == 1.3.1
 
