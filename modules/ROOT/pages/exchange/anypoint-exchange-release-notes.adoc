@@ -7,11 +7,11 @@ endif::[]
 
 === New Features
 
-* Simplified interface by removing links when they are not applicable. (EXC-3759)
-* When users do not have permission to view a dependent asset, the asset is not clickable. (EXC-3607)
-* Exchange offers three scopes, which show all assets, all assets in the master organization, or all assets in the current business group. When a user has selected the business group scope and selects a new business group, Exchange previously changed to the master organization scope, and now stays at the business group scope. (EXC-3430)
-* When users search with clickable categories and tags, Exchange now shows assets from all business groups by default. Users can still filter these results by business group. (EXC-3219)
-* When users reach the rate limit for an API, a message appears explaining this. (EXC-2991)
+* Simplify interface by showing only applicable links. (EXC-3759)
+* Prevent permissions errors by making only viewable assets clickable. (EXC-3607)
+* A user viewing assets by business group who selects a different business group sees the new group and not the master organization. (EXC-3430)
+* A user who clicks a category or tag sees matching assets from all business groups. (EXC-3219)
+* Notify users who reach the rate limit for an API. (EXC-2991)
 
 === Fixed in this Release
 
