@@ -6,6 +6,11 @@ endif::[]
 
 These are the release notes for patches which are made to the Mule runtimes on Runtime Fabric. In addition to these release notes, see the xref:runtime-fabric/runtime-fabric-release-notes.adoc[Anypoint Runtime Fabric release notes] and the complete xref:1.0@runtime-fabric::index.adoc[Anypoint Runtime Fabric] documentation.
 
+== June 21, 2019 `v1.4.2`
+
+* RTF Inbound Traffic service does not accept Spaces in the Private Key Passphrase and fails to come up properly and serve traffic. [SE-12071]
+* Client failed when the value of the connection header was neither `keep-alive` nor `close`. [SE-12165]
+
 == June 12 2019
 
 === 4.2.0 `v1.2.12`
