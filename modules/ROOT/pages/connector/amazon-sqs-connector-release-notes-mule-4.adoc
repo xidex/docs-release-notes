@@ -1,4 +1,4 @@
-= Amazon SQS Connector Release Notes
+= Amazon SQS Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -8,6 +8,23 @@ Support Category: Select
 The Amazon SQS cloud connector provides an easy way to interface with the Amazon SQS API, allowing users to manage SQS queueing services without having to deal with the API directly.
 
 Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint Platform as with other Select connectors. Prior versions remain freely available to the community.
+
+== 5.3.1
+
+*Date of release TBD*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|4.1.0 and later
+|AWS SDK for Java|1.11.515
+|===
+
+=== Fixed in this Release
+* Receive message source did not use the default global queue URL when the queue URL was not specified. Therefore, an error was thrown after the application deployed. [SE-12178]
+
 
 == 5.3.0
 
