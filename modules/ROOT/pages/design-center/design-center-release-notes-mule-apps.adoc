@@ -41,9 +41,16 @@ These release notes cover the following versions of these features:
 *July 11, 2019*
 
 
+=== Enhancements
+
+* Rely on dynamic lists in popular connectors, rather than your memory
++
+When filling out cards for popular connectors, such as the Database connector or the Slack connector, in previous releases, you had to remember the names of tables that you wanted to query or Slack channels that you wanted to send messages to. Now, rather than do that, you can click a drop-down list that is populated with the names of tables, the names of Slack channels, or other items, depending on the connector.
+
+
 === Fixed Issues
 // PROJECTX-6834
-* The *New Type* dialog did not indicate errors in JSON examples or JSON schemas. 
+* The *New Type* dialog did not indicate errors in JSON examples or JSON schemas.
 
 
 
@@ -71,12 +78,7 @@ For more details, see xref:design-center::fd-publish-app-as-template.adoc[Share 
 +
 Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. You can drag the *Custom Expression* data element from the right side of the card into that second field. See xref:design-center::custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
 
-////
 
-* Rely on dynamic lists in popular connectors, rather than your memory
-+
-When filling out cards for popular connectors, such as the Database connector or the Slack connector, in previous releases, you had to remember the names of tables that you wanted to query or Slack channels that you wanted to send messages to. Now, rather than do that, you can click a drop-down list that is populated with the names of tables, the names of Slack channels, or other items, depending on the connector.
-////
 
 * Automatic updates of the version of Mule Runtime being used in your projects
 +
