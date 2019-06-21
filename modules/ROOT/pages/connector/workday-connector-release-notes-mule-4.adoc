@@ -10,7 +10,7 @@ Workday is a software as a service (SaaS) solution developed by Workday comprisi
 The Workday connector requires an Enterprise license.
 
 [IMPORTANT]
-Depending on the connectivity conditions while using the Workday connector in Anypoint Studio, there can be a timeout when obtaining Workday metadata. See xref:connectors::workday/workday-studio.adoc#to-increase-timeout-in-studio[To Increase Timeout in Studio].
+While using the Workday connector in Anypoint Studio, depending on connectivity conditions, there can be a timeout when obtaining Workday metadata. See xref:connectors::workday/workday-studio.adoc#to-increase-timeout-in-studio[To Increase Timeout in Studio].
 
 == 10.0.1
 
