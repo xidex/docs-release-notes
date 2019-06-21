@@ -1,4 +1,4 @@
-= Amazon SQS Connector Release Notes
+= Amazon SQS Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -23,7 +23,7 @@ Starting with v.4.0.0, the SQS Connector is licensed commercially with Anypoint 
 |===
 
 === Fixed in this Release
-* Receive message source was not using the default global queue URL when queue URL was not specified, consequently an error was thrown after the application deploy. This version fixes this issue. [SE-12178] 
+* Receive message source did not use the default global queue URL when the queue URL was not specified. Therefore, an error was thrown after the application deployed. [SE-12178]
 
 
 == 5.3.0
