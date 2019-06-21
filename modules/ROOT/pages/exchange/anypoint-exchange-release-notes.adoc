@@ -3,6 +3,25 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== June 2019
+
+=== New Features
+
+* Simplify interface by showing only applicable links in Studio experience. (EXC-3759)
+* Prevent permissions errors by making only viewable assets clickable in the asset dependencies table. (EXC-3607)
+* A user viewing assets by business group who selects a different business group sees the new group and not the master organization. (EXC-3430)
+* A user who clicks a category or tag sees matching assets from all business groups and assets provided by Mulesoft. (EXC-3219)
+* Notify users who reach the rate limit for an API. (EXC-2991)
+
+=== Fixed in this Release
+
+* Images uploaded after May 31st, 2019 now render correctly on the MuleSoft public portal. (EXC-3793)
+* Users can view images on custom pages in a public portal in all cases. (EXC-3669)
+* Users editing one page can discard those changes and create a second page. (EXC-3642)
+* Improved error message for attempts to use Maven to publish a new version of a REST API created in Exchange with a different asset type, since asset type cannot be changed. (EXC-3511)
+* Users uploading a file when creating a new asset can change the asset type without uploading the file again. Exchange re-validates the file. (EXC-3503)
+* Users can view the full RAML or OAS code in public Exchange portals in all cases. (EXC-3254)
+
 == May 2019
 
 === New Features
