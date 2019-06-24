@@ -60,7 +60,7 @@ For marketing teams::
 ** Add responses to SurveyMonkey surveys to leads in Salesforce.
 
 +
-To use these templates, go to Exchange, select *Provided by MuleSoft*, filter on the keyword *Templates*, and search for *Flow Designer*.
+To use these templates, go to Exchange, select *Provided by MuleSoft*, select *Templates* in the filter drop-down menu, and search for *Flow Designer*.
 
 
 * Rely on dynamic lists in popular connectors, rather than your memory
