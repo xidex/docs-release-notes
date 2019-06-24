@@ -9,7 +9,7 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 
 == 2.3.0
 
-*June 19, 2019*
+*June 28, 2019*
 
 === Compatibility
 
@@ -26,6 +26,10 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 
 * *Response Time* is now configurable. This field is located under *Additional Settings* in the connector's configuration.
 This timeout is the maximum amount of time in milliseconds that a managed connection attempts to wait for a response to a request. A value of 0 represents no timeout. The default is 30000 milliseconds (30 seconds).
+
+=== Fixed in this release
+
+* The conector would sometimes incorrectly assume that the input payload is empty. This was fixed, and will now work regardless of the type of InputStream the connector's operations receive. (SE-12156)
 
 == 2.2.0
 
