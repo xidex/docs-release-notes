@@ -163,6 +163,10 @@ Customers that process analytic events through Anypoint Runtime Manager and send
 |Issue |Description
 | MULE-15586 | `lookup` function in DataWeave now has a `timeout`. The `timeout` for a specific `lookup` call can be increased by providing the new value with a third parameter (for example, `lookup(vars.flow, payload, 10000)`).
 | MULE-15730 | TLS keystore entries must now reference at least one key to use or reference a key alias. Using an invalid keystore will result in an initialization failure.
+| MULE-14203 | In `scheduler-pools.conf` some default values for the file have changed. Please apply these changes if this config file is being carried over from a previous version:
+
+`org.mule.runtime.scheduler.io.workQueue.size` from `1024` to `0`
+`org.mule.runtime.scheduler.cpuIntensive.workQueue.size` from `1024` to `2 * cores`
 |===
 
 == Fixed Issues
