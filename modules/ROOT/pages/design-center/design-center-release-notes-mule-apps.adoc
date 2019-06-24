@@ -43,6 +43,26 @@ These release notes cover the following versions of these features:
 
 === Enhancements
 
+* Get started creating Mule applications with new Flow Designer templates for the most common use cases
++
+Use these templates to connect to JIRA, SurveyMonkey, Email, Salesforce, or Slack. These templates cover a variety of common use cases.
+
+For customer-support teams::
+** When a Salesforce case is closed, send a survey via SurveyMonkey.
+** Send new issues or updates to existing issues from JIRA to Salesforce.
+
+For engineering teams::
+** When a JIRA issue is updated, post a notification to a Slack channel.
+** When a High or Highest priority issue is opened in JIRA, post a notification to a Slack channel.
+
+For marketing teams::
+** Send a welcome email to new leads that are added to Salesforce.
+** Add responses to SurveyMonkey surveys to leads in Salesforce.
+
++
+To use these templates, go to Exchange, select *Provided by MuleSoft*, filter on the keyword *Templates*, and search for *Flow Designer*.
+
+
 * Rely on dynamic lists in popular connectors, rather than your memory
 +
 When filling out cards for popular connectors, such as the Database connector or the Slack connector, in previous releases, you had to remember the names of tables that you wanted to query or Slack channels that you wanted to send messages to. Now, rather than do that, you can click a drop-down list that is populated with the names of tables, the names of Slack channels, or other items, depending on the connector.
