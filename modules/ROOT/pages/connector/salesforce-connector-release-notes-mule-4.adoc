@@ -19,7 +19,7 @@ Support Category: Select
 
 === Fixed in this Release
 
-* OAuth v2.0 uses `refresh_token` for Core API and Metadata API operations. (SE-11869)
+* OAuth v2.0 handles the `refresh_token` value for Core API and Metadata API operations. (SE-11869)
 +
 The affected operations are:
 +
