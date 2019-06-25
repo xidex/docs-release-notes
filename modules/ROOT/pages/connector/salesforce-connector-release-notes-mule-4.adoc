@@ -5,6 +5,36 @@ endif::[]
 
 Support Category: Select
 
+== 9.7.4
+
+*June 25, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0
+|===
+
+=== Fixed in this Release
+
+* OAuth v2.0 leverages refresh_token scenario for a specific set of operations (SE-11869) :
+
+_CoreAPI_: create, createMultiple, createSingle,update, updateMultiple, updateSingle, upsert, upsertMultiple, merge, retrieve,
+delete, deleteMultiple, convertLead, findDuplicatesByIds, findDuplicates, getSessionId, getUserInfo, resetPassword,
+changeOwnPassword, getUpdated, getUpdatedRange, getUpdatedObjects, getDeleted, getDeletedRange, setPassword, getServerTimestamp,
+nonPaginatedQuery, query, queryAll, querySingle, search, describeSobject, describeGlobal
+
+_MetadataAPI_: deployMetadata, createMetadata, updateMetadata, deleteMetadata, upsertMetadata, renameMetadata, readMetadata,
+describeMetadata, listMetadata, retrieveMetadata
+
+=== Known Issues
+
+* Salesforce connector replayId feature gap between 3.x and 4.x. (SE-11258)
+* Salesforce connector autoreplays after restarting the application in CloudHub. (SE-9992)
+* Salesforce connector OAuth v2.0 fails to get the right session and throws INVALID_SESSION_ID after being idle. This issue still appears for the sources and operations that use the Bulk API and the Apex API. (SE-10988)
+
 == 9.7.3
 
 *June 13, 2019*
