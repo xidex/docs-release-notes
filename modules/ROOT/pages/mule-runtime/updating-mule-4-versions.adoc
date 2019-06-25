@@ -1,0 +1,115 @@
+= Upgrading Mule Runtime Engine (Versions 4.x to 4.n)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: mule, runtime, release notes, migration, installation, downtime, uptime, best practices
+
+To upgrade your current Mule instance to a later release of Mule runtime engine (version 4.x), you must follow some best practices. The following steps and recommendations help you to:
+
+* Update your standalone Mule instances.
+* Update your on-premise Mule instances managed through Runtime Manager.
+* Change the Mule version used to build your Mule applications, if necessary.
+
+For guidance with migrations from Mule 3 to Mule 4, see xref:mule-runtime::index-migration.adoc[Mule 4 for Mule 3 Users].
+
+To change the Mule runtime engine version of your CloudHub workers, you need to use the xref:runtime-manager::deploying-to-cloudhub.adoc#runtime-tab[runtime version drop-down box] in the application settings deployment configuration page.
+
+== Ensuring Mule Application Compatibility
+
+When you create a Mule application, you select the Mule runtime engine version that your application is intended to run on. This is the target Mule version of an application.
+
+Because Mule runtime engine uses semantic versioning (MAJOR.MINOR.PATCH), Mule applications are:
+
+* Rarely compatible between _major_ releases (3.9.3 to 4.1.0, for example).
+* Potentially compatible between _minor_ releases (4.1.0 to 4.2.0, for example).
+* Fully compatible between _patch_ releases (4.1.4 to 4.1.5 for example).
+
+Sometimes it is necessary to change the target Mule version of your Mule applications to make them compatible with your new Mule runtime engine instance (either Standalone, On-premise, or CloudHub worker).
+
+Read the xref:mule-runtime/mule-esb.adoc[release notes] for the Mule runtime engine version that you want to upgrade to and verify if you must make any compatibility changes to your Mule applications.
+
+MuleSoft recommends executing a regression test cycle to validate compatibility between minor releases.
+
+=== Changing the Target Mule Version of your Mule Application
+
+In case you need to change your Mule application's target Mule version, follow these steps:
+
+. xref:studio::studio-update-sites#mule-runtimes-for-anypoint-studio-update-site[Download the desired Mule runtime engine] in Anypoint Studio so that you can select that version in the IDE.
+. For every application that you update:
+.. xref:studio::import-export-packages#importing-projects-to-studio[Import the application] to Anypoint Studio as a Mule project.
+.. During the import process remember to change the target Mule version by selecting it from the *Server Runtime* menu.
++
+image::mule-runtime/updating-mule-versions-415.png[]
+
+.. Make any other changes necessary to ensure compatibility with the Mule version you are transitioning to.
+.. xref:studio::import-export-packages#exporting-projects-from-studio[Export your project] as a Mule Deployable Archive (`.jar` file).
+.. Edit the `pom.xml` file to make the `muleVersion` property value match the target Mule version.
+
+After you have successfully built the Mule Deployable Archives (`.jar` files) with the new target Mule version, and you have applied any other necessary changes to ensure compatibility, you can move on to upgrading the corresponding Mule runtime engine instances.
+
+== Upgrading a Standalone Mule Instance
+
+To ensure less downtime and easier backups, first install the new Mule runtime engine on a separate server from that on which your current Mule runtime engine is installed. That way you can set everything up and only then initiate the new Mule instance and decouple the previous one.
+
+=== Steps to Upgrade the Mule Instance
+
+. Download the new Mule runtime engine version you want to upgrade to (from the Customer Portal) and install it on a different server or virtual machine.
+. If any of your applications use shared custom libraries, copy those `.jar` files to the `<MULE_HOME>/lib/user` directory of the new Mule instance you installed in the previous step.
++
+[NOTE]
+====
+If any of your applications rely on a full or a partial custom patch to work properly (these are in the `<MULE_HOME>/lib/patches` directory), please verify that the fix is included in the new Mule version by reviewing the corresponding xref:mule-runtime/mule-esb.adoc[release notes] page.
+====
++
+. Download a new copy of your license from the Customer Portal and install it on the new Mule instance (see xref:mule-runtime::installing-an-enterprise-license.adoc[Installing an Enterprise License] for instructions).
+. If you have custom configurations in your previous Mule instance (for example, if you defined a different maximum heap size in the `wrapper.conf` file), replicate these settings in the new Mule instance.
+. xref:mule-runtime::starting-and-stopping-mule-esb.adoc#running-mule[Run your new Mule instance] to verify that your installation is working as expected.
+. After considering possible negative impact, you can shut down your previous Mule instance at this point.
+. If you set environment variables such as `MULE_HOME` or `PATH`, verify that they point to the new Mule runtime engine's installation path.
+. Deploy your applications to your new Mule instance.
+
+[[mulerunvers]]
+== Upgrading an On-Premise Mule Instance Managed Through Runtime Manager
+
+To ensure less downtime and easier backups, first install the new Mule runtime engine on a separate server from that on which your current Mule runtime engine is installed. That way you can set everything up and only then initiate the new Mule instance and decouple the previous one.
+
+To migrate following these steps, you must have the xref:runtime-manager::runtime-manager-agent.adoc[Runtime Manager Agent] installed.
+
+=== Steps to Upgrade the Mule Instance
+
+. Go through steps 1 through to 5 of the previous section, <<Upgrading a Standalone Mule Instance>>.
+. Copy the following three files from `<MULE_HOME>/conf` from your previous Mule instance into the same folder on the new Mule instance:
+* `mule-agent.yml`
+* `mule-agent.jks`
+* `truststore.jks` and/or `anypoint-truststore.jks`
+. Copy the `mule-agent-plugin` folder from `<MULE_HOME>/plugins` from your previous Mule instance into the same folder on the new Mule instance.
+. Open a terminal window and navigate to the `<MULE_HOME>/bin` directory of your new Mule instance.
+. Run the following command:
++
+----
+amc_setup -U
+----
++
+This command installs the latest version of the Runtime Manager Agent on your new Mule instance, ensuring compatibility. The files you copied from your previous Mule instance hold all of the configuration information to register the new Mule instance on Runtime Manager.
++
+Even when you're installing your new Mule version on another server or VM, the copied configuration files should suffice to smoothly transition the Mule instance's identity on Runtime Manager.
++
+If your previous Mule instance had apps that were deployed to it through Runtime Manager, there's no need to manually copy them, as they automatically upload to your new Mule instance when instructed to deploy them through Runtime Manager.
++
+[CAUTION]
+====
+Applications must be running and showing as `Started` in Runtime Manager. This process does not migrate stopped Applications.
+====
+
+. At this point, your Mule instance is updated to the desired Mule version. Updating the target Mule version of your deployed applications is optional. If you decide to do so, then you must also:
+.. Follow the steps in <<Changing the Target Mule Version of your Mule Application>>.
+.. Find the application on the *Applications* tab on Runtime Manager and click *Choose File* to xref:runtime-manager::managing-deployed-applications.adoc#updating-your-application[upload] the new Mule Deployable Archive (`.jar` file).
+
+=== Considerations About Clusters
+
+Zero downtime cannot be guaranteed when upgrading the Mule runtime engine version of your Runtime Manager clusters. At some point during the upgrade, the cluster is in a mixed state, with coexisting nodes running two different Mule versions. This might lead to incompatible communication protocols between Hazelcast instances. When such errors occur, every node in the cluster must be shut down to proceed with the upgrade.
+
+== See Also
+
+* xref:mule-runtime::runtime-installation-task.adoc[Mule Standalone Installation]
+* xref:runtime-manager::index.adoc[Runtime Manager]
