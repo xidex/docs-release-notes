@@ -44,7 +44,7 @@ To fix this issue, you only need to update Studio to the latest 7.2.x version av
 
 == What's New
 
-* Studio 7.3.4 release includes two important bug fixes and comes bundled with Mule runtime enginge 4.2.0 runtime.
+* Studio 7.3.4 release includes two important bug fixes and comes bundled with Mule runtime engine 4.2.0 runtime.
 
 == Hardware Requirements
 
