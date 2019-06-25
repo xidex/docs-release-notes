@@ -21,13 +21,9 @@ Support Category: Select
 
 * OAuth v2.0 leverages refresh_token scenario for a specific set of operations (SE-11869) :
 
-_CoreAPI_: create, createMultiple, createSingle,update, updateMultiple, updateSingle, upsert, upsertMultiple, merge, retrieve,
-delete, deleteMultiple, convertLead, findDuplicatesByIds, findDuplicates, getSessionId, getUserInfo, resetPassword,
-changeOwnPassword, getUpdated, getUpdatedRange, getUpdatedObjects, getDeleted, getDeletedRange, setPassword, getServerTimestamp,
-nonPaginatedQuery, query, queryAll, querySingle, search, describeSobject, describeGlobal
+_CoreAPI_: create, createMultiple, createSingle,update, updateMultiple, updateSingle, upsert, upsertMultiple, merge, retrieve, delete, deleteMultiple, convertLead, findDuplicatesByIds, findDuplicates, getSessionId, getUserInfo, resetPassword, changeOwnPassword, getUpdated, getUpdatedRange, getUpdatedObjects, getDeleted, getDeletedRange, setPassword, getServerTimestamp, nonPaginatedQuery, query, queryAll, querySingle, search, describeSobject, describeGlobal
 
-_MetadataAPI_: deployMetadata, createMetadata, updateMetadata, deleteMetadata, upsertMetadata, renameMetadata, readMetadata,
-describeMetadata, listMetadata, retrieveMetadata
+_MetadataAPI_: deployMetadata, createMetadata, updateMetadata, deleteMetadata, upsertMetadata, renameMetadata, readMetadata, describeMetadata, listMetadata, retrieveMetadata
 
 === Known Issues
 
