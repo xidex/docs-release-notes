@@ -1,4 +1,4 @@
-= Anypoint Studio 6.0 with Mule Runtime 3.8.0 Release Notes
+= Anypoint Studio 6.0 with Mule Runtime Engine 3.8.0 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

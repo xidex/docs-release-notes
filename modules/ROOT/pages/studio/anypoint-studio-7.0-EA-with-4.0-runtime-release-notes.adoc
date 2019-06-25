@@ -1,4 +1,4 @@
-= Anypoint Studio 7.0.0 EA with Mule Runtime 4.0.0 Release Notes
+= Anypoint Studio 7.0.0 EA with Mule Runtime Engine 4.0.0 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
