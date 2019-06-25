@@ -1,4 +1,4 @@
-= Anypoint Studio 7.0.0 EA with Mule Runtime 4.0.0 Release Notes
+= Anypoint Studio 7.0.0 EA with Mule Runtime Engine 4.0.0 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -71,7 +71,7 @@ _Studio will always use the OS default web browser_ | * Windows: +
 
 [NOTE]
 --
-If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+include::partial$studio/antivirus-impact.adoc[]
 --
 
 == Known Issues

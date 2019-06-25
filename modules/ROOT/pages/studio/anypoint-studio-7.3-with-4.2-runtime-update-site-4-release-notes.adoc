@@ -1,4 +1,4 @@
-= Anypoint Studio 7.3 with Mule Runtime 4.2.0 Update Site 4 Release Notes
+= Anypoint Studio 7.3 with Mule Runtime Engine 4.2.0 Update Site 4 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -34,7 +34,7 @@ Build Id: 201905081644
 
 === Runtime Compatibility
 
-* Studio 7.3.4 is bundled with Mule Runtime 4.2.0, however, you can use it with earlier Mule Runtime versions such as as 4.1.4.
+* Studio 7.3.4 is bundled with Mule Runtime Engine 4.2.0, however, you can use it with earlier Mule Runtime versions such as as 4.1.4.
 
 === Studio Compatibility
 
@@ -44,7 +44,7 @@ To fix this issue, you only need to update Studio to the latest 7.2.x version av
 
 == What's New
 
-* Studio 7.3.4 release includes two important bug fixes and comes bundled with Mule runtime enginge 4.2.0 runtime.
+* Studio 7.3.4 release includes two important bug fixes and comes bundled with Mule runtime engine 4.2.0 runtime.
 
 == Hardware Requirements
 
@@ -88,9 +88,7 @@ _Studio will always use the OS default web browser_ | * Windows: +
 
 [NOTE]
 --
-Running real-time antivirus protection software on your operating system might have a negative impact on Anypoint Studio performance. While this issue is most prominent on Windows, other platforms are not exempted.
-Although the steps to solve these performance issues vary depending on the antivirus software that you are running, most solutions usually involve whitelisting or excluding the AnypointStudio and java executables, the Studio install and workspace filesystem locations, or some combination of both. See examples of suggested remedies for https://kc.mcafee.com/corporate/index?page=content&id=KB58727[McAfee Viruscan], https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security[Windows Defender] and https://support.symantec.com/en_US/article.TECH104326.html[Symantec Endpoint Protection].
-
+include::partial$studio/antivirus-impact.adoc[]
 --
 
 == Known Issues

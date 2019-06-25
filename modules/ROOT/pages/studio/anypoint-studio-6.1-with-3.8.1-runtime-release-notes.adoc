@@ -102,7 +102,7 @@ If you are installing Anypoint Studio on a Mac computer with OS X that has no Ja
 
 [NOTE]
 --
-If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+include::partial$studio/antivirus-impact.adoc[]
 --
 
 == Known Issues

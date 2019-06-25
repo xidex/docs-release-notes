@@ -1,4 +1,4 @@
-= Anypoint Studio 7.3 with Mule Runtime 4.1.4 Release Notes
+= Anypoint Studio 7.3 with Mule Runtime Engine 4.1.4 Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -34,7 +34,7 @@ Build Id: 201810261725
 
 === Runtime Compatibility
 
-* Studio 7.3.0 comes bundled with Mule Runtime 4.1.4, however you can use it with earlier Mule Runtime versions as early as 4.1.1.
+* Studio 7.3.0 comes bundled with Mule Runtime Engine 4.1.4, however you can use it with earlier Mule Runtime versions as early as 4.1.1.
 
 === Studio Compatibility
 
@@ -112,7 +112,7 @@ _Studio will always use the OS default web browser_ | * Windows: +
 
 [NOTE]
 --
-If you are running McAfee VirusScan on your Windows OS, Eclipse-based Anypoint Studio may experience negative performance impacts. McAfee has suggested the following remedy https://kc.mcafee.com/corporate/index?page=content&id=KB58727[options].
+include::partial$studio/antivirus-impact.adoc[]
 --
 
 == Known Issues
