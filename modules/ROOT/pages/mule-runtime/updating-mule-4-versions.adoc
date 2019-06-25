@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, runtime, release notes, migration, installation, downtime, uptime, best practices
 
-To upgrade your current Mule runtime engine instance (version 4.x) to a later release, you must follow some best practices. The following steps and recommendations help you to:
+To upgrade your current Mule instance to a later release of Mule runtime engine (version 4.x), you must follow some best practices. The following steps and recommendations help you to:
 
 * Update your standalone Mule instances.
 * Update your on-premise Mule instances managed through Runtime Manager.
@@ -26,7 +26,7 @@ Because Mule runtime engine uses semantic versioning (MAJOR.MINOR.PATCH), Mule a
 
 Sometimes it is necessary to change the target Mule version of your Mule applications to make them compatible with your new Mule runtime engine instance (either Standalone, On-premise, or CloudHub worker).
 
-Read the xref:mule-runtime/mule-esb.adoc[release notes] for the Mule runtime engine version that you want to upgrade to, to know if you must make any compatibility changes to your Mule applications.
+Read the xref:mule-runtime/mule-esb.adoc[release notes] for the Mule runtime engine version that you want to upgrade to and verify if you must make any compatibility changes to your Mule applications.
 
 MuleSoft recommends executing a regression test cycle to validate compatibility between minor releases.
 
@@ -107,8 +107,7 @@ Applications must be running and showing as `Started` in Runtime Manager. This p
 
 === Considerations About Clusters
 
-Zero downtime cannot be guaranteed when upgrading the Mule runtime engine version of your Runtime Manager clusters. At some point during the upgrade, the cluster is in a mixed state, with coexisting nodes running two different Mule versions. This might lead to incompatible communication protocols between Hazelcast instances. +
-When such errors occur, every node in the cluster must be shut down to proceed with the upgrade.
+Zero downtime cannot be guaranteed when upgrading the Mule runtime engine version of your Runtime Manager clusters. At some point during the upgrade, the cluster is in a mixed state, with coexisting nodes running two different Mule versions. This might lead to incompatible communication protocols between Hazelcast instances. When such errors occur, every node in the cluster must be shut down to proceed with the upgrade.
 
 == See Also
 
