@@ -3,6 +3,7 @@
 Anypoint Security provides a layered approach to secure your application network. These layers work together to protect both the application network and its individual nodes by controlling access to APIs, enforcing policies, and proxying all inbound or outbound traffic to mitigate external threats and/or attacks. +
 These capabilities are optimized for security providing you with a dedicated endpoint to detect attacks and validate traffic without taxing your implementations.
 
-* xref:anypoint-security/anypoint-security-tokenization-release-notes.adoc[Tokenization Service]
+* xref:anypoint-security/anypoint-security-tokenization-release-notes.adoc[Anypoint Security Tokenization Service]
+* xref:anypoint-security/anypoint-security-rtf-edge.adoc[Anypoint Security Edge]
 * xref:anypoint-security/anypoint-security-waf-release-notes.adoc[Edge Security Policies]
 * xref:anypoint-security/secrets-manager-release-notes.adoc[Secrets Manager]

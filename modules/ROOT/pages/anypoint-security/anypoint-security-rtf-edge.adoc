@@ -1,0 +1,22 @@
+= Anypoint Security Edge Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== June 25, 2019
+
+This release contains the following fixed issue:
+
+Issue:
+
+Runtime Fabric inbound traffic service did not accept spaces in the private key passphrase and failed to properly serve inbound traffic. [SE-12071]
+
+Solution:
+
+The Runtime Fabric inbound traffic service now accepts a passphrase containing spaces and serves inbound traffic with such keys as expected.
+
+== June 18, 2019
+
+This release contains the following fixed issue:
+
+Client failed when the value of the connection header was neither `keep-alive` nor `close`. [SE-12165]
