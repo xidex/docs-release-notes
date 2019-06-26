@@ -12,7 +12,7 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 Fixed:
 
-* IBM MQ Listener receiving REPLY_TO queue header message is not able to reconnect after the queue manager restart. [SE-11261]
+* IBM MQ listener receiving `REPLY_TO` queue header message unable to reconnect after the queue manager restarts. [SE-11261]
 
 
 == June 19, 2019
