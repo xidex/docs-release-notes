@@ -24,7 +24,7 @@ The LDAP Connector is compatible with:
 
 === Fixed in this Release
 
-* Mule LDAP Connector Search and Lookup returns multi-value attribute as String if there is only one element, and as an array if there is more than one (SE-11864)
+* Mule LDAP Connector Search and Lookup Search didn't return multi-value fields as arrays when they were built with a single value. (SE-11864)
 
 == 3.1.3
 
