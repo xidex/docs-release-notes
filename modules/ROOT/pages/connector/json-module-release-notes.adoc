@@ -4,6 +4,27 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, json, module, release notes
 
+== 2.0.1
+
+*June 26, 2019*
+
+=== Min Mule Version
+*Mule 4.1.1*
+
+=== New Features and Enhancements
+
+None
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| https://www.mulesoft.org/jira/browse/MULE-17021[MULE-17021] | Upgrade Jackson to 2.9.9 in all branches
+| https://www.mulesoft.org/jira/browse/MULE-16648[MULE-16648] | Update Guava version to 27.1-jre 
+| https://www.mulesoft.org/jira/browse/MULE-15530[MULE-15530] | JSON Module throws NPE when the connector can't load the schema
+|===
+
 == 2.0.0
 
 *July 5, 2018*
