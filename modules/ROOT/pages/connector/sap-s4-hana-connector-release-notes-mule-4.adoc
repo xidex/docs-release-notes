@@ -3,13 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Support Version: Select
+Support Version: Premium
 
 The Anypoint Connector for SAP S/4 HANA Cloud provides full support to query, create, update, delete entities, and execute remote function using the S/4 HANA API.
 
 == 1.0.0
 
-*June 25, 2019*
+*June 28, 2019*
 
 Mule 4 version of the SAP S/4 HANA Cloud Connector.
 
