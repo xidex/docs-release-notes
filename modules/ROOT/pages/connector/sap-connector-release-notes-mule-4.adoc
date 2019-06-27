@@ -27,7 +27,7 @@ NOTE: This connector is not supported for use with Flow Designer in Design Cente
 
 === Fixed in this Release
 
-* fixed UNICODE null character at the end of response XML (CONN-2455)
+* Fixed UNICODE null character at the end of response XML (CONN-2455)
 
 == 4.3.0
 
