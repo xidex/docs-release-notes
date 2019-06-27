@@ -8,6 +8,12 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 == June 27, 2019
 
+4.2.0 Runtime Update:
+
+* Update scheduler pool configuration in design environment.
+
+== June 27, 2019
+
 3.8.7, 3.8.6, 3.8.5, 3.8.4, 3.8.2, 3.8.1 and 3.8. Runtime Update:
 
 * Switched from OracleJDK 8 to OpenJDK 8
