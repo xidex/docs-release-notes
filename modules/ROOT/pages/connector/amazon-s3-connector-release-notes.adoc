@@ -33,7 +33,7 @@ The Amazon S3 connector is compatible with:
 
 === Fixed in this Release
 
-* Fixed issue in the Create Object operation which was throwing incorrect exception about providing wrong region.
+* Fixed issue in the Create Object operation, which was throwing an incorrect exception about providing the wrong region.
   (SE-12221)
 
 
