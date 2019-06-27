@@ -9,7 +9,7 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 
 == 2.3.0
 
-*June 28, 2019*
+*June 27, 2019*
 
 === Compatibility
 
