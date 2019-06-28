@@ -12,6 +12,31 @@ The Anypoint Amazon S3 Connector provides connectivity to the the Amazon S3 API,
 [IMPORTANT]
 Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint Platform as with other Select connectors.  Prior versions will remain freely available to the community.
 
+== Version 4.3.1 
+
+*June 28, 2019*
+
+=== Compatibility
+
+The Amazon S3 connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule Runtime|3.5.x or later
+|AWS SDK for Java|1.11.580
+|===
+
+=== Features
+
+* Added support for AWS short-term credentials. (SE-4144)
+
+=== Fixed in this Release
+
+* Fixed issue in the Create Object operation, which was throwing an incorrect exception about providing the wrong region.
+  (SE-12221)
+
+
 == Version 4.3.0 
 
 *April 12, 2019*
