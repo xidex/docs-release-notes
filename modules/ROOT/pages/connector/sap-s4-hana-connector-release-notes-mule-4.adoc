@@ -5,7 +5,7 @@ endif::[]
 
 Support Version: Premium
 
-The Anypoint Connector for SAP S/4HANA Cloud Connector provides full support to query, create, update, and delete entities, and execute remote function using the S/4 HANA API.
+The Anypoint Connector for SAP S/4HANA Cloud Connector provides full support to query, create, update, and delete entities, and execute remote function using the S/4HANA API.
 
 == 1.0.0
 
@@ -19,7 +19,7 @@ Mule 4 version of the SAP S/4HANA Cloud Connector.
 |===
 |Software |Version
 |Mule Runtime | Mule Runtime Enterprise Edition 4.1.1 and later
-|S/4 HANA API | OData API
+|S/4HANA API | OData API
 |===
 
 == See Also
