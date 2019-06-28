@@ -43,6 +43,7 @@ None.
 
 === Fixes
 * Fixed "login" field in the Get User's info operation which was returning null (SE-12082)
+* The 'filter term' parameter can now be used as a query paramater in the Get Enterprise operation. (SE-9205)
 
 == 3.2.0
 
