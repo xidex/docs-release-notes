@@ -18,7 +18,7 @@ Mule 4 version of the SAP S/4HANA Cloud Connector.
 [%header%autowidth]
 |===
 |Software |Version
-|Mule Runtime | Mule Runtime Enterprise Edition 4.1.1 and later TODO
+|Mule Runtime | Mule Runtime Enterprise Edition 4.1.1 and later
 |S/4 HANA API | OData API
 |===
 
