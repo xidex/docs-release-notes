@@ -3,6 +3,18 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.3.1
+
+*Jun 28, 2019*
+
+=== Minimum Mule Version
+
+*4.1.1*
+
+=== Fixed Issues
+
+* Fixed a bug that caused the Connector listener to skip a file due to a race condition given a special configuration. (MULE-16999)
+
 == 1.3.0
 
 *May 23, 2019*
