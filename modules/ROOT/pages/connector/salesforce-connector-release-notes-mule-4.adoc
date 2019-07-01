@@ -1,4 +1,4 @@
-= Salesforce Connector Release Notes
+= Salesforce Connector Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -7,7 +7,7 @@ Support Category: Select
 
 == 9.7.5
 
-*July 27, 2019*
+*July 1, 2019*
 
 [%header%autowidth.spread]
 |===
