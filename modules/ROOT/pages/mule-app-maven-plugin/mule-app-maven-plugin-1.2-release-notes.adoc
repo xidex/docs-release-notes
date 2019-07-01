@@ -7,24 +7,38 @@ Mule App Maven Plugin 1.2 is mainly focused on fixing bugs.
 
 == Hardware and software requirements
 
+[%header%autowidth.spread]
+|===
+|Software | Version
+|SO
+a|
 * Microsoft Windows 8+
 * Apple Mac OS X 10.10+
 * Linux (tested on Ubuntu 15)
-* *JDK*: JRE 1.7.0 (recommended JRE 1.7.0_79/80), JRE 1.8
-* *Maven*: Maven 3.3, Maven 3.5
+| JDK
+a|
+* JRE 1.7.0 (recommended JRE 1.7.0_79/80)
+* JRE 1.8
+| Maven
+a|
+* 3.3
+* 3.5
+|===
 
 == Compatibility
 
-* Compatible with 3.7.x, 3.8.x, 3.9x
+* Mule Runtime Engine 3.7.x
+* Mule Runtime Engine 3.8.x
+* Mule Runtime Engine 3.9.x
 
 == Features and Functionality
 === Resolved Issues
 
-* Fixed add api folder to package.
-* Support nested folders inside app directory.
-* Allow adding extra files to final package zip.
+* Api folder is added to package.
+* Added support for nested folders inside app directory.
+* Added support fo adding extra files to final package zip.
 
 == Support
 
-* Access the http://forums.mulesoft.com[MuleSoft forums] to pose questions and get help from MuleSoft's broad community of users.
-* To access MuleSoft's expert support team, mailto:sales@mulesoft.com[subscribe to Mule ESB Enterprise] and log in to MuleSoft's Customer Portal.
+* http://forums.mulesoft.com/[MuleSoft’s Forum]
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal]

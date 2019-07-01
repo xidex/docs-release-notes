@@ -14,5 +14,5 @@ endif::[]
 
 == Support
 
-* Access the http://forums.mulesoft.com[MuleSoft forums] to pose questions and get help from MuleSoft's broad community of users.
-* To access MuleSoft's expert support team, mailto:sales@mulesoft.com[subscribe to Mule ESB Enterprise] and log in to MuleSoft's Customer Portal.
+* http://forums.mulesoft.com/[MuleSoft’s Forum]
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal]
