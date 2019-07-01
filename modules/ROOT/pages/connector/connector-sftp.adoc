@@ -4,7 +4,20 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, SFTP, connector, release notes
 
-*November 2018*
+*July 2019*
+
+== 1.2.5
+
+*Jul 1, 2019*
+
+=== Min Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* Libraries that may contain vulnerabilities were updated (MULE-16747)
+* Fixed a bug that made time between size check not behave as expected when time unit was not milliseconds. (MULE-17004)
 
 == 1.2.4
 
