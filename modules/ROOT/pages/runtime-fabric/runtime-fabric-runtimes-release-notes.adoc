@@ -10,57 +10,57 @@ These are the release notes for patches which are made to the Mule runtimes on R
 
 === 4.2.0 `v1.2.17`
 
-* Fixed: CorrelationId is not included in application log lines.
-* Fixed: Accept-Expression in Batch job not evaluated correctly [SE-11666]
+* Fixed: `CorrelationId` is not included in application log lines.
+* Fixed: Accept-Expression in Batch job not evaluated correctly. [SE-11666]
 * Fixed: APIKit validation error issue after version 1.1.9 [SE-11839]
 
 === 4.1.5 `v1.2.19`
 
-* Fixed: CorrelationId is not included in application log lines.
-* Fixed: Accept-Expression in Batch job not evaluated correctly [SE-11666]
-* Fixed: Batch job corrupted when debugging app [SE-9826]
-* Fixed: IBM MQ listener receiving REPLY_TO queue header message unable to reconnect after the queue manager restarts. [SE-11261]
+* Fixed: `CorrelationId` is not included in application log lines.
+* Fixed: Accept-Expression in Batch job not evaluated correctly. [SE-11666]
+* Fixed: Batch job corrupted when debugging app. [SE-9826]
+* Fixed: IBM MQ listener receiving `REPLY_TO` queue header message unable to reconnect after the queue manager restarts. [SE-11261]
 
 === 4.1.4 `v1.2.27`
 
-* Fixed: CorrelationId is not included in application log lines.
+* Fixed: `CorrelationId` is not included in application log lines.
 
 === 4.1.3 `v1.2.20`
 
-* Fixed: CorrelationId is not included in application log lines.
+* Fixed: `CorrelationId` is not included in application log lines.
 
 === 4.1.2 `v1.2.20`
 
-* Fixed: CorrelationId is not included in application log lines.
+* Fixed: `CorrelationId` is not included in application log lines.
 
 == June 12 2019
 
 === 4.2.0 `v1.2.12`
 
 * Added: Java 8u212
-* Fixed: Updating policy version is not using correct policy jar [SE-12023]
+* Fixed: Updating policy version not using correct policy JAR. [SE-12023]
 
 === 4.1.5 `v1.2.15`
 
 * Added: Java 8u212
-* Fixed: Automated policy violation notifications are not being sent [AGW-2927]
-* Fixed: Updating policy version is not using correct policy jar [SE-12023]
+* Fixed: Automated policy violation notifications not being sent. [AGW-2927]
+* Fixed: Updating policy version not using correct policy JAR. [SE-12023]
 
 === 4.1.4 `v1.2.23`
 
 * Added: Java 8u212
-* Fixed: Automated policy violation notifications are not being sent [AGW-2927]
-* Fixed: Updating policy version is not using correct policy jar [SE-12023]
+* Fixed: Automated policy violation notifications not being sent. [AGW-2927]
+* Fixed: Updating policy version not using correct policy JAR. [SE-12023]
 
 === 4.1.3 `v1.2.16`
 
 * Added: Java 8u212
-* Fixed: Automated policy violation notifications are not being sent [AGW-2927]
+* Fixed: Automated policy violation notifications not being sent. [AGW-2927]
 
 === 4.1.2 `v1.2.16`
 
 * Added: Java 8u212
-* Fixed: Automated policy violation notifications are not being sent [AGW-2927]
+* Fixed: Automated policy violation notifications not being sent. [AGW-2927]
 
 === 3.9.2 `v1.2.5`
 
