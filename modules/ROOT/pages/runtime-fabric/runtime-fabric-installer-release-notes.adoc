@@ -12,7 +12,7 @@ This release includes the following fixes and enhancements:
 
 * Added: Support for running backup and restore jobs through OpsCenter.
 * Updated: Kubernetes upgraded to `v1.14.2`.
-* Added: Security patches
+* Added: Security vulnerability patch
 * Updated: `kubedns` is replaced with `coredns` to align with upstream Kubernetes defaults.
 * Updated: The _patch_ component versioning scheme is now based on the build time.
 
