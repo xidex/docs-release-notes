@@ -4,12 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, connector, box
 
-*TBD Release date*
-
-_Select_
-
-xref:3.9@mule-runtime::box-connector.adoc[Box Connector User Guide] +
-https://mulesoft.github.io/mule-box-connector[Box Connector Reference]
+Support Category: Select
 
 Anypoint Connector for Box provides as a bi-directional gateway between Box, a secure content management and collaboration platform, and Mule.
 
@@ -24,7 +19,7 @@ Anypoint Connector for Box provides as a bi-directional gateway between Box, a s
 
 == 3.2.1
 
-*Date of release TBD*
+*July 2019
 
 === Compatibility
 
@@ -37,9 +32,6 @@ Anypoint Connector for Box provides as a bi-directional gateway between Box, a s
 |Box Java SDK |2.32.0
 |===
 
-=== Features
-
-None.
 
 === Fixes
 * The `login` field from the Get User operation was always null (SE-12082).
