@@ -21,12 +21,17 @@ These are the release notes for patches which are made to the Mule runtimes on R
 * Fixed: Batch job corrupted when debugging app [SE-9826]
 * Fixed: IBM MQ listener receiving REPLY_TO queue header message unable to reconnect after the queue manager restarts. [SE-11261]
 
-
 === 4.1.4 `v1.2.27`
+
+* Fixed: CorrelationId is not included in application log lines.
+
 === 4.1.3 `v1.2.20`
+
+* Fixed: CorrelationId is not included in application log lines.
+
 === 4.1.2 `v1.2.20`
 
-* Fixed: CorrelationId is not included in application log lines.  
+* Fixed: CorrelationId is not included in application log lines.
 
 == June 12 2019
 
