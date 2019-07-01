@@ -1,4 +1,4 @@
-= Mule App Maven Plugin (Mule 3) Release Notes
+= Mule App Maven Plugin Release Notes
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
