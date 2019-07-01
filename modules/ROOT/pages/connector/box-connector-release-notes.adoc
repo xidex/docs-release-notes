@@ -42,8 +42,8 @@ Anypoint Connector for Box provides as a bi-directional gateway between Box, a s
 None.
 
 === Fixes
-* Fixed "login" field in the Get User's info operation which was returning null (SE-12082)
-* The 'filter term' parameter can now be used as a query paramater in the Get Enterprise operation. (SE-9205)
+* The `login` field from the Get User operation was always null (SE-12082).
+* The Get Enterprise Users operation now accepts the field `filter_term` as query parameter (SE-9205).
 
 == 3.2.0
 
