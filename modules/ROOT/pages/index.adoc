@@ -4,6 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes
 
+** xref:quick-refs/by-date-index.adoc[Release Notes by Date]
 ** xref:platform/anypoint-november-release.adoc[Anypoint Platform July and November Release: Release Notes]
 ** xref:eu-cloud/anypoint-eu-control-plane.adoc[Anypoint Platform - EU Control Plane, December 15 2017 Release Notes]
 ** xref:access-management/access-management-release-notes.adoc[Anypoint Access Management Release Notes]
