@@ -13,7 +13,7 @@ endif::[]
 
 === New Features and Enhancements
 
-None.
+* None.
 
 === Fixed Issues
 
@@ -31,7 +31,7 @@ None.
 
 === New Features and Enhancements
 
-Errors are no longer reported as a List of Strings. Errors are now reported as an actual JSON document. See xref:connectors::json/json-schema-validation.adoc[validating documents against a JSON schema with the JSON module].
+* Errors are no longer reported as a List of Strings. Errors are now reported as an actual JSON document. See xref:connectors::json/json-schema-validation.adoc[validating documents against a JSON schema with the JSON module].
 
 === Fixed Issues
 
