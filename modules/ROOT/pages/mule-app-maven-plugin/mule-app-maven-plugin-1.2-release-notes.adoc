@@ -36,7 +36,7 @@ a|
 
 * Fixed add api folder to package functionality.
 * Added support for nested folders inside app directory.
-* Added support fo adding extra files to final package zip.
+* Added support for adding extra files to final package zip.
 
 == Support
 
