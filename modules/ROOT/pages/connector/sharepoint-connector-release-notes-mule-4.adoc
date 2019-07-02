@@ -9,7 +9,7 @@ The Anypoint Connector for SharePoint lets you connect to the Microsoft SharePoi
 
 == 3.1.2
 
-*July 1, 2019*
+*July 2, 2019*
 
 === Compatibility
 
