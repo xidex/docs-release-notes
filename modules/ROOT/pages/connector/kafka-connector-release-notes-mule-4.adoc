@@ -22,7 +22,7 @@ The Anypoint Connector for Apache Kafka allows you to connect to the Apache Kafk
 
 === Fixed in this Release
 
-* Kafka Connector overrides user-defined "security.protocol=SASL_SSL" to "security.protocol=SSL" (SE-11947)
+* Kafka connector overrides the user-defined `security.protocol=SASL_SSL` to use the `security.protocol=SSL` value. (SE-11947)
 
 == 3.0.5
 
