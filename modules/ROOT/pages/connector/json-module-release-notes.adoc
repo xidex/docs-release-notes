@@ -19,7 +19,7 @@ endif::[]
 
 * JSON Module throws NPE when the connector can't load the schema. (https://www.mulesoft.org/jira/browse/MULE-15530[MULE-15530])
 * Update Guava version to 27.1-jre. (https://www.mulesoft.org/jira/browse/MULE-16648[MULE-16648])
-* Upgrade Jackson to 2.9.9 in all branches. (https://www.mulesoft.org/jira/browse/MULE-17021[MULE-17021])
+* Upgrade Jackson to 2.9.9. (https://www.mulesoft.org/jira/browse/MULE-17021[MULE-17021])
  
 == 2.0.0
 
