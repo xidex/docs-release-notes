@@ -15,9 +15,9 @@ See Also:
 
 *June 29, 2019*
 
-* FIFO queues are now available in all regions where Anypoint MQ is available
-* Enhanced MQ error response codes and messages with more clearly defined details when API calls fail
-* Fixed a bug in the reporting of historical queue usage metrics
+* FIFO queues are now available in all regions where Anypoint MQ is available.
+* Enhanced MQ error response codes and messages with more clearly defined details when API calls fail.
+* Fixed a bug in the reporting of historical queue usage metrics.
 
 == 2.2.0
 
