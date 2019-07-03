@@ -24,6 +24,11 @@ The type of issue addressed in a release includes:
 |Mule Compatibility 
 |Type
 
+|xref:mq/mq-release-notes.adoc[MQ v.2.3.0]
+|June 29
+|
+|EF, IF
+
 |xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine (Mule) for CloudHub]
 |June 27 
 |Mule 4.2.0
@@ -136,7 +141,7 @@ The type of issue addressed in a release includes:
 |======================
 
 [[june-19-connector]]
-=== June Connector, Transport, and Module Releases
+=== June, 2019 Connector, Transport, and Module Releases
 
 [cols="6,2,5,3",options=header,width="100%",frame="topbot"]
 |======================
@@ -144,11 +149,6 @@ The type of issue addressed in a release includes:
 |Date of release
 |Compatibilities 
 |Type
-
-|xref:mq/mq-release-notes.adoc[MQ v.2.3.0]
-|June 29
-|
-|EF, IF
 
 |xref:connector/amazon-s3-connector-release-notes.adoc[Amazon S3 Connector v.4.3.1]
 |June 28 
