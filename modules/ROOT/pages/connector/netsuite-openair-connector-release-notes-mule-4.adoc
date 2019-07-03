@@ -7,6 +7,26 @@ Support Category: Select
 
 The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connector that provides a connection between OpenAir and third party software.
 
+== 2.0.3 
+
+*Jul 03, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.1.0 and later
+|===
+
+=== Fixed in this Release
+
+* Fixed potential XXE Vulnerability. (CONN-2130)
+
+=== Known Issues
+
+* Do not use Metadata as a guide in Flow Designer as not all fields are visible.
+
 == 2.0.2 
 
 *May 17, 2019*
