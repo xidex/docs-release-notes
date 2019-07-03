@@ -1,4 +1,4 @@
-= NetSuite OpenAir Connector Release Notes for Mule 4
+= NetSuite OpenAir Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -9,7 +9,7 @@ The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connec
 
 == 2.0.3 
 
-*Jul 03, 2019*
+*July 3, 2019*
 
 === Compatibility
 
@@ -21,11 +21,11 @@ The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connec
 
 === Fixed in this Release
 
-* Fixed potential XXE Vulnerability. (CONN-2130)
+* Fixed potential XXE vulnerability. (CONN-2130)
 
 === Known Issues
 
-* Do not use Metadata as a guide in Flow Designer as not all fields are visible.
+* Do not use metadata as a guide in Flow Designer as not all fields are visible.
 
 == 2.0.2 
 
@@ -45,7 +45,7 @@ The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connec
 
 === Known Issues
 
-* Do not use Metadata as a guide in Flow Designer as not all fields are visible.
+* Do not use metadata as a guide in Flow Designer as not all fields are visible.
 
 == 2.0.1 
 
