@@ -1,4 +1,4 @@
-= Object Store Connector Release Notes (Mule 3)
+= Object Store Connector Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -9,7 +9,7 @@ The Anypoint Connector for the Mule Object Store enables the manipulation of obj
 
 == 2.2.1
 
-*ADD RELEASE DATE*
+*June 13, 2019*
 
 === Compatibility
 
