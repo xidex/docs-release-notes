@@ -5,7 +5,31 @@ endif::[]
 
 _Select_
 
-== 4.1.0 
+== 4.2.0
+
+*July 31 2019*
+
+=== Compatibility
+
+The Zuora connector is compatible with:
+
+[%header%autowidth]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|Only works with Studio 7.0.0 and later
+|Zuora|r247
+|===
+
+=== Features
+
+Version 4.2.0 of the connector supports the Zuora API release 247 from 2019-05-27.
+
+Api updates info can be found starting with the following link https://community.zuora.com/t5/Developers/API-Changelog/gpm-p/18092/page/6#toc-hId-475278289.
+
+The list of releases Zuora releases is available here: https://knowledgecenter.zuora.com/A_Zuora_Release_Notes/A_Zuora_Billing_Release_Notes
+
+== 4.1.0
 
 *November 16, 2018*
 
@@ -18,7 +42,7 @@ The Zuora connector is compatible with:
 |Application/Service |Version
 |Mule Runtime|Mule Enterprise Edition 4.0.0 and later
 |Anypoint Studio|Only works with Studio 7.0.0 and later
-|Zuora|v75
+|Zuora|r220
 |===
 
 === Features
