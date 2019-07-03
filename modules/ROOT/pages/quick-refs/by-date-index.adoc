@@ -3,273 +3,282 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-MuleSoft releases new and changed features and bug fixes frequently. Use this index to find release notes in reverse date order.
+Look up MuleSoft release notes in reverse date order:
 
+* <<june-19-non-connector,Non-Connector Releases for June, 2019>>
+* <<june-19-connector,Connector Releases for June, 2019>>
+
+The type of issue addressed in a release includes:
+
+* IF = Issues fixed
+* NF = New features
+* EF = Enhanced features
+
+[[june-19-non-connector]]
 == June, 2019 Non-Connector Releases
 
-[cols="5,3,5,3",options=header,width="100%",frame="topbot"]
+[cols="6,2,4,4",options=header,width="100%",frame="topbot"]
 |======================
 |Release and version 
 |Date of release
-|Compatibilities 
+|Mule Compatibility 
 |Type
 
-|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 27, 2019 
+|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine (Mule) for CloudHub]
+|June 27 
 |Mule 4.2.0
-|Feature enhancement
+|EF
 
-|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 27, 2019 
+|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule for CloudHub]
+|June 27 
 |Mule 3.8.7 - 3.8
 |Switched from OracleJDK 8 to OpenJDK 8
 
-|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 26, 2019 
+|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule for CloudHub]
+|June 26 
 |Mule 4 
-|Bug fix: SE-11261
+|IF
 
-|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 26, 2019
+|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule for CloudHub]
+|June 26
 |Mule 4.1.5 
-|Bug fix: SE-11261
+|IF
 
 |xref:anypoint-security/anypoint-security-rtf-edge.adoc[Anypoint Security Edge]
-|June 25, 2019
-|Anypoint Platform
-|Bug fix: SE-12071
+|June 25
+|
+|IF
 
-|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 19, 2019
+|xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule for CloudHub]
+|June 19
 |Mule 4.1.5 
-|Feature enhancement
+|EF
 
 |xref:anypoint-security/anypoint-security-waf-release-notes.adoc[Anypoint Security Edge Policies]
-|June 18, 2019
+|June 18
 |
-|Bug fix: SE-12165
+|IF
 
 |xref:monitoring/anypoint-monitoring-release-notes.adoc[Anypoint Monitoring]
-|June 18, 2019
+|June 18
 |Mule 3.9.x-AM, Mule 4.x-AM
-|Feature enhancement, Support ending for Mule -AM
+|EF, Support ending for Mule -AM
 
-|xref:runtime-fabric/runtime-fabric-release-notes.adoc[Runtime Fabric version 1.3.24]
-|June 17, 2019
+|xref:runtime-fabric/runtime-fabric-release-notes.adoc[Runtime Fabric v.1.3.24]
+|June 17
 |
-|Bug fix
+|IF
 
-|xref:runtime-manager/runtime-manager-2.11.3-release-notes.adoc[Anypoint Runtime Manager version 2.11.3]
-|June 15, 2019
+|xref:runtime-manager/runtime-manager-2.11.3-release-notes.adoc[Anypoint Runtime Manager v.2.11.3]
+|June 15
 |
-|Feature enhancements, bugs fixed: SE-11484, SE-11733, SE-12000
+|EF, IF
 
-|xref:design-center/design-center-release-notes-mule-apps.adoc[Flow Designer version 1.11.0]
-|June 15, 2019
+|xref:design-center/design-center-release-notes-mule-apps.adoc[Flow Designer v.1.11.0]
+|June 15
 |
-|New features, feature enhancements
+|NF, EF
 
-|xref:design-center/design-center-release-notes-mule-apps.adoc[API Designer version 2.5.0]
-|June 15, 2019
+|xref:design-center/design-center-release-notes-mule-apps.adoc[API Designer v.2.5.0]
+|June 15
 |
-|New features, feature enhancements, bug fixes
+|NF, EF, IF
 
 |xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 12, 2019
+|June 12
 |Mule 4
-|Bug fix: SE-11599
+|IF
 
 |xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 12, 2019
+|June 12
 |Mule 4
-|Bug fix: SE-11599
+|IF
 
-|xref:monitoring/anypoint-monitoring-installer-release-notes.adoc[Anypoint Monitoring Installer version 2.1.4.0]
-|June 7, 2019
+|xref:monitoring/anypoint-monitoring-installer-release-notes.adoc[Anypoint Monitoring Installer v.2.1.4.0]
+|June 7
 |
-|Bug fix: SE-11772
+|IF
 
-|xref:runtime-fabric/runtime-fabric-release-notes.adoc[Runtime Fabric version 1.3.19]
-|June 7, 2019
+|xref:runtime-fabric/runtime-fabric-release-notes.adoc[Runtime Fabric v.1.3.19]
+|June 7
 |
-|Feature enhancement, bug fix
+|EF, IF
 
 |xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 7, 2019
+|June 7
 |Mule 4.1.5, 3.9.1, 3.9.2
-|Bug fixes: SE-9826, SE-11753
+|IF
 
 |xref:apikit/apikit-for-odata-2.0.3.adoc[APIkit for OData 2.0.3]
-|June 5, 2019
+|June 5
 |Mule 4.1.x
-|Bug fixes
+|IF
 
 |xref:cloudhub/cloudhub-runtimes-release-notes.adoc[Mule runtime engine for CloudHub]
-|June 4, 2019
+|June 4
 |Mule 4.1.4, 4.1.5, and 4.2.0
-|Bug fixes: SE-12023, SE-11887
+|IF
 
 |xref:mule-maven-plugin/mule-maven-plugin-3.3.1-release-notes.adoc[Mule maven Plugin 3.3.1]
-|June 3, 2019
-|Mule 4.x, Studio 7.x
-|Bug fixes
+|June 3
+|Mule 4.x
+|IF
 
-|xref:/mule-runtime/mule-esb.adoc[Upgrading Mule 4.x to 4.n]
-|June, 2019
+|xref:mule-runtime/mule-esb.adoc[Upgrading Mule 4.x to 4.n]
+|June
 |Mule 4.x
 |Upgrade instructions
 
 |xref:exchange/anypoint-exchange-release-notes.adoc[Anypoint Exchange]
-|June, 2019
+|June
 |
-|Feature enhancements; bug fixes: EXEC-3793, EXC-3669, EXC-3642, EXC-3511, EXC-3503, EXC-3254
+|EF, IF
 |======================
 
-=== June, 2019 Connector, Transport, and Module Releases
+[[june-19-connector]]
+=== June Connector, Transport, and Module Releases
 
-[cols="5,3,5,3",options=header,width="100%",frame="topbot"]
+[cols="6,2,4,4",options=header,width="100%",frame="topbot"]
 |======================
-|Release and version 
+|Release and version
 |Date of release
 |Compatibilities 
 |Type
 
-|xref:mq/mq-release-notes.adoc[MQ version 2.3.0]
-|June 29, 2019
+|xref:mq/mq-release-notes.adoc[MQ v.2.3.0]
+|June 29
 |
-|Feature enhancements, bug fix
+|EF, IF
 
-|xref:connector/amazon-s3-connector-release-notes.adoc[Amazon S3 Connector version 4.3.1]
-|June 28, 2019 
-|Mule 3.5 and later; AWS SDK for Java 1.11.500
-|Bug fix (MULE-16999)
+|xref:connector/amazon-s3-connector-release-notes.adoc[Amazon S3 Connector v.4.3.1]
+|June 28 
+|Mule 3.5 and later
+|IF
 
-|xref:connector/sap-s4-hana-connector-release-notes-mule-4.adoc[SAP S/4HANA Cloud Connector version 1.0.0]
-|June 28, 2019
+|xref:connector/sap-s4-hana-release-notes-mule-4.adoc[SAP S/4HANA Cloud Connector v.1.0.0]
+|June 28
 |Mule 4
-|New release
+|NF
 
-|xref:connector/sap-connector-release-notes-mule-4.adoc[SAP Connector version 4.3.1]
-|June 27, 2019 
-| Mule 4.0.0 and later
-Anypoint Studio 7.0 and later
-Java 8
-|Bug fix (MULE-16999)
+|xref:connector/sap-s4-hana-connector-release-notes-mule-4.adoc[SAP Connector v.4.3.1]
+|June 27 
+|Mule 4.0.0 and later
+|IF
 
-|xref:connector/salesforce-connector-release-notes-mule-4.adoc[Salesforce Connector version 9.7.4]
-|June 26, 2019
-|Mule 4 Studio 7
-|Feature enhancement, bug fixes
+|xref:connector/salesforce-connector-release-notes-mule-4.adoc[Salesforce Connector v.9.7.4]
+|June 26
+|Mule 4
+|EF, IF
 
-|xref:connector/netsuite-connector-release-notes-mule-4.adoc[Netsuite Connector version 8.3.4]
-|June 26, 2019
+|xref:connector/netsuite-connector-release-notes-mule-4.adoc[Netsuite Connector v.8.3.4]
+|June 26
 |Mule 4.0.0 and later, SuiteTalk API v2017.2
-|Bug fix: CONN-2112
+|IF
 
-|xref:connector/json-module-release-notes.adoc[JSON Module version 2.0.1]
-|June 26, 2019
+|xref:connector/json-module-release-notes.adoc[JSON Module v.2.0.1]
+|June 26
 |Mule 4.1.1
-|Bug fixes: MULE-15530, MULE-16648, MULE-17021
+|IF
 
 |xref:connector/ldap-connector-release-notes-mule-4.adoc[LDAP Connector]
-|June 24, 2019
+|June 24
 |Mule 4.1.5
-|Bug fix: SE-11864
+|IF
 
-|xref:connector/hds-connector-release-notes-mule-4.adoc[HDFS Connector version 6.0.1]
-|June 21, 2019
+|xref:connector/hdfs-connector-release-notes-mule-4.adoc[HDFS Connector v.6.0.1]
+|June 21
 |Mule 4 
-|Bug fix
+|IF
 
 |xref:connector/amazon-sqs-connector-release-notes-mule-4.adoc[Amazon SQS Connector]
-|June 21, 2019
+|June 21
 |Mule 4.1.0 and later
-|Bug fix: SE-12178
+|IF
 
-|xref:connector/kafka-connector-release-notes-mule-4.adoc[Kafka version 3.0.5]
-|June 19, 2019
+|xref:connector/kafka-connector-release-notes-mule-4.adoc[Kafka v.3.0.5]
+|June 19
 |Mule 4 
-|Feature enhancement, bug fix
+|EF, IF
 
-|xref:connector/ms-service-bus-connector-release-notes-mule-4.adoc [Microsoft Service Bus Connector version 2.1.1]
-|June 19, 2019
+|xref:connector/ms-service-bus-connector-release-notes-mule-4.adoc[Microsoft Service Bus Connector v.2.1.1]
+|June 19
 |Mule 4.0.0 and later
-|Feature enhancement
+|EF
 
 |xref:anypoint-security/anypoint-security-rtf-edge.adoc[Anypoint Security Edge]
-|June 18, 2019
+|June 18
 |Mule 4
-|Bug fix: SE-12071
+|IF
 
-|xref:connector/connector-wsc.adoc[WSC Connector version 1.3.3]
-|June 18, 2019
+|xref:connector/connector-wsc.adoc[WSC Connector v.1.3.3]
+|June 18
 |Mule 4
-|Bug fix: MULE-16970
+|IF
 
 |xref:connector/x12-edi-connector-release-notes-mule-4.adoc[X12 EDI Connector v2.1.1]
-|June 18, 2019
+|June 18
 |Mule 4
-|Bug fix: SE-10716
+|IF
 
 |xref:connector/anypoint-enterprise-security-release-notes.adoc[Anypoint Enterprise Security Connector v1.8.2]
-|June 17, 2019
+|June 17
 |Mule 3.9.x
-|Bug fixes: SEC-333, SEC-335
+|IF
 
-|xref:connector/connector-ibm-mq.adoc[IBM MQ Connector version 1.5.0]
-|June 13, 2019
+|xref:connector/connector-ibm-mq.adoc[IBM MQ Connector v.1.5.0]
+|June 13
 |
-|Feature enhancement
+|EF
 
-|xref:/connector/connector-jms.adoc[JMS Connector version 1.6.0]
-|June 13, 2019
+|xref:connector/connector-jms.adoc[JMS Connector v.1.6.0]
+|June 13
 |
-|Feature enhancement
+|EF
 
-|xref:connector/microsoft-connector-release-notes-mule-4.adoc[Microsoft PowerShell Connector version 2.0.1]
-|June 13, 2019
+|xref:connector/microsoft-powershell-connector-release-notes-mule-4.adoc[Microsoft PowerShell Connector v.2.0.1]
+|June 13
 |Mule 4.1.0 and later
-|Bug fix: SE-11546
+|IF
 
-|xref:connector/kafka-connector-release-notes-mule-4.adoc[Apache Kafka Connector version 3.0.5]
-|June 13, 2019
+|xref:connector/kafka-connector-release-notes-mule-4.adoc[Apache Kafka Connector v.3.0.5]
+|June 13
 |
-|Feature enhancement, bug fix: KIP-266
+|EF, IF
 
-|xref:connector/ms-dynamics-nav-connector-release-notes-mule-4.adoc[Microsoft Dynamics NAV Connector version 2.0.1]
-|June 10, 2019
+|xref:connector/ms-dynamics-nav-connector-release-notes-mule-4.adoc[Microsoft Dynamics NAV Connector v.2.0.1]
+|June 10
 |Mule Enterprise Edition 4.0.0 and later
-|Bug fixed: SE-11902
+|IF
 
-|xref:connector/connector/sap-connector-release-notes.adoc[SAP Transport version 3.2.2]
-|June 6, 2019
+|xref:connector/sap-connector-release-notes.adoc[SAP Transport v.3.2.2]
+|June 6
 |Mule 3.5.x and later
-|Bug fixes: SE-10985, SE-10985
+|IF
 
-|xref:connector/ibm-ctg-connector-release-notes.adoc[IBM CTG Connector version 1.2.0]
-|June 6, 2019
+|xref:connector/ibm-ctg-connector-release-notes.adoc[IBM CTG Connector v.1.2.0]
+|June 6
 |Mule 3.7, 3.8, 3.9
-|Feature enhancement, bug fix
+|EF, IF
 
-|xref:connector/redis-connector-release-notes-mule-4.adoc[Redis Connector version 5.1.1]
-|June 6, 2019
+|xref:connector/redis-connector-release-notes-mule-4.adoc[Redis Connector v.5.1.1]
+|June 6
 |Mule 4.0 and later
-|Bug fix: SE-11775
+|IF
 
-|xref:connector/connector-db.adoc[DB Connector version 1.5.4]
-|June 6, 2019
+|xref:connector/connector-db.adoc[DB Connector v.1.5.4]
+|June 6
 |Mule 4.1.1
-|Bug fix: MULE-16961, MULE-16950
+|IF
 
-|xref:connector/amazon-s3-connector-release-notes-mule-4.adoc[Amazon S3 Connector version 5.3.2]
-|June 3, 2019
+|xref:connector/amazon-s3-connector-release-notes-mule-4.adoc[Amazon S3 Connector v.5.3.2]
+|June 3
 |Mule 4.1.0 and later
-|Bug fix: CONN-1942
+|IF
 
-|xref:connector/workday-connector-release-notes-mule-4.adoc[Workday Connector version 10.0.1]
-|June, 2019
+|xref:connector/workday-connector-release-notes-mule-4.adoc[Workday Connector v.10.0.1]
+|June
 |Mule 4.1.0 and later
-|Bug fix
+|IF
 |======================
 
 == See Also
