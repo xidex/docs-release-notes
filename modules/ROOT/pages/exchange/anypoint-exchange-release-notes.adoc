@@ -9,7 +9,7 @@ endif::[]
 
 * Markdown editor supports toggling bold text. (EXC-3825)
 * Improved validation of user input in API Instances table. (EXC-3809)
-* Provide full control of heading levels in both markdown editor and visual editor. (EXC-3643)
+* Both markdown editor and visual editor provide full control of heading levels. (EXC-3643)
 * Improved validation of user input when entering tags. (EXC-3414)
 
 === Fixed in this Release
