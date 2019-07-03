@@ -3,6 +3,25 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== July 2019
+
+=== New Features
+
+* Markdown editor supports toggling bold text. (EXC-3825)
+* Improved validation of user input in API Instances table. (EXC-3809)
+* Provide full control of heading levels in both markdown editor and visual editor. (EXC-3643)
+* Improved validation of user input when entering tags. (EXC-3414)
+
+=== Fixed in this Release
+
+* Edit mode does not show incorrect "Loading API" message. (EXC-3810)
+* Correctly render short and wide asset icons. (EXC-3792)
+* Sharing an asset with a user while related assets are being generated shares the generated assets with the user. (EXC-3719)
+* Using the mocking service through Exchange correctly recognizes headers and security schemas. (EXC-3711)
+* Validate `groupId` and `assetId` correctly when publishing through Maven. (EXC-3361)
+* User input entered while the API Console is loading is preserved. (EXC-3024)
+* SSH connector has correct metadata and can be installed using Exchange from Anypoint Studio 6. (EXC-3014)
+
 == June 2019
 
 === New Features
