@@ -23,8 +23,7 @@ The Email connector can send and retrieve email messages over the standard email
 
 === Fixed Issues
 
-* Update java mail to jakarta 1.6.3, java activation to jakarta 1.2.1 and parent version to 1.1.5 to be sure that the only transitive dep is javax.activation 1.2.1 (https://www.mulesoft.org/jira/browse/MULE-17052[MULE-17052])
-
+* Updated Java mail to Jakarta 1.6.3, Java activation to Jakarta 1.2.1, and the parent version to 1.1.5 to be sure that the only transitive dependency is javax.activation 1.2.1. (https://www.mulesoft.org/jira/browse/MULE-17052[MULE-17052])
 
 == 1.1.5
 
