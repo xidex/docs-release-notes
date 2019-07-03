@@ -2,28 +2,27 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, SFTP, connector, release notes
 
-*July 2019*
+Support Category: Select
 
 == 1.2.5
 
-*Jul 1, 2019*
+*July 1, 2019*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.1*
 
 === Fixed Issues
 
-* Libraries that may contain vulnerabilities were updated (MULE-16747)
-* Fixed a bug that made time between size check not behave as expected when time unit was not milliseconds. (MULE-17004)
+* Libraries that may contain vulnerabilities were updated. (MULE-16747)
+* Fixed a bug that made the time between a size check not behave as expected when the time unit was not milliseconds. (MULE-17004)
 
 == 1.2.4
 
-*Nov 20, 2018*
+*November 20, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.1*
 
@@ -33,9 +32,9 @@ endif::[]
 
 == 1.2.3
 
-*Oct 23, 2018*
+*October 23, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.1*
 
@@ -47,7 +46,7 @@ endif::[]
 
 *July 19, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.0*
 
@@ -59,7 +58,7 @@ endif::[]
 
 *June 26, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.0*
 
@@ -73,7 +72,7 @@ endif::[]
 
 *May 7, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.0*
 
@@ -88,12 +87,11 @@ endif::[]
 * SFTP getting partial file. (MULE-14824)
 * SFTP Connector does not check for files recursively if a filenamePattern is given. (MULE-14863)
 
-
 == 1.1.2
 
-*Mar 14, 2018*
+*March 14, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
 
 *Mule 4.1.0*
 
@@ -103,7 +101,7 @@ endif::[]
 
 == 1.1.1
 
-*Feb 02, 2018*
+*February 02, 2018*
 
 === Fixed Issues
 
@@ -111,7 +109,7 @@ endif::[]
 
 == 1.1.0
 
-*Jan 19, 2018*
+*January 19, 2018*
 
 === New Features and Enhancements
 
@@ -130,4 +128,4 @@ Mule 4.1
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
