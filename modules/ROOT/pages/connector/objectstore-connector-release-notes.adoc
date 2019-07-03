@@ -1,43 +1,61 @@
-= Object Store Connector Release Notes (Mule 3)
+= Object Store Connector Release Notes - Mule 3
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: object store, connector, release notes, mule
 
-*June 2018*
+Support Category: Select
 
-_Select_
+The Anypoint Connector for the Mule Object Store enables the manipulation of object stores within Mule 3. This connector provides access to default in-memory, custom, and persistent object stores.
 
-xref:3.9@mule-runtime::object-store-connector.adoc[Object Store Connector Guide]
+== 2.2.1
 
-The Anypoint Connector for the Mule Object Store enables the manipulation of object stores within Mule. This connector provides access to default in-memory, custom, and persistent object stores.
+*June 13, 2019*
 
-== Compatibility
-
-The Object Store connector is compatible with:
+=== Compatibility
 
 [%header%autowidth.spread]
 |===
-|Application/Service|Version
-|Mule Runtime|3.6.x and later
-|ObjectStore|2013
-|Java|1.7.0_x
-|Anypoint Studio|5.x and later
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore |2013
+|Java |7
+|Anypoint Studio |5 and 6
 |===
+
+=== Features
+
+None.
+
+=== Fixed in this Release
+
+* Default value functionality fixed.
+
+=== Known Issues
+
+None.
 
 == 2.2.0
 
 *June 8, 2018*
 
-*Warning:* This version behaves differently than previous versions when dealing with object store references and partitions. Previously, when setting an object store reference, the `partition` name parameter was ignored. It is now used, and the connector tries to create that partition and use it.
+=== Compatibility
 
-This change means that:
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore|2013
+|Java|7
+|Anypoint Studio|5 and 6
+|===
 
-* If you define an objectstore-ref and the object store is partitionable, the connector uses the partition name.
-* If you define an objectstore-ref and the object store is NOT partitionable, the connector ignores the partition name.
-* If you don't define an objectstore-ref, but supply a partition name, the connector applies the partition name to the default object store.
+=== Features
+
+None.
 
 === Fixed in this Release
+
+*Warning:* This version behaves differently than previous versions when dealing with object store references and partitions. Previously, when setting an object store reference, the `partition` name parameter was ignored. It is now used, and the connector tries to create that partition and use it.
 
 * *`Dispose Store` operation on CloudHub* - The *Dispose Store* operation would not work under CloudHub with Object Store v2. This has been fixed.
 * *Partitionable stores* - Previously, the `partition` parameter was ignored when the user provided an Object Store reference. This was changed, and the connector will attempt to create the partition in the given Object Store instance, if it is partitionable.
@@ -50,52 +68,141 @@ This change means that:
 
 *March 2, 2018*
 
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore|2013
+|Java|7
+|Anypoint Studio|5 and 6
+|===
+
+=== Features
+
+None.
+
 === Fixed in this Release
 
 * *ClassCastException when target property is defined* - The retrieve method used to fail with a ClassCastException when a "target" property was defined and the payload sent to the connector was non-serializable. This is no longer the case.
 
+=== Known Issues
+
+None.
 
 == 2.1.0
 
 *February 3, 2017*
 
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore|2013
+|Java|7
+|Anypoint Studio|5 and 6
+|===
+
+=== Features
+
 * New operation: *Dispose store*: Removes an object store partition. Before, the only way to remove an object store partition was by calling the `disposePartition` function of the `ObjectStoreManager` inside a Java custom component.
+
+=== Fixed in this Release
+
+None.
+
+=== Known Issues
+
+None.
 
 ==  2.0.1
 
 *June 21, 2016*
 
-=== Fixes
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore|2013
+|Java|7
+|Anypoint Studio|5 and 6
+|===
+
+=== Features
+
+None.
+
+=== Fixed in this Release
 
 * When using a persistent object store, all entries were getting deleted, in error, at shutdown and re-deployment.
+
+=== Known Issues
+
+None.
 
 == 2.0.0
 
 *May 18, 2016*
 
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore|2013
+|Java|7
+|Anypoint Studio|5 and 6
+|===
+
+=== Features
+
 * All processors are executed inside a lock, thus providing consistency and avoiding data loss or corruption when working with transactions or concurrency, for example.
 
-=== Fixes
+=== Fixed in this Release
 
 * Processor *retrieveWithLock* was removed as a consequence of the lock implementation described above.
+* Updated connector support category to link:/mule-user-guide/v/3.8/anypoint-connectors#connector-categories[Select].
+* Added user manual describing the usage of the connector.
+
+=== Known Issues
+
+None.
 
 == 1.3.3
 
 *August 3, 2015*
 
-_Community_
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore|2013
+|Java|7
+|Anypoint Studio|5 and 6
+|===
 
 === Features
 
 Added two new operations: `retrieveWithLock` and `retrieveStore`.
 
-=== Fixes
+=== Fixed in this Release
 
 * Previously, the retrieve operation did not modify the payload when the target property was set. This has been fixed.
 * Fixed an error that caused the connector to not validate its global parameters.
 
+=== Known Issues
+
+None.
 
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
