@@ -59,6 +59,8 @@ endif::[]
 
 ** xref:mule-maven-plugin/mule-maven-plugin-release-notes.adoc[Mule Maven Plugin Release Notes]
 
+** xref:mule-app-maven-plugin/mule-app-maven-plugin-release-notes.adoc[Mule App Maven Plugin Release Notes]
+
 
 ** xref:platform/release-bulletins.adoc[Mule Release Bulletins]
 
