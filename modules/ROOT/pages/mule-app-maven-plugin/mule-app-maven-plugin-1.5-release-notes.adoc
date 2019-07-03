@@ -34,7 +34,7 @@ a|
 == Features and Functionality
 === Resolved Issues
 
-* Fixed an issue caused when generating an application package with sources and importing it to Studio.
+* Fixed an issue that prevented generating an application package with sources and importing it to Studio.
 
 == Support
 
