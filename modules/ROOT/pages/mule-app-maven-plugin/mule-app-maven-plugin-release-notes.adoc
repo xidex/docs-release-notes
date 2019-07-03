@@ -1,0 +1,18 @@
+= Mule App Maven Plugin Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: maven, maven plugin, maven release notes, plugin
+
+* xref:mule-app-maven-plugin/mule-app-maven-plugin-1.8-release-notes.adoc[Mule App Maven Plugin 1.8 Release Notes]
+* xref:mule-app-maven-plugin/mule-app-maven-plugin-1.7-release-notes.adoc[Mule App Maven Plugin 1.7 Release Notes]
+* xref:mule-app-maven-plugin/mule-app-maven-plugin-1.6-release-notes.adoc[Mule App Maven Plugin 1.6 Release Notes]
+* xref:mule-app-maven-plugin/mule-app-maven-plugin-1.5-release-notes.adoc[Mule App Maven Plugin 1.5 Release Notes]
+* xref:mule-app-maven-plugin/mule-app-maven-plugin-1.4-release-notes.adoc[Mule App Maven Plugin 1.4 Release Notes]
+* xref:mule-app-maven-plugin/mule-app-maven-plugin-1.3-release-notes.adoc[Mule App Maven Plugin 1.3 Release Notes]
+* xref:mule-app-maven-plugin/mule-app-maven-plugin-1.2-release-notes.adoc[Mule App Maven Plugin 1.2 Release Notes]
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum]
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal]

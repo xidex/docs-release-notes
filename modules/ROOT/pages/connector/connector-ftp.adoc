@@ -3,6 +3,20 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Support Category: Select
+
+== 1.3.1
+
+*June 28, 2019*
+
+=== Minimum Mule Version
+
+*4.1.1*
+
+=== Fixed Issues
+
+* Fixed a bug that caused the connector's listener to skip a file due to a race condition. When the polling frequency of the listener was low, the autodelete flag was true, there was a burst of files to process, and the processing of each file took longer than the polling frequency, a file could be skipped. (MULE-16999)
+
 == 1.3.0
 
 *May 23, 2019*

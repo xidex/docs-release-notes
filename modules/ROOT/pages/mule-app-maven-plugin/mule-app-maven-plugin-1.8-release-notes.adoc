@@ -1,0 +1,42 @@
+= Mule App Maven Plugin 1.8 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Mule App Maven Plugin 1.8 is mainly focused on fixing bugs.
+
+== Hardware and software requirements
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|SO
+a|
+* Microsoft Windows 8+
+* Apple Mac OS X 10.10+
+* Linux (tested on Ubuntu 15)
+| JDK
+a|
+* JRE 1.7.0 (recommended JRE 1.7.0_79/80)
+* JRE 1.8
+| Maven
+a|
+* 3.3
+* 3.5
+|===
+
+== Compatibility
+
+* Mule Runtime Engine 3.7.x
+* Mule Runtime Engine 3.8.x
+* Mule Runtime Engine 3.9.x
+
+== Features and Functionality
+=== Resolved Issues
+
+* Fixed packaging issues for MUnit tests resources.
+
+== Support
+
+* http://forums.mulesoft.com/[MuleSoft’s Forum]
+* http://www.mulesoft.com/support-login[MuleSoft’s Customer Portal]

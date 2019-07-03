@@ -1,0 +1,28 @@
+= SAP S/4HANA Cloud Connector Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Support Version: Premium
+
+The Anypoint Connector for SAP S/4HANA Cloud Connector provides full support to query, create, update, and delete entities, and execute remote functions using the S/4HANA API.
+
+== 1.0.0
+
+*June 28, 2019*
+
+Mule 4 version of the SAP S/4HANA Cloud Connector.
+
+=== Compatibility
+
+[%header%autowidth]
+|===
+|Software |Version
+|Mule Runtime | Mule Runtime Enterprise Edition 4.1.1 and later
+|S/4HANA API | OData API
+|===
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
