@@ -17,7 +17,7 @@ The type of issue addressed in a release includes:
 [[june-19-non-connector]]
 == June, 2019 Non-Connector Releases
 
-[cols="6,2,4,4",options=header,width="100%",frame="topbot"]
+[cols="6,2,5,3",options=header,width="100%",frame="topbot"]
 |======================
 |Release and version 
 |Date of release
@@ -138,7 +138,7 @@ The type of issue addressed in a release includes:
 [[june-19-connector]]
 === June Connector, Transport, and Module Releases
 
-[cols="6,2,4,4",options=header,width="100%",frame="topbot"]
+[cols="6,2,5,3",options=header,width="100%",frame="topbot"]
 |======================
 |Release and version
 |Date of release
@@ -155,12 +155,12 @@ The type of issue addressed in a release includes:
 |Mule 3.5 and later
 |IF
 
-|xref:connector/sap-s4-hana-release-notes-mule-4.adoc[SAP S/4HANA Cloud Connector v.1.0.0]
+|xref:connector/sap-s4-hana-connector-release-notes-mule-4.adoc[SAP S/4HANA Cloud Connector v.1.0.0]
 |June 28
 |Mule 4
 |NF
 
-|xref:connector/sap-s4-hana-connector-release-notes-mule-4.adoc[SAP Connector v.4.3.1]
+|xref:connector/sap-connector-release-notes-mule-4.adoc[SAP Connector v.4.3.1]
 |June 27 
 |Mule 4.0.0 and later
 |IF
