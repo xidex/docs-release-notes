@@ -1,4 +1,4 @@
-= NetSuite Connector Release Notes
+= NetSuite Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,6 +6,31 @@ endif::[]
 Support Category: Select
 
 The Anypoint Connector for NetSuite synchronizes data and automates business processes between NetSuite and third-party applications, either on-premises or in the cloud.
+
+== 9.0.1
+
+*July 3, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software | Version
+|Mule Runtime | 4.0.0 and later
+|SuiteTalk API | 2018.2
+|===
+
+[NOTE]
+The *NetSuite* version is *not* the same as the *SuiteTalk API* version. Your account may be running on a version of NetSuite different than the version of the API you are using.
+
+=== Fixed in this Release
+
+* Fixed potential XXE vulnerability. (CONN-2112)
+
+=== Known Issues
+
+None.
+
 
 == 9.0.0
 
