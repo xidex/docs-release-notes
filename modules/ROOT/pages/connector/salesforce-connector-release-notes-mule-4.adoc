@@ -5,6 +5,32 @@ endif::[]
 
 Support Category: Select
 
+== 9.7.6
+
+*July 5, 2019*
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |Mule Enterprise Edition 4.1.1 and later
+|Anypoint Studio |7.1.0 and later
+|Salesforce |v37.0, v38.0, v39.0, v40.0, v41.0, v42.0, v43.0, v44.0, v45.0, v46.0
+|===
+
+=== Features
+
+* Added support for Salesforce v46.0
+
+=== Fixed Issues
+
+* Salesforce connector Get Updated Objects not returning updated records is now fixed. (SE-12253)
+
+=== Known Issues
+
+* Salesforce connector replayId feature gap between 3.x and 4.x. (SE-11258)
+* Salesforce connector autoreplays after restarting the application in CloudHub. (SE-9992)
+* Salesforce connector OAuth v2.0 fails to get the right session and throws INVALID_SESSION_ID after being idle. This issue still appears for the sources and operations that use the Bulk API and the Apex API. (SE-10988)
+
 == 9.7.5
 
 *July 1, 2019*
