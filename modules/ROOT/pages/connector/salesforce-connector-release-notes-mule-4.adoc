@@ -19,11 +19,11 @@ Support Category: Select
 
 === Features
 
-* Added support for Salesforce v46.0
+* Added support for Salesforce v46.0.
 
 === Fixed Issues
 
-* Salesforce connector Get Updated Objects not returning updated records is now fixed. (SE-12253)
+* The *Get Updated Objects* operation was not returning updated records. (SE-12253)
 
 === Known Issues
 
