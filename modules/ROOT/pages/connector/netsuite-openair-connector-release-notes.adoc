@@ -27,9 +27,9 @@ The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connec
 The OpenAir Connector requires an *Enterprise* License.
 
 === Fixed in this Release
-* Fixed Unresolved prefix 'soaplite' for attribute value error in upsert operations (SE-6082)
-* Fixed Reconnect strategy not handle SocketTimeoutException (SE-6661)
-* Fixed potential XXE Vulnerability (CONN-2130)
+* Fixed Unresolved prefix 'soaplite' for attribute value error in upsert operations. (SE-6082)
+* Fixed Reconnect strategy not handle SocketTimeoutException. (SE-6661)
+* Fixed potential XXE Vulnerability. (CONN-2130)
 
 == 1.0.2
 
