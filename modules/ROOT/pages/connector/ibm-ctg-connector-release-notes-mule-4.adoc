@@ -24,7 +24,7 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 
 === Fixed in this Release
 
-* The connector would sometimes incorrect asume that the payload is empty for the operations of executeCommArea and executeMultipleChannels . This was fixed now (SE-12156)
+* The connector would sometimes incorrectly assume that the payload was empty for the *executeCommArea* and *executeMultipleChannels* operations. (SE-12156)
 
 == 2.3.0
 
@@ -48,7 +48,7 @@ This timeout is the maximum amount of time in milliseconds that a managed connec
 
 === Fixed in this release
 
-* The conector would sometimes incorrectly assume that the input payload is empty. This was fixed, and will now work regardless of the type of InputStream the connector's operations receive. (SE-12156)
+* The conector occasionally assumed incorrectly that the input payload was empty. This was fixed so that regardless of the type of InputStream the connector's operations receive, the connector works correctly. (SE-12156)
 
 == 2.2.0
 
