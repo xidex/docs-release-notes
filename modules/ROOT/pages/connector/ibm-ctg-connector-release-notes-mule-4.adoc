@@ -24,7 +24,7 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 
 === Fixed in this Release
 
-* The conector would sometimes incorrectly assume that the input payload is empty. This was fixed, and will now work regardless of the type of InputStream the connector's operations receive. (SE-12156)
+* The conector would occasionally incorrectly assume that the input payload was empty. This was fixed and now works regardless of the type of InputStream that the connector's operations receive. (SE-12156)
 
 == 2.3.0
 
