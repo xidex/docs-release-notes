@@ -26,7 +26,6 @@ The IBM CICS Transaction Gateway (IBM CTG) connector provides integration with b
 
 * The connector would sometimes incorrect asume that the payload is empty for the operations of executeCommArea and executeMultipleChannels . This was fixed now (SE-12156)
 
-
 == 2.3.0
 
 *June 27, 2019*
