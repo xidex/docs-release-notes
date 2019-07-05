@@ -211,7 +211,7 @@ Customers that process analytic events through Anypoint Runtime Manager and send
 | MULE-16449 | NoSuchElementException on policies with SDK routers
 | MULE-16438 | Validators are not executed when compiling a connector with parent 1.2.0
 | MULE-16435 | Extension operations logging in domain instead of app
-| MULE-16422 | MuleArtifactClassLoader does not find resources with spaces when using resource:: syntax.
+| MULE-16422 | MuleArtifactClassLoader does not find resources with spaces when using `resource::` syntax.
 | MULE-16396 | OnErrorPropagate should only rollback owned transactions
 | MULE-16392 | Fix ProcessingStrategies backpressureOnInnerCpuIntensiveSchedulerBusy flaky test
 | MULE-16364 | ManagedStreams are not semantically scoped
