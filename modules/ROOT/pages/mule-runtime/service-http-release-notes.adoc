@@ -3,6 +3,22 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.4.3
+ 
+*Jul 5, 2019* 
+
+=== Mule Version
+
+*Mule 4.2.0*
+
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+=== Fixed Issues 
+ 
+* MULE-17108: Avoid references to application classloader in grizzly static fields.  (https://www.mulesoft.org/jira/browse/MULE-17108[MULE-17108])
+
 == 1.4.2
  
 *May 24, 2019* 
