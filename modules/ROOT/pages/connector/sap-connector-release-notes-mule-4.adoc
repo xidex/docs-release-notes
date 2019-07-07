@@ -21,7 +21,7 @@ NOTE: This connector is not supported for use with Flow Designer in Design Cente
 |Mule Runtime|4.0.0 and later
 |Anypoint Studio|7.0 and later
 |Java|8
-|SAP Solution| ECC 6.0 and later
+|SAP Solution| SAP ECC 6.0 and it's subsequent enhancement packages
 |Supported Modules|SAP CRM, SAP ERP, SAP SRM, SAP SCM, and any other modules compatible with the NetWeaver platform.
 |===
 
