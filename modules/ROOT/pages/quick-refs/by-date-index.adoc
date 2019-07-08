@@ -1,17 +1,9 @@
-= MuleSoft Release Notes by Date
+= MuleSoft Release Note Summary by Month
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Find MuleSoft release notes by date:
-
-Non-Connector Release Notes
-
-* <<july-19-non-connector,Non-Connector Releases for July, 2019>>
-* <<june-19-non-connector,Non-Connector Releases for June, 2019>>
-
-* <<july-19-connector,Connector Releases for July, 2019>>
-* <<june-19-connector,Connector Releases for June, 2019>>
+The MuleSoft release note summary by month helps you scan for the latest changes.
 
 The Type column lists the types of issue addressed in the release note:
 
@@ -20,7 +12,7 @@ The Type column lists the types of issue addressed in the release note:
 * NF: New features
 
 [[july-19-non-connector]]
-== Non-Connector Releases for July, 2019
+== Non-Connector Releases for July 2019
 
 [cols="6,2,5,3",options=header,width="100%",frame="topbot"]
 |======================
@@ -41,12 +33,12 @@ The Type column lists the types of issue addressed in the release note:
 
 |xref:runtime-fabric/runtime-fabric-installer-release-notes.adoc[Runtime Fabric Installer 1.1.1561762676]
 |July 1
-|Multiple Mule versions and patch versions
+|
 |EF
 |======================
 
 [[june-19-non-connector]]
-== Non-Connector Releases for June, 2019
+== Non-Connector Releases for June 2019
 
 [cols="6,2,5,3",options=header,width="100%",frame="topbot"]
 |======================
@@ -172,7 +164,7 @@ The Type column lists the types of issue addressed in the release note:
 |======================
 
 [[july-19-connector]]
-=== Connector, Transport, and Module Releases for July, 2019
+== Connector, Transport, and Module Releases for July 2019
 
 [cols="6,2,5,3",options=header,width="100%",frame="topbot"]
 |======================
@@ -228,7 +220,7 @@ The Type column lists the types of issue addressed in the release note:
 |======================
 
 [[june-19-connector]]
-=== Connector, Transport, and Module Releases for June, 2019
+== Connector, Transport, and Module Releases for June 2019
 
 [cols="6,2,5,3",options=header,width="100%",frame="topbot"]
 |======================
