@@ -17,7 +17,7 @@ Anypoint Connector for Box provides as a bi-directional gateway between Box, a s
 . Search for the connector and click Install.
 . Follow the prompts to install the connector.
 
-== 3.2.1
+== 3.3.0
 
 *July 2019
 
@@ -32,10 +32,12 @@ Anypoint Connector for Box provides as a bi-directional gateway between Box, a s
 |Box Java SDK |2.32.0
 |===
 
+=== Features
+* The Get Enterprise Users operation now accepts the field `filter_term` as query parameter (SE-9205).
 
 === Fixes
 * The `login` field from the Get User operation was always null (SE-12082).
-* The Get Enterprise Users operation now accepts the field `filter_term` as query parameter (SE-9205).
+
 
 == 3.2.0
 
