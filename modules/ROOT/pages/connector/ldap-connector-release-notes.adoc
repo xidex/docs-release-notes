@@ -182,7 +182,7 @@ The LDAP Connector is compatible with:
 ** *Delete multi value attribute* - Deletes specific multi-valued attribute to an existing LDAP entry.
 ** *Delete single value attribute* - Deletes specific single valued attribute to an existing LDAP entry.
 ** *Exists* - Checks whether a LDAP entry exists in the LDAP server or not.
-** *Ldap entry to ldif* - Add LDAP entry to the LDAP Data Interchange Format (LDIF)
+** *Ldap entry to ldif* - Add LDAP entry to an LDAP data interchange format (LDIF) file.
 ** *Lookup* - Retrieves a unique LDAP entry.
 ** *Modify entry* - Update an existing LDAP entry.
 ** *Modify multi value attribute* - Updates specific multi-valued attribute of an existing LDAP entry.
