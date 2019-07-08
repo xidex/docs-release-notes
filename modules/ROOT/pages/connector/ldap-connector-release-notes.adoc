@@ -182,7 +182,7 @@ The LDAP Connector is compatible with:
 ** *Delete multi value attribute* - Deletes specific multi-valued attribute to an existing LDAP entry.
 ** *Delete single value attribute* - Deletes specific single valued attribute to an existing LDAP entry.
 ** *Exists* - Checks whether a LDAP entry exists in the LDAP server or not.
-** *Ldap entry to ldif* - Add LDAP entry to an LDAP data interchange format (LDIF) file.
+** *Ldap entry to ldif* - Adds an LDAP entry to an LDAP data interchange format (LDIF) file.
 ** *Lookup* - Retrieves a unique LDAP entry.
 ** *Modify entry* - Update an existing LDAP entry.
 ** *Modify multi value attribute* - Updates specific multi-valued attribute of an existing LDAP entry.
@@ -194,7 +194,7 @@ The LDAP Connector is compatible with:
 
 === Fixed in this Release
 
-* Deprecated message processors (addFromMap & modifyFromMap) have been sunset and no longer available.
+* Message processors `addFromMap` and `modifyFromMap` have been deprecated and are no longer available.
 
 === Known Issues
 
