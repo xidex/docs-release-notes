@@ -5,7 +5,7 @@ endif::[]
 
 == 1.4.3
  
-*Jul 5, 2019* 
+*July 5, 2019* 
 
 === Mule Version
 
@@ -17,7 +17,7 @@ endif::[]
  
 === Fixed Issues 
  
-* MULE-17108: Avoid references to application classloader in grizzly static fields.  (https://www.mulesoft.org/jira/browse/MULE-17108[MULE-17108])
+* Avoid references to the application classloader in Grizzly static fields. (https://www.mulesoft.org/jira/browse/MULE-17108[MULE-17108])
 
 == 1.4.2
  
