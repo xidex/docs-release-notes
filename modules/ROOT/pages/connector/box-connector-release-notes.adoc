@@ -19,7 +19,7 @@ Anypoint Connector for Box provides as a bi-directional gateway between Box, a s
 
 == 3.3.0
 
-*July 2019
+*July 09, 2019*
 
 === Compatibility
 
