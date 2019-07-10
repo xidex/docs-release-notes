@@ -11,7 +11,9 @@ The Anypoint Connector for SAP S/4HANA Cloud Connector provides full support to 
 
 *July 3, 2019*
 
-Fix *Test Connection* issue.
+=== Fixed in this Release
+
+* Fixed the *Test Connection* issue.
 
 == 1.0.0
 
