@@ -3,6 +3,57 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== 1.3.0 
+ 
+*July 5, 2019* 
+ 
+=== New Features and Enhancements 
+ 
+* Support Client Credentials gran type in the SDK (link:https://www.mulesoft.org/jira/browse/MULE-16908[MULE-16908]) 
+ 
+ 
+=== Fixed Issues 
+ 
+[%header,cols="15a,85a"] 
+|===
+|Issue |Description
+| link:https://www.mulesoft.org/jira/browse/MULE-16540[MULE-16540] | AuthorizationCodeState not updated on certain circumstances
+|=== 
+
+== 1.2.1 
+ 
+*June 19, 2019* 
+ 
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+ 
+=== Fixed Issues 
+ 
+[%header,cols="15a,85a"] 
+|===
+|Issue |Description
+| link:https://www.mulesoft.org/jira/browse/MULE-17006[MULE-17006] | Reuse http clients for OAuth token request
+|=== 
+
+== 1.1.7 
+ 
+*June 19, 2019* 
+ 
+=== New Features and Enhancements 
+ 
+* None. 
+ 
+ 
+=== Fixed Issues 
+ 
+[%header,cols="15a,85a"] 
+|===
+|Issue |Description
+| link:https://www.mulesoft.org/jira/browse/MULE-17006[MULE-17006] | Reuse http clients for OAuth token request
+|=== 
+
 == 1.2.0 
  
 *April 25, 2019* 
