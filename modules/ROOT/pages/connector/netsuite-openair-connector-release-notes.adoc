@@ -4,13 +4,32 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: openair, netsuite, release notes
 
-*March 3, 2017*
-
 _Select_
 
 *Guide:* xref:3.9@mule-runtime::netsuite-openair-connector.adoc[NetSuite OpenAir Connector]
 
 The Anypoint Connector for NetSuite OpenAir is a closed source Enterprise connector that provides a connection between OpenAir and third party software.
+
+== 1.0.3
+
+*July 5, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime |3.7.0 and later
+|Anypoint Studio |5.3.2 and later
+|===
+
+
+The OpenAir Connector requires an *Enterprise* License.
+
+=== Fixed in this Release
+* Fixed Unresolved prefix 'soaplite' for attribute value error in upsert operations. (SE-6082)
+* Fixed Reconnect strategy not handle SocketTimeoutException. (SE-6661)
+* Fixed potential XXE Vulnerability. (CONN-2130)
 
 == 1.0.2
 
