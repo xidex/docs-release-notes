@@ -7,6 +7,12 @@ Support Version: Premium
 
 The Anypoint Connector for SAP S/4HANA Cloud Connector provides full support to query, create, update, and delete entities, and execute remote functions using the S/4HANA API.
 
+== 1.0.1
+
+*July 3, 2019*
+
+Fix Test Connection issue.
+
 == 1.0.0
 
 *June 28, 2019*
