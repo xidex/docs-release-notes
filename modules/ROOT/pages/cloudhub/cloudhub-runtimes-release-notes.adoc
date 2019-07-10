@@ -6,6 +6,17 @@ endif::[]
 
 These are the release notes for patches made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== July 10, 2019
+
+4.2.0 Runtime Update:
+
+* PipelineMessageNotificationListener returns a PipelineMessageNotification with null event when an exception is raised in the Mule flow. [MULE-17081]
+* org.springframework.beans.factory.support.NullBean cannot be cast. [SE-12247]
+
+3.9.2 and 3.9.3 Runtime Update:
+
+* Error loading System Properties. [SE-11195]
+
 == June 27, 2019
 
 4.2.0 Runtime Update:
