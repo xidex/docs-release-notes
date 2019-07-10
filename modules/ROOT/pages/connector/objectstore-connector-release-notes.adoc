@@ -204,5 +204,6 @@ None.
 
 == See Also
 
+* http://mulesoft.github.io/mule-objectstore-mule3-connector/[Object Store Technical Reference]
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
