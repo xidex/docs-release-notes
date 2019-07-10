@@ -4,12 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, connector, box
 
-*June 2018*
-
-_Select_
-
-xref:3.9@mule-runtime::box-connector.adoc[Box Connector User Guide] +
-https://mulesoft.github.io/mule-box-connector[Box Connector Reference]
+Support Category: Select
 
 Anypoint Connector for Box provides as a bi-directional gateway between Box, a secure content management and collaboration platform, and Mule.
 
@@ -21,6 +16,28 @@ Anypoint Connector for Box provides as a bi-directional gateway between Box, a s
 . Click Login in Anypoint Exchange.
 . Search for the connector and click Install.
 . Follow the prompts to install the connector.
+
+== 3.3.0
+
+*July 09, 2019*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime EE |3.6.x and later
+|Java|8
+|Box API | 2.0.0
+|Box Java SDK |2.32.0
+|===
+
+=== Features
+* The Get Enterprise Users operation now accepts the field `filter_term` as query parameter (SE-9205).
+
+=== Fixes
+* The `login` field from the Get User operation was always null (SE-12082).
+
 
 == 3.2.0
 
