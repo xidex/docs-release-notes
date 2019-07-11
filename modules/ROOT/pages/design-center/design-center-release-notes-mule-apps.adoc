@@ -52,7 +52,7 @@ When filling out cards for popular connectors, such as the Database connector or
 + 
 Now, see better mapping recommendations for the most common use cases.
 
-=== Fixed Issues
+// === Fixed Issues
 // PROJECTX-6834
 // * The *New Type* dialog did not indicate errors in JSON examples or JSON schemas.
 
