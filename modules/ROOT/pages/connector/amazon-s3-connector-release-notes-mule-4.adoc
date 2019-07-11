@@ -1,4 +1,4 @@
-= Amazon S3 Connector Release Notes
+= Amazon S3 Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -11,7 +11,7 @@ Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint P
 
 == 5.3.3
 
-*Date of release TBD*
+*July 11, 2019*
 
 === Compatibility
 
