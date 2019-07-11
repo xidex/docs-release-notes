@@ -38,7 +38,7 @@ These release notes cover the following versions of these features:
 
 
 == 1.11.1
-*July 11, 2019*
+*July 13, 2019*
 
 
 === Enhancements
@@ -48,13 +48,12 @@ These release notes cover the following versions of these features:
 +
 When filling out cards for popular connectors, such as the Database connector or the Slack connector, in previous releases, you had to remember the names of tables that you wanted to query or Slack channels that you wanted to send messages to. Now, rather than do that, you can click a drop-down list that is populated with the names of tables, the names of Slack channels, or other items, depending on the connector.
 
-* Spend less time searching for options in the easier-to-use toolbar
+* Automapper performance improvements
 +
-The redesign of the toolbar helps you find more quickly the options for testing, deploying, publishing, and other actions. 
 
 === Fixed Issues
 // PROJECTX-6834
-* The *New Type* dialog did not indicate errors in JSON examples or JSON schemas.
+// * The *New Type* dialog did not indicate errors in JSON examples or JSON schemas.
 
 
 
@@ -102,6 +101,7 @@ As explained in xref:design-center::dynamic-expression-field.adoc[Fill in Cards 
 * Enjoy support for Mule Runtime 4.2
 +
 Flow Designer now runs on Mule Runtime 4.2. Enjoy a stabler, more reliable experience.
+
 
 
 == 1.10.0
