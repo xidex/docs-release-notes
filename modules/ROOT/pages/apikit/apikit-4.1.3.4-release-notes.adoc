@@ -14,7 +14,7 @@ This release focused on bug fixes.
 
 == Fixed issues
 
-* APIKit console can't scroll Response
-* Parallel deployment fails with ConcurrentModificationException
-* encoded uri param gives APIKIT:NOT_FOUND
-* HTTP request hang without response when API auto-discovery enabled
+* APIKit console can't scroll `Response`.
+* Parallel deployment fails with `ConcurrentModificationException`.
+* Encoded URI parameter gives `APIKIT:NOT_FOUND`.
+* HTTP request hang without response when API auto-discovery is enabled.
