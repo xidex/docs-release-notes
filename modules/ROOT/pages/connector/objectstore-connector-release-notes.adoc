@@ -7,6 +7,33 @@ Support Category: Select
 
 The Anypoint Connector for the Mule Object Store enables the manipulation of object stores within Mule 3. This connector provides access to default in-memory, custom, and persistent object stores.
 
+== 2.2.2
+
+*Date of release TBD*
+
+=== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |3.6, 3.7, 3.8, 3.9
+|ObjectStore |2013
+|Java |7
+|Anypoint Studio |5 and 6
+|===
+
+=== Features
+
+None.
+
+=== Fixed in this Release
+
+Users weren't able to install the connector. This issue has been fixed
+
+=== Known Issues
+
+None.
+
 == 2.2.1
 
 *June 13, 2019*
