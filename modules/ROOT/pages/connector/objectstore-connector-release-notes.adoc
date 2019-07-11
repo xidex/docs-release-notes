@@ -24,11 +24,11 @@ The Anypoint Connector for the Mule Object Store enables the manipulation of obj
 
 === Features
 
-None.
+* None.
 
 === Fixed in this Release
 
-Users weren't able to install the connector. This issue has been fixed
+* Users weren't able to install this connector. This issue has been fixed.
 
 === Known Issues
 
