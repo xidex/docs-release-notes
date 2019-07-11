@@ -1,0 +1,20 @@
+= APIkit Module 1.3.4 for Mule 4 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== What's New
+
+This release focused on bug fixes.
+
+== Compatibility
+
+* Mule Runtime 4.1.2 and later
+* Anypoint Studio 7.2.0 and later
+
+== Fixed issues
+
+* APIKit console can't scroll `Response`.
+* Parallel deployment fails with `ConcurrentModificationException`.
+* Encoded URI parameter gives `APIKIT:NOT_FOUND`.
+* HTTP request hang without response when API auto-discovery is enabled.
