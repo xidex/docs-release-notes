@@ -1,0 +1,25 @@
+= APIKit for SOAP 1.2.1 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This version of APIkit for SOAP is focused on performance and bug fixes.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Mule Runtime |4.1.0 and later
+|Anypoint Studio |7.1.0 and later
+|===
+
+== Issues Fixed in this Release
+
+* Fixed error when SOAP Router was impacting significantly on the response time of the application.
+* Fixed error when the stream is closed when working with a big payload.
+* Fixed error when `errorDescription` was unable to propagate from subflow using APIKit for SOAP.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum].
