@@ -6,7 +6,7 @@ endif::[]
 
 These are the release notes for patches made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
-== July 10, 2019
+== July 11, 2019
 
 4.2.0 Runtime Update:
 
