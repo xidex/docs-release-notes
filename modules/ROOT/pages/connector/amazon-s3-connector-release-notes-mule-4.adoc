@@ -25,7 +25,7 @@ The Amazon S3 connector is compatible with:
 
 === Fixed in this Release
 
-* Connector was not displaying the tooltips for the parameters when configuring a connection. This issue is now fixed. [SE-10846]
+* Connector was not displaying tooltips for the parameters when configuring a connection. This issue is now fixed. [SE-10846]
 
 == 5.3.2
 
