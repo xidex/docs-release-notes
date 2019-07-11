@@ -1,0 +1,42 @@
+= Runtime Manager Agent 1.14.0 Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Jul 11, 2019
+
+This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager agent, version 1.14.0.
+
+== New Features and Enhancements
+
+This release contains no new features or enhancements.
+
+== Changes in This Release
+
+This release contains no changes to existing functionality.
+
+== Fixed Issues
+
+This release contains the following fixed issues:
+
+* Fixed issue where modifying a scheduler in one application is also triggering the other application's schedulers.
+
+== Known Limitations and Workarounds
+
+There are no known limitations or workarounds in this release.
+
+== Upgrade Requirements
+
+There are no upgrade requirements for this release.
+
+== Compatibility Notes
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Software|Version
+|Mule Runtime|3.6.x, 3.7.x, 3.8.x, 3.9.x
+|API Gateway|2.x and above
+|Java    |JRE 1.7.0, 1.8.0 [Oracle, IBM, OpenJDK]
+|OS       |MacOS 10.11.x, HP-UX 11i V3, AIX 7.2, Windows 2016 Server, Windows 10, Solaris 11.3, RHEL 7, Ubuntu Server 16.04
+|Runtime Manager|V2.10.0+
+|===
