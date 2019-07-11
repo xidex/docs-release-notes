@@ -10,12 +10,14 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 4.2.0 Runtime Update:
 
-* PipelineMessageNotificationListener returns a PipelineMessageNotification with null event when an exception is raised in the Mule flow. [MULE-17081]
-* org.springframework.beans.factory.support.NullBean cannot be cast. [SE-12247]
+* `PipelineMessageNotificationListener` returns a `PipelineMessageNotification` with null event when an exception is raised in the Mule flow. [MULE-17081]
+* `org.springframework.beans.factory.support.NullBean` cannot be cast. [SE-12247]
+* `FlowRef` component inside an `on-error` scope causes duplicate chain execution. [SE-12017]
 
 3.9.2 and 3.9.3 Runtime Update:
 
 * Error loading System Properties. [SE-11195]
+
 
 == June 27, 2019
 
@@ -23,11 +25,13 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 * Update scheduler pool configuration in design environment.
 
+
 == June 27, 2019
 
 3.8.7, 3.8.6, 3.8.5, 3.8.4, 3.8.2, 3.8.1 and 3.8. Runtime Update:
 
-* Switched from OracleJDK 8 to OpenJDK 8
+* Switched from OracleJDK 8 to OpenJDK 8.
+
 
 == June 26, 2019
 
