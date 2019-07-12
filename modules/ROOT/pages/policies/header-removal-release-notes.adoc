@@ -33,7 +33,7 @@ endif::[]
 
 == 1.0.0
 
-*Mar 23, 2018*
+*Mar 23, 2018* 
 
 === Minimum Mule Version
 
