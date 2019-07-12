@@ -33,7 +33,7 @@ endif::[]
 
 === Fixed Issues
 
-* The persistence scheduler was losing quota in a Mule Cluster when the node's clocks were out-of-sync. This error is not resolved.
+* The persistence scheduler was losing quota in a Mule Cluster when the node's clocks were out-of-sync. This error is now resolved.
 
 
 == 1.2.3
@@ -97,7 +97,7 @@ endif::[]
 
 === Fixed Issues
 
-* The Rate Limit policy was rejected from scheduler during high netwrok traffic. This error is now resolved.
+* The Rate Limiting policy was rejected from scheduler during high network traffic. This error is now resolved.
 
 
 == 1.1.0
