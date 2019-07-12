@@ -15,7 +15,7 @@ endif::[]
 
 === New Features and Enhancements
 
-* Performance improvements.
+* Several performance improvements were introduced in this release.
 
 === Fixed Issues
 
@@ -46,7 +46,7 @@ endif::[]
 === New Features and Enhancements
 
 * The default configuration has been modified to avoid propagating or returning policy headers unless explicitly configured by checking the "Expose headers" option.
-* Performance improvements.
+* Several performance improvements were introduced in this release.
 
 
 == 1.1.3
