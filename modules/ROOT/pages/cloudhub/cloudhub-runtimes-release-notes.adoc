@@ -10,7 +10,7 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 3.9.2 and 3.9.3 Runtime Update:
 
-* Address incomplete fix for SE-11195.
+* Address incomplete fix for SE-11195 (Error loading System Properties).
 
 
 == July 11, 2019
@@ -19,7 +19,7 @@ These are the release notes for patches made to the Mule runtimes on CloudHub. I
 
 * `PipelineMessageNotificationListener` returns a `PipelineMessageNotification` with null event when an exception is raised in the Mule flow. [MULE-17081]
 * `org.springframework.beans.factory.support.NullBean` cannot be cast. [SE-12247]
-* `FlowRef` component inside an `on-error` scope causes duplicate chain execution. [SE-12017]
+* FlowRef component inside an `on-error` scope causes duplicate chain execution. [SE-12017]
 
 3.9.2 and 3.9.3 Runtime Update:
 
