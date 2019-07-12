@@ -16,6 +16,7 @@ This release includes the following changes and improvements:
 * Bug fixes and performance improvements.
 * Fix for the CloudHub logs not seen issue. (SE-11744, SE-11514)
 * Custom categories root logging issues fixed. (SE-10609)
+* *Use Object Store v2* checkbox is selected by default when deploying an application. All new deployments use Object Store v2 by default unless specifically deselected.
 
 == 1.72.3
 
