@@ -15,7 +15,7 @@ endif::[]
 
 === New Features and Enhancements
 
-* Performance improvements.
+* Several performance improvements were introduced in this release.
 
 
 == 1.0.1
@@ -28,7 +28,7 @@ endif::[]
 
 === New Features and Enhancements
 
-* Performance improvements.
+* Several performance improvements were introduced in this release.
 
 
 == 1.0.0
