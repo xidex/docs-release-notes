@@ -28,7 +28,7 @@ endif::[]
 
 === New Features and Enhancements
 
-* Introduces support to encrypt sensitive information related to the policy. The runtime version needs to support encryption and needs to be properly configured. Encryption is supported since Mule Runtime v4.2.0.
+* Introduces support for encrypting sensitive information related to the policy. The runtime version must be correctly configured to support encryption. Encryption support was introduced in Mule Runtime v4.2.0.
 * Several performance improvements were introduced in this release.
 
 
@@ -55,7 +55,7 @@ endif::[]
 
 === New Features and Enhancements
 
-* Added violationCategory in the YAML configuration for Feedback Loop.
+* Added violationCategory in the YAML configuration file for Feedback Loop.
 
 
 == 1.1.1
@@ -68,7 +68,7 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed error when trying to set Authentication in an existing authentication object.
+* An error occurred when attemtping to set Authentication in an existing authentication object. This error is now resolved.
 
 
 == 1.1.0
@@ -85,7 +85,7 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+*  An `ExpressionRuntimeException` error occurred when a WSDL proxy receives an empty payload, or an invalid XML. This error is now resolved.
 
 
 == 1.0.0
