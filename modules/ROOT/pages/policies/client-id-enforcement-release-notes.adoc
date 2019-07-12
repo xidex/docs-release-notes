@@ -28,7 +28,7 @@ endif::[]
 
 === New Features and Enhancements
 
-* Introduces support for encrypting sensitive information related to the policy. The runtime version must be correctly configured to support encryption. Encryption support was introduced in Mule Runtime v4.2.0.
+* Introduced support for encrypting sensitive information related to the policy. The runtime version must be correctly configured to support encryption. Encryption support was introduced in Mule Runtime v4.2.0.
 * Several performance improvements were introduced in this release.
 
 
