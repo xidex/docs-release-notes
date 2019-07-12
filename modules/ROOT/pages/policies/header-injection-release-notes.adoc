@@ -27,9 +27,9 @@ endif::[]
 
 === New Features and Enhancements
 
-* Introduces support to encrypt sensitive information related to the policy. The runtime version needs to support encryption and needs to be properly configured. Encryption is supported since Mule Runtime v4.2.0.
+* Introduced support for encrypting sensitive information related to the policy. The runtime version must be correctly configured to support encryption. Encryption support was introduced in Mule Runtime v4.2.0.
 * Several performance improvements were introduced in this release.
-* Reduce policy weight.
+* Policy weight was reduced.
 
 
 == 1.0.1
@@ -42,9 +42,8 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed policy parameters arriving with extra escaping.
-* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
-
+* Resolved the policy parameters appending extra escaping issue.
+* An `ExpressionRuntimeException` error occurred when a WSDL proxy receives an empty payload, or an invalid XML. This error is now resolved.
 
 == 1.0.0
 
