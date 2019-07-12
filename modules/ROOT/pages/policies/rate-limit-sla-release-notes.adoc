@@ -5,6 +5,23 @@ endif::[]
 :keywords: mule, rate-limit, policy, release notes
 
 
+== 1.2.2
+
+*Jul 12, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Performance improvements.
+
+=== Fixed Issues
+
+* Fixed persistence scheduler losing quota in a Mule Cluster when the node's clocks are out of sync.
+
+
 == 1.2.1
 
 *Apr 30, 2019*
@@ -16,6 +33,7 @@ endif::[]
 === Fixed Issues
 
 * Fixed multiple Client Applications using one rate limiting algorithm when configured with same SLA in Anypoint Platform.
+
 
 == 1.2.0
 
@@ -30,6 +48,7 @@ endif::[]
 * The default configuration has been modified to avoid propagating or returning policy headers unless explicitly configured by checking the "Expose headers" option.
 * Performance improvements.
 
+
 == 1.1.3
 
 *Feb 14, 2019*
@@ -42,6 +61,7 @@ endif::[]
 
 * Fixed `NullPointerException` thrown when disposing policy in a Mule Cluster.
 
+
 == 1.1.2
 
 *Jan 10, 2019*
@@ -53,6 +73,7 @@ endif::[]
 === New Features and Enhancements
 
 * Improved the RAML and OAS snippets.
+
 
 == 1.1.1
 
@@ -72,6 +93,7 @@ endif::[]
 * Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
 * Fixed `NullPointerException` thrown in extensions that set Authentication when an authentication object with null properties exists.
 
+
 == 1.1.0
 
 *Jan 25, 2018*
@@ -88,6 +110,7 @@ endif::[]
 === Fixed Issues
 
 * Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+
 
 == 1.0.0
 
