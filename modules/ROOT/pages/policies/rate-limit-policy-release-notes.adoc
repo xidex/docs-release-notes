@@ -4,6 +4,20 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, rate-limit, policy, release notes
 
+
+== 1.3.1
+
+*Jul 12, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Performance improvements.
+
+
 == 1.3.0
 
 *Apr 26, 2018*
@@ -21,6 +35,7 @@ endif::[]
 
 * Fixed persistence scheduler losing quota in a Mule Cluster when the node's clocks are out of sync.
 
+
 == 1.2.3
 
 *Feb 14, 2019*
@@ -32,6 +47,7 @@ endif::[]
 === Fixed Issues
 
 * Fixed `NullPointerException` thrown when disposing policy in a Mule Cluster.
+
 
 == 1.2.2
 
@@ -47,6 +63,7 @@ endif::[]
 * Fixed Object store error when hitting the API concurrently.
 * Optimized throttling connector performance.
 * Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+
 
 == 1.2.1
 
@@ -64,6 +81,7 @@ endif::[]
 
 * Fixed `NullPointerException` thrown in extensions that set Authentication when an authentication object with null properties exists.
 
+
 == 1.2.0
 
 *Mar 22, 2018*
@@ -80,6 +98,7 @@ endif::[]
 === Fixed Issues
 
 * Fixed error causing Rate Limit being rejected from the scheduler on high traffic bursts.
+
 
 == 1.1.0
 
