@@ -4,6 +4,20 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, header, removal, policy, release notes
 
+
+== 1.0.2
+
+*Jul 12, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Performance improvements.
+
+
 == 1.0.1
 
 *Apr 26, 2019*
@@ -15,6 +29,7 @@ endif::[]
 === New Features and Enhancements
 
 * Performance improvements.
+
 
 == 1.0.0
 
