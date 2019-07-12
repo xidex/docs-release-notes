@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of these features:
 
+* <<1-11-1,1.11.1>>
 * <<1-11-0,1.11.0>>
 * <<1-10-0,1.10.0>>
 * <<1-9-0,1.9.0>>
@@ -35,6 +36,28 @@ These release notes cover the following versions of these features:
 * <<1-0-1,1.0.1>>
 * <<1-0,1.0>>
 
+
+== 1.11.1
+*July 13, 2019*
+
+
+=== Enhancements
+
+
+* Rely on dynamic lists in popular connectors, rather than your memory
++
+When filling out cards for popular connectors, such as the Database connector or the Slack connector, in previous releases, you had to remember the names of tables that you wanted to query or Slack channels that you wanted to send messages to. Now, rather than do that, you can click a drop-down list that is populated with the names of tables, the names of Slack channels, or other items, depending on the connector.
+
+* Automapper performance improvements
++ 
+Now, see better mapping recommendations for the most common use cases.
+
+// === Fixed Issues
+// PROJECTX-6834
+// * The *New Type* dialog did not indicate errors in JSON examples or JSON schemas.
+
+
+
 == 1.11.0
 *June 15, 2019*
 
@@ -59,12 +82,7 @@ For more details, see xref:design-center::fd-publish-app-as-template.adoc[Share 
 +
 Drop-down lists in cards now allow custom expressions. Scroll to the bottom of a drop-down list and select the option *Custom*. A second field appears below the list field. You can drag the *Custom Expression* data element from the right side of the card into that second field. See xref:design-center::custom-expression-field.adoc[Create a DataWeave Expression in a Field] for help using the *Custom Expression* dialog.
 
-////
 
-* Rely on dynamic lists in popular connectors, rather than your memory
-+
-When filling out cards for popular connectors, such as the Database connector or the Slack connector, in previous releases, you had to remember the names of tables that you wanted to query or Slack channels that you wanted to send messages to. Now, rather than do that, you can click a drop-down list that is populated with the names of tables, the names of Slack channels, or other items, depending on the connector.
-////
 
 * Automatic updates of the version of Mule Runtime being used in your projects
 +
@@ -84,6 +102,7 @@ As explained in xref:design-center::dynamic-expression-field.adoc[Fill in Cards 
 * Enjoy support for Mule Runtime 4.2
 +
 Flow Designer now runs on Mule Runtime 4.2. Enjoy a stabler, more reliable experience.
+
 
 
 == 1.10.0
