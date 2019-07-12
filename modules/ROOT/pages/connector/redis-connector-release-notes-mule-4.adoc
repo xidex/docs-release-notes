@@ -19,7 +19,7 @@ The Redis Connector offers complete support for its CRUD API.
 |===
 |Software |Version
 |Mule Runtime | 4.0 and later
-|Redis server | 2.8.x, 3.0.x, and 3.2.x
+|Redis server | 2.8.x, 3.0.x, 3.2.x, 4.x and 5.0.x
 |===
 
 === Fixed in this Release
