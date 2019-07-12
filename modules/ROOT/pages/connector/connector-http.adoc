@@ -5,6 +5,21 @@ endif::[]
 
 Support Category: Select
 
+== 1.5.5
+
+*July 12, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== Fixed Issues
+
+* Remove vulnerable commons-codec library (https://www.mulesoft.org/jira/browse/MULE-16799[MULE-16799])
+* Basic auth filter accepts header characters beyond the padding (https://www.mulesoft.org/jira/browse/MULE-16898[MULE-16898])
+* No transformers for Iterator to byte[] or String cause error. (https://www.mulesoft.org/jira/browse/MULE-15991[MULE-15991])
+* Reduce logging verbosity when correlations ids are repeated but matching (https://www.mulesoft.org/jira/browse/MULE-17115[MULE-17115])
+
 == 1.5.4
 
 *April 30, 2019*
