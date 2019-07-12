@@ -28,12 +28,12 @@ endif::[]
 
 === New Features and Enhancements
 
-* The default configuration has been modified to avoid propagating or returning policy headers unless explicitly configured by checking the "Expose headers" option.
+* Unless explicitly configured, by checking the "Expose headers" option, the policy header will not be propagated or returned. The default configuration is modified to support this behaviour.
 * Several performance improvements were introduced in this release.
 
 === Fixed Issues
 
-* Fixed persistence scheduler losing quota in a Mule Cluster when the node's clocks are out of sync.
+* The persistence scheduler was losing quota in a Mule Cluster when the node's clocks were out-of-sync. This error is not resolved.
 
 
 == 1.2.3
@@ -59,10 +59,10 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed WSDL error response.
-* Fixed Object store error when hitting the API concurrently.
+* Resolved the WSDL error response issue.
+* An object store error occurred when hitting the API concurrently. This error is now resolved.
 * Optimized throttling connector performance.
-* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+* An `ExpressionRuntimeException` error occurred when a WSDL proxy received an empty payload, or an invalid XML. This error is now resolved.
 
 
 == 1.2.1
@@ -75,11 +75,11 @@ endif::[]
 
 === New Features and Enhancements
 
-* Added `violationCategory` in the YAML configuration for Feedback Loop.
+* Added 'violationCategory' in the YAML configuration file for Feedback Loop.
 
 === Fixed Issues
 
-* Fixed `NullPointerException` thrown in extensions that set Authentication when an authentication object with null properties exists.
+* If an extension set authentication using an Authentication object containing null properties, a `NullPointerException` error occurred. This error is now resolved.
 
 
 == 1.2.0
@@ -92,12 +92,12 @@ endif::[]
 
 === New Features and Enhancements
 
-* Parameterized throttling algorithm for Mule 4.
+* Parameterized throttling algorithm introduced for Mule 4.
 * Migrated pluggable Hazelcast to 4.x.
 
 === Fixed Issues
 
-* Fixed error causing Rate Limit being rejected from the scheduler on high traffic bursts.
+* The Rate Limit policy was rejected from scheduler during high netwrok traffic. This error is now resolved.
 
 
 == 1.1.0
@@ -110,12 +110,12 @@ endif::[]
 
 === New Features and Enhancements
 
-* Changed `WWW-Authenticate` header value from `mule-real` to `Client-ID-Enforcement`.
+* Updated `WWW-Authenticate` header value from `mule-real` to `Client-ID-Enforcement`.
 * Reduced error-handling verbosity in templates.
 
 === Fixed Issues
 
-* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+* An `ExpressionRuntimeException` error occurred when a WSDL proxy received an empty payload, or an invalid XML. This error is now resolved.
 
 
 == 1.0.0
