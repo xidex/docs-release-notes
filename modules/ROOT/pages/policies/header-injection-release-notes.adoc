@@ -43,7 +43,7 @@ endif::[]
 === Fixed Issues
 
 * Resolved the policy parameters appending extra escaping issue.
-* An `ExpressionRuntimeException` error occurred when a WSDL proxy receives an empty payload, or an invalid XML. This error is now resolved.
+* An `ExpressionRuntimeException` error occurred when a WSDL proxy received an empty payload, or an invalid XML. This error is now resolved.
 
 == 1.0.0
 
