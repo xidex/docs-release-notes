@@ -5,6 +5,7 @@ endif::[]
 
 These release notes cover the following versions of API Designer (Crowd):
 
+* <<2-6-0,2.6.0>>
 * <<2-5-0,2.5.0>>
 * <<2-4-8,2.4.8>>
 * <<2-4-6,2.4.6>>
@@ -19,6 +20,30 @@ These release notes cover the following versions of API Designer (Crowd):
 * <<2-2-7,2.2.7>>
 * <<2-2-6,2.2.6>>
 * <<2-2-5,2.2.5>>
+
+== API Designer (Crowd) 2.6.0
+*July 13, 2019*
+
+The release introduces two enhancements and several fixed issues.
+
+=== Enhancements
+
+* When you republish a project to Exchange, you now can edit the name only in Exchange. This enhancement prevents naming conflicts.
+Due to this change, three fields are disabled in the *Publish to Exchange* dialog when you republish a project: *Name*, *Group ID*, and *Asset ID*.
+
+* The *Publish to Exchange* button is now disabled if your user ID does not have the role either of Exchange Contributor or Exchange Administrator.
+Disabling the button prevents you from filling in the *Publish to Exchange* dialog only to receive an error message if your user ID does not have a required role.
+
+=== Fixed Issues
+
+//SE-12141
+* Design Center presented a false positive Warning message of different values for the `discriminator` value.
+//SE-11982
+* AMF showed a Warning message of an unused parameter when using the declared `uriParameter` in a resource type.
+//SE-10903
+* In an AMF implementation, using `NamedExample` inside a NamedExample did not work with Exchange and API Designer.
+//SE-9994
+* Design Center allowed the first line in a RAML API definition document to be blank.
 
 == API Designer (Crowd) 2.5.0
 *June 15, 2019*
