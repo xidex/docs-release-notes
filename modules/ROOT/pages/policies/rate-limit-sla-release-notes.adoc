@@ -5,6 +5,23 @@ endif::[]
 :keywords: mule, rate-limit, policy, release notes
 
 
+== 1.2.2
+
+*Jul 12, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Several performance improvements were introduced in this release.
+
+=== Fixed Issues
+
+* The persistence scheduler was losing quota in a Mule Cluster when the node's clocks were out-of-sync. This error is not resolved.
+
+
 == 1.2.1
 
 *Apr 30, 2019*
@@ -15,7 +32,8 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed multiple Client Applications using one rate limiting algorithm when configured with same SLA in Anypoint Platform.
+* An error occurred when multiple client applications using one rate limiting algorithm were configured with the same SLA in Anypoint Platform. This error is now resolved.
+
 
 == 1.2.0
 
@@ -27,8 +45,9 @@ endif::[]
 
 === New Features and Enhancements
 
-* The default configuration has been modified to avoid propagating or returning policy headers unless explicitly configured by checking the "Expose headers" option.
-* Performance improvements.
+* Unless explicitly configured, by checking the "Expose headers" option, the policy header will not be propagated or returned. The default configuration is modified to support this behaviour.
+* Several performance improvements were introduced in this release.
+
 
 == 1.1.3
 
@@ -42,6 +61,7 @@ endif::[]
 
 * Fixed `NullPointerException` thrown when disposing policy in a Mule Cluster.
 
+
 == 1.1.2
 
 *Jan 10, 2019*
@@ -53,6 +73,7 @@ endif::[]
 === New Features and Enhancements
 
 * Improved the RAML and OAS snippets.
+
 
 == 1.1.1
 
@@ -68,9 +89,10 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed error causing Rate Limit being rejected from the scheduler on high traffic bursts.
-* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
-* Fixed `NullPointerException` thrown in extensions that set Authentication when an authentication object with null properties exists.
+* The Rate Limiting policy was rejected from scheduler during high network traffic. This error is now resolved.
+* An `ExpressionRuntimeException` error occurred when a WSDL proxy received an empty payload, or an invalid XML. This error is now resolved.
+* If an extension set authentication using an Authentication object containing null properties, a `NullPointerException` error occurred. This error is now resolved.
+
 
 == 1.1.0
 
@@ -87,7 +109,8 @@ endif::[]
 
 === Fixed Issues
 
-* Fixed `ExpressionRuntimeException` error when a WSDL proxy receives an empty payload, or an invalid XML.
+* An `ExpressionRuntimeException` error occurred when a WSDL proxy received an empty payload, or an invalid XML. This error is now resolved.
+
 
 == 1.0.0
 
