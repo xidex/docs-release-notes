@@ -4,6 +4,24 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, cors, policy, release notes
 
+== 1.1.3
+
+*Jul 12, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.0*
+
+=== New Features and Enhancements
+
+* Several performance improvements were introduced in this release.
+
+=== Fixed Issues
+
+* CORS policy does not try to duplicate Access-Controll-Allow-Origin header anymore.
+* CORS policy now only returns HTTP method selected as allowed in the Access-Control-Allow-Methods header.
+
+
 == 1.1.2
 
 *Apr 26, 2019*
@@ -14,7 +32,8 @@ endif::[]
 
 === New Features and Enhancements
 
-* Performance improvements.
+* Several performance improvements were introduced in this release.
+
 
 == 1.1.1
 
@@ -30,7 +49,8 @@ endif::[]
 
 === Fixed Issues
 
-* CORS Policy does not throw 500 Server Error anymore if content-type is not specified in the request.
+* The CORS Policy does not throw a 500 Server Error anymore if the content-type is not specified in the request.
+
 
 == 1.1.0
 
@@ -42,15 +62,12 @@ endif::[]
 
 === New Features and Enhancements
 
-
 * Reduced error-handling verbosity in templates.
-* Transformations of HTTP attributes are now based on a specified output type.
-
+* The transformations of HTTP attributes are now based on a specified output type.
 
 === Fixed Issues
 
-
-* Fixed missing groupId for proxy samples dependency
+* Fixed missing groupId for proxy samples dependency.
 
 
 == 1.0.0
