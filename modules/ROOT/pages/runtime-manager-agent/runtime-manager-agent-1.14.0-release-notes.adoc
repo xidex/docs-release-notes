@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Jul 11, 2019
+Jul 15, 2019
 
 This document describes new features and enhancements, known limitations, issues, and fixes in Anypoint Runtime Manager agent, version 1.14.0.
 
@@ -11,7 +11,7 @@ This document describes new features and enhancements, known limitations, issues
 
 This release contains the following new features or enhancements:
 
-* Atomic schedulers modifications: modifying schedulers' settings will be done atomically using a new HTTP endpoint in the Mule Agent API without triggering the other schedulers deployed to the same Mule Runtime. Prior to this update, modifications to schedulers forced the synchronous trigger of the schedulers of all applications running in the same runtime.
+* Atomic schedulers modifications: A new HTTP endpoint in the Mule Runtime Manager agent API will modify schedulers' settings atomically so that other schedulers deployed to the same Mule runtime engine are not triggered. Prior to this update, modifications to schedulers forced the synchronous trigger of the schedulers of all applications running in the same Mule runtime engine.
 
 == Changes in This Release
 
