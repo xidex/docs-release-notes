@@ -5,6 +5,18 @@ endif::[]
 
 Support Category: Select
 
+== 1.3.0
+
+*Jul 15, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== New Features and Enhancements
+
+* Add "(Not) Updated in the last..." capability to File Matcher. (MULE-17103)
+
 == 1.2.4
 
 *May 10, 2019*
