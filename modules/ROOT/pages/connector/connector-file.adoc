@@ -15,6 +15,10 @@ Support Category: Select
 
 === New Features and Enhancements
 
+* Parameters "updatedInTheLast" and "notUpdatedInTheLast" were added to the file matcher along with the "timeUnit" parameter. These enables the developer to make a list operation or listener filter files that may still being written, or are too old.
+
+=== Fixed Issues
+
 * Add "(Not) Updated in the last..." capability to File Matcher. (MULE-17103)
 
 == 1.2.4
