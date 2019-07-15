@@ -7,7 +7,7 @@ Support Category: Select
 
 == 1.3.0
 
-*Jul 15, 2019*
+*July 15, 2019*
 
 === Minimum Mule Version
 
@@ -15,11 +15,11 @@ Support Category: Select
 
 === New Features and Enhancements
 
-* Parameters "updatedInTheLast" and "notUpdatedInTheLast" were added to the file matcher along with the "timeUnit" parameter. These enables the developer to make a list operation or listener filter files that may still being written, or are too old.
+* The `updatedInTheLast`, `notUpdatedInTheLast`, `timeUnit` parameters have been added to the File Matcher. These parameters enable you to have a List or Listener operation that filters files that are still being written to, or are too old.
 
 === Fixed Issues
 
-* Add "(Not) Updated in the last..." capability to File Matcher. (MULE-17103)
+* Added `(Not) Updated in the last...` capability to File Matcher. (MULE-17103)
 
 == 1.2.4
 
