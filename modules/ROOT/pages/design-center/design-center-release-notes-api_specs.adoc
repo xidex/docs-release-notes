@@ -44,6 +44,8 @@ Disabling the button prevents you from filling in the *Publish to Exchange* dial
 * In an AMF implementation, using `NamedExample` inside a NamedExample did not work with Exchange and API Designer.
 //SE-9994
 * Design Center allowed the first line in a RAML API definition document to be blank.
+//SE-12308 - Added 7/15
+* The [object Object] error shows up when typing a path to a filename and referencing a directory.
 
 == API Designer (Crowd) 2.5.0
 *June 15, 2019*
