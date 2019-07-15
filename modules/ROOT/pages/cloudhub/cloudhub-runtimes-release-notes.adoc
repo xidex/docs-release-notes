@@ -6,6 +6,12 @@ endif::[]
 
 These are the release notes for patches made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== July 16, 2019
+
+3.9.3 Runtime Update:
+
+* Fix Policies that manage Client Applications not working as expected when encryption is configured.
+
 == July 12, 2019
 
 3.9.2 and 3.9.3 Runtime Update:
