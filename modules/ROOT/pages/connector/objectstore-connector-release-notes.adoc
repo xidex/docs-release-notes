@@ -9,7 +9,7 @@ The Anypoint Connector for the Mule Object Store enables the manipulation of obj
 
 == 2.2.2
 
-*Date of release TBD*
+*July 16, 2019*
 
 === Compatibility
 
