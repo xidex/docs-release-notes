@@ -10,7 +10,7 @@ These release notes are for patches made to the Mule runtimes on CloudHub. In ad
 
 3.9.3 Runtime Update:
 
-* Fix Policies that manage Client Applications not working as expected when encryption is configured.
+* Fix Policies that manage client applications not working as expected when encryption is configured.
 * Faster application deployment with Monitoring feature disabled.
 
 4.2.0 and 4.1.5 Runtime Update:
@@ -104,7 +104,7 @@ These release notes are for patches made to the Mule runtimes on CloudHub. In ad
 
 3.9.2, 3.9.1 and 3.9.0 Runtime Update:
 
-* Remove unexpected warnings and errors related to file system permissions in logs when using secure properties [SE-7975]
+* Removed unexpected warnings and errors related to file system permissions in logs when using secure properties [SE-7975]
 
 == May 28, 2019
 
@@ -114,7 +114,7 @@ These release notes are for patches made to the Mule runtimes on CloudHub. In ad
 * Sporadic `NullPointerException` in Grizzly `ClientHttpResponseImpl.getProcessingState()` [SE-8085]
 * Accept-Expression in Batch job not evaluated correctly [SE-11666]
 * JMS consumer stops consuming messages after the stop/start flow operation [SE-11450]
-* Remove unexpected warnings and errors related to File System Permissions in logs when using secure properties [SE-7975]
+* Removed unexpected warnings and errors related to file system permissions in logs when using secure properties [SE-7975]
 
 4.1.5 Runtime Update:
 
@@ -323,7 +323,7 @@ These release notes are for patches made to the Mule runtimes on CloudHub. In ad
 
 This release contains the following known issue:
 
-SE-11007: Enabling Advanced App Log functionality is not recommended on 0.1 VCore.
+SE-11007: Do not enable advanced app log functionality on 0.1 VCore configurations.
 
 Workaround: Use 0.2 VCore or higher configurations.
 
@@ -852,7 +852,7 @@ Workaround: Use 0.2 VCore or higher configurations.
 
 3.9.1, 4.1.2, 4.1.3 Runtime Updates:
 
-* Application visualizer related error seen in multiple applications in Cloudhub [SE-9143]
+* Error related to Application Visualizer seen in multiple applications in CloudHub [SE-9143]
 
 
 == August 23, 2018
