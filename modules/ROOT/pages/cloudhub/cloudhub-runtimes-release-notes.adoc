@@ -8,13 +8,22 @@ These release notes are for patches made to the Mule runtimes on CloudHub. In ad
 
 == July 16, 2019
 
-3.9.3 Runtime Update:
+4.2.1 Runtime Update:
 
-* Fix Policies that manage client applications not working as expected when encryption is configured.
-* Faster application deployment with Monitoring feature disabled.
+* `IllegalStateException` on batch job with concurrency [SE-12451]
 
 4.2.0 and 4.1.5 Runtime Update:
 
+* `IllegalStateException` on batch job with concurrency [SE-12451]
+* Faster application deployment with Monitoring feature disabled.
+
+4.1.5 Runtime Update:
+
+* Faster application deployment with Monitoring feature disabled.
+
+3.9.3 Runtime Update:
+
+* Fix Policies that manage client applications not working as expected when encryption is configured.
 * Faster application deployment with Monitoring feature disabled.
 
 == July 12, 2019
