@@ -25,7 +25,7 @@ The Zuora connector is compatible with:
 
 * Version 4.2.0 of the connector supports the Zuora API release 249 from 2019-06-20.
 * https://community.zuora.com/t5/Developers/API-Changelog/gpm-p/18092/page/6#toc-hId-475301508[Zuora API updates change log]. 
-* https://knowledgecenter.zuora.com/A_Zuora_Release_Notes/A_Zuora_Billing_Release_Notes[List of releases Zuora releases]. 
+* https://knowledgecenter.zuora.com/A_Zuora_Release_Notes/A_Zuora_Billing_Release_Notes[List of Zuora releases]. 
 
 == 4.1.0
 
