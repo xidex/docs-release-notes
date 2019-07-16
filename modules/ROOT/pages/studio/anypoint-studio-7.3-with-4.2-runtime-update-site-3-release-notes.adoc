@@ -34,7 +34,7 @@ Build Id:
 
 === Runtime Compatibility
 
-* Studio 7.3.4 is bundled with Mule Runtime Engine 4.2.0, however, you can use it with earlier Mule Runtime versions such as as 4.1.4.
+* Studio 7.3.3 is bundled with Mule Runtime Engine 4.2.0, however, you can use it with earlier Mule Runtime versions such as as 4.1.4.
 
 === Studio Compatibility
 
