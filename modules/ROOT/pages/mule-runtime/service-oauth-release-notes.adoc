@@ -9,16 +9,12 @@ endif::[]
  
 === New Features and Enhancements 
  
-* Support Client Credentials gran type in the SDK (link:https://www.mulesoft.org/jira/browse/MULE-16908[MULE-16908]) 
+* Support Client Credentials grant type in the SDK. (https://www.mulesoft.org/jira/browse/MULE-16908[MULE-16908]) 
  
  
 === Fixed Issues 
  
-[%header,cols="15a,85a"] 
-|===
-|Issue |Description
-| link:https://www.mulesoft.org/jira/browse/MULE-16540[MULE-16540] | AuthorizationCodeState not updated on certain circumstances
-|=== 
+* AuthorizationCodeState not updated on certain circumstances. (https://www.mulesoft.org/jira/browse/MULE-16540[MULE-16540])
 
 == 1.2.1 
  
@@ -31,11 +27,8 @@ endif::[]
  
 === Fixed Issues 
  
-[%header,cols="15a,85a"] 
-|===
-|Issue |Description
-| link:https://www.mulesoft.org/jira/browse/MULE-17006[MULE-17006] | Reuse http clients for OAuth token request
-|=== 
+* Reuse HTTO clients for an OAuth token request. (https://www.mulesoft.org/jira/browse/MULE-17006[MULE-17006])
+
 
 == 1.1.7 
  
@@ -48,11 +41,8 @@ endif::[]
  
 === Fixed Issues 
  
-[%header,cols="15a,85a"] 
-|===
-|Issue |Description
-| link:https://www.mulesoft.org/jira/browse/MULE-17006[MULE-17006] | Reuse http clients for OAuth token request
-|=== 
+* Reuse HTTP clients for an OAuth token request. (https://www.mulesoft.org/jira/browse/MULE-17006[MULE-17006])
+
 
 == 1.2.0 
  
