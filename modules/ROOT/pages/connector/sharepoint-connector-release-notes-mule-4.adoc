@@ -24,9 +24,9 @@ The SharePoint connector is compatible with:
 
 === Features
 
-* An optional parameter named Path is now available for the *Created objects* and *Modified objects* triggers. Use this parameter to specify the root path to start querying for when the object type is FILE or FOLDER. The Path parameter is ignored for other object types.
+* An optional parameter named Path is now available for the *Created objects* and *Modified objects* triggers. Use this parameter to specify the root path to start querying for when the object type is `FILE` or `FOLDER`. The *Path* parameter is ignored for other object types.
  
-* The default value for the Since field of the *Created objects*, *Modified objects* and *Deleted objects* triggers now formats the current time in UTC format rather than defaulting to the time on the machine running the Mule application.
+* The default value for the *Since* field of the *Created objects*, *Modified objects* and *Deleted objects* triggers now formats the current time in UTC format rather than defaulting to the time on the machine running the Mule application.
 
 === Fixed in this Release
 
