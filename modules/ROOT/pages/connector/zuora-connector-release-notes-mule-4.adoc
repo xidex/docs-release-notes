@@ -1,9 +1,9 @@
-= Zuora Connector Release Notes
+= Zuora Connector Release Notes - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-_Select_
+Support Category: Select
 
 == 4.2.0
 
