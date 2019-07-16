@@ -7,7 +7,7 @@ Support Category: Select
 
 == 4.2.0
 
-*July 16 2019*
+*July 16, 2019*
 
 === Compatibility
 
