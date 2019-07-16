@@ -18,7 +18,7 @@ Support Category: Select
 * Remove vulnerable commons-codec library. (https://www.mulesoft.org/jira/browse/MULE-16799[MULE-16799])
 * Basic auth filter accepts header characters beyond the padding. (https://www.mulesoft.org/jira/browse/MULE-16898[MULE-16898])
 * No transformers for `Iterator to byte[]` or `String` causes error. (https://www.mulesoft.org/jira/browse/MULE-15991[MULE-15991])
-* Reduce logging verbosity when correlations IDs repeat but match. When both the `X-Correlation-ID` and `Mule-Correlation-ID` headers are present, Mule decides on one and logs a warning message about the decision. However, if in Mule 4 and 3 both headers are duplicated with the same value, Mule logs a debug message instead, and reduces the verbosity of apps. (https://www.mulesoft.org/jira/browse/MULE-17115[MULE-17115])
+* Reduce logging verbosity when correlations IDs repeat but match. When both the `X-Correlation-ID` and `Mule-Correlation-ID` headers are present, Mule decides on one and logs a warning message about the decision. However, if in Mule 4 and 3 both headers are duplicated with the same value, Mule logs a debug message instead. (https://www.mulesoft.org/jira/browse/MULE-17115[MULE-17115])
 
 == 1.5.4
 
