@@ -7,6 +7,30 @@ _Select_
 
 The Anypoint Connector for SharePoint lets you connect to the Microsoft SharePoint application. The connector exposes convenient methods to work with Microsoft SharePoint API.
 
+== 3.1.3
+
+*July 16, 2019*
+
+=== Compatibility
+
+The SharePoint connector is compatible with:
+
+[%header%autowidth.spread]
+|===
+|Application/Service |Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and later
+|Anypoint Studio|Studio 7.0.0 and later
+|===
+
+=== Features
+
+* An optional parameter named Path was added to the Created Objects and Modified Objects triggers. This parameter can be used to specify the root path to start querying for when the object type used is FILE or FOLDER(for other object types it will be disregarded). 
+* The default value for the Since field of the Created Objects and Modified Objects has been changed to the current time in UTC, instead of defaulting to the time on the machine running the mule application. 
+
+=== Fixed in this Release
+
+*  Sharepoint connector: Not possible to use $top parameter for retrieve-collection. (SE-12212)
+
 == 3.1.2
 
 *July 2, 2019*
