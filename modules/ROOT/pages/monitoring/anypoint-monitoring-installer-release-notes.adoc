@@ -21,7 +21,7 @@ If you update the Runtime Manager agent, you must execute the Anypoint Monitorin
 
 This release contains the following fixed issue:
 
-Log forwarding does not work with AM agent 2.1.4.0 in Hybrid runtime (SE-12410)
+Log forwarding does not work with Anypoint Monitoring agent 2.1.4.0 in hybrid runtime (SE-12410)
 
 == Version 2.1.4.0 June 7, 2019
 
