@@ -7,20 +7,31 @@ endif::[]
 
 === New Features
 
-* Simplify interface by showing only applicable links in Studio experience. (EXC-3759)
-* Prevent permissions errors by making only viewable assets clickable in the asset dependencies table. (EXC-3607)
-* A user viewing assets by business group who selects a different business group sees the new group and not the master organization. (EXC-3430)
-* A user who clicks a category or tag sees matching assets from all business groups and assets provided by Mulesoft. (EXC-3219)
-* Notify users who reach the rate limit for an API. (EXC-2991)
+* Markdown editor supports toggling bold text. (EXC-3825)
+* Validation of user input in API Instances table improved. (EXC-3809)
+* Studio experience interface simplified to show only applicable links. (EXC-3759)
+* Both markdown editor and visual editor provide full control of heading levels. (EXC-3643)
+* Permissions errors prevented by making only viewable assets clickable in the asset dependencies table. (EXC-3607)
+* When you view assets by business group and select a different business group, you see the new group and not the master organization. (EXC-3430)
+* Validation of user tag entry improved. (EXC-3414)
+* When you click a category or tag, you see matching assets from all business groups and assets provided by MuleSoft. (EXC-3219)
+* If the server is at capacity and unavailable when you try to use an API, you see a descriptive error message. (EXC-2991)
 
 === Fixed in this Release
 
-* Images uploaded after May 31st, 2019 now render correctly on the MuleSoft public portal. (EXC-3793)
-* Users can view images on custom pages in a public portal in all cases. (EXC-3669)
-* Users editing one page can discard those changes and create a second page. (EXC-3642)
-* Improved error message for attempts to use Maven to publish a new version of a REST API created in Exchange with a different asset type, since asset type cannot be changed. (EXC-3511)
-* Users uploading a file when creating a new asset can change the asset type without uploading the file again. Exchange re-validates the file. (EXC-3503)
-* Users can view the full RAML or OAS code in public Exchange portals in all cases. (EXC-3254)
+* Edit mode does not show incorrect "Loading API" message. (EXC-3810)
+* Images uploaded after May 31, 2019 render correctly on the MuleSoft public portal. (EXC-3793)
+* Short and wide icons representing assets are correctly rendered in the UI. (EXC-3792)
+* Sharing an asset with a user while related assets are being generated shares the related assets as well. (EXC-3719)
+* When you use the mocking service through Exchange, it correctly recognizes headers and security schemas. (EXC-3711)
+* All users can always view images on custom pages in a public portal. (EXC-3669)
+* When you are editing one page, you can discard those changes and create a second page. (EXC-3642)
+* You receive an improved error message when you attempt to use Maven to publish a new version of a REST API created in Exchange with a different asset type, which is forbidden. (EXC-3511)
+* Exchange automatically revalidates the file when you upload a file to create a new asset and change the asset type. (EXC-3503)
+* Publishing through Maven correctly validates `groupId` and `assetId` values. (EXC-3361)
+* APIs published in the Public Exchange portal display the full RAML and OAS code. (EXC-3254)
+* Exchange preserves user input entered while the API Console is loading. (EXC-3024)
+* You can install the SSH connector when using Anypoint Studio 6. (EXC-3014)
 
 == May 2019
 
