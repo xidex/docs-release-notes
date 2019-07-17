@@ -4,18 +4,24 @@ include::_attributes.adoc[]
 endif::[]
 
 
-These release notes are for patches made to the Anypoint Monitoring agent installer. 
+These release notes are for patches made to the Anypoint Monitoring agent installer.
 
 == Related Documentation
 
 In addition to these release notes, see:
 
-* xref:monitoring/anypoint-monitoring-release-notes.adoc[Anypoint Monitoring Release Notes] 
+* xref:monitoring/anypoint-monitoring-release-notes.adoc[Anypoint Monitoring Release Notes]
 * xref:monitoring::am-installing#update-the-monitoring-agent.adoc[Update the Monitoring Agent]
 * xref:monitoring::index.adoc[Anypoint Monitoring]
 
 [NOTE]
-If you update the Runtime Manager agent, you must execute the Anypoint Monitoring agent uninstall script and then re-install the Anypoint Monitoring agent. 
+If you update the Runtime Manager agent, you must execute the Anypoint Monitoring agent uninstall script and then re-install the Anypoint Monitoring agent.
+
+== Version 2.1.5.0 July 15, 2019
+
+This release contains the following fixed issue:
+
+Log forwarding does not work with Anypoint Monitoring agent 2.1.4.0 in hybrid runtime (SE-12410)
 
 == Version 2.1.4.0 June 7, 2019
 
@@ -42,7 +48,7 @@ This release includes the following fixed issues:
 
 This release includes support for the SOCKS5 proxy. For more information, see xref:monitoring::am-installing.adoc[Install the Anypoint Monitoring Agent].
 
-You can download the Anypoint Monitoring agent installer from https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.1.0.0.zip[Anypoint Monitoring Agent Installer 2.1.0.0] or from the Anypoint Monitoring *Settings > Hybrid* page. 
+You can download the Anypoint Monitoring agent installer from https://s3.amazonaws.com/cdn-anypoint-prod/artifacts/monitoring-center-ui/app/hybrid/am-2.1.0.0.zip[Anypoint Monitoring Agent Installer 2.1.0.0] or from the Anypoint Monitoring *Settings > Hybrid* page.
 
 == Version 2.0.5.0 February 13, 2019
 
@@ -62,4 +68,3 @@ This release includes the following updates:
 
 * Added support for Mule Runtime Manager agent version 2.1.8.
 * Added support for Mule runtime engine version 4.1.5.
-
