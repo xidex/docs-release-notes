@@ -10,7 +10,7 @@ endif::[]
 * You can delete assets that have many versions. (EXC-3850)
 * You can delete assets that have long API versions. (EXC-3849)
 * When you request the latest version of an asset with Maven, Exchange returns the asset with correct metadata. (EXC-3580)
-* Exchange prevents you from uploading disallowed file types, even if they have incorrect file extensions. (EXC-3399)
+* Exchange prevents you from uploading a file whose type is not allowed, even if its file extension is incorrect. (EXC-3399)
 
 == June 2019
 
