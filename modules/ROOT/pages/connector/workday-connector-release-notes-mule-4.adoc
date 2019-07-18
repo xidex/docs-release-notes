@@ -21,7 +21,7 @@ While using the Workday connector in Anypoint Studio, depending on connectivity 
 [%header%autowidth.spread]
 |===
 |Software |Version
-|Mule Runtime |4.1.3 and later
+|Mule Runtime |4.1.1 and later
 |Workday API |v32.1
 |===
 
