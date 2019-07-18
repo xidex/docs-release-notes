@@ -6,6 +6,22 @@ endif::[]
 
 // Product_Name Version number/date Release Notes
 
+== 1.2.0
+
+*Jul 12, 2019*
+
+=== Min Mule Version
+*Mule 4.2.0* 
+
+=== New Features
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| EE-5893  | Support file-level encryption for configuration property files
+|===
+
+
 == 1.1.0
 
 *Apr 23, 2019*
