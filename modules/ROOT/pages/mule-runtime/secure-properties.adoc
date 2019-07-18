@@ -92,8 +92,3 @@ None
 === New Features
 * Initial Release
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| EE-5893  | Support file-level encryption for configuration property files
-|===
