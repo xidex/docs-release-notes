@@ -3,6 +3,15 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+== July 2019
+
+=== Fixed in this Release
+
+* You can delete assets that have many versions. (EXC-3850)
+* You can delete assets that have long API versions. (EXC-3849)
+* When you request the latest version of an asset with Maven, Exchange returns the asset with correct metadata. (EXC-3580)
+* Exchange prevents uploading disallowed file types with incorrect file extensions. (EXC-3399)
+
 == June 2019
 
 === New Features
