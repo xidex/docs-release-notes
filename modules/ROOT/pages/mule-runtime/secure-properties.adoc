@@ -2,15 +2,27 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: mule, release notes, secure configuration properties, secure properties, extension
 
-// Product_Name Version number/date Release Notes
+Support Category: Select
+
+== 1.2.0
+
+*July 12, 2019*
+
+=== Minimum Mule Version
+
+*Mule 4.2.0* 
+
+=== New Features
+
+* Support file-level encryption for configuration property files. (EE-5893)
 
 == 1.1.0
 
-*Apr 23, 2019*
+*April 23, 2019*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.1*
 
 === Known Limitations and Workarounds
@@ -19,49 +31,44 @@ None
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| EE-6623  | Reduce the size of the mule-secure-configuration-property-module by removing dependency to BC
-| AGW-2709 | Review: Encryption is adding 4MB to each policy.
-| AGW-2405 | Extract secure properties encryption code into runtime module
-| EE-6260  | Secure Configuration Properties should have correct display model for File Attribute
-|===
+* Reduce the size of the mule-secure-configuration-property-module by removing dependency to BC. (EE-6623)
+* Review: Encryption is adding 4MB to each policy. (AGW-2709)
+* Extract secure properties encryption code into runtime module. (AGW-2405)
+* Secure Configuration Properties should have correct display model for File Attribute. (EE-6260)
 
 == 1.0.2
 
-*Jul 25, 2018*
+*July 25, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.1*
-
-=== Known Limitations and Workarounds
-
-None
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| MULE-15392 | NPE when using secure-properties and mode is not set
-|===
+* NPE when using secure-properties and mode is not set. (MULE-15392)
 
 == 1.0.1
 
 *May 2, 2018*
 
-=== Min Mule Version
+=== Minimum Mule Version
+
 *Mule 4.1.1*
-
-=== Known Limitations and Workarounds
-
-None
 
 === Fixed Issues
 
-[%header,cols="15a,85a"]
-|===
-|Issue |Description
-| EE-6050 | Secure Properties cannot be defined depending on another secure property
-|===
+* Secure Properties cannot be defined depending on another secure property. (EE-6050)
+
+== 1.0.0
+
+*March 21, 2018*
+
+=== Minimum Mule Version
+
+*Mule 4.1.1*
+
+=== New Features
+
+* Initial Release
+
