@@ -6,6 +6,29 @@ endif::[]
 
 These release notes are for patches made to the Mule runtimes on CloudHub. In addition to these release notes, see the xref:cloudhub/cloudhub-release-notes.adoc[CloudHub release notes] and complete xref:runtime-manager::cloudhub.adoc[CloudHub] documentation.
 
+== July 19, 2019
+
+4.2.1 Runtime Update:
+
+* Update OAuth service to version 1.3.1. [SE-12028]
+
+4.2.0 and 4.1.5 Runtime Update:
+
+* Update OSv2 plugin to version 4.0.22 using POST method instead of PUT for `store` requests. [SE-11308]
+* OAuth Module for HTTP Requester is leaking threads. [SE-12028]
+
+4.1.4 Runtime Update:
+
+* OAuth Module for HTTP Requester is leaking threads. [SE-12028]
+
+3.9.3, 3.9.2, 3.9.1 and 3.9.0 Runtime Update:
+
+* SSL cipher suites list changed with latest patch of 3.9.0 and 3.9.1 in CloudHub. [SE-12252]
+
+3.8.7, 3.8.6, 3.8.5, 3.8.4, 3.8.2, 3.8.1 and 3.8.0 Runtime Update:
+
+* If `defaultCipherSuites` isn't specified, all cipher suites supported by enabled protocols are used. [SE-12252]
+
 == July 16, 2019
 
 4.2.0 and 4.1.5 Runtime Update:
