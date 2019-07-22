@@ -5,6 +5,26 @@ endif::[]
 
 Support Category: Select
 
+== 4.2.1
+
+*July 22, 2019*
+
+=== Compatibility
+
+The Zuora connector is compatible with:
+
+[%header%autowidth]
+|===
+|Application/Service |Version
+|Mule Runtime, Mule Enterprise Edition |4.1.1 and later
+|Anypoint Studio |7.1.2 and later
+|Zuora |r249
+|===
+
+=== Features
+
+* Updated HTTP Connector dependency to version 1.5.5 (CONN-2524)
+
 == 4.2.0
 
 *July 16, 2019*
