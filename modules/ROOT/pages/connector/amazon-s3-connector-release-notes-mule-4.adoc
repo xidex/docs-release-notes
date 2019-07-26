@@ -11,7 +11,7 @@ Starting with v.4.0.0, the S3 Connector is licensed commercially with Anypoint P
 
 == 5.3.4
 
-*Date to be added*
+July 26, 2019
 
 === Compatibility
 
@@ -26,7 +26,7 @@ The Amazon S3 connector is compatible with:
 
 === Fixed in this Release
 
-* Connector did not allow to configure the URL for S3 compatible storage. The new _S3 Compatible Storage URL_ parameter lets you configure that. [SE-10846]
+* Connector did not allow users to configure the URL for S3 compatible storage. Users can now use the new _S3 Compatible Storage URL_ parameter to configure S3 compatible storage. [SE-10846]
 
 == 5.3.3
 
