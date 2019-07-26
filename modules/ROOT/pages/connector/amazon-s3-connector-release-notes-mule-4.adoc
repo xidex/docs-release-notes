@@ -188,4 +188,3 @@ AWS connectors shared a common library for the supported region endpoints that c
 
 * https://forums.mulesoft.com[MuleSoft Forum]
 * https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
-
